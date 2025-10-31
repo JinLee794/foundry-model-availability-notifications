@@ -27,16 +27,60 @@ jobs:
           python .region-watch/diff_regions.py > region_diff.json
           cat region_diff.json
 
+      - name: Detect changes
+        id: detect
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          diff = json.loads(Path("region_diff.json").read_text(encoding="utf-8"))
+          Path(".region-watch").mkdir(exist_ok=True)
+
+          def has_change_block(block: dict) -> bool:
+              if not isinstance(block, dict):
+                  return False
+              added = block.get("added") or []
+              removed = block.get("removed") or []
+              return bool(added or removed)
+
+          def has_change_entry(entry: dict) -> bool:
+              if not isinstance(entry, dict):
+                  return False
+              if has_change_block(entry.get("all") or {}):
+                  return True
+              if entry.get("model_removed"):
+                  return True
+              for sku_change in (entry.get("skus") or {}).values():
+                  if has_change_block(sku_change) or sku_change.get("sku_removed"):
+                      return True
+              return False
+
+          detected = any(
+              has_change_entry(change)
+              for change in (diff.get("changes") or {}).values()
+          )
+
+          Path(".region-watch/has_change.flag").write_text(
+              "true" if detected else "false", encoding="utf-8"
+          )
+          PY
+          echo "has_change=$(cat .region-watch/has_change.flag)" >> "$GITHUB_OUTPUT"
+
+      - name: Render REGION_AVAILABILITY.md
+        if: ${{ steps.detect.outputs.has_change == 'true' }}
+        run: python .region-watch/render_markdown.py
+
       - name: Commit snapshot if changed
         run: |
           git config user.email "bot@users.noreply.github.com"
           git config user.name "region-bot"
-          git add .region-watch/regions_snapshot.json .region-watch/history region_diff.json
+          git add .region-watch/regions_snapshot.json .region-watch/history region_diff.json REGION_AVAILABILITY.md
           git diff --cached --quiet || git commit -m "Update region snapshot"
           git push
 
       - name: Notify via GitHub issue
-        if: ${{ hashFiles('region_diff.json') != '' }}
+        if: ${{ hashFiles('region_diff.json') != '' && steps.detect.outputs.has_change == 'true' }}
         uses: actions/github-script@v7
         with:
           script: |
