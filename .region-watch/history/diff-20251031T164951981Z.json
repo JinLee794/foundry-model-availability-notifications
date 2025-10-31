@@ -1,0 +1,22 @@
+{
+  "changes": {
+    "gpt-4": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "provisioned-models": {
+          "added": [
+            "Poland Central",
+            "South Africa North",
+            "South Central US"
+          ],
+          "label": "Provisioned (PTU managed)",
+          "removed": []
+        }
+      }
+    }
+  },
+  "timestamp": "2025-10-31T16:49:51.981030+00:00"
+}
