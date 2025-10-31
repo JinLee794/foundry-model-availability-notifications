@@ -1,0 +1,21 @@
+{
+  "changes": {
+    "gpt-4": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "provisioned-models": {
+          "added": [
+            "UK South",
+            "West US"
+          ],
+          "label": "Provisioned (PTU managed)",
+          "removed": []
+        }
+      }
+    }
+  },
+  "timestamp": "2025-10-31T17:49:59.449841+00:00"
+}
