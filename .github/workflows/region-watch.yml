@@ -119,8 +119,26 @@ jobs:
 
             // find existing open issue
             const issues = await github.paginate(github.rest.issues.listForRepo, {owner, repo, labels: label, state: 'open'});
+            const assignees = (process.env.ISSUE_ASSIGNEES || '')
+              .split(',')
+              .map(v => v.trim())
+              .filter(Boolean);
             if (issues.length) {
                 await github.rest.issues.createComment({owner, repo, issue_number: issues[0].number, body: bodyLines.join('\n')});
             } else {
-                await github.rest.issues.create({owner, repo, title, body: bodyLines.join('\n'), labels: [label], assignees: ['jinle']});
+                const issuePayload = {owner, repo, title, body: bodyLines.join('\n'), labels: [label]};
+                if (assignees.length) {
+                  issuePayload.assignees = assignees;
+                }
+                try {
+                  await github.rest.issues.create(issuePayload);
+                } catch (error) {
+                  core.warning(`Failed to create issue with assignees (${assignees.join(', ')}): ${error}`);
+                  if (assignees.length) {
+                    delete issuePayload.assignees;
+                    await github.rest.issues.create(issuePayload);
+                  } else {
+                    throw error;
+                  }
+                }
             }
