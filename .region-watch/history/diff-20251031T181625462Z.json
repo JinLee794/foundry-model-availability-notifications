@@ -1,0 +1,22 @@
+{
+  "changes": {
+    "gpt-4-32k": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "provisioned-models": {
+          "added": [
+            "France Central",
+            "Germany West Central",
+            "Korea Central"
+          ],
+          "label": "Provisioned (PTU managed)",
+          "removed": []
+        }
+      }
+    }
+  },
+  "timestamp": "2025-10-31T18:16:25.462625+00:00"
+}

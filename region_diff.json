@@ -1,6 +1,24 @@
 {
-  "timestamp": "2025-10-31T18:12:25.583432+00:00",
-  "changes": {},
+  "timestamp": "2025-10-31T18:16:25.462625+00:00",
+  "changes": {
+    "gpt-4-32k": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "provisioned-models": {
+          "label": "Provisioned (PTU managed)",
+          "added": [
+            "France Central",
+            "Germany West Central",
+            "Korea Central"
+          ],
+          "removed": []
+        }
+      }
+    }
+  },
   "current": {
     "codex-mini": {
       "all": [
