@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-10-31T17:53:03.524796+00:00",
+  "timestamp": "2025-10-31T17:56:11.912522+00:00",
   "changes": {
     "gpt-4": {
       "all": {
@@ -10,8 +10,9 @@
         "provisioned-models": {
           "label": "Provisioned (PTU managed)",
           "added": [
-            "South Central US",
-            "South India"
+            "Norway East",
+            "Poland Central",
+            "South Africa North"
           ],
           "removed": []
         }

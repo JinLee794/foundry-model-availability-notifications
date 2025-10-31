@@ -1,6 +1,6 @@
 # AI Foundry Model Availability by Region
 
-_Last updated: 2025-10-31 17:53 UTC_
+_Last updated: 2025-10-31 17:56 UTC_
 
 - Models tracked: **44**
 - Regions in snapshot: **29**
@@ -858,6 +858,7 @@ SKU labels observed:
 
 ## Recent changes
 
+- **2025-10-31 17:56 UTC** — gpt-4: Provisioned (PTU managed) added Norway East, Poland Central, and South Africa North
 - **2025-10-31 17:53 UTC** — gpt-4: Provisioned (PTU managed) added South Central US and South India
 - **2025-10-31 17:49 UTC** — gpt-4: Provisioned (PTU managed) added UK South and West US
 - **2025-10-31 16:49 UTC** — gpt-4: Provisioned (PTU managed) added Poland Central, South Africa North, and South Central US
