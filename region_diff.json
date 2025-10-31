@@ -1,24 +1,6 @@
 {
-  "timestamp": "2025-10-31T17:56:11.912522+00:00",
-  "changes": {
-    "gpt-4": {
-      "all": {
-        "added": [],
-        "removed": []
-      },
-      "skus": {
-        "provisioned-models": {
-          "label": "Provisioned (PTU managed)",
-          "added": [
-            "Norway East",
-            "Poland Central",
-            "South Africa North"
-          ],
-          "removed": []
-        }
-      }
-    }
-  },
+  "timestamp": "2025-10-31T18:12:25.583432+00:00",
+  "changes": {},
   "current": {
     "codex-mini": {
       "all": [
