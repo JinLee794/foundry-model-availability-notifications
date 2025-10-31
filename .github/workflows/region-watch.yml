@@ -24,14 +24,14 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # boosts rate limits
         run: |
-          python .region-watch/diff_regions_md.py > region_diff.json
+          python .region-watch/diff_regions.py > region_diff.json
           cat region_diff.json
 
       - name: Commit snapshot if changed
         run: |
           git config user.email "bot@users.noreply.github.com"
           git config user.name "region-bot"
-          git add .region-watch/regions_snapshot.json region_diff.json
+          git add .region-watch/regions_snapshot.json .region-watch/history region_diff.json
           git diff --cached --quiet || git commit -m "Update region snapshot"
           git push
 
@@ -42,7 +42,13 @@ jobs:
           script: |
             const fs = require('fs');
             const diff = JSON.parse(fs.readFileSync('region_diff.json','utf8'));
-            const hasChange = Object.values(diff.changes || {}).some(c => (c.added||[]).length || (c.removed||[]).length);
+            const hasChange = Object.values(diff.changes || {}).some(c => {
+              const overallAdded = c?.all?.added ?? [];
+              const overallRemoved = c?.all?.removed ?? [];
+              const skuChanges = Object.values(c?.skus || {});
+              const skuDelta = skuChanges.some(sku => (sku?.added?.length || sku?.removed?.length || sku?.sku_removed));
+              return overallAdded.length || overallRemoved.length || skuDelta || c?.model_removed;
+            });
             if (!hasChange) { core.info('No region changes'); return; }
 
             const owner = context.repo.owner, repo = context.repo.repo;
@@ -50,8 +56,19 @@ jobs:
             const label = 'region-watch';
             const bodyLines = ['Model region changes detected:'];
             for (const [m, ch] of Object.entries(diff.changes)) {
-                if ((ch.added||[]).length)  bodyLines.push(`• ${m}: ADDED -> ${ch.added.join(', ')}`);
-                if ((ch.removed||[]).length) bodyLines.push(`• ${m}: REMOVED -> ${ch.removed.join(', ')}`);
+                const added = ch?.all?.added ?? [];
+                const removed = ch?.all?.removed ?? [];
+                if (added.length)  bodyLines.push(`• ${m}: added -> ${added.join(', ')}`);
+                if (removed.length) bodyLines.push(`• ${m}: removed -> ${removed.join(', ')}`);
+                for (const [skuKey, skuChange] of Object.entries(ch?.skus || {})) {
+                  const label = skuChange?.label || skuKey;
+                  const skuAdded = skuChange?.added ?? [];
+                  const skuRemoved = skuChange?.removed ?? [];
+                  if (skuAdded.length) bodyLines.push(`  - ${label} (${skuKey}): added -> ${skuAdded.join(', ')}`);
+                  if (skuRemoved.length) bodyLines.push(`  - ${label} (${skuKey}): removed -> ${skuRemoved.join(', ')}`);
+                  if (skuChange?.sku_removed) bodyLines.push(`  - ${label} (${skuKey}): sku removed`);
+                }
+                if (ch?.model_removed) bodyLines.push('  - model removed');
             }
             bodyLines.push('\n/cc @jinle @org/team-name'); // adjust mentions
 
