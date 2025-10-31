@@ -133,5 +133,4 @@ jobs:
             } else {
               await github.rest.issues.create({owner, repo, title, body: bodyLines.join('\n'), labels: [label], assignees: ['jinle']});
             }
-        with:
-          entries: ${{ steps.summary.outputs.entries }}
+        
