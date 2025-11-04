@@ -563,7 +563,8 @@
           "South Central US",
           "Sweden Central",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "provisioned-global": {
@@ -751,7 +752,8 @@
           "South Central US",
           "Sweden Central",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "provisioned-global": {
@@ -917,7 +919,8 @@
           "South Central US",
           "Sweden Central",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "provisioned-global": {
@@ -1079,7 +1082,8 @@
           "South Central US",
           "Sweden Central",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "provisioned-global": {
@@ -1346,7 +1350,8 @@
           "South Central US",
           "Sweden Central",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "provisioned-global": {
@@ -1610,6 +1615,42 @@
           "East US",
           "East US 2",
           "Sweden Central"
+        ]
+      },
+      "global-batch": {
+        "label": "Global batch",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada East",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Sweden Central",
+          "Switzerland North",
+          "UK South",
+          "West Europe",
+          "West US"
+        ]
+      },
+      "global-batch-datazone": {
+        "label": "Global batch datazone",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
         ]
       },
       "provisioned-global": {
@@ -2216,7 +2257,8 @@
           "South Central US",
           "Sweden Central",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "provisioned-global": {
@@ -2396,7 +2438,8 @@
           "East US 2",
           "North Central US",
           "South Central US",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "provisioned-global": {
@@ -2597,7 +2640,8 @@
           "South Central US",
           "Sweden Central",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "provisioned-global": {
