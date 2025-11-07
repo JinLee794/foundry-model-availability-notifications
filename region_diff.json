@@ -1,32 +1,6 @@
 {
-  "timestamp": "2025-11-07T02:15:55.477047+00:00",
-  "changes": {
-    "gpt-realtime": {
-      "all": {
-        "added": [
-          "East US 2",
-          "Sweden Central"
-        ],
-        "removed": [
-          "Norway East",
-          "West US"
-        ]
-      },
-      "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
-          "added": [
-            "East US 2",
-            "Sweden Central"
-          ],
-          "removed": [
-            "Norway East",
-            "West US"
-          ]
-        }
-      }
-    }
-  },
+  "timestamp": "2025-11-07T06:47:50.490970+00:00",
+  "changes": {},
   "current": {
     "codex-mini": {
       "all": [
