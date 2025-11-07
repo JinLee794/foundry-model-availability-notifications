@@ -1,6 +1,6 @@
 # AI Foundry Model Availability by Region
 
-_Last updated: 2025-11-04 06:48 UTC_
+_Last updated: 2025-11-07 02:15 UTC_
 
 - Models tracked: **44**
 - Regions in snapshot: **29**
@@ -73,7 +73,7 @@ SKU labels observed:
 | gpt-5-codex | 🔴 Emerging | 2 | 2 (Global coverage, Standard global deployments) | `East US 2`, `Sweden Central` |
 | gpt-5-nano | 🔴 Emerging | 2 | 3 (Datazone standard, Global coverage, Standard global deployments) | `East US 2`, `Sweden Central` |
 | gpt-audio | 🔴 Emerging | 2 | 2 (Global coverage, Standard global deployments) | `East US 2`, `Sweden Central` |
-| gpt-realtime | 🔴 Emerging | 2 | 2 (Global coverage, Standard global deployments) | `Norway East`, `West US` |
+| gpt-realtime | 🔴 Emerging | 2 | 2 (Global coverage, Standard global deployments) | `East US 2`, `Sweden Central` |
 | model-router | 🔴 Emerging | 2 | 3 (Datazone standard, Global coverage, Standard global deployments) | `East US 2`, `Sweden Central` |
 | o3-pro | 🔴 Emerging | 2 | 2 (Global coverage, Standard global deployments) | `East US 2`, `Sweden Central` |
 | sora | 🔴 Emerging | 2 | 3 (Global coverage, Standard (all), Standard global deployments) | `East US 2`, `Sweden Central` |
@@ -824,8 +824,8 @@ SKU labels observed:
 <details>
 <summary>gpt-realtime — 2 regions across 2 SKU labels</summary>
 
-- `Norway East` — Global coverage, Standard global deployments
-- `West US` — Global coverage, Standard global deployments
+- `East US 2` — Global coverage, Standard global deployments
+- `Sweden Central` — Global coverage, Standard global deployments
 
 </details>
 <details>
@@ -858,6 +858,7 @@ SKU labels observed:
 
 ## Recent changes
 
+- **2025-11-07 02:15 UTC** — gpt-realtime: Global coverage added East US 2 and Sweden Central; Global coverage removed Norway East and West US; Standard global deployments added East US 2 and Sweden Central; Standard global deployments removed Norway East and West US
 - **2025-11-04 06:48 UTC** — gpt-4.1: Global batch datazone added West US 3 | gpt-4.1-mini: Global batch datazone added West US 3 | gpt-4.1-nano: Global batch datazone added West US 3 | gpt-4o: Global batch datazone added West US 3 | gpt-4o-mini: Global batch datazone added West US 3 | gpt-5: Global batch added Australia East, Brazil South, Canada East, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, and West US; Global batch datazone added East US, East US 2, North Central US, South Central US, West US, and West US 3 | o3: Global batch datazone added West US 3 | o3-mini: Global batch datazone added West US 3 | o4-mini: Global batch datazone added West US 3
 - **2025-10-31 18:16 UTC** — gpt-4-32k: Provisioned (PTU managed) added France Central, Germany West Central, and Korea Central
 - **2025-10-31 17:56 UTC** — gpt-4: Provisioned (PTU managed) added Norway East, Poland Central, and South Africa North

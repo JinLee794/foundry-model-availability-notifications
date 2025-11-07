@@ -1879,15 +1879,15 @@
   },
   "gpt-realtime": {
     "all": [
-      "Norway East",
-      "West US"
+      "East US 2",
+      "Sweden Central"
     ],
     "skus": {
       "standard-global": {
         "label": "Standard global deployments",
         "regions": [
-          "Norway East",
-          "West US"
+          "East US 2",
+          "Sweden Central"
         ]
       }
     }

@@ -1,6 +1,32 @@
 {
-  "timestamp": "2025-11-06T18:47:46.786599+00:00",
-  "changes": {},
+  "timestamp": "2025-11-07T02:15:55.477047+00:00",
+  "changes": {
+    "gpt-realtime": {
+      "all": {
+        "added": [
+          "East US 2",
+          "Sweden Central"
+        ],
+        "removed": [
+          "Norway East",
+          "West US"
+        ]
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "removed": [
+            "Norway East",
+            "West US"
+          ]
+        }
+      }
+    }
+  },
   "current": {
     "codex-mini": {
       "all": [
@@ -1882,15 +1908,15 @@
     },
     "gpt-realtime": {
       "all": [
-        "Norway East",
-        "West US"
+        "East US 2",
+        "Sweden Central"
       ],
       "skus": {
         "standard-global": {
           "label": "Standard global deployments",
           "regions": [
-            "Norway East",
-            "West US"
+            "East US 2",
+            "Sweden Central"
           ]
         }
       }
