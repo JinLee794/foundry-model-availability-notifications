@@ -125,7 +125,7 @@ jobs:
                 bodyLines.push(`  ${detail}`);
               }
             }
-            bodyLines.push('', '/cc @jinle @org/team-name'); // adjust mentions
+            bodyLines.push('', '/cc @JinLee794 @org/team-name'); // adjust mentions
 
             const issues = await github.paginate(github.rest.issues.listForRepo, {owner, repo, labels: label, state: 'open'});
             if (issues.length) {
