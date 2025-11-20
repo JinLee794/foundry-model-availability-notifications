@@ -1,0 +1,555 @@
+{
+  "changes": {
+    "gpt-35-turbo": {
+      "all": {
+        "added": [
+          "Canada Central",
+          "Central US"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "provisioned-models": {
+          "added": [
+            "Canada Central",
+            "Central US"
+          ],
+          "label": "Provisioned (PTU managed)",
+          "removed": []
+        }
+      }
+    },
+    "gpt-4": {
+      "all": {
+        "added": [
+          "Canada Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "provisioned-models": {
+          "added": [
+            "Canada Central"
+          ],
+          "label": "Provisioned (PTU managed)",
+          "removed": []
+        }
+      }
+    },
+    "gpt-4-32k": {
+      "all": {
+        "added": [
+          "Canada Central",
+          "Central US"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "provisioned-models": {
+          "added": [
+            "Canada Central",
+            "Central US"
+          ],
+          "label": "Provisioned (PTU managed)",
+          "removed": []
+        }
+      }
+    },
+    "gpt-4.1": {
+      "all": {
+        "added": [
+          "Canada Central",
+          "Central US"
+        ],
+        "removed": [
+          "Central India",
+          "East Asia",
+          "North Europe"
+        ]
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [],
+          "label": "Datazone provisioned managed",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "provisioned-global": {
+          "added": [
+            "Canada Central",
+            "Central US"
+          ],
+          "label": "Provisioned global",
+          "removed": [
+            "Central India",
+            "East Asia",
+            "North Europe"
+          ]
+        },
+        "provisioned-models": {
+          "added": [
+            "Brazil South",
+            "Central US",
+            "South India",
+            "Switzerland North"
+          ],
+          "label": "Provisioned (PTU managed)",
+          "removed": []
+        }
+      }
+    },
+    "gpt-4.1-mini": {
+      "all": {
+        "added": [
+          "Canada Central",
+          "Central US"
+        ],
+        "removed": [
+          "Central India",
+          "East Asia",
+          "North Europe"
+        ]
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [],
+          "label": "Datazone provisioned managed",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "provisioned-global": {
+          "added": [
+            "Canada Central",
+            "Central US"
+          ],
+          "label": "Provisioned global",
+          "removed": [
+            "Central India",
+            "East Asia",
+            "North Europe"
+          ]
+        },
+        "provisioned-models": {
+          "added": [
+            "Brazil South",
+            "South India"
+          ],
+          "label": "Provisioned (PTU managed)",
+          "removed": []
+        }
+      }
+    },
+    "gpt-4.1-nano": {
+      "all": {
+        "added": [
+          "Canada Central",
+          "Central US"
+        ],
+        "removed": [
+          "Central India",
+          "East Asia",
+          "North Europe"
+        ]
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [],
+          "label": "Datazone provisioned managed",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "provisioned-global": {
+          "added": [
+            "Canada Central",
+            "Central US"
+          ],
+          "label": "Provisioned global",
+          "removed": [
+            "Central India",
+            "East Asia",
+            "North Europe"
+          ]
+        }
+      }
+    },
+    "gpt-4o": {
+      "all": {
+        "added": [
+          "Canada Central",
+          "Central US"
+        ],
+        "removed": [
+          "Central India",
+          "East Asia",
+          "North Europe"
+        ]
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [],
+          "label": "Datazone provisioned managed",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "provisioned-global": {
+          "added": [
+            "Canada Central",
+            "Central US"
+          ],
+          "label": "Provisioned global",
+          "removed": [
+            "Central India",
+            "East Asia",
+            "North Europe"
+          ]
+        },
+        "provisioned-models": {
+          "added": [
+            "Canada Central",
+            "Central US",
+            "Switzerland West"
+          ],
+          "label": "Provisioned (PTU managed)",
+          "removed": []
+        }
+      }
+    },
+    "gpt-4o-mini": {
+      "all": {
+        "added": [
+          "Canada Central",
+          "Central US"
+        ],
+        "removed": [
+          "Central India",
+          "East Asia",
+          "North Europe"
+        ]
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [],
+          "label": "Datazone provisioned managed",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "provisioned-global": {
+          "added": [
+            "Canada Central",
+            "Central US"
+          ],
+          "label": "Provisioned global",
+          "removed": [
+            "Central India",
+            "East Asia",
+            "North Europe"
+          ]
+        },
+        "provisioned-models": {
+          "added": [
+            "Canada Central",
+            "Switzerland West"
+          ],
+          "label": "Provisioned (PTU managed)",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5": {
+      "all": {
+        "added": [
+          "Canada Central",
+          "Central US"
+        ],
+        "removed": [
+          "Central India",
+          "East Asia",
+          "North Europe"
+        ]
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Poland Central",
+            "Spain Central",
+            "Sweden Central",
+            "West Europe"
+          ],
+          "label": "Datazone provisioned managed",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "provisioned-global": {
+          "added": [
+            "Canada Central",
+            "Central US"
+          ],
+          "label": "Provisioned global",
+          "removed": [
+            "Central India",
+            "East Asia",
+            "North Europe"
+          ]
+        },
+        "provisioned-models": {
+          "added": [
+            "Canada East",
+            "Japan East",
+            "South India"
+          ],
+          "label": "Provisioned (PTU managed)",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5-mini": {
+      "all": {
+        "added": [
+          "Brazil South",
+          "Canada Central",
+          "Canada East",
+          "Central US",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "Southeast Asia",
+          "Spain Central",
+          "Switzerland West",
+          "UAE North",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "North Central US",
+            "Poland Central",
+            "South Central US",
+            "Spain Central",
+            "Sweden Central",
+            "West Europe",
+            "West US"
+          ],
+          "label": "Datazone provisioned managed",
+          "removed": []
+        },
+        "provisioned-global": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Provisioned global",
+          "removed": []
+        },
+        "provisioned-models": {
+          "added": [
+            "East US 2"
+          ],
+          "label": "Provisioned (PTU managed)",
+          "removed": []
+        }
+      }
+    },
+    "o1": {
+      "all": {
+        "added": [
+          "Canada Central",
+          "Central US"
+        ],
+        "removed": [
+          "Central India",
+          "East Asia",
+          "North Europe"
+        ]
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [],
+          "label": "Datazone provisioned managed",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "provisioned-global": {
+          "added": [
+            "Canada Central",
+            "Central US"
+          ],
+          "label": "Provisioned global",
+          "removed": [
+            "Central India",
+            "East Asia",
+            "North Europe"
+          ]
+        }
+      }
+    },
+    "o3": {
+      "all": {
+        "added": [
+          "Canada Central",
+          "Central US"
+        ],
+        "removed": [
+          "Central India",
+          "East Asia",
+          "North Europe"
+        ]
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [],
+          "label": "Datazone provisioned managed",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "provisioned-global": {
+          "added": [
+            "Canada Central",
+            "Central US"
+          ],
+          "label": "Provisioned global",
+          "removed": [
+            "Central India",
+            "East Asia",
+            "North Europe"
+          ]
+        }
+      }
+    },
+    "o3-mini": {
+      "all": {
+        "added": [
+          "Canada Central",
+          "Central US"
+        ],
+        "removed": [
+          "Central India",
+          "East Asia",
+          "North Europe"
+        ]
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [],
+          "label": "Datazone provisioned managed",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "provisioned-global": {
+          "added": [
+            "Canada Central",
+            "Central US"
+          ],
+          "label": "Provisioned global",
+          "removed": [
+            "Central India",
+            "East Asia",
+            "North Europe"
+          ]
+        },
+        "provisioned-models": {
+          "added": [
+            "South Central US",
+            "South India"
+          ],
+          "label": "Provisioned (PTU managed)",
+          "removed": []
+        }
+      }
+    },
+    "o4-mini": {
+      "all": {
+        "added": [
+          "Canada Central",
+          "Central US"
+        ],
+        "removed": [
+          "Central India",
+          "East Asia",
+          "North Europe"
+        ]
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [],
+          "label": "Datazone provisioned managed",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "provisioned-global": {
+          "added": [
+            "Canada Central",
+            "Central US"
+          ],
+          "label": "Provisioned global",
+          "removed": [
+            "Central India",
+            "East Asia",
+            "North Europe"
+          ]
+        },
+        "provisioned-models": {
+          "added": [
+            "Central US",
+            "Japan East"
+          ],
+          "label": "Provisioned (PTU managed)",
+          "removed": []
+        }
+      }
+    }
+  },
+  "timestamp": "2025-11-20T06:47:15.949894+00:00"
+}
