@@ -1,6 +1,6 @@
 # AI Foundry Model Availability by Region
 
-_Last updated: 2025-11-20 06:47 UTC_
+_Last updated: 2025-12-02 18:51 UTC_
 
 - Models tracked: **44**
 - Regions in snapshot: **28**
@@ -88,7 +88,7 @@ SKU labels observed:
 - `Brazil South` — Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
 - `Canada Central` — Global coverage, Provisioned global
 - `Canada East` — Global batch, Global coverage, Provisioned global, Standard global deployments
-- `Central US` — Global coverage, Provisioned (PTU managed), Provisioned global
+- `Central US` — Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global
 - `East US` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global
 - `East US 2` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
 - `France Central` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard global deployments
@@ -111,7 +111,7 @@ SKU labels observed:
 - `UK South` — Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
 - `West Europe` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard global deployments
 - `West US` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
-- `West US 3` — Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
+- `West US 3` — Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
 
 </details>
 <details>
@@ -121,7 +121,7 @@ SKU labels observed:
 - `Brazil South` — Global batch, Global coverage, Provisioned (PTU managed), Provisioned global
 - `Canada Central` — Global coverage, Provisioned global
 - `Canada East` — Global batch, Global coverage, Provisioned global
-- `Central US` — Global coverage, Provisioned global
+- `Central US` — Global batch, Global batch datazone, Global coverage, Provisioned global
 - `East US` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global
 - `East US 2` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
 - `France Central` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned global
@@ -144,7 +144,7 @@ SKU labels observed:
 - `UK South` — Global batch, Global coverage, Provisioned (PTU managed), Provisioned global
 - `West Europe` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned global
 - `West US` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global
-- `West US 3` — Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global
+- `West US 3` — Global coverage, Provisioned (PTU managed), Provisioned global
 
 </details>
 <details>
@@ -154,7 +154,7 @@ SKU labels observed:
 - `Brazil South` — Global batch, Global coverage, Provisioned global
 - `Canada Central` — Global coverage, Provisioned global
 - `Canada East` — Global batch, Global coverage, Provisioned global
-- `Central US` — Global coverage, Provisioned global
+- `Central US` — Global batch, Global batch datazone, Global coverage, Provisioned global
 - `East US` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
 - `East US 2` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
 - `France Central` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned global
@@ -177,7 +177,7 @@ SKU labels observed:
 - `UK South` — Global batch, Global coverage, Provisioned global
 - `West Europe` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned global
 - `West US` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global
-- `West US 3` — Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global
+- `West US 3` — Global coverage, Provisioned (PTU managed), Provisioned global
 
 </details>
 <details>
@@ -187,7 +187,7 @@ SKU labels observed:
 - `Brazil South` — Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
 - `Canada Central` — Global coverage, Provisioned (PTU managed), Provisioned global
 - `Canada East` — Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard (all), Standard chat completions, Standard global deployments
-- `Central US` — Global coverage, Provisioned (PTU managed), Provisioned global
+- `Central US` — Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global
 - `East US` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard (all), Standard GPT-4, Standard chat completions, Standard global deployments
 - `East US 2` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard (all), Standard GPT-4, Standard chat completions, Standard global deployments
 - `France Central` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard (all), Standard chat completions, Standard global deployments
@@ -210,7 +210,7 @@ SKU labels observed:
 - `UK South` — Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard (all), Standard chat completions, Standard global deployments
 - `West Europe` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
 - `West US` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard (all), Standard GPT-4, Standard chat completions, Standard global deployments
-- `West US 3` — Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard (all), Standard GPT-4, Standard global deployments
+- `West US 3` — Global coverage, Provisioned (PTU managed), Provisioned global, Standard (all), Standard GPT-4, Standard global deployments
 
 </details>
 <details>
@@ -220,7 +220,7 @@ SKU labels observed:
 - `Brazil South` — Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
 - `Canada Central` — Global coverage, Provisioned (PTU managed), Provisioned global
 - `Canada East` — Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
-- `Central US` — Global coverage, Provisioned global
+- `Central US` — Global batch, Global batch datazone, Global coverage, Provisioned global
 - `East US` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard (all), Standard GPT-4, Standard chat completions, Standard global deployments
 - `East US 2` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard (all), Standard GPT-4, Standard chat completions, Standard global deployments
 - `France Central` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
@@ -243,7 +243,7 @@ SKU labels observed:
 - `UK South` — Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
 - `West Europe` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard global deployments
 - `West US` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard (all), Standard GPT-4, Standard chat completions, Standard global deployments
-- `West US 3` — Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard (all), Standard GPT-4, Standard global deployments
+- `West US 3` — Global coverage, Provisioned (PTU managed), Provisioned global, Standard (all), Standard GPT-4, Standard global deployments
 
 </details>
 <details>
@@ -253,7 +253,7 @@ SKU labels observed:
 - `Brazil South` — Global batch, Global coverage, Provisioned global
 - `Canada Central` — Global coverage, Provisioned global
 - `Canada East` — Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
-- `Central US` — Global coverage, Provisioned global
+- `Central US` — Global batch, Global batch datazone, Global coverage, Provisioned global
 - `East US` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
 - `East US 2` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
 - `France Central` — Datazone provisioned managed, Global batch, Global coverage, Provisioned global
@@ -276,7 +276,7 @@ SKU labels observed:
 - `UK South` — Global batch, Global coverage, Provisioned global, Standard global deployments
 - `West Europe` — Datazone provisioned managed, Global batch, Global coverage, Provisioned global
 - `West US` — Datazone provisioned managed, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global
-- `West US 3` — Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global
+- `West US 3` — Global coverage, Provisioned (PTU managed), Provisioned global
 
 </details>
 <details>
@@ -352,7 +352,7 @@ SKU labels observed:
 - `Brazil South` — Global batch, Global coverage, Provisioned global, Standard global deployments
 - `Canada Central` — Global coverage, Provisioned global
 - `Canada East` — Global batch, Global coverage, Provisioned global, Standard global deployments
-- `Central US` — Global coverage, Provisioned global
+- `Central US` — Global batch, Global batch datazone, Global coverage, Provisioned global
 - `East US` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
 - `East US 2` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
 - `France Central` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard global deployments
@@ -375,7 +375,7 @@ SKU labels observed:
 - `UK South` — Global batch, Global coverage, Provisioned global, Standard global deployments
 - `West Europe` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
 - `West US` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
-- `West US 3` — Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
+- `West US 3` — Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
 
 </details>
 <details>
@@ -385,7 +385,7 @@ SKU labels observed:
 - `Brazil South` — Global batch, Global coverage, Provisioned global, Standard global deployments
 - `Canada Central` — Global coverage, Provisioned global
 - `Canada East` — Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
-- `Central US` — Global coverage, Provisioned global
+- `Central US` — Global batch, Global batch datazone, Global coverage, Provisioned global
 - `East US` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard global deployments
 - `East US 2` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
 - `France Central` — Datazone provisioned managed, Datazone standard, Global batch, Global coverage, Provisioned global, Standard global deployments
@@ -408,7 +408,7 @@ SKU labels observed:
 - `UK South` — Global batch, Global coverage, Provisioned global, Standard global deployments
 - `West Europe` — Datazone provisioned managed, Datazone standard, Global batch, Global coverage, Provisioned global, Standard global deployments
 - `West US` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard global deployments
-- `West US 3` — Global batch datazone, Global coverage, Provisioned global, Standard global deployments
+- `West US 3` — Global coverage, Provisioned global, Standard global deployments
 
 </details>
 <details>
@@ -418,7 +418,7 @@ SKU labels observed:
 - `Brazil South` — Global batch, Global coverage, Provisioned global, Standard global deployments
 - `Canada Central` — Global coverage, Provisioned global
 - `Canada East` — Global batch, Global coverage, Provisioned global, Standard global deployments
-- `Central US` — Global coverage, Provisioned (PTU managed), Provisioned global
+- `Central US` — Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global
 - `East US` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
 - `East US 2` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
 - `France Central` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard global deployments
@@ -441,7 +441,7 @@ SKU labels observed:
 - `UK South` — Global batch, Global coverage, Provisioned global, Standard global deployments
 - `West Europe` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
 - `West US` — Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
-- `West US 3` — Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
+- `West US 3` — Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments
 
 </details>
 <details>
@@ -872,6 +872,7 @@ SKU labels observed:
 
 ## Recent changes
 
+- **2025-12-02 18:51 UTC** — gpt-4.1: Global batch added Central US; Global batch datazone added Central US; Global batch datazone removed West US 3 | gpt-4.1-mini: Global batch added Central US; Global batch datazone added Central US; Global batch datazone removed West US 3 | gpt-4.1-nano: Global batch added Central US; Global batch datazone added Central US; Global batch datazone removed West US 3 | gpt-4o: Global batch added Central US; Global batch datazone added Central US; Global batch datazone removed West US 3 | gpt-4o-mini: Global batch added Central US; Global batch datazone added Central US; Global batch datazone removed West US 3 | gpt-5: Global batch added Central US; Global batch datazone added Central US; Global batch datazone removed West US 3 | o3: Global batch added Central US; Global batch datazone added Central US; Global batch datazone removed West US 3 | o3-mini: Global batch added Central US; Global batch datazone added Central US; Global batch datazone removed West US 3 | o4-mini: Global batch added Central US; Global batch datazone added Central US; Global batch datazone removed West US 3
 - **2025-11-20 06:47 UTC** — gpt-35-turbo: Global coverage added Canada Central and Central US; Provisioned (PTU managed) added Canada Central and Central US | gpt-4: Global coverage added Canada Central; Provisioned (PTU managed) added Canada Central | gpt-4-32k: Global coverage added Canada Central and Central US; Provisioned (PTU managed) added Canada Central and Central US | gpt-4.1: Global coverage added Canada Central and Central US; Global coverage removed Central India, East Asia, and North Europe; Datazone provisioned managed removed West US 3; Provisioned global added Canada Central and Central US; Provisioned global removed Central India, East Asia, and North Europe; Provisioned (PTU managed) added Brazil South, Central US, South India, and Switzerland North | gpt-4.1-mini: Global coverage added Canada Central and Central US; Global coverage removed Central India, East Asia, and North Europe; Datazone provisioned managed removed West US 3; Provisioned global added Canada Central and Central US; Provisioned global removed Central India, East Asia, and North Europe; Provisioned (PTU managed) added Brazil South and South India | gpt-4.1-nano: Global coverage added Canada Central and Central US; Global coverage removed Central India, East Asia, and North Europe; Datazone provisioned managed removed West US 3; Provisioned global added Canada Central and Central US; Provisioned global removed Central India, East Asia, and North Europe | gpt-4o: Global coverage added Canada Central and Central US; Global coverage removed Central India, East Asia, and North Europe; Datazone provisioned managed removed West US 3; Provisioned global added Canada Central and Central US; Provisioned global removed Central India, East Asia, and North Europe; Provisioned (PTU managed) added Canada Central, Central US, and Switzerland West | gpt-4o-mini: Global coverage added Canada Central and Central US; Global coverage removed Central India, East Asia, and North Europe; Datazone provisioned managed removed West US 3; Provisioned global added Canada Central and Central US; Provisioned global removed Central India, East Asia, and North Europe; Provisioned (PTU managed) added Canada Central and Switzerland West | gpt-5: Global coverage added Canada Central and Central US; Global coverage removed Central India, East Asia, and North Europe; Datazone provisioned managed added France Central, Germany West Central, Italy North, Poland Central, Spain Central, Sweden Central, and West Europe; Datazone provisioned managed removed West US 3; Provisioned global added Canada Central and Central US; Provisioned global removed Central India, East Asia, and North Europe; Provisioned (PTU managed) added Canada East, Japan East, and South India | gpt-5-mini: Global coverage added Brazil South, Canada Central, Canada East, Central US, France Central, Germany West Central, Italy North, North Central US, Norway East, Poland Central, South Africa North, South Central US, Southeast Asia, Spain Central, Switzerland West, UAE North, West Europe, West US, and West US 3; Datazone provisioned managed added East US, East US 2, France Central, Germany West Central, Italy North, North Central US, Poland Central, South Central US, Spain Central, Sweden Central, West Europe, and West US; Provisioned global added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Provisioned (PTU managed) added East US 2 | o1: Global coverage added Canada Central and Central US; Global coverage removed Central India, East Asia, and North Europe; Datazone provisioned managed removed West US 3; Provisioned global added Canada Central and Central US; Provisioned global removed Central India, East Asia, and North Europe | o3: Global coverage added Canada Central and Central US; Global coverage removed Central India, East Asia, and North Europe; Datazone provisioned managed removed West US 3; Provisioned global added Canada Central and Central US; Provisioned global removed Central India, East Asia, and North Europe | o3-mini: Global coverage added Canada Central and Central US; Global coverage removed Central India, East Asia, and North Europe; Datazone provisioned managed removed West US 3; Provisioned global added Canada Central and Central US; Provisioned global removed Central India, East Asia, and North Europe; Provisioned (PTU managed) added South Central US and South India | o4-mini: Global coverage added Canada Central and Central US; Global coverage removed Central India, East Asia, and North Europe; Datazone provisioned managed removed West US 3; Provisioned global added Canada Central and Central US; Provisioned global removed Central India, East Asia, and North Europe; Provisioned (PTU managed) added Central US and Japan East
 - **2025-11-07 02:15 UTC** — gpt-realtime: Global coverage added East US 2 and Sweden Central; Global coverage removed Norway East and West US; Standard global deployments added East US 2 and Sweden Central; Standard global deployments removed Norway East and West US
 - **2025-11-04 06:48 UTC** — gpt-4.1: Global batch datazone added West US 3 | gpt-4.1-mini: Global batch datazone added West US 3 | gpt-4.1-nano: Global batch datazone added West US 3 | gpt-4o: Global batch datazone added West US 3 | gpt-4o-mini: Global batch datazone added West US 3 | gpt-5: Global batch added Australia East, Brazil South, Canada East, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, and West US; Global batch datazone added East US, East US 2, North Central US, South Central US, West US, and West US 3 | o3: Global batch datazone added West US 3 | o3-mini: Global batch datazone added West US 3 | o4-mini: Global batch datazone added West US 3

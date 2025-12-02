@@ -1,0 +1,221 @@
+{
+  "changes": {
+    "gpt-4.1": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-batch": {
+          "added": [
+            "Central US"
+          ],
+          "label": "Global batch",
+          "removed": []
+        },
+        "global-batch-datazone": {
+          "added": [
+            "Central US"
+          ],
+          "label": "Global batch datazone",
+          "removed": [
+            "West US 3"
+          ]
+        }
+      }
+    },
+    "gpt-4.1-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-batch": {
+          "added": [
+            "Central US"
+          ],
+          "label": "Global batch",
+          "removed": []
+        },
+        "global-batch-datazone": {
+          "added": [
+            "Central US"
+          ],
+          "label": "Global batch datazone",
+          "removed": [
+            "West US 3"
+          ]
+        }
+      }
+    },
+    "gpt-4.1-nano": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-batch": {
+          "added": [
+            "Central US"
+          ],
+          "label": "Global batch",
+          "removed": []
+        },
+        "global-batch-datazone": {
+          "added": [
+            "Central US"
+          ],
+          "label": "Global batch datazone",
+          "removed": [
+            "West US 3"
+          ]
+        }
+      }
+    },
+    "gpt-4o": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-batch": {
+          "added": [
+            "Central US"
+          ],
+          "label": "Global batch",
+          "removed": []
+        },
+        "global-batch-datazone": {
+          "added": [
+            "Central US"
+          ],
+          "label": "Global batch datazone",
+          "removed": [
+            "West US 3"
+          ]
+        }
+      }
+    },
+    "gpt-4o-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-batch": {
+          "added": [
+            "Central US"
+          ],
+          "label": "Global batch",
+          "removed": []
+        },
+        "global-batch-datazone": {
+          "added": [
+            "Central US"
+          ],
+          "label": "Global batch datazone",
+          "removed": [
+            "West US 3"
+          ]
+        }
+      }
+    },
+    "gpt-5": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-batch": {
+          "added": [
+            "Central US"
+          ],
+          "label": "Global batch",
+          "removed": []
+        },
+        "global-batch-datazone": {
+          "added": [
+            "Central US"
+          ],
+          "label": "Global batch datazone",
+          "removed": [
+            "West US 3"
+          ]
+        }
+      }
+    },
+    "o3": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-batch": {
+          "added": [
+            "Central US"
+          ],
+          "label": "Global batch",
+          "removed": []
+        },
+        "global-batch-datazone": {
+          "added": [
+            "Central US"
+          ],
+          "label": "Global batch datazone",
+          "removed": [
+            "West US 3"
+          ]
+        }
+      }
+    },
+    "o3-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-batch": {
+          "added": [
+            "Central US"
+          ],
+          "label": "Global batch",
+          "removed": []
+        },
+        "global-batch-datazone": {
+          "added": [
+            "Central US"
+          ],
+          "label": "Global batch datazone",
+          "removed": [
+            "West US 3"
+          ]
+        }
+      }
+    },
+    "o4-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-batch": {
+          "added": [
+            "Central US"
+          ],
+          "label": "Global batch",
+          "removed": []
+        },
+        "global-batch-datazone": {
+          "added": [
+            "Central US"
+          ],
+          "label": "Global batch datazone",
+          "removed": [
+            "West US 3"
+          ]
+        }
+      }
+    }
+  },
+  "timestamp": "2025-12-02T18:51:31.639139+00:00"
+}
