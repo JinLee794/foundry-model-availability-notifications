@@ -2050,15 +2050,91 @@
   },
   "gpt-5.1": {
     "all": [
+      "Australia East",
+      "Brazil South",
+      "Canada Central",
+      "Canada East",
+      "Central US",
+      "East US",
       "East US 2",
-      "Sweden Central"
+      "France Central",
+      "Germany West Central",
+      "Italy North",
+      "Japan East",
+      "Korea Central",
+      "North Central US",
+      "Norway East",
+      "Poland Central",
+      "South Africa North",
+      "South Central US",
+      "South India",
+      "Southeast Asia",
+      "Spain Central",
+      "Sweden Central",
+      "Switzerland North",
+      "Switzerland West",
+      "UAE North",
+      "UK South",
+      "West Europe",
+      "West US",
+      "West US 3"
     ],
     "skus": {
+      "datazone-provisioned-managed": {
+        "label": "Datazone provisioned managed",
+        "regions": [
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "North Central US",
+          "Poland Central",
+          "South Central US",
+          "Spain Central",
+          "Sweden Central",
+          "West Europe",
+          "West US"
+        ]
+      },
       "datazone-standard": {
         "label": "Datazone standard",
         "regions": [
           "East US 2",
           "Sweden Central"
+        ]
+      },
+      "provisioned-global": {
+        "label": "Provisioned global",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada Central",
+          "Canada East",
+          "Central US",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Southeast Asia",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
         ]
       },
       "standard-global": {
@@ -2087,10 +2163,34 @@
   },
   "gpt-5.1-codex": {
     "all": [
+      "Australia East",
+      "Canada East",
       "East US 2",
-      "Sweden Central"
+      "Japan East",
+      "Korea Central",
+      "Sweden Central",
+      "Switzerland North",
+      "UK South"
     ],
     "skus": {
+      "datazone-provisioned-managed": {
+        "label": "Datazone provisioned managed",
+        "regions": [
+          "East US 2"
+        ]
+      },
+      "provisioned-global": {
+        "label": "Provisioned global",
+        "regions": [
+          "Australia East",
+          "Canada East",
+          "East US 2",
+          "Japan East",
+          "Korea Central",
+          "Switzerland North",
+          "UK South"
+        ]
+      },
       "standard-global": {
         "label": "Standard global deployments",
         "regions": [
