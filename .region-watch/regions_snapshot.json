@@ -442,7 +442,8 @@
           "Spain Central",
           "Sweden Central",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "datazone-standard": {
@@ -639,7 +640,8 @@
           "Spain Central",
           "Sweden Central",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "datazone-standard": {
@@ -834,7 +836,8 @@
           "Spain Central",
           "Sweden Central",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "datazone-standard": {
@@ -1022,7 +1025,8 @@
           "Spain Central",
           "Sweden Central",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "datazone-standard": {
@@ -1296,7 +1300,8 @@
           "Spain Central",
           "Sweden Central",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "datazone-standard": {
@@ -1637,7 +1642,8 @@
           "Spain Central",
           "Sweden Central",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "datazone-standard": {
@@ -1856,7 +1862,8 @@
           "Spain Central",
           "Sweden Central",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "datazone-standard": {
@@ -2094,7 +2101,8 @@
           "Spain Central",
           "Sweden Central",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "datazone-standard": {
@@ -2165,18 +2173,21 @@
     "all": [
       "Australia East",
       "Canada East",
+      "Central US",
       "East US 2",
       "Japan East",
       "Korea Central",
       "Sweden Central",
       "Switzerland North",
-      "UK South"
+      "UK South",
+      "West Europe"
     ],
     "skus": {
       "datazone-provisioned-managed": {
         "label": "Datazone provisioned managed",
         "regions": [
-          "East US 2"
+          "East US 2",
+          "West Europe"
         ]
       },
       "provisioned-global": {
@@ -2184,11 +2195,13 @@
         "regions": [
           "Australia East",
           "Canada East",
+          "Central US",
           "East US 2",
           "Japan East",
           "Korea Central",
           "Switzerland North",
-          "UK South"
+          "UK South",
+          "West Europe"
         ]
       },
       "standard-global": {
@@ -2404,7 +2417,8 @@
           "Spain Central",
           "Sweden Central",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "datazone-standard": {
@@ -2628,7 +2642,8 @@
           "Spain Central",
           "Sweden Central",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "datazone-standard": {
@@ -2830,7 +2845,8 @@
           "Spain Central",
           "Sweden Central",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "datazone-standard": {
@@ -3031,7 +3047,8 @@
           "Spain Central",
           "Sweden Central",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "datazone-standard": {

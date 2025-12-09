@@ -1,6 +1,213 @@
 {
-  "timestamp": "2025-12-08T18:49:27.216041+00:00",
-  "changes": {},
+  "timestamp": "2025-12-09T02:21:28.704251+00:00",
+  "changes": {
+    "gpt-4.1": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "label": "Datazone provisioned managed",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-4.1-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "label": "Datazone provisioned managed",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-4.1-nano": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "label": "Datazone provisioned managed",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-4o": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "label": "Datazone provisioned managed",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-4o-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "label": "Datazone provisioned managed",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-5": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "label": "Datazone provisioned managed",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-5-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "label": "Datazone provisioned managed",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.1": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "label": "Datazone provisioned managed",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.1-codex": {
+      "all": {
+        "added": [
+          "Central US",
+          "West Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "label": "Datazone provisioned managed",
+          "added": [
+            "West Europe"
+          ],
+          "removed": []
+        },
+        "provisioned-global": {
+          "label": "Provisioned global",
+          "added": [
+            "Central US",
+            "West Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "o1": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "label": "Datazone provisioned managed",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "o3": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "label": "Datazone provisioned managed",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "o3-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "label": "Datazone provisioned managed",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "o4-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "label": "Datazone provisioned managed",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    }
+  },
   "current": {
     "codex-mini": {
       "all": [
@@ -445,7 +652,8 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "datazone-standard": {
@@ -642,7 +850,8 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "datazone-standard": {
@@ -837,7 +1046,8 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "datazone-standard": {
@@ -1025,7 +1235,8 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "datazone-standard": {
@@ -1299,7 +1510,8 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "datazone-standard": {
@@ -1640,7 +1852,8 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "datazone-standard": {
@@ -1859,7 +2072,8 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "datazone-standard": {
@@ -2097,7 +2311,8 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "datazone-standard": {
@@ -2168,18 +2383,21 @@
       "all": [
         "Australia East",
         "Canada East",
+        "Central US",
         "East US 2",
         "Japan East",
         "Korea Central",
         "Sweden Central",
         "Switzerland North",
-        "UK South"
+        "UK South",
+        "West Europe"
       ],
       "skus": {
         "datazone-provisioned-managed": {
           "label": "Datazone provisioned managed",
           "regions": [
-            "East US 2"
+            "East US 2",
+            "West Europe"
           ]
         },
         "provisioned-global": {
@@ -2187,11 +2405,13 @@
           "regions": [
             "Australia East",
             "Canada East",
+            "Central US",
             "East US 2",
             "Japan East",
             "Korea Central",
             "Switzerland North",
-            "UK South"
+            "UK South",
+            "West Europe"
           ]
         },
         "standard-global": {
@@ -2407,7 +2627,8 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "datazone-standard": {
@@ -2631,7 +2852,8 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "datazone-standard": {
@@ -2833,7 +3055,8 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "datazone-standard": {
@@ -3034,7 +3257,8 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "datazone-standard": {
