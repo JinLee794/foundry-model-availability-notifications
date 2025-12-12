@@ -1,6 +1,699 @@
 {
-  "timestamp": "2025-12-11T18:51:07.717842+00:00",
-  "changes": {},
+  "timestamp": "2025-12-12T02:25:26.663005+00:00",
+  "changes": {
+    "computer-use-preview": {
+      "all": {
+        "added": [
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "Spain Central",
+          "Switzerland North",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "Spain Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-4.1-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [],
+          "removed": [
+            "Southeast Asia",
+            "Switzerland West"
+          ]
+        }
+      }
+    },
+    "gpt-4.1-nano": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [],
+          "removed": [
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "Southeast Asia",
+            "Spain Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US"
+          ]
+        }
+      }
+    },
+    "gpt-4o-audio-preview": {
+      "all": {
+        "added": [],
+        "removed": [
+          "Sweden Central"
+        ]
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [],
+          "removed": [
+            "Sweden Central"
+          ]
+        }
+      }
+    },
+    "gpt-4o-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [],
+          "removed": [
+            "Southeast Asia",
+            "Switzerland West"
+          ]
+        }
+      }
+    },
+    "gpt-4o-mini-tts": {
+      "all": {
+        "added": [
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "Sweden Central"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-4o-transcribe-diarize": {
+      "all": {
+        "added": [],
+        "removed": [
+          "Sweden Central"
+        ]
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [],
+          "removed": [
+            "Sweden Central"
+          ]
+        }
+      }
+    },
+    "gpt-5-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [],
+          "removed": [
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US"
+          ]
+        }
+      }
+    },
+    "gpt-5-nano": {
+      "all": {
+        "added": [],
+        "removed": [
+          "Japan East",
+          "Korea Central",
+          "Norway East",
+          "South Africa North",
+          "South India",
+          "Southeast Asia",
+          "Switzerland North",
+          "UAE North",
+          "UK South"
+        ]
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [],
+          "removed": [
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US"
+          ]
+        }
+      }
+    },
+    "gpt-5-pro": {
+      "all": {
+        "added": [
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Southeast Asia",
+          "Spain Central",
+          "Switzerland North",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.1-codex-mini": {
+      "all": {
+        "added": [
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Southeast Asia",
+          "Spain Central",
+          "Switzerland North",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.2": {
+      "all": {
+        "added": [
+          "East US 2",
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.2-chat": {
+      "all": {
+        "added": [
+          "East US 2",
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-audio": {
+      "all": {
+        "added": [
+          "Norway East",
+          "West US"
+        ],
+        "removed": [
+          "Sweden Central"
+        ]
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "Norway East",
+            "West US"
+          ],
+          "removed": [
+            "Sweden Central"
+          ]
+        }
+      }
+    },
+    "gpt-image-1": {
+      "all": {
+        "added": [
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Southeast Asia",
+          "Spain Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UK South",
+          "West Europe",
+          "West US"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UK South",
+            "West Europe",
+            "West US"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-image-1-mini": {
+      "all": {
+        "added": [],
+        "removed": [
+          "Poland Central",
+          "UAE North"
+        ]
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [],
+          "removed": [
+            "Poland Central",
+            "UAE North"
+          ]
+        }
+      }
+    },
+    "gpt-realtime": {
+      "all": {
+        "added": [
+          "Poland Central",
+          "UAE North"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "Poland Central",
+            "UAE North"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "model-router": {
+      "all": {
+        "added": [
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Southeast Asia",
+          "Spain Central",
+          "Switzerland North",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "o1-mini": {
+      "all": {
+        "added": [
+          "Japan East",
+          "Korea Central",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South India",
+          "Southeast Asia",
+          "Spain Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "Japan East",
+            "Korea Central",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "o3": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [],
+          "removed": [
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Switzerland North",
+            "UK South",
+            "West Europe",
+            "West US"
+          ]
+        }
+      }
+    },
+    "o3-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [],
+          "removed": [
+            "Japan East",
+            "Korea Central",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South India",
+            "Spain Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe"
+          ]
+        }
+      }
+    },
+    "o4-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "Switzerland West"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "text-embedding-3-large": {
+      "all": {
+        "added": [],
+        "removed": [
+          "North Central US",
+          "South Central US",
+          "West Europe",
+          "West US"
+        ]
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [],
+          "removed": [
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Spain Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US"
+          ]
+        }
+      }
+    },
+    "text-embedding-ada-002": {
+      "all": {
+        "added": [],
+        "removed": [
+          "Korea Central",
+          "Poland Central",
+          "Spain Central"
+        ]
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [],
+          "removed": [
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Spain Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US"
+          ]
+        }
+      }
+    },
+    "o3-deep-research": {
+      "all": {
+        "added": [],
+        "removed": [
+          "Norway East",
+          "West US"
+        ]
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [],
+          "removed": [
+            "Norway East",
+            "West US"
+          ],
+          "sku_removed": true
+        }
+      },
+      "model_removed": true
+    }
+  },
   "current": {
     "codex-mini": {
       "all": [
@@ -22,16 +715,42 @@
     "computer-use-preview": {
       "all": [
         "East US 2",
+        "Japan East",
+        "Korea Central",
+        "North Central US",
+        "Norway East",
+        "Poland Central",
+        "South Africa North",
+        "South Central US",
         "South India",
-        "Sweden Central"
+        "Spain Central",
+        "Sweden Central",
+        "Switzerland North",
+        "UAE North",
+        "UK South",
+        "West Europe",
+        "West US"
       ],
       "skus": {
         "standard-global": {
           "label": "Standard global deployments",
           "regions": [
             "East US 2",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
             "South India",
-            "Sweden Central"
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US"
           ]
         }
       }
@@ -780,11 +1499,9 @@
             "South Africa North",
             "South Central US",
             "South India",
-            "Southeast Asia",
             "Spain Central",
             "Sweden Central",
             "Switzerland North",
-            "Switzerland West",
             "UAE North",
             "UK South",
             "West Europe",
@@ -962,23 +1679,8 @@
             "France Central",
             "Germany West Central",
             "Italy North",
-            "Japan East",
-            "Korea Central",
-            "North Central US",
-            "Norway East",
-            "Poland Central",
-            "South Africa North",
-            "South Central US",
             "South India",
-            "Southeast Asia",
-            "Spain Central",
-            "Sweden Central",
-            "Switzerland North",
-            "Switzerland West",
-            "UAE North",
-            "UK South",
-            "West Europe",
-            "West US"
+            "Sweden Central"
           ]
         }
       }
@@ -1245,15 +1947,13 @@
     },
     "gpt-4o-audio-preview": {
       "all": [
-        "East US 2",
-        "Sweden Central"
+        "East US 2"
       ],
       "skus": {
         "standard-global": {
           "label": "Standard global deployments",
           "regions": [
-            "East US 2",
-            "Sweden Central"
+            "East US 2"
           ]
         }
       }
@@ -1459,11 +2159,9 @@
             "South Africa North",
             "South Central US",
             "South India",
-            "Southeast Asia",
             "Spain Central",
             "Sweden Central",
             "Switzerland North",
-            "Switzerland West",
             "UAE North",
             "UK South",
             "West Europe",
@@ -1543,13 +2241,15 @@
     },
     "gpt-4o-mini-tts": {
       "all": [
-        "East US 2"
+        "East US 2",
+        "Sweden Central"
       ],
       "skus": {
         "standard-global": {
           "label": "Standard global deployments",
           "regions": [
-            "East US 2"
+            "East US 2",
+            "Sweden Central"
           ]
         }
       }
@@ -1586,15 +2286,13 @@
     },
     "gpt-4o-transcribe-diarize": {
       "all": [
-        "East US 2",
-        "Sweden Central"
+        "East US 2"
       ],
       "skus": {
         "standard-global": {
           "label": "Standard global deployments",
           "regions": [
-            "East US 2",
-            "Sweden Central"
+            "East US 2"
           ]
         }
       }
@@ -1940,22 +2638,7 @@
             "France Central",
             "Germany West Central",
             "Italy North",
-            "Japan East",
-            "Korea Central",
-            "North Central US",
-            "Norway East",
-            "Poland Central",
-            "South Africa North",
-            "South Central US",
-            "South India",
-            "Southeast Asia",
-            "Spain Central",
-            "Sweden Central",
-            "Switzerland North",
-            "UAE North",
-            "UK South",
-            "West Europe",
-            "West US"
+            "Sweden Central"
           ]
         }
       }
@@ -1971,20 +2654,11 @@
         "France Central",
         "Germany West Central",
         "Italy North",
-        "Japan East",
-        "Korea Central",
         "North Central US",
-        "Norway East",
         "Poland Central",
-        "South Africa North",
         "South Central US",
-        "South India",
-        "Southeast Asia",
         "Spain Central",
         "Sweden Central",
-        "Switzerland North",
-        "UAE North",
-        "UK South",
         "West Europe",
         "West US",
         "West US 3"
@@ -2021,6 +2695,38 @@
             "France Central",
             "Germany West Central",
             "Italy North",
+            "Sweden Central"
+          ]
+        }
+      }
+    },
+    "gpt-5-pro": {
+      "all": [
+        "Central US",
+        "East US 2",
+        "Japan East",
+        "Korea Central",
+        "North Central US",
+        "Norway East",
+        "Poland Central",
+        "South Africa North",
+        "South Central US",
+        "South India",
+        "Southeast Asia",
+        "Spain Central",
+        "Sweden Central",
+        "Switzerland North",
+        "UAE North",
+        "UK South",
+        "West Europe",
+        "West US"
+      ],
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "regions": [
+            "Central US",
+            "East US 2",
             "Japan East",
             "Korea Central",
             "North Central US",
@@ -2037,23 +2743,6 @@
             "UK South",
             "West Europe",
             "West US"
-          ]
-        }
-      }
-    },
-    "gpt-5-pro": {
-      "all": [
-        "Central US",
-        "East US 2",
-        "Sweden Central"
-      ],
-      "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
-          "regions": [
-            "Central US",
-            "East US 2",
-            "Sweden Central"
           ]
         }
       }
@@ -2219,6 +2908,66 @@
     "gpt-5.1-codex-mini": {
       "all": [
         "East US 2",
+        "Japan East",
+        "Korea Central",
+        "North Central US",
+        "Norway East",
+        "Poland Central",
+        "South Africa North",
+        "South Central US",
+        "South India",
+        "Southeast Asia",
+        "Spain Central",
+        "Sweden Central",
+        "Switzerland North",
+        "UAE North",
+        "UK South",
+        "West Europe",
+        "West US"
+      ],
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "regions": [
+            "East US 2",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US"
+          ]
+        }
+      }
+    },
+    "gpt-5.2": {
+      "all": [
+        "East US 2",
+        "Sweden Central"
+      ],
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "regions": [
+            "East US 2",
+            "Sweden Central"
+          ]
+        }
+      }
+    },
+    "gpt-5.2-chat": {
+      "all": [
+        "East US 2",
         "Sweden Central"
       ],
       "skus": {
@@ -2235,7 +2984,8 @@
       "all": [
         "Central US",
         "East US 2",
-        "Sweden Central"
+        "Norway East",
+        "West US"
       ],
       "skus": {
         "standard-global": {
@@ -2243,7 +2993,8 @@
           "regions": [
             "Central US",
             "East US 2",
-            "Sweden Central"
+            "Norway East",
+            "West US"
           ]
         }
       }
@@ -2268,9 +3019,23 @@
     "gpt-image-1": {
       "all": [
         "East US 2",
+        "Japan East",
+        "Korea Central",
+        "North Central US",
+        "Norway East",
         "Poland Central",
+        "South Africa North",
+        "South Central US",
+        "South India",
+        "Southeast Asia",
+        "Spain Central",
         "Sweden Central",
+        "Switzerland North",
+        "Switzerland West",
         "UAE North",
+        "UK South",
+        "West Europe",
+        "West US",
         "West US 3"
       ],
       "skus": {
@@ -2278,9 +3043,23 @@
           "label": "Standard global deployments",
           "regions": [
             "East US 2",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
             "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
             "Sweden Central",
-            "UAE North"
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US"
           ]
         },
         "standard-image-generation": {
@@ -2296,18 +3075,14 @@
         "East US",
         "East US 2",
         "North Central US",
-        "Poland Central",
-        "Sweden Central",
-        "UAE North"
+        "Sweden Central"
       ],
       "skus": {
         "standard-global": {
           "label": "Standard global deployments",
           "regions": [
             "East US 2",
-            "Poland Central",
-            "Sweden Central",
-            "UAE North"
+            "Sweden Central"
           ]
         },
         "standard-image-generation": {
@@ -2323,7 +3098,9 @@
       "all": [
         "Central US",
         "East US 2",
-        "Sweden Central"
+        "Poland Central",
+        "Sweden Central",
+        "UAE North"
       ],
       "skus": {
         "standard-global": {
@@ -2331,7 +3108,9 @@
           "regions": [
             "Central US",
             "East US 2",
-            "Sweden Central"
+            "Poland Central",
+            "Sweden Central",
+            "UAE North"
           ]
         }
       }
@@ -2356,7 +3135,22 @@
     "model-router": {
       "all": [
         "East US 2",
-        "Sweden Central"
+        "Japan East",
+        "Korea Central",
+        "North Central US",
+        "Norway East",
+        "Poland Central",
+        "South Africa North",
+        "South Central US",
+        "South India",
+        "Southeast Asia",
+        "Spain Central",
+        "Sweden Central",
+        "Switzerland North",
+        "UAE North",
+        "UK South",
+        "West Europe",
+        "West US"
       ],
       "skus": {
         "datazone-standard": {
@@ -2370,7 +3164,22 @@
           "label": "Standard global deployments",
           "regions": [
             "East US 2",
-            "Sweden Central"
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US"
           ]
         }
       }
@@ -2532,9 +3341,22 @@
         "Central US",
         "East US",
         "East US 2",
+        "Japan East",
+        "Korea Central",
         "North Central US",
+        "Norway East",
+        "Poland Central",
+        "South Africa North",
         "South Central US",
+        "South India",
+        "Southeast Asia",
+        "Spain Central",
         "Sweden Central",
+        "Switzerland North",
+        "Switzerland West",
+        "UAE North",
+        "UK South",
+        "West Europe",
         "West US",
         "West US 3"
       ],
@@ -2556,9 +3378,22 @@
             "Central US",
             "East US",
             "East US 2",
+            "Japan East",
+            "Korea Central",
             "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
             "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
             "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
             "West US"
           ]
         },
@@ -2768,37 +3603,9 @@
             "France Central",
             "Germany West Central",
             "Italy North",
-            "Japan East",
-            "Korea Central",
-            "North Central US",
-            "Norway East",
             "Poland Central",
-            "South Africa North",
-            "South Central US",
-            "South India",
-            "Southeast Asia",
-            "Spain Central",
             "Sweden Central",
-            "Switzerland North",
-            "UAE North",
-            "UK South",
-            "West Europe",
-            "West US"
-          ]
-        }
-      }
-    },
-    "o3-deep-research": {
-      "all": [
-        "Norway East",
-        "West US"
-      ],
-      "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
-          "regions": [
-            "Norway East",
-            "West US"
+            "UAE North"
           ]
         }
       }
@@ -2968,20 +3775,9 @@
             "France Central",
             "Germany West Central",
             "Italy North",
-            "Japan East",
-            "Korea Central",
             "North Central US",
-            "Norway East",
-            "Poland Central",
-            "South Africa North",
             "South Central US",
-            "South India",
-            "Spain Central",
             "Sweden Central",
-            "Switzerland North",
-            "UAE North",
-            "UK South",
-            "West Europe",
             "West US"
           ]
         }
@@ -3186,6 +3982,7 @@
             "Spain Central",
             "Sweden Central",
             "Switzerland North",
+            "Switzerland West",
             "UAE North",
             "UK South",
             "West Europe",
@@ -3243,11 +4040,9 @@
         "Italy North",
         "Japan East",
         "Korea Central",
-        "North Central US",
         "Norway East",
         "Poland Central",
         "South Africa North",
-        "South Central US",
         "South India",
         "Southeast Asia",
         "Spain Central",
@@ -3255,8 +4050,6 @@
         "Switzerland North",
         "UAE North",
         "UK South",
-        "West Europe",
-        "West US",
         "West US 3"
       ],
       "skus": {
@@ -3293,21 +4086,7 @@
             "France Central",
             "Germany West Central",
             "Italy North",
-            "Japan East",
-            "Korea Central",
-            "North Central US",
-            "Norway East",
-            "Poland Central",
-            "South Africa North",
-            "South Central US",
-            "South India",
-            "Spain Central",
-            "Sweden Central",
-            "Switzerland North",
-            "UAE North",
-            "UK South",
-            "West Europe",
-            "West US"
+            "Sweden Central"
           ]
         },
         "standard-models": {
@@ -3432,14 +4211,11 @@
         "Germany West Central",
         "Italy North",
         "Japan East",
-        "Korea Central",
         "North Central US",
         "Norway East",
-        "Poland Central",
         "South Africa North",
         "South Central US",
         "South India",
-        "Spain Central",
         "Sweden Central",
         "Switzerland North",
         "UAE North",
@@ -3483,21 +4259,7 @@
             "France Central",
             "Germany West Central",
             "Italy North",
-            "Japan East",
-            "Korea Central",
-            "North Central US",
-            "Norway East",
-            "Poland Central",
-            "South Africa North",
-            "South Central US",
-            "South India",
-            "Spain Central",
-            "Sweden Central",
-            "Switzerland North",
-            "UAE North",
-            "UK South",
-            "West Europe",
-            "West US"
+            "Sweden Central"
           ]
         },
         "standard-models": {
