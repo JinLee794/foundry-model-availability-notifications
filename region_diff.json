@@ -1,6 +1,47 @@
 {
-  "timestamp": "2025-12-17T02:21:07.393248+00:00",
-  "changes": {},
+  "timestamp": "2025-12-17T06:52:23.634017+00:00",
+  "changes": {
+    "gpt-image-1": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-image-generation": {
+          "label": "Standard image generation",
+          "added": [
+            "UAE North"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-image-1.5": {
+      "all": {
+        "added": [
+          "East US 2",
+          "Poland Central",
+          "Sweden Central",
+          "UAE North",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-image-generation": {
+          "label": "Standard image generation",
+          "added": [
+            "East US 2",
+            "Poland Central",
+            "Sweden Central",
+            "UAE North",
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    }
+  },
   "current": {
     "codex-mini": {
       "all": [
@@ -2372,6 +2413,7 @@
         "standard-image-generation": {
           "label": "Standard image generation",
           "regions": [
+            "UAE North",
             "West US 3"
           ]
         }
@@ -2397,6 +2439,27 @@
           "regions": [
             "East US",
             "North Central US"
+          ]
+        }
+      }
+    },
+    "gpt-image-1.5": {
+      "all": [
+        "East US 2",
+        "Poland Central",
+        "Sweden Central",
+        "UAE North",
+        "West US 3"
+      ],
+      "skus": {
+        "standard-image-generation": {
+          "label": "Standard image generation",
+          "regions": [
+            "East US 2",
+            "Poland Central",
+            "Sweden Central",
+            "UAE North",
+            "West US 3"
           ]
         }
       }
