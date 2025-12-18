@@ -115,7 +115,7 @@ jobs:
                 }
                 if (ch?.model_removed) bodyLines.push('  - model removed');
             }
-            bodyLines.push('\n/cc @jinle @org/team-name'); // adjust mentions
+            bodyLines.push('\n/cc @JinLee794 @org/team-name'); // adjust mentions
 
             // find existing open issue
             const issues = await github.paginate(github.rest.issues.listForRepo, {owner, repo, labels: label, state: 'open'});
