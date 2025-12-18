@@ -131,6 +131,6 @@ jobs:
             if (issues.length) {
               await github.rest.issues.createComment({owner, repo, issue_number: issues[0].number, body: bodyLines.join('\n')});
             } else {
-              await github.rest.issues.create({owner, repo, title, body: bodyLines.join('\n'), labels: [label], assignees: ['jinle']});
+              await github.rest.issues.create({owner, repo, title, body: bodyLines.join('\n'), labels: [label], assignees: ['JinLee794']});
             }
         
