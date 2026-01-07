@@ -2257,9 +2257,17 @@
   "gpt-5.2": {
     "all": [
       "East US 2",
-      "Sweden Central"
+      "Sweden Central",
+      "UK South"
     ],
     "skus": {
+      "provisioned-global": {
+        "label": "Provisioned global",
+        "regions": [
+          "East US 2",
+          "UK South"
+        ]
+      },
       "standard-global": {
         "label": "Standard global deployments",
         "regions": [
