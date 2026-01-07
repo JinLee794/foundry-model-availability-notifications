@@ -1,6 +1,24 @@
 {
-  "timestamp": "2026-01-07T13:10:08.106650+00:00",
-  "changes": {},
+  "timestamp": "2026-01-07T18:52:45.049781+00:00",
+  "changes": {
+    "gpt-4o-mini-tts": {
+      "all": {
+        "added": [],
+        "removed": [
+          "Sweden Central"
+        ]
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [],
+          "removed": [
+            "Sweden Central"
+          ]
+        }
+      }
+    }
+  },
   "current": {
     "codex-mini": {
       "all": [
@@ -1548,15 +1566,13 @@
     },
     "gpt-4o-mini-tts": {
       "all": [
-        "East US 2",
-        "Sweden Central"
+        "East US 2"
       ],
       "skus": {
         "standard-global": {
           "label": "Standard global deployments",
           "regions": [
-            "East US 2",
-            "Sweden Central"
+            "East US 2"
           ]
         }
       }

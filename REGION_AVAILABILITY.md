@@ -1,6 +1,6 @@
 # AI Foundry Model Availability by Region
 
-_Last updated: 2026-01-07 02:29 UTC_
+_Last updated: 2026-01-07 18:52 UTC_
 
 - Models tracked: **56**
 - Regions in snapshot: **28**
@@ -81,7 +81,6 @@ SKU labels observed:
 | gpt-4o-mini-audio-preview | 🔴 Emerging | 2 | 2 (Global coverage, Standard global deployments) | `East US`, `East US 2` |
 | gpt-4o-mini-realtime-preview | 🔴 Emerging | 2 | 2 (Global coverage, Standard global deployments) | `East US 2`, `Sweden Central` |
 | gpt-4o-mini-transcribe | 🔴 Emerging | 2 | 2 (Global coverage, Standard global deployments) | `East US 2`, `Sweden Central` |
-| gpt-4o-mini-tts | 🔴 Emerging | 2 | 2 (Global coverage, Standard global deployments) | `East US 2`, `Sweden Central` |
 | gpt-4o-realtime-preview | 🔴 Emerging | 2 | 2 (Global coverage, Standard global deployments) | `East US 2`, `Sweden Central` |
 | gpt-4o-transcribe | 🔴 Emerging | 2 | 2 (Global coverage, Standard global deployments) | `East US 2`, `Sweden Central` |
 | gpt-5.1-chat | 🔴 Emerging | 2 | 2 (Global coverage, Standard global deployments) | `East US 2`, `Sweden Central` |
@@ -89,6 +88,7 @@ SKU labels observed:
 | sora | 🔴 Emerging | 2 | 3 (Global coverage, Standard (all), Standard global deployments) | `East US 2`, `Sweden Central` |
 | sora-2 | 🔴 Emerging | 2 | 2 (Global coverage, Standard global deployments) | `East US 2`, `Sweden Central` |
 | gpt-4o-audio-preview | 🔴 Emerging | 1 | 2 (Global coverage, Standard global deployments) | `East US 2` |
+| gpt-4o-mini-tts | 🔴 Emerging | 1 | 2 (Global coverage, Standard global deployments) | `East US 2` |
 | gpt-4o-transcribe-diarize | 🔴 Emerging | 1 | 2 (Global coverage, Standard global deployments) | `East US 2` |
 
 ## Regional rosters by model
@@ -1015,13 +1015,6 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>gpt-4o-mini-tts — 2 regions across 2 SKU labels</summary>
-
-- `East US 2` — Global coverage, Standard global deployments
-- `Sweden Central` — Global coverage, Standard global deployments
-
-</details>
-<details>
 <summary>gpt-4o-realtime-preview — 2 regions across 2 SKU labels</summary>
 
 - `East US 2` — Global coverage, Standard global deployments
@@ -1070,6 +1063,12 @@ SKU labels observed:
 
 </details>
 <details>
+<summary>gpt-4o-mini-tts — 1 regions across 2 SKU labels</summary>
+
+- `East US 2` — Global coverage, Standard global deployments
+
+</details>
+<details>
 <summary>gpt-4o-transcribe-diarize — 1 regions across 2 SKU labels</summary>
 
 - `East US 2` — Global coverage, Standard global deployments
@@ -1078,6 +1077,7 @@ SKU labels observed:
 
 ## Recent changes
 
+- **2026-01-07 18:52 UTC** — gpt-4o-mini-tts: Global coverage removed Sweden Central; Standard global deployments removed Sweden Central
 - **2026-01-07 02:29 UTC** — gpt-5.2: Global coverage added UK South; Provisioned global added East US 2 and UK South
 - **2025-12-17 06:52 UTC** — gpt-image-1: Standard image generation added UAE North | gpt-image-1.5: Global coverage added East US 2, Poland Central, Sweden Central, UAE North, and West US 3; Standard image generation added East US 2, Poland Central, Sweden Central, UAE North, and West US 3
 - **2025-12-12 02:25 UTC** — computer-use-preview: Global coverage added Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, Spain Central, Switzerland North, UAE North, UK South, West Europe, and West US; Standard global deployments added Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, Spain Central, Switzerland North, UAE North, UK South, West Europe, and West US | gpt-4.1-mini: Standard global deployments removed Southeast Asia and Switzerland West | gpt-4.1-nano: Standard global deployments removed Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US | gpt-4o-audio-preview: Global coverage removed Sweden Central; Standard global deployments removed Sweden Central | gpt-4o-mini: Standard global deployments removed Southeast Asia and Switzerland West | gpt-4o-mini-tts: Global coverage added Sweden Central; Standard global deployments added Sweden Central | gpt-4o-transcribe-diarize: Global coverage removed Sweden Central; Standard global deployments removed Sweden Central | gpt-5-mini: Standard global deployments removed Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Switzerland North, UAE North, UK South, West Europe, and West US | gpt-5-nano: Global coverage removed Japan East, Korea Central, Norway East, South Africa North, South India, Southeast Asia, Switzerland North, UAE North, and UK South; Standard global deployments removed Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Switzerland North, UAE North, UK South, West Europe, and West US | gpt-5-pro: Global coverage added Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Switzerland North, UAE North, UK South, West Europe, and West US; Standard global deployments added Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Switzerland North, UAE North, UK South, West Europe, and West US | gpt-5.1-codex-mini: Global coverage added Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Switzerland North, UAE North, UK South, West Europe, and West US; Standard global deployments added Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Switzerland North, UAE North, UK South, West Europe, and West US | gpt-5.2: Global coverage added East US 2 and Sweden Central; Standard global deployments added East US 2 and Sweden Central | gpt-5.2-chat: Global coverage added East US 2 and Sweden Central; Standard global deployments added East US 2 and Sweden Central | gpt-audio: Global coverage added Norway East and West US; Global coverage removed Sweden Central; Standard global deployments added Norway East and West US; Standard global deployments removed Sweden Central | gpt-image-1: Global coverage added Japan East, Korea Central, North Central US, Norway East, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UK South, West Europe, and West US; Standard global deployments added Japan East, Korea Central, North Central US, Norway East, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UK South, West Europe, and West US | gpt-image-1-mini: Global coverage removed Poland Central and UAE North; Standard global deployments removed Poland Central and UAE North | gpt-realtime: Global coverage added Poland Central and UAE North; Standard global deployments added Poland Central and UAE North | model-router: Global coverage added Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Switzerland North, UAE North, UK South, West Europe, and West US; Standard global deployments added Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Switzerland North, UAE North, UK South, West Europe, and West US | o1-mini: Global coverage added Japan East, Korea Central, Norway East, Poland Central, South Africa North, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, and West Europe; Standard global deployments added Japan East, Korea Central, Norway East, Poland Central, South Africa North, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, and West Europe | o3: Standard global deployments removed Japan East, Korea Central, North Central US, Norway East, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Switzerland North, UK South, West Europe, and West US | o3-deep-research: Global coverage removed Norway East and West US; Standard global deployments removed Norway East and West US | o3-mini: Standard global deployments removed Japan East, Korea Central, Norway East, Poland Central, South Africa North, South India, Spain Central, Switzerland North, UAE North, UK South, and West Europe | o4-mini: Standard global deployments added Switzerland West | text-embedding-3-large: Global coverage removed North Central US, South Central US, West Europe, and West US; Standard global deployments removed Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Switzerland North, UAE North, UK South, West Europe, and West US | text-embedding-ada-002: Global coverage removed Korea Central, Poland Central, and Spain Central; Standard global deployments removed Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Switzerland North, UAE North, UK South, West Europe, and West US

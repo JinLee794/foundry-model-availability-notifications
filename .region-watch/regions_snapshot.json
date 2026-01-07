@@ -1545,15 +1545,13 @@
   },
   "gpt-4o-mini-tts": {
     "all": [
-      "East US 2",
-      "Sweden Central"
+      "East US 2"
     ],
     "skus": {
       "standard-global": {
         "label": "Standard global deployments",
         "regions": [
-          "East US 2",
-          "Sweden Central"
+          "East US 2"
         ]
       }
     }
