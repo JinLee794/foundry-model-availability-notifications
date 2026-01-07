@@ -1,25 +1,6 @@
 {
-  "timestamp": "2026-01-07T02:29:54.361719+00:00",
-  "changes": {
-    "gpt-5.2": {
-      "all": {
-        "added": [
-          "UK South"
-        ],
-        "removed": []
-      },
-      "skus": {
-        "provisioned-global": {
-          "label": "Provisioned global",
-          "added": [
-            "East US 2",
-            "UK South"
-          ],
-          "removed": []
-        }
-      }
-    }
-  },
+  "timestamp": "2026-01-07T06:53:41.874395+00:00",
+  "changes": {},
   "current": {
     "codex-mini": {
       "all": [
