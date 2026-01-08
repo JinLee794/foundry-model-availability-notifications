@@ -1,24 +1,6 @@
 {
-  "timestamp": "2026-01-07T18:52:45.049781+00:00",
-  "changes": {
-    "gpt-4o-mini-tts": {
-      "all": {
-        "added": [],
-        "removed": [
-          "Sweden Central"
-        ]
-      },
-      "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
-          "added": [],
-          "removed": [
-            "Sweden Central"
-          ]
-        }
-      }
-    }
-  },
+  "timestamp": "2026-01-08T02:29:55.077890+00:00",
+  "changes": {},
   "current": {
     "codex-mini": {
       "all": [
