@@ -87,6 +87,8 @@ jobs:
           script: |
             const fs = require('fs');
             const diff = JSON.parse(fs.readFileSync('region_diff.json','utf8'));
+            const timestamp = diff.timestamp || new Date().toISOString();
+            
             const hasChange = Object.values(diff.changes || {}).some(c => {
               const overallAdded = c?.all?.added ?? [];
               const overallRemoved = c?.all?.removed ?? [];
@@ -99,34 +101,137 @@ jobs:
             const owner = context.repo.owner, repo = context.repo.repo;
             const title = 'Azure AI model region watch';
             const label = 'region-watch';
-            const bodyLines = ['Model region changes detected:'];
-            for (const [m, ch] of Object.entries(diff.changes)) {
-                const added = ch?.all?.added ?? [];
-                const removed = ch?.all?.removed ?? [];
-                if (added.length)  bodyLines.push(`• ${m}: added -> ${added.join(', ')}`);
-                if (removed.length) bodyLines.push(`• ${m}: removed -> ${removed.join(', ')}`);
-                for (const [skuKey, skuChange] of Object.entries(ch?.skus || {})) {
-                  const label = skuChange?.label || skuKey;
-                  const skuAdded = skuChange?.added ?? [];
-                  const skuRemoved = skuChange?.removed ?? [];
-                  if (skuAdded.length) bodyLines.push(`  - ${label} (${skuKey}): added -> ${skuAdded.join(', ')}`);
-                  if (skuRemoved.length) bodyLines.push(`  - ${label} (${skuKey}): removed -> ${skuRemoved.join(', ')}`);
-                  if (skuChange?.sku_removed) bodyLines.push(`  - ${label} (${skuKey}): sku removed`);
-                }
-                if (ch?.model_removed) bodyLines.push('  - model removed');
+            
+            // Build formatted markdown body
+            const formatRegionList = (regions) => regions.map(r => `\`${r}\``).join(', ');
+            
+            // Categorize changes
+            const modelsWithAdditions = [];
+            const modelsWithRemovals = [];
+            const modelsRemoved = [];
+            
+            for (const [model, ch] of Object.entries(diff.changes).sort((a, b) => a[0].localeCompare(b[0]))) {
+              const allAdded = ch?.all?.added ?? [];
+              const allRemoved = ch?.all?.removed ?? [];
+              const skuChanges = ch?.skus || {};
+              
+              let hasAdditions = allAdded.length > 0;
+              let hasRemovals = allRemoved.length > 0;
+              
+              for (const skuChange of Object.values(skuChanges)) {
+                if (skuChange?.added?.length) hasAdditions = true;
+                if (skuChange?.removed?.length || skuChange?.sku_removed) hasRemovals = true;
+              }
+              
+              if (ch?.model_removed) {
+                modelsRemoved.push(model);
+              } else {
+                if (hasAdditions) modelsWithAdditions.push(model);
+                if (hasRemovals) modelsWithRemovals.push(model);
+              }
             }
-            bodyLines.push('\n/cc @JinLee794 @org/team-name'); // adjust mentions
+            
+            // Build summary section
+            let body = `## 📊 Model Region Changes Detected\n\n`;
+            body += `**Timestamp:** ${timestamp}\n\n`;
+            
+            // Quick summary table
+            body += `### Summary\n\n`;
+            body += `| Category | Count | Models |\n`;
+            body += `|----------|-------|--------|\n`;
+            if (modelsWithAdditions.length) {
+              body += `| 🟢 **Regions Added** | ${modelsWithAdditions.length} | ${modelsWithAdditions.slice(0, 5).map(m => `\`${m}\``).join(', ')}${modelsWithAdditions.length > 5 ? ` +${modelsWithAdditions.length - 5} more` : ''} |\n`;
+            }
+            if (modelsWithRemovals.length) {
+              body += `| 🔴 **Regions Removed** | ${modelsWithRemovals.length} | ${modelsWithRemovals.slice(0, 5).map(m => `\`${m}\``).join(', ')}${modelsWithRemovals.length > 5 ? ` +${modelsWithRemovals.length - 5} more` : ''} |\n`;
+            }
+            if (modelsRemoved.length) {
+              body += `| ⚠️ **Models Removed** | ${modelsRemoved.length} | ${modelsRemoved.map(m => `\`${m}\``).join(', ')} |\n`;
+            }
+            
+            body += `\n---\n\n`;
+            body += `### Detailed Changes by Model\n\n`;
+            
+            // Detailed changes per model
+            for (const [model, ch] of Object.entries(diff.changes).sort((a, b) => a[0].localeCompare(b[0]))) {
+              const allAdded = ch?.all?.added ?? [];
+              const allRemoved = ch?.all?.removed ?? [];
+              const skuChanges = ch?.skus || {};
+              
+              // Skip if no actual changes
+              let hasChanges = allAdded.length > 0 || allRemoved.length > 0 || ch?.model_removed;
+              for (const skuChange of Object.values(skuChanges)) {
+                if (skuChange?.added?.length || skuChange?.removed?.length || skuChange?.sku_removed) {
+                  hasChanges = true;
+                  break;
+                }
+              }
+              if (!hasChanges) continue;
+              
+              body += `<details>\n<summary><strong>📦 ${model}</strong></summary>\n\n`;
+              
+              if (ch?.model_removed) {
+                body += `> ⚠️ **This model has been removed**\n\n`;
+              } else {
+                // Overall region changes
+                if (allAdded.length || allRemoved.length) {
+                  body += `#### Overall Availability\n\n`;
+                  if (allAdded.length) {
+                    body += `🟢 **Added:** ${formatRegionList(allAdded.sort())}\n\n`;
+                  }
+                  if (allRemoved.length) {
+                    body += `🔴 **Removed:** ${formatRegionList(allRemoved.sort())}\n\n`;
+                  }
+                }
+                
+                // SKU-specific changes
+                const skuEntries = Object.entries(skuChanges).filter(([_, sc]) => 
+                  sc?.added?.length || sc?.removed?.length || sc?.sku_removed
+                );
+                
+                if (skuEntries.length) {
+                  body += `#### SKU-Specific Changes\n\n`;
+                  body += `| SKU Type | Change | Regions |\n`;
+                  body += `|----------|--------|----------|\n`;
+                  
+                  for (const [skuKey, skuChange] of skuEntries.sort((a, b) => a[0].localeCompare(b[0]))) {
+                    const skuLabel = skuChange?.label || skuKey;
+                    const skuAdded = skuChange?.added ?? [];
+                    const skuRemoved = skuChange?.removed ?? [];
+                    
+                    if (skuAdded.length) {
+                      body += `| ${skuLabel} | 🟢 Added | ${formatRegionList(skuAdded.sort())} |\n`;
+                    }
+                    if (skuRemoved.length) {
+                      body += `| ${skuLabel} | 🔴 Removed | ${formatRegionList(skuRemoved.sort())} |\n`;
+                    }
+                    if (skuChange?.sku_removed) {
+                      body += `| ${skuLabel} | ⚠️ SKU Removed | — |\n`;
+                    }
+                  }
+                  body += `\n`;
+                }
+              }
+              
+              body += `</details>\n\n`;
+            }
+            
+            // Footer
+            body += `---\n\n`;
+            body += `📖 [View full availability dashboard](https://${owner}.github.io/${repo}/)\n\n`;
+            body += `/cc @JinLee794\n`;
 
-            // find existing open issue
+            // Find existing open issue
             const issues = await github.paginate(github.rest.issues.listForRepo, {owner, repo, labels: label, state: 'open'});
             const assignees = (process.env.ISSUE_ASSIGNEES || '')
               .split(',')
               .map(v => v.trim())
               .filter(Boolean);
+            
             if (issues.length) {
-                await github.rest.issues.createComment({owner, repo, issue_number: issues[0].number, body: bodyLines.join('\n')});
+                await github.rest.issues.createComment({owner, repo, issue_number: issues[0].number, body});
             } else {
-                const issuePayload = {owner, repo, title, body: bodyLines.join('\n'), labels: [label]};
+                const issuePayload = {owner, repo, title, body, labels: [label]};
                 if (assignees.length) {
                   issuePayload.assignees = assignees;
                 }

@@ -1,0 +1,67 @@
+site_name: Azure OpenAI Foundry Model Availability
+site_description: Track Azure OpenAI Foundry model availability across regions and SKUs
+site_url: https://JinLee794.github.io/foundry-model-availability-notifications
+repo_url: https://github.com/JinLee794/foundry-model-availability-notifications
+repo_name: JinLee794/foundry-model-availability-notifications
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - search.highlight
+    - search.share
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/custom.css
+  - https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css
+  - https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.min.css
+
+extra_javascript:
+  - https://code.jquery.com/jquery-3.7.1.min.js
+  - https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js
+  - https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js
+  - https://cdn.datatables.net/buttons/2.4.2/js/buttons.colVis.min.js
+  - javascripts/tables.js
+
+nav:
+  - Home: index.md
+  - Models: models/index.md
+  - By Region: by-region.md
+  - By SKU Type: by-sku.md
+  - Change History: history.md
