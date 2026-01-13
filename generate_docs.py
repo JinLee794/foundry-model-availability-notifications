@@ -227,14 +227,14 @@ These models have the widest global deployment options:
 
 | Model | Global Regions | Details |
 |-------|----------------|---------|
-{chr(10).join([f"| **{m}** | {c} regions | [View details](models/{slugify(m)}/) |" for m, c in best_global])}
+{chr(10).join([f"| **{m}** | {c} regions | [View details](models/{slugify(m)}.md) |" for m, c in best_global])}
 
 ### Need Reserved Capacity (PTU)?
 These models support Provisioned Throughput Units:
 
 | Model | PTU Regions | Details |
-|-------|-------------|---------||
-{chr(10).join([f"| **{m}** | {c} regions | [View details](models/{slugify(m)}/) |" for m, c in best_provisioned]) if best_provisioned else "| No models currently | — | — |"}
+|-------|-------------|---------|
+{chr(10).join([f"| **{m}** | {c} regions | [View details](models/{slugify(m)}.md) |" for m, c in best_provisioned]) if best_provisioned else "| No models currently | — | — |"}
 
 ---
 
@@ -715,7 +715,7 @@ Available in **{sku['total_regions']}** regions across **{len(sku['models'])}** 
 |-------|---------|---------|
 """
             for model, region_count in sku['models'][:15]:
-                section += f"| {model} | {region_count} | [View](models/{slugify(model)}/) |\n"
+                section += f"| {model} | {region_count} | [View](models/{slugify(model)}.md) |\n"
             
             if len(sku['models']) > 15:
                 section += f"\n*...and {len(sku['models']) - 15} more models*\n"
