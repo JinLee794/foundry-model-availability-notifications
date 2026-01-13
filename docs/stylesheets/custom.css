@@ -284,20 +284,95 @@ table.dataTable thead th {
   white-space: nowrap;
 }
 
-/* Ensure full width table container */
+/* Ensure full width table container with horizontal scroll */
 .table-responsive {
   overflow-x: auto;
   width: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 
+/* DataTables scroll wrapper */
+.dataTables_scroll {
+  width: 100%;
+}
+
+.dataTables_scrollBody {
+  overflow-x: auto !important;
+}
+
+/* Make scrollbar more visible */
+.table-responsive::-webkit-scrollbar,
+.dataTables_scrollBody::-webkit-scrollbar {
+  height: 12px;
+}
+
+.table-responsive::-webkit-scrollbar-track,
+.dataTables_scrollBody::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 6px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb,
+.dataTables_scrollBody::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 6px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover,
+.dataTables_scrollBody::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+[data-md-color-scheme="slate"] .table-responsive::-webkit-scrollbar-track,
+[data-md-color-scheme="slate"] .dataTables_scrollBody::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+[data-md-color-scheme="slate"] .table-responsive::-webkit-scrollbar-thumb,
+[data-md-color-scheme="slate"] .dataTables_scrollBody::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+[data-md-color-scheme="slate"] .table-responsive::-webkit-scrollbar-thumb:hover,
+[data-md-color-scheme="slate"] .dataTables_scrollBody::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Force table to have minimum width to enable scrolling */
 #models-table {
-  min-width: 100%;
+  min-width: 1600px;
+  white-space: nowrap;
 }
 
-/* Allow region columns to expand */
-#models-table td:nth-child(n+5) {
+/* Prevent DataTables from collapsing columns */
+#models-table th,
+#models-table td {
+  white-space: normal;
+  min-width: 150px;
+}
+
+/* Model column can be narrower */
+#models-table th:first-child,
+#models-table td:first-child {
+  min-width: 120px;
+}
+
+/* Coverage column can be narrower */
+#models-table th:nth-child(2),
+#models-table td:nth-child(2) {
+  min-width: 100px;
+}
+
+/* SKU Types column */
+#models-table th:nth-child(3),
+#models-table td:nth-child(3) {
   min-width: 180px;
-  max-width: 300px;
+}
+
+/* Region columns need more space */
+#models-table th:nth-child(n+4):nth-child(-n+7),
+#models-table td:nth-child(n+4):nth-child(-n+7) {
+  min-width: 200px;
 }
 
 [data-md-color-scheme="slate"] table.dataTable thead th {

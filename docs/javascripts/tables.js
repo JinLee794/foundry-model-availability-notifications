@@ -23,6 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
       lengthMenu: [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],
       order: [],
       dom: 'lfrtip',
+      scrollX: true,
+      autoWidth: false,
       language: {
         search: "Search:",
         lengthMenu: "Show _MENU_ entries",
@@ -56,29 +58,29 @@ document.addEventListener('DOMContentLoaded', function() {
 window.filterModelsTable = function() {
   const $ = jQuery;
   const table = $('#models-table').DataTable();
-  
+
   const coverageVal = $('#coverage-filter').val() || '';
   const categoryVal = $('#category-filter').val() || '';
   const regionVal = $('#region-filter').val() || '';
-  
+
   // Clear existing searches
   table.columns().search('');
-  
+
   // Apply coverage filter (column 1 - Coverage)
   if (coverageVal) {
     table.column(1).search(coverageVal);
   }
-  
-  // Apply category filter (column 6 - hidden Categories)
+
+  // Apply category filter (column 7 - hidden Categories)
   if (categoryVal) {
-    table.column(6).search(categoryVal);
+    table.column(7).search(categoryVal);
   }
-  
-  // Apply region filter (column 7 - hidden Region List)
+
+  // Apply region filter (column 8 - hidden Region List)
   if (regionVal) {
-    table.column(7).search(regionVal);
+    table.column(8).search(regionVal);
   }
-  
+
   table.draw();
 };
 
@@ -249,6 +251,8 @@ if (typeof document$ !== 'undefined') {
             lengthMenu: [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],
             order: [],
             dom: 'lfrtip',
+            scrollX: true,
+            autoWidth: false,
             columnDefs: [
               { targets: 'hidden-col', visible: false }
             ]

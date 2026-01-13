@@ -310,7 +310,7 @@ def generate_model_index_page(
         regions = model_regions[model]
         count = len(regions)
         bucket_label, bucket_class, _ = pick_bucket(count)
-        
+
         # Count regions per SKU category
         cat_regions: Dict[str, Set[str]] = defaultdict(set)
         all_skus = []
@@ -318,20 +318,30 @@ def generate_model_index_page(
             cat = get_sku_category(sku)
             cat_regions[cat].update(sku_regions)
             all_skus.append(sku)
-        
+
+        # Create SKU category badges
+        sku_badges = []
+        category_order = ['Global', 'Datazone', 'Standard', 'Provisioned']
+        for cat in category_order:
+            if cat in cat_regions:
+                region_count = len(cat_regions[cat])
+                sku_badges.append(f'<span class="sku-badge sku-{cat.lower()}" title="{region_count} regions">{cat}</span>')
+        sku_badges_html = ' '.join(sku_badges) if sku_badges else '-'
+
         # Format region cells for each category
         global_cell = format_region_cell(cat_regions.get('Global', set()), 'Global')
         datazone_cell = format_region_cell(cat_regions.get('Datazone', set()), 'Datazone')
         standard_cell = format_region_cell(cat_regions.get('Standard', set()), 'Standard')
         provisioned_cell = format_region_cell(cat_regions.get('Provisioned', set()), 'Provisioned')
-        
+
         # Categories string for filtering
         cats_str = ", ".join(sorted(cat_regions.keys()))
         regions_str = ", ".join(sorted(regions))  # Hidden column for filtering
-        
+
         rows.append(f"""    <tr>
       <td><a href="{slugify(model)}/"><strong>{model}</strong></a></td>
       <td><span class="badge {bucket_class}">{bucket_label}</span></td>
+      <td>{sku_badges_html}</td>
       <td>{global_cell}</td>
       <td>{datazone_cell}</td>
       <td>{standard_cell}</td>
@@ -384,6 +394,7 @@ Complete catalog of AI Foundry models with availability details. Each SKU column
     <tr>
       <th>Model</th>
       <th>Coverage</th>
+      <th>SKU Types</th>
       <th>Global Regions</th>
       <th>Datazone Regions</th>
       <th>Standard Regions</th>

@@ -305,4 +305,4 @@ Available in **28** regions across **14** models.
 
 ---
 
-_Last updated: 2026-01-13 17:29 UTC_
+_Last updated: 2026-01-13 20:54 UTC_
