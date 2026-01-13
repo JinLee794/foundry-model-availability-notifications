@@ -227,14 +227,14 @@ These models have the widest global deployment options:
 
 | Model | Global Regions | Details |
 |-------|----------------|---------|
-{chr(10).join([f"| **{m}** | {c} regions | [View details](models/{slugify(m)}.md) |" for m, c in best_global])}
+{chr(10).join([f"| **{m}** | {c} regions | [View details](models/{slugify(m)}/) |" for m, c in best_global])}
 
 ### Need Reserved Capacity (PTU)?
 These models support Provisioned Throughput Units:
 
 | Model | PTU Regions | Details |
 |-------|-------------|---------|
-{chr(10).join([f"| **{m}** | {c} regions | [View details](models/{slugify(m)}.md) |" for m, c in best_provisioned]) if best_provisioned else "| No models currently | — | — |"}
+{chr(10).join([f"| **{m}** | {c} regions | [View details](models/{slugify(m)}/) |" for m, c in best_provisioned]) if best_provisioned else "| No models currently | — | — |"}
 
 ---
 
@@ -339,7 +339,7 @@ def generate_model_index_page(
         regions_str = ", ".join(sorted(regions))  # Hidden column for filtering
 
         rows.append(f"""    <tr>
-      <td><a href="{slugify(model)}.md"><strong>{model}</strong></a></td>
+      <td><a href="{slugify(model)}/"><strong>{model}</strong></a></td>
       <td><span class="badge {bucket_class}">{bucket_label}</span></td>
       <td>{sku_badges_html}</td>
       <td>{global_cell}</td>
@@ -572,7 +572,7 @@ def generate_by_region_page(
             
             all_rows.append(f"""    <tr>
       <td><strong>{region}</strong></td>
-      <td><a href="models/{slugify(model)}.md">{model}</a></td>
+      <td><a href="../models/{slugify(model)}/">{model}</a></td>
       <td>{', '.join(cats)}</td>
       <td>{', '.join(sku_list)}</td>
     </tr>""")
@@ -715,7 +715,7 @@ Available in **{sku['total_regions']}** regions across **{len(sku['models'])}** 
 |-------|---------|---------|
 """
             for model, region_count in sku['models'][:15]:
-                section += f"| {model} | {region_count} | [View](models/{slugify(model)}.md) |\n"
+                section += f"| {model} | {region_count} | [View](../models/{slugify(model)}/) |\n"
             
             if len(sku['models']) > 15:
                 section += f"\n*...and {len(sku['models']) - 15} more models*\n"
@@ -810,7 +810,7 @@ _Last updated: """ + f"{datetime.utcnow():%Y-%m-%d %H:%M UTC}_"
         table_rows.append(f'''    <tr>
       <td data-order="{timestamp:%Y%m%d%H%M%S}">{date_str}</td>
       <td>{type_badge}</td>
-      <td><a href="models/{slugify(model)}.md">{model}</a></td>
+      <td><a href="../models/{slugify(model)}/">{model}</a></td>
       <td>{region}</td>
       <td>{sku}</td>
     </tr>''')
