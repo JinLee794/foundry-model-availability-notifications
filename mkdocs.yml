@@ -29,11 +29,16 @@ theme:
     - search.highlight
     - search.share
     - content.tabs.link
+    - toc.integrate
   icon:
     repo: fontawesome/brands/github
 
 plugins:
   - search
+
+validation:
+  links:
+    unrecognized_links: ignore
 
 markdown_extensions:
   - tables

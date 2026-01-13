@@ -1,3 +1,71 @@
+// Fullscreen toggle functionality
+(function() {
+  function createFullscreenToggle() {
+    // Don't create if already exists
+    if (document.getElementById('fullscreen-toggle-btn')) return;
+    
+    const btn = document.createElement('button');
+    btn.id = 'fullscreen-toggle-btn';
+    btn.className = 'fullscreen-toggle';
+    btn.title = 'Toggle fullscreen mode';
+    btn.innerHTML = `
+      <svg class="expand-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>
+      </svg>
+      <svg class="collapse-icon" style="display:none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/>
+      </svg>
+    `;
+    
+    btn.addEventListener('click', function() {
+      document.body.classList.toggle('fullscreen-mode');
+      const isFullscreen = document.body.classList.contains('fullscreen-mode');
+      
+      // Toggle icons
+      btn.querySelector('.expand-icon').style.display = isFullscreen ? 'none' : 'block';
+      btn.querySelector('.collapse-icon').style.display = isFullscreen ? 'block' : 'none';
+      
+      // Update title
+      btn.title = isFullscreen ? 'Exit fullscreen mode' : 'Toggle fullscreen mode';
+      
+      // Save preference
+      localStorage.setItem('fullscreen-mode', isFullscreen ? 'true' : 'false');
+      
+      // Trigger resize for DataTables and recalculate columns
+      window.dispatchEvent(new Event('resize'));
+      
+      // Recalculate DataTables columns after a short delay
+      setTimeout(function() {
+        if (typeof jQuery !== 'undefined' && jQuery.fn.DataTable) {
+          jQuery.fn.DataTable.tables({ visible: true, api: true }).columns.adjust().draw();
+        }
+      }, 100);
+    });
+    
+    document.body.appendChild(btn);
+    
+    // Restore saved preference
+    if (localStorage.getItem('fullscreen-mode') === 'true') {
+      document.body.classList.add('fullscreen-mode');
+      btn.querySelector('.expand-icon').style.display = 'none';
+      btn.querySelector('.collapse-icon').style.display = 'block';
+      btn.title = 'Exit fullscreen mode';
+    }
+  }
+  
+  // Create on DOM ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', createFullscreenToggle);
+  } else {
+    createFullscreenToggle();
+  }
+  
+  // Recreate on MkDocs instant navigation
+  if (typeof document$ !== 'undefined') {
+    document$.subscribe(createFullscreenToggle);
+  }
+})();
+
 // Initialize DataTables with filtering
 document.addEventListener('DOMContentLoaded', function() {
   // Wait for jQuery and DataTables to load

@@ -121,4 +121,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-01-13 21:08 UTC_
+_Last updated: 2026-01-13 21:37 UTC_
