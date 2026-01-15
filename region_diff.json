@@ -1,6 +1,26 @@
 {
-  "timestamp": "2026-01-15T02:29:50.377099+00:00",
-  "changes": {},
+  "timestamp": "2026-01-15T06:53:43.439123+00:00",
+  "changes": {
+    "gpt-5.2-codex": {
+      "all": {
+        "added": [
+          "East US 2",
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "removed": []
+        }
+      }
+    }
+  },
   "current": {
     "codex-mini": {
       "all": [
@@ -2326,6 +2346,21 @@
       }
     },
     "gpt-5.2-chat": {
+      "all": [
+        "East US 2",
+        "Sweden Central"
+      ],
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "regions": [
+            "East US 2",
+            "Sweden Central"
+          ]
+        }
+      }
+    },
+    "gpt-5.2-codex": {
       "all": [
         "East US 2",
         "Sweden Central"

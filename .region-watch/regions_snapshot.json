@@ -2337,6 +2337,21 @@
       }
     }
   },
+  "gpt-5.2-codex": {
+    "all": [
+      "East US 2",
+      "Sweden Central"
+    ],
+    "skus": {
+      "standard-global": {
+        "label": "Standard global deployments",
+        "regions": [
+          "East US 2",
+          "Sweden Central"
+        ]
+      }
+    }
+  },
   "gpt-audio": {
     "all": [
       "Central US",

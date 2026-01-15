@@ -1,0 +1,24 @@
+{
+  "changes": {
+    "gpt-5.2-codex": {
+      "all": {
+        "added": [
+          "East US 2",
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Standard global deployments",
+          "removed": []
+        }
+      }
+    }
+  },
+  "timestamp": "2026-01-15T06:53:43.439123+00:00"
+}
