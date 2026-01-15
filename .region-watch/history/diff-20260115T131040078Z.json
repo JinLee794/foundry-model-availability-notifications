@@ -1,0 +1,266 @@
+{
+  "changes": {
+    "gpt-35-turbo": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-models": {
+          "added": [],
+          "label": "Standard (all)",
+          "removed": [
+            "Australia East",
+            "Canada East",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Japan East",
+            "North Central US",
+            "South Central US",
+            "South India",
+            "Sweden Central",
+            "Switzerland North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "sku_removed": true
+        }
+      }
+    },
+    "gpt-35-turbo-instruct": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-models": {
+          "added": [],
+          "label": "Standard (all)",
+          "removed": [
+            "East US",
+            "Sweden Central"
+          ],
+          "sku_removed": true
+        }
+      }
+    },
+    "gpt-4": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-models": {
+          "added": [],
+          "label": "Standard (all)",
+          "removed": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "sku_removed": true
+        }
+      }
+    },
+    "gpt-4.1": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-models": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "Switzerland North",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard (all)",
+          "removed": []
+        }
+      }
+    },
+    "gpt-4.1-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-models": {
+          "added": [
+            "Australia East",
+            "Canada East",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Japan East",
+            "North Central US",
+            "South Central US",
+            "South India",
+            "Sweden Central",
+            "Switzerland North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard (all)",
+          "removed": []
+        }
+      }
+    },
+    "gpt-4.1-nano": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-models": {
+          "added": [
+            "North Central US",
+            "Sweden Central"
+          ],
+          "label": "Standard (all)",
+          "removed": []
+        }
+      }
+    },
+    "gpt-4o": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-models": {
+          "added": [
+            "Central US"
+          ],
+          "label": "Standard (all)",
+          "removed": []
+        }
+      }
+    },
+    "o1-mini": {
+      "all": {
+        "added": [],
+        "removed": [
+          "West US 3"
+        ]
+      },
+      "skus": {
+        "standard-models": {
+          "added": [],
+          "label": "Standard (all)",
+          "removed": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "sku_removed": true
+        }
+      }
+    },
+    "o4-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-models": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard (all)",
+          "removed": []
+        }
+      }
+    },
+    "text-embedding-3-large": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard": {
+          "added": [
+            "Central US",
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Datazone standard",
+          "removed": []
+        }
+      }
+    },
+    "text-embedding-3-small": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard": {
+          "added": [
+            "Central US",
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Datazone standard",
+          "removed": []
+        }
+      }
+    },
+    "text-embedding-ada-002": {
+      "all": {
+        "added": [
+          "Central US"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard": {
+          "added": [
+            "Central US",
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Datazone standard",
+          "removed": []
+        }
+      }
+    }
+  },
+  "timestamp": "2026-01-15T13:10:40.078483+00:00"
+}

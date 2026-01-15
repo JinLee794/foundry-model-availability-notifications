@@ -154,26 +154,6 @@
           "West US",
           "West US 3"
         ]
-      },
-      "standard-models": {
-        "label": "Standard (all)",
-        "regions": [
-          "Australia East",
-          "Canada East",
-          "East US",
-          "East US 2",
-          "France Central",
-          "Japan East",
-          "North Central US",
-          "South Central US",
-          "South India",
-          "Sweden Central",
-          "Switzerland North",
-          "UK South",
-          "West Europe",
-          "West US",
-          "West US 3"
-        ]
       }
     }
   },
@@ -222,13 +202,6 @@
       },
       "standard-gpt-35-turbo": {
         "label": "Standard GPT-3.5 Turbo",
-        "regions": [
-          "East US",
-          "Sweden Central"
-        ]
-      },
-      "standard-models": {
-        "label": "Standard (all)",
         "regions": [
           "East US",
           "Sweden Central"
@@ -316,18 +289,6 @@
           "Sweden Central",
           "Switzerland North",
           "UK South",
-          "West US",
-          "West US 3"
-        ]
-      },
-      "standard-models": {
-        "label": "Standard (all)",
-        "regions": [
-          "East US",
-          "East US 2",
-          "North Central US",
-          "South Central US",
-          "Sweden Central",
           "West US",
           "West US 3"
         ]
@@ -593,6 +554,19 @@
           "West US",
           "West US 3"
         ]
+      },
+      "standard-models": {
+        "label": "Standard (all)",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "Switzerland North",
+          "West US",
+          "West US 3"
+        ]
       }
     }
   },
@@ -789,6 +763,26 @@
           "West US",
           "West US 3"
         ]
+      },
+      "standard-models": {
+        "label": "Standard (all)",
+        "regions": [
+          "Australia East",
+          "Canada East",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Japan East",
+          "North Central US",
+          "South Central US",
+          "South India",
+          "Sweden Central",
+          "Switzerland North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ]
       }
     }
   },
@@ -979,6 +973,13 @@
           "West Europe",
           "West US",
           "West US 3"
+        ]
+      },
+      "standard-models": {
+        "label": "Standard (all)",
+        "regions": [
+          "North Central US",
+          "Sweden Central"
         ]
       }
     }
@@ -1227,6 +1228,7 @@
         "regions": [
           "Australia East",
           "Canada East",
+          "Central US",
           "East US",
           "East US 2",
           "France Central",
@@ -2691,8 +2693,7 @@
       "North Central US",
       "South Central US",
       "Sweden Central",
-      "West US",
-      "West US 3"
+      "West US"
     ],
     "skus": {
       "standard-chat-completions": {
@@ -2704,18 +2705,6 @@
           "South Central US",
           "Sweden Central",
           "West US"
-        ]
-      },
-      "standard-models": {
-        "label": "Standard (all)",
-        "regions": [
-          "East US",
-          "East US 2",
-          "North Central US",
-          "South Central US",
-          "Sweden Central",
-          "West US",
-          "West US 3"
         ]
       }
     }
@@ -3338,6 +3327,18 @@
           "West US",
           "West US 3"
         ]
+      },
+      "standard-models": {
+        "label": "Standard (all)",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
       }
     }
   },
@@ -3407,6 +3408,18 @@
       "West US 3"
     ],
     "skus": {
+      "datazone-standard": {
+        "label": "Datazone standard",
+        "regions": [
+          "Central US",
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ]
+      },
       "standard-embeddings": {
         "label": "Standard embeddings",
         "regions": [
@@ -3513,6 +3526,18 @@
       "West US 3"
     ],
     "skus": {
+      "datazone-standard": {
+        "label": "Datazone standard",
+        "regions": [
+          "Central US",
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ]
+      },
       "standard-embeddings": {
         "label": "Standard embeddings",
         "regions": [
@@ -3576,6 +3601,7 @@
       "Australia East",
       "Brazil South",
       "Canada East",
+      "Central US",
       "East US",
       "East US 2",
       "France Central",
@@ -3599,6 +3625,18 @@
       "West US 3"
     ],
     "skus": {
+      "datazone-standard": {
+        "label": "Datazone standard",
+        "regions": [
+          "Central US",
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ]
+      },
       "standard-embeddings": {
         "label": "Standard embeddings",
         "regions": [
