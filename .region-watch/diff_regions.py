@@ -4,11 +4,29 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from typing import Optional
 
-MODEL_MATRIX_DIR = "articles/ai-foundry/openai/includes/model-matrix"
-MODEL_MATRIX_CONTENTS_API = (
-    "https://api.github.com/repos/MicrosoftDocs/azure-ai-docs/contents/"
-    f"{MODEL_MATRIX_DIR}?ref=main"
-)
+# Model matrix directories to check for availability data
+MODEL_MATRIX_DIRS = [
+    "articles/ai-foundry/openai/includes/model-matrix",  # OpenAI models (gpt, dall-e, whisper, etc.)
+    # Additional directories for non-OpenAI models (phi, mistral, qwen, gpt-oss, etc.)
+    # These may be added as Azure documents them in similar matrix format:
+    # "articles/ai-foundry/foundry-models/includes/model-matrix",
+    # "articles/ai-foundry/models/includes/model-matrix",
+]
+
+def get_model_matrix_directories() -> list:
+    """Get list of model matrix directories to check, including any from environment."""
+    dirs = list(MODEL_MATRIX_DIRS)
+    # Allow adding additional directories via environment variable
+    extra_dirs = os.getenv("MODEL_MATRIX_EXTRA_DIRS", "")
+    if extra_dirs:
+        for directory in extra_dirs.split(","):
+            directory = directory.strip()
+            if directory and directory not in dirs:
+                dirs.append(directory)
+    return dirs
+
+def get_model_matrix_api_url(directory: str) -> str:
+    return f"https://api.github.com/repos/MicrosoftDocs/azure-ai-docs/contents/{directory}?ref=main"
 
 # Azure region codes -> display names
 REGION_MAP = {
@@ -91,31 +109,45 @@ def sku_label(slug: str) -> str:
     return " ".join(word.capitalize() for word in words if word)
 
 def list_markdown_files() -> list:
-    listing = requests.get(MODEL_MATRIX_CONTENTS_API, headers=github_headers("application/vnd.github+json"), timeout=30)
-    listing.raise_for_status()
+    """List markdown files from all configured model matrix directories."""
     include_files = parse_env_list("MODEL_MATRIX_INCLUDE_FILES", lambda v: v.lower())
     exclude_files = parse_env_list("MODEL_MATRIX_EXCLUDE_FILES", lambda v: v.lower())
-
-    files = []
-    for item in listing.json():
-        if item.get("type") != "file":
+    
+    all_files = []
+    for directory in get_model_matrix_directories():
+        try:
+            api_url = get_model_matrix_api_url(directory)
+            listing = requests.get(api_url, headers=github_headers("application/vnd.github+json"), timeout=30)
+            listing.raise_for_status()
+            
+            for item in listing.json():
+                if item.get("type") != "file":
+                    continue
+                name = item.get("name", "")
+                if not name.endswith(".md"):
+                    continue
+                lowered = name.lower()
+                if include_files and lowered not in include_files:
+                    continue
+                if lowered in exclude_files:
+                    continue
+                slug = sku_slug(name)
+                all_files.append({
+                    "name": name,
+                    "slug": slug,
+                    "label": sku_label(slug),
+                    "url": item.get("download_url"),
+                    "source_dir": directory,
+                })
+        except requests.exceptions.HTTPError as e:
+            # If a directory doesn't exist or is inaccessible, log and continue
+            print(f"Warning: Could not access directory {directory}: {e}", file=sys.stderr)
             continue
-        name = item.get("name", "")
-        if not name.endswith(".md"):
+        except Exception as e:
+            print(f"Warning: Error processing directory {directory}: {e}", file=sys.stderr)
             continue
-        lowered = name.lower()
-        if include_files and lowered not in include_files:
-            continue
-        if lowered in exclude_files:
-            continue
-        slug = sku_slug(name)
-        files.append({
-            "name": name,
-            "slug": slug,
-            "label": sku_label(slug),
-            "url": item.get("download_url")
-        })
-    return files
+    
+    return all_files
 
 def fetch_markdown(url: str) -> str:
     resp = requests.get(url, headers=github_headers("application/vnd.github.v3.raw"), timeout=30)

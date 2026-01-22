@@ -153,6 +153,17 @@ This will automatically assign and notify specific team members when changes are
 | `mkdocs.yml` | Configures the website theme and navigation |
 | `.github/workflows/region-watch.yml` | Runs the monitoring every 6 hours |
 | `.github/workflows/deploy-docs.yml` | Builds and publishes the website |
+| `ADDING_NEW_MODELS.md` | Guide for adding support for additional model families |
+
+## Supported Models
+
+Currently tracking **OpenAI models** including:
+- GPT-4, GPT-4o, GPT-3.5 Turbo
+- o1, o3, o4 series
+- DALL-E 3, Whisper, TTS
+- Text embeddings (ada-002, text-embedding-3)
+
+**Want to track other models?** See [ADDING_NEW_MODELS.md](ADDING_NEW_MODELS.md) for information about adding support for Phi, Mistral, Qwen, gpt-oss, and other model families.
 
 ## Workflows
 
