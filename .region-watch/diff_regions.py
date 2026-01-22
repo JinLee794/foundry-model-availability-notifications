@@ -13,7 +13,7 @@ MODEL_MATRIX_DIRS = [
     # "articles/ai-foundry/models/includes/model-matrix",
 ]
 
-def get_model_matrix_directories() -> list:
+def get_model_matrix_directories() -> list[str]:
     """Get list of model matrix directories to check, including any from environment."""
     dirs = list(MODEL_MATRIX_DIRS)
     # Allow adding additional directories via environment variable
@@ -26,6 +26,21 @@ def get_model_matrix_directories() -> list:
     return dirs
 
 def get_model_matrix_api_url(directory: str) -> str:
+    """Generate GitHub API URL for a model matrix directory.
+    
+    Args:
+        directory: Relative path within azure-ai-docs repository
+        
+    Returns:
+        Full GitHub API URL for the directory contents
+        
+    Note:
+        Directory is expected to be a relative path like 'articles/ai-foundry/...'
+        and should not contain path traversal sequences.
+    """
+    # Basic validation to prevent path traversal
+    if ".." in directory or directory.startswith("/"):
+        raise ValueError(f"Invalid directory path: {directory}")
     return f"https://api.github.com/repos/MicrosoftDocs/azure-ai-docs/contents/{directory}?ref=main"
 
 # Azure region codes -> display names
@@ -141,7 +156,17 @@ def list_markdown_files() -> list:
                 })
         except requests.exceptions.HTTPError as e:
             # If a directory doesn't exist or is inaccessible, log and continue
-            print(f"Warning: Could not access directory {directory}: {e}", file=sys.stderr)
+            status_code = e.response.status_code if e.response else "unknown"
+            if status_code == 404:
+                print(f"Warning: Directory not found: {directory}", file=sys.stderr)
+            elif status_code == 403:
+                print(f"Warning: Access forbidden to directory {directory} (check GitHub token permissions)", file=sys.stderr)
+            else:
+                print(f"Warning: Could not access directory {directory} (HTTP {status_code}): {e}", file=sys.stderr)
+            continue
+        except ValueError as e:
+            # Invalid directory path
+            print(f"Warning: Invalid directory path {directory}: {e}", file=sys.stderr)
             continue
         except Exception as e:
             print(f"Warning: Error processing directory {directory}: {e}", file=sys.stderr)
