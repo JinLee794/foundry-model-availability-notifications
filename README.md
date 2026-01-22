@@ -157,13 +157,24 @@ This will automatically assign and notify specific team members when changes are
 
 ## Supported Models
 
-Currently tracking **OpenAI models** including:
+Currently tracking models from multiple Azure AI model families:
+
+**OpenAI models:**
 - GPT-4, GPT-4o, GPT-3.5 Turbo
 - o1, o3, o4 series
 - DALL-E 3, Whisper, TTS
 - Text embeddings (ada-002, text-embedding-3)
 
-**Want to track other models?** See [ADDING_NEW_MODELS.md](ADDING_NEW_MODELS.md) for information about adding support for Phi, Mistral, Qwen, gpt-oss, and other model families.
+**Foundry models:**
+- Phi (Microsoft's small language models)
+- Mistral (Mistral AI models)
+- Qwen (Alibaba's models)
+- gpt-oss (OpenAI's open-weight models)
+- Other models from the Azure AI Foundry catalog
+
+**Default behavior:** All models from all configured sources are included by default to provide comprehensive information in the mkdocs pages.
+
+**Want to add more sources?** See [ADDING_NEW_MODELS.md](ADDING_NEW_MODELS.md) for instructions.
 
 ## Workflows
 

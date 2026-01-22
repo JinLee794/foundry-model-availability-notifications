@@ -7,9 +7,8 @@ from typing import Optional
 # Model matrix directories to check for availability data
 MODEL_MATRIX_DIRS = [
     "articles/ai-foundry/openai/includes/model-matrix",  # OpenAI models (gpt, dall-e, whisper, etc.)
-    # Additional directories for non-OpenAI models (phi, mistral, qwen, gpt-oss, etc.)
-    # These may be added as Azure documents them in similar matrix format:
-    # "articles/ai-foundry/foundry-models/includes/model-matrix",
+    "articles/ai-foundry/foundry-models/includes/model-matrix",  # Foundry models (phi, mistral, qwen, gpt-oss, etc.)
+    # Additional directories for non-OpenAI models as they become available:
     # "articles/ai-foundry/models/includes/model-matrix",
 ]
 
@@ -305,8 +304,17 @@ def write_diff_history(changes: dict, timestamp: str, now: datetime) -> None:
         json.dump(payload, handle, indent=2, sort_keys=True)
 
 def filter_models(data: dict) -> dict:
+    """Filter models based on environment variables.
+    
+    By default (when no filters are set), returns all models.
+    Only applies filtering when MODEL_MATRIX_INCLUDE_MODELS or MODEL_MATRIX_EXCLUDE_MODELS are set.
+    """
     include_models = parse_env_list("MODEL_MATRIX_INCLUDE_MODELS", normalize_model_name)
     exclude_models = parse_env_list("MODEL_MATRIX_EXCLUDE_MODELS", normalize_model_name)
+
+    # If no filters are set, return all models (default behavior for mkdocs pages)
+    if not include_models and not exclude_models:
+        return data
 
     filtered = {}
     for model, info in data.items():

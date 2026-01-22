@@ -1,21 +1,25 @@
 # Adding Support for Additional Model Families
 
-This document explains how to add support for non-OpenAI model families (such as Phi, Mistral, Qwen, gpt-oss, etc.) to the model availability tracking system.
+This document explains how to add support for additional model families to the model availability tracking system.
 
 ## Current Status
 
-The system currently monitors **OpenAI models only** from the Azure AI documentation repository. These models are documented in markdown tables at:
+The system currently monitors models from the Azure AI documentation repository from the following directories:
 ```
-articles/ai-foundry/openai/includes/model-matrix/
+articles/ai-foundry/openai/includes/model-matrix/          # OpenAI models (enabled)
+articles/ai-foundry/foundry-models/includes/model-matrix/  # Foundry models (enabled)
 ```
 
-## Requested Model Families
+These models are documented in markdown tables with regional availability information.
 
-The following model families have been requested for inclusion:
-- **Phi** (Microsoft's small language models: Phi-3, etc.)
-- **Mistral** (Mistral AI models: Mistral-7B, Mistral-Large, etc.)
-- **Qwen** (Alibaba's Qwen models)
-- **gpt-oss-20b** (OpenAI's open-weight model)
+## Model Families Currently Tracked
+
+- **OpenAI models**: GPT-4, GPT-4o, GPT-3.5 Turbo, o1, o3, o4 series, DALL-E 3, Whisper, TTS, text embeddings
+- **Foundry models**: Phi, Mistral, Qwen, gpt-oss, and other models documented in the foundry-models directory
+
+## Default Behavior
+
+**All models are included by default** - no filtering is applied unless explicitly configured via environment variables.
 
 ## How the System Works
 
@@ -30,15 +34,15 @@ The monitoring system:
 
 ## Adding New Model Sources
 
-### Option 1: Via Code (When Azure Documents Models Similarly)
+### Option 1: Via Code (Permanent)
 
-If Azure adds model-matrix directories for non-OpenAI models, edit `.region-watch/diff_regions.py`:
+Edit `.region-watch/diff_regions.py`:
 
 ```python
 MODEL_MATRIX_DIRS = [
-    "articles/ai-foundry/openai/includes/model-matrix",  # OpenAI models
-    "articles/ai-foundry/foundry-models/includes/model-matrix",  # Uncomment if this exists
-    "articles/ai-foundry/models/includes/model-matrix",  # Uncomment if this exists
+    "articles/ai-foundry/openai/includes/model-matrix",
+    "articles/ai-foundry/foundry-models/includes/model-matrix",
+    "articles/ai-foundry/models/includes/model-matrix",  # Add more directories as needed
 ]
 ```
 
@@ -60,10 +64,26 @@ Or in GitHub Actions workflow (`.github/workflows/region-watch.yml`):
 - name: Run diff
   env:
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    MODEL_MATRIX_EXTRA_DIRS: "articles/ai-foundry/foundry-models/includes/model-matrix"
+    MODEL_MATRIX_EXTRA_DIRS: "articles/ai-foundry/models/includes/model-matrix"  # For additional directories
   run: |
     python .region-watch/diff_regions.py > region_diff.json
 ```
+
+## Filtering Models (Optional)
+
+By default, **all models from all configured directories are included**. This ensures the mkdocs pages show complete information.
+
+To filter models, set environment variables:
+
+```bash
+# Include only specific models
+export MODEL_MATRIX_INCLUDE_MODELS="gpt-4,gpt-4o,phi-3"
+
+# Exclude specific models
+export MODEL_MATRIX_EXCLUDE_MODELS="deprecated-model,test-model"
+```
+
+Note: Filtering is opt-in. If neither variable is set, all models are included.
 
 ## Verifying Azure Documentation
 
@@ -76,8 +96,9 @@ Before adding a new directory, verify it exists and contains the expected format
 
 2. Navigate to potential directories:
    ```
-   articles/ai-foundry/foundry-models/includes/model-matrix/
-   articles/ai-foundry/models/includes/model-matrix/
+   articles/ai-foundry/openai/includes/model-matrix/         # Enabled
+   articles/ai-foundry/foundry-models/includes/model-matrix/ # Enabled
+   articles/ai-foundry/models/includes/model-matrix/         # Available for addition
    articles/machine-learning/includes/model-matrix/
    ```
 
@@ -86,25 +107,15 @@ Before adding a new directory, verify it exists and contains the expected format
    - Region names in row headers
    - ✅ checkmarks indicating availability
 
-## Current Limitations
+## System Status
 
-As of now:
-- **No similar model-matrix documentation exists** for Phi, Mistral, Qwen, or gpt-oss models in the Azure AI docs repository
-- These models are available on Azure but documented differently (via Model Catalog, deployment guides, etc.)
-- Regional availability is not published in the same machine-readable table format
-
-## Alternative Approaches
-
-If Azure doesn't provide model-matrix tables for these models, alternatives include:
-
-1. **Azure API Integration**: Query the Azure AI Model Catalog API for availability
-2. **Manual Configuration**: Maintain a static list of models and regions
-3. **Web Scraping**: Parse the Azure AI Studio website (not recommended)
-4. **Wait for Documentation**: Monitor the Azure docs repo for new model-matrix directories
+✅ **OpenAI models** - Fully tracked and monitored  
+✅ **Foundry models** - Enabled and ready to track (phi, mistral, qwen, gpt-oss, etc.)  
+⚠️ **Note**: The foundry-models directory may or may not exist in the Azure docs yet. The system will gracefully handle missing directories.
 
 ## Monitoring for Updates
 
-To check if Azure adds support:
+To check if Azure adds new directories:
 
 1. Watch the Azure AI docs repository:
    ```
@@ -132,6 +143,9 @@ cat test_output.json | jq '.current | keys'
 
 # Look for your model families (phi, mistral, qwen, gpt-oss)
 cat test_output.json | jq '.current | keys | map(select(test("phi|mistral|qwen|gpt-oss"; "i")))'
+
+# Verify no filtering is applied by default (all models included)
+cat test_output.json | jq '.current | length'
 ```
 
 ## Questions or Issues?
@@ -144,5 +158,5 @@ If you discover new model-matrix directories or alternative data sources, please
 
 ---
 
-**Last Updated**: January 2026
-**Status**: Monitoring OpenAI models only. Non-OpenAI models (Phi, Mistral, Qwen, gpt-oss) pending Azure documentation.
+**Last Updated**: January 2026  
+**Status**: Monitoring OpenAI and Foundry models. All models included by default for comprehensive mkdocs pages.
