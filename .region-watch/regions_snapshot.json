@@ -1,4 +1,1574 @@
 {
+  "Claude Haiku 4.5 (preview)": {
+    "all": [
+      "East US 2",
+      "Sweden Central"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US 2",
+          "Sweden Central"
+        ]
+      }
+    }
+  },
+  "Claude Opus 4.1 (preview)": {
+    "all": [
+      "East US 2",
+      "Sweden Central"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US 2",
+          "Sweden Central"
+        ]
+      }
+    }
+  },
+  "Claude Opus 4.5 (preview)": {
+    "all": [
+      "East US 2",
+      "Sweden Central"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US 2",
+          "Sweden Central"
+        ]
+      }
+    }
+  },
+  "Claude Sonnet 4.5 (preview)": {
+    "all": [
+      "East US 2",
+      "Sweden Central"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US 2",
+          "Sweden Central"
+        ]
+      }
+    }
+  },
+  "Codestral-2501": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Cohere Command R 08-2024": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Cohere Command R+ 08-2024": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Cohere Embed v3 - English": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Cohere Embed v3 - Multilingual": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Cohere Rerank v3.5": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "DeepSeek-R1": {
+    "all": [
+      "Australia East",
+      "Brazil South",
+      "Canada East",
+      "East US",
+      "East US 2",
+      "France Central",
+      "Germany West Central",
+      "Italy North",
+      "Japan East",
+      "Korea Central",
+      "North Central US",
+      "Norway East",
+      "Poland Central",
+      "South Africa North",
+      "South Central US",
+      "South India",
+      "Spain Central",
+      "Sweden Central",
+      "Switzerland North",
+      "Switzerland West",
+      "UAE North",
+      "UK South",
+      "West Europe",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "global-provisioned-managed": {
+        "label": "Global Provisioned Managed",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada East",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      },
+      "global-standard": {
+        "label": "Global Standard",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada East",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      },
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "DeepSeek-R1-0528": {
+    "all": [
+      "Australia East",
+      "Brazil South",
+      "Canada East",
+      "East US",
+      "East US 2",
+      "France Central",
+      "Germany West Central",
+      "Italy North",
+      "Japan East",
+      "Korea Central",
+      "North Central US",
+      "Norway East",
+      "Poland Central",
+      "South Africa North",
+      "South Central US",
+      "South India",
+      "Spain Central",
+      "Sweden Central",
+      "Switzerland North",
+      "Switzerland West",
+      "UAE North",
+      "UK South",
+      "West Europe",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "global-provisioned-managed": {
+        "label": "Global Provisioned Managed",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada East",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      },
+      "global-standard": {
+        "label": "Global Standard",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada East",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "DeepSeek-V3-0324": {
+    "all": [
+      "Australia East",
+      "Brazil South",
+      "Canada East",
+      "East US",
+      "East US 2",
+      "France Central",
+      "Germany West Central",
+      "Italy North",
+      "Japan East",
+      "Korea Central",
+      "North Central US",
+      "Norway East",
+      "Poland Central",
+      "South Africa North",
+      "South Central US",
+      "South India",
+      "Spain Central",
+      "Sweden Central",
+      "Switzerland North",
+      "Switzerland West",
+      "UAE North",
+      "UK South",
+      "West Europe",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "global-provisioned-managed": {
+        "label": "Global Provisioned Managed",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada East",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      },
+      "global-standard": {
+        "label": "Global Standard",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada East",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      },
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "DeepSeek-V3.1": {
+    "all": [
+      "Australia East",
+      "Brazil South",
+      "Canada East",
+      "East US",
+      "East US 2",
+      "France Central",
+      "Germany West Central",
+      "Italy North",
+      "Japan East",
+      "Korea Central",
+      "North Central US",
+      "Norway East",
+      "Poland Central",
+      "South Africa North",
+      "South Central US",
+      "South India",
+      "Spain Central",
+      "Sweden Central",
+      "Switzerland North",
+      "Switzerland West",
+      "UAE North",
+      "UK South",
+      "West Europe",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "global-standard": {
+        "label": "Global Standard",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada East",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "FLUX-1.1-pro": {
+    "all": [
+      "Australia East",
+      "Brazil South",
+      "Canada East",
+      "East US",
+      "East US 2",
+      "France Central",
+      "Germany West Central",
+      "Italy North",
+      "Japan East",
+      "Korea Central",
+      "North Central US",
+      "Norway East",
+      "Poland Central",
+      "South Africa North",
+      "South Central US",
+      "South India",
+      "Spain Central",
+      "Sweden Central",
+      "Switzerland North",
+      "Switzerland West",
+      "UAE North",
+      "UK South",
+      "West Europe",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "global-standard": {
+        "label": "Global Standard",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada East",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "FLUX.1-Kontext-pro": {
+    "all": [
+      "Australia East",
+      "Brazil South",
+      "Canada East",
+      "East US",
+      "East US 2",
+      "France Central",
+      "Germany West Central",
+      "Italy North",
+      "Japan East",
+      "Korea Central",
+      "North Central US",
+      "Norway East",
+      "Poland Central",
+      "South Africa North",
+      "South Central US",
+      "South India",
+      "Spain Central",
+      "Sweden Central",
+      "Switzerland North",
+      "Switzerland West",
+      "UAE North",
+      "UK South",
+      "West Europe",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "global-standard": {
+        "label": "Global Standard",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada East",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Gretel-Navigator": {
+    "all": [
+      "East US 2"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US 2"
+        ]
+      }
+    }
+  },
+  "JAIS 30B Chat": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Llama 3.1 405B Instruct": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Llama 3.1 8B Instruct": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Llama 3.3 70B Instruct": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Llama-3.2-11B-Vision-Instruct": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Llama-3.2-1B": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Llama-3.2-1B-Instruct": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Llama-3.2-3B": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Llama-3.2-3B-Instruct": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Llama-3.2-90B-Vision-Instruct": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Llama-3.3-70B-Instruct": {
+    "all": [
+      "Australia East",
+      "Brazil South",
+      "Canada East",
+      "East US",
+      "East US 2",
+      "France Central",
+      "Germany West Central",
+      "Italy North",
+      "Japan East",
+      "Korea Central",
+      "North Central US",
+      "Norway East",
+      "Poland Central",
+      "South Africa North",
+      "South Central US",
+      "South India",
+      "Spain Central",
+      "Sweden Central",
+      "Switzerland North",
+      "Switzerland West",
+      "UAE North",
+      "UK South",
+      "West Europe",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "global-standard": {
+        "label": "Global Standard",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada East",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      },
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Llama-4-Maverick-17B-128E-Instruct-FP8": {
+    "all": [
+      "Australia East",
+      "Brazil South",
+      "Canada East",
+      "East US",
+      "East US 2",
+      "France Central",
+      "Germany West Central",
+      "Italy North",
+      "Japan East",
+      "Korea Central",
+      "North Central US",
+      "Norway East",
+      "Poland Central",
+      "South Africa North",
+      "South Central US",
+      "South India",
+      "Spain Central",
+      "Sweden Central",
+      "Switzerland North",
+      "Switzerland West",
+      "UAE North",
+      "UK South",
+      "West Europe",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "global-standard": {
+        "label": "Global Standard",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada East",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Llama-Guard-3-11B-Vision": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Llama-Guard-3-1B": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "MAI-DS-R1": {
+    "all": [
+      "Australia East",
+      "Brazil South",
+      "Canada East",
+      "East US",
+      "East US 2",
+      "France Central",
+      "Germany West Central",
+      "Italy North",
+      "Japan East",
+      "Korea Central",
+      "North Central US",
+      "Norway East",
+      "Poland Central",
+      "South Africa North",
+      "South Central US",
+      "South India",
+      "Spain Central",
+      "Sweden Central",
+      "Switzerland North",
+      "Switzerland West",
+      "UAE North",
+      "UK South",
+      "West Europe",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "global-standard": {
+        "label": "Global Standard",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada East",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      },
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Ministral-3B": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Mistral Medium 3 (25.05)": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Mistral Nemo": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Mistral OCR 25.03": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Mistral Small 25.03": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Mistral-Large (2411)": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Phi-4": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Phi-4-mini-instruct": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Phi-4-mini-reasoning": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Phi-4-multimodal-instruct": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Phi-4-reasoning": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Stable Diffusion 3.5 Large": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Stable Image Core": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "Stable Image Ultra": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "TimeGEN-1": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
   "codex-mini": {
     "all": [
       "Central US",
@@ -2511,6 +4081,505 @@
       }
     }
   },
+  "grok-3": {
+    "all": [
+      "Australia East",
+      "Brazil South",
+      "Canada East",
+      "East US",
+      "East US 2",
+      "France Central",
+      "Germany West Central",
+      "Italy North",
+      "Japan East",
+      "Korea Central",
+      "North Central US",
+      "Norway East",
+      "Poland Central",
+      "South Africa North",
+      "South Central US",
+      "South India",
+      "Spain Central",
+      "Sweden Central",
+      "Switzerland North",
+      "Switzerland West",
+      "UAE North",
+      "UK South",
+      "West Europe",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "data-zone-standard": {
+        "label": "Data Zone Standard",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ]
+      },
+      "global-standard": {
+        "label": "Global Standard",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada East",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "grok-3-mini": {
+    "all": [
+      "Australia East",
+      "Brazil South",
+      "Canada East",
+      "East US",
+      "East US 2",
+      "France Central",
+      "Germany West Central",
+      "Italy North",
+      "Japan East",
+      "Korea Central",
+      "North Central US",
+      "Norway East",
+      "Poland Central",
+      "South Africa North",
+      "South Central US",
+      "South India",
+      "Spain Central",
+      "Sweden Central",
+      "Switzerland North",
+      "Switzerland West",
+      "UAE North",
+      "UK South",
+      "West Europe",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "data-zone-standard": {
+        "label": "Data Zone Standard",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ]
+      },
+      "global-standard": {
+        "label": "Global Standard",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada East",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "grok-4": {
+    "all": [
+      "Australia East",
+      "Brazil South",
+      "Canada East",
+      "East US",
+      "East US 2",
+      "France Central",
+      "Germany West Central",
+      "Italy North",
+      "Japan East",
+      "Korea Central",
+      "North Central US",
+      "Norway East",
+      "Poland Central",
+      "South Africa North",
+      "South Central US",
+      "South India",
+      "Spain Central",
+      "Sweden Central",
+      "Switzerland North",
+      "Switzerland West",
+      "UAE North",
+      "UK South",
+      "West Europe",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "global-standard": {
+        "label": "Global Standard",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada East",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "grok-4-fast-non-reasoning": {
+    "all": [
+      "Australia East",
+      "Brazil South",
+      "Canada East",
+      "East US",
+      "East US 2",
+      "France Central",
+      "Germany West Central",
+      "Italy North",
+      "Japan East",
+      "Korea Central",
+      "North Central US",
+      "Norway East",
+      "Poland Central",
+      "South Africa North",
+      "South Central US",
+      "South India",
+      "Spain Central",
+      "Sweden Central",
+      "Switzerland North",
+      "Switzerland West",
+      "UAE North",
+      "UK South",
+      "West Europe",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "data-zone-standard": {
+        "label": "Data Zone Standard",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ]
+      },
+      "global-standard": {
+        "label": "Global Standard",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada East",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "grok-4-fast-reasoning": {
+    "all": [
+      "Australia East",
+      "Brazil South",
+      "Canada East",
+      "East US",
+      "East US 2",
+      "France Central",
+      "Germany West Central",
+      "Italy North",
+      "Japan East",
+      "Korea Central",
+      "North Central US",
+      "Norway East",
+      "Poland Central",
+      "South Africa North",
+      "South Central US",
+      "South India",
+      "Spain Central",
+      "Sweden Central",
+      "Switzerland North",
+      "Switzerland West",
+      "UAE North",
+      "UK South",
+      "West Europe",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "data-zone-standard": {
+        "label": "Data Zone Standard",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ]
+      },
+      "global-standard": {
+        "label": "Global Standard",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada East",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "grok-code-fast-1": {
+    "all": [
+      "Australia East",
+      "Brazil South",
+      "Canada East",
+      "East US",
+      "East US 2",
+      "France Central",
+      "Germany West Central",
+      "Italy North",
+      "Japan East",
+      "Korea Central",
+      "North Central US",
+      "Norway East",
+      "Poland Central",
+      "South Africa North",
+      "South Central US",
+      "South India",
+      "Spain Central",
+      "Sweden Central",
+      "Switzerland North",
+      "Switzerland West",
+      "UAE North",
+      "UK South",
+      "West Europe",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "global-standard": {
+        "label": "Global Standard",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada East",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "mistral-document-ai-2505": {
+    "all": [
+      "Australia East",
+      "Brazil South",
+      "Canada East",
+      "East US",
+      "East US 2",
+      "France Central",
+      "Germany West Central",
+      "Italy North",
+      "Japan East",
+      "Korea Central",
+      "North Central US",
+      "Norway East",
+      "Poland Central",
+      "South Africa North",
+      "South Central US",
+      "South India",
+      "Spain Central",
+      "Sweden Central",
+      "Switzerland North",
+      "Switzerland West",
+      "UAE North",
+      "UK South",
+      "West Europe",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "data-zone-standard": {
+        "label": "Data Zone Standard",
+        "regions": [
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Central US",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      },
+      "global-standard": {
+        "label": "Global Standard",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada East",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      },
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US 2",
+          "Sweden Central"
+        ]
+      }
+    }
+  },
   "model-router": {
     "all": [
       "East US 2",
@@ -3709,6 +5778,29 @@
           "UAE North",
           "UK South",
           "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "tsuzumi-7b": {
+    "all": [
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
           "West US",
           "West US 3"
         ]

@@ -1,5 +1,80 @@
 /* Custom styles for model availability dashboard */
 
+/* Fullscreen toggle button */
+.fullscreen-toggle {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 100;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.fullscreen-toggle:hover {
+  background-color: #4338ca;
+  transform: scale(1.1);
+}
+
+.fullscreen-toggle svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+/* Fullscreen mode - hide sidebars */
+body.fullscreen-mode .md-sidebar {
+  display: none !important;
+}
+
+body.fullscreen-mode .md-content {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  max-width: 100% !important;
+}
+
+body.fullscreen-mode .md-main__inner {
+  max-width: 100% !important;
+  padding: 0 1rem !important;
+}
+
+body.fullscreen-mode .md-content__inner {
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+
+/* Fix DataTables in fullscreen mode */
+body.fullscreen-mode .dataTables_wrapper {
+  width: 100% !important;
+}
+
+body.fullscreen-mode .table-responsive {
+  width: 100% !important;
+}
+
+body.fullscreen-mode table.dataTable {
+  width: 100% !important;
+}
+
+body.fullscreen-mode .dataTables_scrollHead,
+body.fullscreen-mode .dataTables_scrollBody {
+  width: 100% !important;
+}
+
+body.fullscreen-mode .dataTables_scrollHeadInner,
+body.fullscreen-mode .dataTables_scrollHeadInner table {
+  width: 100% !important;
+}
+
 /* Coverage badges */
 .badge {
   display: inline-block;
@@ -143,10 +218,91 @@
   min-width: 200px;
 }
 
+.filter-group input[type="text"] {
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  min-width: 200px;
+}
+
 [data-md-color-scheme="slate"] .filter-group select {
   background-color: #334155;
   border-color: #475569;
   color: #e2e8f0;
+}
+
+[data-md-color-scheme="slate"] .filter-group input[type="text"] {
+  background-color: #334155;
+  border-color: #475569;
+  color: #e2e8f0;
+}
+
+/* Hidden columns for filtering */
+.hidden-col {
+  display: none !important;
+}
+
+/* Region list with expandable button */
+.region-list {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+/* Clickable region badges */
+.region-badge {
+  display: inline-block;
+  padding: 0.15rem 0.4rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  background-color: #e0e7ff;
+  color: #3730a3;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  white-space: nowrap;
+}
+
+.region-badge:hover {
+  background-color: #c7d2fe;
+}
+
+[data-md-color-scheme="slate"] .region-badge {
+  background-color: #312e81;
+  color: #c7d2fe;
+}
+
+[data-md-color-scheme="slate"] .region-badge:hover {
+  background-color: #3730a3;
+}
+
+.expand-btn {
+  display: inline-block;
+  padding: 0.15rem 0.4rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin-left: 0.25rem;
+  white-space: nowrap;
+}
+
+.expand-btn:hover {
+  background-color: #4338ca;
+}
+
+[data-md-color-scheme="slate"] .expand-btn {
+  background-color: #6366f1;
+}
+
+[data-md-color-scheme="slate"] .expand-btn:hover {
+  background-color: #818cf8;
 }
 
 /* Stats cards */
@@ -157,12 +313,21 @@
   margin-bottom: 2rem;
 }
 
+.stats-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
 .stat-card {
   padding: 1.5rem;
   background-color: #f8fafc;
   border-radius: 0.5rem;
   text-align: center;
   border: 1px solid #e2e8f0;
+  flex: 1;
+  min-width: 120px;
 }
 
 [data-md-color-scheme="slate"] .stat-card {
@@ -185,20 +350,151 @@
 /* Table styling */
 table.dataTable {
   width: 100% !important;
+  table-layout: auto;
 }
 
 table.dataTable thead th {
   background-color: #f1f5f9;
   font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Ensure full width table container with horizontal scroll */
+.table-responsive {
+  overflow-x: auto;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* DataTables scroll wrapper */
+.dataTables_scroll {
+  width: 100%;
+}
+
+.dataTables_scrollBody {
+  overflow-x: auto !important;
+}
+
+/* Make scrollbar more visible */
+.table-responsive::-webkit-scrollbar,
+.dataTables_scrollBody::-webkit-scrollbar {
+  height: 12px;
+}
+
+.table-responsive::-webkit-scrollbar-track,
+.dataTables_scrollBody::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 6px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb,
+.dataTables_scrollBody::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 6px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover,
+.dataTables_scrollBody::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+[data-md-color-scheme="slate"] .table-responsive::-webkit-scrollbar-track,
+[data-md-color-scheme="slate"] .dataTables_scrollBody::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+[data-md-color-scheme="slate"] .table-responsive::-webkit-scrollbar-thumb,
+[data-md-color-scheme="slate"] .dataTables_scrollBody::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+[data-md-color-scheme="slate"] .table-responsive::-webkit-scrollbar-thumb:hover,
+[data-md-color-scheme="slate"] .dataTables_scrollBody::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Force table to have minimum width to enable scrolling */
+#models-table {
+  min-width: 1600px;
+  white-space: nowrap;
+}
+
+/* Prevent DataTables from collapsing columns */
+#models-table th,
+#models-table td {
+  white-space: normal;
+  min-width: 150px;
+}
+
+/* Model column can be narrower */
+#models-table th:first-child,
+#models-table td:first-child {
+  min-width: 120px;
+}
+
+/* Coverage column can be narrower */
+#models-table th:nth-child(2),
+#models-table td:nth-child(2) {
+  min-width: 100px;
+}
+
+/* SKU Types column */
+#models-table th:nth-child(3),
+#models-table td:nth-child(3) {
+  min-width: 180px;
+}
+
+/* Region columns need more space */
+#models-table th:nth-child(n+4):nth-child(-n+7),
+#models-table td:nth-child(n+4):nth-child(-n+7) {
+  min-width: 200px;
 }
 
 [data-md-color-scheme="slate"] table.dataTable thead th {
   background-color: #334155;
 }
 
-/* Responsive table */
-.table-responsive {
-  overflow-x: auto;
+/* Matrix table for model pages */
+.matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  margin: 1rem 0;
+}
+
+.matrix-table th,
+.matrix-table td {
+  padding: 0.5rem;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+}
+
+.matrix-table th {
+  background-color: #f1f5f9;
+  font-weight: 600;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.matrix-table td:first-child {
+  text-align: left;
+  white-space: nowrap;
+}
+
+.matrix-table tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+[data-md-color-scheme="slate"] .matrix-table th {
+  background-color: #334155;
+}
+
+[data-md-color-scheme="slate"] .matrix-table td {
+  border-color: #475569;
+}
+
+[data-md-color-scheme="slate"] .matrix-table tbody tr:nth-child(even) {
+  background-color: #1e293b;
 }
 
 /* Model detail cards */
@@ -249,4 +545,92 @@ table.dataTable thead th {
 
 .change-removed {
   color: #ef4444;
+}
+
+/* Added/Removed badges for history table */
+.badge-added {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: #22c55e;
+  color: white;
+  border-radius: 0.25rem;
+}
+
+.badge-removed {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: #ef4444;
+  color: white;
+  border-radius: 0.25rem;
+}
+
+/* Group header for history table */
+.group-header {
+  background-color: #4f46e5 !important;
+  color: white;
+}
+
+.group-header td {
+  padding: 0.75rem 1rem !important;
+  font-size: 0.95rem;
+}
+
+[data-md-color-scheme="slate"] .group-header {
+  background-color: #6366f1 !important;
+}
+
+/* Change history tables */
+.change-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0 1rem 0;
+  font-size: 0.875rem;
+}
+
+.change-table th,
+.change-table td {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  border: 1px solid #e2e8f0;
+}
+
+.change-table th {
+  background-color: #f1f5f9;
+  font-weight: 600;
+}
+
+.change-table tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+[data-md-color-scheme="slate"] .change-table th {
+  background-color: #334155;
+}
+
+[data-md-color-scheme="slate"] .change-table td {
+  border-color: #475569;
+}
+
+[data-md-color-scheme="slate"] .change-table tbody tr:nth-child(even) {
+  background-color: #1e293b;
+}
+
+details summary {
+  cursor: pointer;
+  padding: 0.75rem;
+  background-color: #f1f5f9;
+  border-radius: 0.375rem;
+  margin-bottom: 0.5rem;
+}
+
+[data-md-color-scheme="slate"] details summary {
+  background-color: #334155;
+}
+
+details[open] summary {
+  margin-bottom: 1rem;
 }

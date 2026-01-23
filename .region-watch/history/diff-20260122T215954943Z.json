@@ -1,0 +1,1091 @@
+{
+  "changes": {
+    "Codestral-2501": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Cohere Command R 08-2024": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Cohere Command R+ 08-2024": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Cohere Embed v3 - English": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Cohere Embed v3 - Multilingual": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Cohere Rerank v3.5": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "DeepSeek-R1": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "DeepSeek-V3-0324": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Gretel-Navigator": {
+      "all": {
+        "added": [
+          "East US 2"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US 2"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "JAIS 30B Chat": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Llama 3.1 405B Instruct": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Llama 3.1 8B Instruct": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Llama 3.3 70B Instruct": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Llama-3.2-11B-Vision-Instruct": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Llama-3.2-1B": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Llama-3.2-1B-Instruct": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Llama-3.2-3B": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Llama-3.2-3B-Instruct": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Llama-3.2-90B-Vision-Instruct": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Llama-3.3-70B-Instruct": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Llama-Guard-3-11B-Vision": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Llama-Guard-3-1B": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "MAI-DS-R1": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Ministral-3B": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Mistral Medium 3 (25.05)": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Mistral Nemo": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Mistral OCR 25.03": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Mistral Small 25.03": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Mistral-Large (2411)": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Phi-4": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Phi-4-mini-instruct": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Phi-4-mini-reasoning": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Phi-4-multimodal-instruct": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Phi-4-reasoning": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Stable Diffusion 3.5 Large": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Stable Image Core": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Stable Image Ultra": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "TimeGEN-1": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "mistral-document-ai-2505": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "tsuzumi-7b": {
+      "all": {
+        "added": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    }
+  },
+  "timestamp": "2026-01-22T21:59:54.943149+00:00"
+}

@@ -66,7 +66,145 @@ extra_javascript:
 
 nav:
   - Home: index.md
-  - Models: models/index.md
+  - Models:
+    - Overview: models/index.md
+    - GPT-3.5:
+      - gpt-35-turbo: models/gpt-35-turbo.md
+      - gpt-35-turbo-16k: models/gpt-35-turbo-16k.md
+      - gpt-35-turbo-instruct: models/gpt-35-turbo-instruct.md
+    - GPT-4:
+      - gpt-4: models/gpt-4.md
+      - gpt-4-32k: models/gpt-4-32k.md
+      - gpt-4-1: models/gpt-4-1.md
+      - gpt-4-1-mini: models/gpt-4-1-mini.md
+      - gpt-4-1-nano: models/gpt-4-1-nano.md
+    - GPT-4o:
+      - gpt-4o: models/gpt-4o.md
+      - gpt-4o-mini: models/gpt-4o-mini.md
+      - gpt-4o-audio-preview: models/gpt-4o-audio-preview.md
+      - gpt-4o-mini-audio-preview: models/gpt-4o-mini-audio-preview.md
+      - gpt-4o-realtime-preview: models/gpt-4o-realtime-preview.md
+      - gpt-4o-mini-realtime-preview: models/gpt-4o-mini-realtime-preview.md
+      - gpt-4o-transcribe: models/gpt-4o-transcribe.md
+      - gpt-4o-transcribe-diarize: models/gpt-4o-transcribe-diarize.md
+      - gpt-4o-mini-transcribe: models/gpt-4o-mini-transcribe.md
+      - gpt-4o-mini-tts: models/gpt-4o-mini-tts.md
+    - GPT-5:
+      - gpt-5: models/gpt-5.md
+      - gpt-5-mini: models/gpt-5-mini.md
+      - gpt-5-nano: models/gpt-5-nano.md
+      - gpt-5-pro: models/gpt-5-pro.md
+      - gpt-5-chat: models/gpt-5-chat.md
+      - gpt-5-codex: models/gpt-5-codex.md
+      - gpt-5-1: models/gpt-5-1.md
+      - gpt-5-1-chat: models/gpt-5-1-chat.md
+      - gpt-5-1-codex: models/gpt-5-1-codex.md
+      - gpt-5-1-codex-mini: models/gpt-5-1-codex-mini.md
+      - gpt-5-1-codex-max: models/gpt-5-1-codex-max.md
+      - gpt-5-2: models/gpt-5-2.md
+      - gpt-5-2-chat: models/gpt-5-2-chat.md
+      - gpt-5-2-codex: models/gpt-5-2-codex.md
+    - GPT Audio:
+      - gpt-audio: models/gpt-audio.md
+      - gpt-audio-mini: models/gpt-audio-mini.md
+    - GPT Realtime:
+      - gpt-realtime: models/gpt-realtime.md
+      - gpt-realtime-mini: models/gpt-realtime-mini.md
+    - GPT Image:
+      - gpt-image-1: models/gpt-image-1.md
+      - gpt-image-1-mini: models/gpt-image-1-mini.md
+      - gpt-image-1-5: models/gpt-image-1-5.md
+    - o-series:
+      - o1: models/o1.md
+      - o1-mini: models/o1-mini.md
+      - o1-preview: models/o1-preview.md
+      - o3: models/o3.md
+      - o3-mini: models/o3-mini.md
+      - o3-pro: models/o3-pro.md
+      - o3-deep-research: models/o3-deep-research.md
+      - o4-mini: models/o4-mini.md
+    - Codex:
+      - codex-mini: models/codex-mini.md
+    - Embeddings:
+      - text-embedding-ada-002: models/text-embedding-ada-002.md
+      - text-embedding-3-small: models/text-embedding-3-small.md
+      - text-embedding-3-large: models/text-embedding-3-large.md
+    - Image Generation:
+      - dall-e-3: models/dall-e-3.md
+    - Video:
+      - sora: models/sora.md
+      - sora-2: models/sora-2.md
+    - Audio:
+      - whisper: models/whisper.md
+      - tts: models/tts.md
+      - tts-hd: models/tts-hd.md
+    - Other:
+      - computer-use-preview: models/computer-use-preview.md
+      - model-router: models/model-router.md
+    - Anthropic (Claude):
+      - claude-haiku-4-5-preview: models/claude-haiku-4-5-(preview).md
+      - claude-opus-4-1-preview: models/claude-opus-4-1-(preview).md
+      - claude-opus-4-5-preview: models/claude-opus-4-5-(preview).md
+      - claude-sonnet-4-5-preview: models/claude-sonnet-4-5-(preview).md
+    - Cohere:
+      - cohere-command-r-08-2024: models/cohere-command-r-08-2024.md
+      - cohere-command-r+-08-2024: models/cohere-command-r+-08-2024.md
+      - cohere-embed-v3-english: models/cohere-embed-v3---english.md
+      - cohere-embed-v3-multilingual: models/cohere-embed-v3---multilingual.md
+      - cohere-rerank-v3-5: models/cohere-rerank-v3-5.md
+    - DeepSeek:
+      - deepseek-r1: models/deepseek-r1.md
+      - deepseek-r1-0528: models/deepseek-r1-0528.md
+      - deepseek-v3-0324: models/deepseek-v3-0324.md
+      - deepseek-v3-1: models/deepseek-v3-1.md
+    - FLUX:
+      - flux-1-1-pro: models/flux-1-1-pro.md
+      - flux-1-kontext-pro: models/flux-1-kontext-pro.md
+    - Grok:
+      - grok-3: models/grok-3.md
+      - grok-3-mini: models/grok-3-mini.md
+      - grok-4: models/grok-4.md
+      - grok-4-fast-reasoning: models/grok-4-fast-reasoning.md
+      - grok-4-fast-non-reasoning: models/grok-4-fast-non-reasoning.md
+      - grok-code-fast-1: models/grok-code-fast-1.md
+    - Llama (Meta):
+      - llama-3-1-8b-instruct: models/llama-3-1-8b-instruct.md
+      - llama-3-1-405b-instruct: models/llama-3-1-405b-instruct.md
+      - llama-3-2-1b: models/llama-3-2-1b.md
+      - llama-3-2-1b-instruct: models/llama-3-2-1b-instruct.md
+      - llama-3-2-3b: models/llama-3-2-3b.md
+      - llama-3-2-3b-instruct: models/llama-3-2-3b-instruct.md
+      - llama-3-2-11b-vision-instruct: models/llama-3-2-11b-vision-instruct.md
+      - llama-3-2-90b-vision-instruct: models/llama-3-2-90b-vision-instruct.md
+      - llama-3-3-70b-instruct: models/llama-3-3-70b-instruct.md
+      - llama-4-maverick: models/llama-4-maverick-17b-128e-instruct-fp8.md
+      - llama-guard-3-1b: models/llama-guard-3-1b.md
+      - llama-guard-3-11b-vision: models/llama-guard-3-11b-vision.md
+    - Microsoft (Phi):
+      - phi-4: models/phi-4.md
+      - phi-4-mini-instruct: models/phi-4-mini-instruct.md
+      - phi-4-mini-reasoning: models/phi-4-mini-reasoning.md
+      - phi-4-multimodal-instruct: models/phi-4-multimodal-instruct.md
+      - phi-4-reasoning: models/phi-4-reasoning.md
+      - mai-ds-r1: models/mai-ds-r1.md
+    - Mistral:
+      - mistral-nemo: models/mistral-nemo.md
+      - mistral-small-25-03: models/mistral-small-25-03.md
+      - mistral-medium-3-25-05: models/mistral-medium-3-(25-05).md
+      - mistral-large-2411: models/mistral-large-(2411).md
+      - mistral-ocr-25-03: models/mistral-ocr-25-03.md
+      - mistral-document-ai-2505: models/mistral-document-ai-2505.md
+      - ministral-3b: models/ministral-3b.md
+      - codestral-2501: models/codestral-2501.md
+    - Stability AI:
+      - stable-diffusion-3-5-large: models/stable-diffusion-3-5-large.md
+      - stable-image-core: models/stable-image-core.md
+      - stable-image-ultra: models/stable-image-ultra.md
+    - Other Partner Models:
+      - gretel-navigator: models/gretel-navigator.md
+      - jais-30b-chat: models/jais-30b-chat.md
+      - timegen-1: models/timegen-1.md
+      - tsuzumi-7b: models/tsuzumi-7b.md
   - By Region: by-region.md
   - By SKU Type: by-sku.md
   - Change History: history.md

@@ -1,0 +1,81 @@
+{
+  "changes": {
+    "Claude Haiku 4.5 (preview)": {
+      "all": {
+        "added": [
+          "East US 2",
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Claude Opus 4.1 (preview)": {
+      "all": {
+        "added": [
+          "East US 2",
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Claude Opus 4.5 (preview)": {
+      "all": {
+        "added": [
+          "East US 2",
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Claude Sonnet 4.5 (preview)": {
+      "all": {
+        "added": [
+          "East US 2",
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    }
+  },
+  "timestamp": "2026-01-22T21:49:59.880690+00:00"
+}

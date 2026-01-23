@@ -7,9 +7,13 @@ from typing import Optional
 # Model matrix directories to check for availability data
 MODEL_MATRIX_DIRS = [
     "articles/ai-foundry/openai/includes/model-matrix",  # OpenAI models (gpt, dall-e, whisper, etc.)
-    "articles/ai-foundry/foundry-models/includes/model-matrix",  # Foundry models (phi, mistral, qwen, gpt-oss, etc.)
-    # Additional directories for non-OpenAI models as they become available:
-    # "articles/ai-foundry/models/includes/model-matrix",
+    "articles/ai-foundry/foundry-models/includes/model-matrix",  # Foundry models (deepseek, llama, grok, etc.)
+]
+
+# Serverless/MaaS (Models-as-a-Service) files with transposed table format
+# These files have models in rows and regions in text columns
+MAAS_FILES = [
+    "articles/ai-foundry/includes/region-availability-maas.md",  # Serverless API models (Anthropic, Cohere, Phi, Mistral, etc.)
 ]
 
 def get_model_matrix_directories() -> list[str]:
@@ -178,10 +182,19 @@ def fetch_markdown(url: str) -> str:
     resp.raise_for_status()
     return resp.text
 
-def split_cells(row: str) -> list:
+def split_cells(row: str, allow_no_leading_pipe: bool = False) -> list:
     row = row.strip()
-    if not row.startswith("|"):
+    if not row:
         return []
+    if not row.startswith("|"):
+        if not allow_no_leading_pipe:
+            return []
+        # For MaaS format, some data rows don't start with |
+        # but still end with | and have | separators
+        if "|" not in row:
+            return []
+        # Add leading | for consistent parsing
+        row = "|" + row
     return [c.strip() for c in row.strip().strip("|").split("|")]
 
 def parse_model_names(cell: str) -> list:
@@ -220,6 +233,88 @@ def format_region_name(cell: str) -> Optional[str]:
     key = normalize_region_key(cell)
     return REGION_LOOKUP.get(key, cell)
 
+
+def parse_regions_from_text(text: str) -> list[str]:
+    """Parse region names from a text cell that may contain multiple regions separated by <br>."""
+    if not text or text.lower() in {"not available", "not applicable", "n/a", "-"}:
+        return []
+    
+    regions = []
+    # Split by <br>, newlines, and other common separators
+    for segment in re.split(r"<br\s*/?>|\n", text):
+        segment = segment.strip()
+        if not segment or segment.lower() in {"not available", "not applicable", "n/a", "-"}:
+            continue
+        # Skip links like [Microsoft Managed Countries/Regions](...) - these are not actual regions
+        if segment.startswith("[") or "/partner-center/" in segment:
+            continue
+        region = format_region_name(segment)
+        if region and region not in regions:
+            regions.append(region)
+    return regions
+
+
+def parse_maas_table(table: str) -> dict:
+    """Parse a MaaS-style table where models are in rows and regions are listed as text in columns.
+    
+    Expected format:
+    | Model | Offer Availability Region | Hub/Project Region for Deployment | Hub/Project Region for Fine tuning |
+    |-------|---------------------------|-----------------------------------|-----------------------------------|
+    | ModelName | ... | East US <br> West US | ... |
+    
+    Note: Some MaaS tables have data rows that don't start with '|'.
+    """
+    rows = [line for line in table.strip().splitlines() if line.strip()]
+    if len(rows) < 3:
+        return {}
+    
+    header_cells = split_cells(rows[0])
+    if not header_cells:
+        return {}
+    
+    # Find the column index for deployment regions (usually "Hub/Project Region for Deployment")
+    deployment_col = -1
+    finetuning_col = -1
+    for idx, cell in enumerate(header_cells):
+        cell_lower = cell.lower()
+        if "deployment" in cell_lower and "region" in cell_lower:
+            deployment_col = idx
+        elif "fine" in cell_lower and "tuning" in cell_lower and "region" in cell_lower:
+            finetuning_col = idx
+    
+    # If we can't find deployment column, this isn't a MaaS table
+    if deployment_col < 0:
+        return {}
+    
+    model_regions = defaultdict(set)
+    
+    for row in rows[2:]:  # skip header and separator row
+        # Use allow_no_leading_pipe=True for MaaS tables
+        cells = split_cells(row, allow_no_leading_pipe=True)
+        if not cells or len(cells) <= deployment_col:
+            continue
+        
+        # First cell contains model name(s)
+        models = parse_model_names(cells[0])
+        if not models:
+            continue
+        
+        # Get regions from deployment column
+        deployment_regions = parse_regions_from_text(cells[deployment_col])
+        
+        # Optionally get fine-tuning regions if available
+        finetuning_regions = []
+        if finetuning_col >= 0 and len(cells) > finetuning_col:
+            finetuning_regions = parse_regions_from_text(cells[finetuning_col])
+        
+        # Combine all regions
+        all_regions = set(deployment_regions) | set(finetuning_regions)
+        
+        for model in models:
+            model_regions[model].update(all_regions)
+    
+    return model_regions
+
 def parse_table(table: str) -> dict:
     rows = [line for line in table.strip().splitlines() if line.strip()]
     if len(rows) < 3:
@@ -256,8 +351,50 @@ def extract_models_from_markdown(markdown: str) -> dict:
             combined[model].update(regions)
     return combined
 
+
+def extract_models_from_maas_markdown(markdown: str) -> dict:
+    """Extract models from MaaS-style markdown with transposed tables.
+    
+    MaaS tables may have data rows that don't start with '|', so we use
+    a more flexible regex pattern.
+    """
+    combined = defaultdict(set)
+    # Match tables: header line starting with |, separator line, then data lines
+    # Data lines may or may not start with |
+    table_pattern = r"(\|[^\n]+\|\s*\n\|[-|\s]+\|\s*\n(?:[^\n]*\|\s*\n)*)"
+    for table in re.findall(table_pattern, markdown, re.MULTILINE):
+        data = parse_maas_table(table)
+        for model, regions in data.items():
+            combined[model].update(regions)
+    return combined
+
+
+def get_maas_file_url(file_path: str) -> str:
+    """Generate raw GitHub URL for a MaaS file."""
+    return f"https://raw.githubusercontent.com/MicrosoftDocs/azure-ai-docs/main/{file_path}"
+
+
+def fetch_maas_files() -> list[dict]:
+    """Fetch and return info about MaaS files for processing."""
+    files = []
+    for file_path in MAAS_FILES:
+        name = os.path.basename(file_path)
+        slug = sku_slug(name)
+        files.append({
+            "name": name,
+            "slug": slug,
+            "label": sku_label(slug),
+            "url": get_maas_file_url(file_path),
+            "source_file": file_path,
+            "is_maas": True,
+        })
+    return files
+
+
 def build_current_snapshot(files: list) -> dict:
     combined = defaultdict(lambda: defaultdict(set))
+    
+    # Process regular model matrix files
     for entry in files:
         if not entry.get("url"):
             continue
@@ -266,6 +403,17 @@ def build_current_snapshot(files: list) -> dict:
         sku = entry.get("slug")
         for model, regions in data.items():
             combined[model][sku].update(regions)
+    
+    # Process MaaS files (transposed table format)
+    for entry in fetch_maas_files():
+        try:
+            markdown = fetch_markdown(entry["url"])
+            data = extract_models_from_maas_markdown(markdown)
+            sku = entry.get("slug")
+            for model, regions in data.items():
+                combined[model][sku].update(regions)
+        except Exception as e:
+            print(f"Warning: Error processing MaaS file {entry.get('name', 'unknown')}: {e}", file=sys.stderr)
 
     result = {}
     for model in sorted(combined.keys(), key=str.lower):

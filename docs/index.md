@@ -4,7 +4,7 @@ Real-time tracking of Azure AI Foundry model availability across regions and dep
 
 <div class="stats-grid">
   <div class="stat-card">
-    <div class="stat-value">58</div>
+    <div class="stat-value">114</div>
     <div class="stat-label">Models Tracked</div>
   </div>
   <div class="stat-card">
@@ -12,7 +12,7 @@ Real-time tracking of Azure AI Foundry model availability across regions and dep
     <div class="stat-label">Azure Regions</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value">16</div>
+    <div class="stat-value">33</div>
     <div class="stat-label">Broadly Available</div>
   </div>
 </div>
@@ -26,22 +26,22 @@ These models have the widest global deployment options:
 
 | Model | Global Regions | Details |
 |-------|----------------|---------|
-| **o3** | 28 regions | [View details](models/o3/) |
-| **o4-mini** | 28 regions | [View details](models/o4-mini/) |
-| **gpt-4o** | 28 regions | [View details](models/gpt-4o/) |
+| **gpt-5.1** | 28 regions | [View details](models/gpt-5-1/) |
+| **gpt-4.1** | 28 regions | [View details](models/gpt-4-1/) |
+| **gpt-4.1-mini** | 28 regions | [View details](models/gpt-4-1-mini/) |
+| **o1** | 28 regions | [View details](models/o1/) |
 | **gpt-4.1-nano** | 28 regions | [View details](models/gpt-4-1-nano/) |
-| **gpt-4o-mini** | 28 regions | [View details](models/gpt-4o-mini/) |
 
 ### Need Reserved Capacity (PTU)?
 These models support Provisioned Throughput Units:
 
 | Model | PTU Regions | Details |
 |-------|-------------|---------|
-| **gpt-5** | 28 regions | [View details](models/gpt-5/) |
-| **o1** | 28 regions | [View details](models/o1/) |
+| **o3-mini** | 28 regions | [View details](models/o3-mini/) |
+| **gpt-4o-mini** | 28 regions | [View details](models/gpt-4o-mini/) |
 | **o3** | 28 regions | [View details](models/o3/) |
-| **gpt-4.1** | 28 regions | [View details](models/gpt-4-1/) |
-| **gpt-5.1** | 28 regions | [View details](models/gpt-5-1/) |
+| **gpt-5** | 28 regions | [View details](models/gpt-5/) |
+| **gpt-5-mini** | 28 regions | [View details](models/gpt-5-mini/) |
 
 ---
 
@@ -49,10 +49,10 @@ These models support Provisioned Throughput Units:
 
 | Level | Description | Count | Example Models |
 |-------|-------------|-------|----------------|
-| 🟢 **Broad** | 25+ regions | 16 | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano` |
-| 🟡 **Strong** | 20-24 regions | 3 | `text-embedding-ada-002`, `gpt-4`, `gpt-4-32k` |
+| 🟢 **Broad** | 25+ regions | 33 | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano` |
+| 🟡 **Strong** | 20-24 regions | 2 | `gpt-4`, `gpt-4-32k` |
 | 🟠 **Growing** | 15-19 regions | 0 |  |
-| 🔴 **Emerging** | <15 regions | 39 | Limited regional availability |
+| 🔴 **Emerging** | <15 regions | 79 | Limited regional availability |
 
 ---
 
@@ -60,16 +60,16 @@ These models support Provisioned Throughput Units:
 
 | Region | Models Available | 
 |--------|------------------|
-| **Sweden Central** | 55 models |
-| **East US 2** | 53 models |
-| **Central US** | 28 models |
-| **East US** | 26 models |
-| **North Central US** | 26 models |
-| **West US 3** | 25 models |
-| **Australia East** | 24 models |
-| **UK South** | 24 models |
-| **Switzerland North** | 24 models |
-| **Canada East** | 23 models |
+| **East US 2** | 109 models |
+| **Sweden Central** | 103 models |
+| **East US** | 76 models |
+| **North Central US** | 76 models |
+| **West US 3** | 74 models |
+| **South Central US** | 72 models |
+| **West US** | 72 models |
+| **Switzerland North** | 40 models |
+| **Australia East** | 40 models |
+| **UK South** | 40 models |
 
 ---
 
@@ -84,4 +84,4 @@ These models support Provisioned Throughput Units:
 
 ---
 
-_Last updated: 2026-01-13 21:37 UTC_
+_Last updated: 2026-01-22 22:01 UTC_
