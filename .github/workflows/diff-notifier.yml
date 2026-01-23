@@ -107,6 +107,7 @@ jobs:
         if: ${{ steps.summary.outputs.entries != '[]' }}
         uses: actions/github-script@v7
         with:
+          entries: ${{ steps.summary.outputs.entries }}
           script: |
             const entries = JSON.parse(core.getInput('entries'));
             if (!entries.length) {
