@@ -1,6 +1,6 @@
 name: Region watch (GitHub Markdown)
 on:
-  schedule: [{ cron: "23 */6 * * *" }]
+  schedule: [{ cron: "0 7 * * *" }]
   workflow_dispatch:
 
 permissions:
