@@ -207,4 +207,5 @@ nav:
       - tsuzumi-7b: models/tsuzumi-7b.md
   - By Region: by-region.md
   - By SKU Type: by-sku.md
+  - Retirements: retirements.md
   - Change History: history.md

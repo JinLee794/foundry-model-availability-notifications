@@ -2,6 +2,26 @@
 
 <span class="badge badge-broad">🟢 Broad</span> Available in **28** of 28 regions
 
+
+!!! warning "Retirement Notice"
+    This model has scheduled retirement dates. Plan your migration to the replacement model.
+
+## ⏰ Retirement Schedule
+
+| Version | Status | Deprecation Date | Retirement Date | Timeline | Replacement |
+|---------|--------|------------------|-----------------|----------|-------------|
+| 2024-05-13 | Generally Available | 2025-05-13 | 2026-03-31 | <span class="badge badge-retiring">Retiring</span> | [gpt-5.1](../gpt-5-1/) |
+| 2024-08-06 | Generally Available | 2025-08-06 | 2026-03-31 | <span class="badge badge-retiring">Retiring</span> | [gpt-5.1](../gpt-5-1/) |
+| 2024-11-20 | Generally Available | 2025-11-20 | 2026-06-05 | <span class="badge badge-scheduled">Scheduled</span> | [gpt-5.1](../gpt-5-1/) |
+
+
+### Replacement Model Availability
+
+| Model | Coverage | Details |
+|-------|----------|---------|
+| [gpt-5.1](../gpt-5-1/) | 28 regions | [View Details](../gpt-5-1/) |
+
+
 ---
 
 ## 📊 Quick Stats
@@ -121,4 +141,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-01-22 22:01 UTC_
+_Last updated: 2026-01-23 17:04 UTC_

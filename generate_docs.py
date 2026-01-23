@@ -12,6 +12,7 @@ from typing import Dict, List, Set, Tuple
 HERE = Path(__file__).resolve().parent
 REGION_WATCH_DIR = HERE / ".region-watch"
 SNAPSHOT_PATH = REGION_WATCH_DIR / "regions_snapshot.json"
+RETIREMENT_PATH = REGION_WATCH_DIR / "retirement_data.json"
 HISTORY_DIR = REGION_WATCH_DIR / "history"
 DOCS_DIR = HERE / "docs"
 
@@ -101,6 +102,43 @@ def load_history(path: Path) -> List[Dict]:
     return entries
 
 
+def load_retirement_data(path: Path) -> Dict:
+    """Load retirement data from JSON file."""
+    if not path.exists():
+        return {"models": {}}
+    
+    try:
+        with path.open(encoding="utf-8") as fh:
+            return json.load(fh)
+    except json.JSONDecodeError:
+        return {"models": {}}
+
+
+def build_retirement_index(retirement_data: Dict) -> Dict[str, List[Dict]]:
+    """Build a model-name to retirement info mapping.
+    
+    Returns:
+        Dict mapping normalized model names to list of retirement entries
+    """
+    model_retirement: Dict[str, List[Dict]] = defaultdict(list)
+    
+    for category, entries in retirement_data.get("models", {}).items():
+        # Skip fine_tuned - it has a different schema (training_retirement, deployment_retirement)
+        if category == "fine_tuned":
+            continue
+        for entry in entries:
+            model_name = entry.get("model", "")
+            if model_name:
+                # Normalize model name (e.g., gpt-4o -> gpt-4o)
+                normalized = model_name.lower().replace(".", "-")
+                model_retirement[normalized].append({
+                    **entry,
+                    "category": category
+                })
+    
+    return dict(model_retirement)
+
+
 def build_model_index(data: Dict[str, dict]) -> Tuple[
     Dict[str, Set[str]],
     Dict[str, Dict[str, Set[str]]],
@@ -154,6 +192,286 @@ def pick_bucket(count: int) -> Tuple[str, str, str]:
 def slugify(name: str) -> str:
     """Convert model name to URL-safe slug."""
     return name.lower().replace(" ", "-").replace(".", "-")
+
+
+def get_retirement_status(retirement_date: str, today: datetime = None) -> Tuple[str, str]:
+    """Determine retirement status and return (status_text, css_class)."""
+    if today is None:
+        today = datetime.utcnow()
+    
+    if not retirement_date:
+        return "Active", "badge-active"
+    
+    # Handle "No earlier than" dates
+    if retirement_date.startswith("No earlier than"):
+        return "Planned", "badge-planned"
+    
+    try:
+        retire_dt = datetime.strptime(retirement_date, "%Y-%m-%d")
+        days_until = (retire_dt - today).days
+        
+        if days_until < 0:
+            return "Retired", "badge-retired"
+        elif days_until <= 30:
+            return "Retiring Soon", "badge-retiring-soon"
+        elif days_until <= 90:
+            return "Retiring", "badge-retiring"
+        else:
+            return "Scheduled", "badge-scheduled"
+    except ValueError:
+        return "Planned", "badge-planned"
+
+
+def generate_retirement_section(
+    model: str,
+    retirement_entries: List[Dict],
+    model_regions_lookup: Dict[str, Set[str]],
+) -> str:
+    """Generate the retirement notice section for a model page."""
+    if not retirement_entries:
+        return ""
+    
+    # Build retirement info table
+    rows = []
+    replacement_info = []
+    
+    for entry in retirement_entries:
+        version = entry.get("version", "-")
+        status = entry.get("status", "Unknown")
+        deprecation = entry.get("deprecation_date") or "-"
+        retirement = entry.get("retirement_date") or "-"
+        replacement = entry.get("replacement")
+        
+        retire_status, retire_class = get_retirement_status(retirement)
+        status_badge = f'<span class="badge {retire_class}">{retire_status}</span>'
+        
+        replacement_cell = "-"
+        if replacement:
+            replacement_slug = slugify(replacement)
+            replacement_cell = f"[{replacement}](../{replacement_slug}/)"
+            
+            # Collect replacement info for availability section
+            replacement_norm = replacement.lower().replace(".", "-")
+            if replacement_norm in model_regions_lookup:
+                replacement_info.append({
+                    "model": replacement,
+                    "slug": replacement_slug,
+                    "regions": len(model_regions_lookup[replacement_norm])
+                })
+        
+        rows.append(f"| {version} | {status} | {deprecation} | {retirement} | {status_badge} | {replacement_cell} |")
+    
+    # Build replacement availability section
+    replacement_section = ""
+    if replacement_info:
+        unique_replacements = {r["model"]: r for r in replacement_info}.values()
+        replacement_rows = []
+        for r in unique_replacements:
+            replacement_rows.append(f"| [{r['model']}](../{r['slug']}/) | {r['regions']} regions | [View Details](../{r['slug']}/) |")
+        
+        replacement_section = f"""
+
+### Replacement Model Availability
+
+| Model | Coverage | Details |
+|-------|----------|---------|
+{chr(10).join(replacement_rows)}
+"""
+    
+    return f"""
+
+!!! warning "Retirement Notice"
+    This model has scheduled retirement dates. Plan your migration to the replacement model.
+
+## ⏰ Retirement Schedule
+
+| Version | Status | Deprecation Date | Retirement Date | Timeline | Replacement |
+|---------|--------|------------------|-----------------|----------|-------------|
+{chr(10).join(rows)}
+{replacement_section}
+"""
+
+
+def generate_retirements_page(
+    retirement_data: Dict,
+    model_regions: Dict[str, Set[str]],
+) -> str:
+    """Generate the retirements overview page."""
+    
+    today = datetime.utcnow()
+    
+    # Categorize all retirements
+    retiring_soon = []  # Within 30 days
+    upcoming = []  # 31-90 days
+    scheduled = []  # 91+ days
+    retired = []  # Already retired
+    
+    all_entries = []
+    for category, entries in retirement_data.get("models", {}).items():
+        if category == "fine_tuned":
+            continue  # Handle separately
+        for entry in entries:
+            entry_with_cat = {**entry, "category": category}
+            all_entries.append(entry_with_cat)
+            
+            retirement_date = entry.get("retirement_date", "")
+            status_text, _ = get_retirement_status(retirement_date, today)
+            
+            if status_text == "Retired":
+                retired.append(entry_with_cat)
+            elif status_text == "Retiring Soon":
+                retiring_soon.append(entry_with_cat)
+            elif status_text == "Retiring":
+                upcoming.append(entry_with_cat)
+            elif status_text in ["Scheduled", "Planned"]:
+                scheduled.append(entry_with_cat)
+    
+    # Build summary stats
+    total_models = len(set(e["model"] for e in all_entries))
+    
+    def build_table_rows(entries: List[Dict]) -> str:
+        rows = []
+        # Handle None values in sorting by using empty string as default
+        for entry in sorted(entries, key=lambda x: (x.get("retirement_date") or "", x.get("model") or "")):
+            model = entry.get("model", "")
+            version = entry.get("version", "-")
+            retirement = entry.get("retirement_date") or "-"
+            replacement = entry.get("replacement")
+            category = entry.get("category", "").replace("_", " ").title()
+            
+            model_slug = slugify(model)
+            model_link = f"[{model}](models/{model_slug}/)"
+            
+            replacement_cell = "-"
+            if replacement:
+                replacement_slug = slugify(replacement)
+                # Check if replacement model exists in our data
+                replacement_norm = replacement.lower().replace(".", "-")
+                if replacement_norm in model_regions:
+                    region_count = len(model_regions[replacement_norm])
+                    replacement_cell = f"[{replacement}](models/{replacement_slug}/) ({region_count} regions)"
+                else:
+                    replacement_cell = f"`{replacement}` (not yet available)"
+            
+            status_text, status_class = get_retirement_status(retirement, today)
+            status_badge = f'<span class="badge {status_class}">{status_text}</span>'
+            
+            rows.append(f"| {model_link} | {version} | {category} | {retirement} | {status_badge} | {replacement_cell} |")
+        return chr(10).join(rows)
+    
+    # Build fine-tuned models section
+    fine_tuned_entries = retirement_data.get("models", {}).get("fine_tuned", [])
+    fine_tuned_rows = []
+    for entry in fine_tuned_entries:
+        model = entry.get("model", "")
+        version = entry.get("version", "-")
+        training_ret = entry.get("training_retirement", "-")
+        deploy_ret = entry.get("deployment_retirement", "-")
+        note = entry.get("note", "")
+        
+        model_slug = slugify(model)
+        note_str = f" ({note})" if note else ""
+        
+        fine_tuned_rows.append(f"| [{model}](models/{model_slug}/) | {version} | {training_ret}{note_str} | {deploy_ret} |")
+    
+    fine_tuned_section = ""
+    if fine_tuned_rows:
+        fine_tuned_section = f"""
+
+---
+
+## 🔧 Fine-Tuned Model Retirements
+
+Fine-tuned models retire in two phases: training and deployment.
+
+| Model | Version | Training Retirement | Deployment Retirement |
+|-------|---------|---------------------|----------------------|
+{chr(10).join(fine_tuned_rows)}
+
+!!! info "Fine-Tuning Retirement Policy"
+    - **Training retirement**: After this date, you cannot create new fine-tuned models.
+    - **Deployment retirement**: After this date, inference and deployment return errors.
+    - Models you've already trained remain available until deployment retirement.
+"""
+
+    return f"""# Model Retirements
+
+Track upcoming Azure AI Foundry model retirements and plan your migrations.
+
+<div class="stats-grid">
+  <div class="stat-card" style="border-left-color: #ef4444;">
+    <div class="stat-value" style="color: #ef4444;">{len(retiring_soon)}</div>
+    <div class="stat-label">Retiring in 30 Days</div>
+  </div>
+  <div class="stat-card" style="border-left-color: #f59e0b;">
+    <div class="stat-value" style="color: #f59e0b;">{len(upcoming)}</div>
+    <div class="stat-label">Retiring in 90 Days</div>
+  </div>
+  <div class="stat-card" style="border-left-color: #3b82f6;">
+    <div class="stat-value" style="color: #3b82f6;">{len(scheduled)}</div>
+    <div class="stat-label">Scheduled</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">{total_models}</div>
+    <div class="stat-label">Total Models</div>
+  </div>
+</div>
+
+---
+
+{"## ⚠️ Retiring Soon (Within 30 Days)" if retiring_soon else ""}
+
+{f'''These models require immediate migration attention.
+
+| Model | Version | Category | Retirement Date | Status | Replacement |
+|-------|---------|----------|-----------------|--------|-------------|
+{build_table_rows(retiring_soon)}
+''' if retiring_soon else ""}
+
+{"## 🔶 Upcoming Retirements (31-90 Days)" if upcoming else ""}
+
+{f'''Plan your migrations for these models.
+
+| Model | Version | Category | Retirement Date | Status | Replacement |
+|-------|---------|----------|-----------------|--------|-------------|
+{build_table_rows(upcoming)}
+''' if upcoming else ""}
+
+## 📅 All Scheduled Retirements
+
+Complete list of model retirements with replacement recommendations.
+
+| Model | Version | Category | Retirement Date | Status | Replacement |
+|-------|---------|----------|-----------------|--------|-------------|
+{build_table_rows(all_entries)}
+{fine_tuned_section}
+
+---
+
+## 📖 Understanding Retirement Timeline
+
+| Status | Description | Action Required |
+|--------|-------------|-----------------|
+| <span class="badge badge-retiring-soon">Retiring Soon</span> | Within 30 days | **Immediate migration required** |
+| <span class="badge badge-retiring">Retiring</span> | 31-90 days | Plan and test migration |
+| <span class="badge badge-scheduled">Scheduled</span> | 91+ days | Monitor and prepare |
+| <span class="badge badge-planned">Planned</span> | Date not finalized | Stay informed |
+| <span class="badge badge-retired">Retired</span> | No longer available | Migration required |
+
+---
+
+## 📚 Resources
+
+- [Azure OpenAI Model Lifecycle](https://learn.microsoft.com/azure/ai-services/openai/concepts/model-lifecycle)
+- [Model Deprecation and Retirement](https://learn.microsoft.com/azure/ai-services/openai/concepts/model-retirements)
+- [Migration Best Practices](https://learn.microsoft.com/azure/ai-services/openai/how-to/migration)
+
+---
+
+_Data sourced from [Microsoft Azure AI Documentation](https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/ai-foundry/openai/includes/retirement/models.md)_
+
+_Last updated: {datetime.utcnow():%Y-%m-%d %H:%M UTC}_
+"""
 
 
 def generate_index_page(
@@ -432,6 +750,8 @@ def generate_model_detail_page(
     region_skus: Dict[str, Set[str]],
     sku_regions: Dict[str, Set[str]],
     all_regions: Set[str],
+    retirement_info: List[Dict] = None,
+    model_regions_lookup: Dict[str, Set[str]] = None,
 ) -> str:
     """Generate detailed page for a single model."""
     
@@ -443,6 +763,11 @@ def generate_model_detail_page(
     for sku, sku_regs in sorted(sku_regions.items()):
         cat = get_sku_category(sku)
         sku_by_category[cat].append((sku, sku_regs))
+    
+    # Build retirement section if applicable
+    retirement_section = ""
+    if retirement_info:
+        retirement_section = generate_retirement_section(model, retirement_info, model_regions_lookup or {})
     
     # Build SKU breakdown sections
     sku_sections = []
@@ -505,7 +830,7 @@ def generate_model_detail_page(
     return f"""# {model}
 
 <span class="badge {bucket_class}">{bucket_label}</span> Available in **{count}** of {len(all_regions)} regions
-
+{retirement_section}
 ---
 
 ## 📊 Quick Stats
@@ -923,6 +1248,15 @@ def main():
     model_regions, model_region_skus, model_sku_regions, all_labels, all_regions = build_model_index(data)
     history = load_history(HISTORY_DIR)
     
+    # Load retirement data
+    retirement_data = load_retirement_data(RETIREMENT_PATH)
+    retirement_index = build_retirement_index(retirement_data)
+    
+    # Build normalized model_regions lookup for retirement sections
+    model_regions_normalized = {
+        slugify(model): regions for model, regions in model_regions.items()
+    }
+    
     # Generate main pages
     pages = {
         "index.md": generate_index_page(model_regions, model_sku_regions, all_labels, all_regions),
@@ -930,6 +1264,7 @@ def main():
         "by-region.md": generate_by_region_page(model_regions, model_region_skus, all_regions),
         "by-sku.md": generate_by_sku_page(model_regions, model_sku_regions, all_labels, all_regions),
         "history.md": generate_history_page(history),
+        "retirements.md": generate_retirements_page(retirement_data, model_regions_normalized),
     }
     
     for filename, content in pages.items():
@@ -940,12 +1275,18 @@ def main():
     
     # Generate individual model pages
     for model in model_regions.keys():
+        # Look up retirement info for this model
+        model_normalized = slugify(model)
+        retirement_info = retirement_index.get(model_normalized, [])
+        
         content = generate_model_detail_page(
             model=model,
             regions=model_regions[model],
             region_skus=model_region_skus[model],
             sku_regions=model_sku_regions[model],
             all_regions=all_regions,
+            retirement_info=retirement_info,
+            model_regions_lookup=model_regions_normalized,
         )
         path = DOCS_DIR / "models" / f"{slugify(model)}.md"
         path.write_text(content, encoding="utf-8")

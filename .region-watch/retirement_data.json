@@ -1,0 +1,78 @@
+{
+  "source": "https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/ai-foundry/openai/includes/retirement/models.md",
+  "last_updated": "2026-01-23",
+  "models": {
+    "text_generation": [
+      {"model": "gpt-5-chat", "version": "2025-08-07", "status": "Preview", "deprecation_date": null, "retirement_date": "2026-03-01", "replacement": "gpt-5.2-chat"},
+      {"model": "gpt-5-chat", "version": "2025-10-03", "status": "Preview", "deprecation_date": null, "retirement_date": "2026-03-01", "replacement": "gpt-5.2-chat"},
+      {"model": "gpt-4o", "version": "2024-05-13", "status": "Generally Available", "deprecation_date": "2025-05-13", "retirement_date": "2026-03-31", "replacement": "gpt-5.1"},
+      {"model": "gpt-4o", "version": "2024-08-06", "status": "Generally Available", "deprecation_date": "2025-08-06", "retirement_date": "2026-03-31", "replacement": "gpt-5.1"},
+      {"model": "gpt-4o", "version": "2024-11-20", "status": "Generally Available", "deprecation_date": "2025-11-20", "retirement_date": "2026-06-05", "replacement": "gpt-5.1"},
+      {"model": "gpt-4o-mini", "version": "2024-07-18", "status": "Generally Available", "deprecation_date": "2025-07-18", "retirement_date": "2026-03-31", "replacement": "gpt-4.1-mini"},
+      {"model": "gpt-4.1", "version": "2025-04-14", "status": "Generally Available", "deprecation_date": "2026-04-14", "retirement_date": "2026-10-14", "replacement": "gpt-5"},
+      {"model": "gpt-4.1-mini", "version": "2025-04-14", "status": "Generally Available", "deprecation_date": "2026-04-14", "retirement_date": "2026-10-14", "replacement": "gpt-5-mini"},
+      {"model": "gpt-4.1-nano", "version": "2025-04-14", "status": "Generally Available", "deprecation_date": "2026-04-14", "retirement_date": "2026-10-14", "replacement": "gpt-5-nano"},
+      {"model": "computer-use-preview", "version": "2025-03-11", "status": "Preview", "deprecation_date": null, "retirement_date": "No earlier than 2026-04-14", "replacement": null},
+      {"model": "o1", "version": "2024-12-17", "status": "Generally Available", "deprecation_date": "2025-12-17", "retirement_date": "2026-07-15", "replacement": "o3"},
+      {"model": "o1-pro", "version": "2025-03-19", "status": "Generally Available", "deprecation_date": "2026-03-19", "retirement_date": "2026-09-18", "replacement": "o3-pro"},
+      {"model": "o3-mini", "version": "2025-01-31", "status": "Generally Available", "deprecation_date": "2026-01-31", "retirement_date": "2026-08-02", "replacement": "o4-mini"},
+      {"model": "o3", "version": "2025-04-16", "status": "Generally Available", "deprecation_date": "2026-04-16", "retirement_date": "2026-10-16", "replacement": null},
+      {"model": "o3-pro", "version": "2025-06-10", "status": "Generally Available", "deprecation_date": "2026-06-10", "retirement_date": "2026-12-10", "replacement": null},
+      {"model": "o3-deep-research", "version": "2025-06-26", "status": "Generally Available", "deprecation_date": "2026-06-26", "retirement_date": "2026-12-26", "replacement": null},
+      {"model": "o4-mini", "version": "2025-04-16", "status": "Generally Available", "deprecation_date": "2026-04-16", "retirement_date": "2026-10-16", "replacement": null},
+      {"model": "codex-mini", "version": "2025-05-16", "status": "Generally Available", "deprecation_date": "2026-05-16", "retirement_date": "2026-11-15", "replacement": null},
+      {"model": "model-router", "version": "2025-11-18", "status": "Generally Available", "deprecation_date": "2026-11-18", "retirement_date": "2027-05-20", "replacement": null},
+      {"model": "gpt-5-mini", "version": "2025-08-07", "status": "Generally Available", "deprecation_date": "2026-08-07", "retirement_date": "2027-02-06", "replacement": null},
+      {"model": "gpt-5-nano", "version": "2025-08-07", "status": "Generally Available", "deprecation_date": "2026-08-07", "retirement_date": "2027-02-06", "replacement": null},
+      {"model": "gpt-5-codex", "version": "2025-09-15", "status": "Generally Available", "deprecation_date": "2026-09-15", "retirement_date": "2027-03-17", "replacement": null},
+      {"model": "gpt-5-pro", "version": "2025-10-06", "status": "Generally Available", "deprecation_date": "2026-10-06", "retirement_date": "2027-04-07", "replacement": null},
+      {"model": "gpt-5.1", "version": "2025-11-13", "status": "Generally Available", "deprecation_date": "2026-11-13", "retirement_date": "2027-05-15", "replacement": null},
+      {"model": "gpt-5.1-codex", "version": "2025-11-13", "status": "Generally Available", "deprecation_date": "2026-11-13", "retirement_date": "2027-05-15", "replacement": null},
+      {"model": "gpt-5.1-codex-mini", "version": "2025-11-13", "status": "Generally Available", "deprecation_date": "2026-11-13", "retirement_date": "2027-05-15", "replacement": null},
+      {"model": "gpt-5.1-chat", "version": "2025-11-13", "status": "Preview", "deprecation_date": null, "retirement_date": "No earlier than 2026-03-31", "replacement": null},
+      {"model": "gpt-5.2", "version": "2025-12-11", "status": "Generally Available", "deprecation_date": "No earlier than 2026-12-12", "retirement_date": "No earlier than 2027-05-12", "replacement": null},
+      {"model": "gpt-5.2-chat", "version": "2025-12-11", "status": "Preview", "deprecation_date": null, "retirement_date": "No earlier than 2026-04-01", "replacement": null}
+    ],
+    "audio": [
+      {"model": "gpt-4o-audio-preview", "version": "2024-12-17", "status": "Preview", "deprecation_date": null, "retirement_date": "2026-02-02", "replacement": "gpt-audio"},
+      {"model": "gpt-4o-realtime-preview", "version": "2024-12-17", "status": "Preview", "deprecation_date": null, "retirement_date": "2026-02-02", "replacement": "gpt-realtime"},
+      {"model": "gpt-4o-mini-audio-preview", "version": "2024-12-17", "status": "Preview", "deprecation_date": null, "retirement_date": "No earlier than 2026-02-28", "replacement": null},
+      {"model": "gpt-4o-mini-realtime-preview", "version": "2024-12-17", "status": "Preview", "deprecation_date": null, "retirement_date": "No earlier than 2026-02-28", "replacement": null},
+      {"model": "gpt-4o-transcribe", "version": "2025-03-20", "status": "Preview", "deprecation_date": null, "retirement_date": "No earlier than 2026-02-28", "replacement": null},
+      {"model": "gpt-4o-mini-tts", "version": "2025-03-20", "status": "Preview", "deprecation_date": null, "retirement_date": "No earlier than 2026-02-28", "replacement": null},
+      {"model": "gpt-4o-mini-transcribe", "version": "2025-03-20", "status": "Preview", "deprecation_date": null, "retirement_date": "No earlier than 2026-02-28", "replacement": null},
+      {"model": "gpt-4o-transcribe-diarize", "version": "2025-10-15", "status": "Generally Available", "deprecation_date": "2026-10-15", "retirement_date": "2027-04-16", "replacement": null},
+      {"model": "gpt-audio", "version": "2025-08-28", "status": "Generally Available", "deprecation_date": "2026-08-28", "retirement_date": "2027-02-28", "replacement": null},
+      {"model": "gpt-realtime", "version": "2025-08-28", "status": "Generally Available", "deprecation_date": "2026-08-28", "retirement_date": "2027-02-28", "replacement": null},
+      {"model": "gpt-audio-mini", "version": "2025-10-06", "status": "Generally Available", "deprecation_date": "2026-10-06", "retirement_date": "2027-04-07", "replacement": null},
+      {"model": "tts", "version": "001", "status": "Generally Available", "deprecation_date": "No earlier than 2026-02-28", "retirement_date": null, "replacement": null},
+      {"model": "tts-hd", "version": "001", "status": "Generally Available", "deprecation_date": "No earlier than 2026-02-28", "retirement_date": null, "replacement": null},
+      {"model": "whisper", "version": "001", "status": "Generally Available", "deprecation_date": "No earlier than 2026-02-28", "retirement_date": null, "replacement": null},
+      {"model": "gpt-realtime-mini", "version": "2025-12-15", "status": "Generally Available", "deprecation_date": null, "retirement_date": "No earlier than 2026-12-15", "replacement": null},
+      {"model": "gpt-4o-mini-transcribe", "version": "2025-12-15", "status": "Generally Available", "deprecation_date": null, "retirement_date": "No earlier than 2026-12-15", "replacement": null},
+      {"model": "gpt-4o-mini-tts", "version": "2025-12-15", "status": "Generally Available", "deprecation_date": null, "retirement_date": "No earlier than 2026-12-15", "replacement": null}
+    ],
+    "image_and_video": [
+      {"model": "dall-e-3", "version": "3", "status": "Generally Available", "deprecation_date": null, "retirement_date": "2026-02-18", "replacement": "gpt-image-1-mini"},
+      {"model": "gpt-image-1", "version": "2025-04-15", "status": "Preview", "deprecation_date": null, "retirement_date": "No earlier than 2026-03-31", "replacement": "gpt-image-1-mini"},
+      {"model": "gpt-image-1-mini", "version": "2025-10-06", "status": "Generally Available", "deprecation_date": "2026-10-06", "retirement_date": "2027-04-07", "replacement": null},
+      {"model": "sora", "version": "2025-05-02", "status": "Preview", "deprecation_date": null, "retirement_date": "No earlier than 2026-02-28", "replacement": "sora-2"},
+      {"model": "gpt-image-1.5", "version": "2025-12-16", "status": "Preview", "deprecation_date": null, "retirement_date": "No earlier than 2026-12-16", "replacement": null},
+      {"model": "sora-2", "version": "2025-10-15", "status": "Preview", "deprecation_date": null, "retirement_date": "No earlier than 2026-04-30", "replacement": null}
+    ],
+    "embedding": [
+      {"model": "text-embedding-3-large", "version": "1", "status": "Generally Available", "deprecation_date": null, "retirement_date": "No earlier than 2026-10-30", "replacement": null},
+      {"model": "text-embedding-3-small", "version": "1", "status": "Generally Available", "deprecation_date": null, "retirement_date": "No earlier than 2026-10-30", "replacement": null},
+      {"model": "text-embedding-ada-002", "version": "2", "status": "Generally Available", "deprecation_date": null, "retirement_date": "No earlier than 2026-10-30", "replacement": null},
+      {"model": "text-embedding-ada-002", "version": "1", "status": "Generally Available", "deprecation_date": null, "retirement_date": "No earlier than 2026-10-30", "replacement": null}
+    ],
+    "fine_tuned": [
+      {"model": "gpt-4o", "version": "2024-08-06", "training_retirement": "No earlier than 2026-09-31", "deployment_retirement": "2027-03-31", "note": "For existing customers only"},
+      {"model": "gpt-4o-mini", "version": "2024-07-18", "training_retirement": "No earlier than 2026-09-31", "deployment_retirement": "2027-03-31", "note": "For existing customers only"},
+      {"model": "gpt-4.1", "version": "2025-04-14", "training_retirement": "Base model retirement", "deployment_retirement": "One year after training retirement", "note": null},
+      {"model": "gpt-4.1-mini", "version": "2025-04-14", "training_retirement": "Base model retirement", "deployment_retirement": "One year after training retirement", "note": null},
+      {"model": "gpt-4.1-nano", "version": "2025-04-14", "training_retirement": "Base model retirement", "deployment_retirement": "One year after training retirement", "note": null},
+      {"model": "o4-mini", "version": "2025-04-16", "training_retirement": "Base model retirement", "deployment_retirement": "One year after training retirement", "note": null}
+    ]
+  }
+}

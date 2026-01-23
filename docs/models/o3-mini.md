@@ -2,6 +2,24 @@
 
 <span class="badge badge-broad">🟢 Broad</span> Available in **28** of 28 regions
 
+
+!!! warning "Retirement Notice"
+    This model has scheduled retirement dates. Plan your migration to the replacement model.
+
+## ⏰ Retirement Schedule
+
+| Version | Status | Deprecation Date | Retirement Date | Timeline | Replacement |
+|---------|--------|------------------|-----------------|----------|-------------|
+| 2025-01-31 | Generally Available | 2026-01-31 | 2026-08-02 | <span class="badge badge-scheduled">Scheduled</span> | [o4-mini](../o4-mini/) |
+
+
+### Replacement Model Availability
+
+| Model | Coverage | Details |
+|-------|----------|---------|
+| [o4-mini](../o4-mini/) | 28 regions | [View Details](../o4-mini/) |
+
+
 ---
 
 ## 📊 Quick Stats
@@ -107,4 +125,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-01-22 22:01 UTC_
+_Last updated: 2026-01-23 17:04 UTC_

@@ -2,6 +2,25 @@
 
 <span class="badge badge-emerging">🔴 Emerging</span> Available in **3** of 28 regions
 
+
+!!! warning "Retirement Notice"
+    This model has scheduled retirement dates. Plan your migration to the replacement model.
+
+## ⏰ Retirement Schedule
+
+| Version | Status | Deprecation Date | Retirement Date | Timeline | Replacement |
+|---------|--------|------------------|-----------------|----------|-------------|
+| 2025-08-07 | Preview | - | 2026-03-01 | <span class="badge badge-retiring">Retiring</span> | [gpt-5.2-chat](../gpt-5-2-chat/) |
+| 2025-10-03 | Preview | - | 2026-03-01 | <span class="badge badge-retiring">Retiring</span> | [gpt-5.2-chat](../gpt-5-2-chat/) |
+
+
+### Replacement Model Availability
+
+| Model | Coverage | Details |
+|-------|----------|---------|
+| [gpt-5.2-chat](../gpt-5-2-chat/) | 2 regions | [View Details](../gpt-5-2-chat/) |
+
+
 ---
 
 ## 📊 Quick Stats
@@ -54,4 +73,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-01-22 22:01 UTC_
+_Last updated: 2026-01-23 17:04 UTC_
