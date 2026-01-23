@@ -51,13 +51,13 @@
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
-| Standard (all) | 15 | 54% |
+| Standard (all) | 16 | 57% |
 | Standard GPT-4 | 7 | 25% |
 | Standard chat completions | 14 | 50% |
 
 **Available Regions:**
 
-`Australia East`, `Canada East`, `East US`, `East US 2`, `France Central`, `Japan East`, `North Central US`, `Norway East`, `South Central US`, `South India`, `Sweden Central`, `Switzerland North`, `UK South`, `West US`, `West US 3`
+`Australia East`, `Canada East`, `Central US`, `East US`, `East US 2`, `France Central`, `Japan East`, `North Central US`, `Norway East`, `South Central US`, `South India`, `Sweden Central`, `Switzerland North`, `UK South`, `West US`, `West US 3`
 
 ### Provisioned Deployments
 
@@ -89,7 +89,7 @@ This table shows exactly which SKU types are available in each region.
 <tr><td><strong>Brazil South</strong></td><td>—</td><td>—</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>—</td><td>—</td><td>✅</td></tr>
 <tr><td><strong>Canada Central</strong></td><td>—</td><td>—</td><td>—</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>—</td><td>—</td><td>✅</td></tr>
 <tr><td><strong>Canada East</strong></td><td>—</td><td>—</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>Central US</strong></td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>—</td><td>—</td><td>✅</td></tr>
+<tr><td><strong>Central US</strong></td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>—</td><td>✅</td></tr>
 <tr><td><strong>East US</strong></td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
 <tr><td><strong>East US 2</strong></td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
 <tr><td><strong>France Central</strong></td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td></tr>
@@ -121,4 +121,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-01-13 21:37 UTC_
+_Last updated: 2026-01-22 22:01 UTC_

@@ -55,7 +55,7 @@ Available in **11** regions across **9** models.
 
 ### Global coverage
 
-Available in **28** regions across **58** models.
+Available in **28** regions across **114** models.
 
 | Model | Regions | Details |
 |-------|---------|---------|
@@ -73,13 +73,13 @@ Available in **28** regions across **58** models.
 | o4-mini | 28 | [View](../models/o4-mini/) |
 | gpt-5-nano | 26 | [View](../models/gpt-5-nano/) |
 | text-embedding-3-large | 26 | [View](../models/text-embedding-3-large/) |
-| gpt-35-turbo | 25 | [View](../models/gpt-35-turbo/) |
+| DeepSeek-R1 | 25 | [View](../models/deepseek-r1/) |
 
-*...and 43 more models*
+*...and 99 more models*
 
 ### Standard global deployments
 
-Available in **28** regions across **47** models.
+Available in **28** regions across **48** models.
 
 | Model | Regions | Details |
 |-------|---------|---------|
@@ -99,7 +99,7 @@ Available in **28** regions across **47** models.
 | text-embedding-3-small | 25 | [View](../models/text-embedding-3-small/) |
 | text-embedding-ada-002 | 24 | [View](../models/text-embedding-ada-002/) |
 
-*...and 32 more models*
+*...and 33 more models*
 
 
 ## Datazone Deployments
@@ -130,7 +130,7 @@ Available in **13** regions across **13** models.
 
 ### Datazone standard
 
-Available in **14** regions across **15** models.
+Available in **14** regions across **18** models.
 
 | Model | Regions | Details |
 |-------|---------|---------|
@@ -146,9 +146,11 @@ Available in **14** regions across **15** models.
 | o3 | 14 | [View](../models/o3/) |
 | o3-mini | 14 | [View](../models/o3-mini/) |
 | o4-mini | 14 | [View](../models/o4-mini/) |
-| gpt-5.1 | 4 | [View](../models/gpt-5-1/) |
-| gpt-5.2 | 2 | [View](../models/gpt-5-2/) |
-| model-router | 2 | [View](../models/model-router/) |
+| text-embedding-3-large | 7 | [View](../models/text-embedding-3-large/) |
+| text-embedding-3-small | 7 | [View](../models/text-embedding-3-small/) |
+| text-embedding-ada-002 | 7 | [View](../models/text-embedding-ada-002/) |
+
+*...and 3 more models*
 
 
 ## Standard Deployments
@@ -159,24 +161,24 @@ Available in **14** regions across **15** models.
 
 ### Standard (all)
 
-Available in **24** regions across **15** models.
+Available in **25** regions across **15** models.
 
 | Model | Regions | Details |
 |-------|---------|---------|
 | text-embedding-3-large | 19 | [View](../models/text-embedding-3-large/) |
 | text-embedding-ada-002 | 19 | [View](../models/text-embedding-ada-002/) |
-| gpt-35-turbo | 15 | [View](../models/gpt-35-turbo/) |
-| gpt-4o | 15 | [View](../models/gpt-4o/) |
+| gpt-4o | 16 | [View](../models/gpt-4o/) |
+| gpt-4.1-mini | 15 | [View](../models/gpt-4-1-mini/) |
+| gpt-4.1 | 8 | [View](../models/gpt-4-1/) |
 | text-embedding-3-small | 8 | [View](../models/text-embedding-3-small/) |
 | whisper | 8 | [View](../models/whisper/) |
-| gpt-4 | 7 | [View](../models/gpt-4/) |
 | gpt-4o-mini | 7 | [View](../models/gpt-4o-mini/) |
 | o1 | 7 | [View](../models/o1/) |
-| o1-mini | 7 | [View](../models/o1-mini/) |
+| o4-mini | 7 | [View](../models/o4-mini/) |
 | dall-e-3 | 3 | [View](../models/dall-e-3/) |
 | tts | 3 | [View](../models/tts/) |
 | tts-hd | 3 | [View](../models/tts-hd/) |
-| gpt-35-turbo-instruct | 2 | [View](../models/gpt-35-turbo-instruct/) |
+| gpt-4.1-nano | 2 | [View](../models/gpt-4-1-nano/) |
 | sora | 1 | [View](../models/sora/) |
 
 ### Standard GPT-3.5 Turbo
@@ -305,4 +307,4 @@ Available in **28** regions across **14** models.
 
 ---
 
-_Last updated: 2026-01-13 21:37 UTC_
+_Last updated: 2026-01-22 22:01 UTC_
