@@ -2,6 +2,17 @@
 
 <span class="badge badge-broad">🟢 Broad</span> Available in **25** of 28 regions
 
+
+!!! warning "Retirement Notice"
+    This model has scheduled retirement dates. Plan your migration to the replacement model.
+
+## ⏰ Retirement Schedule
+
+| Version | Status | Deprecation Date | Retirement Date | Timeline | Replacement |
+|---------|--------|------------------|-----------------|----------|-------------|
+| 1 | Generally Available | - | No earlier than 2026-10-30 | <span class="badge badge-planned">Planned</span> | - |
+
+
 ---
 
 ## 📊 Quick Stats
@@ -101,4 +112,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-01-22 22:01 UTC_
+_Last updated: 2026-01-23 17:04 UTC_

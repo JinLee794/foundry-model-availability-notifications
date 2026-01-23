@@ -634,3 +634,66 @@ details summary {
 details[open] summary {
   margin-bottom: 1rem;
 }
+
+/* Retirement status badges */
+.badge-active {
+  background-color: #22c55e;
+  color: white;
+}
+
+.badge-retired {
+  background-color: #6b7280;
+  color: white;
+}
+
+.badge-retiring-soon {
+  background-color: #ef4444;
+  color: white;
+  animation: pulse 2s infinite;
+}
+
+.badge-retiring {
+  background-color: #f59e0b;
+  color: black;
+}
+
+.badge-scheduled {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.badge-planned {
+  background-color: #8b5cf6;
+  color: white;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Retirement warning notice */
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-left-color: #f59e0b;
+}
+
+.md-typeset .warning > .admonition-title,
+.md-typeset .warning > summary {
+  background-color: rgba(245, 158, 11, 0.1);
+}
+
+.md-typeset .warning > .admonition-title::before,
+.md-typeset .warning > summary::before {
+  background-color: #f59e0b;
+}
+
+/* Retirement stats cards with colored borders */
+.stat-card[style*="border-left-color"] {
+  border-left: 4px solid;
+}
+

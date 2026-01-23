@@ -26,22 +26,22 @@ These models have the widest global deployment options:
 
 | Model | Global Regions | Details |
 |-------|----------------|---------|
-| **gpt-5.1** | 28 regions | [View details](models/gpt-5-1/) |
-| **gpt-4.1** | 28 regions | [View details](models/gpt-4-1/) |
-| **gpt-4.1-mini** | 28 regions | [View details](models/gpt-4-1-mini/) |
+| **gpt-5** | 28 regions | [View details](models/gpt-5/) |
 | **o1** | 28 regions | [View details](models/o1/) |
-| **gpt-4.1-nano** | 28 regions | [View details](models/gpt-4-1-nano/) |
+| **o3-mini** | 28 regions | [View details](models/o3-mini/) |
+| **o4-mini** | 28 regions | [View details](models/o4-mini/) |
+| **gpt-4.1-mini** | 28 regions | [View details](models/gpt-4-1-mini/) |
 
 ### Need Reserved Capacity (PTU)?
 These models support Provisioned Throughput Units:
 
 | Model | PTU Regions | Details |
 |-------|-------------|---------|
-| **o3-mini** | 28 regions | [View details](models/o3-mini/) |
-| **gpt-4o-mini** | 28 regions | [View details](models/gpt-4o-mini/) |
-| **o3** | 28 regions | [View details](models/o3/) |
+| **gpt-4.1** | 28 regions | [View details](models/gpt-4-1/) |
+| **gpt-4.1-nano** | 28 regions | [View details](models/gpt-4-1-nano/) |
 | **gpt-5** | 28 regions | [View details](models/gpt-5/) |
-| **gpt-5-mini** | 28 regions | [View details](models/gpt-5-mini/) |
+| **o4-mini** | 28 regions | [View details](models/o4-mini/) |
+| **o1** | 28 regions | [View details](models/o1/) |
 
 ---
 
@@ -62,14 +62,14 @@ These models support Provisioned Throughput Units:
 |--------|------------------|
 | **East US 2** | 109 models |
 | **Sweden Central** | 103 models |
-| **East US** | 76 models |
 | **North Central US** | 76 models |
+| **East US** | 76 models |
 | **West US 3** | 74 models |
 | **South Central US** | 72 models |
 | **West US** | 72 models |
+| **UK South** | 40 models |
 | **Switzerland North** | 40 models |
 | **Australia East** | 40 models |
-| **UK South** | 40 models |
 
 ---
 
@@ -84,4 +84,4 @@ These models support Provisioned Throughput Units:
 
 ---
 
-_Last updated: 2026-01-22 22:01 UTC_
+_Last updated: 2026-01-23 17:04 UTC_

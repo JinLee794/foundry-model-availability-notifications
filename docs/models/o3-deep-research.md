@@ -2,6 +2,17 @@
 
 <span class="badge badge-emerging">🔴 Emerging</span> Available in **2** of 28 regions
 
+
+!!! warning "Retirement Notice"
+    This model has scheduled retirement dates. Plan your migration to the replacement model.
+
+## ⏰ Retirement Schedule
+
+| Version | Status | Deprecation Date | Retirement Date | Timeline | Replacement |
+|---------|--------|------------------|-----------------|----------|-------------|
+| 2025-06-26 | Generally Available | 2026-06-26 | 2026-12-26 | <span class="badge badge-scheduled">Scheduled</span> | - |
+
+
 ---
 
 ## 📊 Quick Stats
@@ -53,4 +64,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-01-22 22:01 UTC_
+_Last updated: 2026-01-23 17:04 UTC_
