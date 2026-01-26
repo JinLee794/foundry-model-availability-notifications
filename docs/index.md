@@ -27,21 +27,21 @@ These models have the widest global deployment options:
 | Model | Global Regions | Details |
 |-------|----------------|---------|
 | **gpt-5** | 28 regions | [View details](models/gpt-5/) |
-| **o1** | 28 regions | [View details](models/o1/) |
-| **o3-mini** | 28 regions | [View details](models/o3-mini/) |
 | **o4-mini** | 28 regions | [View details](models/o4-mini/) |
-| **gpt-4.1-mini** | 28 regions | [View details](models/gpt-4-1-mini/) |
+| **gpt-4.1** | 28 regions | [View details](models/gpt-4-1/) |
+| **gpt-5-mini** | 28 regions | [View details](models/gpt-5-mini/) |
+| **o1** | 28 regions | [View details](models/o1/) |
 
 ### Need Reserved Capacity (PTU)?
 These models support Provisioned Throughput Units:
 
 | Model | PTU Regions | Details |
 |-------|-------------|---------|
-| **gpt-4.1** | 28 regions | [View details](models/gpt-4-1/) |
-| **gpt-4.1-nano** | 28 regions | [View details](models/gpt-4-1-nano/) |
 | **gpt-5** | 28 regions | [View details](models/gpt-5/) |
+| **gpt-4o** | 28 regions | [View details](models/gpt-4o/) |
+| **gpt-5.1** | 28 regions | [View details](models/gpt-5-1/) |
 | **o4-mini** | 28 regions | [View details](models/o4-mini/) |
-| **o1** | 28 regions | [View details](models/o1/) |
+| **o3** | 28 regions | [View details](models/o3/) |
 
 ---
 
@@ -62,11 +62,11 @@ These models support Provisioned Throughput Units:
 |--------|------------------|
 | **East US 2** | 109 models |
 | **Sweden Central** | 103 models |
-| **North Central US** | 76 models |
 | **East US** | 76 models |
+| **North Central US** | 76 models |
 | **West US 3** | 74 models |
-| **South Central US** | 72 models |
 | **West US** | 72 models |
+| **South Central US** | 72 models |
 | **UK South** | 40 models |
 | **Switzerland North** | 40 models |
 | **Australia East** | 40 models |
@@ -84,4 +84,4 @@ These models support Provisioned Throughput Units:
 
 ---
 
-_Last updated: 2026-01-23 17:04 UTC_
+_Last updated: 2026-01-23 18:07 UTC_
