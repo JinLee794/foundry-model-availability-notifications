@@ -1,6 +1,254 @@
 {
-  "timestamp": "2026-01-27T07:29:28.380860+00:00",
-  "changes": {},
+  "timestamp": "2026-01-28T07:27:53.387040+00:00",
+  "changes": {
+    "gpt-4.1": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-batch": {
+          "label": "Global batch",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        },
+        "global-batch-datazone": {
+          "label": "Global batch datazone",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-4.1-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-batch": {
+          "label": "Global batch",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        },
+        "global-batch-datazone": {
+          "label": "Global batch datazone",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-4.1-nano": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-batch": {
+          "label": "Global batch",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        },
+        "global-batch-datazone": {
+          "label": "Global batch datazone",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-4o": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-batch": {
+          "label": "Global batch",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        },
+        "global-batch-datazone": {
+          "label": "Global batch datazone",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-4o-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-batch": {
+          "label": "Global batch",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        },
+        "global-batch-datazone": {
+          "label": "Global batch datazone",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-5": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-batch": {
+          "label": "Global batch",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        },
+        "global-batch-datazone": {
+          "label": "Global batch datazone",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.1": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-batch": {
+          "label": "Global batch",
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Sweden Central",
+            "Switzerland North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "removed": []
+        },
+        "global-batch-datazone": {
+          "label": "Global batch datazone",
+          "added": [
+            "Central US",
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "West US",
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "o3": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-batch": {
+          "label": "Global batch",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        },
+        "global-batch-datazone": {
+          "label": "Global batch datazone",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "o3-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-batch": {
+          "label": "Global batch",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        },
+        "global-batch-datazone": {
+          "label": "Global batch datazone",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "o4-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-batch": {
+          "label": "Global batch",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        },
+        "global-batch-datazone": {
+          "label": "Global batch datazone",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    }
+  },
   "current": {
     "Claude Haiku 4.5 (preview)": {
       "all": [
@@ -1140,7 +1388,8 @@
             "Switzerland North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "global-batch-datazone": {
@@ -1156,7 +1405,8 @@
             "South Central US",
             "Sweden Central",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "provisioned-global": {
@@ -1352,7 +1602,8 @@
             "Switzerland North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "global-batch-datazone": {
@@ -1368,7 +1619,8 @@
             "South Central US",
             "Sweden Central",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "provisioned-global": {
@@ -1569,7 +1821,8 @@
             "Switzerland North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "global-batch-datazone": {
@@ -1585,7 +1838,8 @@
             "South Central US",
             "Sweden Central",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "provisioned-global": {
@@ -1766,7 +2020,8 @@
             "Switzerland North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "global-batch-datazone": {
@@ -1782,7 +2037,8 @@
             "South Central US",
             "Sweden Central",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "provisioned-global": {
@@ -2043,7 +2299,8 @@
             "Switzerland North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "global-batch-datazone": {
@@ -2059,7 +2316,8 @@
             "South Central US",
             "Sweden Central",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "provisioned-global": {
@@ -2386,7 +2644,8 @@
             "Switzerland North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "global-batch-datazone": {
@@ -2397,7 +2656,8 @@
             "East US 2",
             "North Central US",
             "South Central US",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "provisioned-global": {
@@ -2813,6 +3073,45 @@
             "East US 2",
             "France Central",
             "Sweden Central"
+          ]
+        },
+        "global-batch": {
+          "label": "Global batch",
+          "regions": [
+            "Australia East",
+            "Brazil South",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Sweden Central",
+            "Switzerland North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ]
+        },
+        "global-batch-datazone": {
+          "label": "Global batch datazone",
+          "regions": [
+            "Central US",
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "West US",
+            "West US 3"
           ]
         },
         "provisioned-global": {
@@ -4681,7 +4980,8 @@
             "Switzerland North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "global-batch-datazone": {
@@ -4697,7 +4997,8 @@
             "South Central US",
             "Sweden Central",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "provisioned-global": {
@@ -4885,7 +5186,8 @@
             "Switzerland North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "global-batch-datazone": {
@@ -4896,7 +5198,8 @@
             "East US 2",
             "North Central US",
             "South Central US",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "provisioned-global": {
@@ -5088,7 +5391,8 @@
             "Switzerland North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "global-batch-datazone": {
@@ -5104,7 +5408,8 @@
             "South Central US",
             "Sweden Central",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "provisioned-global": {
