@@ -307,4 +307,4 @@ Available in **28** regions across **14** models.
 
 ---
 
-_Last updated: 2026-01-23 17:04 UTC_
+_Last updated: 2026-01-23 18:07 UTC_
