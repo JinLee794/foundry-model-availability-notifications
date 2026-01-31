@@ -1,8 +1,8 @@
 # AI Foundry Model Availability by Region
 
-_Last updated: 2026-01-28 07:27 UTC_
+_Last updated: 2026-01-31 07:30 UTC_
 
-- Models tracked: **114**
+- Models tracked: **109**
 - Regions in snapshot: **28**
 - Distinct SKU labels: **20**
 
@@ -84,7 +84,6 @@ SKU labels observed:
 | Cohere Embed v3 - English | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
 | Cohere Embed v3 - Multilingual | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
 | Cohere Rerank v3.5 | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
-| JAIS 30B Chat | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
 | Llama 3.1 8B Instruct | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
 | Llama 3.3 70B Instruct | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
 | Llama-3.2-11B-Vision-Instruct | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
@@ -97,10 +96,7 @@ SKU labels observed:
 | Llama-Guard-3-1B | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
 | Ministral-3B | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
 | Mistral Medium 3 (25.05) | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
-| Mistral Nemo | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
-| Mistral OCR 25.03 | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
 | Mistral Small 25.03 | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
-| Mistral-Large (2411) | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
 | Phi-4 | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
 | Phi-4-mini-instruct | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
 | Phi-4-multimodal-instruct | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
@@ -150,7 +146,6 @@ SKU labels observed:
 | o3-deep-research | 🔴 Emerging | 2 | 2 (Global coverage, Standard global deployments) | `Norway East`, `West US` |
 | sora | 🔴 Emerging | 2 | 3 (Global coverage, Standard (all), Standard global deployments) | `East US 2`, `Sweden Central` |
 | sora-2 | 🔴 Emerging | 2 | 2 (Global coverage, Standard global deployments) | `East US 2`, `Sweden Central` |
-| Gretel-Navigator | 🔴 Emerging | 1 | 2 (Global coverage, Region Availability Maas) | `East US 2` |
 | gpt-4o-mini-tts | 🔴 Emerging | 1 | 2 (Global coverage, Standard global deployments) | `East US 2` |
 
 ## Regional rosters by model
@@ -1378,18 +1373,6 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>JAIS 30B Chat — 7 regions across 2 SKU labels</summary>
-
-- `East US` — Global coverage, Region Availability Maas
-- `East US 2` — Global coverage, Region Availability Maas
-- `North Central US` — Global coverage, Region Availability Maas
-- `South Central US` — Global coverage, Region Availability Maas
-- `Sweden Central` — Global coverage, Region Availability Maas
-- `West US` — Global coverage, Region Availability Maas
-- `West US 3` — Global coverage, Region Availability Maas
-
-</details>
-<details>
 <summary>Llama 3.1 8B Instruct — 7 regions across 2 SKU labels</summary>
 
 - `East US` — Global coverage, Region Availability Maas
@@ -1534,43 +1517,7 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>Mistral Nemo — 7 regions across 2 SKU labels</summary>
-
-- `East US` — Global coverage, Region Availability Maas
-- `East US 2` — Global coverage, Region Availability Maas
-- `North Central US` — Global coverage, Region Availability Maas
-- `South Central US` — Global coverage, Region Availability Maas
-- `Sweden Central` — Global coverage, Region Availability Maas
-- `West US` — Global coverage, Region Availability Maas
-- `West US 3` — Global coverage, Region Availability Maas
-
-</details>
-<details>
-<summary>Mistral OCR 25.03 — 7 regions across 2 SKU labels</summary>
-
-- `East US` — Global coverage, Region Availability Maas
-- `East US 2` — Global coverage, Region Availability Maas
-- `North Central US` — Global coverage, Region Availability Maas
-- `South Central US` — Global coverage, Region Availability Maas
-- `Sweden Central` — Global coverage, Region Availability Maas
-- `West US` — Global coverage, Region Availability Maas
-- `West US 3` — Global coverage, Region Availability Maas
-
-</details>
-<details>
 <summary>Mistral Small 25.03 — 7 regions across 2 SKU labels</summary>
-
-- `East US` — Global coverage, Region Availability Maas
-- `East US 2` — Global coverage, Region Availability Maas
-- `North Central US` — Global coverage, Region Availability Maas
-- `South Central US` — Global coverage, Region Availability Maas
-- `Sweden Central` — Global coverage, Region Availability Maas
-- `West US` — Global coverage, Region Availability Maas
-- `West US 3` — Global coverage, Region Availability Maas
-
-</details>
-<details>
-<summary>Mistral-Large (2411) — 7 regions across 2 SKU labels</summary>
 
 - `East US` — Global coverage, Region Availability Maas
 - `East US 2` — Global coverage, Region Availability Maas
@@ -2008,12 +1955,6 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>Gretel-Navigator — 1 regions across 2 SKU labels</summary>
-
-- `East US 2` — Global coverage, Region Availability Maas
-
-</details>
-<details>
 <summary>gpt-4o-mini-tts — 1 regions across 2 SKU labels</summary>
 
 - `East US 2` — Global coverage, Standard global deployments
@@ -2022,6 +1963,7 @@ SKU labels observed:
 
 ## Recent changes
 
+- **2026-01-31 07:30 UTC** — Gretel-Navigator: Global coverage removed East US 2; Region Availability Maas removed East US 2 | JAIS 30B Chat: Global coverage removed East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas removed East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Mistral Nemo: Global coverage removed East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas removed East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Mistral OCR 25.03: Global coverage removed East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas removed East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Mistral-Large (2411): Global coverage removed East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas removed East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3
 - **2026-01-28 07:27 UTC** — gpt-4.1: Global batch added West US 3; Global batch datazone added West US 3 | gpt-4.1-mini: Global batch added West US 3; Global batch datazone added West US 3 | gpt-4.1-nano: Global batch added West US 3; Global batch datazone added West US 3 | gpt-4o: Global batch added West US 3; Global batch datazone added West US 3 | gpt-4o-mini: Global batch added West US 3; Global batch datazone added West US 3 | gpt-5: Global batch added West US 3; Global batch datazone added West US 3 | gpt-5.1: Global batch added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, and West US 3; Global batch datazone added Central US, East US, East US 2, North Central US, South Central US, West US, and West US 3 | o3: Global batch added West US 3; Global batch datazone added West US 3 | o3-mini: Global batch added West US 3; Global batch datazone added West US 3 | o4-mini: Global batch added West US 3; Global batch datazone added West US 3
 - **2026-01-22 21:59 UTC** — Codestral-2501: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Cohere Command R 08-2024: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Cohere Command R+ 08-2024: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Cohere Embed v3 - English: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Cohere Embed v3 - Multilingual: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Cohere Rerank v3.5: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | DeepSeek-R1: Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | DeepSeek-V3-0324: Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | Gretel-Navigator: Global coverage added East US 2; Region Availability Maas added East US 2 | JAIS 30B Chat: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama 3.1 405B Instruct: Global coverage added East US, East US 2, North Central US, South Central US, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | Llama 3.1 8B Instruct: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama 3.3 70B Instruct: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-3.2-11B-Vision-Instruct: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-3.2-1B: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-3.2-1B-Instruct: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-3.2-3B: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-3.2-3B-Instruct: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-3.2-90B-Vision-Instruct: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-3.3-70B-Instruct: Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-Guard-3-11B-Vision: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-Guard-3-1B: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | MAI-DS-R1: Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | Ministral-3B: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Mistral Medium 3 (25.05): Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Mistral Nemo: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Mistral OCR 25.03: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Mistral Small 25.03: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Mistral-Large (2411): Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Phi-4: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Phi-4-mini-instruct: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Phi-4-mini-reasoning: Global coverage added East US, East US 2, North Central US, South Central US, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | Phi-4-multimodal-instruct: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Phi-4-reasoning: Global coverage added East US, East US 2, North Central US, South Central US, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | Stable Diffusion 3.5 Large: Global coverage added East US, East US 2, North Central US, South Central US, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | Stable Image Core: Global coverage added East US, East US 2, North Central US, South Central US, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | Stable Image Ultra: Global coverage added East US, East US 2, North Central US, South Central US, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | TimeGEN-1: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | mistral-document-ai-2505: Region Availability Maas added East US 2 and Sweden Central | tsuzumi-7b: Global coverage added East US, East US 2, North Central US, South Central US, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3
 - **2026-01-22 21:49 UTC** — Claude Haiku 4.5 (preview): Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Opus 4.1 (preview): Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Opus 4.5 (preview): Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Sonnet 4.5 (preview): Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central

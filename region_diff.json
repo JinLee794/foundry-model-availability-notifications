@@ -1,6 +1,150 @@
 {
-  "timestamp": "2026-01-30T07:41:26.554203+00:00",
-  "changes": {},
+  "timestamp": "2026-01-31T07:30:01.091880+00:00",
+  "changes": {
+    "Gretel-Navigator": {
+      "all": {
+        "added": [],
+        "removed": [
+          "East US 2"
+        ]
+      },
+      "skus": {
+        "region-availability-maas": {
+          "label": "Region Availability Maas",
+          "added": [],
+          "removed": [
+            "East US 2"
+          ],
+          "sku_removed": true
+        }
+      },
+      "model_removed": true
+    },
+    "JAIS 30B Chat": {
+      "all": {
+        "added": [],
+        "removed": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      },
+      "skus": {
+        "region-availability-maas": {
+          "label": "Region Availability Maas",
+          "added": [],
+          "removed": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "sku_removed": true
+        }
+      },
+      "model_removed": true
+    },
+    "Mistral Nemo": {
+      "all": {
+        "added": [],
+        "removed": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      },
+      "skus": {
+        "region-availability-maas": {
+          "label": "Region Availability Maas",
+          "added": [],
+          "removed": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "sku_removed": true
+        }
+      },
+      "model_removed": true
+    },
+    "Mistral OCR 25.03": {
+      "all": {
+        "added": [],
+        "removed": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      },
+      "skus": {
+        "region-availability-maas": {
+          "label": "Region Availability Maas",
+          "added": [],
+          "removed": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "sku_removed": true
+        }
+      },
+      "model_removed": true
+    },
+    "Mistral-Large (2411)": {
+      "all": {
+        "added": [],
+        "removed": [
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West US",
+          "West US 3"
+        ]
+      },
+      "skus": {
+        "region-availability-maas": {
+          "label": "Region Availability Maas",
+          "added": [],
+          "removed": [
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West US",
+            "West US 3"
+          ],
+          "sku_removed": true
+        }
+      },
+      "model_removed": true
+    }
+  },
   "current": {
     "Claude Haiku 4.5 (preview)": {
       "all": [
@@ -3253,19 +3397,6 @@
         }
       }
     },
-    "Gretel-Navigator": {
-      "all": [
-        "East US 2"
-      ],
-      "skus": {
-        "region-availability-maas": {
-          "label": "Region Availability Maas",
-          "regions": [
-            "East US 2"
-          ]
-        }
-      }
-    },
     "grok-3": {
       "all": [
         "Australia East",
@@ -3670,31 +3801,6 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US",
-            "West US 3"
-          ]
-        }
-      }
-    },
-    "JAIS 30B Chat": {
-      "all": [
-        "East US",
-        "East US 2",
-        "North Central US",
-        "South Central US",
-        "Sweden Central",
-        "West US",
-        "West US 3"
-      ],
-      "skus": {
-        "region-availability-maas": {
-          "label": "Region Availability Maas",
-          "regions": [
-            "East US",
-            "East US 2",
-            "North Central US",
-            "South Central US",
-            "Sweden Central",
             "West US",
             "West US 3"
           ]
@@ -4230,56 +4336,6 @@
         }
       }
     },
-    "Mistral Nemo": {
-      "all": [
-        "East US",
-        "East US 2",
-        "North Central US",
-        "South Central US",
-        "Sweden Central",
-        "West US",
-        "West US 3"
-      ],
-      "skus": {
-        "region-availability-maas": {
-          "label": "Region Availability Maas",
-          "regions": [
-            "East US",
-            "East US 2",
-            "North Central US",
-            "South Central US",
-            "Sweden Central",
-            "West US",
-            "West US 3"
-          ]
-        }
-      }
-    },
-    "Mistral OCR 25.03": {
-      "all": [
-        "East US",
-        "East US 2",
-        "North Central US",
-        "South Central US",
-        "Sweden Central",
-        "West US",
-        "West US 3"
-      ],
-      "skus": {
-        "region-availability-maas": {
-          "label": "Region Availability Maas",
-          "regions": [
-            "East US",
-            "East US 2",
-            "North Central US",
-            "South Central US",
-            "Sweden Central",
-            "West US",
-            "West US 3"
-          ]
-        }
-      }
-    },
     "Mistral Small 25.03": {
       "all": [
         "East US",
@@ -4390,31 +4446,6 @@
           "regions": [
             "East US 2",
             "Sweden Central"
-          ]
-        }
-      }
-    },
-    "Mistral-Large (2411)": {
-      "all": [
-        "East US",
-        "East US 2",
-        "North Central US",
-        "South Central US",
-        "Sweden Central",
-        "West US",
-        "West US 3"
-      ],
-      "skus": {
-        "region-availability-maas": {
-          "label": "Region Availability Maas",
-          "regions": [
-            "East US",
-            "East US 2",
-            "North Central US",
-            "South Central US",
-            "Sweden Central",
-            "West US",
-            "West US 3"
           ]
         }
       }
