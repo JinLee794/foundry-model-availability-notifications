@@ -44,6 +44,21 @@
       }
     }
   },
+  "Claude Opus 4.6 (preview)": {
+    "all": [
+      "East US 2",
+      "Sweden Central"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US 2",
+          "Sweden Central"
+        ]
+      }
+    }
+  },
   "Claude Sonnet 4.5 (preview)": {
     "all": [
       "East US 2",

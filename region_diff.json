@@ -1,6 +1,26 @@
 {
-  "timestamp": "2026-02-05T07:50:27.173262+00:00",
-  "changes": {},
+  "timestamp": "2026-02-06T07:48:06.716336+00:00",
+  "changes": {
+    "Claude Opus 4.6 (preview)": {
+      "all": {
+        "added": [
+          "East US 2",
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "label": "Region Availability Maas",
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "removed": []
+        }
+      }
+    }
+  },
   "current": {
     "Claude Haiku 4.5 (preview)": {
       "all": [
@@ -33,6 +53,21 @@
       }
     },
     "Claude Opus 4.5 (preview)": {
+      "all": [
+        "East US 2",
+        "Sweden Central"
+      ],
+      "skus": {
+        "region-availability-maas": {
+          "label": "Region Availability Maas",
+          "regions": [
+            "East US 2",
+            "Sweden Central"
+          ]
+        }
+      }
+    },
+    "Claude Opus 4.6 (preview)": {
       "all": [
         "East US 2",
         "Sweden Central"

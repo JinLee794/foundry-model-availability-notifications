@@ -1,0 +1,24 @@
+{
+  "changes": {
+    "Claude Opus 4.6 (preview)": {
+      "all": {
+        "added": [
+          "East US 2",
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    }
+  },
+  "timestamp": "2026-02-06T07:48:06.716336+00:00"
+}
