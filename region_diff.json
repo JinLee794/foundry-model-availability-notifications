@@ -1,6 +1,70 @@
 {
-  "timestamp": "2026-02-11T07:56:16.528441+00:00",
-  "changes": {},
+  "timestamp": "2026-02-12T07:53:26.405621+00:00",
+  "changes": {
+    "text-embedding-3-large": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard": {
+          "label": "Datazone standard",
+          "added": [
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Poland Central",
+            "Spain Central",
+            "Sweden Central",
+            "West Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "text-embedding-3-small": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard": {
+          "label": "Datazone standard",
+          "added": [
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Poland Central",
+            "Spain Central",
+            "Sweden Central",
+            "West Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "text-embedding-ada-002": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard": {
+          "label": "Datazone standard",
+          "added": [
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Poland Central",
+            "Spain Central",
+            "Sweden Central",
+            "West Europe"
+          ],
+          "removed": []
+        }
+      }
+    }
+  },
   "current": {
     "Claude Haiku 4.5 (preview)": {
       "all": [
@@ -5420,8 +5484,15 @@
             "Central US",
             "East US",
             "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
             "North Central US",
+            "Poland Central",
             "South Central US",
+            "Spain Central",
+            "Sweden Central",
+            "West Europe",
             "West US",
             "West US 3"
           ]
@@ -5538,8 +5609,15 @@
             "Central US",
             "East US",
             "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
             "North Central US",
+            "Poland Central",
             "South Central US",
+            "Spain Central",
+            "Sweden Central",
+            "West Europe",
             "West US",
             "West US 3"
           ]
@@ -5637,8 +5715,15 @@
             "Central US",
             "East US",
             "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
             "North Central US",
+            "Poland Central",
             "South Central US",
+            "Spain Central",
+            "Sweden Central",
+            "West Europe",
             "West US",
             "West US 3"
           ]

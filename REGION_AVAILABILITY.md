@@ -1,6 +1,6 @@
 # AI Foundry Model Availability by Region
 
-_Last updated: 2026-02-06 07:48 UTC_
+_Last updated: 2026-02-12 07:53 UTC_
 
 - Models tracked: **110**
 - Regions in snapshot: **28**
@@ -587,24 +587,24 @@ SKU labels observed:
 - `Central US` — Datazone standard, Global coverage, Standard global deployments
 - `East US` — Datazone standard, Global coverage, Standard (all), Standard embeddings, Standard global deployments
 - `East US 2` — Datazone standard, Global coverage, Standard (all), Standard embeddings, Standard global deployments
-- `France Central` — Global coverage, Standard (all), Standard embeddings, Standard global deployments
-- `Germany West Central` — Global coverage, Standard (all), Standard global deployments
-- `Italy North` — Global coverage, Standard global deployments
+- `France Central` — Datazone standard, Global coverage, Standard (all), Standard embeddings, Standard global deployments
+- `Germany West Central` — Datazone standard, Global coverage, Standard (all), Standard global deployments
+- `Italy North` — Datazone standard, Global coverage, Standard global deployments
 - `Japan East` — Global coverage, Standard (all), Standard embeddings, Standard global deployments
 - `Korea Central` — Global coverage, Standard (all), Standard global deployments
 - `North Central US` — Datazone standard, Global coverage, Standard global deployments
 - `Norway East` — Global coverage, Standard (all), Standard embeddings, Standard global deployments
-- `Poland Central` — Global coverage, Standard (all), Standard embeddings, Standard global deployments
+- `Poland Central` — Datazone standard, Global coverage, Standard (all), Standard embeddings, Standard global deployments
 - `South Africa North` — Global coverage, Standard (all), Standard embeddings, Standard global deployments
 - `South Central US` — Datazone standard, Global coverage, Standard global deployments
 - `South India` — Global coverage, Standard (all), Standard embeddings, Standard global deployments
 - `Southeast Asia` — Global coverage, Standard (all), Standard embeddings
-- `Spain Central` — Global coverage, Standard (all), Standard embeddings, Standard global deployments
-- `Sweden Central` — Global coverage, Standard (all), Standard embeddings, Standard global deployments
+- `Spain Central` — Datazone standard, Global coverage, Standard (all), Standard embeddings, Standard global deployments
+- `Sweden Central` — Datazone standard, Global coverage, Standard (all), Standard embeddings, Standard global deployments
 - `Switzerland North` — Global coverage, Standard (all), Standard embeddings, Standard global deployments
 - `UAE North` — Global coverage, Standard (all), Standard embeddings, Standard global deployments
 - `UK South` — Global coverage, Standard (all), Standard embeddings, Standard global deployments
-- `West Europe` — Global coverage, Standard global deployments
+- `West Europe` — Datazone standard, Global coverage, Standard global deployments
 - `West US` — Datazone standard, Global coverage, Standard global deployments
 - `West US 3` — Datazone standard, Global coverage, Standard (all), Standard global deployments
 
@@ -1128,23 +1128,23 @@ SKU labels observed:
 - `Central US` — Datazone standard, Global coverage, Standard global deployments
 - `East US` — Datazone standard, Global coverage, Standard (all), Standard embeddings, Standard global deployments
 - `East US 2` — Datazone standard, Global coverage, Standard (all), Standard embeddings, Standard global deployments
-- `France Central` — Global coverage, Standard global deployments
-- `Germany West Central` — Global coverage, Standard global deployments
-- `Italy North` — Global coverage, Standard global deployments
+- `France Central` — Datazone standard, Global coverage, Standard global deployments
+- `Germany West Central` — Datazone standard, Global coverage, Standard global deployments
+- `Italy North` — Datazone standard, Global coverage, Standard global deployments
 - `Japan East` — Global coverage, Standard (all), Standard embeddings, Standard global deployments
 - `Korea Central` — Global coverage, Standard global deployments
 - `North Central US` — Datazone standard, Global coverage, Standard global deployments
 - `Norway East` — Global coverage, Standard global deployments
-- `Poland Central` — Global coverage, Standard global deployments
+- `Poland Central` — Datazone standard, Global coverage, Standard global deployments
 - `South Africa North` — Global coverage, Standard global deployments
 - `South Central US` — Datazone standard, Global coverage, Standard global deployments
 - `South India` — Global coverage, Standard global deployments
-- `Spain Central` — Global coverage, Standard global deployments
-- `Sweden Central` — Global coverage, Standard global deployments
+- `Spain Central` — Datazone standard, Global coverage, Standard global deployments
+- `Sweden Central` — Datazone standard, Global coverage, Standard global deployments
 - `Switzerland North` — Global coverage, Standard (all), Standard embeddings, Standard global deployments
 - `UAE North` — Global coverage, Standard (all), Standard embeddings, Standard global deployments
 - `UK South` — Global coverage, Standard global deployments
-- `West Europe` — Global coverage, Standard global deployments
+- `West Europe` — Datazone standard, Global coverage, Standard global deployments
 - `West US` — Datazone standard, Global coverage, Standard (all), Standard embeddings, Standard global deployments
 - `West US 3` — Datazone standard, Global coverage, Standard global deployments
 
@@ -1158,23 +1158,23 @@ SKU labels observed:
 - `Central US` — Datazone standard, Global coverage
 - `East US` — Datazone standard, Global coverage, Standard (all), Standard embeddings, Standard global deployments
 - `East US 2` — Datazone standard, Global coverage, Standard (all), Standard embeddings, Standard global deployments
-- `France Central` — Global coverage, Standard (all), Standard embeddings, Standard global deployments
-- `Germany West Central` — Global coverage, Standard global deployments
-- `Italy North` — Global coverage, Standard global deployments
+- `France Central` — Datazone standard, Global coverage, Standard (all), Standard embeddings, Standard global deployments
+- `Germany West Central` — Datazone standard, Global coverage, Standard global deployments
+- `Italy North` — Datazone standard, Global coverage, Standard global deployments
 - `Japan East` — Global coverage, Standard (all), Standard embeddings, Standard global deployments
 - `Korea Central` — Global coverage, Standard global deployments
 - `North Central US` — Datazone standard, Global coverage, Standard (all), Standard embeddings, Standard global deployments
 - `Norway East` — Global coverage, Standard (all), Standard embeddings, Standard global deployments
-- `Poland Central` — Global coverage, Standard global deployments
+- `Poland Central` — Datazone standard, Global coverage, Standard global deployments
 - `South Africa North` — Global coverage, Standard (all), Standard embeddings, Standard global deployments
 - `South Central US` — Datazone standard, Global coverage, Standard (all), Standard embeddings, Standard global deployments
 - `South India` — Global coverage, Standard (all), Standard embeddings, Standard global deployments
-- `Spain Central` — Global coverage, Standard global deployments
-- `Sweden Central` — Global coverage, Standard (all), Standard embeddings, Standard global deployments
+- `Spain Central` — Datazone standard, Global coverage, Standard global deployments
+- `Sweden Central` — Datazone standard, Global coverage, Standard (all), Standard embeddings, Standard global deployments
 - `Switzerland North` — Global coverage, Standard (all), Standard embeddings, Standard global deployments
 - `UAE North` — Global coverage, Standard (all), Standard embeddings, Standard global deployments
 - `UK South` — Global coverage, Standard (all), Standard embeddings, Standard global deployments
-- `West Europe` — Global coverage, Standard (all), Standard embeddings, Standard global deployments
+- `West Europe` — Datazone standard, Global coverage, Standard (all), Standard embeddings, Standard global deployments
 - `West US` — Datazone standard, Global coverage, Standard (all), Standard embeddings, Standard global deployments
 - `West US 3` — Datazone standard, Global coverage, Standard (all), Standard global deployments
 
@@ -1971,6 +1971,7 @@ SKU labels observed:
 
 ## Recent changes
 
+- **2026-02-12 07:53 UTC** — text-embedding-3-large: Datazone standard added France Central, Germany West Central, Italy North, Poland Central, Spain Central, Sweden Central, and West Europe | text-embedding-3-small: Datazone standard added France Central, Germany West Central, Italy North, Poland Central, Spain Central, Sweden Central, and West Europe | text-embedding-ada-002: Datazone standard added France Central, Germany West Central, Italy North, Poland Central, Spain Central, Sweden Central, and West Europe
 - **2026-02-06 07:48 UTC** — Claude Opus 4.6 (preview): Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central
 - **2026-01-31 07:30 UTC** — Gretel-Navigator: Global coverage removed East US 2; Region Availability Maas removed East US 2 | JAIS 30B Chat: Global coverage removed East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas removed East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Mistral Nemo: Global coverage removed East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas removed East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Mistral OCR 25.03: Global coverage removed East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas removed East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Mistral-Large (2411): Global coverage removed East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas removed East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3
 - **2026-01-28 07:27 UTC** — gpt-4.1: Global batch added West US 3; Global batch datazone added West US 3 | gpt-4.1-mini: Global batch added West US 3; Global batch datazone added West US 3 | gpt-4.1-nano: Global batch added West US 3; Global batch datazone added West US 3 | gpt-4o: Global batch added West US 3; Global batch datazone added West US 3 | gpt-4o-mini: Global batch added West US 3; Global batch datazone added West US 3 | gpt-5: Global batch added West US 3; Global batch datazone added West US 3 | gpt-5.1: Global batch added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, and West US 3; Global batch datazone added Central US, East US, East US 2, North Central US, South Central US, West US, and West US 3 | o3: Global batch added West US 3; Global batch datazone added West US 3 | o3-mini: Global batch added West US 3; Global batch datazone added West US 3 | o4-mini: Global batch added West US 3; Global batch datazone added West US 3
