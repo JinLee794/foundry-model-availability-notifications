@@ -18,7 +18,7 @@ on:
       - 'docs/**'
       - 'mkdocs.yml'
       - 'generate_docs.py'
-      - '.region-watch/regions_snapshot.json'
+      - '‎.region-watch/**'
 
 permissions:
   contents: read
