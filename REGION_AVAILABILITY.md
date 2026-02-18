@@ -1,8 +1,8 @@
 # AI Foundry Model Availability by Region
 
-_Last updated: 2026-02-12 07:53 UTC_
+_Last updated: 2026-02-18 07:51 UTC_
 
-- Models tracked: **110**
+- Models tracked: **111**
 - Regions in snapshot: **28**
 - Distinct SKU labels: **20**
 
@@ -132,6 +132,7 @@ SKU labels observed:
 | Claude Opus 4.5 (preview) | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
 | Claude Opus 4.6 (preview) | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
 | Claude Sonnet 4.5 (preview) | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
+| Claude Sonnet 4.6 (preview) | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
 | gpt-35-turbo-instruct | 🔴 Emerging | 2 | 3 (Global coverage, Standard GPT-3.5 Turbo, Standard completions) | `East US`, `Sweden Central` |
 | gpt-4o-audio-preview | 🔴 Emerging | 2 | 2 (Global coverage, Standard global deployments) | `East US 2`, `Sweden Central` |
 | gpt-4o-mini-audio-preview | 🔴 Emerging | 2 | 2 (Global coverage, Standard global deployments) | `East US`, `East US 2` |
@@ -1858,6 +1859,13 @@ SKU labels observed:
 
 </details>
 <details>
+<summary>Claude Sonnet 4.6 (preview) — 2 regions across 2 SKU labels</summary>
+
+- `East US 2` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+
+</details>
+<details>
 <summary>gpt-35-turbo-instruct — 2 regions across 3 SKU labels</summary>
 
 - `East US` — Global coverage, Standard GPT-3.5 Turbo, Standard completions
@@ -1971,6 +1979,7 @@ SKU labels observed:
 
 ## Recent changes
 
+- **2026-02-18 07:51 UTC** — Claude Sonnet 4.6 (preview): Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central
 - **2026-02-12 07:53 UTC** — text-embedding-3-large: Datazone standard added France Central, Germany West Central, Italy North, Poland Central, Spain Central, Sweden Central, and West Europe | text-embedding-3-small: Datazone standard added France Central, Germany West Central, Italy North, Poland Central, Spain Central, Sweden Central, and West Europe | text-embedding-ada-002: Datazone standard added France Central, Germany West Central, Italy North, Poland Central, Spain Central, Sweden Central, and West Europe
 - **2026-02-06 07:48 UTC** — Claude Opus 4.6 (preview): Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central
 - **2026-01-31 07:30 UTC** — Gretel-Navigator: Global coverage removed East US 2; Region Availability Maas removed East US 2 | JAIS 30B Chat: Global coverage removed East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas removed East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Mistral Nemo: Global coverage removed East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas removed East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Mistral OCR 25.03: Global coverage removed East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas removed East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Mistral-Large (2411): Global coverage removed East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas removed East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3

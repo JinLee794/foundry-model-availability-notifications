@@ -1,6 +1,26 @@
 {
-  "timestamp": "2026-02-17T07:51:38.722149+00:00",
-  "changes": {},
+  "timestamp": "2026-02-18T07:51:12.324443+00:00",
+  "changes": {
+    "Claude Sonnet 4.6 (preview)": {
+      "all": {
+        "added": [
+          "East US 2",
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "label": "Region Availability Maas",
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "removed": []
+        }
+      }
+    }
+  },
   "current": {
     "Claude Haiku 4.5 (preview)": {
       "all": [
@@ -63,6 +83,21 @@
       }
     },
     "Claude Sonnet 4.5 (preview)": {
+      "all": [
+        "East US 2",
+        "Sweden Central"
+      ],
+      "skus": {
+        "region-availability-maas": {
+          "label": "Region Availability Maas",
+          "regions": [
+            "East US 2",
+            "Sweden Central"
+          ]
+        }
+      }
+    },
+    "Claude Sonnet 4.6 (preview)": {
       "all": [
         "East US 2",
         "Sweden Central"
