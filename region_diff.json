@@ -1,26 +1,6 @@
 {
-  "timestamp": "2026-02-18T07:51:12.324443+00:00",
-  "changes": {
-    "Claude Sonnet 4.6 (preview)": {
-      "all": {
-        "added": [
-          "East US 2",
-          "Sweden Central"
-        ],
-        "removed": []
-      },
-      "skus": {
-        "region-availability-maas": {
-          "label": "Region Availability Maas",
-          "added": [
-            "East US 2",
-            "Sweden Central"
-          ],
-          "removed": []
-        }
-      }
-    }
-  },
+  "timestamp": "2026-02-19T07:49:45.151593+00:00",
+  "changes": {},
   "current": {
     "Claude Haiku 4.5 (preview)": {
       "all": [
