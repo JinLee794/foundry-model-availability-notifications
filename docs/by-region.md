@@ -12,11 +12,11 @@ Find which AI models are available in your Azure region, including their deploym
     <div class="stat-label">Regions</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value">114</div>
+    <div class="stat-value">111</div>
     <div class="stat-label">Models</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value">1294</div>
+    <div class="stat-value">1269</div>
     <div class="stat-label">Deployments</div>
   </div>
 </div>
@@ -1113,12 +1113,6 @@ Find which AI models are available in your Azure region, including their deploym
     </tr>
     <tr>
       <td><strong>East US</strong></td>
-      <td><a href="../models/jais-30b-chat/">JAIS 30B Chat</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>East US</strong></td>
       <td><a href="../models/llama-3-1-405b-instruct/">Llama 3.1 405B Instruct</a></td>
       <td>Global, Other</td>
       <td>Global coverage, Region Availability Maas</td>
@@ -1215,25 +1209,7 @@ Find which AI models are available in your Azure region, including their deploym
     </tr>
     <tr>
       <td><strong>East US</strong></td>
-      <td><a href="../models/mistral-nemo/">Mistral Nemo</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>East US</strong></td>
-      <td><a href="../models/mistral-ocr-25-03/">Mistral OCR 25.03</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>East US</strong></td>
       <td><a href="../models/mistral-small-25-03/">Mistral Small 25.03</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>East US</strong></td>
-      <td><a href="../models/mistral-large-(2411)/">Mistral-Large (2411)</a></td>
       <td>Global, Other</td>
       <td>Global coverage, Region Availability Maas</td>
     </tr>
@@ -1515,7 +1491,19 @@ Find which AI models are available in your Azure region, including their deploym
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
+      <td><a href="../models/claude-opus-4-6-(preview)/">Claude Opus 4.6 (preview)</a></td>
+      <td>Global, Other</td>
+      <td>Global coverage, Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td><strong>East US 2</strong></td>
       <td><a href="../models/claude-sonnet-4-5-(preview)/">Claude Sonnet 4.5 (preview)</a></td>
+      <td>Global, Other</td>
+      <td>Global coverage, Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td><strong>East US 2</strong></td>
+      <td><a href="../models/claude-sonnet-4-6-(preview)/">Claude Sonnet 4.6 (preview)</a></td>
       <td>Global, Other</td>
       <td>Global coverage, Region Availability Maas</td>
     </tr>
@@ -1590,18 +1578,6 @@ Find which AI models are available in your Azure region, including their deploym
       <td><a href="../models/flux-1-kontext-pro/">FLUX.1-Kontext-pro</a></td>
       <td>Global, Other</td>
       <td>Global Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>East US 2</strong></td>
-      <td><a href="../models/gretel-navigator/">Gretel-Navigator</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>East US 2</strong></td>
-      <td><a href="../models/jais-30b-chat/">JAIS 30B Chat</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
@@ -1701,25 +1677,7 @@ Find which AI models are available in your Azure region, including their deploym
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
-      <td><a href="../models/mistral-nemo/">Mistral Nemo</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>East US 2</strong></td>
-      <td><a href="../models/mistral-ocr-25-03/">Mistral OCR 25.03</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>East US 2</strong></td>
       <td><a href="../models/mistral-small-25-03/">Mistral Small 25.03</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>East US 2</strong></td>
-      <td><a href="../models/mistral-large-(2411)/">Mistral-Large (2411)</a></td>
       <td>Global, Other</td>
       <td>Global coverage, Region Availability Maas</td>
     </tr>
@@ -2350,20 +2308,20 @@ Find which AI models are available in your Azure region, including their deploym
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
-      <td>Global, Standard</td>
-      <td>Global coverage, Standard (all), Standard embeddings, Standard global deployments</td>
+      <td>Datazone, Global, Standard</td>
+      <td>Datazone standard, Global coverage, Standard (all), Standard embeddings, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
-      <td>Global</td>
-      <td>Global coverage, Standard global deployments</td>
+      <td>Datazone, Global</td>
+      <td>Datazone standard, Global coverage, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
-      <td>Global, Standard</td>
-      <td>Global coverage, Standard (all), Standard embeddings, Standard global deployments</td>
+      <td>Datazone, Global, Standard</td>
+      <td>Datazone standard, Global coverage, Standard (all), Standard embeddings, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
@@ -2560,20 +2518,20 @@ Find which AI models are available in your Azure region, including their deploym
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
-      <td>Global, Standard</td>
-      <td>Global coverage, Standard (all), Standard global deployments</td>
+      <td>Datazone, Global, Standard</td>
+      <td>Datazone standard, Global coverage, Standard (all), Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
-      <td>Global</td>
-      <td>Global coverage, Standard global deployments</td>
+      <td>Datazone, Global</td>
+      <td>Datazone standard, Global coverage, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
-      <td>Global</td>
-      <td>Global coverage, Standard global deployments</td>
+      <td>Datazone, Global</td>
+      <td>Datazone standard, Global coverage, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
@@ -2752,20 +2710,20 @@ Find which AI models are available in your Azure region, including their deploym
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
-      <td>Global</td>
-      <td>Global coverage, Standard global deployments</td>
+      <td>Datazone, Global</td>
+      <td>Datazone standard, Global coverage, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
-      <td>Global</td>
-      <td>Global coverage, Standard global deployments</td>
+      <td>Datazone, Global</td>
+      <td>Datazone standard, Global coverage, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
-      <td>Global</td>
-      <td>Global coverage, Standard global deployments</td>
+      <td>Datazone, Global</td>
+      <td>Datazone standard, Global coverage, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
@@ -3297,12 +3255,6 @@ Find which AI models are available in your Azure region, including their deploym
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
-      <td><a href="../models/jais-30b-chat/">JAIS 30B Chat</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>North Central US</strong></td>
       <td><a href="../models/llama-3-1-405b-instruct/">Llama 3.1 405B Instruct</a></td>
       <td>Global, Other</td>
       <td>Global coverage, Region Availability Maas</td>
@@ -3399,25 +3351,7 @@ Find which AI models are available in your Azure region, including their deploym
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
-      <td><a href="../models/mistral-nemo/">Mistral Nemo</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>North Central US</strong></td>
-      <td><a href="../models/mistral-ocr-25-03/">Mistral OCR 25.03</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>North Central US</strong></td>
       <td><a href="../models/mistral-small-25-03/">Mistral Small 25.03</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>North Central US</strong></td>
-      <td><a href="../models/mistral-large-(2411)/">Mistral-Large (2411)</a></td>
       <td>Global, Other</td>
       <td>Global coverage, Region Availability Maas</td>
     </tr>
@@ -4108,20 +4042,20 @@ Find which AI models are available in your Azure region, including their deploym
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
-      <td>Global, Standard</td>
-      <td>Global coverage, Standard (all), Standard embeddings, Standard global deployments</td>
+      <td>Datazone, Global, Standard</td>
+      <td>Datazone standard, Global coverage, Standard (all), Standard embeddings, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
-      <td>Global</td>
-      <td>Global coverage, Standard global deployments</td>
+      <td>Datazone, Global</td>
+      <td>Datazone standard, Global coverage, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
-      <td>Global</td>
-      <td>Global coverage, Standard global deployments</td>
+      <td>Datazone, Global</td>
+      <td>Datazone standard, Global coverage, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
@@ -4407,12 +4341,6 @@ Find which AI models are available in your Azure region, including their deploym
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
-      <td><a href="../models/jais-30b-chat/">JAIS 30B Chat</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>South Central US</strong></td>
       <td><a href="../models/llama-3-1-405b-instruct/">Llama 3.1 405B Instruct</a></td>
       <td>Global, Other</td>
       <td>Global coverage, Region Availability Maas</td>
@@ -4509,25 +4437,7 @@ Find which AI models are available in your Azure region, including their deploym
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
-      <td><a href="../models/mistral-nemo/">Mistral Nemo</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>South Central US</strong></td>
-      <td><a href="../models/mistral-ocr-25-03/">Mistral OCR 25.03</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>South Central US</strong></td>
       <td><a href="../models/mistral-small-25-03/">Mistral Small 25.03</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>South Central US</strong></td>
-      <td><a href="../models/mistral-large-(2411)/">Mistral-Large (2411)</a></td>
       <td>Global, Other</td>
       <td>Global coverage, Region Availability Maas</td>
     </tr>
@@ -5254,20 +5164,20 @@ Find which AI models are available in your Azure region, including their deploym
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
-      <td>Global, Standard</td>
-      <td>Global coverage, Standard (all), Standard embeddings, Standard global deployments</td>
+      <td>Datazone, Global, Standard</td>
+      <td>Datazone standard, Global coverage, Standard (all), Standard embeddings, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
-      <td>Global</td>
-      <td>Global coverage, Standard global deployments</td>
+      <td>Datazone, Global</td>
+      <td>Datazone standard, Global coverage, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
-      <td>Global</td>
-      <td>Global coverage, Standard global deployments</td>
+      <td>Datazone, Global</td>
+      <td>Datazone standard, Global coverage, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
@@ -5289,7 +5199,19 @@ Find which AI models are available in your Azure region, including their deploym
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
+      <td><a href="../models/claude-opus-4-6-(preview)/">Claude Opus 4.6 (preview)</a></td>
+      <td>Global, Other</td>
+      <td>Global coverage, Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td><strong>Sweden Central</strong></td>
       <td><a href="../models/claude-sonnet-4-5-(preview)/">Claude Sonnet 4.5 (preview)</a></td>
+      <td>Global, Other</td>
+      <td>Global coverage, Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td><strong>Sweden Central</strong></td>
+      <td><a href="../models/claude-sonnet-4-6-(preview)/">Claude Sonnet 4.6 (preview)</a></td>
       <td>Global, Other</td>
       <td>Global coverage, Region Availability Maas</td>
     </tr>
@@ -5364,12 +5286,6 @@ Find which AI models are available in your Azure region, including their deploym
       <td><a href="../models/flux-1-kontext-pro/">FLUX.1-Kontext-pro</a></td>
       <td>Global, Other</td>
       <td>Global Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>Sweden Central</strong></td>
-      <td><a href="../models/jais-30b-chat/">JAIS 30B Chat</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
@@ -5463,25 +5379,7 @@ Find which AI models are available in your Azure region, including their deploym
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
-      <td><a href="../models/mistral-nemo/">Mistral Nemo</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>Sweden Central</strong></td>
-      <td><a href="../models/mistral-ocr-25-03/">Mistral OCR 25.03</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>Sweden Central</strong></td>
       <td><a href="../models/mistral-small-25-03/">Mistral Small 25.03</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>Sweden Central</strong></td>
-      <td><a href="../models/mistral-large-(2411)/">Mistral-Large (2411)</a></td>
       <td>Global, Other</td>
       <td>Global coverage, Region Availability Maas</td>
     </tr>
@@ -5854,20 +5752,20 @@ Find which AI models are available in your Azure region, including their deploym
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
-      <td>Global, Standard</td>
-      <td>Global coverage, Standard (all), Standard embeddings, Standard global deployments</td>
+      <td>Datazone, Global, Standard</td>
+      <td>Datazone standard, Global coverage, Standard (all), Standard embeddings, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
-      <td>Global</td>
-      <td>Global coverage, Standard global deployments</td>
+      <td>Datazone, Global</td>
+      <td>Datazone standard, Global coverage, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
-      <td>Global, Standard</td>
-      <td>Global coverage, Standard (all), Standard embeddings, Standard global deployments</td>
+      <td>Datazone, Global, Standard</td>
+      <td>Datazone standard, Global coverage, Standard (all), Standard embeddings, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
@@ -6958,20 +6856,20 @@ Find which AI models are available in your Azure region, including their deploym
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
-      <td>Global</td>
-      <td>Global coverage, Standard global deployments</td>
+      <td>Datazone, Global</td>
+      <td>Datazone standard, Global coverage, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
-      <td>Global</td>
-      <td>Global coverage, Standard global deployments</td>
+      <td>Datazone, Global</td>
+      <td>Datazone standard, Global coverage, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
-      <td>Global, Standard</td>
-      <td>Global coverage, Standard (all), Standard embeddings, Standard global deployments</td>
+      <td>Datazone, Global, Standard</td>
+      <td>Datazone standard, Global coverage, Standard (all), Standard embeddings, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
@@ -7050,12 +6948,6 @@ Find which AI models are available in your Azure region, including their deploym
       <td><a href="../models/flux-1-kontext-pro/">FLUX.1-Kontext-pro</a></td>
       <td>Global, Other</td>
       <td>Global Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>West US</strong></td>
-      <td><a href="../models/jais-30b-chat/">JAIS 30B Chat</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
@@ -7155,25 +7047,7 @@ Find which AI models are available in your Azure region, including their deploym
     </tr>
     <tr>
       <td><strong>West US</strong></td>
-      <td><a href="../models/mistral-nemo/">Mistral Nemo</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>West US</strong></td>
-      <td><a href="../models/mistral-ocr-25-03/">Mistral OCR 25.03</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>West US</strong></td>
       <td><a href="../models/mistral-small-25-03/">Mistral Small 25.03</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>West US</strong></td>
-      <td><a href="../models/mistral-large-(2411)/">Mistral-Large (2411)</a></td>
       <td>Global, Other</td>
       <td>Global coverage, Region Availability Maas</td>
     </tr>
@@ -7485,12 +7359,6 @@ Find which AI models are available in your Azure region, including their deploym
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
-      <td><a href="../models/jais-30b-chat/">JAIS 30B Chat</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>West US 3</strong></td>
       <td><a href="../models/llama-3-1-405b-instruct/">Llama 3.1 405B Instruct</a></td>
       <td>Global, Other</td>
       <td>Global coverage, Region Availability Maas</td>
@@ -7587,25 +7455,7 @@ Find which AI models are available in your Azure region, including their deploym
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
-      <td><a href="../models/mistral-nemo/">Mistral Nemo</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>West US 3</strong></td>
-      <td><a href="../models/mistral-ocr-25-03/">Mistral OCR 25.03</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>West US 3</strong></td>
       <td><a href="../models/mistral-small-25-03/">Mistral Small 25.03</a></td>
-      <td>Global, Other</td>
-      <td>Global coverage, Region Availability Maas</td>
-    </tr>
-    <tr>
-      <td><strong>West US 3</strong></td>
-      <td><a href="../models/mistral-large-(2411)/">Mistral-Large (2411)</a></td>
       <td>Global, Other</td>
       <td>Global coverage, Region Availability Maas</td>
     </tr>
@@ -7861,4 +7711,4 @@ Find which AI models are available in your Azure region, including their deploym
 
 ---
 
-_Last updated: 2026-02-20 18:18 UTC_
+_Last updated: 2026-02-20 18:30 UTC_

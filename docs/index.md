@@ -4,7 +4,7 @@ Real-time tracking of Azure AI Foundry model availability across regions and dep
 
 <div class="stats-grid">
   <div class="stat-card">
-    <div class="stat-value">114</div>
+    <div class="stat-value">111</div>
     <div class="stat-label">Models Tracked</div>
   </div>
   <div class="stat-card">
@@ -24,40 +24,20 @@ Real-time tracking of Azure AI Foundry model availability across regions and dep
 ---
 
 ???+ tip "Recent Availability Changes"
-    Latest region availability updates. See [full change history](history.md) for more.
-
     | Date | Change | Model | Region | SKU Type |
     |------|--------|-------|--------|----------|
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-4.1](models/gpt-4-1/) | West US 3 | Global batch |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-4.1](models/gpt-4-1/) | West US 3 | Global batch datazone |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-4.1-mini](models/gpt-4-1-mini/) | West US 3 | Global batch |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-4.1-mini](models/gpt-4-1-mini/) | West US 3 | Global batch datazone |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-4.1-nano](models/gpt-4-1-nano/) | West US 3 | Global batch |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-4.1-nano](models/gpt-4-1-nano/) | West US 3 | Global batch datazone |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-4o](models/gpt-4o/) | West US 3 | Global batch |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-4o](models/gpt-4o/) | West US 3 | Global batch datazone |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-4o-mini](models/gpt-4o-mini/) | West US 3 | Global batch |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-4o-mini](models/gpt-4o-mini/) | West US 3 | Global batch datazone |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5](models/gpt-5/) | West US 3 | Global batch |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5](models/gpt-5/) | West US 3 | Global batch datazone |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | Australia East | Global batch |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | Brazil South | Global batch |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | Canada East | Global batch |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | Central US | Global batch |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | East US | Global batch |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | East US 2 | Global batch |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | France Central | Global batch |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | Germany West Central | Global batch |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | Japan East | Global batch |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | Korea Central | Global batch |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | North Central US | Global batch |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | Norway East | Global batch |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | Poland Central | Global batch |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | South Africa North | Global batch |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | South Central US | Global batch |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | South India | Global batch |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | Sweden Central | Global batch |
-    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | Switzerland North | Global batch |
+    | 2026-02-18 | <span class="badge-added">Added</span> | [Claude Sonnet 4.6 (preview)](models/claude-sonnet-4-6-(preview)/) | East US 2 | Region Availability Maas |
+    | 2026-02-18 | <span class="badge-added">Added</span> | [Claude Sonnet 4.6 (preview)](models/claude-sonnet-4-6-(preview)/) | Sweden Central | Region Availability Maas |
+    | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-large](models/text-embedding-3-large/) | France Central | Datazone standard |
+    | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-large](models/text-embedding-3-large/) | Germany West Central | Datazone standard |
+    | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-large](models/text-embedding-3-large/) | Italy North | Datazone standard |
+    | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-large](models/text-embedding-3-large/) | Poland Central | Datazone standard |
+    | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-large](models/text-embedding-3-large/) | Spain Central | Datazone standard |
+    | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-large](models/text-embedding-3-large/) | Sweden Central | Datazone standard |
+    | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-large](models/text-embedding-3-large/) | West Europe | Datazone standard |
+    | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-small](models/text-embedding-3-small/) | France Central | Datazone standard |
+
+    *… and 965 more — see [full change history](history.md)*
 
 
 ---
@@ -119,4 +99,4 @@ Real-time tracking of Azure AI Foundry model availability across regions and dep
 
 ---
 
-_Last updated: 2026-02-20 18:18 UTC_
+_Last updated: 2026-02-20 18:30 UTC_

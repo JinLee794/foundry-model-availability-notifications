@@ -8,11 +8,11 @@ Explore every deployment SKU and discover which models and regions support it.
     <div class="stat-label">SKU Types</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value">114</div>
+    <div class="stat-value">111</div>
     <div class="stat-label">Models</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value">348</div>
+    <div class="stat-value">342</div>
     <div class="stat-label">Model × SKU Combinations</div>
   </div>
 </div>
@@ -36,7 +36,7 @@ Explore every deployment SKU and discover which models and regions support it.
 |----------|----------|--------|---------|----------|
 | <span class="sku-badge sku-global">Global</span> | Global batch | 10 | 22 | 79% |
 | <span class="sku-badge sku-global">Global</span> | Global batch datazone | 10 | 12 | 43% |
-| <span class="sku-badge sku-global">Global</span> | Global coverage | 114 | 28 | 100% |
+| <span class="sku-badge sku-global">Global</span> | Global coverage | 111 | 28 | 100% |
 | <span class="sku-badge sku-global">Global</span> | Standard global deployments | 48 | 28 | 100% |
 | <span class="sku-badge sku-datazone">Datazone</span> | Datazone provisioned managed | 13 | 13 | 46% |
 | <span class="sku-badge sku-datazone">Datazone</span> | Datazone standard | 18 | 14 | 50% |
@@ -53,7 +53,7 @@ Explore every deployment SKU and discover which models and regions support it.
 | <span class="sku-badge sku-other">Other</span> | Data Zone Standard | 5 | 16 | 57% |
 | <span class="sku-badge sku-other">Other</span> | Global Provisioned Managed | 3 | 25 | 89% |
 | <span class="sku-badge sku-other">Other</span> | Global Standard | 16 | 25 | 89% |
-| <span class="sku-badge sku-other">Other</span> | Region Availability Maas | 44 | 7 | 25% |
+| <span class="sku-badge sku-other">Other</span> | Region Availability Maas | 41 | 7 | 25% |
 
 ---
 
@@ -187,6 +187,24 @@ Filter by category, SKU type, or model to find exactly what you need.
       <td class="hidden-col">East US 2, Sweden Central</td>
     </tr>
     <tr>
+      <td><a href="../models/claude-opus-4-6-(preview)/"><strong>Claude Opus 4.6 (preview)</strong></a></td>
+      <td><span class="sku-badge sku-global">Global</span></td>
+      <td>Global coverage</td>
+      <td>2</td>
+      <td><span class="badge badge-emerging">Emerging</span></td>
+      <td>7%</td>
+      <td class="hidden-col">East US 2, Sweden Central</td>
+    </tr>
+    <tr>
+      <td><a href="../models/claude-opus-4-6-(preview)/"><strong>Claude Opus 4.6 (preview)</strong></a></td>
+      <td><span class="sku-badge sku-other">Other</span></td>
+      <td>Region Availability Maas</td>
+      <td>2</td>
+      <td><span class="badge badge-emerging">Emerging</span></td>
+      <td>7%</td>
+      <td class="hidden-col">East US 2, Sweden Central</td>
+    </tr>
+    <tr>
       <td><a href="../models/claude-sonnet-4-5-(preview)/"><strong>Claude Sonnet 4.5 (preview)</strong></a></td>
       <td><span class="sku-badge sku-global">Global</span></td>
       <td>Global coverage</td>
@@ -197,6 +215,24 @@ Filter by category, SKU type, or model to find exactly what you need.
     </tr>
     <tr>
       <td><a href="../models/claude-sonnet-4-5-(preview)/"><strong>Claude Sonnet 4.5 (preview)</strong></a></td>
+      <td><span class="sku-badge sku-other">Other</span></td>
+      <td>Region Availability Maas</td>
+      <td>2</td>
+      <td><span class="badge badge-emerging">Emerging</span></td>
+      <td>7%</td>
+      <td class="hidden-col">East US 2, Sweden Central</td>
+    </tr>
+    <tr>
+      <td><a href="../models/claude-sonnet-4-6-(preview)/"><strong>Claude Sonnet 4.6 (preview)</strong></a></td>
+      <td><span class="sku-badge sku-global">Global</span></td>
+      <td>Global coverage</td>
+      <td>2</td>
+      <td><span class="badge badge-emerging">Emerging</span></td>
+      <td>7%</td>
+      <td class="hidden-col">East US 2, Sweden Central</td>
+    </tr>
+    <tr>
+      <td><a href="../models/claude-sonnet-4-6-(preview)/"><strong>Claude Sonnet 4.6 (preview)</strong></a></td>
       <td><span class="sku-badge sku-other">Other</span></td>
       <td>Region Availability Maas</td>
       <td>2</td>
@@ -464,42 +500,6 @@ Filter by category, SKU type, or model to find exactly what you need.
       <td><span class="badge badge-broad">Broad</span></td>
       <td>89%</td>
       <td class="hidden-col">Australia East, Brazil South, Canada East, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, West US 3</td>
-    </tr>
-    <tr>
-      <td><a href="../models/gretel-navigator/"><strong>Gretel-Navigator</strong></a></td>
-      <td><span class="sku-badge sku-global">Global</span></td>
-      <td>Global coverage</td>
-      <td>1</td>
-      <td><span class="badge badge-emerging">Emerging</span></td>
-      <td>4%</td>
-      <td class="hidden-col">East US 2</td>
-    </tr>
-    <tr>
-      <td><a href="../models/gretel-navigator/"><strong>Gretel-Navigator</strong></a></td>
-      <td><span class="sku-badge sku-other">Other</span></td>
-      <td>Region Availability Maas</td>
-      <td>1</td>
-      <td><span class="badge badge-emerging">Emerging</span></td>
-      <td>4%</td>
-      <td class="hidden-col">East US 2</td>
-    </tr>
-    <tr>
-      <td><a href="../models/jais-30b-chat/"><strong>JAIS 30B Chat</strong></a></td>
-      <td><span class="sku-badge sku-global">Global</span></td>
-      <td>Global coverage</td>
-      <td>7</td>
-      <td><span class="badge badge-emerging">Emerging</span></td>
-      <td>25%</td>
-      <td class="hidden-col">East US, East US 2, North Central US, South Central US, Sweden Central, West US, West US 3</td>
-    </tr>
-    <tr>
-      <td><a href="../models/jais-30b-chat/"><strong>JAIS 30B Chat</strong></a></td>
-      <td><span class="sku-badge sku-other">Other</span></td>
-      <td>Region Availability Maas</td>
-      <td>7</td>
-      <td><span class="badge badge-emerging">Emerging</span></td>
-      <td>25%</td>
-      <td class="hidden-col">East US, East US 2, North Central US, South Central US, Sweden Central, West US, West US 3</td>
     </tr>
     <tr>
       <td><a href="../models/llama-3-1-405b-instruct/"><strong>Llama 3.1 405B Instruct</strong></a></td>
@@ -808,42 +808,6 @@ Filter by category, SKU type, or model to find exactly what you need.
       <td class="hidden-col">East US, East US 2, North Central US, South Central US, Sweden Central, West US, West US 3</td>
     </tr>
     <tr>
-      <td><a href="../models/mistral-nemo/"><strong>Mistral Nemo</strong></a></td>
-      <td><span class="sku-badge sku-global">Global</span></td>
-      <td>Global coverage</td>
-      <td>7</td>
-      <td><span class="badge badge-emerging">Emerging</span></td>
-      <td>25%</td>
-      <td class="hidden-col">East US, East US 2, North Central US, South Central US, Sweden Central, West US, West US 3</td>
-    </tr>
-    <tr>
-      <td><a href="../models/mistral-nemo/"><strong>Mistral Nemo</strong></a></td>
-      <td><span class="sku-badge sku-other">Other</span></td>
-      <td>Region Availability Maas</td>
-      <td>7</td>
-      <td><span class="badge badge-emerging">Emerging</span></td>
-      <td>25%</td>
-      <td class="hidden-col">East US, East US 2, North Central US, South Central US, Sweden Central, West US, West US 3</td>
-    </tr>
-    <tr>
-      <td><a href="../models/mistral-ocr-25-03/"><strong>Mistral OCR 25.03</strong></a></td>
-      <td><span class="sku-badge sku-global">Global</span></td>
-      <td>Global coverage</td>
-      <td>7</td>
-      <td><span class="badge badge-emerging">Emerging</span></td>
-      <td>25%</td>
-      <td class="hidden-col">East US, East US 2, North Central US, South Central US, Sweden Central, West US, West US 3</td>
-    </tr>
-    <tr>
-      <td><a href="../models/mistral-ocr-25-03/"><strong>Mistral OCR 25.03</strong></a></td>
-      <td><span class="sku-badge sku-other">Other</span></td>
-      <td>Region Availability Maas</td>
-      <td>7</td>
-      <td><span class="badge badge-emerging">Emerging</span></td>
-      <td>25%</td>
-      <td class="hidden-col">East US, East US 2, North Central US, South Central US, Sweden Central, West US, West US 3</td>
-    </tr>
-    <tr>
       <td><a href="../models/mistral-small-25-03/"><strong>Mistral Small 25.03</strong></a></td>
       <td><span class="sku-badge sku-global">Global</span></td>
       <td>Global coverage</td>
@@ -854,24 +818,6 @@ Filter by category, SKU type, or model to find exactly what you need.
     </tr>
     <tr>
       <td><a href="../models/mistral-small-25-03/"><strong>Mistral Small 25.03</strong></a></td>
-      <td><span class="sku-badge sku-other">Other</span></td>
-      <td>Region Availability Maas</td>
-      <td>7</td>
-      <td><span class="badge badge-emerging">Emerging</span></td>
-      <td>25%</td>
-      <td class="hidden-col">East US, East US 2, North Central US, South Central US, Sweden Central, West US, West US 3</td>
-    </tr>
-    <tr>
-      <td><a href="../models/mistral-large-(2411)/"><strong>Mistral-Large (2411)</strong></a></td>
-      <td><span class="sku-badge sku-global">Global</span></td>
-      <td>Global coverage</td>
-      <td>7</td>
-      <td><span class="badge badge-emerging">Emerging</span></td>
-      <td>25%</td>
-      <td class="hidden-col">East US, East US 2, North Central US, South Central US, Sweden Central, West US, West US 3</td>
-    </tr>
-    <tr>
-      <td><a href="../models/mistral-large-(2411)/"><strong>Mistral-Large (2411)</strong></a></td>
       <td><span class="sku-badge sku-other">Other</span></td>
       <td>Region Availability Maas</td>
       <td>7</td>
@@ -3043,10 +2989,10 @@ Filter by category, SKU type, or model to find exactly what you need.
       <td><a href="../models/text-embedding-3-large/"><strong>text-embedding-3-large</strong></a></td>
       <td><span class="sku-badge sku-datazone">Datazone</span></td>
       <td>Datazone standard</td>
-      <td>7</td>
+      <td>14</td>
       <td><span class="badge badge-emerging">Emerging</span></td>
-      <td>25%</td>
-      <td class="hidden-col">Central US, East US, East US 2, North Central US, South Central US, West US, West US 3</td>
+      <td>50%</td>
+      <td class="hidden-col">Central US, East US, East US 2, France Central, Germany West Central, Italy North, North Central US, Poland Central, South Central US, Spain Central, Sweden Central, West Europe, West US, West US 3</td>
     </tr>
     <tr>
       <td><a href="../models/text-embedding-3-large/"><strong>text-embedding-3-large</strong></a></td>
@@ -3088,10 +3034,10 @@ Filter by category, SKU type, or model to find exactly what you need.
       <td><a href="../models/text-embedding-3-small/"><strong>text-embedding-3-small</strong></a></td>
       <td><span class="sku-badge sku-datazone">Datazone</span></td>
       <td>Datazone standard</td>
-      <td>7</td>
+      <td>14</td>
       <td><span class="badge badge-emerging">Emerging</span></td>
-      <td>25%</td>
-      <td class="hidden-col">Central US, East US, East US 2, North Central US, South Central US, West US, West US 3</td>
+      <td>50%</td>
+      <td class="hidden-col">Central US, East US, East US 2, France Central, Germany West Central, Italy North, North Central US, Poland Central, South Central US, Spain Central, Sweden Central, West Europe, West US, West US 3</td>
     </tr>
     <tr>
       <td><a href="../models/text-embedding-3-small/"><strong>text-embedding-3-small</strong></a></td>
@@ -3133,10 +3079,10 @@ Filter by category, SKU type, or model to find exactly what you need.
       <td><a href="../models/text-embedding-ada-002/"><strong>text-embedding-ada-002</strong></a></td>
       <td><span class="sku-badge sku-datazone">Datazone</span></td>
       <td>Datazone standard</td>
-      <td>7</td>
+      <td>14</td>
       <td><span class="badge badge-emerging">Emerging</span></td>
-      <td>25%</td>
-      <td class="hidden-col">Central US, East US, East US 2, North Central US, South Central US, West US, West US 3</td>
+      <td>50%</td>
+      <td class="hidden-col">Central US, East US, East US 2, France Central, Germany West Central, Italy North, North Central US, Poland Central, South Central US, Spain Central, Sweden Central, West Europe, West US, West US 3</td>
     </tr>
     <tr>
       <td><a href="../models/text-embedding-ada-002/"><strong>text-embedding-ada-002</strong></a></td>
@@ -3270,4 +3216,4 @@ Filter by category, SKU type, or model to find exactly what you need.
 
 ---
 
-_Last updated: 2026-02-20 18:18 UTC_
+_Last updated: 2026-02-20 18:30 UTC_

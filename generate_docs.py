@@ -614,12 +614,13 @@ def generate_index_page(
                 )
 
     if recent_rows:
+        remaining = max(0, len(recent_rows) - 10)
+        see_more = f"\n    *… and {remaining} more — see [full change history](history.md)*" if remaining else ""
         recent_changes_block = f"""???+ tip "Recent Availability Changes"
-    Latest region availability updates. See [full change history](history.md) for more.
-
     | Date | Change | Model | Region | SKU Type |
     |------|--------|-------|--------|----------|
-{chr(10).join(recent_rows[:30])}
+{chr(10).join(recent_rows[:10])}
+{see_more}
 """
     else:
         recent_changes_block = """???+ tip "Recent Availability Changes"

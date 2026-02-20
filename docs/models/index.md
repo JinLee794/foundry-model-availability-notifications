@@ -113,7 +113,29 @@ Complete catalog of AI Foundry models with availability details. Each SKU column
       <td class="hidden-col">East US 2, Sweden Central</td>
     </tr>
     <tr>
+      <td><a href="claude-opus-4-6-(preview)/"><strong>Claude Opus 4.6 (preview)</strong></a></td>
+      <td><span class="badge badge-emerging">Emerging</span></td>
+      <td><span class="sku-badge sku-global" title="2 regions">Global</span></td>
+      <td><span class="region-list"><span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('Sweden Central')">Sweden Central</span></span></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td class="hidden-col">Global, Other</td>
+      <td class="hidden-col">East US 2, Sweden Central</td>
+    </tr>
+    <tr>
       <td><a href="claude-sonnet-4-5-(preview)/"><strong>Claude Sonnet 4.5 (preview)</strong></a></td>
+      <td><span class="badge badge-emerging">Emerging</span></td>
+      <td><span class="sku-badge sku-global" title="2 regions">Global</span></td>
+      <td><span class="region-list"><span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('Sweden Central')">Sweden Central</span></span></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td class="hidden-col">Global, Other</td>
+      <td class="hidden-col">East US 2, Sweden Central</td>
+    </tr>
+    <tr>
+      <td><a href="claude-sonnet-4-6-(preview)/"><strong>Claude Sonnet 4.6 (preview)</strong></a></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" title="2 regions">Global</span></td>
       <td><span class="region-list"><span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('Sweden Central')">Sweden Central</span></span></td>
@@ -254,28 +276,6 @@ Complete catalog of AI Foundry models with availability details. Each SKU column
       <td>-</td>
       <td class="hidden-col">Global, Other</td>
       <td class="hidden-col">Australia East, Brazil South, Canada East, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, West US 3</td>
-    </tr>
-    <tr>
-      <td><a href="gretel-navigator/"><strong>Gretel-Navigator</strong></a></td>
-      <td><span class="badge badge-emerging">Emerging</span></td>
-      <td><span class="sku-badge sku-global" title="1 regions">Global</span></td>
-      <td><span class="region-list"><span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span></span></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td class="hidden-col">Global, Other</td>
-      <td class="hidden-col">East US 2</td>
-    </tr>
-    <tr>
-      <td><a href="jais-30b-chat/"><strong>JAIS 30B Chat</strong></a></td>
-      <td><span class="badge badge-emerging">Emerging</span></td>
-      <td><span class="sku-badge sku-global" title="7 regions">Global</span></td>
-      <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,Sweden Central,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td class="hidden-col">Global, Other</td>
-      <td class="hidden-col">East US, East US 2, North Central US, South Central US, Sweden Central, West US, West US 3</td>
     </tr>
     <tr>
       <td><a href="llama-3-1-405b-instruct/"><strong>Llama 3.1 405B Instruct</strong></a></td>
@@ -454,40 +454,7 @@ Complete catalog of AI Foundry models with availability details. Each SKU column
       <td class="hidden-col">East US, East US 2, North Central US, South Central US, Sweden Central, West US, West US 3</td>
     </tr>
     <tr>
-      <td><a href="mistral-nemo/"><strong>Mistral Nemo</strong></a></td>
-      <td><span class="badge badge-emerging">Emerging</span></td>
-      <td><span class="sku-badge sku-global" title="7 regions">Global</span></td>
-      <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,Sweden Central,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td class="hidden-col">Global, Other</td>
-      <td class="hidden-col">East US, East US 2, North Central US, South Central US, Sweden Central, West US, West US 3</td>
-    </tr>
-    <tr>
-      <td><a href="mistral-ocr-25-03/"><strong>Mistral OCR 25.03</strong></a></td>
-      <td><span class="badge badge-emerging">Emerging</span></td>
-      <td><span class="sku-badge sku-global" title="7 regions">Global</span></td>
-      <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,Sweden Central,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td class="hidden-col">Global, Other</td>
-      <td class="hidden-col">East US, East US 2, North Central US, South Central US, Sweden Central, West US, West US 3</td>
-    </tr>
-    <tr>
       <td><a href="mistral-small-25-03/"><strong>Mistral Small 25.03</strong></a></td>
-      <td><span class="badge badge-emerging">Emerging</span></td>
-      <td><span class="sku-badge sku-global" title="7 regions">Global</span></td>
-      <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,Sweden Central,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td class="hidden-col">Global, Other</td>
-      <td class="hidden-col">East US, East US 2, North Central US, South Central US, Sweden Central, West US, West US 3</td>
-    </tr>
-    <tr>
-      <td><a href="mistral-large-(2411)/"><strong>Mistral-Large (2411)</strong></a></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" title="7 regions">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,Sweden Central,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
@@ -1259,9 +1226,9 @@ Complete catalog of AI Foundry models with availability details. Each SKU column
     <tr>
       <td><a href="text-embedding-3-large/"><strong>text-embedding-3-large</strong></a></td>
       <td><span class="badge badge-broad">Broad</span></td>
-      <td><span class="sku-badge sku-global" title="26 regions">Global</span> <span class="sku-badge sku-datazone" title="7 regions">Datazone</span> <span class="sku-badge sku-standard" title="19 regions">Standard</span></td>
+      <td><span class="sku-badge sku-global" title="26 regions">Global</span> <span class="sku-badge sku-datazone" title="14 regions">Datazone</span> <span class="sku-badge sku-standard" title="19 regions">Standard</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada East" data-all-regions="Australia East,Brazil South,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada East')">Canada East</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+23 more</button></span></td>
-      <td><span class="region-list" data-preview-regions="Central US,East US,East US 2" data-all-regions="Central US,East US,East US 2,North Central US,South Central US,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
+      <td><span class="region-list" data-preview-regions="Central US,East US,East US 2" data-all-regions="Central US,East US,East US 2,France Central,Germany West Central,Italy North,North Central US,Poland Central,South Central US,Spain Central,Sweden Central,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+11 more</button></span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Canada East,East US" data-all-regions="Australia East,Canada East,East US,East US 2,France Central,Germany West Central,Japan East,Korea Central,Norway East,Poland Central,South Africa North,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,UAE North,UK South,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Canada East')">Canada East</span> <span class="region-badge" onclick="filterByRegion('East US')">East US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+16 more</button></span></td>
       <td>-</td>
       <td class="hidden-col">Datazone, Global, Standard</td>
@@ -1270,9 +1237,9 @@ Complete catalog of AI Foundry models with availability details. Each SKU column
     <tr>
       <td><a href="text-embedding-3-small/"><strong>text-embedding-3-small</strong></a></td>
       <td><span class="badge badge-broad">Broad</span></td>
-      <td><span class="sku-badge sku-global" title="25 regions">Global</span> <span class="sku-badge sku-datazone" title="7 regions">Datazone</span> <span class="sku-badge sku-standard" title="8 regions">Standard</span></td>
+      <td><span class="sku-badge sku-global" title="25 regions">Global</span> <span class="sku-badge sku-datazone" title="14 regions">Datazone</span> <span class="sku-badge sku-standard" title="8 regions">Standard</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada East" data-all-regions="Australia East,Brazil South,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada East')">Canada East</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+22 more</button></span></td>
-      <td><span class="region-list" data-preview-regions="Central US,East US,East US 2" data-all-regions="Central US,East US,East US 2,North Central US,South Central US,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
+      <td><span class="region-list" data-preview-regions="Central US,East US,East US 2" data-all-regions="Central US,East US,East US 2,France Central,Germany West Central,Italy North,North Central US,Poland Central,South Central US,Spain Central,Sweden Central,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+11 more</button></span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Canada East,East US" data-all-regions="Australia East,Canada East,East US,East US 2,Japan East,Switzerland North,UAE North,West US"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Canada East')">Canada East</span> <span class="region-badge" onclick="filterByRegion('East US')">East US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+5 more</button></span></td>
       <td>-</td>
       <td class="hidden-col">Datazone, Global, Standard</td>
@@ -1281,9 +1248,9 @@ Complete catalog of AI Foundry models with availability details. Each SKU column
     <tr>
       <td><a href="text-embedding-ada-002/"><strong>text-embedding-ada-002</strong></a></td>
       <td><span class="badge badge-broad">Broad</span></td>
-      <td><span class="sku-badge sku-global" title="25 regions">Global</span> <span class="sku-badge sku-datazone" title="7 regions">Datazone</span> <span class="sku-badge sku-standard" title="19 regions">Standard</span></td>
+      <td><span class="sku-badge sku-global" title="25 regions">Global</span> <span class="sku-badge sku-datazone" title="14 regions">Datazone</span> <span class="sku-badge sku-standard" title="19 regions">Standard</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada East" data-all-regions="Australia East,Brazil South,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada East')">Canada East</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+22 more</button></span></td>
-      <td><span class="region-list" data-preview-regions="Central US,East US,East US 2" data-all-regions="Central US,East US,East US 2,North Central US,South Central US,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
+      <td><span class="region-list" data-preview-regions="Central US,East US,East US 2" data-all-regions="Central US,East US,East US 2,France Central,Germany West Central,Italy North,North Central US,Poland Central,South Central US,Spain Central,Sweden Central,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+11 more</button></span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada East" data-all-regions="Australia East,Brazil South,Canada East,East US,East US 2,France Central,Japan East,North Central US,Norway East,South Africa North,South Central US,South India,Sweden Central,Switzerland North,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada East')">Canada East</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+16 more</button></span></td>
       <td>-</td>
       <td class="hidden-col">Datazone, Global, Standard</td>
@@ -1350,4 +1317,4 @@ Complete catalog of AI Foundry models with availability details. Each SKU column
 
 ---
 
-_Last updated: 2026-02-20 18:18 UTC_
+_Last updated: 2026-02-20 18:30 UTC_

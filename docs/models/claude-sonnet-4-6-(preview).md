@@ -1,6 +1,6 @@
-# Llama 3.1 405B Instruct
+# Claude Sonnet 4.6 (preview)
 
-<span class="badge badge-emerging">Emerging</span> Available in **6** of 28 regions
+<span class="badge badge-emerging">Emerging</span> Available in **2** of 28 regions
 
 ---
 
@@ -8,8 +8,8 @@
 
 | Metric | Value |
 |--------|-------|
-| Total Regions | 6 |
-| Coverage | 21% |
+| Total Regions | 2 |
+| Coverage | 7% |
 | SKU Types | 2 |
 | Categories | Global, Other |
 
@@ -24,11 +24,11 @@
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
-| Global coverage | 6 | 21% |
+| Global coverage | 2 | 7% |
 
 **Available Regions:**
 
-`East US`, `East US 2`, `North Central US`, `South Central US`, `West US`, `West US 3`
+`East US 2`, `Sweden Central`
 
 ### Other Deployments
 
@@ -37,11 +37,11 @@
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
-| Region Availability Maas | 6 | 21% |
+| Region Availability Maas | 2 | 7% |
 
 **Available Regions:**
 
-`East US`, `East US 2`, `North Central US`, `South Central US`, `West US`, `West US 3`
+`East US 2`, `Sweden Central`
 
 
 ---
@@ -56,12 +56,8 @@ This table shows exactly which SKU types are available in each region.
 <tr><th>Region</th><th>Global coverage</th><th>Region Availability Maas</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>East US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
 <tr><td><strong>East US 2</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>North Central US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>South Central US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>West US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>West US 3</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Sweden Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
 </tbody>
 </table>
 </div>

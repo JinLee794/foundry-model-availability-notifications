@@ -4,15 +4,15 @@ Recent changes to AI Foundry model regional availability.
 
 <div class="stats-grid">
   <div class="stat-card">
-    <div class="stat-value">23</div>
+    <div class="stat-value">27</div>
     <div class="stat-label">Change Events</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value" style="color: #22c55e;">1614</div>
+    <div class="stat-value" style="color: #22c55e;">1597</div>
     <div class="stat-label">Additions</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value" style="color: #ef4444;">362</div>
+    <div class="stat-value" style="color: #ef4444;">394</div>
     <div class="stat-label">Removals</div>
   </div>
 </div>
@@ -28,6 +28,10 @@ Filter and search through all recent availability changes.
     <label for="history-date-filter">Date</label>
     <select id="history-date-filter" onchange="filterHistoryTable()">
       <option value="">All Dates</option>
+      <option value="2026-02-18">2026-02-18</option>
+      <option value="2026-02-12">2026-02-12</option>
+      <option value="2026-02-06">2026-02-06</option>
+      <option value="2026-01-31">2026-01-31</option>
       <option value="2026-01-28">2026-01-28</option>
       <option value="2026-01-22">2026-01-22</option>
       <option value="2026-01-15">2026-01-15</option>
@@ -40,9 +44,6 @@ Filter and search through all recent availability changes.
       <option value="2025-12-04">2025-12-04</option>
       <option value="2025-12-02">2025-12-02</option>
       <option value="2025-11-20">2025-11-20</option>
-      <option value="2025-11-07">2025-11-07</option>
-      <option value="2025-11-04">2025-11-04</option>
-      <option value="2025-10-31">2025-10-31</option>
     </select>
   </div>
   <div class="filter-group">
@@ -60,7 +61,9 @@ Filter and search through all recent availability changes.
       <option value="Claude Haiku 4.5 (preview)">Claude Haiku 4.5 (preview)</option>
       <option value="Claude Opus 4.1 (preview)">Claude Opus 4.1 (preview)</option>
       <option value="Claude Opus 4.5 (preview)">Claude Opus 4.5 (preview)</option>
+      <option value="Claude Opus 4.6 (preview)">Claude Opus 4.6 (preview)</option>
       <option value="Claude Sonnet 4.5 (preview)">Claude Sonnet 4.5 (preview)</option>
+      <option value="Claude Sonnet 4.6 (preview)">Claude Sonnet 4.6 (preview)</option>
       <option value="Codestral-2501">Codestral-2501</option>
       <option value="Cohere Command R 08-2024">Cohere Command R 08-2024</option>
       <option value="Cohere Command R+ 08-2024">Cohere Command R+ 08-2024</option>
@@ -238,6 +241,419 @@ Filter and search through all recent availability changes.
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td data-order="20260218075112">2026-02-18</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/claude-sonnet-4-6-(preview)/">Claude Sonnet 4.6 (preview)</a></td>
+      <td>East US 2</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260218075112">2026-02-18</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/claude-sonnet-4-6-(preview)/">Claude Sonnet 4.6 (preview)</a></td>
+      <td>Sweden Central</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260212075326">2026-02-12</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
+      <td>France Central</td>
+      <td>Datazone standard</td>
+    </tr>
+    <tr>
+      <td data-order="20260212075326">2026-02-12</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
+      <td>Germany West Central</td>
+      <td>Datazone standard</td>
+    </tr>
+    <tr>
+      <td data-order="20260212075326">2026-02-12</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
+      <td>Italy North</td>
+      <td>Datazone standard</td>
+    </tr>
+    <tr>
+      <td data-order="20260212075326">2026-02-12</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
+      <td>Poland Central</td>
+      <td>Datazone standard</td>
+    </tr>
+    <tr>
+      <td data-order="20260212075326">2026-02-12</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
+      <td>Spain Central</td>
+      <td>Datazone standard</td>
+    </tr>
+    <tr>
+      <td data-order="20260212075326">2026-02-12</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
+      <td>Sweden Central</td>
+      <td>Datazone standard</td>
+    </tr>
+    <tr>
+      <td data-order="20260212075326">2026-02-12</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
+      <td>West Europe</td>
+      <td>Datazone standard</td>
+    </tr>
+    <tr>
+      <td data-order="20260212075326">2026-02-12</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
+      <td>France Central</td>
+      <td>Datazone standard</td>
+    </tr>
+    <tr>
+      <td data-order="20260212075326">2026-02-12</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
+      <td>Germany West Central</td>
+      <td>Datazone standard</td>
+    </tr>
+    <tr>
+      <td data-order="20260212075326">2026-02-12</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
+      <td>Italy North</td>
+      <td>Datazone standard</td>
+    </tr>
+    <tr>
+      <td data-order="20260212075326">2026-02-12</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
+      <td>Poland Central</td>
+      <td>Datazone standard</td>
+    </tr>
+    <tr>
+      <td data-order="20260212075326">2026-02-12</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
+      <td>Spain Central</td>
+      <td>Datazone standard</td>
+    </tr>
+    <tr>
+      <td data-order="20260212075326">2026-02-12</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
+      <td>Sweden Central</td>
+      <td>Datazone standard</td>
+    </tr>
+    <tr>
+      <td data-order="20260212075326">2026-02-12</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
+      <td>West Europe</td>
+      <td>Datazone standard</td>
+    </tr>
+    <tr>
+      <td data-order="20260212075326">2026-02-12</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
+      <td>France Central</td>
+      <td>Datazone standard</td>
+    </tr>
+    <tr>
+      <td data-order="20260212075326">2026-02-12</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
+      <td>Germany West Central</td>
+      <td>Datazone standard</td>
+    </tr>
+    <tr>
+      <td data-order="20260212075326">2026-02-12</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
+      <td>Italy North</td>
+      <td>Datazone standard</td>
+    </tr>
+    <tr>
+      <td data-order="20260212075326">2026-02-12</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
+      <td>Poland Central</td>
+      <td>Datazone standard</td>
+    </tr>
+    <tr>
+      <td data-order="20260212075326">2026-02-12</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
+      <td>Spain Central</td>
+      <td>Datazone standard</td>
+    </tr>
+    <tr>
+      <td data-order="20260212075326">2026-02-12</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
+      <td>Sweden Central</td>
+      <td>Datazone standard</td>
+    </tr>
+    <tr>
+      <td data-order="20260212075326">2026-02-12</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
+      <td>West Europe</td>
+      <td>Datazone standard</td>
+    </tr>
+    <tr>
+      <td data-order="20260206074806">2026-02-06</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/claude-opus-4-6-(preview)/">Claude Opus 4.6 (preview)</a></td>
+      <td>East US 2</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260206074806">2026-02-06</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/claude-opus-4-6-(preview)/">Claude Opus 4.6 (preview)</a></td>
+      <td>Sweden Central</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/gretel-navigator/">Gretel-Navigator</a></td>
+      <td>East US 2</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/gretel-navigator/">Gretel-Navigator</a></td>
+      <td>(entire model)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/jais-30b-chat/">JAIS 30B Chat</a></td>
+      <td>East US</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/jais-30b-chat/">JAIS 30B Chat</a></td>
+      <td>East US 2</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/jais-30b-chat/">JAIS 30B Chat</a></td>
+      <td>North Central US</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/jais-30b-chat/">JAIS 30B Chat</a></td>
+      <td>South Central US</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/jais-30b-chat/">JAIS 30B Chat</a></td>
+      <td>Sweden Central</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/jais-30b-chat/">JAIS 30B Chat</a></td>
+      <td>West US</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/jais-30b-chat/">JAIS 30B Chat</a></td>
+      <td>West US 3</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/jais-30b-chat/">JAIS 30B Chat</a></td>
+      <td>(entire model)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/mistral-nemo/">Mistral Nemo</a></td>
+      <td>East US</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/mistral-nemo/">Mistral Nemo</a></td>
+      <td>East US 2</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/mistral-nemo/">Mistral Nemo</a></td>
+      <td>North Central US</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/mistral-nemo/">Mistral Nemo</a></td>
+      <td>South Central US</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/mistral-nemo/">Mistral Nemo</a></td>
+      <td>Sweden Central</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/mistral-nemo/">Mistral Nemo</a></td>
+      <td>West US</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/mistral-nemo/">Mistral Nemo</a></td>
+      <td>West US 3</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/mistral-nemo/">Mistral Nemo</a></td>
+      <td>(entire model)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/mistral-ocr-25-03/">Mistral OCR 25.03</a></td>
+      <td>East US</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/mistral-ocr-25-03/">Mistral OCR 25.03</a></td>
+      <td>East US 2</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/mistral-ocr-25-03/">Mistral OCR 25.03</a></td>
+      <td>North Central US</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/mistral-ocr-25-03/">Mistral OCR 25.03</a></td>
+      <td>South Central US</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/mistral-ocr-25-03/">Mistral OCR 25.03</a></td>
+      <td>Sweden Central</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/mistral-ocr-25-03/">Mistral OCR 25.03</a></td>
+      <td>West US</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/mistral-ocr-25-03/">Mistral OCR 25.03</a></td>
+      <td>West US 3</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/mistral-ocr-25-03/">Mistral OCR 25.03</a></td>
+      <td>(entire model)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/mistral-large-(2411)/">Mistral-Large (2411)</a></td>
+      <td>East US</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/mistral-large-(2411)/">Mistral-Large (2411)</a></td>
+      <td>East US 2</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/mistral-large-(2411)/">Mistral-Large (2411)</a></td>
+      <td>North Central US</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/mistral-large-(2411)/">Mistral-Large (2411)</a></td>
+      <td>South Central US</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/mistral-large-(2411)/">Mistral-Large (2411)</a></td>
+      <td>Sweden Central</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/mistral-large-(2411)/">Mistral-Large (2411)</a></td>
+      <td>West US</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/mistral-large-(2411)/">Mistral-Large (2411)</a></td>
+      <td>West US 3</td>
+      <td>Region Availability Maas</td>
+    </tr>
+    <tr>
+      <td data-order="20260131073001">2026-01-31</td>
+      <td><span class="badge-removed">Removed</span></td>
+      <td><a href="../models/mistral-large-(2411)/">Mistral-Large (2411)</a></td>
+      <td>(entire model)</td>
+      <td>-</td>
+    </tr>
     <tr>
       <td data-order="20260128072753">2026-01-28</td>
       <td><span class="badge-added">Added</span></td>
@@ -13762,318 +14178,10 @@ Filter and search through all recent availability changes.
       <td>Japan East</td>
       <td>Provisioned (PTU managed)</td>
     </tr>
-    <tr>
-      <td data-order="20251107021555">2025-11-07</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-realtime/">gpt-realtime</a></td>
-      <td>East US 2</td>
-      <td>Standard global deployments</td>
-    </tr>
-    <tr>
-      <td data-order="20251107021555">2025-11-07</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-realtime/">gpt-realtime</a></td>
-      <td>Sweden Central</td>
-      <td>Standard global deployments</td>
-    </tr>
-    <tr>
-      <td data-order="20251107021555">2025-11-07</td>
-      <td><span class="badge-removed">Removed</span></td>
-      <td><a href="../models/gpt-realtime/">gpt-realtime</a></td>
-      <td>Norway East</td>
-      <td>Standard global deployments</td>
-    </tr>
-    <tr>
-      <td data-order="20251107021555">2025-11-07</td>
-      <td><span class="badge-removed">Removed</span></td>
-      <td><a href="../models/gpt-realtime/">gpt-realtime</a></td>
-      <td>West US</td>
-      <td>Standard global deployments</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
-      <td>West US 3</td>
-      <td>Global batch datazone</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
-      <td>West US 3</td>
-      <td>Global batch datazone</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
-      <td>West US 3</td>
-      <td>Global batch datazone</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-4o/">gpt-4o</a></td>
-      <td>West US 3</td>
-      <td>Global batch datazone</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
-      <td>West US 3</td>
-      <td>Global batch datazone</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>Australia East</td>
-      <td>Global batch</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>Brazil South</td>
-      <td>Global batch</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>Canada East</td>
-      <td>Global batch</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>East US</td>
-      <td>Global batch</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>East US 2</td>
-      <td>Global batch</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>France Central</td>
-      <td>Global batch</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>Germany West Central</td>
-      <td>Global batch</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>Japan East</td>
-      <td>Global batch</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>Korea Central</td>
-      <td>Global batch</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>North Central US</td>
-      <td>Global batch</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>Norway East</td>
-      <td>Global batch</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>Poland Central</td>
-      <td>Global batch</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>South Africa North</td>
-      <td>Global batch</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>South Central US</td>
-      <td>Global batch</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>South India</td>
-      <td>Global batch</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>Sweden Central</td>
-      <td>Global batch</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>Switzerland North</td>
-      <td>Global batch</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>UK South</td>
-      <td>Global batch</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>West Europe</td>
-      <td>Global batch</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>West US</td>
-      <td>Global batch</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>East US</td>
-      <td>Global batch datazone</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>East US 2</td>
-      <td>Global batch datazone</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>North Central US</td>
-      <td>Global batch datazone</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>South Central US</td>
-      <td>Global batch datazone</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>West US</td>
-      <td>Global batch datazone</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>West US 3</td>
-      <td>Global batch datazone</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/o3/">o3</a></td>
-      <td>West US 3</td>
-      <td>Global batch datazone</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/o3-mini/">o3-mini</a></td>
-      <td>West US 3</td>
-      <td>Global batch datazone</td>
-    </tr>
-    <tr>
-      <td data-order="20251104064836">2025-11-04</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/o4-mini/">o4-mini</a></td>
-      <td>West US 3</td>
-      <td>Global batch datazone</td>
-    </tr>
-    <tr>
-      <td data-order="20251031181625">2025-10-31</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-4-32k/">gpt-4-32k</a></td>
-      <td>France Central</td>
-      <td>Provisioned (PTU managed)</td>
-    </tr>
-    <tr>
-      <td data-order="20251031181625">2025-10-31</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-4-32k/">gpt-4-32k</a></td>
-      <td>Germany West Central</td>
-      <td>Provisioned (PTU managed)</td>
-    </tr>
-    <tr>
-      <td data-order="20251031181625">2025-10-31</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-4-32k/">gpt-4-32k</a></td>
-      <td>Korea Central</td>
-      <td>Provisioned (PTU managed)</td>
-    </tr>
-    <tr>
-      <td data-order="20251031175611">2025-10-31</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-4/">gpt-4</a></td>
-      <td>Norway East</td>
-      <td>Provisioned (PTU managed)</td>
-    </tr>
-    <tr>
-      <td data-order="20251031175611">2025-10-31</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-4/">gpt-4</a></td>
-      <td>Poland Central</td>
-      <td>Provisioned (PTU managed)</td>
-    </tr>
-    <tr>
-      <td data-order="20251031175611">2025-10-31</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-4/">gpt-4</a></td>
-      <td>South Africa North</td>
-      <td>Provisioned (PTU managed)</td>
-    </tr>
   </tbody>
 </table>
 </div>
 
 ---
 
-_Last updated: 2026-02-20 18:18 UTC_
+_Last updated: 2026-02-20 18:30 UTC_
