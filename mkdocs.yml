@@ -26,9 +26,11 @@ theme:
     - navigation.tracking
     - navigation.tabs
     - navigation.sections
+    - navigation.top
     - search.highlight
     - search.share
     - content.tabs.link
+    - content.tooltips
     - toc.integrate
   icon:
     repo: fontawesome/brands/github
@@ -51,6 +53,9 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra_css:
   - stylesheets/custom.css

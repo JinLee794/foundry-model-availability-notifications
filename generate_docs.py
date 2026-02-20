@@ -20,10 +20,10 @@ DEFAULT_LABEL = "Global coverage"
 
 # Coverage buckets
 BUCKETS: List[Tuple[int, str, str, str]] = [
-    (25, "🟢 Broad", "badge-broad", "25+ regions"),
-    (20, "🟡 Strong", "badge-strong", "20-24 regions"),
-    (15, "🟠 Growing", "badge-growing", "15-19 regions"),
-    (0, "🔴 Emerging", "badge-emerging", "Under 15 regions"),
+    (25, "Broad", "badge-broad", "25+ regions"),
+    (20, "Strong", "badge-strong", "20-24 regions"),
+    (15, "Growing", "badge-growing", "15-19 regions"),
+    (0, "Emerging", "badge-emerging", "Under 15 regions"),
 ]
 
 # SKU category mapping with descriptions
@@ -283,7 +283,7 @@ def generate_retirement_section(
 !!! warning "Retirement Notice"
     This model has scheduled retirement dates. Plan your migration to the replacement model.
 
-## ⏰ Retirement Schedule
+## :material-clock-alert: Retirement Schedule
 
 | Version | Status | Deprecation Date | Retirement Date | Timeline | Replacement |
 |---------|--------|------------------|-----------------|----------|-------------|
@@ -380,7 +380,7 @@ def generate_retirements_page(
 
 ---
 
-## 🔧 Fine-Tuned Model Retirements
+## :material-wrench-cog: Fine-Tuned Model Retirements
 
 Fine-tuned models retire in two phases: training and deployment.
 
@@ -419,7 +419,7 @@ Track upcoming Azure AI Foundry model retirements and plan your migrations.
 
 ---
 
-{"## ⚠️ Retiring Soon (Within 30 Days)" if retiring_soon else ""}
+{"## :material-alert-circle:{ .md-icon-retiring-soon } Retiring Soon (Within 30 Days)" if retiring_soon else ""}
 
 {f'''These models require immediate migration attention.
 
@@ -428,7 +428,7 @@ Track upcoming Azure AI Foundry model retirements and plan your migrations.
 {build_table_rows(retiring_soon)}
 ''' if retiring_soon else ""}
 
-{"## 🔶 Upcoming Retirements (31-90 Days)" if upcoming else ""}
+{"## :material-calendar-alert:{ .md-icon-upcoming } Upcoming Retirements (31-90 Days)" if upcoming else ""}
 
 {f'''Plan your migrations for these models.
 
@@ -437,7 +437,7 @@ Track upcoming Azure AI Foundry model retirements and plan your migrations.
 {build_table_rows(upcoming)}
 ''' if upcoming else ""}
 
-## 📅 All Scheduled Retirements
+## :material-calendar-clock: All Scheduled Retirements
 
 Complete list of model retirements with replacement recommendations.
 
@@ -448,7 +448,7 @@ Complete list of model retirements with replacement recommendations.
 
 ---
 
-## 📖 Understanding Retirement Timeline
+## :material-book-open-variant: Understanding Retirement Timeline
 
 | Status | Description | Action Required |
 |--------|-------------|-----------------|
@@ -460,7 +460,7 @@ Complete list of model retirements with replacement recommendations.
 
 ---
 
-## 📚 Resources
+## :material-bookshelf: Resources
 
 - [Azure OpenAI Model Lifecycle](https://learn.microsoft.com/azure/ai-services/openai/concepts/model-lifecycle)
 - [Model Deprecation and Retirement](https://learn.microsoft.com/azure/ai-services/openai/concepts/model-retirements)
@@ -479,43 +479,152 @@ def generate_index_page(
     model_sku_regions: Dict[str, Dict[str, Set[str]]],
     all_labels: Set[str],
     all_regions: Set[str],
+    retirement_data: Dict = None,
+    history: List[Dict] = None,
 ) -> str:
     """Generate the index/home page with actionable insights."""
     total_models = len(model_regions)
     total_regions = len(all_regions)
-    
-    # Count models by coverage
-    coverage_counts = {"Broad": 0, "Strong": 0, "Growing": 0, "Emerging": 0}
-    for regions in model_regions.values():
-        bucket, _, _ = pick_bucket(len(regions))
-        if "Broad" in bucket:
-            coverage_counts["Broad"] += 1
-        elif "Strong" in bucket:
-            coverage_counts["Strong"] += 1
-        elif "Growing" in bucket:
-            coverage_counts["Growing"] += 1
-        else:
-            coverage_counts["Emerging"] += 1
 
-    # Find best models per category
-    best_global = []
-    best_provisioned = []
-    for model, sku_regions in model_sku_regions.items():
-        for sku, regions in sku_regions.items():
-            if "Global" in sku or "global" in sku:
-                best_global.append((model, len(regions)))
-            if "Provisioned" in sku:
-                best_provisioned.append((model, len(regions)))
-    
-    best_global = sorted(set(best_global), key=lambda x: -x[1])[:5]
-    best_provisioned = sorted(set(best_provisioned), key=lambda x: -x[1])[:5]
+    today = datetime.utcnow()
+    retirement_data = retirement_data or {"models": {}}
 
-    # Top regions by model coverage
-    region_model_count = defaultdict(int)
-    for model, regions in model_regions.items():
-        for region in regions:
-            region_model_count[region] += 1
-    top_regions = sorted(region_model_count.items(), key=lambda x: -x[1])[:10]
+    # Categorize retirements
+    retiring_soon: List[Dict] = []  # <=30 days
+    upcoming: List[Dict] = []       # 31-90 days
+    scheduled: List[Dict] = []      # 91+ days
+    already_retired: List[Dict] = []
+
+    for category, entries in retirement_data.get("models", {}).items():
+        if category == "fine_tuned":
+            continue
+        for entry in entries:
+            entry_with_cat = {**entry, "category": category}
+            retirement_date = entry.get("retirement_date", "")
+            status_text, status_class = get_retirement_status(retirement_date, today)
+            entry_with_cat["_status_text"] = status_text
+            entry_with_cat["_status_class"] = status_class
+
+            if status_text == "Retired":
+                already_retired.append(entry_with_cat)
+            elif status_text == "Retiring Soon":
+                retiring_soon.append(entry_with_cat)
+            elif status_text == "Retiring":
+                upcoming.append(entry_with_cat)
+            elif status_text in ("Scheduled", "Planned"):
+                scheduled.append(entry_with_cat)
+
+    # Sort by retirement date
+    def _sort_key(e: Dict) -> str:
+        rd = e.get("retirement_date") or ""
+        if rd.startswith("No earlier than"):
+            return rd.replace("No earlier than ", "")
+        return rd
+
+    retiring_soon.sort(key=_sort_key)
+    upcoming.sort(key=_sort_key)
+
+    # Build retirement table rows helper
+    def _retirement_rows(entries: List[Dict]) -> str:
+        rows = []
+        for e in entries:
+            model = e.get("model", "")
+            version = e.get("version", "-")
+            cat_label = e.get("category", "").replace("_", " ").title()
+            retirement = e.get("retirement_date") or "-"
+            replacement = e.get("replacement")
+            status_badge = f'<span class="badge {e["_status_class"]}">{e["_status_text"]}</span>'
+
+            replacement_cell = "-"
+            if replacement:
+                replacement_cell = f"[{replacement}](models/{slugify(replacement)}/)"
+
+            rows.append(
+                f"    | [{model}](models/{slugify(model)}/) | {version} | {cat_label} | {retirement} | {status_badge} | {replacement_cell} |"
+            )
+        return chr(10).join(rows)
+
+    # Build the urgent warnings section
+    retirement_section_parts: List[str] = []
+
+    if retiring_soon:
+        retirement_section_parts.append(f"""!!! danger "Retiring Within 30 Days — {len(retiring_soon)} model version{'s' if len(retiring_soon) != 1 else ''}"
+    These models require **immediate migration**. After the retirement date, API calls will return errors.
+
+    | Model | Version | Category | Retirement Date | Status | Replacement |
+    |-------|---------|----------|-----------------|--------|-------------|
+{_retirement_rows(retiring_soon)}
+""")
+
+    if upcoming:
+        retirement_section_parts.append(f"""!!! warning "Upcoming Retirements (31-90 Days) — {len(upcoming)} model version{'s' if len(upcoming) != 1 else ''}"
+    Plan and test your migration to the replacement model.
+
+    | Model | Version | Category | Retirement Date | Status | Replacement |
+    |-------|---------|----------|-----------------|--------|-------------|
+{_retirement_rows(upcoming)}
+""")
+
+    if already_retired:
+        retirement_section_parts.append(f"""!!! failure "Already Retired — {len(already_retired)} model version{'s' if len(already_retired) != 1 else ''}"
+    These models are no longer available. Migrate to the listed replacement.
+
+    | Model | Version | Category | Retirement Date | Status | Replacement |
+    |-------|---------|----------|-----------------|--------|-------------|
+{_retirement_rows(already_retired)}
+""")
+
+    if not retiring_soon and not upcoming and not already_retired:
+        retirement_section_parts.append('!!! success "No Urgent Retirements"\n    All models are currently within their supported lifecycle.\n')
+
+    retirement_blocks = chr(10).join(retirement_section_parts)
+
+    # Scheduled count for the stat card
+    total_action_needed = len(retiring_soon) + len(upcoming) + len(already_retired)
+
+    # Build the recent changes section from history data
+    history = history or []
+    recent_rows = []
+    for entry in history[:10]:  # Last 10 change sets
+        timestamp = entry["timestamp"]
+        changes = entry["changes"]
+        for model, change in sorted(changes.items()):
+            skus_data = change.get("skus", {})
+            for sku_key, sku_change in skus_data.items():
+                sku_label = sku_change.get("label", sku_key)
+                for region in sorted(sku_change.get("added", [])):
+                    recent_rows.append(
+                        f'    | {timestamp:%Y-%m-%d} | '
+                        f'<span class="badge-added">Added</span> | '
+                        f'[{model}](models/{slugify(model)}/) | '
+                        f'{region} | {sku_label} |'
+                    )
+                for region in sorted(sku_change.get("removed", [])):
+                    recent_rows.append(
+                        f'    | {timestamp:%Y-%m-%d} | '
+                        f'<span class="badge-removed">Removed</span> | '
+                        f'[{model}](models/{slugify(model)}/) | '
+                        f'{region} | {sku_label} |'
+                    )
+            if change.get("model_removed"):
+                recent_rows.append(
+                    f'    | {timestamp:%Y-%m-%d} | '
+                    f'<span class="badge-removed">Removed</span> | '
+                    f'{model} | (entire model) | - |'
+                )
+
+    if recent_rows:
+        recent_changes_block = f"""???+ tip "Recent Availability Changes"
+    Latest region availability updates. See [full change history](history.md) for more.
+
+    | Date | Change | Model | Region | SKU Type |
+    |------|--------|-------|--------|----------|
+{chr(10).join(recent_rows[:30])}
+"""
+    else:
+        recent_changes_block = """???+ tip "Recent Availability Changes"
+    No recent changes detected. See [full change history](history.md) for historical data.
+"""
 
     return f"""# AI Foundry Model Availability
 
@@ -531,51 +640,43 @@ Real-time tracking of Azure AI Foundry model availability across regions and dep
     <div class="stat-label">Azure Regions</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value">{coverage_counts["Broad"]}</div>
-    <div class="stat-label">Broadly Available</div>
+    <div class="stat-value">{total_action_needed}</div>
+    <div class="stat-label">Action Needed</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">{len(scheduled)}</div>
+    <div class="stat-label">Scheduled Retirements</div>
   </div>
 </div>
 
 ---
 
-## 🎯 Quick Actions
-
-### Need Global Availability?
-These models have the widest global deployment options:
-
-| Model | Global Regions | Details |
-|-------|----------------|---------|
-{chr(10).join([f"| **{m}** | {c} regions | [View details](models/{slugify(m)}/) |" for m, c in best_global])}
-
-### Need Reserved Capacity (PTU)?
-These models support Provisioned Throughput Units:
-
-| Model | PTU Regions | Details |
-|-------|-------------|---------|
-{chr(10).join([f"| **{m}** | {c} regions | [View details](models/{slugify(m)}/) |" for m, c in best_provisioned]) if best_provisioned else "| No models currently | — | — |"}
+{recent_changes_block}
 
 ---
 
-## 📊 Coverage Overview
+## :material-alert-circle: Deprecation & Retirement Notices
 
-| Level | Description | Count | Example Models |
-|-------|-------------|-------|----------------|
-| 🟢 **Broad** | 25+ regions | {coverage_counts["Broad"]} | {", ".join([f"`{m}`" for m, r in sorted(model_regions.items(), key=lambda x: -len(x[1]))[:3] if len(r) >= 25])} |
-| 🟡 **Strong** | 20-24 regions | {coverage_counts["Strong"]} | {", ".join([f"`{m}`" for m, r in sorted(model_regions.items(), key=lambda x: -len(x[1])) if 20 <= len(r) < 25][:3])} |
-| 🟠 **Growing** | 15-19 regions | {coverage_counts["Growing"]} | {", ".join([f"`{m}`" for m, r in model_regions.items() if 15 <= len(r) < 20][:3])} |
-| 🔴 **Emerging** | <15 regions | {coverage_counts["Emerging"]} | Limited regional availability |
+{retirement_blocks}
+
+??? info "Deprecation vs Retirement — What's the Difference?"
+    **Deprecation** marks a model version as no longer recommended. It still works, but no new deployments can be created.
+    After deprecation you should begin migrating to the replacement model.
+
+    **Retirement** means the model version is fully removed. API calls will return errors after the retirement date.
+    Always migrate **before** the retirement date.
+
+    | Phase | New Deployments | Existing Deployments | API Calls |
+    |-------|-----------------|----------------------|-----------|
+    | **Active** | :material-check: Allowed | :material-check: Running | :material-check: Working |
+    | **Deprecated** | :material-close: Blocked | :material-check: Running | :material-check: Working |
+    | **Retired** | :material-close: Blocked | :material-close: Removed | :material-close: Errors |
+
+    See [full retirement details](retirements.md) and [Microsoft's model lifecycle docs](https://learn.microsoft.com/azure/ai-services/openai/concepts/model-retirements).
 
 ---
 
-## 🌍 Top Regions by Model Coverage
-
-| Region | Models Available | 
-|--------|------------------|
-{chr(10).join([f"| **{region}** | {count} models |" for region, count in top_regions])}
-
----
-
-## 📖 Browse By
+## :material-book-open-variant: Browse By
 
 | View | Description |
 |------|-------------|
@@ -677,10 +778,10 @@ Complete catalog of AI Foundry models with availability details. Each SKU column
     <label for="coverage-filter">Coverage Level</label>
     <select id="coverage-filter" onchange="filterModelsTable()">
       <option value="">All Levels</option>
-      <option value="Broad">🟢 Broad (25+)</option>
-      <option value="Strong">🟡 Strong (20-24)</option>
-      <option value="Growing">🟠 Growing (15-19)</option>
-      <option value="Emerging">🔴 Emerging (&lt;15)</option>
+      <option value="Broad">Broad (25+)</option>
+      <option value="Strong">Strong (20-24)</option>
+      <option value="Growing">Growing (15-19)</option>
+      <option value="Emerging">Emerging (&lt;15)</option>
     </select>
   </div>
   <div class="filter-group">
@@ -779,7 +880,8 @@ def generate_model_detail_page(
         
         section = f"""### {cat} Deployments
 
-> **Use Case:** {cat_info.get('use_case', 'Various deployment options')}
+!!! tip "Use Case"
+    {cat_info.get('use_case', 'Various deployment options')}
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
@@ -811,9 +913,9 @@ def generate_model_detail_page(
         cells = []
         for sku in sku_labels:
             if region in sku_regions.get(sku, set()):
-                cells.append("<td>✅</td>")
+                cells.append('<td class="matrix-yes">&#10003;</td>')
             else:
-                cells.append("<td>—</td>")
+                cells.append('<td class="matrix-no">&mdash;</td>')
         html_rows.append(f"<tr><td><strong>{region}</strong></td>{''.join(cells)}</tr>")
     
     matrix_html = f"""<div class="table-responsive">
@@ -833,7 +935,7 @@ def generate_model_detail_page(
 {retirement_section}
 ---
 
-## 📊 Quick Stats
+## :material-chart-box-outline: Quick Stats
 
 | Metric | Value |
 |--------|-------|
@@ -844,13 +946,13 @@ def generate_model_detail_page(
 
 ---
 
-## 🎯 Deployment Options
+## :material-target: Deployment Options
 
 {chr(10).join(sku_sections)}
 
 ---
 
-## 📋 Full Availability Matrix
+## :material-clipboard-list: Full Availability Matrix
 
 This table shows exactly which SKU types are available in each region.
 
@@ -990,72 +1092,90 @@ def generate_by_sku_page(
     all_labels: Set[str],
     all_regions: Set[str],
 ) -> str:
-    """Generate the by-SKU view page with actionable guidance."""
-    
-    sections = []
-    
-    for cat_name, cat_info in SKU_CATEGORIES.items():
-        cat_skus = cat_info["skus"]
-        matching_labels = [l for l in all_labels if l in cat_skus]
-        
-        if not matching_labels:
-            continue
-        
-        # Find models and their regions for each SKU in this category
-        sku_data = []
-        for sku_label in sorted(matching_labels):
-            models_with_sku = []
-            all_sku_regions = set()
-            
-            for model, sku_regions in model_sku_regions.items():
-                if sku_label in sku_regions:
-                    regions = sku_regions[sku_label]
-                    models_with_sku.append((model, len(regions)))
-                    all_sku_regions.update(regions)
-            
-            if models_with_sku:
-                sku_data.append({
-                    "label": sku_label,
-                    "models": sorted(models_with_sku, key=lambda x: -x[1]),
-                    "total_regions": len(all_sku_regions),
-                })
-        
-        if not sku_data:
-            continue
-        
-        # Build section
-        section = f"""## {cat_name} Deployments
+    """Generate the by-SKU view page as an interactive filterable table."""
 
-> **Description:** {cat_info['description']}
->
-> **Best For:** {cat_info['use_case']}
+    total_regions = len(all_regions)
 
-"""
-        for sku in sku_data:
-            section += f"""### {sku['label']}
+    # Collect all unique SKU labels and build category mapping
+    sku_to_category: Dict[str, str] = {}
+    for label in sorted(all_labels):
+        sku_to_category[label] = get_sku_category(label)
 
-Available in **{sku['total_regions']}** regions across **{len(sku['models'])}** models.
+    # Build flat rows: one per model × SKU combination
+    all_rows = []
+    sku_model_counts: Dict[str, int] = defaultdict(int)
+    sku_region_sets: Dict[str, Set[str]] = defaultdict(set)
+    category_model_sets: Dict[str, Set[str]] = defaultdict(set)
 
-| Model | Regions | Details |
-|-------|---------|---------|
-"""
-            for model, region_count in sku['models'][:15]:
-                section += f"| {model} | {region_count} | [View](../models/{slugify(model)}/) |\n"
-            
-            if len(sku['models']) > 15:
-                section += f"\n*...and {len(sku['models']) - 15} more models*\n"
-            
-            section += "\n"
-        
-        sections.append(section)
+    for model in sorted(model_sku_regions.keys()):
+        for sku_label, regions in model_sku_regions[model].items():
+            cat = sku_to_category.get(sku_label, "Other")
+            region_count = len(regions)
+            pct = round(region_count / total_regions * 100) if total_regions else 0
+            bucket_label, bucket_class, _ = pick_bucket(region_count)
+
+            sku_model_counts[sku_label] += 1
+            sku_region_sets[sku_label].update(regions)
+            category_model_sets[cat].add(model)
+
+            regions_str = ", ".join(sorted(regions))
+
+            all_rows.append(f"""    <tr>
+      <td><a href="../models/{slugify(model)}/"><strong>{model}</strong></a></td>
+      <td><span class="sku-badge sku-{cat.lower()}">{cat}</span></td>
+      <td>{sku_label}</td>
+      <td>{region_count}</td>
+      <td><span class="badge {bucket_class}">{bucket_label}</span></td>
+      <td>{pct}%</td>
+      <td class="hidden-col">{regions_str}</td>
+    </tr>""")
+
+    # Stats
+    total_skus = len([s for s in sku_model_counts if sku_model_counts[s] > 0])
+    total_models = len(model_sku_regions)
+    total_deployments = len(all_rows)
+
+    # Build filter options
+    sorted_sku_labels = sorted(sku_model_counts.keys())
+    sku_options = "\n".join(
+        [f'      <option value="{s}">{s}</option>' for s in sorted_sku_labels]
+    )
+
+    # Build SKU summary rows for the overview table
+    sku_summary_rows = []
+    for cat_name in ["Global", "Datazone", "Standard", "Provisioned", "Other"]:
+        cat_skus = [(s, sku_model_counts[s], len(sku_region_sets[s]))
+                     for s in sorted_sku_labels
+                     if sku_to_category.get(s) == cat_name and sku_model_counts[s] > 0]
+        for sku_label, model_count, region_count in cat_skus:
+            pct = round(region_count / total_regions * 100) if total_regions else 0
+            sku_summary_rows.append(
+                f'| <span class="sku-badge sku-{cat_name.lower()}">{cat_name}</span> '
+                f'| {sku_label} | {model_count} | {region_count} | {pct}% |'
+            )
 
     return f"""# Models by SKU Type
 
-Choose the right deployment type for your workload.
+Explore every deployment SKU and discover which models and regions support it.
+
+<div class="stats-grid">
+  <div class="stat-card">
+    <div class="stat-value">{total_skus}</div>
+    <div class="stat-label">SKU Types</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">{total_models}</div>
+    <div class="stat-label">Models</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">{total_deployments}</div>
+    <div class="stat-label">Model × SKU Combinations</div>
+  </div>
+</div>
 
 ---
 
-## 🎯 SKU Selection Guide
+## :material-target: SKU Selection Guide
 
 | Need | Recommended SKU | Why |
 |------|-----------------|-----|
@@ -1066,7 +1186,74 @@ Choose the right deployment type for your workload.
 
 ---
 
-{chr(10).join(sections)}
+## :material-format-list-bulleted-type: SKU Overview
+
+| Category | SKU Type | Models | Regions | Coverage |
+|----------|----------|--------|---------|----------|
+{chr(10).join(sku_summary_rows)}
+
+---
+
+## :material-table-search: Model–SKU Explorer
+
+Filter by category, SKU type, or model to find exactly what you need.
+
+<div class="filter-controls">
+  <div class="filter-group">
+    <label for="sku-cat-filter">SKU Category</label>
+    <select id="sku-cat-filter" onchange="filterSkuTable()">
+      <option value="">All Categories</option>
+      <option value="Global">Global</option>
+      <option value="Datazone">Datazone</option>
+      <option value="Standard">Standard</option>
+      <option value="Provisioned">Provisioned</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <label for="sku-type-filter">SKU Type</label>
+    <select id="sku-type-filter" onchange="filterSkuTable()">
+      <option value="">All SKU Types</option>
+{sku_options}
+    </select>
+  </div>
+  <div class="filter-group">
+    <label for="sku-model-search">Model Name</label>
+    <input type="text" id="sku-model-search" placeholder="Search model..." oninput="filterSkuTable()">
+  </div>
+  <div class="filter-group">
+    <label for="sku-coverage-filter">Coverage Level</label>
+    <select id="sku-coverage-filter" onchange="filterSkuTable()">
+      <option value="">All Levels</option>
+      <option value="Broad">Broad (25+)</option>
+      <option value="Strong">Strong (20-24)</option>
+      <option value="Growing">Growing (15-19)</option>
+      <option value="Emerging">Emerging (&lt;15)</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <label>&nbsp;</label>
+    <button onclick="resetSkuFilters()" class="md-button">Reset</button>
+  </div>
+</div>
+
+<div class="table-responsive">
+<table id="sku-table" class="display">
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Category</th>
+      <th>SKU Type</th>
+      <th>Regions</th>
+      <th>Coverage</th>
+      <th>% of Regions</th>
+      <th class="hidden-col">Region List</th>
+    </tr>
+  </thead>
+  <tbody>
+{chr(10).join(all_rows)}
+  </tbody>
+</table>
+</div>
 
 ---
 
@@ -1259,7 +1446,7 @@ def main():
     
     # Generate main pages
     pages = {
-        "index.md": generate_index_page(model_regions, model_sku_regions, all_labels, all_regions),
+        "index.md": generate_index_page(model_regions, model_sku_regions, all_labels, all_regions, retirement_data, history),
         "models/index.md": generate_model_index_page(model_regions, model_sku_regions, all_regions),
         "by-region.md": generate_by_region_page(model_regions, model_region_skus, all_regions),
         "by-sku.md": generate_by_sku_page(model_regions, model_sku_regions, all_labels, all_regions),

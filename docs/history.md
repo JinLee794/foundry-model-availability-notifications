@@ -4,11 +4,11 @@ Recent changes to AI Foundry model regional availability.
 
 <div class="stats-grid">
   <div class="stat-card">
-    <div class="stat-value">22</div>
+    <div class="stat-value">23</div>
     <div class="stat-label">Change Events</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value" style="color: #22c55e;">1569</div>
+    <div class="stat-value" style="color: #22c55e;">1614</div>
     <div class="stat-label">Additions</div>
   </div>
   <div class="stat-card">
@@ -28,6 +28,7 @@ Filter and search through all recent availability changes.
     <label for="history-date-filter">Date</label>
     <select id="history-date-filter" onchange="filterHistoryTable()">
       <option value="">All Dates</option>
+      <option value="2026-01-28">2026-01-28</option>
       <option value="2026-01-22">2026-01-22</option>
       <option value="2026-01-15">2026-01-15</option>
       <option value="2026-01-08">2026-01-08</option>
@@ -237,6 +238,335 @@ Filter and search through all recent availability changes.
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
+      <td>West US 3</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
+      <td>West US 3</td>
+      <td>Global batch datazone</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
+      <td>West US 3</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
+      <td>West US 3</td>
+      <td>Global batch datazone</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
+      <td>West US 3</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
+      <td>West US 3</td>
+      <td>Global batch datazone</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-4o/">gpt-4o</a></td>
+      <td>West US 3</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-4o/">gpt-4o</a></td>
+      <td>West US 3</td>
+      <td>Global batch datazone</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
+      <td>West US 3</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
+      <td>West US 3</td>
+      <td>Global batch datazone</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5/">gpt-5</a></td>
+      <td>West US 3</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5/">gpt-5</a></td>
+      <td>West US 3</td>
+      <td>Global batch datazone</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>Australia East</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>Brazil South</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>Canada East</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>Central US</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>East US</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>East US 2</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>France Central</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>Germany West Central</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>Japan East</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>Korea Central</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>North Central US</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>Norway East</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>Poland Central</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>South Africa North</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>South Central US</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>South India</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>Sweden Central</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>Switzerland North</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>UK South</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>West Europe</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>West US</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>West US 3</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>Central US</td>
+      <td>Global batch datazone</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>East US</td>
+      <td>Global batch datazone</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>East US 2</td>
+      <td>Global batch datazone</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>North Central US</td>
+      <td>Global batch datazone</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>South Central US</td>
+      <td>Global batch datazone</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>West US</td>
+      <td>Global batch datazone</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
+      <td>West US 3</td>
+      <td>Global batch datazone</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/o3/">o3</a></td>
+      <td>West US 3</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/o3/">o3</a></td>
+      <td>West US 3</td>
+      <td>Global batch datazone</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/o3-mini/">o3-mini</a></td>
+      <td>West US 3</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/o3-mini/">o3-mini</a></td>
+      <td>West US 3</td>
+      <td>Global batch datazone</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/o4-mini/">o4-mini</a></td>
+      <td>West US 3</td>
+      <td>Global batch</td>
+    </tr>
+    <tr>
+      <td data-order="20260128072753">2026-01-28</td>
+      <td><span class="badge-added">Added</span></td>
+      <td><a href="../models/o4-mini/">o4-mini</a></td>
+      <td>West US 3</td>
+      <td>Global batch datazone</td>
+    </tr>
     <tr>
       <td data-order="20260122215954">2026-01-22</td>
       <td><span class="badge-added">Added</span></td>
@@ -13740,24 +14070,10 @@ Filter and search through all recent availability changes.
       <td>South Africa North</td>
       <td>Provisioned (PTU managed)</td>
     </tr>
-    <tr>
-      <td data-order="20251031175303">2025-10-31</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-4/">gpt-4</a></td>
-      <td>South Central US</td>
-      <td>Provisioned (PTU managed)</td>
-    </tr>
-    <tr>
-      <td data-order="20251031175303">2025-10-31</td>
-      <td><span class="badge-added">Added</span></td>
-      <td><a href="../models/gpt-4/">gpt-4</a></td>
-      <td>South India</td>
-      <td>Provisioned (PTU managed)</td>
-    </tr>
   </tbody>
 </table>
 </div>
 
 ---
 
-_Last updated: 2026-01-23 18:07 UTC_
+_Last updated: 2026-02-20 18:18 UTC_

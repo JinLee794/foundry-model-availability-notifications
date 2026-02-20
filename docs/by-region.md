@@ -227,7 +227,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Australia East</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global, Standard global deployments</td>
+      <td>Global batch, Global coverage, Provisioned global, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
@@ -455,7 +455,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global</td>
+      <td>Global batch, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
@@ -761,7 +761,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Canada East</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global, Standard global deployments</td>
+      <td>Global batch, Global coverage, Provisioned global, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
@@ -953,7 +953,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global</td>
+      <td>Global batch, Global batch datazone, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
@@ -1385,7 +1385,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>East US</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Datazone, Global, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global</td>
+      <td>Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
@@ -1931,7 +1931,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Datazone, Global, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global, Standard global deployments</td>
+      <td>Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
@@ -2279,7 +2279,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Datazone, Global, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global</td>
+      <td>Datazone provisioned managed, Datazone standard, Global batch, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
@@ -2489,7 +2489,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Datazone, Global, Provisioned</td>
-      <td>Datazone provisioned managed, Global coverage, Provisioned global</td>
+      <td>Datazone provisioned managed, Global batch, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
@@ -2891,7 +2891,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Japan East</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global, Standard global deployments</td>
+      <td>Global batch, Global coverage, Provisioned global, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
@@ -3119,7 +3119,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global, Standard global deployments</td>
+      <td>Global batch, Global coverage, Provisioned global, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
@@ -3551,7 +3551,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>North Central US</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Datazone, Global, Provisioned</td>
-      <td>Datazone provisioned managed, Global coverage, Provisioned global</td>
+      <td>Datazone provisioned managed, Global batch, Global batch datazone, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
@@ -3797,7 +3797,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Norway East</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global</td>
+      <td>Global batch, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
@@ -4019,7 +4019,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Datazone, Global, Provisioned</td>
-      <td>Datazone provisioned managed, Global coverage, Provisioned global</td>
+      <td>Datazone provisioned managed, Global batch, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
@@ -4247,7 +4247,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global</td>
+      <td>Global batch, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
@@ -4655,7 +4655,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Datazone, Global, Provisioned</td>
-      <td>Datazone provisioned managed, Global coverage, Provisioned global</td>
+      <td>Datazone provisioned managed, Global batch, Global batch datazone, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
@@ -4895,7 +4895,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global</td>
+      <td>Global batch, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
@@ -5663,7 +5663,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Datazone, Global, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global, Standard global deployments</td>
+      <td>Datazone provisioned managed, Datazone standard, Global batch, Global coverage, Provisioned global, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
@@ -6017,7 +6017,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global, Standard global deployments</td>
+      <td>Global batch, Global coverage, Provisioned global, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
@@ -6659,7 +6659,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>UK South</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global, Standard global deployments</td>
+      <td>Global batch, Global coverage, Provisioned global, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
@@ -6881,7 +6881,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>West Europe</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Datazone, Global, Provisioned</td>
-      <td>Datazone provisioned managed, Global coverage, Provisioned global</td>
+      <td>Datazone provisioned managed, Global batch, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
@@ -7301,7 +7301,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>West US</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Datazone, Global, Provisioned</td>
-      <td>Datazone provisioned managed, Global coverage, Provisioned global</td>
+      <td>Datazone provisioned managed, Global batch, Global batch datazone, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
@@ -7685,37 +7685,37 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Datazone, Global, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard (all), Standard global deployments</td>
+      <td>Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard (all), Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Datazone, Global, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard (all), Standard global deployments</td>
+      <td>Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard (all), Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Datazone, Global, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments</td>
+      <td>Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Datazone, Global, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard (all), Standard GPT-4, Standard global deployments</td>
+      <td>Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard (all), Standard GPT-4, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Datazone, Global, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard (all), Standard GPT-4, Standard global deployments</td>
+      <td>Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard (all), Standard GPT-4, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Datazone, Global, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments</td>
+      <td>Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
@@ -7733,7 +7733,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Datazone, Global, Provisioned</td>
-      <td>Datazone provisioned managed, Global coverage, Provisioned global</td>
+      <td>Datazone provisioned managed, Global batch, Global batch datazone, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
@@ -7805,19 +7805,19 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>West US 3</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Datazone, Global, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments</td>
+      <td>Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Datazone, Global, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global, Standard global deployments</td>
+      <td>Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Datazone, Global, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard (all), Standard global deployments</td>
+      <td>Datazone provisioned managed, Datazone standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard (all), Standard global deployments</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
@@ -7861,4 +7861,4 @@ Find which AI models are available in your Azure region, including their deploym
 
 ---
 
-_Last updated: 2026-01-23 18:07 UTC_
+_Last updated: 2026-02-20 18:18 UTC_

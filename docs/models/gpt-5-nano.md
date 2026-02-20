@@ -1,12 +1,12 @@
 # gpt-5-nano
 
-<span class="badge badge-broad">🟢 Broad</span> Available in **26** of 28 regions
+<span class="badge badge-broad">Broad</span> Available in **26** of 28 regions
 
 
 !!! warning "Retirement Notice"
     This model has scheduled retirement dates. Plan your migration to the replacement model.
 
-## ⏰ Retirement Schedule
+## :material-clock-alert: Retirement Schedule
 
 | Version | Status | Deprecation Date | Retirement Date | Timeline | Replacement |
 |---------|--------|------------------|-----------------|----------|-------------|
@@ -15,7 +15,7 @@
 
 ---
 
-## 📊 Quick Stats
+## :material-chart-box-outline: Quick Stats
 
 | Metric | Value |
 |--------|-------|
@@ -26,11 +26,12 @@
 
 ---
 
-## 🎯 Deployment Options
+## :material-target: Deployment Options
 
 ### Global Deployments
 
-> **Use Case:** Best for applications needing global reach with automatic failover
+!!! tip "Use Case"
+    Best for applications needing global reach with automatic failover
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
@@ -43,7 +44,8 @@
 
 ### Datazone Deployments
 
-> **Use Case:** Required for data sovereignty and compliance requirements (GDPR, etc.)
+!!! tip "Use Case"
+    Required for data sovereignty and compliance requirements (GDPR, etc.)
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
@@ -56,7 +58,7 @@
 
 ---
 
-## 📋 Full Availability Matrix
+## :material-clipboard-list: Full Availability Matrix
 
 This table shows exactly which SKU types are available in each region.
 
@@ -66,32 +68,32 @@ This table shows exactly which SKU types are available in each region.
 <tr><th>Region</th><th>Datazone standard</th><th>Global coverage</th><th>Standard global deployments</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Australia East</strong></td><td>—</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>Brazil South</strong></td><td>—</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>Canada East</strong></td><td>—</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>Central US</strong></td><td>✅</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>East US</strong></td><td>✅</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>East US 2</strong></td><td>✅</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>France Central</strong></td><td>✅</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>Germany West Central</strong></td><td>✅</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>Italy North</strong></td><td>✅</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>Japan East</strong></td><td>—</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>Korea Central</strong></td><td>—</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>North Central US</strong></td><td>✅</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>Norway East</strong></td><td>—</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>Poland Central</strong></td><td>✅</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>South Africa North</strong></td><td>—</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>South Central US</strong></td><td>✅</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>South India</strong></td><td>—</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>Southeast Asia</strong></td><td>—</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>Spain Central</strong></td><td>✅</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>Sweden Central</strong></td><td>✅</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>Switzerland North</strong></td><td>—</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>UAE North</strong></td><td>—</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>UK South</strong></td><td>—</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>West Europe</strong></td><td>✅</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>West US</strong></td><td>✅</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>West US 3</strong></td><td>✅</td><td>✅</td><td>✅</td></tr>
+<tr><td><strong>Australia East</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Brazil South</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Canada East</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Central US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>East US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>East US 2</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>France Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Germany West Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Italy North</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Japan East</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Korea Central</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>North Central US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Norway East</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Poland Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>South Africa North</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>South Central US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>South India</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Southeast Asia</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Spain Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Sweden Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Switzerland North</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>UAE North</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>UK South</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>West Europe</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>West US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>West US 3</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
 </tbody>
 </table>
 </div>
@@ -100,4 +102,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-01-23 18:07 UTC_
+_Last updated: 2026-02-20 18:18 UTC_

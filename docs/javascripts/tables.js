@@ -120,6 +120,26 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+
+  // Initialize SKU table on By SKU Type page
+  if ($('#sku-table').length && !$.fn.DataTable.isDataTable('#sku-table')) {
+    $('#sku-table').DataTable({
+      pageLength: 50,
+      lengthMenu: [[25, 50, 100, -1], [25, 50, 100, "All"]],
+      order: [[1, 'asc'], [0, 'asc']],
+      dom: 'lfrtip',
+      autoWidth: false,
+      language: {
+        search: "Search:",
+        lengthMenu: "Show _MENU_ entries",
+        info: "Showing _START_ to _END_ of _TOTAL_ entries",
+        infoFiltered: "(filtered from _MAX_ total entries)"
+      },
+      columnDefs: [
+        { targets: 'hidden-col', visible: false }
+      ]
+    });
+  }
 });
 
 // Filter function for models table (All Models page)
@@ -265,6 +285,56 @@ window.resetHistoryFilters = function() {
   $('#history-sku-filter').val('');
 };
 
+// Filter function for SKU table (By SKU Type page)
+window.filterSkuTable = function() {
+  const $ = jQuery;
+  const table = $('#sku-table').DataTable();
+
+  const categoryVal = $('#sku-cat-filter').val() || '';
+  const skuTypeVal = $('#sku-type-filter').val() || '';
+  const modelVal = $('#sku-model-search').val() || '';
+  const coverageVal = $('#sku-coverage-filter').val() || '';
+
+  // Clear existing searches
+  table.columns().search('');
+
+  // Apply category filter (column 1 - Category)
+  if (categoryVal) {
+    table.column(1).search(categoryVal);
+  }
+
+  // Apply SKU type filter (column 2 - SKU Type)
+  if (skuTypeVal) {
+    table.column(2).search('^' + skuTypeVal.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$', true, false);
+  }
+
+  // Apply model search (column 0 - Model)
+  if (modelVal) {
+    table.column(0).search(modelVal);
+  }
+
+  // Apply coverage filter (column 4 - Coverage)
+  if (coverageVal) {
+    table.column(4).search(coverageVal);
+  }
+
+  table.draw();
+};
+
+// Reset filters for SKU table
+window.resetSkuFilters = function() {
+  const $ = jQuery;
+  const table = $('#sku-table').DataTable();
+
+  table.search('').columns().search('').draw();
+
+  // Reset form elements
+  $('#sku-cat-filter').val('');
+  $('#sku-type-filter').val('');
+  $('#sku-model-search').val('');
+  $('#sku-coverage-filter').val('');
+};
+
 // Legacy filter functions for backward compatibility
 window.filterTable = window.filterModelsTable;
 window.resetFilters = window.resetModelsFilters;
@@ -335,6 +405,20 @@ if (typeof document$ !== 'undefined') {
           lengthMenu: [[25, 50, 100, -1], [25, 50, 100, "All"]],
           order: [[0, 'desc']],
           dom: 'lfrtip'
+        });
+      }
+
+      // Initialize SKU table on By SKU Type page
+      if ($('#sku-table').length && !$.fn.DataTable.isDataTable('#sku-table')) {
+        $('#sku-table').DataTable({
+          pageLength: 50,
+          lengthMenu: [[25, 50, 100, -1], [25, 50, 100, "All"]],
+          order: [[1, 'asc'], [0, 'asc']],
+          dom: 'lfrtip',
+          autoWidth: false,
+          columnDefs: [
+            { targets: 'hidden-col', visible: false }
+          ]
         });
       }
     }

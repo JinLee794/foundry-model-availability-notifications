@@ -1,12 +1,12 @@
 # tts-hd
 
-<span class="badge badge-emerging">🔴 Emerging</span> Available in **3** of 28 regions
+<span class="badge badge-emerging">Emerging</span> Available in **3** of 28 regions
 
 
 !!! warning "Retirement Notice"
     This model has scheduled retirement dates. Plan your migration to the replacement model.
 
-## ⏰ Retirement Schedule
+## :material-clock-alert: Retirement Schedule
 
 | Version | Status | Deprecation Date | Retirement Date | Timeline | Replacement |
 |---------|--------|------------------|-----------------|----------|-------------|
@@ -15,7 +15,7 @@
 
 ---
 
-## 📊 Quick Stats
+## :material-chart-box-outline: Quick Stats
 
 | Metric | Value |
 |--------|-------|
@@ -26,11 +26,12 @@
 
 ---
 
-## 🎯 Deployment Options
+## :material-target: Deployment Options
 
 ### Global Deployments
 
-> **Use Case:** Best for applications needing global reach with automatic failover
+!!! tip "Use Case"
+    Best for applications needing global reach with automatic failover
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
@@ -42,7 +43,8 @@
 
 ### Standard Deployments
 
-> **Use Case:** Best for variable workloads and cost-sensitive applications
+!!! tip "Use Case"
+    Best for variable workloads and cost-sensitive applications
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
@@ -56,7 +58,7 @@
 
 ---
 
-## 📋 Full Availability Matrix
+## :material-clipboard-list: Full Availability Matrix
 
 This table shows exactly which SKU types are available in each region.
 
@@ -66,9 +68,9 @@ This table shows exactly which SKU types are available in each region.
 <tr><th>Region</th><th>Global coverage</th><th>Standard (all)</th><th>Standard audio</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>North Central US</strong></td><td>✅</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>Sweden Central</strong></td><td>✅</td><td>✅</td><td>✅</td></tr>
-<tr><td><strong>West US 3</strong></td><td>✅</td><td>✅</td><td>—</td></tr>
+<tr><td><strong>North Central US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Sweden Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>West US 3</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td></tr>
 </tbody>
 </table>
 </div>
@@ -77,4 +79,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-01-23 18:07 UTC_
+_Last updated: 2026-02-20 18:18 UTC_

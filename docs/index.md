@@ -12,68 +12,103 @@ Real-time tracking of Azure AI Foundry model availability across regions and dep
     <div class="stat-label">Azure Regions</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value">33</div>
-    <div class="stat-label">Broadly Available</div>
+    <div class="stat-value">8</div>
+    <div class="stat-label">Action Needed</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">45</div>
+    <div class="stat-label">Scheduled Retirements</div>
   </div>
 </div>
 
 ---
 
-## 🎯 Quick Actions
+???+ tip "Recent Availability Changes"
+    Latest region availability updates. See [full change history](history.md) for more.
 
-### Need Global Availability?
-These models have the widest global deployment options:
+    | Date | Change | Model | Region | SKU Type |
+    |------|--------|-------|--------|----------|
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-4.1](models/gpt-4-1/) | West US 3 | Global batch |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-4.1](models/gpt-4-1/) | West US 3 | Global batch datazone |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-4.1-mini](models/gpt-4-1-mini/) | West US 3 | Global batch |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-4.1-mini](models/gpt-4-1-mini/) | West US 3 | Global batch datazone |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-4.1-nano](models/gpt-4-1-nano/) | West US 3 | Global batch |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-4.1-nano](models/gpt-4-1-nano/) | West US 3 | Global batch datazone |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-4o](models/gpt-4o/) | West US 3 | Global batch |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-4o](models/gpt-4o/) | West US 3 | Global batch datazone |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-4o-mini](models/gpt-4o-mini/) | West US 3 | Global batch |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-4o-mini](models/gpt-4o-mini/) | West US 3 | Global batch datazone |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5](models/gpt-5/) | West US 3 | Global batch |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5](models/gpt-5/) | West US 3 | Global batch datazone |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | Australia East | Global batch |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | Brazil South | Global batch |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | Canada East | Global batch |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | Central US | Global batch |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | East US | Global batch |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | East US 2 | Global batch |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | France Central | Global batch |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | Germany West Central | Global batch |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | Japan East | Global batch |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | Korea Central | Global batch |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | North Central US | Global batch |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | Norway East | Global batch |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | Poland Central | Global batch |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | South Africa North | Global batch |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | South Central US | Global batch |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | South India | Global batch |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | Sweden Central | Global batch |
+    | 2026-01-28 | <span class="badge-added">Added</span> | [gpt-5.1](models/gpt-5-1/) | Switzerland North | Global batch |
 
-| Model | Global Regions | Details |
-|-------|----------------|---------|
-| **gpt-5** | 28 regions | [View details](models/gpt-5/) |
-| **o4-mini** | 28 regions | [View details](models/o4-mini/) |
-| **gpt-4.1** | 28 regions | [View details](models/gpt-4-1/) |
-| **gpt-5-mini** | 28 regions | [View details](models/gpt-5-mini/) |
-| **o1** | 28 regions | [View details](models/o1/) |
-
-### Need Reserved Capacity (PTU)?
-These models support Provisioned Throughput Units:
-
-| Model | PTU Regions | Details |
-|-------|-------------|---------|
-| **gpt-5** | 28 regions | [View details](models/gpt-5/) |
-| **gpt-4o** | 28 regions | [View details](models/gpt-4o/) |
-| **gpt-5.1** | 28 regions | [View details](models/gpt-5-1/) |
-| **o4-mini** | 28 regions | [View details](models/o4-mini/) |
-| **o3** | 28 regions | [View details](models/o3/) |
-
----
-
-## 📊 Coverage Overview
-
-| Level | Description | Count | Example Models |
-|-------|-------------|-------|----------------|
-| 🟢 **Broad** | 25+ regions | 33 | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano` |
-| 🟡 **Strong** | 20-24 regions | 2 | `gpt-4`, `gpt-4-32k` |
-| 🟠 **Growing** | 15-19 regions | 0 |  |
-| 🔴 **Emerging** | <15 regions | 79 | Limited regional availability |
-
----
-
-## 🌍 Top Regions by Model Coverage
-
-| Region | Models Available | 
-|--------|------------------|
-| **East US 2** | 109 models |
-| **Sweden Central** | 103 models |
-| **East US** | 76 models |
-| **North Central US** | 76 models |
-| **West US 3** | 74 models |
-| **West US** | 72 models |
-| **South Central US** | 72 models |
-| **UK South** | 40 models |
-| **Switzerland North** | 40 models |
-| **Australia East** | 40 models |
 
 ---
 
-## 📖 Browse By
+## :material-alert-circle: Deprecation & Retirement Notices
+
+!!! danger "Retiring Within 30 Days — 2 model versions"
+    These models require **immediate migration**. After the retirement date, API calls will return errors.
+
+    | Model | Version | Category | Retirement Date | Status | Replacement |
+    |-------|---------|----------|-----------------|--------|-------------|
+    | [gpt-5-chat](models/gpt-5-chat/) | 2025-08-07 | Text Generation | 2026-03-01 | <span class="badge badge-retiring-soon">Retiring Soon</span> | [gpt-5.2-chat](models/gpt-5-2-chat/) |
+    | [gpt-5-chat](models/gpt-5-chat/) | 2025-10-03 | Text Generation | 2026-03-01 | <span class="badge badge-retiring-soon">Retiring Soon</span> | [gpt-5.2-chat](models/gpt-5-2-chat/) |
+
+!!! warning "Upcoming Retirements (31-90 Days) — 3 model versions"
+    Plan and test your migration to the replacement model.
+
+    | Model | Version | Category | Retirement Date | Status | Replacement |
+    |-------|---------|----------|-----------------|--------|-------------|
+    | [gpt-4o](models/gpt-4o/) | 2024-05-13 | Text Generation | 2026-03-31 | <span class="badge badge-retiring">Retiring</span> | [gpt-5.1](models/gpt-5-1/) |
+    | [gpt-4o](models/gpt-4o/) | 2024-08-06 | Text Generation | 2026-03-31 | <span class="badge badge-retiring">Retiring</span> | [gpt-5.1](models/gpt-5-1/) |
+    | [gpt-4o-mini](models/gpt-4o-mini/) | 2024-07-18 | Text Generation | 2026-03-31 | <span class="badge badge-retiring">Retiring</span> | [gpt-4.1-mini](models/gpt-4-1-mini/) |
+
+!!! failure "Already Retired — 3 model versions"
+    These models are no longer available. Migrate to the listed replacement.
+
+    | Model | Version | Category | Retirement Date | Status | Replacement |
+    |-------|---------|----------|-----------------|--------|-------------|
+    | [gpt-4o-audio-preview](models/gpt-4o-audio-preview/) | 2024-12-17 | Audio | 2026-02-02 | <span class="badge badge-retired">Retired</span> | [gpt-audio](models/gpt-audio/) |
+    | [gpt-4o-realtime-preview](models/gpt-4o-realtime-preview/) | 2024-12-17 | Audio | 2026-02-02 | <span class="badge badge-retired">Retired</span> | [gpt-realtime](models/gpt-realtime/) |
+    | [dall-e-3](models/dall-e-3/) | 3 | Image And Video | 2026-02-18 | <span class="badge badge-retired">Retired</span> | [gpt-image-1-mini](models/gpt-image-1-mini/) |
+
+
+??? info "Deprecation vs Retirement — What's the Difference?"
+    **Deprecation** marks a model version as no longer recommended. It still works, but no new deployments can be created.
+    After deprecation you should begin migrating to the replacement model.
+
+    **Retirement** means the model version is fully removed. API calls will return errors after the retirement date.
+    Always migrate **before** the retirement date.
+
+    | Phase | New Deployments | Existing Deployments | API Calls |
+    |-------|-----------------|----------------------|-----------|
+    | **Active** | :material-check: Allowed | :material-check: Running | :material-check: Working |
+    | **Deprecated** | :material-close: Blocked | :material-check: Running | :material-check: Working |
+    | **Retired** | :material-close: Blocked | :material-close: Removed | :material-close: Errors |
+
+    See [full retirement details](retirements.md) and [Microsoft's model lifecycle docs](https://learn.microsoft.com/azure/ai-services/openai/concepts/model-retirements).
+
+---
+
+## :material-book-open-variant: Browse By
 
 | View | Description |
 |------|-------------|
@@ -84,4 +119,4 @@ These models support Provisioned Throughput Units:
 
 ---
 
-_Last updated: 2026-01-23 18:07 UTC_
+_Last updated: 2026-02-20 18:18 UTC_
