@@ -195,6 +195,16 @@ body.fullscreen-mode .dataTables_scrollHeadInner table {
   color: #34d399;
 }
 
+.sku-provisioned-global {
+  background-color: rgba(20, 184, 166, 0.12);
+  color: #0d9488;
+}
+
+[data-md-color-scheme="slate"] .sku-provisioned-global {
+  background-color: rgba(20, 184, 166, 0.18);
+  color: #2dd4bf;
+}
+
 .sku-batch {
   background-color: rgba(245, 158, 11, 0.12);
   color: #d97706;

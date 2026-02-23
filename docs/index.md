@@ -99,4 +99,4 @@ Real-time tracking of Azure AI Foundry model availability across regions and dep
 
 ---
 
-_Last updated: 2026-02-23 22:02 UTC_
+_Last updated: 2026-02-23 23:07 UTC_
