@@ -32,11 +32,13 @@ SKU_CATEGORIES = {
         "skus": ["Global coverage", "Global batch", "Global batch datazone", "Standard global deployments"],
         "description": "Worldwide availability with intelligent routing",
         "use_case": "Best for applications needing global reach with automatic failover",
+        "compliance": "⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements",
     },
     "Datazone": {
         "skus": ["Datazone standard", "Datazone provisioned managed"],
         "description": "Data residency compliance deployments",
         "use_case": "Required for data sovereignty and compliance requirements (GDPR, etc.)",
+        "compliance": "✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies",
     },
     "Standard": {
         "skus": ["Standard (all)", "Standard GPT-3.5 Turbo", "Standard GPT-4", "Standard audio", 
@@ -44,11 +46,13 @@ SKU_CATEGORIES = {
                  "Standard image generation"],
         "description": "Pay-as-you-go regional deployments",
         "use_case": "Best for variable workloads and cost-sensitive applications",
+        "compliance": "✓ Single-region deployment — HIPAA-eligible in supported regions with a BAA from Microsoft",
     },
     "Provisioned": {
         "skus": ["Provisioned (PTU managed)", "Provisioned global"],
         "description": "Reserved throughput capacity (PTU)",
         "use_case": "Best for predictable, high-volume production workloads",
+        "compliance": "✓ Single-region deployment — HIPAA-eligible in supported regions with a BAA from Microsoft",
     },
 }
 
@@ -66,8 +70,9 @@ def sku_category_badge(cat: str, extra_title: str = "") -> str:
     info = SKU_CATEGORIES.get(cat, {})
     desc = info.get("description", "")
     use_case = info.get("use_case", "")
-    parts = [p for p in [desc, use_case] if p]
-    tooltip = ". ".join(parts) if parts else extra_title
+    compliance = info.get("compliance", "")
+    parts = [p for p in [desc, use_case, compliance] if p]
+    tooltip = " | ".join(parts) if parts else extra_title
     tooltip_attr = f' data-tooltip="{tooltip}"' if tooltip else (f' title="{extra_title}"' if extra_title else "")
     return f'<span class="sku-badge sku-{cat.lower()}"{tooltip_attr}>{cat}</span>'
 
@@ -1261,6 +1266,9 @@ Explore every deployment SKU and discover which models and regions support it.
     **:material-check-circle-outline: Best for:** Applications needing worldwide reach, automatic
     failover, and maximum uptime across Azure's global network.
 
+    **:material-alert-outline: Compliance:** Data may cross region boundaries — not suitable for
+    HIPAA, FedRAMP, or strict data-residency requirements.
+
 -   :material-shield-lock-outline:{{ .lg .middle }} **Datazone**
 
     ---
@@ -1277,6 +1285,9 @@ Explore every deployment SKU and discover which models and regions support it.
 
     **:material-check-circle-outline: Best for:** GDPR compliance, data sovereignty requirements,
     regulated industries (finance, healthcare, government).
+
+    **:material-shield-check-outline: Compliance:** Data stays within the specified geographic zone —
+    supports GDPR and regional data-residency policies.
 
 -   :material-cash-multiple:{{ .lg .middle }} **Standard**
 
@@ -1295,6 +1306,9 @@ Explore every deployment SKU and discover which models and regions support it.
     **:material-check-circle-outline: Best for:** Variable workloads, development and testing,
     cost-sensitive applications, or when you don't need guaranteed throughput.
 
+    **:material-shield-check-outline: Compliance:** Single-region deployment — HIPAA-eligible in
+    supported regions with a BAA from Microsoft.
+
 -   :material-speedometer:{{ .lg .middle }} **Provisioned (PTU)**
 
     ---
@@ -1312,6 +1326,9 @@ Explore every deployment SKU and discover which models and regions support it.
     **:material-check-circle-outline: Best for:** High-volume production workloads, latency-sensitive
     applications, or scenarios where consistent throughput is critical.
 
+    **:material-shield-check-outline: Compliance:** Single-region deployment — HIPAA-eligible in
+    supported regions with a BAA from Microsoft.
+
 </div>
 
 ---
@@ -1324,6 +1341,8 @@ Explore every deployment SKU and discover which models and regions support it.
 | Data residency compliance | **Datazone** | Data stays in specified regions |
 | Cost-effective, variable load | **Standard** | Pay-as-you-go pricing |
 | Predictable high throughput | **Provisioned (PTU)** | Reserved capacity, guaranteed performance |
+| HIPAA / regulated workloads | **Standard** or **Provisioned** | Single-region; HIPAA-eligible with a Microsoft BAA |
+| Avoid Global for compliance | ⚠ **Not Global** | Global data routing is incompatible with strict data-residency requirements |
 
 ---
 
