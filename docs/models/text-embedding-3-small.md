@@ -115,4 +115,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-02-23 23:07 UTC_
+_Last updated: 2026-02-23 23:17 UTC_

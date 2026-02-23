@@ -61,6 +61,17 @@ def get_sku_category(label: str) -> str:
     return "Other"
 
 
+def sku_category_badge(cat: str, extra_title: str = "") -> str:
+    """Return an HTML badge for a SKU category with a tooltip from SKU_CATEGORIES."""
+    info = SKU_CATEGORIES.get(cat, {})
+    desc = info.get("description", "")
+    use_case = info.get("use_case", "")
+    parts = [p for p in [desc, use_case] if p]
+    tooltip = ". ".join(parts) if parts else extra_title
+    tooltip_attr = f' data-tooltip="{tooltip}"' if tooltip else (f' title="{extra_title}"' if extra_title else "")
+    return f'<span class="sku-badge sku-{cat.lower()}"{tooltip_attr}>{cat}</span>'
+
+
 def load_snapshot(path: Path) -> Dict[str, dict]:
     """Load a JSON snapshot from disk."""
     with path.open(encoding="utf-8") as fh:
@@ -745,7 +756,7 @@ def generate_model_index_page(
         for cat in category_order:
             if cat in cat_regions:
                 region_count = len(cat_regions[cat])
-                sku_badges.append(f'<span class="sku-badge sku-{cat.lower()}" title="{region_count} regions">{cat}</span>')
+                sku_badges.append(sku_category_badge(cat, f"{region_count} regions"))
         sku_badges_html = ' '.join(sku_badges) if sku_badges else '-'
 
         # Format region cells for each category
@@ -1145,7 +1156,7 @@ def generate_by_sku_page(
 
             all_rows.append(f"""    <tr>
       <td><a href="../models/{slugify(model)}/"><strong>{model}</strong></a></td>
-      <td><span class="sku-badge sku-{cat.lower()}">{cat}</span></td>
+      <td>{sku_category_badge(cat)}</td>
       <td>{sku_label}</td>
       <td>{regions_cell}</td>
       <td><span class="badge {bucket_class}">{bucket_label}</span></td>
