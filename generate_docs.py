@@ -1102,6 +1102,27 @@ def generate_by_sku_page(
     for label in sorted(all_labels):
         sku_to_category[label] = get_sku_category(label)
 
+    def _sku_region_badge(region: str) -> str:
+        return f'<span class="region-badge" onclick="filterBySkuRegion(\'{region}\')">{region}</span>'
+
+    def _sku_region_cell(regions_set: Set[str]) -> str:
+        if not regions_set:
+            return '-'
+        sorted_regs = sorted(regions_set)
+        count = len(sorted_regs)
+        badges = [_sku_region_badge(r) for r in sorted_regs]
+        if count <= 3:
+            return f'<span class="region-list">{" ".join(badges)}</span>'
+        preview_regions = ",".join(sorted_regs[:3])
+        all_regs_str = ",".join(sorted_regs)
+        preview_badges = " ".join(badges[:3])
+        return (
+            f'<span class="region-list" data-preview-regions="{preview_regions}"'
+            f' data-all-regions="{all_regs_str}">'
+            f'{preview_badges} <button class="expand-btn" onclick="toggleSkuRegionBadges(this)">'
+            f'+{count - 3} more</button></span>'
+        )
+
     # Build flat rows: one per model × SKU combination
     all_rows = []
     sku_model_counts: Dict[str, int] = defaultdict(int)
@@ -1120,12 +1141,13 @@ def generate_by_sku_page(
             category_model_sets[cat].add(model)
 
             regions_str = ", ".join(sorted(regions))
+            regions_cell = _sku_region_cell(regions)
 
             all_rows.append(f"""    <tr>
       <td><a href="../models/{slugify(model)}/"><strong>{model}</strong></a></td>
       <td><span class="sku-badge sku-{cat.lower()}">{cat}</span></td>
       <td>{sku_label}</td>
-      <td>{region_count}</td>
+      <td>{regions_cell}</td>
       <td><span class="badge {bucket_class}">{bucket_label}</span></td>
       <td>{pct}%</td>
       <td class="hidden-col">{regions_str}</td>
@@ -1140,6 +1162,9 @@ def generate_by_sku_page(
     sorted_sku_labels = sorted(sku_model_counts.keys())
     sku_options = "\n".join(
         [f'      <option value="{s}">{s}</option>' for s in sorted_sku_labels]
+    )
+    region_options = "\n".join(
+        [f'      <option value="{r}">{r}</option>' for r in sorted(all_regions)]
     )
 
     # Build per-category region sets for the explainer cards
@@ -1333,6 +1358,13 @@ Filter by category, SKU type, or model to find exactly what you need.
       <option value="Strong">Strong (20-24)</option>
       <option value="Growing">Growing (15-19)</option>
       <option value="Emerging">Emerging (&lt;15)</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <label for="sku-region-filter">Region</label>
+    <select id="sku-region-filter" onchange="filterSkuTable()">
+      <option value="">All Regions</option>
+{region_options}
     </select>
   </div>
   <div class="filter-group">
