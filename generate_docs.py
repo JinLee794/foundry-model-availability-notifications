@@ -1142,6 +1142,12 @@ def generate_by_sku_page(
         [f'      <option value="{s}">{s}</option>' for s in sorted_sku_labels]
     )
 
+    # Build per-category region sets for the explainer cards
+    category_region_sets: Dict[str, Set[str]] = defaultdict(set)
+    for label, label_regions in sku_region_sets.items():
+        cat = sku_to_category.get(label, "Other")
+        category_region_sets[cat].update(label_regions)
+
     # Build SKU summary rows for the overview table
     sku_summary_rows = []
     for cat_name in ["Global", "Datazone", "Standard", "Provisioned", "Other"]:
@@ -1154,6 +1160,28 @@ def generate_by_sku_page(
                 f'| <span class="sku-badge sku-{cat_name.lower()}">{cat_name}</span> '
                 f'| {sku_label} | {model_count} | {region_count} | {pct}% |'
             )
+
+    # Build per-category SKU type lists for explainer cards
+    def _sku_list(cat_name: str) -> str:
+        skus = [s for s in sorted_sku_labels if sku_to_category.get(s) == cat_name and sku_model_counts[s] > 0]
+        return " · ".join(f"`{s}`" for s in skus) if skus else "-"
+
+    # Per-category stats for explainer cards
+    def _cat_stats(cat_name: str) -> tuple:
+        models = len(category_model_sets.get(cat_name, set()))
+        regions = len(category_region_sets.get(cat_name, set()))
+        pct = round(regions / total_regions * 100) if total_regions else 0
+        return models, regions, pct
+
+    g_models, g_regions, g_pct = _cat_stats("Global")
+    d_models, d_regions, d_pct = _cat_stats("Datazone")
+    s_models, s_regions, s_pct = _cat_stats("Standard")
+    p_models, p_regions, p_pct = _cat_stats("Provisioned")
+
+    global_skus = _sku_list("Global")
+    datazone_skus = _sku_list("Datazone")
+    standard_skus = _sku_list("Standard")
+    provisioned_skus = _sku_list("Provisioned")
 
     return f"""# Models by SKU Type
 
@@ -1172,6 +1200,82 @@ Explore every deployment SKU and discover which models and regions support it.
     <div class="stat-value">{total_deployments}</div>
     <div class="stat-label">Model × SKU Combinations</div>
   </div>
+</div>
+
+---
+
+## :material-layers-outline: SKU Deployment Types Explained
+
+<div class="grid cards sku-explainer-grid" markdown>
+
+-   :material-earth:{{ .lg .middle }} **Global**
+
+    ---
+
+    Routes requests intelligently across Azure regions for maximum availability and throughput.
+    Data may be processed in any region within the Azure geography.
+
+    | | |
+    |---|---|
+    | :material-cube-outline: Models | **{g_models}** |
+    | :material-map-marker-outline: Regions | **{g_regions}** ({g_pct}% coverage) |
+
+    **SKU types:** {global_skus}
+
+    **:material-check-circle-outline: Best for:** Applications needing worldwide reach, automatic
+    failover, and maximum uptime across Azure's global network.
+
+-   :material-shield-lock-outline:{{ .lg .middle }} **Datazone**
+
+    ---
+
+    Keeps data within a specified geographic zone to satisfy compliance and residency policies.
+    Choose the zone; Azure handles routing within that boundary.
+
+    | | |
+    |---|---|
+    | :material-cube-outline: Models | **{d_models}** |
+    | :material-map-marker-outline: Regions | **{d_regions}** ({d_pct}% coverage) |
+
+    **SKU types:** {datazone_skus}
+
+    **:material-check-circle-outline: Best for:** GDPR compliance, data sovereignty requirements,
+    regulated industries (finance, healthcare, government).
+
+-   :material-cash-multiple:{{ .lg .middle }} **Standard**
+
+    ---
+
+    Pay-as-you-go deployments in a single Azure region with flexible, on-demand scaling.
+    No capacity reservation required — you pay only for what you use.
+
+    | | |
+    |---|---|
+    | :material-cube-outline: Models | **{s_models}** |
+    | :material-map-marker-outline: Regions | **{s_regions}** ({s_pct}% coverage) |
+
+    **SKU types:** {standard_skus}
+
+    **:material-check-circle-outline: Best for:** Variable workloads, development and testing,
+    cost-sensitive applications, or when you don't need guaranteed throughput.
+
+-   :material-speedometer:{{ .lg .middle }} **Provisioned (PTU)**
+
+    ---
+
+    Reserved throughput units (PTUs) guarantee consistent, high-performance inference at scale.
+    Capacity is pre-allocated, so latency and throughput are predictable regardless of platform load.
+
+    | | |
+    |---|---|
+    | :material-cube-outline: Models | **{p_models}** |
+    | :material-map-marker-outline: Regions | **{p_regions}** ({p_pct}% coverage) |
+
+    **SKU types:** {provisioned_skus}
+
+    **:material-check-circle-outline: Best for:** High-volume production workloads, latency-sensitive
+    applications, or scenarios where consistent throughput is critical.
+
 </div>
 
 ---

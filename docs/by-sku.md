@@ -19,6 +19,82 @@ Explore every deployment SKU and discover which models and regions support it.
 
 ---
 
+## :material-layers-outline: SKU Deployment Types Explained
+
+<div class="grid cards sku-explainer-grid" markdown>
+
+-   :material-earth:{ .lg .middle } **Global**
+
+    ---
+
+    Routes requests intelligently across Azure regions for maximum availability and throughput.
+    Data may be processed in any region within the Azure geography.
+
+    | | |
+    |---|---|
+    | :material-cube-outline: Models | **111** |
+    | :material-map-marker-outline: Regions | **28** (100% coverage) |
+
+    **SKU types:** `Global batch` · `Global batch datazone` · `Global coverage` · `Standard global deployments`
+
+    **:material-check-circle-outline: Best for:** Applications needing worldwide reach, automatic
+    failover, and maximum uptime across Azure's global network.
+
+-   :material-shield-lock-outline:{ .lg .middle } **Datazone**
+
+    ---
+
+    Keeps data within a specified geographic zone to satisfy compliance and residency policies.
+    Choose the zone; Azure handles routing within that boundary.
+
+    | | |
+    |---|---|
+    | :material-cube-outline: Models | **19** |
+    | :material-map-marker-outline: Regions | **14** (50% coverage) |
+
+    **SKU types:** `Datazone provisioned managed` · `Datazone standard`
+
+    **:material-check-circle-outline: Best for:** GDPR compliance, data sovereignty requirements,
+    regulated industries (finance, healthcare, government).
+
+-   :material-cash-multiple:{ .lg .middle } **Standard**
+
+    ---
+
+    Pay-as-you-go deployments in a single Azure region with flexible, on-demand scaling.
+    No capacity reservation required — you pay only for what you use.
+
+    | | |
+    |---|---|
+    | :material-cube-outline: Models | **25** |
+    | :material-map-marker-outline: Regions | **25** (89% coverage) |
+
+    **SKU types:** `Standard (all)` · `Standard GPT-3.5 Turbo` · `Standard GPT-4` · `Standard audio` · `Standard chat completions` · `Standard completions` · `Standard embeddings` · `Standard image generation`
+
+    **:material-check-circle-outline: Best for:** Variable workloads, development and testing,
+    cost-sensitive applications, or when you don't need guaranteed throughput.
+
+-   :material-speedometer:{ .lg .middle } **Provisioned (PTU)**
+
+    ---
+
+    Reserved throughput units (PTUs) guarantee consistent, high-performance inference at scale.
+    Capacity is pre-allocated, so latency and throughput are predictable regardless of platform load.
+
+    | | |
+    |---|---|
+    | :material-cube-outline: Models | **17** |
+    | :material-map-marker-outline: Regions | **28** (100% coverage) |
+
+    **SKU types:** `Provisioned (PTU managed)` · `Provisioned global`
+
+    **:material-check-circle-outline: Best for:** High-volume production workloads, latency-sensitive
+    applications, or scenarios where consistent throughput is critical.
+
+</div>
+
+---
+
 ## :material-target: SKU Selection Guide
 
 | Need | Recommended SKU | Why |
@@ -3216,4 +3292,4 @@ Filter by category, SKU type, or model to find exactly what you need.
 
 ---
 
-_Last updated: 2026-02-20 18:30 UTC_
+_Last updated: 2026-02-23 22:02 UTC_

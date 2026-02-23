@@ -896,3 +896,43 @@ details[open] summary {
   border-radius: 0 0.75rem 0.75rem 0;
 }
 
+/* SKU Deployment Types explainer grid cards */
+.sku-explainer-grid .md-typeset &,
+.sku-explainer-grid {
+  margin-top: 1rem;
+}
+
+/* Color-accent the top border of each explainer card by category position */
+.sku-explainer-grid > ul > li:nth-child(1) {
+  border-top: 3px solid #3b82f6;  /* Global — blue */
+}
+
+.sku-explainer-grid > ul > li:nth-child(2) {
+  border-top: 3px solid #8b5cf6;  /* Datazone — purple */
+}
+
+.sku-explainer-grid > ul > li:nth-child(3) {
+  border-top: 3px solid #06b6d4;  /* Standard — cyan */
+}
+
+.sku-explainer-grid > ul > li:nth-child(4) {
+  border-top: 3px solid #10b981;  /* Provisioned — green */
+}
+
+/* Dark mode adjustments for explainer card borders */
+[data-md-color-scheme="slate"] .sku-explainer-grid > ul > li:nth-child(1) {
+  border-top-color: #60a5fa;
+}
+
+[data-md-color-scheme="slate"] .sku-explainer-grid > ul > li:nth-child(2) {
+  border-top-color: #a78bfa;
+}
+
+[data-md-color-scheme="slate"] .sku-explainer-grid > ul > li:nth-child(3) {
+  border-top-color: #22d3ee;
+}
+
+[data-md-color-scheme="slate"] .sku-explainer-grid > ul > li:nth-child(4) {
+  border-top-color: #34d399;
+}
+
