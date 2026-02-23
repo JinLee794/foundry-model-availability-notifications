@@ -159,14 +159,14 @@ window.filterModelsTable = function() {
     table.column(1).search(coverageVal);
   }
 
-  // Apply category filter (column 7 - hidden Categories)
+  // Apply category filter (column 8 - hidden Categories)
   if (categoryVal) {
-    table.column(7).search(categoryVal);
+    table.column(8).search(categoryVal);
   }
 
-  // Apply region filter (column 8 - hidden Region List)
+  // Apply region filter (column 9 - hidden Region List)
   if (regionVal) {
-    table.column(8).search(regionVal);
+    table.column(9).search(regionVal);
   }
 
   table.draw();

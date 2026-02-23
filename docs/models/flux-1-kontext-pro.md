@@ -11,7 +11,7 @@
 | Total Regions | 25 |
 | Coverage | 89% |
 | SKU Types | 2 |
-| Categories | Global, Other |
+| Categories | Global |
 
 ---
 
@@ -24,20 +24,8 @@
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
-| Global coverage | 25 | 89% |
-
-**Available Regions:**
-
-`Australia East`, `Brazil South`, `Canada East`, `East US`, `East US 2`, `France Central`, `Germany West Central`, `Italy North`, `Japan East`, `Korea Central`, `North Central US`, `Norway East`, `Poland Central`, `South Africa North`, `South Central US`, `South India`, `Spain Central`, `Sweden Central`, `Switzerland North`, `Switzerland West`, `UAE North`, `UK South`, `West Europe`, `West US`, `West US 3`
-
-### Other Deployments
-
-!!! tip "Use Case"
-    
-
-| SKU Type | Regions | Coverage |
-|----------|---------|----------|
 | Global Standard | 25 | 89% |
+| Global coverage | 25 | 89% |
 
 **Available Regions:**
 
@@ -89,4 +77,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-02-23 22:02 UTC_
+_Last updated: 2026-02-23 23:07 UTC_

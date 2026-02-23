@@ -29,7 +29,8 @@ BUCKETS: List[Tuple[int, str, str, str]] = [
 # SKU category mapping with descriptions
 SKU_CATEGORIES = {
     "Global": {
-        "skus": ["Global coverage", "Global batch", "Global batch datazone", "Standard global deployments"],
+        "skus": ["Global coverage", "Global batch", "Global batch datazone", "Standard global deployments",
+                 "Global Standard"],
         "description": "Worldwide availability with intelligent routing",
         "use_case": "Best for applications needing global reach with automatic failover",
     },
@@ -46,11 +47,15 @@ SKU_CATEGORIES = {
         "use_case": "Best for variable workloads and cost-sensitive applications",
     },
     "Provisioned": {
-        "skus": ["Provisioned (PTU managed)", "Provisioned global"],
+        "skus": ["Provisioned (PTU managed)", "Provisioned global", "Global Provisioned Managed"],
         "description": "Reserved throughput capacity (PTU)",
         "use_case": "Best for predictable, high-volume production workloads",
     },
 }
+
+# Provisioned sub-SKU groupings for granular column display
+PROVISIONED_PTU_SKUS: Set[str] = {"Provisioned (PTU managed)"}
+PROVISIONED_GLOBAL_SKUS: Set[str] = {"Provisioned global", "Global Provisioned Managed"}
 
 
 def get_sku_category(label: str) -> str:
@@ -734,27 +739,40 @@ def generate_model_index_page(
         # Count regions per SKU category
         cat_regions: Dict[str, Set[str]] = defaultdict(set)
         all_skus = []
-        for sku, sku_regions in model_sku_regions[model].items():
+        for sku, sku_regions_set in model_sku_regions[model].items():
             cat = get_sku_category(sku)
-            cat_regions[cat].update(sku_regions)
+            cat_regions[cat].update(sku_regions_set)
             all_skus.append(sku)
 
-        # Create SKU category badges
+        # Compute granular provisioned sub-type regions
+        prov_ptu_regions: Set[str] = set()
+        prov_global_regions: Set[str] = set()
+        for sku, sku_regions_set in model_sku_regions[model].items():
+            if sku in PROVISIONED_PTU_SKUS:
+                prov_ptu_regions.update(sku_regions_set)
+            elif sku in PROVISIONED_GLOBAL_SKUS:
+                prov_global_regions.update(sku_regions_set)
+
+        # Create SKU category badges — use granular provisioned sub-type badges
         sku_badges = []
-        category_order = ['Global', 'Datazone', 'Standard', 'Provisioned']
-        for cat in category_order:
+        for cat in ['Global', 'Datazone', 'Standard']:
             if cat in cat_regions:
                 region_count = len(cat_regions[cat])
                 sku_badges.append(f'<span class="sku-badge sku-{cat.lower()}" title="{region_count} regions">{cat}</span>')
+        if prov_ptu_regions:
+            sku_badges.append(f'<span class="sku-badge sku-provisioned" title="{len(prov_ptu_regions)} regions">Prov.PTU</span>')
+        if prov_global_regions:
+            sku_badges.append(f'<span class="sku-badge sku-provisioned-global" title="{len(prov_global_regions)} regions">Prov.Global</span>')
         sku_badges_html = ' '.join(sku_badges) if sku_badges else '-'
 
-        # Format region cells for each category
+        # Format region cells for each category/sub-category
         global_cell = format_region_cell(cat_regions.get('Global', set()), 'Global')
         datazone_cell = format_region_cell(cat_regions.get('Datazone', set()), 'Datazone')
         standard_cell = format_region_cell(cat_regions.get('Standard', set()), 'Standard')
-        provisioned_cell = format_region_cell(cat_regions.get('Provisioned', set()), 'Provisioned')
+        prov_ptu_cell = format_region_cell(prov_ptu_regions, 'Prov. PTU')
+        prov_global_cell = format_region_cell(prov_global_regions, 'Prov. Global')
 
-        # Categories string for filtering
+        # Categories string for filtering (hidden column)
         cats_str = ", ".join(sorted(cat_regions.keys()))
         regions_str = ", ".join(sorted(regions))  # Hidden column for filtering
 
@@ -765,7 +783,8 @@ def generate_model_index_page(
       <td>{global_cell}</td>
       <td>{datazone_cell}</td>
       <td>{standard_cell}</td>
-      <td>{provisioned_cell}</td>
+      <td>{prov_ptu_cell}</td>
+      <td>{prov_global_cell}</td>
       <td class="hidden-col">{cats_str}</td>
       <td class="hidden-col">{regions_str}</td>
     </tr>""")
@@ -818,7 +837,8 @@ Complete catalog of AI Foundry models with availability details. Each SKU column
       <th>Global Regions</th>
       <th>Datazone Regions</th>
       <th>Standard Regions</th>
-      <th>Provisioned Regions</th>
+      <th>Prov. PTU Regions</th>
+      <th>Prov. Global Regions</th>
       <th class="hidden-col">Categories</th>
       <th class="hidden-col">Region List</th>
     </tr>
@@ -838,7 +858,8 @@ Complete catalog of AI Foundry models with availability details. Each SKU column
 | **Global** | Worldwide availability with intelligent routing | Apps needing global reach with automatic failover |
 | **Datazone** | Data residency compliance deployments | GDPR, sovereignty, compliance requirements |
 | **Standard** | Pay-as-you-go regional deployments | Variable workloads, cost-sensitive apps |
-| **Provisioned** | Reserved throughput capacity (PTU) | Predictable, high-volume production workloads |
+| **Prov. PTU** | Regional reserved throughput capacity (PTU) | High-volume workloads in a specific region |
+| **Prov. Global** | Global reserved throughput capacity (PTU) | High-volume workloads with global routing |
 
 ---
 
