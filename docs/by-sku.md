@@ -31,7 +31,7 @@ Explore every deployment SKU and discover which models and regions support it.
     | :material-cube-outline: Models | **111** |
     | :material-map-marker-outline: Regions | **28** (100% coverage) |
 
-    **SKU types:** `Global batch` · `Global batch datazone` · `Global coverage` · `Standard global deployments`
+    **SKU types:** `Global Standard` · `Global batch` · `Global batch datazone` · `Global coverage` · `Standard global deployments`
 
     **:material-check-circle-outline: Best for:** Applications needing worldwide reach, automatic
     failover, and maximum uptime across Azure's global network.
@@ -82,10 +82,10 @@ Explore every deployment SKU and discover which models and regions support it.
 
     | | |
     |---|---|
-    | :material-cube-outline: Models | **17** |
+    | :material-cube-outline: Models | **20** |
     | :material-map-marker-outline: Regions | **28** (100% coverage) |
 
-    **SKU types:** `Provisioned (PTU managed)` · `Provisioned global`
+    **SKU types:** `Global Provisioned Managed` · `Provisioned (PTU managed)` · `Provisioned global`
 
     **:material-check-circle-outline: Best for:** High-volume production workloads, latency-sensitive
     applications, or scenarios where consistent throughput is critical.
@@ -110,6 +110,7 @@ Explore every deployment SKU and discover which models and regions support it.
 
     | Category | SKU Type | Models | Regions | Coverage |
     |----------|----------|--------|---------|----------|
+    | <span class="sku-badge sku-global">Global</span> | Global Standard | 16 | 25 | 89% |
     | <span class="sku-badge sku-global">Global</span> | Global batch | 10 | 22 | 79% |
     | <span class="sku-badge sku-global">Global</span> | Global batch datazone | 10 | 12 | 43% |
     | <span class="sku-badge sku-global">Global</span> | Global coverage | 111 | 28 | 100% |
@@ -124,11 +125,10 @@ Explore every deployment SKU and discover which models and regions support it.
     | <span class="sku-badge sku-standard">Standard</span> | Standard completions | 1 | 1 | 4% |
     | <span class="sku-badge sku-standard">Standard</span> | Standard embeddings | 3 | 21 | 75% |
     | <span class="sku-badge sku-standard">Standard</span> | Standard image generation | 4 | 8 | 29% |
+    | <span class="sku-badge sku-provisioned">Provisioned</span> | Global Provisioned Managed | 3 | 25 | 89% |
     | <span class="sku-badge sku-provisioned">Provisioned</span> | Provisioned (PTU managed) | 14 | 27 | 96% |
     | <span class="sku-badge sku-provisioned">Provisioned</span> | Provisioned global | 14 | 28 | 100% |
     | <span class="sku-badge sku-other">Other</span> | Data Zone Standard | 5 | 16 | 57% |
-    | <span class="sku-badge sku-other">Other</span> | Global Provisioned Managed | 3 | 25 | 89% |
-    | <span class="sku-badge sku-other">Other</span> | Global Standard | 16 | 25 | 89% |
     | <span class="sku-badge sku-other">Other</span> | Region Availability Maas | 41 | 7 | 25% |
 
 ---
@@ -469,7 +469,7 @@ Filter by category, SKU type, or model to find exactly what you need.
     </tr>
     <tr>
       <td><a href="../models/deepseek-r1/"><strong>DeepSeek-R1</strong></a></td>
-      <td><span class="sku-badge sku-other">Other</span></td>
+      <td><span class="sku-badge sku-provisioned" data-tooltip="Reserved throughput capacity (PTU) | Best for predictable, high-volume production workloads | ✓ Single-region deployment — HIPAA-eligible in supported regions with a BAA from Microsoft">Provisioned</span></td>
       <td>Global Provisioned Managed</td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada East" data-all-regions="Australia East,Brazil South,Canada East,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterBySkuRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterBySkuRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterBySkuRegion('Canada East')">Canada East</span> <button class="expand-btn" onclick="toggleSkuRegionBadges(this)">+22 more</button></span></td>
       <td><span class="badge badge-broad">Broad</span></td>
@@ -478,7 +478,7 @@ Filter by category, SKU type, or model to find exactly what you need.
     </tr>
     <tr>
       <td><a href="../models/deepseek-r1/"><strong>DeepSeek-R1</strong></a></td>
-      <td><span class="sku-badge sku-other">Other</span></td>
+      <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td>Global Standard</td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada East" data-all-regions="Australia East,Brazil South,Canada East,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterBySkuRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterBySkuRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterBySkuRegion('Canada East')">Canada East</span> <button class="expand-btn" onclick="toggleSkuRegionBadges(this)">+22 more</button></span></td>
       <td><span class="badge badge-broad">Broad</span></td>
@@ -505,7 +505,7 @@ Filter by category, SKU type, or model to find exactly what you need.
     </tr>
     <tr>
       <td><a href="../models/deepseek-r1-0528/"><strong>DeepSeek-R1-0528</strong></a></td>
-      <td><span class="sku-badge sku-other">Other</span></td>
+      <td><span class="sku-badge sku-provisioned" data-tooltip="Reserved throughput capacity (PTU) | Best for predictable, high-volume production workloads | ✓ Single-region deployment — HIPAA-eligible in supported regions with a BAA from Microsoft">Provisioned</span></td>
       <td>Global Provisioned Managed</td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada East" data-all-regions="Australia East,Brazil South,Canada East,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterBySkuRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterBySkuRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterBySkuRegion('Canada East')">Canada East</span> <button class="expand-btn" onclick="toggleSkuRegionBadges(this)">+22 more</button></span></td>
       <td><span class="badge badge-broad">Broad</span></td>
@@ -514,7 +514,7 @@ Filter by category, SKU type, or model to find exactly what you need.
     </tr>
     <tr>
       <td><a href="../models/deepseek-r1-0528/"><strong>DeepSeek-R1-0528</strong></a></td>
-      <td><span class="sku-badge sku-other">Other</span></td>
+      <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td>Global Standard</td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada East" data-all-regions="Australia East,Brazil South,Canada East,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterBySkuRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterBySkuRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterBySkuRegion('Canada East')">Canada East</span> <button class="expand-btn" onclick="toggleSkuRegionBadges(this)">+22 more</button></span></td>
       <td><span class="badge badge-broad">Broad</span></td>
@@ -532,7 +532,7 @@ Filter by category, SKU type, or model to find exactly what you need.
     </tr>
     <tr>
       <td><a href="../models/deepseek-v3-0324/"><strong>DeepSeek-V3-0324</strong></a></td>
-      <td><span class="sku-badge sku-other">Other</span></td>
+      <td><span class="sku-badge sku-provisioned" data-tooltip="Reserved throughput capacity (PTU) | Best for predictable, high-volume production workloads | ✓ Single-region deployment — HIPAA-eligible in supported regions with a BAA from Microsoft">Provisioned</span></td>
       <td>Global Provisioned Managed</td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada East" data-all-regions="Australia East,Brazil South,Canada East,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterBySkuRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterBySkuRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterBySkuRegion('Canada East')">Canada East</span> <button class="expand-btn" onclick="toggleSkuRegionBadges(this)">+22 more</button></span></td>
       <td><span class="badge badge-broad">Broad</span></td>
@@ -541,7 +541,7 @@ Filter by category, SKU type, or model to find exactly what you need.
     </tr>
     <tr>
       <td><a href="../models/deepseek-v3-0324/"><strong>DeepSeek-V3-0324</strong></a></td>
-      <td><span class="sku-badge sku-other">Other</span></td>
+      <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td>Global Standard</td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada East" data-all-regions="Australia East,Brazil South,Canada East,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterBySkuRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterBySkuRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterBySkuRegion('Canada East')">Canada East</span> <button class="expand-btn" onclick="toggleSkuRegionBadges(this)">+22 more</button></span></td>
       <td><span class="badge badge-broad">Broad</span></td>
@@ -568,7 +568,7 @@ Filter by category, SKU type, or model to find exactly what you need.
     </tr>
     <tr>
       <td><a href="../models/deepseek-v3-1/"><strong>DeepSeek-V3.1</strong></a></td>
-      <td><span class="sku-badge sku-other">Other</span></td>
+      <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td>Global Standard</td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada East" data-all-regions="Australia East,Brazil South,Canada East,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterBySkuRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterBySkuRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterBySkuRegion('Canada East')">Canada East</span> <button class="expand-btn" onclick="toggleSkuRegionBadges(this)">+22 more</button></span></td>
       <td><span class="badge badge-broad">Broad</span></td>
@@ -586,7 +586,7 @@ Filter by category, SKU type, or model to find exactly what you need.
     </tr>
     <tr>
       <td><a href="../models/flux-1-1-pro/"><strong>FLUX-1.1-pro</strong></a></td>
-      <td><span class="sku-badge sku-other">Other</span></td>
+      <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td>Global Standard</td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada East" data-all-regions="Australia East,Brazil South,Canada East,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterBySkuRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterBySkuRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterBySkuRegion('Canada East')">Canada East</span> <button class="expand-btn" onclick="toggleSkuRegionBadges(this)">+22 more</button></span></td>
       <td><span class="badge badge-broad">Broad</span></td>
@@ -604,7 +604,7 @@ Filter by category, SKU type, or model to find exactly what you need.
     </tr>
     <tr>
       <td><a href="../models/flux-1-kontext-pro/"><strong>FLUX.1-Kontext-pro</strong></a></td>
-      <td><span class="sku-badge sku-other">Other</span></td>
+      <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td>Global Standard</td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada East" data-all-regions="Australia East,Brazil South,Canada East,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterBySkuRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterBySkuRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterBySkuRegion('Canada East')">Canada East</span> <button class="expand-btn" onclick="toggleSkuRegionBadges(this)">+22 more</button></span></td>
       <td><span class="badge badge-broad">Broad</span></td>
@@ -784,7 +784,7 @@ Filter by category, SKU type, or model to find exactly what you need.
     </tr>
     <tr>
       <td><a href="../models/llama-3-3-70b-instruct/"><strong>Llama-3.3-70B-Instruct</strong></a></td>
-      <td><span class="sku-badge sku-other">Other</span></td>
+      <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td>Global Standard</td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada East" data-all-regions="Australia East,Brazil South,Canada East,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterBySkuRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterBySkuRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterBySkuRegion('Canada East')">Canada East</span> <button class="expand-btn" onclick="toggleSkuRegionBadges(this)">+22 more</button></span></td>
       <td><span class="badge badge-broad">Broad</span></td>
@@ -811,7 +811,7 @@ Filter by category, SKU type, or model to find exactly what you need.
     </tr>
     <tr>
       <td><a href="../models/llama-4-maverick-17b-128e-instruct-fp8/"><strong>Llama-4-Maverick-17B-128E-Instruct-FP8</strong></a></td>
-      <td><span class="sku-badge sku-other">Other</span></td>
+      <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td>Global Standard</td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada East" data-all-regions="Australia East,Brazil South,Canada East,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterBySkuRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterBySkuRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterBySkuRegion('Canada East')">Canada East</span> <button class="expand-btn" onclick="toggleSkuRegionBadges(this)">+22 more</button></span></td>
       <td><span class="badge badge-broad">Broad</span></td>
@@ -865,7 +865,7 @@ Filter by category, SKU type, or model to find exactly what you need.
     </tr>
     <tr>
       <td><a href="../models/mai-ds-r1/"><strong>MAI-DS-R1</strong></a></td>
-      <td><span class="sku-badge sku-other">Other</span></td>
+      <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td>Global Standard</td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada East" data-all-regions="Australia East,Brazil South,Canada East,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterBySkuRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterBySkuRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterBySkuRegion('Canada East')">Canada East</span> <button class="expand-btn" onclick="toggleSkuRegionBadges(this)">+22 more</button></span></td>
       <td><span class="badge badge-broad">Broad</span></td>
@@ -2494,7 +2494,7 @@ Filter by category, SKU type, or model to find exactly what you need.
     </tr>
     <tr>
       <td><a href="../models/grok-3/"><strong>grok-3</strong></a></td>
-      <td><span class="sku-badge sku-other">Other</span></td>
+      <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td>Global Standard</td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada East" data-all-regions="Australia East,Brazil South,Canada East,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterBySkuRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterBySkuRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterBySkuRegion('Canada East')">Canada East</span> <button class="expand-btn" onclick="toggleSkuRegionBadges(this)">+22 more</button></span></td>
       <td><span class="badge badge-broad">Broad</span></td>
@@ -2521,7 +2521,7 @@ Filter by category, SKU type, or model to find exactly what you need.
     </tr>
     <tr>
       <td><a href="../models/grok-3-mini/"><strong>grok-3-mini</strong></a></td>
-      <td><span class="sku-badge sku-other">Other</span></td>
+      <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td>Global Standard</td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada East" data-all-regions="Australia East,Brazil South,Canada East,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterBySkuRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterBySkuRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterBySkuRegion('Canada East')">Canada East</span> <button class="expand-btn" onclick="toggleSkuRegionBadges(this)">+22 more</button></span></td>
       <td><span class="badge badge-broad">Broad</span></td>
@@ -2539,7 +2539,7 @@ Filter by category, SKU type, or model to find exactly what you need.
     </tr>
     <tr>
       <td><a href="../models/grok-4/"><strong>grok-4</strong></a></td>
-      <td><span class="sku-badge sku-other">Other</span></td>
+      <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td>Global Standard</td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada East" data-all-regions="Australia East,Brazil South,Canada East,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterBySkuRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterBySkuRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterBySkuRegion('Canada East')">Canada East</span> <button class="expand-btn" onclick="toggleSkuRegionBadges(this)">+22 more</button></span></td>
       <td><span class="badge badge-broad">Broad</span></td>
@@ -2566,7 +2566,7 @@ Filter by category, SKU type, or model to find exactly what you need.
     </tr>
     <tr>
       <td><a href="../models/grok-4-fast-non-reasoning/"><strong>grok-4-fast-non-reasoning</strong></a></td>
-      <td><span class="sku-badge sku-other">Other</span></td>
+      <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td>Global Standard</td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada East" data-all-regions="Australia East,Brazil South,Canada East,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterBySkuRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterBySkuRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterBySkuRegion('Canada East')">Canada East</span> <button class="expand-btn" onclick="toggleSkuRegionBadges(this)">+22 more</button></span></td>
       <td><span class="badge badge-broad">Broad</span></td>
@@ -2593,7 +2593,7 @@ Filter by category, SKU type, or model to find exactly what you need.
     </tr>
     <tr>
       <td><a href="../models/grok-4-fast-reasoning/"><strong>grok-4-fast-reasoning</strong></a></td>
-      <td><span class="sku-badge sku-other">Other</span></td>
+      <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td>Global Standard</td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada East" data-all-regions="Australia East,Brazil South,Canada East,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterBySkuRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterBySkuRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterBySkuRegion('Canada East')">Canada East</span> <button class="expand-btn" onclick="toggleSkuRegionBadges(this)">+22 more</button></span></td>
       <td><span class="badge badge-broad">Broad</span></td>
@@ -2611,7 +2611,7 @@ Filter by category, SKU type, or model to find exactly what you need.
     </tr>
     <tr>
       <td><a href="../models/grok-code-fast-1/"><strong>grok-code-fast-1</strong></a></td>
-      <td><span class="sku-badge sku-other">Other</span></td>
+      <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td>Global Standard</td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada East" data-all-regions="Australia East,Brazil South,Canada East,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterBySkuRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterBySkuRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterBySkuRegion('Canada East')">Canada East</span> <button class="expand-btn" onclick="toggleSkuRegionBadges(this)">+22 more</button></span></td>
       <td><span class="badge badge-broad">Broad</span></td>
@@ -2638,7 +2638,7 @@ Filter by category, SKU type, or model to find exactly what you need.
     </tr>
     <tr>
       <td><a href="../models/mistral-document-ai-2505/"><strong>mistral-document-ai-2505</strong></a></td>
-      <td><span class="sku-badge sku-other">Other</span></td>
+      <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td>Global Standard</td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada East" data-all-regions="Australia East,Brazil South,Canada East,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterBySkuRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterBySkuRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterBySkuRegion('Canada East')">Canada East</span> <button class="expand-btn" onclick="toggleSkuRegionBadges(this)">+22 more</button></span></td>
       <td><span class="badge badge-broad">Broad</span></td>
@@ -3326,4 +3326,4 @@ Filter by category, SKU type, or model to find exactly what you need.
 
 ---
 
-_Last updated: 2026-02-24 00:17 UTC_
+_Last updated: 2026-02-24 01:42 UTC_

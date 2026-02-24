@@ -11,7 +11,7 @@
 | Total Regions | 25 |
 | Coverage | 89% |
 | SKU Types | 4 |
-| Categories | Global, Other |
+| Categories | Global, Other, Provisioned |
 
 ---
 
@@ -24,7 +24,21 @@
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
+| Global Standard | 25 | 89% |
 | Global coverage | 25 | 89% |
+
+**Available Regions:**
+
+`Australia East`, `Brazil South`, `Canada East`, `East US`, `East US 2`, `France Central`, `Germany West Central`, `Italy North`, `Japan East`, `Korea Central`, `North Central US`, `Norway East`, `Poland Central`, `South Africa North`, `South Central US`, `South India`, `Spain Central`, `Sweden Central`, `Switzerland North`, `Switzerland West`, `UAE North`, `UK South`, `West Europe`, `West US`, `West US 3`
+
+### Provisioned Deployments
+
+!!! tip "Use Case"
+    Best for predictable, high-volume production workloads
+
+| SKU Type | Regions | Coverage |
+|----------|---------|----------|
+| Global Provisioned Managed | 25 | 89% |
 
 **Available Regions:**
 
@@ -37,13 +51,11 @@
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
-| Global Provisioned Managed | 25 | 89% |
-| Global Standard | 25 | 89% |
 | Region Availability Maas | 6 | 21% |
 
 **Available Regions:**
 
-`Australia East`, `Brazil South`, `Canada East`, `East US`, `East US 2`, `France Central`, `Germany West Central`, `Italy North`, `Japan East`, `Korea Central`, `North Central US`, `Norway East`, `Poland Central`, `South Africa North`, `South Central US`, `South India`, `Spain Central`, `Sweden Central`, `Switzerland North`, `Switzerland West`, `UAE North`, `UK South`, `West Europe`, `West US`, `West US 3`
+`East US`, `East US 2`, `North Central US`, `South Central US`, `West US`, `West US 3`
 
 
 ---
@@ -91,4 +103,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-02-24 00:17 UTC_
+_Last updated: 2026-02-24 01:42 UTC_
