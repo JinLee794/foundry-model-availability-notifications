@@ -294,6 +294,7 @@ window.filterSkuTable = function() {
   const skuTypeVal = $('#sku-type-filter').val() || '';
   const modelVal = $('#sku-model-search').val() || '';
   const coverageVal = $('#sku-coverage-filter').val() || '';
+  const regionVal = $('#sku-region-filter').val() || '';
 
   // Clear existing searches
   table.columns().search('');
@@ -318,6 +319,11 @@ window.filterSkuTable = function() {
     table.column(4).search(coverageVal);
   }
 
+  // Apply region filter (column 6 - hidden Region List)
+  if (regionVal) {
+    table.column(6).search(regionVal);
+  }
+
   table.draw();
 };
 
@@ -333,6 +339,7 @@ window.resetSkuFilters = function() {
   $('#sku-type-filter').val('');
   $('#sku-model-search').val('');
   $('#sku-coverage-filter').val('');
+  $('#sku-region-filter').val('');
 };
 
 // Legacy filter functions for backward compatibility
@@ -348,9 +355,34 @@ window.filterByRegion = function(region) {
   }
 };
 
+// Filter by clicking a region badge on the SKU table page
+window.filterBySkuRegion = function(region) {
+  const skuRegionFilter = document.getElementById('sku-region-filter');
+  if (skuRegionFilter) {
+    skuRegionFilter.value = region;
+    filterSkuTable();
+  }
+};
+
 // Helper to create a region badge HTML
 function createRegionBadge(region) {
   return '<span class="region-badge" onclick="filterByRegion(\'' + region + '\')">' + region + '</span>';
+}
+
+// Escape a string for safe use in HTML attribute values and text content
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+// Helper to create a region badge for the SKU table
+function createSkuRegionBadge(region) {
+  var escaped = escapeHtml(region);
+  return '<span class="region-badge" onclick="filterBySkuRegion(\'' + escaped + '\')">' + escaped + '</span>';
 }
 
 // Toggle region badges expansion (for cells with many regions)
@@ -374,6 +406,23 @@ window.toggleRegionBadges = function(btn) {
 
 // Legacy toggle function
 window.toggleRegions = window.toggleRegionBadges;
+
+// Toggle region badges expansion for SKU table
+window.toggleSkuRegionBadges = function(btn) {
+  const span = btn.parentElement;
+  const isExpanded = btn.dataset.expanded === 'true';
+  const previewRegions = span.dataset.previewRegions.split(',');
+  const allRegions = span.dataset.allRegions.split(',');
+
+  if (isExpanded) {
+    const previewBadges = previewRegions.map(createSkuRegionBadge).join(' ');
+    const remaining = allRegions.length - previewRegions.length;
+    span.innerHTML = previewBadges + ' <button class="expand-btn" onclick="toggleSkuRegionBadges(this)">+' + remaining + ' more</button>';
+  } else {
+    const allBadges = allRegions.map(createSkuRegionBadge).join(' ');
+    span.innerHTML = allBadges + ' <button class="expand-btn" onclick="toggleSkuRegionBadges(this)" data-expanded="true">Show less</button>';
+  }
+};
 
 // Re-initialize tables when page changes (for MkDocs instant navigation)
 if (typeof document$ !== 'undefined') {

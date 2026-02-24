@@ -33,11 +33,13 @@ SKU_CATEGORIES = {
                  "Global Standard"],
         "description": "Worldwide availability with intelligent routing",
         "use_case": "Best for applications needing global reach with automatic failover",
+        "compliance": "⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements",
     },
     "Datazone": {
         "skus": ["Datazone standard", "Datazone provisioned managed"],
         "description": "Data residency compliance deployments",
         "use_case": "Required for data sovereignty and compliance requirements (GDPR, etc.)",
+        "compliance": "✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies",
     },
     "Standard": {
         "skus": ["Standard (all)", "Standard GPT-3.5 Turbo", "Standard GPT-4", "Standard audio", 
@@ -45,11 +47,13 @@ SKU_CATEGORIES = {
                  "Standard image generation"],
         "description": "Pay-as-you-go regional deployments",
         "use_case": "Best for variable workloads and cost-sensitive applications",
+        "compliance": "✓ Single-region deployment — HIPAA-eligible in supported regions with a BAA from Microsoft",
     },
     "Provisioned": {
         "skus": ["Provisioned (PTU managed)", "Provisioned global", "Global Provisioned Managed"],
         "description": "Reserved throughput capacity (PTU)",
         "use_case": "Best for predictable, high-volume production workloads",
+        "compliance": "✓ Single-region deployment — HIPAA-eligible in supported regions with a BAA from Microsoft",
     },
 }
 
@@ -64,6 +68,18 @@ def get_sku_category(label: str) -> str:
         if label in info["skus"]:
             return category
     return "Other"
+
+
+def sku_category_badge(cat: str, extra_title: str = "") -> str:
+    """Return an HTML badge for a SKU category with a tooltip from SKU_CATEGORIES."""
+    info = SKU_CATEGORIES.get(cat, {})
+    desc = info.get("description", "")
+    use_case = info.get("use_case", "")
+    compliance = info.get("compliance", "")
+    parts = [p for p in [desc, use_case, compliance] if p]
+    tooltip = " | ".join(parts) if parts else extra_title
+    tooltip_attr = f' data-tooltip="{tooltip}"' if tooltip else (f' title="{extra_title}"' if extra_title else "")
+    return f'<span class="sku-badge sku-{cat.lower()}"{tooltip_attr}>{cat}</span>'
 
 
 def load_snapshot(path: Path) -> Dict[str, dict]:
@@ -753,12 +769,12 @@ def generate_model_index_page(
             elif sku in PROVISIONED_GLOBAL_SKUS:
                 prov_global_regions.update(sku_regions_set)
 
-        # Create SKU category badges — use granular provisioned sub-type badges
+        # Create SKU category badges — tooltip for Global/Datazone/Standard; granular sub-type for Provisioned
         sku_badges = []
         for cat in ['Global', 'Datazone', 'Standard']:
             if cat in cat_regions:
                 region_count = len(cat_regions[cat])
-                sku_badges.append(f'<span class="sku-badge sku-{cat.lower()}" title="{region_count} regions">{cat}</span>')
+                sku_badges.append(sku_category_badge(cat, f"{region_count} regions"))
         if prov_ptu_regions:
             sku_badges.append(f'<span class="sku-badge sku-provisioned" title="{len(prov_ptu_regions)} regions">Prov.PTU</span>')
         if prov_global_regions:
@@ -1123,6 +1139,27 @@ def generate_by_sku_page(
     for label in sorted(all_labels):
         sku_to_category[label] = get_sku_category(label)
 
+    def _sku_region_badge(region: str) -> str:
+        return f'<span class="region-badge" onclick="filterBySkuRegion(\'{region}\')">{region}</span>'
+
+    def _sku_region_cell(regions_set: Set[str]) -> str:
+        if not regions_set:
+            return '-'
+        sorted_regs = sorted(regions_set)
+        count = len(sorted_regs)
+        badges = [_sku_region_badge(r) for r in sorted_regs]
+        if count <= 3:
+            return f'<span class="region-list">{" ".join(badges)}</span>'
+        preview_regions = ",".join(sorted_regs[:3])
+        all_regs_str = ",".join(sorted_regs)
+        preview_badges = " ".join(badges[:3])
+        return (
+            f'<span class="region-list" data-preview-regions="{preview_regions}"'
+            f' data-all-regions="{all_regs_str}">'
+            f'{preview_badges} <button class="expand-btn" onclick="toggleSkuRegionBadges(this)">'
+            f'+{count - 3} more</button></span>'
+        )
+
     # Build flat rows: one per model × SKU combination
     all_rows = []
     sku_model_counts: Dict[str, int] = defaultdict(int)
@@ -1141,12 +1178,13 @@ def generate_by_sku_page(
             category_model_sets[cat].add(model)
 
             regions_str = ", ".join(sorted(regions))
+            regions_cell = _sku_region_cell(regions)
 
             all_rows.append(f"""    <tr>
       <td><a href="../models/{slugify(model)}/"><strong>{model}</strong></a></td>
-      <td><span class="sku-badge sku-{cat.lower()}">{cat}</span></td>
+      <td>{sku_category_badge(cat)}</td>
       <td>{sku_label}</td>
-      <td>{region_count}</td>
+      <td>{regions_cell}</td>
       <td><span class="badge {bucket_class}">{bucket_label}</span></td>
       <td>{pct}%</td>
       <td class="hidden-col">{regions_str}</td>
@@ -1161,6 +1199,9 @@ def generate_by_sku_page(
     sorted_sku_labels = sorted(sku_model_counts.keys())
     sku_options = "\n".join(
         [f'      <option value="{s}">{s}</option>' for s in sorted_sku_labels]
+    )
+    region_options = "\n".join(
+        [f'      <option value="{r}">{r}</option>' for r in sorted(all_regions)]
     )
 
     # Build per-category region sets for the explainer cards
@@ -1227,11 +1268,7 @@ Explore every deployment SKU and discover which models and regions support it.
 
 ## :material-layers-outline: SKU Deployment Types Explained
 
-<div class="grid cards sku-explainer-grid" markdown>
-
--   :material-earth:{{ .lg .middle }} **Global**
-
-    ---
+??? example ":material-earth: Global — Worldwide availability with intelligent routing"
 
     Routes requests intelligently across Azure regions for maximum availability and throughput.
     Data may be processed in any region within the Azure geography.
@@ -1246,9 +1283,10 @@ Explore every deployment SKU and discover which models and regions support it.
     **:material-check-circle-outline: Best for:** Applications needing worldwide reach, automatic
     failover, and maximum uptime across Azure's global network.
 
--   :material-shield-lock-outline:{{ .lg .middle }} **Datazone**
+    **:material-alert-outline: Compliance:** Data may cross region boundaries — not suitable for
+    HIPAA, FedRAMP, or strict data-residency requirements.
 
-    ---
+??? example ":material-shield-lock-outline: Datazone — Data residency compliance deployments"
 
     Keeps data within a specified geographic zone to satisfy compliance and residency policies.
     Choose the zone; Azure handles routing within that boundary.
@@ -1263,9 +1301,10 @@ Explore every deployment SKU and discover which models and regions support it.
     **:material-check-circle-outline: Best for:** GDPR compliance, data sovereignty requirements,
     regulated industries (finance, healthcare, government).
 
--   :material-cash-multiple:{{ .lg .middle }} **Standard**
+    **:material-shield-check-outline: Compliance:** Data stays within the specified geographic zone —
+    supports GDPR and regional data-residency policies.
 
-    ---
+??? example ":material-cash-multiple: Standard — Pay-as-you-go regional deployments"
 
     Pay-as-you-go deployments in a single Azure region with flexible, on-demand scaling.
     No capacity reservation required — you pay only for what you use.
@@ -1280,9 +1319,10 @@ Explore every deployment SKU and discover which models and regions support it.
     **:material-check-circle-outline: Best for:** Variable workloads, development and testing,
     cost-sensitive applications, or when you don't need guaranteed throughput.
 
--   :material-speedometer:{{ .lg .middle }} **Provisioned (PTU)**
+    **:material-shield-check-outline: Compliance:** Single-region deployment — HIPAA-eligible in
+    supported regions with a BAA from Microsoft.
 
-    ---
+??? example ":material-speedometer: Provisioned (PTU) — Reserved throughput capacity"
 
     Reserved throughput units (PTUs) guarantee consistent, high-performance inference at scale.
     Capacity is pre-allocated, so latency and throughput are predictable regardless of platform load.
@@ -1297,26 +1337,27 @@ Explore every deployment SKU and discover which models and regions support it.
     **:material-check-circle-outline: Best for:** High-volume production workloads, latency-sensitive
     applications, or scenarios where consistent throughput is critical.
 
-</div>
+    **:material-shield-check-outline: Compliance:** Single-region deployment — HIPAA-eligible in
+    supported regions with a BAA from Microsoft.
 
 ---
 
-## :material-target: SKU Selection Guide
+??? tip ":material-target: SKU Selection Guide"
 
-| Need | Recommended SKU | Why |
-|------|-----------------|-----|
-| Global reach with failover | **Global** | Automatic routing, high availability |
-| Data residency compliance | **Datazone** | Data stays in specified regions |
-| Cost-effective, variable load | **Standard** | Pay-as-you-go pricing |
-| Predictable high throughput | **Provisioned (PTU)** | Reserved capacity, guaranteed performance |
+    | Need | Recommended SKU | Why |
+    |------|-----------------|-----|
+    | Global reach with failover | **Global** | Automatic routing, high availability |
+    | Data residency compliance | **Datazone** | Data stays in specified regions |
+    | Cost-effective, variable load | **Standard** | Pay-as-you-go pricing |
+    | Predictable high throughput | **Provisioned (PTU)** | Reserved capacity, guaranteed performance |
+    | HIPAA / regulated workloads | **Standard** or **Provisioned** | Single-region; HIPAA-eligible with a Microsoft BAA |
+    | Avoid Global for compliance | ⚠ **Not Global** | Global data routing is incompatible with strict data-residency requirements |
 
----
+??? note ":material-format-list-bulleted-type: SKU Overview"
 
-## :material-format-list-bulleted-type: SKU Overview
-
-| Category | SKU Type | Models | Regions | Coverage |
-|----------|----------|--------|---------|----------|
-{chr(10).join(sku_summary_rows)}
+    | Category | SKU Type | Models | Regions | Coverage |
+    |----------|----------|--------|---------|----------|
+{chr(10).join(['    ' + r for r in sku_summary_rows])}
 
 ---
 
@@ -1354,6 +1395,13 @@ Filter by category, SKU type, or model to find exactly what you need.
       <option value="Strong">Strong (20-24)</option>
       <option value="Growing">Growing (15-19)</option>
       <option value="Emerging">Emerging (&lt;15)</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <label for="sku-region-filter">Region</label>
+    <select id="sku-region-filter" onchange="filterSkuTable()">
+      <option value="">All Regions</option>
+{region_options}
     </select>
   </div>
   <div class="filter-group">
