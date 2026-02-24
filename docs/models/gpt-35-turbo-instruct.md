@@ -10,7 +10,7 @@
 |--------|-------|
 | Total Regions | 2 |
 | Coverage | 7% |
-| SKU Types | 3 |
+| SKU Types | 2 |
 | Categories | Global, Standard |
 
 ---
@@ -37,8 +37,7 @@
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
-| Standard GPT-3.5 Turbo | 2 | 7% |
-| Standard completions | 1 | 4% |
+| Standard | 2 | 7% |
 
 **Available Regions:**
 
@@ -54,11 +53,11 @@ This table shows exactly which SKU types are available in each region.
 <div class="table-responsive">
 <table class="matrix-table">
 <thead>
-<tr><th>Region</th><th>Global coverage</th><th>Standard GPT-3.5 Turbo</th><th>Standard completions</th></tr>
+<tr><th>Region</th><th>Global coverage</th><th>Standard</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>East US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Sweden Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td></tr>
+<tr><td><strong>East US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Sweden Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
 </tbody>
 </table>
 </div>
@@ -67,4 +66,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-02-24 04:54 UTC_
+_Last updated: 2026-02-24 14:58 UTC_
