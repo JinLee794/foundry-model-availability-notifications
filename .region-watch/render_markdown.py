@@ -15,6 +15,24 @@ HISTORY_DIR = HERE / "history"
 OUTPUT_PATH = HERE.parent / "REGION_AVAILABILITY.md"
 DEFAULT_LABEL = "Global coverage"
 
+# Normalize legacy/non-canonical SKU labels to valid Azure AI Foundry deployment type names.
+# Source: https://learn.microsoft.com/azure/ai-foundry/foundry-models/concepts/deployment-types
+SKU_LABEL_NORMALIZATION: Dict[str, str] = {
+    # Legacy model-family-specific Standard labels → canonical "Standard"
+    "Standard (all)": "Standard",
+    "Standard GPT-3.5 Turbo": "Standard",
+    "Standard GPT-4": "Standard",
+    "Standard audio": "Standard",
+    "Standard chat completions": "Standard",
+    "Standard completions": "Standard",
+    "Standard embeddings": "Standard",
+    "Standard image generation": "Standard",
+    # "Standard global deployments" is the Global Standard deployment type
+    "Standard global deployments": "Global Standard",
+    # Normalize alternate casing for Data Zone Standard
+    "Data Zone Standard": "Datazone standard",
+}
+
 # Buckets are evaluated in order; the first threshold that matches wins.
 BUCKETS: Sequence[Tuple[int, str, str]] = (
     (25, "🟢 Broad", "25+ regions available"),
@@ -142,6 +160,7 @@ def build_model_index(
 
         for sku_name, sku in payload.get("skus", {}).items():
             label = sku.get("label") or sku_name
+            label = SKU_LABEL_NORMALIZATION.get(label, label)
             all_labels.add(label)
             for region in sku.get("regions", []):
                 model_regions[model].add(region)

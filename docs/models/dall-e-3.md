@@ -28,7 +28,7 @@
 |--------|-------|
 | Total Regions | 3 |
 | Coverage | 11% |
-| SKU Types | 3 |
+| SKU Types | 2 |
 | Categories | Global, Standard |
 
 ---
@@ -55,8 +55,7 @@
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
-| Standard (all) | 3 | 11% |
-| Standard image generation | 3 | 11% |
+| Standard | 3 | 11% |
 
 **Available Regions:**
 
@@ -72,12 +71,12 @@ This table shows exactly which SKU types are available in each region.
 <div class="table-responsive">
 <table class="matrix-table">
 <thead>
-<tr><th>Region</th><th>Global coverage</th><th>Standard (all)</th><th>Standard image generation</th></tr>
+<tr><th>Region</th><th>Global coverage</th><th>Standard</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Australia East</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>East US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Sweden Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Australia East</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>East US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Sweden Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
 </tbody>
 </table>
 </div>
@@ -86,4 +85,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-02-24 04:54 UTC_
+_Last updated: 2026-02-24 14:58 UTC_

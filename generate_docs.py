@@ -26,11 +26,28 @@ BUCKETS: List[Tuple[int, str, str, str]] = [
     (0, "Emerging", "badge-emerging", "Under 15 regions"),
 ]
 
+# Normalize legacy/non-canonical SKU labels to valid Azure AI Foundry deployment type names.
+# Source: https://learn.microsoft.com/azure/ai-foundry/foundry-models/concepts/deployment-types
+SKU_LABEL_NORMALIZATION: Dict[str, str] = {
+    # Legacy model-family-specific Standard labels → canonical "Standard"
+    "Standard (all)": "Standard",
+    "Standard GPT-3.5 Turbo": "Standard",
+    "Standard GPT-4": "Standard",
+    "Standard audio": "Standard",
+    "Standard chat completions": "Standard",
+    "Standard completions": "Standard",
+    "Standard embeddings": "Standard",
+    "Standard image generation": "Standard",
+    # "Standard global deployments" is the Global Standard deployment type
+    "Standard global deployments": "Global Standard",
+    # Normalize alternate casing for Data Zone Standard
+    "Data Zone Standard": "Datazone standard",
+}
+
 # SKU category mapping with descriptions
 SKU_CATEGORIES = {
     "Global": {
-        "skus": ["Global coverage", "Global batch", "Global batch datazone", "Standard global deployments",
-                 "Global Standard"],
+        "skus": ["Global coverage", "Global batch", "Global batch datazone", "Global Standard"],
         "description": "Worldwide availability with intelligent routing",
         "use_case": "Best for applications needing global reach with automatic failover",
         "compliance": "⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements",
@@ -42,9 +59,7 @@ SKU_CATEGORIES = {
         "compliance": "✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies",
     },
     "Standard": {
-        "skus": ["Standard (all)", "Standard GPT-3.5 Turbo", "Standard GPT-4", "Standard audio", 
-                 "Standard chat completions", "Standard completions", "Standard embeddings",
-                 "Standard image generation"],
+        "skus": ["Standard"],
         "description": "Pay-as-you-go regional deployments",
         "use_case": "Best for variable workloads and cost-sensitive applications",
         "compliance": "✓ Single-region deployment — HIPAA-eligible in supported regions with a BAA from Microsoft",
@@ -192,6 +207,7 @@ def build_model_index(data: Dict[str, dict]) -> Tuple[
 
         for sku_name, sku in payload.get("skus", {}).items():
             label = sku.get("label") or sku_name
+            label = SKU_LABEL_NORMALIZATION.get(label, label)
             all_labels.add(label)
             for region in sku.get("regions", []):
                 model_regions[model].add(region)
