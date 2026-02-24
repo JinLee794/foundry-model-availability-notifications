@@ -21,11 +21,7 @@ Explore every deployment SKU and discover which models and regions support it.
 
 ## :material-layers-outline: SKU Deployment Types Explained
 
-<div class="grid cards sku-explainer-grid" markdown>
-
--   :material-earth:{ .lg .middle } **Global**
-
-    ---
+??? example ":material-earth: Global — Worldwide availability with intelligent routing"
 
     Routes requests intelligently across Azure regions for maximum availability and throughput.
     Data may be processed in any region within the Azure geography.
@@ -43,9 +39,7 @@ Explore every deployment SKU and discover which models and regions support it.
     **:material-alert-outline: Compliance:** Data may cross region boundaries — not suitable for
     HIPAA, FedRAMP, or strict data-residency requirements.
 
--   :material-shield-lock-outline:{ .lg .middle } **Datazone**
-
-    ---
+??? example ":material-shield-lock-outline: Datazone — Data residency compliance deployments"
 
     Keeps data within a specified geographic zone to satisfy compliance and residency policies.
     Choose the zone; Azure handles routing within that boundary.
@@ -63,9 +57,7 @@ Explore every deployment SKU and discover which models and regions support it.
     **:material-shield-check-outline: Compliance:** Data stays within the specified geographic zone —
     supports GDPR and regional data-residency policies.
 
--   :material-cash-multiple:{ .lg .middle } **Standard**
-
-    ---
+??? example ":material-cash-multiple: Standard — Pay-as-you-go regional deployments"
 
     Pay-as-you-go deployments in a single Azure region with flexible, on-demand scaling.
     No capacity reservation required — you pay only for what you use.
@@ -83,9 +75,7 @@ Explore every deployment SKU and discover which models and regions support it.
     **:material-shield-check-outline: Compliance:** Single-region deployment — HIPAA-eligible in
     supported regions with a BAA from Microsoft.
 
--   :material-speedometer:{ .lg .middle } **Provisioned (PTU)**
-
-    ---
+??? example ":material-speedometer: Provisioned (PTU) — Reserved throughput capacity"
 
     Reserved throughput units (PTUs) guarantee consistent, high-performance inference at scale.
     Capacity is pre-allocated, so latency and throughput are predictable regardless of platform load.
@@ -102,8 +92,6 @@ Explore every deployment SKU and discover which models and regions support it.
 
     **:material-shield-check-outline: Compliance:** Single-region deployment — HIPAA-eligible in
     supported regions with a BAA from Microsoft.
-
-</div>
 
 ---
 
@@ -3340,4 +3328,4 @@ Filter by category, SKU type, or model to find exactly what you need.
 
 ---
 
-_Last updated: 2026-02-23 23:54 UTC_
+_Last updated: 2026-02-24 00:05 UTC_
