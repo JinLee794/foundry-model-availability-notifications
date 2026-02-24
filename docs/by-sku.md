@@ -95,43 +95,41 @@ Explore every deployment SKU and discover which models and regions support it.
 
 ---
 
-## :material-target: SKU Selection Guide
+??? tip ":material-target: SKU Selection Guide"
 
-| Need | Recommended SKU | Why |
-|------|-----------------|-----|
-| Global reach with failover | **Global** | Automatic routing, high availability |
-| Data residency compliance | **Datazone** | Data stays in specified regions |
-| Cost-effective, variable load | **Standard** | Pay-as-you-go pricing |
-| Predictable high throughput | **Provisioned (PTU)** | Reserved capacity, guaranteed performance |
-| HIPAA / regulated workloads | **Standard** or **Provisioned** | Single-region; HIPAA-eligible with a Microsoft BAA |
-| Avoid Global for compliance | ⚠ **Not Global** | Global data routing is incompatible with strict data-residency requirements |
+    | Need | Recommended SKU | Why |
+    |------|-----------------|-----|
+    | Global reach with failover | **Global** | Automatic routing, high availability |
+    | Data residency compliance | **Datazone** | Data stays in specified regions |
+    | Cost-effective, variable load | **Standard** | Pay-as-you-go pricing |
+    | Predictable high throughput | **Provisioned (PTU)** | Reserved capacity, guaranteed performance |
+    | HIPAA / regulated workloads | **Standard** or **Provisioned** | Single-region; HIPAA-eligible with a Microsoft BAA |
+    | Avoid Global for compliance | ⚠ **Not Global** | Global data routing is incompatible with strict data-residency requirements |
 
----
+??? note ":material-format-list-bulleted-type: SKU Overview"
 
-## :material-format-list-bulleted-type: SKU Overview
-
-| Category | SKU Type | Models | Regions | Coverage |
-|----------|----------|--------|---------|----------|
-| <span class="sku-badge sku-global">Global</span> | Global batch | 10 | 22 | 79% |
-| <span class="sku-badge sku-global">Global</span> | Global batch datazone | 10 | 12 | 43% |
-| <span class="sku-badge sku-global">Global</span> | Global coverage | 111 | 28 | 100% |
-| <span class="sku-badge sku-global">Global</span> | Standard global deployments | 48 | 28 | 100% |
-| <span class="sku-badge sku-datazone">Datazone</span> | Datazone provisioned managed | 13 | 13 | 46% |
-| <span class="sku-badge sku-datazone">Datazone</span> | Datazone standard | 18 | 14 | 50% |
-| <span class="sku-badge sku-standard">Standard</span> | Standard (all) | 15 | 25 | 89% |
-| <span class="sku-badge sku-standard">Standard</span> | Standard GPT-3.5 Turbo | 3 | 15 | 54% |
-| <span class="sku-badge sku-standard">Standard</span> | Standard GPT-4 | 4 | 15 | 54% |
-| <span class="sku-badge sku-standard">Standard</span> | Standard audio | 3 | 8 | 29% |
-| <span class="sku-badge sku-standard">Standard</span> | Standard chat completions | 6 | 15 | 54% |
-| <span class="sku-badge sku-standard">Standard</span> | Standard completions | 1 | 1 | 4% |
-| <span class="sku-badge sku-standard">Standard</span> | Standard embeddings | 3 | 21 | 75% |
-| <span class="sku-badge sku-standard">Standard</span> | Standard image generation | 4 | 8 | 29% |
-| <span class="sku-badge sku-provisioned">Provisioned</span> | Provisioned (PTU managed) | 14 | 27 | 96% |
-| <span class="sku-badge sku-provisioned">Provisioned</span> | Provisioned global | 14 | 28 | 100% |
-| <span class="sku-badge sku-other">Other</span> | Data Zone Standard | 5 | 16 | 57% |
-| <span class="sku-badge sku-other">Other</span> | Global Provisioned Managed | 3 | 25 | 89% |
-| <span class="sku-badge sku-other">Other</span> | Global Standard | 16 | 25 | 89% |
-| <span class="sku-badge sku-other">Other</span> | Region Availability Maas | 41 | 7 | 25% |
+    | Category | SKU Type | Models | Regions | Coverage |
+    |----------|----------|--------|---------|----------|
+    | <span class="sku-badge sku-global">Global</span> | Global batch | 10 | 22 | 79% |
+    | <span class="sku-badge sku-global">Global</span> | Global batch datazone | 10 | 12 | 43% |
+    | <span class="sku-badge sku-global">Global</span> | Global coverage | 111 | 28 | 100% |
+    | <span class="sku-badge sku-global">Global</span> | Standard global deployments | 48 | 28 | 100% |
+    | <span class="sku-badge sku-datazone">Datazone</span> | Datazone provisioned managed | 13 | 13 | 46% |
+    | <span class="sku-badge sku-datazone">Datazone</span> | Datazone standard | 18 | 14 | 50% |
+    | <span class="sku-badge sku-standard">Standard</span> | Standard (all) | 15 | 25 | 89% |
+    | <span class="sku-badge sku-standard">Standard</span> | Standard GPT-3.5 Turbo | 3 | 15 | 54% |
+    | <span class="sku-badge sku-standard">Standard</span> | Standard GPT-4 | 4 | 15 | 54% |
+    | <span class="sku-badge sku-standard">Standard</span> | Standard audio | 3 | 8 | 29% |
+    | <span class="sku-badge sku-standard">Standard</span> | Standard chat completions | 6 | 15 | 54% |
+    | <span class="sku-badge sku-standard">Standard</span> | Standard completions | 1 | 1 | 4% |
+    | <span class="sku-badge sku-standard">Standard</span> | Standard embeddings | 3 | 21 | 75% |
+    | <span class="sku-badge sku-standard">Standard</span> | Standard image generation | 4 | 8 | 29% |
+    | <span class="sku-badge sku-provisioned">Provisioned</span> | Provisioned (PTU managed) | 14 | 27 | 96% |
+    | <span class="sku-badge sku-provisioned">Provisioned</span> | Provisioned global | 14 | 28 | 100% |
+    | <span class="sku-badge sku-other">Other</span> | Data Zone Standard | 5 | 16 | 57% |
+    | <span class="sku-badge sku-other">Other</span> | Global Provisioned Managed | 3 | 25 | 89% |
+    | <span class="sku-badge sku-other">Other</span> | Global Standard | 16 | 25 | 89% |
+    | <span class="sku-badge sku-other">Other</span> | Region Availability Maas | 41 | 7 | 25% |
 
 ---
 
@@ -3328,4 +3326,4 @@ Filter by category, SKU type, or model to find exactly what you need.
 
 ---
 
-_Last updated: 2026-02-24 00:05 UTC_
+_Last updated: 2026-02-24 00:17 UTC_

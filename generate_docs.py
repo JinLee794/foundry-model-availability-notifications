@@ -1321,24 +1321,22 @@ Explore every deployment SKU and discover which models and regions support it.
 
 ---
 
-## :material-target: SKU Selection Guide
+??? tip ":material-target: SKU Selection Guide"
 
-| Need | Recommended SKU | Why |
-|------|-----------------|-----|
-| Global reach with failover | **Global** | Automatic routing, high availability |
-| Data residency compliance | **Datazone** | Data stays in specified regions |
-| Cost-effective, variable load | **Standard** | Pay-as-you-go pricing |
-| Predictable high throughput | **Provisioned (PTU)** | Reserved capacity, guaranteed performance |
-| HIPAA / regulated workloads | **Standard** or **Provisioned** | Single-region; HIPAA-eligible with a Microsoft BAA |
-| Avoid Global for compliance | ⚠ **Not Global** | Global data routing is incompatible with strict data-residency requirements |
+    | Need | Recommended SKU | Why |
+    |------|-----------------|-----|
+    | Global reach with failover | **Global** | Automatic routing, high availability |
+    | Data residency compliance | **Datazone** | Data stays in specified regions |
+    | Cost-effective, variable load | **Standard** | Pay-as-you-go pricing |
+    | Predictable high throughput | **Provisioned (PTU)** | Reserved capacity, guaranteed performance |
+    | HIPAA / regulated workloads | **Standard** or **Provisioned** | Single-region; HIPAA-eligible with a Microsoft BAA |
+    | Avoid Global for compliance | ⚠ **Not Global** | Global data routing is incompatible with strict data-residency requirements |
 
----
+??? note ":material-format-list-bulleted-type: SKU Overview"
 
-## :material-format-list-bulleted-type: SKU Overview
-
-| Category | SKU Type | Models | Regions | Coverage |
-|----------|----------|--------|---------|----------|
-{chr(10).join(sku_summary_rows)}
+    | Category | SKU Type | Models | Regions | Coverage |
+    |----------|----------|--------|---------|----------|
+{chr(10).join(['    ' + r for r in sku_summary_rows])}
 
 ---
 
