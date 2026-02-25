@@ -11,7 +11,7 @@
 | Total Regions | 25 |
 | Coverage | 89% |
 | SKU Types | 3 |
-| Categories | Global, Other |
+| Categories | Datazone, Global |
 
 ---
 
@@ -31,14 +31,14 @@
 
 `Australia East`, `Brazil South`, `Canada East`, `East US`, `East US 2`, `France Central`, `Germany West Central`, `Italy North`, `Japan East`, `Korea Central`, `North Central US`, `Norway East`, `Poland Central`, `South Africa North`, `South Central US`, `South India`, `Spain Central`, `Sweden Central`, `Switzerland North`, `Switzerland West`, `UAE North`, `UK South`, `West Europe`, `West US`, `West US 3`
 
-### Other Deployments
+### Datazone Deployments
 
 !!! tip "Use Case"
-    
+    Required for data sovereignty and compliance requirements (GDPR, etc.)
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
-| Data Zone Standard | 6 | 21% |
+| Datazone standard | 6 | 21% |
 
 **Available Regions:**
 
@@ -54,7 +54,7 @@ This table shows exactly which SKU types are available in each region.
 <div class="table-responsive">
 <table class="matrix-table">
 <thead>
-<tr><th>Region</th><th>Data Zone Standard</th><th>Global Standard</th><th>Global coverage</th></tr>
+<tr><th>Region</th><th>Datazone standard</th><th>Global Standard</th><th>Global coverage</th></tr>
 </thead>
 <tbody>
 <tr><td><strong>Australia East</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
@@ -90,4 +90,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-02-24 04:54 UTC_
+_Last updated: 2026-02-25 19:41 UTC_

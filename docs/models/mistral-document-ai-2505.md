@@ -11,7 +11,7 @@
 | Total Regions | 25 |
 | Coverage | 89% |
 | SKU Types | 4 |
-| Categories | Global, Other |
+| Categories | Datazone, Global, Other |
 
 ---
 
@@ -31,6 +31,19 @@
 
 `Australia East`, `Brazil South`, `Canada East`, `East US`, `East US 2`, `France Central`, `Germany West Central`, `Italy North`, `Japan East`, `Korea Central`, `North Central US`, `Norway East`, `Poland Central`, `South Africa North`, `South Central US`, `South India`, `Spain Central`, `Sweden Central`, `Switzerland North`, `Switzerland West`, `UAE North`, `UK South`, `West Europe`, `West US`, `West US 3`
 
+### Datazone Deployments
+
+!!! tip "Use Case"
+    Required for data sovereignty and compliance requirements (GDPR, etc.)
+
+| SKU Type | Regions | Coverage |
+|----------|---------|----------|
+| Datazone standard | 16 | 57% |
+
+**Available Regions:**
+
+`East US`, `East US 2`, `France Central`, `Germany West Central`, `Italy North`, `North Central US`, `Norway East`, `Poland Central`, `South Central US`, `Spain Central`, `Sweden Central`, `Switzerland North`, `Switzerland West`, `West Europe`, `West US`, `West US 3`
+
 ### Other Deployments
 
 !!! tip "Use Case"
@@ -38,12 +51,11 @@
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
-| Data Zone Standard | 16 | 57% |
 | Region Availability Maas | 2 | 7% |
 
 **Available Regions:**
 
-`East US`, `East US 2`, `France Central`, `Germany West Central`, `Italy North`, `North Central US`, `Norway East`, `Poland Central`, `South Central US`, `Spain Central`, `Sweden Central`, `Switzerland North`, `Switzerland West`, `West Europe`, `West US`, `West US 3`
+`East US 2`, `Sweden Central`
 
 
 ---
@@ -55,7 +67,7 @@ This table shows exactly which SKU types are available in each region.
 <div class="table-responsive">
 <table class="matrix-table">
 <thead>
-<tr><th>Region</th><th>Data Zone Standard</th><th>Global Standard</th><th>Global coverage</th><th>Region Availability Maas</th></tr>
+<tr><th>Region</th><th>Datazone standard</th><th>Global Standard</th><th>Global coverage</th><th>Region Availability Maas</th></tr>
 </thead>
 <tbody>
 <tr><td><strong>Australia East</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td></tr>
@@ -91,4 +103,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-02-24 04:54 UTC_
+_Last updated: 2026-02-25 19:41 UTC_
