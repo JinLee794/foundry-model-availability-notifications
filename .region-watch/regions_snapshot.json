@@ -4032,6 +4032,21 @@
       }
     }
   },
+  "gpt-realtime-1.5": {
+    "all": [
+      "East US 2",
+      "Sweden Central"
+    ],
+    "skus": {
+      "standard-global": {
+        "label": "Standard global deployments",
+        "regions": [
+          "East US 2",
+          "Sweden Central"
+        ]
+      }
+    }
+  },
   "gpt-realtime-mini": {
     "all": [
       "Central US",

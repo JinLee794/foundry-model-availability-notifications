@@ -1,8 +1,8 @@
 # AI Foundry Model Availability by Region
 
-_Last updated: 2026-02-24 14:58 UTC_
+_Last updated: 2026-02-25 07:52 UTC_
 
-- Models tracked: **111**
+- Models tracked: **112**
 - Regions in snapshot: **28**
 - Distinct SKU labels: **11**
 
@@ -135,6 +135,7 @@ SKU labels observed:
 | gpt-5.1-codex-max | 🔴 Emerging | 2 | 2 (Global Standard, Global coverage) | `East US 2`, `Sweden Central` |
 | gpt-5.2-chat | 🔴 Emerging | 2 | 2 (Global Standard, Global coverage) | `East US 2`, `Sweden Central` |
 | gpt-5.2-codex | 🔴 Emerging | 2 | 2 (Global Standard, Global coverage) | `East US 2`, `Sweden Central` |
+| gpt-realtime-1.5 | 🔴 Emerging | 2 | 2 (Global Standard, Global coverage) | `East US 2`, `Sweden Central` |
 | model-router | 🔴 Emerging | 2 | 3 (Datazone standard, Global Standard, Global coverage) | `East US 2`, `Sweden Central` |
 | o3-deep-research | 🔴 Emerging | 2 | 2 (Global Standard, Global coverage) | `Norway East`, `West US` |
 | sora | 🔴 Emerging | 2 | 3 (Global Standard, Global coverage, Standard) | `East US 2`, `Sweden Central` |
@@ -1934,6 +1935,13 @@ SKU labels observed:
 
 </details>
 <details>
+<summary>gpt-realtime-1.5 — 2 regions across 2 SKU labels</summary>
+
+- `East US 2` — Global Standard, Global coverage
+- `Sweden Central` — Global Standard, Global coverage
+
+</details>
+<details>
 <summary>model-router — 2 regions across 3 SKU labels</summary>
 
 - `East US 2` — Datazone standard, Global Standard, Global coverage
@@ -1970,6 +1978,7 @@ SKU labels observed:
 
 ## Recent changes
 
+- **2026-02-25 07:52 UTC** — gpt-realtime-1.5: Global coverage added East US 2 and Sweden Central; Standard global deployments added East US 2 and Sweden Central
 - **2026-02-18 07:51 UTC** — Claude Sonnet 4.6 (preview): Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central
 - **2026-02-12 07:53 UTC** — text-embedding-3-large: Datazone standard added France Central, Germany West Central, Italy North, Poland Central, Spain Central, Sweden Central, and West Europe | text-embedding-3-small: Datazone standard added France Central, Germany West Central, Italy North, Poland Central, Spain Central, Sweden Central, and West Europe | text-embedding-ada-002: Datazone standard added France Central, Germany West Central, Italy North, Poland Central, Spain Central, Sweden Central, and West Europe
 - **2026-02-06 07:48 UTC** — Claude Opus 4.6 (preview): Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central
