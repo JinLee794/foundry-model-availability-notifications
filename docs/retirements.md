@@ -43,6 +43,14 @@ Plan your migrations for these models.
 | [gpt-4o](./models/gpt-4o/) | 2024-08-06 | Text Generation | 2026-03-31 | <span class="badge badge-retiring">Retiring</span> | [gpt-5.1](./models/gpt-5-1/) (28 regions) |
 | [gpt-4o-mini](./models/gpt-4o-mini/) | 2024-07-18 | Text Generation | 2026-03-31 | <span class="badge badge-retiring">Retiring</span> | [gpt-4.1-mini](./models/gpt-4-1-mini/) (28 regions) |
 
+!!! note "gpt-4o and gpt-4o-mini Retirement Update"
+    The retirement dates for **gpt-4o** and **gpt-4o-mini** vary by deployment type:
+
+    - **Standard**: Retires on **2026-03-31**. Auto-upgrades are scheduled to begin on **2026-03-09**.
+    - **All Provisioned, Global Standard, and Data Zone Standard**: Retirement date has been moved to **2026-10-01**.
+
+    For more details, see the [Azure AI Foundry model retirements documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/model-retirements?view=foundry-classic&tabs=text).
+
 
 ## :material-calendar-clock: All Scheduled Retirements
 
