@@ -35,8 +35,8 @@
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
+| Global Standard | 8 | 29% |
 | Global coverage | 10 | 36% |
-| Standard global deployments | 8 | 29% |
 
 **Available Regions:**
 
@@ -78,19 +78,19 @@ This table shows exactly which SKU types are available in each region.
 <div class="table-responsive">
 <table class="matrix-table">
 <thead>
-<tr><th>Region</th><th>Datazone provisioned managed</th><th>Global coverage</th><th>Provisioned global</th><th>Standard global deployments</th></tr>
+<tr><th>Region</th><th>Datazone provisioned managed</th><th>Global Standard</th><th>Global coverage</th><th>Provisioned global</th></tr>
 </thead>
 <tbody>
 <tr><td><strong>Australia East</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
 <tr><td><strong>Canada East</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Central US</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td></tr>
+<tr><td><strong>Central US</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
 <tr><td><strong>East US 2</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
 <tr><td><strong>Japan East</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
 <tr><td><strong>Korea Central</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Sweden Central</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Sweden Central</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td></tr>
 <tr><td><strong>Switzerland North</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
 <tr><td><strong>UK South</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>West Europe</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td></tr>
+<tr><td><strong>West Europe</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
 </tbody>
 </table>
 </div>
@@ -99,4 +99,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-02-24 04:54 UTC_
+_Last updated: 2026-02-25 19:41 UTC_

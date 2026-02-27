@@ -35,8 +35,8 @@
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
+| Global Standard | 26 | 93% |
 | Global coverage | 26 | 93% |
-| Standard global deployments | 26 | 93% |
 
 **Available Regions:**
 
@@ -65,7 +65,7 @@ This table shows exactly which SKU types are available in each region.
 <div class="table-responsive">
 <table class="matrix-table">
 <thead>
-<tr><th>Region</th><th>Datazone standard</th><th>Global coverage</th><th>Standard global deployments</th></tr>
+<tr><th>Region</th><th>Datazone standard</th><th>Global Standard</th><th>Global coverage</th></tr>
 </thead>
 <tbody>
 <tr><td><strong>Australia East</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
@@ -102,4 +102,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-02-24 04:54 UTC_
+_Last updated: 2026-02-25 19:41 UTC_

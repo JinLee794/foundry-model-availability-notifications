@@ -36,8 +36,8 @@
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
+| Global Standard | 1 | 4% |
 | Global coverage | 1 | 4% |
-| Standard global deployments | 1 | 4% |
 
 **Available Regions:**
 
@@ -53,7 +53,7 @@ This table shows exactly which SKU types are available in each region.
 <div class="table-responsive">
 <table class="matrix-table">
 <thead>
-<tr><th>Region</th><th>Global coverage</th><th>Standard global deployments</th></tr>
+<tr><th>Region</th><th>Global Standard</th><th>Global coverage</th></tr>
 </thead>
 <tbody>
 <tr><td><strong>East US 2</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
@@ -65,4 +65,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-02-24 04:54 UTC_
+_Last updated: 2026-02-25 19:41 UTC_

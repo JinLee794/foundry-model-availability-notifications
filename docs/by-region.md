@@ -12,11 +12,11 @@ Find which AI models are available in your Azure region, including their deploym
     <div class="stat-label">Regions</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value">111</div>
+    <div class="stat-value">112</div>
     <div class="stat-label">Models</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value">1269</div>
+    <div class="stat-value">1271</div>
     <div class="stat-label">Deployments</div>
   </div>
 </div>
@@ -1966,6 +1966,12 @@ Find which AI models are available in your Azure region, including their deploym
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-realtime/">gpt-realtime</a></td>
+      <td>Global</td>
+      <td>Global Standard, Global coverage</td>
+    </tr>
+    <tr>
+      <td><strong>East US 2</strong></td>
+      <td><a href="../models/gpt-realtime-1-5/">gpt-realtime-1.5</a></td>
       <td>Global</td>
       <td>Global Standard, Global coverage</td>
     </tr>
@@ -5643,6 +5649,12 @@ Find which AI models are available in your Azure region, including their deploym
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
+      <td><a href="../models/gpt-realtime-1-5/">gpt-realtime-1.5</a></td>
+      <td>Global</td>
+      <td>Global Standard, Global coverage</td>
+    </tr>
+    <tr>
+      <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-realtime-mini/">gpt-realtime-mini</a></td>
       <td>Global</td>
       <td>Global Standard, Global coverage</td>
@@ -7711,4 +7723,4 @@ Find which AI models are available in your Azure region, including their deploym
 
 ---
 
-_Last updated: 2026-02-24 14:58 UTC_
+_Last updated: 2026-02-25 19:41 UTC_
