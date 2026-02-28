@@ -1,5 +1,4 @@
 {
-  "timestamp": "2026-02-28T07:28:21.603102+00:00",
   "changes": {
     "Claude Haiku 4.5 (preview)": {
       "all": {
@@ -9,18 +8,18 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US 2",
             "Sweden Central"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Claude Opus 4.1 (preview)": {
       "all": {
@@ -30,18 +29,18 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US 2",
             "Sweden Central"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Claude Opus 4.5 (preview)": {
       "all": {
@@ -51,18 +50,18 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US 2",
             "Sweden Central"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Claude Opus 4.6 (preview)": {
       "all": {
@@ -72,18 +71,18 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US 2",
             "Sweden Central"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Claude Sonnet 4.5 (preview)": {
       "all": {
@@ -93,18 +92,18 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US 2",
             "Sweden Central"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Claude Sonnet 4.6 (preview)": {
       "all": {
@@ -114,18 +113,18 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US 2",
             "Sweden Central"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Codestral-2501": {
       "all": {
@@ -140,10 +139,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -155,8 +155,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Cohere Command R 08-2024": {
       "all": {
@@ -171,10 +170,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -186,8 +186,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Cohere Command R+ 08-2024": {
       "all": {
@@ -202,10 +201,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -217,8 +217,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Cohere Embed v3 - English": {
       "all": {
@@ -233,10 +232,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -248,8 +248,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Cohere Embed v3 - Multilingual": {
       "all": {
@@ -264,10 +263,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -279,8 +279,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Cohere Rerank v3.5": {
       "all": {
@@ -295,10 +294,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -310,8 +310,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "DeepSeek-R1": {
       "all": {
@@ -344,10 +343,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "global-provisioned-managed": {
-          "label": "Global Provisioned Managed",
           "added": [],
+          "label": "Global Provisioned Managed",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -378,8 +378,8 @@
           "sku_removed": true
         },
         "global-standard": {
-          "label": "Global Standard",
           "added": [],
+          "label": "Global Standard",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -410,8 +410,8 @@
           "sku_removed": true
         },
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -422,8 +422,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "DeepSeek-R1-0528": {
       "all": {
@@ -456,10 +455,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "global-provisioned-managed": {
-          "label": "Global Provisioned Managed",
           "added": [],
+          "label": "Global Provisioned Managed",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -490,8 +490,8 @@
           "sku_removed": true
         },
         "global-standard": {
-          "label": "Global Standard",
           "added": [],
+          "label": "Global Standard",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -521,8 +521,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "DeepSeek-V3-0324": {
       "all": {
@@ -555,10 +554,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "global-provisioned-managed": {
-          "label": "Global Provisioned Managed",
           "added": [],
+          "label": "Global Provisioned Managed",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -589,8 +589,8 @@
           "sku_removed": true
         },
         "global-standard": {
-          "label": "Global Standard",
           "added": [],
+          "label": "Global Standard",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -621,8 +621,8 @@
           "sku_removed": true
         },
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -633,8 +633,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "DeepSeek-V3.1": {
       "all": {
@@ -667,10 +666,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "global-standard": {
-          "label": "Global Standard",
           "added": [],
+          "label": "Global Standard",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -700,8 +700,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "FLUX-1.1-pro": {
       "all": {
@@ -734,10 +733,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "global-standard": {
-          "label": "Global Standard",
           "added": [],
+          "label": "Global Standard",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -767,8 +767,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "FLUX.1-Kontext-pro": {
       "all": {
@@ -801,10 +800,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "global-standard": {
-          "label": "Global Standard",
           "added": [],
+          "label": "Global Standard",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -834,8 +834,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Llama 3.1 405B Instruct": {
       "all": {
@@ -849,10 +848,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -863,8 +863,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Llama 3.1 8B Instruct": {
       "all": {
@@ -879,10 +878,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -894,8 +894,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Llama 3.3 70B Instruct": {
       "all": {
@@ -910,10 +909,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -925,8 +925,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Llama-3.2-11B-Vision-Instruct": {
       "all": {
@@ -941,10 +940,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -956,8 +956,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Llama-3.2-1B": {
       "all": {
@@ -972,10 +971,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -987,8 +987,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Llama-3.2-1B-Instruct": {
       "all": {
@@ -1003,10 +1002,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -1018,8 +1018,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Llama-3.2-3B": {
       "all": {
@@ -1034,10 +1033,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -1049,8 +1049,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Llama-3.2-3B-Instruct": {
       "all": {
@@ -1065,10 +1064,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -1080,8 +1080,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Llama-3.2-90B-Vision-Instruct": {
       "all": {
@@ -1096,10 +1095,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -1111,8 +1111,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Llama-3.3-70B-Instruct": {
       "all": {
@@ -1145,10 +1144,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "global-standard": {
-          "label": "Global Standard",
           "added": [],
+          "label": "Global Standard",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -1179,8 +1179,8 @@
           "sku_removed": true
         },
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -1192,8 +1192,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Llama-4-Maverick-17B-128E-Instruct-FP8": {
       "all": {
@@ -1226,10 +1225,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "global-standard": {
-          "label": "Global Standard",
           "added": [],
+          "label": "Global Standard",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -1259,8 +1259,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Llama-Guard-3-11B-Vision": {
       "all": {
@@ -1275,10 +1274,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -1290,8 +1290,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Llama-Guard-3-1B": {
       "all": {
@@ -1306,10 +1305,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -1321,8 +1321,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "MAI-DS-R1": {
       "all": {
@@ -1355,10 +1354,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "global-standard": {
-          "label": "Global Standard",
           "added": [],
+          "label": "Global Standard",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -1389,8 +1389,8 @@
           "sku_removed": true
         },
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -1401,8 +1401,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Ministral-3B": {
       "all": {
@@ -1417,10 +1416,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -1432,8 +1432,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Mistral Medium 3 (25.05)": {
       "all": {
@@ -1448,10 +1447,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -1463,8 +1463,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Mistral Small 25.03": {
       "all": {
@@ -1479,10 +1478,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -1494,8 +1494,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Phi-4": {
       "all": {
@@ -1510,10 +1509,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -1525,8 +1525,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Phi-4-mini-instruct": {
       "all": {
@@ -1541,10 +1540,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -1556,8 +1556,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Phi-4-mini-reasoning": {
       "all": {
@@ -1571,10 +1570,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -1585,8 +1585,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Phi-4-multimodal-instruct": {
       "all": {
@@ -1601,10 +1600,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -1616,8 +1616,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Phi-4-reasoning": {
       "all": {
@@ -1631,10 +1630,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -1645,8 +1645,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Stable Diffusion 3.5 Large": {
       "all": {
@@ -1660,10 +1659,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -1674,8 +1674,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Stable Image Core": {
       "all": {
@@ -1689,10 +1688,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -1703,8 +1703,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "Stable Image Ultra": {
       "all": {
@@ -1718,10 +1717,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -1732,8 +1732,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "TimeGEN-1": {
       "all": {
@@ -1748,10 +1747,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -1763,8 +1763,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "codex-mini": {
       "all": {
@@ -1775,10 +1774,11 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Central US",
             "East US 2",
@@ -1786,8 +1786,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "computer-use-preview": {
       "all": {
@@ -1798,10 +1797,11 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "East US 2",
             "South India",
@@ -1809,8 +1809,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "dall-e-3": {
       "all": {
@@ -1821,10 +1820,11 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-image-generation": {
-          "label": "Standard image generation",
           "added": [],
+          "label": "Standard image generation",
           "removed": [
             "Australia East",
             "East US",
@@ -1833,8 +1833,8 @@
           "sku_removed": true
         },
         "standard-models": {
-          "label": "Standard (all)",
           "added": [],
+          "label": "Standard (all)",
           "removed": [
             "Australia East",
             "East US",
@@ -1842,8 +1842,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-35-turbo": {
       "all": {
@@ -1876,10 +1875,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "provisioned-models": {
-          "label": "Provisioned (PTU managed)",
           "added": [],
+          "label": "Provisioned (PTU managed)",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -1909,8 +1909,8 @@
           "sku_removed": true
         },
         "standard-chat-completions": {
-          "label": "Standard chat completions",
           "added": [],
+          "label": "Standard chat completions",
           "removed": [
             "Australia East",
             "Canada East",
@@ -1930,8 +1930,8 @@
           "sku_removed": true
         },
         "standard-gpt-35-turbo": {
-          "label": "Standard GPT-3.5 Turbo",
           "added": [],
+          "label": "Standard GPT-3.5 Turbo",
           "removed": [
             "Australia East",
             "Canada East",
@@ -1951,8 +1951,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-35-turbo-16k": {
       "all": {
@@ -1970,10 +1969,11 @@
           "UK South"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-gpt-35-turbo": {
-          "label": "Standard GPT-3.5 Turbo",
           "added": [],
+          "label": "Standard GPT-3.5 Turbo",
           "removed": [
             "Australia East",
             "Canada East",
@@ -1988,8 +1988,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-35-turbo-instruct": {
       "all": {
@@ -1999,26 +1998,26 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-completions": {
-          "label": "Standard completions",
           "added": [],
+          "label": "Standard completions",
           "removed": [
             "East US"
           ],
           "sku_removed": true
         },
         "standard-gpt-35-turbo": {
-          "label": "Standard GPT-3.5 Turbo",
           "added": [],
+          "label": "Standard GPT-3.5 Turbo",
           "removed": [
             "East US",
             "Sweden Central"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-4": {
       "all": {
@@ -2048,10 +2047,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "provisioned-models": {
-          "label": "Provisioned (PTU managed)",
           "added": [],
+          "label": "Provisioned (PTU managed)",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -2079,8 +2079,8 @@
           "sku_removed": true
         },
         "standard-chat-completions": {
-          "label": "Standard chat completions",
           "added": [],
+          "label": "Standard chat completions",
           "removed": [
             "East US",
             "East US 2",
@@ -2092,8 +2092,8 @@
           "sku_removed": true
         },
         "standard-gpt-4": {
-          "label": "Standard GPT-4",
           "added": [],
+          "label": "Standard GPT-4",
           "removed": [
             "Australia East",
             "Canada East",
@@ -2113,8 +2113,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-4-32k": {
       "all": {
@@ -2143,10 +2142,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "provisioned-models": {
-          "label": "Provisioned (PTU managed)",
           "added": [],
+          "label": "Provisioned (PTU managed)",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -2172,8 +2172,8 @@
           "sku_removed": true
         },
         "standard-gpt-4": {
-          "label": "Standard GPT-4",
           "added": [],
+          "label": "Standard GPT-4",
           "removed": [
             "Australia East",
             "Canada East",
@@ -2183,8 +2183,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-4.1": {
       "all": {
@@ -2220,10 +2219,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "datazone-provisioned-managed": {
-          "label": "Datazone provisioned managed",
           "added": [],
+          "label": "Datazone provisioned managed",
           "removed": [
             "East US",
             "East US 2",
@@ -2242,8 +2242,8 @@
           "sku_removed": true
         },
         "datazone-standard": {
-          "label": "Datazone standard",
           "added": [],
+          "label": "Datazone standard",
           "removed": [
             "Central US",
             "East US",
@@ -2263,8 +2263,8 @@
           "sku_removed": true
         },
         "global-batch": {
-          "label": "Global batch",
           "added": [],
+          "label": "Global batch",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -2292,8 +2292,8 @@
           "sku_removed": true
         },
         "global-batch-datazone": {
-          "label": "Global batch datazone",
           "added": [],
+          "label": "Global batch datazone",
           "removed": [
             "Central US",
             "East US",
@@ -2311,8 +2311,8 @@
           "sku_removed": true
         },
         "provisioned-global": {
-          "label": "Provisioned global",
           "added": [],
+          "label": "Provisioned global",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -2346,8 +2346,8 @@
           "sku_removed": true
         },
         "provisioned-models": {
-          "label": "Provisioned (PTU managed)",
           "added": [],
+          "label": "Provisioned (PTU managed)",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -2369,8 +2369,8 @@
           "sku_removed": true
         },
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -2404,8 +2404,8 @@
           "sku_removed": true
         },
         "standard-models": {
-          "label": "Standard (all)",
           "added": [],
+          "label": "Standard (all)",
           "removed": [
             "East US",
             "East US 2",
@@ -2418,8 +2418,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-4.1-mini": {
       "all": {
@@ -2455,10 +2454,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "datazone-provisioned-managed": {
-          "label": "Datazone provisioned managed",
           "added": [],
+          "label": "Datazone provisioned managed",
           "removed": [
             "East US",
             "East US 2",
@@ -2476,8 +2476,8 @@
           "sku_removed": true
         },
         "datazone-standard": {
-          "label": "Datazone standard",
           "added": [],
+          "label": "Datazone standard",
           "removed": [
             "Central US",
             "East US",
@@ -2497,8 +2497,8 @@
           "sku_removed": true
         },
         "global-batch": {
-          "label": "Global batch",
           "added": [],
+          "label": "Global batch",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -2526,8 +2526,8 @@
           "sku_removed": true
         },
         "global-batch-datazone": {
-          "label": "Global batch datazone",
           "added": [],
+          "label": "Global batch datazone",
           "removed": [
             "Central US",
             "East US",
@@ -2545,8 +2545,8 @@
           "sku_removed": true
         },
         "provisioned-global": {
-          "label": "Provisioned global",
           "added": [],
+          "label": "Provisioned global",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -2580,8 +2580,8 @@
           "sku_removed": true
         },
         "provisioned-models": {
-          "label": "Provisioned (PTU managed)",
           "added": [],
+          "label": "Provisioned (PTU managed)",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -2600,8 +2600,8 @@
           "sku_removed": true
         },
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -2635,8 +2635,8 @@
           "sku_removed": true
         },
         "standard-models": {
-          "label": "Standard (all)",
           "added": [],
+          "label": "Standard (all)",
           "removed": [
             "Australia East",
             "Canada East",
@@ -2656,8 +2656,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-4.1-nano": {
       "all": {
@@ -2693,10 +2692,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "datazone-provisioned-managed": {
-          "label": "Datazone provisioned managed",
           "added": [],
+          "label": "Datazone provisioned managed",
           "removed": [
             "East US",
             "East US 2",
@@ -2715,8 +2715,8 @@
           "sku_removed": true
         },
         "datazone-standard": {
-          "label": "Datazone standard",
           "added": [],
+          "label": "Datazone standard",
           "removed": [
             "Central US",
             "East US",
@@ -2736,8 +2736,8 @@
           "sku_removed": true
         },
         "global-batch": {
-          "label": "Global batch",
           "added": [],
+          "label": "Global batch",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -2765,8 +2765,8 @@
           "sku_removed": true
         },
         "global-batch-datazone": {
-          "label": "Global batch datazone",
           "added": [],
+          "label": "Global batch datazone",
           "removed": [
             "Central US",
             "East US",
@@ -2784,8 +2784,8 @@
           "sku_removed": true
         },
         "provisioned-global": {
-          "label": "Provisioned global",
           "added": [],
+          "label": "Provisioned global",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -2819,8 +2819,8 @@
           "sku_removed": true
         },
         "provisioned-models": {
-          "label": "Provisioned (PTU managed)",
           "added": [],
+          "label": "Provisioned (PTU managed)",
           "removed": [
             "East US",
             "East US 2",
@@ -2833,8 +2833,8 @@
           "sku_removed": true
         },
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -2868,16 +2868,15 @@
           "sku_removed": true
         },
         "standard-models": {
-          "label": "Standard (all)",
           "added": [],
+          "label": "Standard (all)",
           "removed": [
             "North Central US",
             "Sweden Central"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-4o": {
       "all": {
@@ -2913,10 +2912,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "datazone-provisioned-managed": {
-          "label": "Datazone provisioned managed",
           "added": [],
+          "label": "Datazone provisioned managed",
           "removed": [
             "East US",
             "East US 2",
@@ -2934,8 +2934,8 @@
           "sku_removed": true
         },
         "datazone-standard": {
-          "label": "Datazone standard",
           "added": [],
+          "label": "Datazone standard",
           "removed": [
             "Central US",
             "East US",
@@ -2955,8 +2955,8 @@
           "sku_removed": true
         },
         "global-batch": {
-          "label": "Global batch",
           "added": [],
+          "label": "Global batch",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -2984,8 +2984,8 @@
           "sku_removed": true
         },
         "global-batch-datazone": {
-          "label": "Global batch datazone",
           "added": [],
+          "label": "Global batch datazone",
           "removed": [
             "Central US",
             "East US",
@@ -3003,8 +3003,8 @@
           "sku_removed": true
         },
         "provisioned-global": {
-          "label": "Provisioned global",
           "added": [],
+          "label": "Provisioned global",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -3038,8 +3038,8 @@
           "sku_removed": true
         },
         "provisioned-models": {
-          "label": "Provisioned (PTU managed)",
           "added": [],
+          "label": "Provisioned (PTU managed)",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -3072,8 +3072,8 @@
           "sku_removed": true
         },
         "standard-chat-completions": {
-          "label": "Standard chat completions",
           "added": [],
+          "label": "Standard chat completions",
           "removed": [
             "Australia East",
             "Canada East",
@@ -3093,8 +3093,8 @@
           "sku_removed": true
         },
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -3128,8 +3128,8 @@
           "sku_removed": true
         },
         "standard-gpt-4": {
-          "label": "Standard GPT-4",
           "added": [],
+          "label": "Standard GPT-4",
           "removed": [
             "East US",
             "East US 2",
@@ -3142,8 +3142,8 @@
           "sku_removed": true
         },
         "standard-models": {
-          "label": "Standard (all)",
           "added": [],
+          "label": "Standard (all)",
           "removed": [
             "Australia East",
             "Canada East",
@@ -3164,8 +3164,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-4o-audio-preview": {
       "all": {
@@ -3175,18 +3174,18 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "East US 2",
             "Sweden Central"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-4o-mini": {
       "all": {
@@ -3222,10 +3221,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "datazone-provisioned-managed": {
-          "label": "Datazone provisioned managed",
           "added": [],
+          "label": "Datazone provisioned managed",
           "removed": [
             "East US",
             "East US 2",
@@ -3243,8 +3243,8 @@
           "sku_removed": true
         },
         "datazone-standard": {
-          "label": "Datazone standard",
           "added": [],
+          "label": "Datazone standard",
           "removed": [
             "Central US",
             "East US",
@@ -3264,8 +3264,8 @@
           "sku_removed": true
         },
         "global-batch": {
-          "label": "Global batch",
           "added": [],
+          "label": "Global batch",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -3293,8 +3293,8 @@
           "sku_removed": true
         },
         "global-batch-datazone": {
-          "label": "Global batch datazone",
           "added": [],
+          "label": "Global batch datazone",
           "removed": [
             "Central US",
             "East US",
@@ -3312,8 +3312,8 @@
           "sku_removed": true
         },
         "provisioned-global": {
-          "label": "Provisioned global",
           "added": [],
+          "label": "Provisioned global",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -3347,8 +3347,8 @@
           "sku_removed": true
         },
         "provisioned-models": {
-          "label": "Provisioned (PTU managed)",
           "added": [],
+          "label": "Provisioned (PTU managed)",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -3375,8 +3375,8 @@
           "sku_removed": true
         },
         "standard-chat-completions": {
-          "label": "Standard chat completions",
           "added": [],
+          "label": "Standard chat completions",
           "removed": [
             "East US",
             "East US 2",
@@ -3388,8 +3388,8 @@
           "sku_removed": true
         },
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -3423,8 +3423,8 @@
           "sku_removed": true
         },
         "standard-gpt-4": {
-          "label": "Standard GPT-4",
           "added": [],
+          "label": "Standard GPT-4",
           "removed": [
             "East US",
             "East US 2",
@@ -3437,8 +3437,8 @@
           "sku_removed": true
         },
         "standard-models": {
-          "label": "Standard (all)",
           "added": [],
+          "label": "Standard (all)",
           "removed": [
             "East US",
             "East US 2",
@@ -3450,8 +3450,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-4o-mini-audio-preview": {
       "all": {
@@ -3461,18 +3460,18 @@
           "East US 2"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "East US",
             "East US 2"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-4o-mini-realtime-preview": {
       "all": {
@@ -3482,18 +3481,18 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "East US 2",
             "Sweden Central"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-4o-mini-transcribe": {
       "all": {
@@ -3503,18 +3502,18 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "East US 2",
             "Sweden Central"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-4o-mini-tts": {
       "all": {
@@ -3523,17 +3522,17 @@
           "East US 2"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "East US 2"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-4o-realtime-preview": {
       "all": {
@@ -3543,18 +3542,18 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "East US 2",
             "Sweden Central"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-4o-transcribe": {
       "all": {
@@ -3564,18 +3563,18 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "East US 2",
             "Sweden Central"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-4o-transcribe-diarize": {
       "all": {
@@ -3585,18 +3584,18 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "East US 2",
             "Sweden Central"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-5": {
       "all": {
@@ -3632,10 +3631,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "datazone-provisioned-managed": {
-          "label": "Datazone provisioned managed",
           "added": [],
+          "label": "Datazone provisioned managed",
           "removed": [
             "East US",
             "East US 2",
@@ -3654,8 +3654,8 @@
           "sku_removed": true
         },
         "datazone-standard": {
-          "label": "Datazone standard",
           "added": [],
+          "label": "Datazone standard",
           "removed": [
             "Central US",
             "East US",
@@ -3675,8 +3675,8 @@
           "sku_removed": true
         },
         "global-batch": {
-          "label": "Global batch",
           "added": [],
+          "label": "Global batch",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -3704,8 +3704,8 @@
           "sku_removed": true
         },
         "global-batch-datazone": {
-          "label": "Global batch datazone",
           "added": [],
+          "label": "Global batch datazone",
           "removed": [
             "Central US",
             "East US",
@@ -3718,8 +3718,8 @@
           "sku_removed": true
         },
         "provisioned-global": {
-          "label": "Provisioned global",
           "added": [],
+          "label": "Provisioned global",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -3753,8 +3753,8 @@
           "sku_removed": true
         },
         "provisioned-models": {
-          "label": "Provisioned (PTU managed)",
           "added": [],
+          "label": "Provisioned (PTU managed)",
           "removed": [
             "Canada East",
             "East US",
@@ -3770,8 +3770,8 @@
           "sku_removed": true
         },
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -3802,8 +3802,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-5-chat": {
       "all": {
@@ -3814,10 +3813,11 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Central US",
             "East US 2",
@@ -3825,8 +3825,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-5-codex": {
       "all": {
@@ -3837,10 +3836,11 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Central US",
             "East US 2",
@@ -3848,8 +3848,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-5-mini": {
       "all": {
@@ -3885,10 +3884,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "datazone-provisioned-managed": {
-          "label": "Datazone provisioned managed",
           "added": [],
+          "label": "Datazone provisioned managed",
           "removed": [
             "East US",
             "East US 2",
@@ -3907,8 +3907,8 @@
           "sku_removed": true
         },
         "datazone-standard": {
-          "label": "Datazone standard",
           "added": [],
+          "label": "Datazone standard",
           "removed": [
             "Central US",
             "East US",
@@ -3928,8 +3928,8 @@
           "sku_removed": true
         },
         "provisioned-global": {
-          "label": "Provisioned global",
           "added": [],
+          "label": "Provisioned global",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -3963,8 +3963,8 @@
           "sku_removed": true
         },
         "provisioned-models": {
-          "label": "Provisioned (PTU managed)",
           "added": [],
+          "label": "Provisioned (PTU managed)",
           "removed": [
             "East US 2",
             "Korea Central"
@@ -3972,8 +3972,8 @@
           "sku_removed": true
         },
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -4004,8 +4004,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-5-nano": {
       "all": {
@@ -4039,10 +4038,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "datazone-standard": {
-          "label": "Datazone standard",
           "added": [],
+          "label": "Datazone standard",
           "removed": [
             "Central US",
             "East US",
@@ -4062,8 +4062,8 @@
           "sku_removed": true
         },
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -4094,8 +4094,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-5-pro": {
       "all": {
@@ -4106,10 +4105,11 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Central US",
             "East US 2",
@@ -4117,8 +4117,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-5.1": {
       "all": {
@@ -4154,10 +4153,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "datazone-provisioned-managed": {
-          "label": "Datazone provisioned managed",
           "added": [],
+          "label": "Datazone provisioned managed",
           "removed": [
             "East US",
             "East US 2",
@@ -4176,8 +4176,8 @@
           "sku_removed": true
         },
         "datazone-standard": {
-          "label": "Datazone standard",
           "added": [],
+          "label": "Datazone standard",
           "removed": [
             "East US",
             "East US 2",
@@ -4187,8 +4187,8 @@
           "sku_removed": true
         },
         "global-batch": {
-          "label": "Global batch",
           "added": [],
+          "label": "Global batch",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -4216,8 +4216,8 @@
           "sku_removed": true
         },
         "global-batch-datazone": {
-          "label": "Global batch datazone",
           "added": [],
+          "label": "Global batch datazone",
           "removed": [
             "Central US",
             "East US",
@@ -4230,8 +4230,8 @@
           "sku_removed": true
         },
         "provisioned-global": {
-          "label": "Provisioned global",
           "added": [],
+          "label": "Provisioned global",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -4265,8 +4265,8 @@
           "sku_removed": true
         },
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Australia East",
             "Canada East",
@@ -4279,8 +4279,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-5.1-chat": {
       "all": {
@@ -4296,10 +4295,11 @@
           "UK South"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Australia East",
             "Canada East",
@@ -4312,8 +4312,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-5.1-codex": {
       "all": {
@@ -4331,10 +4330,11 @@
           "West Europe"
         ]
       },
+      "model_removed": true,
       "skus": {
         "datazone-provisioned-managed": {
-          "label": "Datazone provisioned managed",
           "added": [],
+          "label": "Datazone provisioned managed",
           "removed": [
             "East US 2",
             "West Europe"
@@ -4342,8 +4342,8 @@
           "sku_removed": true
         },
         "provisioned-global": {
-          "label": "Provisioned global",
           "added": [],
+          "label": "Provisioned global",
           "removed": [
             "Australia East",
             "Canada East",
@@ -4358,8 +4358,8 @@
           "sku_removed": true
         },
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Australia East",
             "Canada East",
@@ -4372,8 +4372,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-5.1-codex-max": {
       "all": {
@@ -4383,18 +4382,18 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "East US 2",
             "Sweden Central"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-5.1-codex-mini": {
       "all": {
@@ -4410,10 +4409,11 @@
           "UK South"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Australia East",
             "Canada East",
@@ -4426,8 +4426,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-5.2": {
       "all": {
@@ -4440,10 +4439,11 @@
           "UK South"
         ]
       },
+      "model_removed": true,
       "skus": {
         "datazone-standard": {
-          "label": "Datazone standard",
           "added": [],
+          "label": "Datazone standard",
           "removed": [
             "Central US",
             "East US 2"
@@ -4451,8 +4451,8 @@
           "sku_removed": true
         },
         "provisioned-global": {
-          "label": "Provisioned global",
           "added": [],
+          "label": "Provisioned global",
           "removed": [
             "East US 2",
             "UK South"
@@ -4460,8 +4460,8 @@
           "sku_removed": true
         },
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "East US 2",
             "South Central US",
@@ -4469,8 +4469,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-5.2-chat": {
       "all": {
@@ -4480,18 +4479,18 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "East US 2",
             "Sweden Central"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-5.2-codex": {
       "all": {
@@ -4501,18 +4500,18 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "East US 2",
             "Sweden Central"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-audio": {
       "all": {
@@ -4523,10 +4522,11 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Central US",
             "East US 2",
@@ -4534,8 +4534,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-audio-mini": {
       "all": {
@@ -4546,10 +4545,11 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Central US",
             "East US 2",
@@ -4557,8 +4557,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-image-1": {
       "all": {
@@ -4571,10 +4570,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "East US 2",
             "Poland Central",
@@ -4585,16 +4585,15 @@
           "sku_removed": true
         },
         "standard-image-generation": {
-          "label": "Standard image generation",
           "added": [],
+          "label": "Standard image generation",
           "removed": [
             "UAE North",
             "West US 3"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-image-1-mini": {
       "all": {
@@ -4609,10 +4608,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "East US 2",
             "Poland Central",
@@ -4623,16 +4623,15 @@
           "sku_removed": true
         },
         "standard-image-generation": {
-          "label": "Standard image generation",
           "added": [],
+          "label": "Standard image generation",
           "removed": [
             "East US",
             "North Central US"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-image-1.5": {
       "all": {
@@ -4645,10 +4644,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "East US 2",
             "Poland Central",
@@ -4659,8 +4659,8 @@
           "sku_removed": true
         },
         "standard-image-generation": {
-          "label": "Standard image generation",
           "added": [],
+          "label": "Standard image generation",
           "removed": [
             "East US 2",
             "Poland Central",
@@ -4670,8 +4670,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-realtime": {
       "all": {
@@ -4682,10 +4681,11 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Central US",
             "East US 2",
@@ -4693,8 +4693,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-realtime-1.5": {
       "all": {
@@ -4704,18 +4703,18 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "East US 2",
             "Sweden Central"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "gpt-realtime-mini": {
       "all": {
@@ -4726,10 +4725,11 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Central US",
             "East US 2",
@@ -4737,8 +4737,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "grok-3": {
       "all": {
@@ -4771,10 +4770,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "data-zone-standard": {
-          "label": "Data Zone Standard",
           "added": [],
+          "label": "Data Zone Standard",
           "removed": [
             "East US",
             "East US 2",
@@ -4786,8 +4786,8 @@
           "sku_removed": true
         },
         "global-standard": {
-          "label": "Global Standard",
           "added": [],
+          "label": "Global Standard",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -4817,8 +4817,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "grok-3-mini": {
       "all": {
@@ -4851,10 +4850,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "data-zone-standard": {
-          "label": "Data Zone Standard",
           "added": [],
+          "label": "Data Zone Standard",
           "removed": [
             "East US",
             "East US 2",
@@ -4866,8 +4866,8 @@
           "sku_removed": true
         },
         "global-standard": {
-          "label": "Global Standard",
           "added": [],
+          "label": "Global Standard",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -4897,8 +4897,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "grok-4": {
       "all": {
@@ -4931,10 +4930,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "global-standard": {
-          "label": "Global Standard",
           "added": [],
+          "label": "Global Standard",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -4964,8 +4964,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "grok-4-fast-non-reasoning": {
       "all": {
@@ -4998,10 +4997,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "data-zone-standard": {
-          "label": "Data Zone Standard",
           "added": [],
+          "label": "Data Zone Standard",
           "removed": [
             "East US",
             "East US 2",
@@ -5013,8 +5013,8 @@
           "sku_removed": true
         },
         "global-standard": {
-          "label": "Global Standard",
           "added": [],
+          "label": "Global Standard",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -5044,8 +5044,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "grok-4-fast-reasoning": {
       "all": {
@@ -5078,10 +5077,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "data-zone-standard": {
-          "label": "Data Zone Standard",
           "added": [],
+          "label": "Data Zone Standard",
           "removed": [
             "East US",
             "East US 2",
@@ -5093,8 +5093,8 @@
           "sku_removed": true
         },
         "global-standard": {
-          "label": "Global Standard",
           "added": [],
+          "label": "Global Standard",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -5124,8 +5124,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "grok-code-fast-1": {
       "all": {
@@ -5158,10 +5157,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "global-standard": {
-          "label": "Global Standard",
           "added": [],
+          "label": "Global Standard",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -5191,8 +5191,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "mistral-document-ai-2505": {
       "all": {
@@ -5225,10 +5224,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "data-zone-standard": {
-          "label": "Data Zone Standard",
           "added": [],
+          "label": "Data Zone Standard",
           "removed": [
             "East US",
             "East US 2",
@@ -5250,8 +5250,8 @@
           "sku_removed": true
         },
         "global-standard": {
-          "label": "Global Standard",
           "added": [],
+          "label": "Global Standard",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -5282,16 +5282,15 @@
           "sku_removed": true
         },
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US 2",
             "Sweden Central"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "model-router": {
       "all": {
@@ -5301,10 +5300,11 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "datazone-standard": {
-          "label": "Datazone standard",
           "added": [],
+          "label": "Datazone standard",
           "removed": [
             "East US 2",
             "Sweden Central"
@@ -5312,16 +5312,15 @@
           "sku_removed": true
         },
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "East US 2",
             "Sweden Central"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "o1": {
       "all": {
@@ -5357,10 +5356,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "datazone-provisioned-managed": {
-          "label": "Datazone provisioned managed",
           "added": [],
+          "label": "Datazone provisioned managed",
           "removed": [
             "East US",
             "East US 2",
@@ -5378,8 +5378,8 @@
           "sku_removed": true
         },
         "datazone-standard": {
-          "label": "Datazone standard",
           "added": [],
+          "label": "Datazone standard",
           "removed": [
             "Central US",
             "East US",
@@ -5399,8 +5399,8 @@
           "sku_removed": true
         },
         "provisioned-global": {
-          "label": "Provisioned global",
           "added": [],
+          "label": "Provisioned global",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -5434,8 +5434,8 @@
           "sku_removed": true
         },
         "provisioned-models": {
-          "label": "Provisioned (PTU managed)",
           "added": [],
+          "label": "Provisioned (PTU managed)",
           "removed": [
             "Japan East",
             "UAE North",
@@ -5444,8 +5444,8 @@
           "sku_removed": true
         },
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -5476,8 +5476,8 @@
           "sku_removed": true
         },
         "standard-models": {
-          "label": "Standard (all)",
           "added": [],
+          "label": "Standard (all)",
           "removed": [
             "East US",
             "East US 2",
@@ -5489,8 +5489,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "o1-mini": {
       "all": {
@@ -5504,10 +5503,11 @@
           "West US"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-chat-completions": {
-          "label": "Standard chat completions",
           "added": [],
+          "label": "Standard chat completions",
           "removed": [
             "East US",
             "East US 2",
@@ -5518,8 +5518,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "o1-preview": {
       "all": {
@@ -5533,10 +5532,11 @@
           "West US"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-chat-completions": {
-          "label": "Standard chat completions",
           "added": [],
+          "label": "Standard chat completions",
           "removed": [
             "East US",
             "East US 2",
@@ -5547,8 +5547,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "o3": {
       "all": {
@@ -5584,10 +5583,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "datazone-provisioned-managed": {
-          "label": "Datazone provisioned managed",
           "added": [],
+          "label": "Datazone provisioned managed",
           "removed": [
             "East US",
             "East US 2",
@@ -5606,8 +5606,8 @@
           "sku_removed": true
         },
         "datazone-standard": {
-          "label": "Datazone standard",
           "added": [],
+          "label": "Datazone standard",
           "removed": [
             "Central US",
             "East US",
@@ -5627,8 +5627,8 @@
           "sku_removed": true
         },
         "global-batch": {
-          "label": "Global batch",
           "added": [],
+          "label": "Global batch",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -5656,8 +5656,8 @@
           "sku_removed": true
         },
         "global-batch-datazone": {
-          "label": "Global batch datazone",
           "added": [],
+          "label": "Global batch datazone",
           "removed": [
             "Central US",
             "East US",
@@ -5675,8 +5675,8 @@
           "sku_removed": true
         },
         "provisioned-global": {
-          "label": "Provisioned global",
           "added": [],
+          "label": "Provisioned global",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -5710,8 +5710,8 @@
           "sku_removed": true
         },
         "provisioned-models": {
-          "label": "Provisioned (PTU managed)",
           "added": [],
+          "label": "Provisioned (PTU managed)",
           "removed": [
             "Australia East",
             "East US",
@@ -5725,8 +5725,8 @@
           "sku_removed": true
         },
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -5757,8 +5757,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "o3-deep-research": {
       "all": {
@@ -5768,18 +5767,18 @@
           "West US"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Norway East",
             "West US"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "o3-mini": {
       "all": {
@@ -5815,10 +5814,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "datazone-provisioned-managed": {
-          "label": "Datazone provisioned managed",
           "added": [],
+          "label": "Datazone provisioned managed",
           "removed": [
             "East US",
             "East US 2",
@@ -5836,8 +5836,8 @@
           "sku_removed": true
         },
         "datazone-standard": {
-          "label": "Datazone standard",
           "added": [],
+          "label": "Datazone standard",
           "removed": [
             "Central US",
             "East US",
@@ -5857,8 +5857,8 @@
           "sku_removed": true
         },
         "global-batch": {
-          "label": "Global batch",
           "added": [],
+          "label": "Global batch",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -5886,8 +5886,8 @@
           "sku_removed": true
         },
         "global-batch-datazone": {
-          "label": "Global batch datazone",
           "added": [],
+          "label": "Global batch datazone",
           "removed": [
             "Central US",
             "East US",
@@ -5900,8 +5900,8 @@
           "sku_removed": true
         },
         "provisioned-global": {
-          "label": "Provisioned global",
           "added": [],
+          "label": "Provisioned global",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -5935,8 +5935,8 @@
           "sku_removed": true
         },
         "provisioned-models": {
-          "label": "Provisioned (PTU managed)",
           "added": [],
+          "label": "Provisioned (PTU managed)",
           "removed": [
             "Australia East",
             "Canada East",
@@ -5952,8 +5952,8 @@
           "sku_removed": true
         },
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -5983,8 +5983,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "o3-pro": {
       "all": {
@@ -5995,10 +5994,11 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Central US",
             "East US 2",
@@ -6006,8 +6006,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "o4-mini": {
       "all": {
@@ -6043,10 +6042,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "datazone-provisioned-managed": {
-          "label": "Datazone provisioned managed",
           "added": [],
+          "label": "Datazone provisioned managed",
           "removed": [
             "East US",
             "East US 2",
@@ -6065,8 +6065,8 @@
           "sku_removed": true
         },
         "datazone-standard": {
-          "label": "Datazone standard",
           "added": [],
+          "label": "Datazone standard",
           "removed": [
             "Central US",
             "East US",
@@ -6086,8 +6086,8 @@
           "sku_removed": true
         },
         "global-batch": {
-          "label": "Global batch",
           "added": [],
+          "label": "Global batch",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -6115,8 +6115,8 @@
           "sku_removed": true
         },
         "global-batch-datazone": {
-          "label": "Global batch datazone",
           "added": [],
+          "label": "Global batch datazone",
           "removed": [
             "Central US",
             "East US",
@@ -6134,8 +6134,8 @@
           "sku_removed": true
         },
         "provisioned-global": {
-          "label": "Provisioned global",
           "added": [],
+          "label": "Provisioned global",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -6169,8 +6169,8 @@
           "sku_removed": true
         },
         "provisioned-models": {
-          "label": "Provisioned (PTU managed)",
           "added": [],
+          "label": "Provisioned (PTU managed)",
           "removed": [
             "Central US",
             "East US",
@@ -6185,8 +6185,8 @@
           "sku_removed": true
         },
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -6218,8 +6218,8 @@
           "sku_removed": true
         },
         "standard-models": {
-          "label": "Standard (all)",
           "added": [],
+          "label": "Standard (all)",
           "removed": [
             "East US",
             "East US 2",
@@ -6231,8 +6231,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "sora": {
       "all": {
@@ -6242,10 +6241,11 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "East US 2",
             "Sweden Central"
@@ -6253,15 +6253,14 @@
           "sku_removed": true
         },
         "standard-models": {
-          "label": "Standard (all)",
           "added": [],
+          "label": "Standard (all)",
           "removed": [
             "East US 2"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "sora-2": {
       "all": {
@@ -6271,18 +6270,18 @@
           "Sweden Central"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "East US 2",
             "Sweden Central"
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "text-embedding-3-large": {
       "all": {
@@ -6316,10 +6315,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "datazone-standard": {
-          "label": "Datazone standard",
           "added": [],
+          "label": "Datazone standard",
           "removed": [
             "Central US",
             "East US",
@@ -6339,8 +6339,8 @@
           "sku_removed": true
         },
         "standard-embeddings": {
-          "label": "Standard embeddings",
           "added": [],
+          "label": "Standard embeddings",
           "removed": [
             "Australia East",
             "Canada East",
@@ -6362,8 +6362,8 @@
           "sku_removed": true
         },
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -6394,8 +6394,8 @@
           "sku_removed": true
         },
         "standard-models": {
-          "label": "Standard (all)",
           "added": [],
+          "label": "Standard (all)",
           "removed": [
             "Australia East",
             "Canada East",
@@ -6419,8 +6419,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "text-embedding-3-small": {
       "all": {
@@ -6453,10 +6452,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "datazone-standard": {
-          "label": "Datazone standard",
           "added": [],
+          "label": "Datazone standard",
           "removed": [
             "Central US",
             "East US",
@@ -6476,8 +6476,8 @@
           "sku_removed": true
         },
         "standard-embeddings": {
-          "label": "Standard embeddings",
           "added": [],
+          "label": "Standard embeddings",
           "removed": [
             "Australia East",
             "Canada East",
@@ -6491,8 +6491,8 @@
           "sku_removed": true
         },
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -6523,8 +6523,8 @@
           "sku_removed": true
         },
         "standard-models": {
-          "label": "Standard (all)",
           "added": [],
+          "label": "Standard (all)",
           "removed": [
             "Australia East",
             "Canada East",
@@ -6537,8 +6537,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "text-embedding-ada-002": {
       "all": {
@@ -6571,10 +6570,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "datazone-standard": {
-          "label": "Datazone standard",
           "added": [],
+          "label": "Datazone standard",
           "removed": [
             "Central US",
             "East US",
@@ -6594,8 +6594,8 @@
           "sku_removed": true
         },
         "standard-embeddings": {
-          "label": "Standard embeddings",
           "added": [],
+          "label": "Standard embeddings",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -6619,8 +6619,8 @@
           "sku_removed": true
         },
         "standard-global": {
-          "label": "Standard global deployments",
           "added": [],
+          "label": "Standard global deployments",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -6650,8 +6650,8 @@
           "sku_removed": true
         },
         "standard-models": {
-          "label": "Standard (all)",
           "added": [],
+          "label": "Standard (all)",
           "removed": [
             "Australia East",
             "Brazil South",
@@ -6675,8 +6675,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "tsuzumi-7b": {
       "all": {
@@ -6690,10 +6689,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "region-availability-maas": {
-          "label": "Region Availability Maas",
           "added": [],
+          "label": "Region Availability Maas",
           "removed": [
             "East US",
             "East US 2",
@@ -6704,8 +6704,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "tts": {
       "all": {
@@ -6716,10 +6715,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-audio": {
-          "label": "Standard audio",
           "added": [],
+          "label": "Standard audio",
           "removed": [
             "North Central US",
             "Sweden Central"
@@ -6727,8 +6727,8 @@
           "sku_removed": true
         },
         "standard-models": {
-          "label": "Standard (all)",
           "added": [],
+          "label": "Standard (all)",
           "removed": [
             "North Central US",
             "Sweden Central",
@@ -6736,8 +6736,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "tts-hd": {
       "all": {
@@ -6748,10 +6747,11 @@
           "West US 3"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-audio": {
-          "label": "Standard audio",
           "added": [],
+          "label": "Standard audio",
           "removed": [
             "North Central US",
             "Sweden Central"
@@ -6759,8 +6759,8 @@
           "sku_removed": true
         },
         "standard-models": {
-          "label": "Standard (all)",
           "added": [],
+          "label": "Standard (all)",
           "removed": [
             "North Central US",
             "Sweden Central",
@@ -6768,8 +6768,7 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     },
     "whisper": {
       "all": {
@@ -6785,10 +6784,11 @@
           "West Europe"
         ]
       },
+      "model_removed": true,
       "skus": {
         "standard-audio": {
-          "label": "Standard audio",
           "added": [],
+          "label": "Standard audio",
           "removed": [
             "East US 2",
             "North Central US",
@@ -6802,8 +6802,8 @@
           "sku_removed": true
         },
         "standard-models": {
-          "label": "Standard (all)",
           "added": [],
+          "label": "Standard (all)",
           "removed": [
             "East US 2",
             "North Central US",
@@ -6816,10 +6816,8 @@
           ],
           "sku_removed": true
         }
-      },
-      "model_removed": true
+      }
     }
   },
-  "current": {},
-  "files": []
+  "timestamp": "2026-02-28T07:28:21.603102+00:00"
 }
