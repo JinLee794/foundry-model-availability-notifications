@@ -505,7 +505,7 @@ Complete list of model retirements with replacement recommendations.
 
 ---
 
-_Data sourced from [Microsoft Azure AI Documentation](https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/ai-foundry/openai/includes/retirement/models.md)_
+_Data sourced from [Microsoft Azure AI Documentation](https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/foundry/openai/includes/retirement/models.md)_
 
 _Last updated: {datetime.utcnow():%Y-%m-%d %H:%M UTC}_
 """

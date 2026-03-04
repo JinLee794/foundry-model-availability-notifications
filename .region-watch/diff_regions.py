@@ -6,14 +6,14 @@ from typing import Optional
 
 # Model matrix directories to check for availability data
 MODEL_MATRIX_DIRS = [
-    "articles/ai-foundry/openai/includes/model-matrix",  # OpenAI models (gpt, dall-e, whisper, etc.)
-    "articles/ai-foundry/foundry-models/includes/model-matrix",  # Foundry models (deepseek, llama, grok, etc.)
+    "articles/foundry/openai/includes/model-matrix",  # OpenAI models (gpt, dall-e, whisper, etc.)
+    "articles/foundry/foundry-models/includes/model-matrix",  # Foundry models (deepseek, llama, grok, etc.)
 ]
 
 # Serverless/MaaS (Models-as-a-Service) files with transposed table format
 # These files have models in rows and regions in text columns
 MAAS_FILES = [
-    "articles/ai-foundry/includes/region-availability-maas.md",  # Serverless API models (Anthropic, Cohere, Phi, Mistral, etc.)
+    "articles/foundry/includes/region-availability-maas.md",  # Serverless API models (Anthropic, Cohere, Phi, Mistral, etc.)
 ]
 
 def get_model_matrix_directories() -> list[str]:
@@ -38,7 +38,7 @@ def get_model_matrix_api_url(directory: str) -> str:
         Full GitHub API URL for the directory contents
         
     Note:
-        Directory is expected to be a relative path like 'articles/ai-foundry/...'
+        Directory is expected to be a relative path like 'articles/foundry/...'
         and should not contain path traversal sequences.
     """
     # Basic validation to prevent path traversal
