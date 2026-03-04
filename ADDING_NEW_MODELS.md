@@ -6,8 +6,8 @@ This document explains how to add support for additional model families to the m
 
 The system currently monitors models from the Azure AI documentation repository from the following directories:
 ```
-articles/ai-foundry/openai/includes/model-matrix/          # OpenAI models (enabled)
-articles/ai-foundry/foundry-models/includes/model-matrix/  # Foundry models (enabled)
+articles/foundry/openai/includes/model-matrix/          # OpenAI models (enabled)
+articles/foundry/foundry-models/includes/model-matrix/  # Foundry models (enabled)
 ```
 
 These models are documented in markdown tables with regional availability information.
@@ -40,9 +40,9 @@ Edit `.region-watch/diff_regions.py`:
 
 ```python
 MODEL_MATRIX_DIRS = [
-    "articles/ai-foundry/openai/includes/model-matrix",
-    "articles/ai-foundry/foundry-models/includes/model-matrix",
-    "articles/ai-foundry/models/includes/model-matrix",  # Add more directories as needed
+    "articles/foundry/openai/includes/model-matrix",
+    "articles/foundry/foundry-models/includes/model-matrix",
+    "articles/foundry/models/includes/model-matrix",  # Add more directories as needed
 ]
 ```
 
@@ -52,10 +52,10 @@ Set the `MODEL_MATRIX_EXTRA_DIRS` environment variable:
 
 ```bash
 # Single directory
-export MODEL_MATRIX_EXTRA_DIRS="articles/ai-foundry/foundry-models/includes/model-matrix"
+export MODEL_MATRIX_EXTRA_DIRS="articles/foundry/foundry-models/includes/model-matrix"
 
 # Multiple directories (comma-separated)
-export MODEL_MATRIX_EXTRA_DIRS="articles/ai-foundry/foundry-models/includes/model-matrix,articles/ai-foundry/models/includes/model-matrix"
+export MODEL_MATRIX_EXTRA_DIRS="articles/foundry/foundry-models/includes/model-matrix,articles/foundry/models/includes/model-matrix"
 ```
 
 Or in GitHub Actions workflow (`.github/workflows/region-watch.yml`):
@@ -64,7 +64,7 @@ Or in GitHub Actions workflow (`.github/workflows/region-watch.yml`):
 - name: Run diff
   env:
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    MODEL_MATRIX_EXTRA_DIRS: "articles/ai-foundry/models/includes/model-matrix"  # For additional directories
+    MODEL_MATRIX_EXTRA_DIRS: "articles/foundry/models/includes/model-matrix"  # For additional directories
   run: |
     python .region-watch/diff_regions.py > region_diff.json
 ```
@@ -96,9 +96,9 @@ Before adding a new directory, verify it exists and contains the expected format
 
 2. Navigate to potential directories:
    ```
-   articles/ai-foundry/openai/includes/model-matrix/         # Enabled
-   articles/ai-foundry/foundry-models/includes/model-matrix/ # Enabled
-   articles/ai-foundry/models/includes/model-matrix/         # Available for addition
+   articles/foundry/openai/includes/model-matrix/         # Enabled
+   articles/foundry/foundry-models/includes/model-matrix/ # Enabled
+   articles/foundry/models/includes/model-matrix/         # Available for addition
    articles/machine-learning/includes/model-matrix/
    ```
 
@@ -126,8 +126,8 @@ To check if Azure adds new directories:
 
 3. Check commit history in these directories:
    ```
-   articles/ai-foundry/foundry-models/
-   articles/ai-foundry/models/
+   articles/foundry/foundry-models/
+   articles/foundry/models/
    ```
 
 ## Testing Your Changes

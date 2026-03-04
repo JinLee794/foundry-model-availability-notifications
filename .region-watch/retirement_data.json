@@ -1,5 +1,5 @@
 {
-  "source": "https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/ai-foundry/openai/includes/retirement/models.md",
+  "source": "https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/foundry/openai/includes/retirement/models.md",
   "last_updated": "2026-01-23",
   "models": {
     "text_generation": [
