@@ -1,6 +1,513 @@
 {
-  "timestamp": "2026-03-04T16:17:35.298936+00:00",
-  "changes": {},
+  "timestamp": "2026-03-05T07:43:21.779586+00:00",
+  "changes": {
+    "cohere-command-a": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "Cohere-rerank-v4.0-fast": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "Cohere-rerank-v4.0-pro": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "DeepSeek-R1": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "DeepSeek-R1-0528": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "DeepSeek-V3-0324": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "DeepSeek-V3.1": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "DeepSeek-V3.2": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "DeepSeek-V3.2-Speciale": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "embed-v-4-0": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "FLUX-1.1-pro": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "FLUX.1-Kontext-pro": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "FLUX.2-pro": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "grok-3": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "grok-3-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "grok-4-fast-non-reasoning": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "grok-4-fast-reasoning": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "grok-4.1-fast-non-reasoning": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "grok-4.1-fast-reasoning": {
+      "all": {
+        "added": [
+          "Australia East",
+          "Brazil South",
+          "Canada Central",
+          "Canada East",
+          "Central US",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Japan West",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Central US",
+          "West Europe",
+          "West US",
+          "West US 2",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Japan West",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Central US",
+            "West Europe",
+            "West US",
+            "West US 2",
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "Kimi-K2-Thinking": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "Kimi-K2.5": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "Llama-3.3-70B-Instruct": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "Llama-4-Maverick-17B-128E-Instruct-FP8": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "MAI-DS-R1": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "Meta-Llama-3-70B-Instruct": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "mistral-document-ai-2505": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "mistral-document-ai-2512": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "Mistral-Large-3": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    }
+  },
   "current": {
     "codex-mini": {
       "all": [
@@ -49,7 +556,8 @@
         "West Central US",
         "West Europe",
         "West US",
-        "West US 2"
+        "West US 2",
+        "West US 3"
       ],
       "skus": {
         "global-standard": {
@@ -83,7 +591,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -118,7 +627,8 @@
         "West Central US",
         "West Europe",
         "West US",
-        "West US 2"
+        "West US 2",
+        "West US 3"
       ],
       "skus": {
         "global-standard": {
@@ -152,7 +662,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -187,7 +698,8 @@
         "West Central US",
         "West Europe",
         "West US",
-        "West US 2"
+        "West US 2",
+        "West US 3"
       ],
       "skus": {
         "global-standard": {
@@ -221,7 +733,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -360,7 +873,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -465,7 +979,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -570,7 +1085,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -605,7 +1121,8 @@
         "West Central US",
         "West Europe",
         "West US",
-        "West US 2"
+        "West US 2",
+        "West US 3"
       ],
       "skus": {
         "global-standard": {
@@ -639,7 +1156,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -674,7 +1192,8 @@
         "West Central US",
         "West Europe",
         "West US",
-        "West US 2"
+        "West US 2",
+        "West US 3"
       ],
       "skus": {
         "global-standard": {
@@ -708,7 +1227,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -743,7 +1263,8 @@
         "West Central US",
         "West Europe",
         "West US",
-        "West US 2"
+        "West US 2",
+        "West US 3"
       ],
       "skus": {
         "global-standard": {
@@ -777,7 +1298,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -812,7 +1334,8 @@
         "West Central US",
         "West Europe",
         "West US",
-        "West US 2"
+        "West US 2",
+        "West US 3"
       ],
       "skus": {
         "global-standard": {
@@ -846,7 +1369,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -940,7 +1464,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -1034,7 +1559,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -1128,7 +1654,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -3517,7 +4044,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -3601,7 +4129,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -3685,7 +4214,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -3769,7 +4299,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -3804,7 +4335,8 @@
         "West Central US",
         "West Europe",
         "West US",
-        "West US 2"
+        "West US 2",
+        "West US 3"
       ],
       "skus": {
         "global-standard": {
@@ -3838,7 +4370,79 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
+          ]
+        }
+      }
+    },
+    "grok-4.1-fast-reasoning": {
+      "all": [
+        "Australia East",
+        "Brazil South",
+        "Canada Central",
+        "Canada East",
+        "Central US",
+        "East US",
+        "East US 2",
+        "France Central",
+        "Germany West Central",
+        "Italy North",
+        "Japan East",
+        "Japan West",
+        "Korea Central",
+        "North Central US",
+        "Norway East",
+        "Poland Central",
+        "South Africa North",
+        "South Central US",
+        "South India",
+        "Spain Central",
+        "Sweden Central",
+        "Switzerland North",
+        "Switzerland West",
+        "UAE North",
+        "UK South",
+        "West Central US",
+        "West Europe",
+        "West US",
+        "West US 2",
+        "West US 3"
+      ],
+      "skus": {
+        "global-standard": {
+          "label": "Global Standard",
+          "regions": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Japan West",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Central US",
+            "West Europe",
+            "West US",
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -3873,7 +4477,8 @@
         "West Central US",
         "West Europe",
         "West US",
-        "West US 2"
+        "West US 2",
+        "West US 3"
       ],
       "skus": {
         "global-standard": {
@@ -3907,7 +4512,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -3942,7 +4548,8 @@
         "West Central US",
         "West Europe",
         "West US",
-        "West US 2"
+        "West US 2",
+        "West US 3"
       ],
       "skus": {
         "global-standard": {
@@ -3976,7 +4583,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -4081,7 +4689,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -4116,7 +4725,8 @@
         "West Central US",
         "West Europe",
         "West US",
-        "West US 2"
+        "West US 2",
+        "West US 3"
       ],
       "skus": {
         "global-standard": {
@@ -4150,7 +4760,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -4185,7 +4796,8 @@
         "West Central US",
         "West Europe",
         "West US",
-        "West US 2"
+        "West US 2",
+        "West US 3"
       ],
       "skus": {
         "global-standard": {
@@ -4219,7 +4831,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -4254,7 +4867,8 @@
         "West Central US",
         "West Europe",
         "West US",
-        "West US 2"
+        "West US 2",
+        "West US 3"
       ],
       "skus": {
         "global-standard": {
@@ -4288,7 +4902,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -4382,7 +4997,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -4476,7 +5092,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
@@ -4570,7 +5187,8 @@
             "West Central US",
             "West Europe",
             "West US",
-            "West US 2"
+            "West US 2",
+            "West US 3"
           ]
         }
       }
