@@ -4,7 +4,7 @@ Real-time tracking of Azure AI Foundry model availability across regions and dep
 
 <div class="stats-grid">
   <div class="stat-card">
-    <div class="stat-value">111</div>
+    <div class="stat-value">112</div>
     <div class="stat-label">Models Tracked</div>
   </div>
   <div class="stat-card">
@@ -26,6 +26,8 @@ Real-time tracking of Azure AI Foundry model availability across regions and dep
 ???+ tip "Recent Availability Changes"
     | Date | Change | Model | Region | SKU Type |
     |------|--------|-------|--------|----------|
+    | 2026-02-25 | <span class="badge-added">Added</span> | [gpt-realtime-1.5](models/gpt-realtime-1-5/) | East US 2 | Standard global deployments |
+    | 2026-02-25 | <span class="badge-added">Added</span> | [gpt-realtime-1.5](models/gpt-realtime-1-5/) | Sweden Central | Standard global deployments |
     | 2026-02-18 | <span class="badge-added">Added</span> | [Claude Sonnet 4.6 (preview)](models/claude-sonnet-4-6-(preview)/) | East US 2 | Region Availability Maas |
     | 2026-02-18 | <span class="badge-added">Added</span> | [Claude Sonnet 4.6 (preview)](models/claude-sonnet-4-6-(preview)/) | Sweden Central | Region Availability Maas |
     | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-large](models/text-embedding-3-large/) | France Central | Datazone standard |
@@ -34,8 +36,6 @@ Real-time tracking of Azure AI Foundry model availability across regions and dep
     | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-large](models/text-embedding-3-large/) | Poland Central | Datazone standard |
     | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-large](models/text-embedding-3-large/) | Spain Central | Datazone standard |
     | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-large](models/text-embedding-3-large/) | Sweden Central | Datazone standard |
-    | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-large](models/text-embedding-3-large/) | West Europe | Datazone standard |
-    | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-small](models/text-embedding-3-small/) | France Central | Datazone standard |
 
     *… and 965 more — see [full change history](history.md)*
 
@@ -99,4 +99,4 @@ Real-time tracking of Azure AI Foundry model availability across regions and dep
 
 ---
 
-_Last updated: 2026-02-24 14:58 UTC_
+_Last updated: 2026-02-25 19:41 UTC_

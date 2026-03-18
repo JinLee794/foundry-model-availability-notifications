@@ -8,11 +8,11 @@ Explore every deployment SKU and discover which models and regions support it.
     <div class="stat-label">SKU Types</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value">111</div>
+    <div class="stat-value">112</div>
     <div class="stat-label">Models</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value">328</div>
+    <div class="stat-value">330</div>
     <div class="stat-label">Model × SKU Combinations</div>
   </div>
 </div>
@@ -28,7 +28,7 @@ Explore every deployment SKU and discover which models and regions support it.
 
     | | |
     |---|---|
-    | :material-cube-outline: Models | **111** |
+    | :material-cube-outline: Models | **112** |
     | :material-map-marker-outline: Regions | **28** (100% coverage) |
 
     **SKU types:** `Global Standard` · `Global batch` · `Global batch datazone` · `Global coverage`
@@ -110,10 +110,10 @@ Explore every deployment SKU and discover which models and regions support it.
 
     | Category | SKU Type | Models | Regions | Coverage |
     |----------|----------|--------|---------|----------|
-    | <span class="sku-badge sku-global">Global</span> | Global Standard | 64 | 28 | 100% |
+    | <span class="sku-badge sku-global">Global</span> | Global Standard | 65 | 28 | 100% |
     | <span class="sku-badge sku-global">Global</span> | Global batch | 10 | 22 | 79% |
     | <span class="sku-badge sku-global">Global</span> | Global batch datazone | 10 | 12 | 43% |
-    | <span class="sku-badge sku-global">Global</span> | Global coverage | 111 | 28 | 100% |
+    | <span class="sku-badge sku-global">Global</span> | Global coverage | 112 | 28 | 100% |
     | <span class="sku-badge sku-datazone">Datazone</span> | Datazone provisioned managed | 13 | 13 | 46% |
     | <span class="sku-badge sku-datazone">Datazone</span> | Datazone standard | 23 | 17 | 61% |
     | <span class="sku-badge sku-standard">Standard</span> | Standard | 25 | 25 | 89% |
@@ -2367,6 +2367,24 @@ Filter by category, SKU type, or model to find exactly what you need.
       <td class="hidden-col">Central US, East US 2, Sweden Central</td>
     </tr>
     <tr>
+      <td><a href="../models/gpt-realtime-1-5/"><strong>gpt-realtime-1.5</strong></a></td>
+      <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
+      <td>Global coverage</td>
+      <td><span class="region-list"><span class="region-badge" onclick="filterBySkuRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterBySkuRegion('Sweden Central')">Sweden Central</span></span></td>
+      <td><span class="badge badge-emerging">Emerging</span></td>
+      <td>7%</td>
+      <td class="hidden-col">East US 2, Sweden Central</td>
+    </tr>
+    <tr>
+      <td><a href="../models/gpt-realtime-1-5/"><strong>gpt-realtime-1.5</strong></a></td>
+      <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
+      <td>Global Standard</td>
+      <td><span class="region-list"><span class="region-badge" onclick="filterBySkuRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterBySkuRegion('Sweden Central')">Sweden Central</span></span></td>
+      <td><span class="badge badge-emerging">Emerging</span></td>
+      <td>7%</td>
+      <td class="hidden-col">East US 2, Sweden Central</td>
+    </tr>
+    <tr>
       <td><a href="../models/gpt-realtime-mini/"><strong>gpt-realtime-mini</strong></a></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td>Global coverage</td>
@@ -3182,4 +3200,4 @@ Filter by category, SKU type, or model to find exactly what you need.
 
 ---
 
-_Last updated: 2026-02-24 14:58 UTC_
+_Last updated: 2026-02-25 19:41 UTC_

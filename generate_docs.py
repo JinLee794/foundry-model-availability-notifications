@@ -298,6 +298,30 @@ def generate_retirement_section(
         
         rows.append(f"| {version} | {status} | {deprecation} | {retirement} | {status_badge} | {replacement_cell} |")
     
+    # Collect any retirement notes to display
+    retirement_notes = []
+    seen_notes: set = set()
+    for entry in retirement_entries:
+        note = entry.get("retirement_note")
+        if note and note not in seen_notes:
+            seen_notes.add(note)
+            retirement_notes.append(note)
+
+    # Build retirement notes admonition blocks
+    notes_section = ""
+    if retirement_notes:
+        note_blocks = []
+        for note in retirement_notes:
+            note_blocks.append(
+                f'!!! note "Retirement Date Update"\n'
+                f'    {note}\n'
+                f'\n'
+                f'    For more details, see the [Azure AI Foundry model retirements documentation]'
+                f'(https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/model-retirements'
+                f'?view=foundry-classic&tabs=text).\n'
+            )
+        notes_section = "\n" + "\n".join(note_blocks)
+
     # Build replacement availability section
     replacement_section = ""
     if replacement_info:
@@ -325,7 +349,7 @@ def generate_retirement_section(
 | Version | Status | Deprecation Date | Retirement Date | Timeline | Replacement |
 |---------|--------|------------------|-----------------|----------|-------------|
 {chr(10).join(rows)}
-{replacement_section}
+{notes_section}{replacement_section}
 """
 
 
@@ -365,7 +389,38 @@ def generate_retirements_page(
     
     # Build summary stats
     total_models = len(set(e["model"] for e in all_entries))
-    
+
+    # Collect unique retirement notes, grouped by note text -> list of (model, version) pairs
+    notes_to_models: Dict[str, List[str]] = {}
+    seen_model_note_pairs: set = set()
+    for entry in all_entries:
+        note = entry.get("retirement_note")
+        if note:
+            model = entry.get("model", "")
+            pair = (model, note)
+            if pair not in seen_model_note_pairs:
+                seen_model_note_pairs.add(pair)
+                if note not in notes_to_models:
+                    notes_to_models[note] = []
+                if model not in notes_to_models[note]:
+                    notes_to_models[note].append(model)
+
+    def build_retirement_notes_section() -> str:
+        if not notes_to_models:
+            return ""
+        blocks = []
+        for note, models in notes_to_models.items():
+            model_list = " and ".join(f"**{m}**" for m in sorted(set(models)))
+            blocks.append(
+                f'!!! note "{model_list} Retirement Update"\n'
+                f'    {note}\n'
+                f'\n'
+                f'    For more details, see the [Azure AI Foundry model retirements documentation]'
+                f'(https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/model-retirements'
+                f'?view=foundry-classic&tabs=text).\n'
+            )
+        return "\n".join(blocks)
+
     def build_table_rows(entries: List[Dict]) -> str:
         rows = []
         # Handle None values in sorting by using empty string as default
@@ -473,6 +528,7 @@ Track upcoming Azure AI Foundry model retirements and plan your migrations.
 |-------|---------|----------|-----------------|--------|-------------|
 {build_table_rows(upcoming)}
 ''' if upcoming else ""}
+{build_retirement_notes_section()}
 
 ## :material-calendar-clock: All Scheduled Retirements
 

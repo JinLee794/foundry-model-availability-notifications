@@ -1101,6 +1101,18 @@ Complete catalog of AI Foundry models with availability details. Each SKU column
       <td class="hidden-col">Central US, East US 2, Sweden Central</td>
     </tr>
     <tr>
+      <td><a href="gpt-realtime-1-5/"><strong>gpt-realtime-1.5</strong></a></td>
+      <td><span class="badge badge-emerging">Emerging</span></td>
+      <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
+      <td><span class="region-list"><span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('Sweden Central')">Sweden Central</span></span></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td class="hidden-col">Global</td>
+      <td class="hidden-col">East US 2, Sweden Central</td>
+    </tr>
+    <tr>
       <td><a href="gpt-realtime-mini/"><strong>gpt-realtime-mini</strong></a></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
@@ -1430,4 +1442,4 @@ Complete catalog of AI Foundry models with availability details. Each SKU column
 
 ---
 
-_Last updated: 2026-02-24 14:58 UTC_
+_Last updated: 2026-02-25 19:41 UTC_

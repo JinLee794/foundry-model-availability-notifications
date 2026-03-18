@@ -21,7 +21,7 @@
 |--------|-------|
 | Total Regions | 3 |
 | Coverage | 11% |
-| SKU Types | 3 |
+| SKU Types | 2 |
 | Categories | Global, Standard |
 
 ---
@@ -48,8 +48,7 @@
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
-| Standard (all) | 3 | 11% |
-| Standard audio | 2 | 7% |
+| Standard | 3 | 11% |
 
 **Available Regions:**
 
@@ -65,12 +64,12 @@ This table shows exactly which SKU types are available in each region.
 <div class="table-responsive">
 <table class="matrix-table">
 <thead>
-<tr><th>Region</th><th>Global coverage</th><th>Standard (all)</th><th>Standard audio</th></tr>
+<tr><th>Region</th><th>Global coverage</th><th>Standard</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>North Central US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Sweden Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>West US 3</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td></tr>
+<tr><td><strong>North Central US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Sweden Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>West US 3</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
 </tbody>
 </table>
 </div>
@@ -79,4 +78,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-02-24 04:54 UTC_
+_Last updated: 2026-02-25 19:41 UTC_

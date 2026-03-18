@@ -1,17 +1,6 @@
-# o3-deep-research
+# gpt-realtime-1.5
 
 <span class="badge badge-emerging">Emerging</span> Available in **2** of 28 regions
-
-
-!!! warning "Retirement Notice"
-    This model has scheduled retirement dates. Plan your migration to the replacement model.
-
-## :material-clock-alert: Retirement Schedule
-
-| Version | Status | Deprecation Date | Retirement Date | Timeline | Replacement |
-|---------|--------|------------------|-----------------|----------|-------------|
-| 2025-06-26 | Generally Available | 2026-06-26 | 2026-12-26 | <span class="badge badge-scheduled">Scheduled</span> | - |
-
 
 ---
 
@@ -40,7 +29,7 @@
 
 **Available Regions:**
 
-`Norway East`, `West US`
+`East US 2`, `Sweden Central`
 
 
 ---
@@ -55,8 +44,8 @@ This table shows exactly which SKU types are available in each region.
 <tr><th>Region</th><th>Global Standard</th><th>Global coverage</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Norway East</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>West US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>East US 2</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Sweden Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
 </tbody>
 </table>
 </div>
