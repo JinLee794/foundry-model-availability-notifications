@@ -356,9 +356,13 @@ def generate_retirement_section(
 def generate_retirements_page(
     retirement_data: Dict,
     model_regions: Dict[str, Set[str]],
+    last_updated: datetime = None,
 ) -> str:
     """Generate the retirements overview page."""
-    
+
+    if last_updated is None:
+        last_updated = datetime.utcnow()
+
     today = datetime.utcnow()
     
     # Categorize all retirements
@@ -563,7 +567,7 @@ Complete list of model retirements with replacement recommendations.
 
 _Data sourced from [Microsoft Azure AI Documentation](https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/foundry/openai/includes/retirement/models.md)_
 
-_Last updated: {datetime.utcnow():%Y-%m-%d %H:%M UTC}_
+_Data last updated: {last_updated:%Y-%m-%d %H:%M UTC}_
 """
 
 
@@ -581,6 +585,9 @@ def generate_index_page(
 
     today = datetime.utcnow()
     retirement_data = retirement_data or {"models": {}}
+
+    # Get the timestamp of the most recent history entry for accurate "Last updated"
+    last_data_update = history[0]["timestamp"] if history else today
 
     # Categorize retirements
     retiring_soon: List[Dict] = []  # <=30 days
@@ -781,7 +788,7 @@ Real-time tracking of Azure AI Foundry model availability across regions and dep
 
 ---
 
-_Last updated: {datetime.utcnow():%Y-%m-%d %H:%M UTC}_
+_Data last updated: {last_data_update:%Y-%m-%d %H:%M UTC}_
 """
 
 
@@ -789,8 +796,12 @@ def generate_model_index_page(
     model_regions: Dict[str, Set[str]],
     model_sku_regions: Dict[str, Dict[str, Set[str]]],
     all_regions: Set[str],
+    last_updated: datetime = None,
 ) -> str:
     """Generate the models index page with filterable table."""
+
+    if last_updated is None:
+        last_updated = datetime.utcnow()
     
     def format_region_badge(region: str) -> str:
         """Create a clickable region badge."""
@@ -951,7 +962,7 @@ Complete catalog of AI Foundry models with availability details. Each SKU column
 
 ---
 
-_Last updated: {datetime.utcnow():%Y-%m-%d %H:%M UTC}_
+_Data last updated: {last_updated:%Y-%m-%d %H:%M UTC}_
 """
 
 
@@ -963,8 +974,12 @@ def generate_model_detail_page(
     all_regions: Set[str],
     retirement_info: List[Dict] = None,
     model_regions_lookup: Dict[str, Set[str]] = None,
+    last_updated: datetime = None,
 ) -> str:
     """Generate detailed page for a single model."""
+
+    if last_updated is None:
+        last_updated = datetime.utcnow()
     
     count = len(regions)
     bucket_label, bucket_class, _ = pick_bucket(count)
@@ -1072,7 +1087,7 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: {datetime.utcnow():%Y-%m-%d %H:%M UTC}_
+_Data last updated: {last_updated:%Y-%m-%d %H:%M UTC}_
 """
 
 
@@ -1080,8 +1095,12 @@ def generate_by_region_page(
     model_regions: Dict[str, Set[str]],
     model_region_skus: Dict[str, Dict[str, Set[str]]],
     all_regions: Set[str],
+    last_updated: datetime = None,
 ) -> str:
     """Generate the by-region view page with proper SKU tables."""
+
+    if last_updated is None:
+        last_updated = datetime.utcnow()
     
     # Build region to models mapping
     region_models: Dict[str, Set[str]] = defaultdict(set)
@@ -1192,7 +1211,7 @@ Find which AI models are available in your Azure region, including their deploym
 
 ---
 
-_Last updated: {datetime.utcnow():%Y-%m-%d %H:%M UTC}_
+_Data last updated: {last_updated:%Y-%m-%d %H:%M UTC}_
 """
 
 
@@ -1201,8 +1220,12 @@ def generate_by_sku_page(
     model_sku_regions: Dict[str, Dict[str, Set[str]]],
     all_labels: Set[str],
     all_regions: Set[str],
+    last_updated: datetime = None,
 ) -> str:
     """Generate the by-SKU view page as an interactive filterable table."""
+
+    if last_updated is None:
+        last_updated = datetime.utcnow()
 
     total_regions = len(all_regions)
 
@@ -1503,13 +1526,16 @@ Filter by category, SKU type, or model to find exactly what you need.
 
 ---
 
-_Last updated: {datetime.utcnow():%Y-%m-%d %H:%M UTC}_
+_Data last updated: {last_updated:%Y-%m-%d %H:%M UTC}_
 """
 
 
 def generate_history_page(history: List[Dict]) -> str:
     """Generate the change history page with clean grouped format."""
-    
+
+    # Get the timestamp of the most recent history entry for accurate "Last updated"
+    last_updated = history[0]["timestamp"] if history else datetime.utcnow()
+
     if not history:
         return """# Change History
 
@@ -1517,7 +1543,7 @@ No changes have been recorded yet.
 
 ---
 
-_Last updated: """ + f"{datetime.utcnow():%Y-%m-%d %H:%M UTC}_"
+_Data last updated: """ + f"{last_updated:%Y-%m-%d %H:%M UTC}_"
     
     entries = []
     all_models = set()
@@ -1664,7 +1690,7 @@ Filter and search through all recent availability changes.
 
 ---
 
-_Last updated: {datetime.utcnow():%Y-%m-%d %H:%M UTC}_
+_Data last updated: {last_updated:%Y-%m-%d %H:%M UTC}_
 """
 
 
@@ -1684,20 +1710,23 @@ def main():
     # Load retirement data
     retirement_data = load_retirement_data(RETIREMENT_PATH)
     retirement_index = build_retirement_index(retirement_data)
-    
+
+    # Get the timestamp of the most recent history entry for accurate "Last updated"
+    last_data_update = history[0]["timestamp"] if history else datetime.utcnow()
+
     # Build normalized model_regions lookup for retirement sections
     model_regions_normalized = {
         slugify(model): regions for model, regions in model_regions.items()
     }
-    
+
     # Generate main pages
     pages = {
         "index.md": generate_index_page(model_regions, model_sku_regions, all_labels, all_regions, retirement_data, history),
-        "models/index.md": generate_model_index_page(model_regions, model_sku_regions, all_regions),
-        "by-region.md": generate_by_region_page(model_regions, model_region_skus, all_regions),
-        "by-sku.md": generate_by_sku_page(model_regions, model_sku_regions, all_labels, all_regions),
+        "models/index.md": generate_model_index_page(model_regions, model_sku_regions, all_regions, last_data_update),
+        "by-region.md": generate_by_region_page(model_regions, model_region_skus, all_regions, last_data_update),
+        "by-sku.md": generate_by_sku_page(model_regions, model_sku_regions, all_labels, all_regions, last_data_update),
         "history.md": generate_history_page(history),
-        "retirements.md": generate_retirements_page(retirement_data, model_regions_normalized),
+        "retirements.md": generate_retirements_page(retirement_data, model_regions_normalized, last_data_update),
     }
     
     for filename, content in pages.items():
@@ -1720,6 +1749,7 @@ def main():
             all_regions=all_regions,
             retirement_info=retirement_info,
             model_regions_lookup=model_regions_normalized,
+            last_updated=last_data_update,
         )
         path = DOCS_DIR / "models" / f"{slugify(model)}.md"
         path.write_text(content, encoding="utf-8")

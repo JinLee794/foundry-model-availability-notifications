@@ -157,4 +157,4 @@ Fine-tuned models retire in two phases: training and deployment.
 
 _Data sourced from [Microsoft Azure AI Documentation](https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/foundry/openai/includes/retirement/models.md)_
 
-_Last updated: 2026-03-18 14:29 UTC_
+_Data last updated: 2026-03-10 07:42 UTC_
