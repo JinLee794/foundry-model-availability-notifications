@@ -1,6 +1,6 @@
 # gpt-4o-mini-tts
 
-<span class="badge badge-emerging">Emerging</span> Available in **1** of 28 regions
+<span class="badge badge-emerging">Emerging</span> Available in **1** of 32 regions
 
 
 !!! warning "Retirement Notice"
@@ -21,7 +21,7 @@
 | Metric | Value |
 |--------|-------|
 | Total Regions | 1 |
-| Coverage | 4% |
+| Coverage | 3% |
 | SKU Types | 2 |
 | Categories | Global |
 
@@ -36,8 +36,8 @@
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
-| Global Standard | 1 | 4% |
-| Global coverage | 1 | 4% |
+| Global Standard | 1 | 3% |
+| Global coverage | 1 | 3% |
 
 **Available Regions:**
 
@@ -65,4 +65,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-02-25 19:41 UTC_
+_Last updated: 2026-03-18 14:29 UTC_

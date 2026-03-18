@@ -1,6 +1,6 @@
 # gpt-image-1-mini
 
-<span class="badge badge-emerging">Emerging</span> Available in **7** of 28 regions
+<span class="badge badge-emerging">Emerging</span> Available in **5** of 32 regions
 
 
 !!! warning "Retirement Notice"
@@ -19,10 +19,10 @@
 
 | Metric | Value |
 |--------|-------|
-| Total Regions | 7 |
-| Coverage | 25% |
-| SKU Types | 3 |
-| Categories | Global, Standard |
+| Total Regions | 5 |
+| Coverage | 16% |
+| SKU Types | 2 |
+| Categories | Global |
 
 ---
 
@@ -35,25 +35,12 @@
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
-| Global Standard | 5 | 18% |
-| Global coverage | 7 | 25% |
+| Global Standard | 5 | 16% |
+| Global coverage | 5 | 16% |
 
 **Available Regions:**
 
-`East US`, `East US 2`, `North Central US`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3`
-
-### Standard Deployments
-
-!!! tip "Use Case"
-    Best for variable workloads and cost-sensitive applications
-
-| SKU Type | Regions | Coverage |
-|----------|---------|----------|
-| Standard | 2 | 7% |
-
-**Available Regions:**
-
-`East US`, `North Central US`
+`East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3`
 
 
 ---
@@ -65,16 +52,14 @@ This table shows exactly which SKU types are available in each region.
 <div class="table-responsive">
 <table class="matrix-table">
 <thead>
-<tr><th>Region</th><th>Global Standard</th><th>Global coverage</th><th>Standard</th></tr>
+<tr><th>Region</th><th>Global Standard</th><th>Global coverage</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>East US</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>East US 2</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td></tr>
-<tr><td><strong>North Central US</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Poland Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td></tr>
-<tr><td><strong>Sweden Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td></tr>
-<tr><td><strong>UAE North</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td></tr>
-<tr><td><strong>West US 3</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td></tr>
+<tr><td><strong>East US 2</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Poland Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Sweden Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>UAE North</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>West US 3</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
 </tbody>
 </table>
 </div>
@@ -83,4 +68,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-02-25 19:41 UTC_
+_Last updated: 2026-03-18 14:29 UTC_

@@ -1,6 +1,6 @@
 # gpt-5.2-chat
 
-<span class="badge badge-emerging">Emerging</span> Available in **2** of 28 regions
+<span class="badge badge-emerging">Emerging</span> Available in **2** of 32 regions
 
 
 !!! warning "Retirement Notice"
@@ -20,7 +20,7 @@
 | Metric | Value |
 |--------|-------|
 | Total Regions | 2 |
-| Coverage | 7% |
+| Coverage | 6% |
 | SKU Types | 2 |
 | Categories | Global |
 
@@ -35,8 +35,8 @@
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
-| Global Standard | 2 | 7% |
-| Global coverage | 2 | 7% |
+| Global Standard | 2 | 6% |
+| Global coverage | 2 | 6% |
 
 **Available Regions:**
 
@@ -65,4 +65,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-02-25 19:41 UTC_
+_Last updated: 2026-03-18 14:29 UTC_

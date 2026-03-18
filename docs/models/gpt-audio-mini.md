@@ -1,6 +1,6 @@
 # gpt-audio-mini
 
-<span class="badge badge-emerging">Emerging</span> Available in **3** of 28 regions
+<span class="badge badge-emerging">Emerging</span> Available in **3** of 32 regions
 
 
 !!! warning "Retirement Notice"
@@ -20,7 +20,7 @@
 | Metric | Value |
 |--------|-------|
 | Total Regions | 3 |
-| Coverage | 11% |
+| Coverage | 9% |
 | SKU Types | 2 |
 | Categories | Global |
 
@@ -35,8 +35,8 @@
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
-| Global Standard | 3 | 11% |
-| Global coverage | 3 | 11% |
+| Global Standard | 3 | 9% |
+| Global coverage | 3 | 9% |
 
 **Available Regions:**
 
@@ -66,4 +66,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-02-25 19:41 UTC_
+_Last updated: 2026-03-18 14:29 UTC_

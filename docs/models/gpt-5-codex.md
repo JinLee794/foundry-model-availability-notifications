@@ -1,6 +1,6 @@
 # gpt-5-codex
 
-<span class="badge badge-emerging">Emerging</span> Available in **3** of 28 regions
+<span class="badge badge-broad">Broad</span> Available in **27** of 32 regions
 
 
 !!! warning "Retirement Notice"
@@ -19,8 +19,8 @@
 
 | Metric | Value |
 |--------|-------|
-| Total Regions | 3 |
-| Coverage | 11% |
+| Total Regions | 27 |
+| Coverage | 84% |
 | SKU Types | 2 |
 | Categories | Global |
 
@@ -35,12 +35,12 @@
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
-| Global Standard | 3 | 11% |
-| Global coverage | 3 | 11% |
+| Global Standard | 27 | 84% |
+| Global coverage | 27 | 84% |
 
 **Available Regions:**
 
-`Central US`, `East US 2`, `Sweden Central`
+`Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US`, `East US 2`, `France Central`, `Germany West Central`, `Italy North`, `Japan East`, `Korea Central`, `North Central US`, `Norway East`, `Poland Central`, `South Africa North`, `South Central US`, `South India`, `Southeast Asia`, `Spain Central`, `Sweden Central`, `Switzerland North`, `Switzerland West`, `UAE North`, `UK South`, `West Europe`, `West US`
 
 
 ---
@@ -55,9 +55,33 @@ This table shows exactly which SKU types are available in each region.
 <tr><th>Region</th><th>Global Standard</th><th>Global coverage</th></tr>
 </thead>
 <tbody>
+<tr><td><strong>Australia East</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Brazil South</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Canada Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Canada East</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
 <tr><td><strong>Central US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>East US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
 <tr><td><strong>East US 2</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>France Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Germany West Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Italy North</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Japan East</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Korea Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>North Central US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Norway East</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Poland Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>South Africa North</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>South Central US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>South India</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Southeast Asia</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Spain Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
 <tr><td><strong>Sweden Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Switzerland North</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Switzerland West</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>UAE North</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>UK South</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>West Europe</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>West US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
 </tbody>
 </table>
 </div>
@@ -66,4 +90,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-02-25 19:41 UTC_
+_Last updated: 2026-03-18 14:29 UTC_

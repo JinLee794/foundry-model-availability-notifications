@@ -1,6 +1,6 @@
 # text-embedding-ada-002
 
-<span class="badge badge-broad">Broad</span> Available in **25** of 28 regions
+<span class="badge badge-broad">Broad</span> Available in **25** of 32 regions
 
 
 !!! warning "Retirement Notice"
@@ -21,7 +21,7 @@
 | Metric | Value |
 |--------|-------|
 | Total Regions | 25 |
-| Coverage | 89% |
+| Coverage | 78% |
 | SKU Types | 4 |
 | Categories | Datazone, Global, Standard |
 
@@ -36,8 +36,8 @@
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
-| Global Standard | 24 | 86% |
-| Global coverage | 25 | 89% |
+| Global Standard | 24 | 75% |
+| Global coverage | 25 | 78% |
 
 **Available Regions:**
 
@@ -50,7 +50,7 @@
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
-| Datazone standard | 14 | 50% |
+| Datazone standard | 14 | 44% |
 
 **Available Regions:**
 
@@ -63,7 +63,7 @@
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
-| Standard | 19 | 68% |
+| Standard | 19 | 59% |
 
 **Available Regions:**
 
@@ -115,4 +115,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-02-25 19:41 UTC_
+_Last updated: 2026-03-18 14:29 UTC_

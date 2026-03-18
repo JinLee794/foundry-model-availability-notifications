@@ -4,15 +4,15 @@ Track upcoming Azure AI Foundry model retirements and plan your migrations.
 
 <div class="stats-grid">
   <div class="stat-card" style="border-left-color: #ef4444;">
-    <div class="stat-value" style="color: #ef4444;">2</div>
+    <div class="stat-value" style="color: #ef4444;">3</div>
     <div class="stat-label">Retiring in 30 Days</div>
   </div>
   <div class="stat-card" style="border-left-color: #f59e0b;">
-    <div class="stat-value" style="color: #f59e0b;">3</div>
+    <div class="stat-value" style="color: #f59e0b;">1</div>
     <div class="stat-label">Retiring in 90 Days</div>
   </div>
   <div class="stat-card" style="border-left-color: #3b82f6;">
-    <div class="stat-value" style="color: #3b82f6;">45</div>
+    <div class="stat-value" style="color: #3b82f6;">44</div>
     <div class="stat-label">Scheduled</div>
   </div>
   <div class="stat-card">
@@ -29,8 +29,9 @@ These models require immediate migration attention.
 
 | Model | Version | Category | Retirement Date | Status | Replacement |
 |-------|---------|----------|-----------------|--------|-------------|
-| [gpt-5-chat](./models/gpt-5-chat/) | 2025-08-07 | Text Generation | 2026-03-01 | <span class="badge badge-retiring-soon">Retiring Soon</span> | [gpt-5.2-chat](./models/gpt-5-2-chat/) (2 regions) |
-| [gpt-5-chat](./models/gpt-5-chat/) | 2025-10-03 | Text Generation | 2026-03-01 | <span class="badge badge-retiring-soon">Retiring Soon</span> | [gpt-5.2-chat](./models/gpt-5-2-chat/) (2 regions) |
+| [gpt-4o](./models/gpt-4o/) | 2024-05-13 | Text Generation | 2026-03-31 | <span class="badge badge-retiring-soon">Retiring Soon</span> | [gpt-5.1](./models/gpt-5-1/) (29 regions) |
+| [gpt-4o](./models/gpt-4o/) | 2024-08-06 | Text Generation | 2026-03-31 | <span class="badge badge-retiring-soon">Retiring Soon</span> | [gpt-5.1](./models/gpt-5-1/) (29 regions) |
+| [gpt-4o-mini](./models/gpt-4o-mini/) | 2024-07-18 | Text Generation | 2026-03-31 | <span class="badge badge-retiring-soon">Retiring Soon</span> | [gpt-4.1-mini](./models/gpt-4-1-mini/) (29 regions) |
 
 
 ## :material-calendar-alert:{ .md-icon-upcoming } Upcoming Retirements (31-90 Days)
@@ -39,9 +40,7 @@ Plan your migrations for these models.
 
 | Model | Version | Category | Retirement Date | Status | Replacement |
 |-------|---------|----------|-----------------|--------|-------------|
-| [gpt-4o](./models/gpt-4o/) | 2024-05-13 | Text Generation | 2026-03-31 | <span class="badge badge-retiring">Retiring</span> | [gpt-5.1](./models/gpt-5-1/) (28 regions) |
-| [gpt-4o](./models/gpt-4o/) | 2024-08-06 | Text Generation | 2026-03-31 | <span class="badge badge-retiring">Retiring</span> | [gpt-5.1](./models/gpt-5-1/) (28 regions) |
-| [gpt-4o-mini](./models/gpt-4o-mini/) | 2024-07-18 | Text Generation | 2026-03-31 | <span class="badge badge-retiring">Retiring</span> | [gpt-4.1-mini](./models/gpt-4-1-mini/) (28 regions) |
+| [gpt-4o](./models/gpt-4o/) | 2024-11-20 | Text Generation | 2026-06-05 | <span class="badge badge-retiring">Retiring</span> | [gpt-5.1](./models/gpt-5-1/) (29 regions) |
 
 !!! note "**gpt-4o** and **gpt-4o-mini** Retirement Update"
     Standard deployment type retires 2026-03-31, with auto-upgrades starting 2026-03-09. For Provisioned, Global Standard, and Data Zone Standard deployment types, the retirement date has been moved to 2026-10-01.
@@ -59,19 +58,19 @@ Complete list of model retirements with replacement recommendations.
 | [tts-hd](./models/tts-hd/) | 001 | Audio | - | <span class="badge badge-planned">Planned</span> | - |
 | [whisper](./models/whisper/) | 001 | Audio | - | <span class="badge badge-planned">Planned</span> | - |
 | [gpt-4o-audio-preview](./models/gpt-4o-audio-preview/) | 2024-12-17 | Audio | 2026-02-02 | <span class="badge badge-retired">Retired</span> | [gpt-audio](./models/gpt-audio/) (3 regions) |
-| [gpt-4o-realtime-preview](./models/gpt-4o-realtime-preview/) | 2024-12-17 | Audio | 2026-02-02 | <span class="badge badge-retired">Retired</span> | [gpt-realtime](./models/gpt-realtime/) (3 regions) |
-| [dall-e-3](./models/dall-e-3/) | 3 | Image And Video | 2026-02-18 | <span class="badge badge-retired">Retired</span> | [gpt-image-1-mini](./models/gpt-image-1-mini/) (7 regions) |
-| [gpt-5-chat](./models/gpt-5-chat/) | 2025-08-07 | Text Generation | 2026-03-01 | <span class="badge badge-retiring-soon">Retiring Soon</span> | [gpt-5.2-chat](./models/gpt-5-2-chat/) (2 regions) |
-| [gpt-5-chat](./models/gpt-5-chat/) | 2025-10-03 | Text Generation | 2026-03-01 | <span class="badge badge-retiring-soon">Retiring Soon</span> | [gpt-5.2-chat](./models/gpt-5-2-chat/) (2 regions) |
-| [gpt-4o](./models/gpt-4o/) | 2024-05-13 | Text Generation | 2026-03-31 | <span class="badge badge-retiring">Retiring</span> | [gpt-5.1](./models/gpt-5-1/) (28 regions) |
-| [gpt-4o](./models/gpt-4o/) | 2024-08-06 | Text Generation | 2026-03-31 | <span class="badge badge-retiring">Retiring</span> | [gpt-5.1](./models/gpt-5-1/) (28 regions) |
-| [gpt-4o-mini](./models/gpt-4o-mini/) | 2024-07-18 | Text Generation | 2026-03-31 | <span class="badge badge-retiring">Retiring</span> | [gpt-4.1-mini](./models/gpt-4-1-mini/) (28 regions) |
-| [gpt-4o](./models/gpt-4o/) | 2024-11-20 | Text Generation | 2026-06-05 | <span class="badge badge-scheduled">Scheduled</span> | [gpt-5.1](./models/gpt-5-1/) (28 regions) |
-| [o1](./models/o1/) | 2024-12-17 | Text Generation | 2026-07-15 | <span class="badge badge-scheduled">Scheduled</span> | [o3](./models/o3/) (28 regions) |
-| [o3-mini](./models/o3-mini/) | 2025-01-31 | Text Generation | 2026-08-02 | <span class="badge badge-scheduled">Scheduled</span> | [o4-mini](./models/o4-mini/) (28 regions) |
+| [gpt-4o-realtime-preview](./models/gpt-4o-realtime-preview/) | 2024-12-17 | Audio | 2026-02-02 | <span class="badge badge-retired">Retired</span> | [gpt-realtime](./models/gpt-realtime/) (5 regions) |
+| [dall-e-3](./models/dall-e-3/) | 3 | Image And Video | 2026-02-18 | <span class="badge badge-retired">Retired</span> | [gpt-image-1-mini](./models/gpt-image-1-mini/) (5 regions) |
+| [gpt-5-chat](./models/gpt-5-chat/) | 2025-08-07 | Text Generation | 2026-03-01 | <span class="badge badge-retired">Retired</span> | [gpt-5.2-chat](./models/gpt-5-2-chat/) (2 regions) |
+| [gpt-5-chat](./models/gpt-5-chat/) | 2025-10-03 | Text Generation | 2026-03-01 | <span class="badge badge-retired">Retired</span> | [gpt-5.2-chat](./models/gpt-5-2-chat/) (2 regions) |
+| [gpt-4o](./models/gpt-4o/) | 2024-05-13 | Text Generation | 2026-03-31 | <span class="badge badge-retiring-soon">Retiring Soon</span> | [gpt-5.1](./models/gpt-5-1/) (29 regions) |
+| [gpt-4o](./models/gpt-4o/) | 2024-08-06 | Text Generation | 2026-03-31 | <span class="badge badge-retiring-soon">Retiring Soon</span> | [gpt-5.1](./models/gpt-5-1/) (29 regions) |
+| [gpt-4o-mini](./models/gpt-4o-mini/) | 2024-07-18 | Text Generation | 2026-03-31 | <span class="badge badge-retiring-soon">Retiring Soon</span> | [gpt-4.1-mini](./models/gpt-4-1-mini/) (29 regions) |
+| [gpt-4o](./models/gpt-4o/) | 2024-11-20 | Text Generation | 2026-06-05 | <span class="badge badge-retiring">Retiring</span> | [gpt-5.1](./models/gpt-5-1/) (29 regions) |
+| [o1](./models/o1/) | 2024-12-17 | Text Generation | 2026-07-15 | <span class="badge badge-scheduled">Scheduled</span> | [o3](./models/o3/) (29 regions) |
+| [o3-mini](./models/o3-mini/) | 2025-01-31 | Text Generation | 2026-08-02 | <span class="badge badge-scheduled">Scheduled</span> | [o4-mini](./models/o4-mini/) (29 regions) |
 | [o1-pro](./models/o1-pro/) | 2025-03-19 | Text Generation | 2026-09-18 | <span class="badge badge-scheduled">Scheduled</span> | [o3-pro](./models/o3-pro/) (3 regions) |
-| [gpt-4.1](./models/gpt-4-1/) | 2025-04-14 | Text Generation | 2026-10-14 | <span class="badge badge-scheduled">Scheduled</span> | [gpt-5](./models/gpt-5/) (28 regions) |
-| [gpt-4.1-mini](./models/gpt-4-1-mini/) | 2025-04-14 | Text Generation | 2026-10-14 | <span class="badge badge-scheduled">Scheduled</span> | [gpt-5-mini](./models/gpt-5-mini/) (28 regions) |
+| [gpt-4.1](./models/gpt-4-1/) | 2025-04-14 | Text Generation | 2026-10-14 | <span class="badge badge-scheduled">Scheduled</span> | [gpt-5](./models/gpt-5/) (29 regions) |
+| [gpt-4.1-mini](./models/gpt-4-1-mini/) | 2025-04-14 | Text Generation | 2026-10-14 | <span class="badge badge-scheduled">Scheduled</span> | [gpt-5-mini](./models/gpt-5-mini/) (29 regions) |
 | [gpt-4.1-nano](./models/gpt-4-1-nano/) | 2025-04-14 | Text Generation | 2026-10-14 | <span class="badge badge-scheduled">Scheduled</span> | [gpt-5-nano](./models/gpt-5-nano/) (26 regions) |
 | [o3](./models/o3/) | 2025-04-16 | Text Generation | 2026-10-16 | <span class="badge badge-scheduled">Scheduled</span> | - |
 | [o4-mini](./models/o4-mini/) | 2025-04-16 | Text Generation | 2026-10-16 | <span class="badge badge-scheduled">Scheduled</span> | - |
@@ -98,7 +97,7 @@ Complete list of model retirements with replacement recommendations.
 | [gpt-4o-transcribe](./models/gpt-4o-transcribe/) | 2025-03-20 | Audio | No earlier than 2026-02-28 | <span class="badge badge-planned">Planned</span> | - |
 | [sora](./models/sora/) | 2025-05-02 | Image And Video | No earlier than 2026-02-28 | <span class="badge badge-planned">Planned</span> | [sora-2](./models/sora-2/) (2 regions) |
 | [gpt-5.1-chat](./models/gpt-5-1-chat/) | 2025-11-13 | Text Generation | No earlier than 2026-03-31 | <span class="badge badge-planned">Planned</span> | - |
-| [gpt-image-1](./models/gpt-image-1/) | 2025-04-15 | Image And Video | No earlier than 2026-03-31 | <span class="badge badge-planned">Planned</span> | [gpt-image-1-mini](./models/gpt-image-1-mini/) (7 regions) |
+| [gpt-image-1](./models/gpt-image-1/) | 2025-04-15 | Image And Video | No earlier than 2026-03-31 | <span class="badge badge-planned">Planned</span> | [gpt-image-1-mini](./models/gpt-image-1-mini/) (5 regions) |
 | [gpt-5.2-chat](./models/gpt-5-2-chat/) | 2025-12-11 | Text Generation | No earlier than 2026-04-01 | <span class="badge badge-planned">Planned</span> | - |
 | [computer-use-preview](./models/computer-use-preview/) | 2025-03-11 | Text Generation | No earlier than 2026-04-14 | <span class="badge badge-planned">Planned</span> | - |
 | [sora-2](./models/sora-2/) | 2025-10-15 | Image And Video | No earlier than 2026-04-30 | <span class="badge badge-planned">Planned</span> | - |
@@ -158,4 +157,4 @@ Fine-tuned models retire in two phases: training and deployment.
 
 _Data sourced from [Microsoft Azure AI Documentation](https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/foundry/openai/includes/retirement/models.md)_
 
-_Last updated: 2026-02-25 19:41 UTC_
+_Last updated: 2026-03-18 14:29 UTC_
