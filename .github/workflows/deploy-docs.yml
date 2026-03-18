@@ -6,7 +6,10 @@ on:
     workflows: ["Region watch (GitHub Markdown)"]
     types:
       - completed
-  
+  schedule:
+    # Run at 6 AM UTC every day
+    - cron: '0 6 * * *'
+    
   # Allow manual trigger
   workflow_dispatch:
   
