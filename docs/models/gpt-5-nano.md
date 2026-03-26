@@ -1,6 +1,6 @@
 # gpt-5-nano
 
-<span class="badge badge-broad">Broad</span> Available in **26** of 28 regions
+<span class="badge badge-broad">Broad</span> Available in **26** of 32 regions
 
 
 !!! warning "Retirement Notice"
@@ -20,7 +20,7 @@
 | Metric | Value |
 |--------|-------|
 | Total Regions | 26 |
-| Coverage | 93% |
+| Coverage | 81% |
 | SKU Types | 3 |
 | Categories | Datazone, Global |
 
@@ -35,8 +35,8 @@
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
-| Global Standard | 26 | 93% |
-| Global coverage | 26 | 93% |
+| Global Standard | 26 | 81% |
+| Global coverage | 26 | 81% |
 
 **Available Regions:**
 
@@ -49,7 +49,7 @@
 
 | SKU Type | Regions | Coverage |
 |----------|---------|----------|
-| Datazone standard | 14 | 50% |
+| Datazone standard | 14 | 44% |
 
 **Available Regions:**
 
@@ -102,4 +102,4 @@ This table shows exactly which SKU types are available in each region.
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-02-25 19:41 UTC_
+_Last updated: 2026-03-26 14:34 UTC_
