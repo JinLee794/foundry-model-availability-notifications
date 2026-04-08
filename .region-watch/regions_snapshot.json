@@ -1781,8 +1781,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       },
       "standard-global-priority-processing": {
@@ -2022,8 +2021,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       },
       "standard-models": {
@@ -2232,8 +2230,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       },
       "standard-models": {
@@ -2447,8 +2444,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       },
       "standard-models": {
@@ -2470,19 +2466,6 @@
           "UK South",
           "West US",
           "West US 3"
-        ]
-      }
-    }
-  },
-  "gpt-4o-audio-preview": {
-    "all": [
-      "Sweden Central"
-    ],
-    "skus": {
-      "standard-global": {
-        "label": "Standard global deployments",
-        "regions": [
-          "Sweden Central"
         ]
       }
     }
@@ -2683,8 +2666,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       },
       "standard-models": {
@@ -2697,19 +2679,6 @@
           "Sweden Central",
           "West US",
           "West US 3"
-        ]
-      }
-    }
-  },
-  "gpt-4o-mini-realtime-preview": {
-    "all": [
-      "Sweden Central"
-    ],
-    "skus": {
-      "standard-global": {
-        "label": "Standard global deployments",
-        "regions": [
-          "Sweden Central"
         ]
       }
     }
@@ -2744,19 +2713,6 @@
         "label": "Standard global deployments",
         "regions": [
           "East US 2"
-        ]
-      }
-    }
-  },
-  "gpt-4o-realtime-preview": {
-    "all": [
-      "Sweden Central"
-    ],
-    "skus": {
-      "standard-global": {
-        "label": "Standard global deployments",
-        "regions": [
-          "Sweden Central"
         ]
       }
     }
@@ -2988,8 +2944,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       }
     }
@@ -3265,8 +3220,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       }
     }
@@ -3347,8 +3301,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       }
     }
@@ -3605,8 +3558,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       },
       "standard-global-priority-processing": {
@@ -3684,8 +3636,7 @@
       "UAE North",
       "UK South",
       "West Europe",
-      "West US",
-      "West US 3"
+      "West US"
     ],
     "skus": {
       "standard-global": {
@@ -3717,8 +3668,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       }
     }
@@ -3834,8 +3784,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       }
     }
@@ -3883,8 +3832,7 @@
       "UAE North",
       "UK South",
       "West Europe",
-      "West US",
-      "West US 3"
+      "West US"
     ],
     "skus": {
       "standard-global": {
@@ -3916,8 +3864,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       }
     }
@@ -4066,8 +4013,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       },
       "standard-global-priority-processing": {
@@ -4437,8 +4383,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       },
       "standard-global-priority-processing": {
@@ -4479,8 +4424,7 @@
       "UAE North",
       "UK South",
       "West Europe",
-      "West US",
-      "West US 3"
+      "West US"
     ],
     "skus": {
       "standard-global": {
@@ -4512,8 +4456,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       }
     }
@@ -4521,9 +4464,15 @@
   "gpt-5.4-nano": {
     "all": [
       "East US 2",
+      "Germany West Central",
+      "Italy North",
       "Poland Central",
       "South Central US",
-      "Sweden Central"
+      "South India",
+      "Southeast Asia",
+      "Spain Central",
+      "Sweden Central",
+      "Switzerland West"
     ],
     "skus": {
       "datazone-standard": {
@@ -4537,9 +4486,15 @@
         "label": "Standard global deployments",
         "regions": [
           "East US 2",
+          "Germany West Central",
+          "Italy North",
           "Poland Central",
           "South Central US",
-          "Sweden Central"
+          "South India",
+          "Southeast Asia",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland West"
         ]
       }
     }
@@ -4619,8 +4574,7 @@
       "East US 2",
       "Poland Central",
       "Sweden Central",
-      "UAE North",
-      "West US 3"
+      "UAE North"
     ],
     "skus": {
       "standard-global": {
@@ -4629,8 +4583,7 @@
           "East US 2",
           "Poland Central",
           "Sweden Central",
-          "UAE North",
-          "West US 3"
+          "UAE North"
         ]
       }
     }
@@ -4640,8 +4593,7 @@
       "East US 2",
       "Poland Central",
       "Sweden Central",
-      "UAE North",
-      "West US 3"
+      "UAE North"
     ],
     "skus": {
       "standard-global": {
@@ -4650,8 +4602,7 @@
           "East US 2",
           "Poland Central",
           "Sweden Central",
-          "UAE North",
-          "West US 3"
+          "UAE North"
         ]
       }
     }
@@ -4680,8 +4631,7 @@
           "East US 2",
           "Poland Central",
           "Sweden Central",
-          "UAE North",
-          "West US 3"
+          "UAE North"
         ]
       }
     }
@@ -5613,8 +5563,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       },
       "standard-models": {
@@ -5816,8 +5765,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       }
     }
@@ -6017,8 +5965,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       }
     }
@@ -6226,8 +6173,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       },
       "standard-models": {
@@ -6347,8 +6293,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       },
       "standard-models": {
@@ -6451,8 +6396,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       },
       "standard-models": {
@@ -6543,8 +6487,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       },
       "standard-models": {
