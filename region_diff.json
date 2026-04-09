@@ -1,33 +1,86 @@
 {
-  "timestamp": "2026-04-08T08:13:04.214688+00:00",
+  "timestamp": "2026-04-09T08:20:48.553983+00:00",
   "changes": {
     "gpt-4.1": {
       "all": {
-        "added": [],
+        "added": [
+          "usgovarizona"
+        ],
         "removed": []
       },
       "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
+        "datazone-standard": {
+          "label": "Datazone standard",
           "added": [],
           "removed": [
             "West US 3"
           ]
+        },
+        "datazone-standard-gov": {
+          "label": "Datazone Standard Gov",
+          "added": [
+            "usgovarizona"
+          ],
+          "removed": []
+        },
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        },
+        "standard-models-gov": {
+          "label": "Standard Models Gov",
+          "added": [
+            "usgovarizona"
+          ],
+          "removed": []
         }
       }
     },
     "gpt-4.1-mini": {
       "all": {
-        "added": [],
+        "added": [
+          "usgovarizona"
+        ],
         "removed": []
       },
       "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
+        "datazone-provisioned-managed-gov": {
+          "label": "Datazone Provisioned Managed Gov",
+          "added": [
+            "usgovarizona"
+          ],
+          "removed": []
+        },
+        "datazone-standard": {
+          "label": "Datazone standard",
           "added": [],
           "removed": [
             "West US 3"
           ]
+        },
+        "datazone-standard-gov": {
+          "label": "Datazone Standard Gov",
+          "added": [
+            "usgovarizona"
+          ],
+          "removed": []
+        },
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        },
+        "standard-models-gov": {
+          "label": "Standard Models Gov",
+          "added": [
+            "usgovarizona"
+          ],
+          "removed": []
         }
       }
     },
@@ -37,27 +90,80 @@
         "removed": []
       },
       "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
+        "datazone-standard": {
+          "label": "Datazone standard",
           "added": [],
           "removed": [
             "West US 3"
           ]
+        },
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        },
+        "standard-models": {
+          "label": "Standard (all)",
+          "added": [],
+          "removed": [
+            "North Central US",
+            "Sweden Central"
+          ],
+          "sku_removed": true
         }
       }
     },
     "gpt-4o": {
       "all": {
-        "added": [],
+        "added": [
+          "usgovarizona"
+        ],
         "removed": []
       },
       "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
+        "datazone-provisioned-managed-gov": {
+          "label": "Datazone Provisioned Managed Gov",
+          "added": [
+            "usgovarizona"
+          ],
+          "removed": []
+        },
+        "datazone-standard": {
+          "label": "Datazone standard",
           "added": [],
           "removed": [
             "West US 3"
           ]
+        },
+        "datazone-standard-gov": {
+          "label": "Datazone Standard Gov",
+          "added": [
+            "usgovarizona"
+          ],
+          "removed": []
+        },
+        "provisioned-models-gov": {
+          "label": "Provisioned Models Gov",
+          "added": [
+            "usgovarizona"
+          ],
+          "removed": []
+        },
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        },
+        "standard-models-gov": {
+          "label": "Standard Models Gov",
+          "added": [
+            "usgovarizona"
+          ],
+          "removed": []
         }
       }
     },
@@ -67,12 +173,19 @@
         "removed": []
       },
       "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
+        "datazone-standard": {
+          "label": "Datazone standard",
           "added": [],
           "removed": [
             "West US 3"
           ]
+        },
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
         }
       }
     },
@@ -82,12 +195,19 @@
         "removed": []
       },
       "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
+        "datazone-standard": {
+          "label": "Datazone standard",
           "added": [],
           "removed": [
             "West US 3"
           ]
+        },
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
         }
       }
     },
@@ -97,12 +217,19 @@
         "removed": []
       },
       "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
+        "datazone-standard": {
+          "label": "Datazone standard",
           "added": [],
           "removed": [
             "West US 3"
           ]
+        },
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
         }
       }
     },
@@ -112,44 +239,67 @@
         "removed": []
       },
       "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
+        "datazone-standard": {
+          "label": "Datazone standard",
           "added": [],
           "removed": [
             "West US 3"
           ]
+        },
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
         }
       }
     },
     "gpt-5.1": {
       "all": {
-        "added": [],
+        "added": [
+          "usgovarizona"
+        ],
         "removed": []
       },
       "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
+        "datazone-standard": {
+          "label": "Datazone standard",
           "added": [],
           "removed": [
             "West US 3"
           ]
+        },
+        "datazone-standard-gov": {
+          "label": "Datazone Standard Gov",
+          "added": [
+            "usgovarizona"
+          ],
+          "removed": []
+        },
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
         }
       }
     },
     "gpt-5.1-chat": {
       "all": {
-        "added": [],
-        "removed": [
+        "added": [
           "West US 3"
-        ]
+        ],
+        "removed": []
       },
       "skus": {
         "standard-global": {
           "label": "Standard global deployments",
-          "added": [],
-          "removed": [
+          "added": [
             "West US 3"
-          ]
+          ],
+          "removed": []
         }
       }
     },
@@ -161,27 +311,27 @@
       "skus": {
         "standard-global": {
           "label": "Standard global deployments",
-          "added": [],
-          "removed": [
+          "added": [
             "West US 3"
-          ]
+          ],
+          "removed": []
         }
       }
     },
     "gpt-5.1-codex-mini": {
       "all": {
-        "added": [],
-        "removed": [
+        "added": [
           "West US 3"
-        ]
+        ],
+        "removed": []
       },
       "skus": {
         "standard-global": {
           "label": "Standard global deployments",
-          "added": [],
-          "removed": [
+          "added": [
             "West US 3"
-          ]
+          ],
+          "removed": []
         }
       }
     },
@@ -191,8 +341,37 @@
         "removed": []
       },
       "skus": {
+        "datazone-standard": {
+          "label": "Datazone standard",
+          "added": [],
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "provisioned-models": {
+          "label": "Provisioned (PTU managed)",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        },
         "standard-global": {
           "label": "Standard global deployments",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.3-codex": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard": {
+          "label": "Datazone standard",
           "added": [],
           "removed": [
             "West US 3"
@@ -206,54 +385,79 @@
         "removed": []
       },
       "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
+        "datazone-standard": {
+          "label": "Datazone standard",
           "added": [],
           "removed": [
             "West US 3"
           ]
+        },
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
         }
       }
     },
     "gpt-5.4-mini": {
       "all": {
-        "added": [],
-        "removed": [
+        "added": [
           "West US 3"
-        ]
+        ],
+        "removed": []
       },
       "skus": {
+        "datazone-standard": {
+          "label": "Datazone standard",
+          "added": [
+            "Central US",
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "West US"
+          ],
+          "removed": []
+        },
         "standard-global": {
           "label": "Standard global deployments",
-          "added": [],
-          "removed": [
+          "added": [
             "West US 3"
-          ]
+          ],
+          "removed": []
         }
       }
     },
     "gpt-5.4-nano": {
       "all": {
         "added": [
-          "Germany West Central",
-          "Italy North",
-          "South India",
-          "Southeast Asia",
-          "Spain Central",
-          "Switzerland West"
+          "Central US",
+          "East US",
+          "France Central",
+          "UK South",
+          "West Europe"
         ],
         "removed": []
       },
       "skus": {
+        "datazone-standard": {
+          "label": "Datazone standard",
+          "added": [
+            "Central US",
+            "East US"
+          ],
+          "removed": []
+        },
         "standard-global": {
           "label": "Standard global deployments",
           "added": [
-            "Germany West Central",
-            "Italy North",
-            "South India",
-            "Southeast Asia",
-            "Spain Central",
-            "Switzerland West"
+            "Central US",
+            "East US",
+            "France Central",
+            "UK South",
+            "West Europe"
           ],
           "removed": []
         }
@@ -261,35 +465,35 @@
     },
     "gpt-image-1": {
       "all": {
-        "added": [],
-        "removed": [
+        "added": [
           "West US 3"
-        ]
+        ],
+        "removed": []
       },
       "skus": {
         "standard-global": {
           "label": "Standard global deployments",
-          "added": [],
-          "removed": [
+          "added": [
             "West US 3"
-          ]
+          ],
+          "removed": []
         }
       }
     },
     "gpt-image-1-mini": {
       "all": {
-        "added": [],
-        "removed": [
+        "added": [
           "West US 3"
-        ]
+        ],
+        "removed": []
       },
       "skus": {
         "standard-global": {
           "label": "Standard global deployments",
-          "added": [],
-          "removed": [
+          "added": [
             "West US 3"
-          ]
+          ],
+          "removed": []
         }
       }
     },
@@ -299,12 +503,19 @@
         "removed": []
       },
       "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
+        "datazone-standard": {
+          "label": "Datazone standard",
           "added": [],
           "removed": [
             "West US 3"
           ]
+        },
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
         }
       }
     },
@@ -314,12 +525,19 @@
         "removed": []
       },
       "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
+        "datazone-standard": {
+          "label": "Datazone standard",
           "added": [],
           "removed": [
             "West US 3"
           ]
+        },
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
         }
       }
     },
@@ -329,27 +547,57 @@
         "removed": []
       },
       "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
+        "datazone-standard": {
+          "label": "Datazone standard",
           "added": [],
           "removed": [
             "West US 3"
           ]
+        },
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
         }
       }
     },
     "o3-mini": {
       "all": {
-        "added": [],
+        "added": [
+          "usgovarizona"
+        ],
         "removed": []
       },
       "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
+        "datazone-provisioned-managed-gov": {
+          "label": "Datazone Provisioned Managed Gov",
+          "added": [
+            "usgovarizona"
+          ],
+          "removed": []
+        },
+        "datazone-standard": {
+          "label": "Datazone standard",
           "added": [],
           "removed": [
             "West US 3"
           ]
+        },
+        "datazone-standard-gov": {
+          "label": "Datazone Standard Gov",
+          "added": [
+            "usgovarizona"
+          ],
+          "removed": []
+        },
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
         }
       }
     },
@@ -359,72 +607,131 @@
         "removed": []
       },
       "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
+        "datazone-standard": {
+          "label": "Datazone standard",
           "added": [],
           "removed": [
             "West US 3"
           ]
+        },
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
         }
       }
     },
     "text-embedding-3-large": {
       "all": {
-        "added": [],
+        "added": [
+          "usgovarizona"
+        ],
         "removed": []
       },
       "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
+        "datazone-standard": {
+          "label": "Datazone standard",
           "added": [],
           "removed": [
             "West US 3"
           ]
+        },
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        },
+        "standard-models-gov": {
+          "label": "Standard Models Gov",
+          "added": [
+            "usgovarizona"
+          ],
+          "removed": []
         }
       }
     },
     "text-embedding-3-small": {
       "all": {
-        "added": [],
+        "added": [
+          "usgovarizona"
+        ],
         "removed": []
       },
       "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
+        "datazone-standard": {
+          "label": "Datazone standard",
           "added": [],
           "removed": [
             "West US 3"
           ]
+        },
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        },
+        "standard-models-gov": {
+          "label": "Standard Models Gov",
+          "added": [
+            "usgovarizona"
+          ],
+          "removed": []
         }
       }
     },
     "text-embedding-ada-002": {
       "all": {
-        "added": [],
+        "added": [
+          "usgovarizona"
+        ],
         "removed": []
       },
       "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
+        "datazone-standard": {
+          "label": "Datazone standard",
           "added": [],
           "removed": [
             "West US 3"
           ]
+        },
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "West US 3"
+          ],
+          "removed": []
+        },
+        "standard-models-gov": {
+          "label": "Standard Models Gov",
+          "added": [
+            "usgovarizona"
+          ],
+          "removed": []
         }
       }
     },
-    "gpt-4o-audio-preview": {
+    "dall-e-3": {
       "all": {
         "added": [],
         "removed": [
+          "Australia East",
+          "East US",
           "Sweden Central"
         ]
       },
       "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
+        "standard-models": {
+          "label": "Standard (all)",
           "added": [],
           "removed": [
+            "Australia East",
+            "East US",
             "Sweden Central"
           ],
           "sku_removed": true
@@ -432,38 +739,19 @@
       },
       "model_removed": true
     },
-    "gpt-4o-mini-realtime-preview": {
+    "sora": {
       "all": {
         "added": [],
         "removed": [
-          "Sweden Central"
+          "East US 2"
         ]
       },
       "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
+        "standard-models": {
+          "label": "Standard (all)",
           "added": [],
           "removed": [
-            "Sweden Central"
-          ],
-          "sku_removed": true
-        }
-      },
-      "model_removed": true
-    },
-    "gpt-4o-realtime-preview": {
-      "all": {
-        "added": [],
-        "removed": [
-          "Sweden Central"
-        ]
-      },
-      "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
-          "added": [],
-          "removed": [
-            "Sweden Central"
+            "East US 2"
           ],
           "sku_removed": true
         }
@@ -714,23 +1002,6 @@
           "regions": [
             "East US 2",
             "South India",
-            "Sweden Central"
-          ]
-        }
-      }
-    },
-    "dall-e-3": {
-      "all": [
-        "Australia East",
-        "East US",
-        "Sweden Central"
-      ],
-      "skus": {
-        "standard-models": {
-          "label": "Standard (all)",
-          "regions": [
-            "Australia East",
-            "East US",
             "Sweden Central"
           ]
         }
@@ -1714,7 +1985,8 @@
         "UK South",
         "West Europe",
         "West US",
-        "West US 3"
+        "West US 3",
+        "usgovarizona"
       ],
       "skus": {
         "datazone-provisioned-managed": {
@@ -1749,8 +2021,13 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US",
-            "West US 3"
+            "West US"
+          ]
+        },
+        "datazone-standard-gov": {
+          "label": "Datazone Standard Gov",
+          "regions": [
+            "usgovarizona"
           ]
         },
         "datazone-standard-priority-processing": {
@@ -1891,7 +2168,8 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "standard-global-priority-processing": {
@@ -1938,6 +2216,12 @@
             "West US",
             "West US 3"
           ]
+        },
+        "standard-models-gov": {
+          "label": "Standard Models Gov",
+          "regions": [
+            "usgovarizona"
+          ]
         }
       }
     },
@@ -1970,7 +2254,8 @@
         "UK South",
         "West Europe",
         "West US",
-        "West US 3"
+        "West US 3",
+        "usgovarizona"
       ],
       "skus": {
         "datazone-provisioned-managed": {
@@ -1989,6 +2274,12 @@
             "West US"
           ]
         },
+        "datazone-provisioned-managed-gov": {
+          "label": "Datazone Provisioned Managed Gov",
+          "regions": [
+            "usgovarizona"
+          ]
+        },
         "datazone-standard": {
           "label": "Datazone standard",
           "regions": [
@@ -2004,8 +2295,13 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US",
-            "West US 3"
+            "West US"
+          ]
+        },
+        "datazone-standard-gov": {
+          "label": "Datazone Standard Gov",
+          "regions": [
+            "usgovarizona"
           ]
         },
         "global-batch": {
@@ -2131,7 +2427,8 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "standard-models": {
@@ -2152,6 +2449,12 @@
             "West Europe",
             "West US",
             "West US 3"
+          ]
+        },
+        "standard-models-gov": {
+          "label": "Standard Models Gov",
+          "regions": [
+            "usgovarizona"
           ]
         }
       }
@@ -2220,8 +2523,7 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US",
-            "West US 3"
+            "West US"
           ]
         },
         "global-batch": {
@@ -2340,14 +2642,8 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US"
-          ]
-        },
-        "standard-models": {
-          "label": "Standard (all)",
-          "regions": [
-            "North Central US",
-            "Sweden Central"
+            "West US",
+            "West US 3"
           ]
         }
       }
@@ -2381,7 +2677,8 @@
         "UK South",
         "West Europe",
         "West US",
-        "West US 3"
+        "West US 3",
+        "usgovarizona"
       ],
       "skus": {
         "datazone-provisioned-managed": {
@@ -2400,6 +2697,12 @@
             "West US"
           ]
         },
+        "datazone-provisioned-managed-gov": {
+          "label": "Datazone Provisioned Managed Gov",
+          "regions": [
+            "usgovarizona"
+          ]
+        },
         "datazone-standard": {
           "label": "Datazone standard",
           "regions": [
@@ -2415,8 +2718,13 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US",
-            "West US 3"
+            "West US"
+          ]
+        },
+        "datazone-standard-gov": {
+          "label": "Datazone Standard Gov",
+          "regions": [
+            "usgovarizona"
           ]
         },
         "global-batch": {
@@ -2528,6 +2836,12 @@
             "West US 3"
           ]
         },
+        "provisioned-models-gov": {
+          "label": "Provisioned Models Gov",
+          "regions": [
+            "usgovarizona"
+          ]
+        },
         "standard-global": {
           "label": "Standard global deployments",
           "regions": [
@@ -2554,7 +2868,8 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "standard-models": {
@@ -2576,6 +2891,12 @@
             "UK South",
             "West US",
             "West US 3"
+          ]
+        },
+        "standard-models-gov": {
+          "label": "Standard Models Gov",
+          "regions": [
+            "usgovarizona"
           ]
         }
       }
@@ -2643,8 +2964,7 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US",
-            "West US 3"
+            "West US"
           ]
         },
         "global-batch": {
@@ -2776,7 +3096,8 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "standard-models": {
@@ -2933,8 +3254,7 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US",
-            "West US 3"
+            "West US"
           ]
         },
         "global-batch": {
@@ -3054,7 +3374,8 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         }
       }
@@ -3253,8 +3574,7 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US",
-            "West US 3"
+            "West US"
           ]
         },
         "provisioned-global": {
@@ -3330,7 +3650,8 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         }
       }
@@ -3380,8 +3701,7 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US",
-            "West US 3"
+            "West US"
           ]
         },
         "standard-global": {
@@ -3411,7 +3731,8 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         }
       }
@@ -3510,7 +3831,8 @@
         "UK South",
         "West Europe",
         "West US",
-        "West US 3"
+        "West US 3",
+        "usgovarizona"
       ],
       "skus": {
         "datazone-provisioned-managed": {
@@ -3540,8 +3862,13 @@
             "North Central US",
             "South Central US",
             "Sweden Central",
-            "West US",
-            "West US 3"
+            "West US"
+          ]
+        },
+        "datazone-standard-gov": {
+          "label": "Datazone Standard Gov",
+          "regions": [
+            "usgovarizona"
           ]
         },
         "datazone-standard-priority-processing": {
@@ -3668,7 +3995,8 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "standard-global-priority-processing": {
@@ -3746,7 +4074,8 @@
         "UAE North",
         "UK South",
         "West Europe",
-        "West US"
+        "West US",
+        "West US 3"
       ],
       "skus": {
         "standard-global": {
@@ -3778,7 +4107,8 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         }
       }
@@ -3894,7 +4224,8 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         }
       }
@@ -3942,7 +4273,8 @@
         "UAE North",
         "UK South",
         "West Europe",
-        "West US"
+        "West US",
+        "West US 3"
       ],
       "skus": {
         "standard-global": {
@@ -3974,7 +4306,8 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         }
       }
@@ -4036,8 +4369,7 @@
             "East US 2",
             "North Central US",
             "South Central US",
-            "West US",
-            "West US 3"
+            "West US"
           ]
         },
         "datazone-standard-priority-processing": {
@@ -4091,7 +4423,8 @@
             "Canada East",
             "Japan East",
             "Korea Central",
-            "UK South"
+            "UK South",
+            "West US 3"
           ]
         },
         "standard-global": {
@@ -4123,7 +4456,8 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "standard-global-priority-processing": {
@@ -4304,8 +4638,7 @@
             "East US 2",
             "North Central US",
             "South Central US",
-            "West US",
-            "West US 3"
+            "West US"
           ]
         },
         "provisioned-global": {
@@ -4409,8 +4742,7 @@
             "East US 2",
             "North Central US",
             "South Central US",
-            "West US",
-            "West US 3"
+            "West US"
           ]
         },
         "datazone-standard-priority-processing": {
@@ -4493,7 +4825,8 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "standard-global-priority-processing": {
@@ -4534,9 +4867,21 @@
         "UAE North",
         "UK South",
         "West Europe",
-        "West US"
+        "West US",
+        "West US 3"
       ],
       "skus": {
+        "datazone-standard": {
+          "label": "Datazone standard",
+          "regions": [
+            "Central US",
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "West US"
+          ]
+        },
         "standard-global": {
           "label": "Standard global deployments",
           "regions": [
@@ -4566,14 +4911,18 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         }
       }
     },
     "gpt-5.4-nano": {
       "all": [
+        "Central US",
+        "East US",
         "East US 2",
+        "France Central",
         "Germany West Central",
         "Italy North",
         "Poland Central",
@@ -4582,12 +4931,16 @@
         "Southeast Asia",
         "Spain Central",
         "Sweden Central",
-        "Switzerland West"
+        "Switzerland West",
+        "UK South",
+        "West Europe"
       ],
       "skus": {
         "datazone-standard": {
           "label": "Datazone standard",
           "regions": [
+            "Central US",
+            "East US",
             "East US 2",
             "South Central US"
           ]
@@ -4595,7 +4948,10 @@
         "standard-global": {
           "label": "Standard global deployments",
           "regions": [
+            "Central US",
+            "East US",
             "East US 2",
+            "France Central",
             "Germany West Central",
             "Italy North",
             "Poland Central",
@@ -4604,7 +4960,9 @@
             "Southeast Asia",
             "Spain Central",
             "Sweden Central",
-            "Switzerland West"
+            "Switzerland West",
+            "UK South",
+            "West Europe"
           ]
         }
       }
@@ -4684,7 +5042,8 @@
         "East US 2",
         "Poland Central",
         "Sweden Central",
-        "UAE North"
+        "UAE North",
+        "West US 3"
       ],
       "skus": {
         "standard-global": {
@@ -4693,7 +5052,8 @@
             "East US 2",
             "Poland Central",
             "Sweden Central",
-            "UAE North"
+            "UAE North",
+            "West US 3"
           ]
         }
       }
@@ -4703,7 +5063,8 @@
         "East US 2",
         "Poland Central",
         "Sweden Central",
-        "UAE North"
+        "UAE North",
+        "West US 3"
       ],
       "skus": {
         "standard-global": {
@@ -4712,7 +5073,8 @@
             "East US 2",
             "Poland Central",
             "Sweden Central",
-            "UAE North"
+            "UAE North",
+            "West US 3"
           ]
         }
       }
@@ -4731,8 +5093,7 @@
           "regions": [
             "East US 2",
             "Poland Central",
-            "Sweden Central",
-            "West US 3"
+            "Sweden Central"
           ]
         },
         "standard-global": {
@@ -4741,7 +5102,8 @@
             "East US 2",
             "Poland Central",
             "Sweden Central",
-            "UAE North"
+            "UAE North",
+            "West US 3"
           ]
         }
       }
@@ -5965,8 +6327,7 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US",
-            "West US 3"
+            "West US"
           ]
         },
         "provisioned-global": {
@@ -6036,7 +6397,8 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "standard-models": {
@@ -6117,8 +6479,7 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US",
-            "West US 3"
+            "West US"
           ]
         },
         "global-batch": {
@@ -6238,7 +6599,8 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         }
       }
@@ -6287,7 +6649,8 @@
         "UK South",
         "West Europe",
         "West US",
-        "West US 3"
+        "West US 3",
+        "usgovarizona"
       ],
       "skus": {
         "datazone-provisioned-managed": {
@@ -6306,6 +6669,12 @@
             "West US"
           ]
         },
+        "datazone-provisioned-managed-gov": {
+          "label": "Datazone Provisioned Managed Gov",
+          "regions": [
+            "usgovarizona"
+          ]
+        },
         "datazone-standard": {
           "label": "Datazone standard",
           "regions": [
@@ -6321,8 +6690,13 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US",
-            "West US 3"
+            "West US"
+          ]
+        },
+        "datazone-standard-gov": {
+          "label": "Datazone Standard Gov",
+          "regions": [
+            "usgovarizona"
           ]
         },
         "global-batch": {
@@ -6438,7 +6812,8 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         }
       }
@@ -6524,8 +6899,7 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US",
-            "West US 3"
+            "West US"
           ]
         },
         "global-batch": {
@@ -6646,7 +7020,8 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "standard-models": {
@@ -6659,19 +7034,6 @@
             "Sweden Central",
             "West US",
             "West US 3"
-          ]
-        }
-      }
-    },
-    "sora": {
-      "all": [
-        "East US 2"
-      ],
-      "skus": {
-        "standard-models": {
-          "label": "Standard (all)",
-          "regions": [
-            "East US 2"
           ]
         }
       }
@@ -6718,7 +7080,8 @@
         "UK South",
         "West Europe",
         "West US",
-        "West US 3"
+        "West US 3",
+        "usgovarizona"
       ],
       "skus": {
         "datazone-standard": {
@@ -6736,8 +7099,7 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US",
-            "West US 3"
+            "West US"
           ]
         },
         "standard-global": {
@@ -6766,7 +7128,8 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "standard-models": {
@@ -6791,6 +7154,12 @@
             "UAE North",
             "UK South",
             "West US 3"
+          ]
+        },
+        "standard-models-gov": {
+          "label": "Standard Models Gov",
+          "regions": [
+            "usgovarizona"
           ]
         }
       }
@@ -6821,7 +7190,8 @@
         "UK South",
         "West Europe",
         "West US",
-        "West US 3"
+        "West US 3",
+        "usgovarizona"
       ],
       "skus": {
         "datazone-standard": {
@@ -6839,8 +7209,7 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US",
-            "West US 3"
+            "West US"
           ]
         },
         "standard-global": {
@@ -6869,7 +7238,8 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "standard-models": {
@@ -6883,6 +7253,12 @@
             "Switzerland North",
             "UAE North",
             "West US"
+          ]
+        },
+        "standard-models-gov": {
+          "label": "Standard Models Gov",
+          "regions": [
+            "usgovarizona"
           ]
         }
       }
@@ -6913,7 +7289,8 @@
         "UK South",
         "West Europe",
         "West US",
-        "West US 3"
+        "West US 3",
+        "usgovarizona"
       ],
       "skus": {
         "datazone-standard": {
@@ -6931,8 +7308,7 @@
             "Spain Central",
             "Sweden Central",
             "West Europe",
-            "West US",
-            "West US 3"
+            "West US"
           ]
         },
         "standard-global": {
@@ -6960,7 +7336,8 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US"
+            "West US",
+            "West US 3"
           ]
         },
         "standard-models": {
@@ -6985,6 +7362,12 @@
             "West Europe",
             "West US",
             "West US 3"
+          ]
+        },
+        "standard-models-gov": {
+          "label": "Standard Models Gov",
+          "regions": [
+            "usgovarizona"
           ]
         }
       }
@@ -7052,15 +7435,20 @@
     }
   },
   "files": [
+    "datazone-provisioned-managed-gov.md",
     "datazone-provisioned-managed.md",
+    "datazone-standard-gov.md",
     "datazone-standard-priority-processing.md",
     "datazone-standard.md",
     "global-batch-datazone.md",
     "global-batch.md",
     "provisioned-global.md",
+    "provisioned-models-gov.md",
     "provisioned-models.md",
+    "retirement-models-gov.md",
     "standard-global-priority-processing.md",
     "standard-global.md",
+    "standard-models-gov.md",
     "standard-models.md",
     "data-zone-standard.md",
     "global-provisioned-managed.md",
