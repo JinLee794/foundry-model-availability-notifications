@@ -1,0 +1,54 @@
+{
+  "changes": {
+    "gpt-5.4-nano": {
+      "all": {
+        "added": [
+          "Australia East",
+          "Brazil South",
+          "Canada Central",
+          "Canada East",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "South Africa North",
+          "Switzerland North",
+          "UAE North",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard": {
+          "added": [
+            "North Central US",
+            "West US"
+          ],
+          "label": "Datazone standard",
+          "removed": []
+        },
+        "standard-global": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "South Africa North",
+            "Switzerland North",
+            "UAE North",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard global deployments",
+          "removed": []
+        }
+      }
+    }
+  },
+  "timestamp": "2026-04-11T07:50:34.529137+00:00"
+}

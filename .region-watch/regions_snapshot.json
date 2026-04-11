@@ -4521,21 +4521,34 @@
   },
   "gpt-5.4-nano": {
     "all": [
+      "Australia East",
+      "Brazil South",
+      "Canada Central",
+      "Canada East",
       "Central US",
       "East US",
       "East US 2",
       "France Central",
       "Germany West Central",
       "Italy North",
+      "Japan East",
+      "Korea Central",
+      "North Central US",
+      "Norway East",
       "Poland Central",
+      "South Africa North",
       "South Central US",
       "South India",
       "Southeast Asia",
       "Spain Central",
       "Sweden Central",
+      "Switzerland North",
       "Switzerland West",
+      "UAE North",
       "UK South",
-      "West Europe"
+      "West Europe",
+      "West US",
+      "West US 3"
     ],
     "skus": {
       "datazone-standard": {
@@ -4544,27 +4557,42 @@
           "Central US",
           "East US",
           "East US 2",
-          "South Central US"
+          "North Central US",
+          "South Central US",
+          "West US"
         ]
       },
       "standard-global": {
         "label": "Standard global deployments",
         "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada Central",
+          "Canada East",
           "Central US",
           "East US",
           "East US 2",
           "France Central",
           "Germany West Central",
           "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
           "Poland Central",
+          "South Africa North",
           "South Central US",
           "South India",
           "Southeast Asia",
           "Spain Central",
           "Sweden Central",
+          "Switzerland North",
           "Switzerland West",
+          "UAE North",
           "UK South",
-          "West Europe"
+          "West Europe",
+          "West US",
+          "West US 3"
         ]
       }
     }
