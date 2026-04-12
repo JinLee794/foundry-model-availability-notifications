@@ -1,56 +1,6 @@
 {
-  "timestamp": "2026-04-11T07:50:34.529137+00:00",
-  "changes": {
-    "gpt-5.4-nano": {
-      "all": {
-        "added": [
-          "Australia East",
-          "Brazil South",
-          "Canada Central",
-          "Canada East",
-          "Japan East",
-          "Korea Central",
-          "North Central US",
-          "Norway East",
-          "South Africa North",
-          "Switzerland North",
-          "UAE North",
-          "West US",
-          "West US 3"
-        ],
-        "removed": []
-      },
-      "skus": {
-        "datazone-standard": {
-          "label": "Datazone standard",
-          "added": [
-            "North Central US",
-            "West US"
-          ],
-          "removed": []
-        },
-        "standard-global": {
-          "label": "Standard global deployments",
-          "added": [
-            "Australia East",
-            "Brazil South",
-            "Canada Central",
-            "Canada East",
-            "Japan East",
-            "Korea Central",
-            "North Central US",
-            "Norway East",
-            "South Africa North",
-            "Switzerland North",
-            "UAE North",
-            "West US",
-            "West US 3"
-          ],
-          "removed": []
-        }
-      }
-    }
-  },
+  "timestamp": "2026-04-12T08:03:50.471346+00:00",
+  "changes": {},
   "current": {
     "codex-mini": {
       "all": [
