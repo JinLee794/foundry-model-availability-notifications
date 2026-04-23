@@ -1770,7 +1770,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "standard-global-priority-processing": {
@@ -2027,7 +2028,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "standard-models": {
@@ -2241,7 +2243,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       }
     }
@@ -2466,7 +2469,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "standard-models": {
@@ -2693,7 +2697,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "standard-models": {
@@ -2970,7 +2975,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       }
     }
@@ -3245,7 +3251,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       }
     }
@@ -3276,7 +3283,8 @@
       "UAE North",
       "UK South",
       "West Europe",
-      "West US"
+      "West US",
+      "West US 3"
     ],
     "skus": {
       "datazone-standard": {
@@ -3324,7 +3332,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       }
     }
@@ -3587,7 +3596,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "standard-global-priority-processing": {
@@ -3664,7 +3674,8 @@
       "UAE North",
       "UK South",
       "West Europe",
-      "West US"
+      "West US",
+      "West US 3"
     ],
     "skus": {
       "standard-global": {
@@ -3696,7 +3707,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       }
     }
@@ -3812,7 +3824,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       }
     }
@@ -3860,7 +3873,8 @@
       "UAE North",
       "UK South",
       "West Europe",
-      "West US"
+      "West US",
+      "West US 3"
     ],
     "skus": {
       "standard-global": {
@@ -3892,7 +3906,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       }
     }
@@ -4042,7 +4057,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "standard-global-priority-processing": {
@@ -4106,7 +4122,8 @@
       "UAE North",
       "UK South",
       "West Europe",
-      "West US"
+      "West US",
+      "West US 3"
     ],
     "skus": {
       "standard-global": {
@@ -4138,7 +4155,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       }
     }
@@ -4237,7 +4255,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       }
     }
@@ -4270,7 +4289,8 @@
       "UAE North",
       "UK South",
       "West Europe",
-      "West US"
+      "West US",
+      "West US 3"
     ],
     "skus": {
       "standard-global": {
@@ -4302,7 +4322,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       }
     }
@@ -4412,7 +4433,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       }
     }
@@ -4557,7 +4579,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "standard-global-priority-processing": {
@@ -4621,7 +4644,8 @@
       "UAE North",
       "UK South",
       "West Europe",
-      "West US"
+      "West US",
+      "West US 3"
     ],
     "skus": {
       "datazone-standard": {
@@ -4671,7 +4695,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "standard-global-priority-processing": {
@@ -4715,7 +4740,8 @@
       "UAE North",
       "UK South",
       "West Europe",
-      "West US"
+      "West US",
+      "West US 3"
     ],
     "skus": {
       "datazone-standard": {
@@ -4758,7 +4784,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       }
     }
@@ -4838,7 +4865,8 @@
       "East US 2",
       "Poland Central",
       "Sweden Central",
-      "UAE North"
+      "UAE North",
+      "West US 3"
     ],
     "skus": {
       "standard-global": {
@@ -4847,7 +4875,8 @@
           "East US 2",
           "Poland Central",
           "Sweden Central",
-          "UAE North"
+          "UAE North",
+          "West US 3"
         ]
       }
     }
@@ -4857,7 +4886,8 @@
       "East US 2",
       "Poland Central",
       "Sweden Central",
-      "UAE North"
+      "UAE North",
+      "West US 3"
     ],
     "skus": {
       "standard-global": {
@@ -4866,7 +4896,8 @@
           "East US 2",
           "Poland Central",
           "Sweden Central",
-          "UAE North"
+          "UAE North",
+          "West US 3"
         ]
       }
     }
@@ -4876,7 +4907,8 @@
       "East US 2",
       "Poland Central",
       "Sweden Central",
-      "UAE North"
+      "UAE North",
+      "West US 3"
     ],
     "skus": {
       "datazone-standard": {
@@ -4893,7 +4925,8 @@
           "East US 2",
           "Poland Central",
           "Sweden Central",
-          "UAE North"
+          "UAE North",
+          "West US 3"
         ]
       }
     }
@@ -4903,7 +4936,8 @@
       "East US 2",
       "Poland Central",
       "Sweden Central",
-      "UAE North"
+      "UAE North",
+      "West US 3"
     ],
     "skus": {
       "standard-global": {
@@ -4912,7 +4946,8 @@
           "East US 2",
           "Poland Central",
           "Sweden Central",
-          "UAE North"
+          "UAE North",
+          "West US 3"
         ]
       }
     }
@@ -5843,7 +5878,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "standard-models": {
@@ -6044,7 +6080,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       }
     }
@@ -6256,7 +6293,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       }
     }
@@ -6463,7 +6501,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "standard-models": {
@@ -6570,7 +6609,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "standard-models": {
@@ -6631,6 +6671,7 @@
       "UK South",
       "West Europe",
       "West US",
+      "West US 3",
       "usgovarizona"
     ],
     "skus": {
@@ -6678,7 +6719,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "standard-models": {
@@ -6775,7 +6817,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "standard-models": {

@@ -1,6 +1,6 @@
 # AI Foundry Model Availability by Region
 
-_Last updated: 2026-04-22 08:48 UTC_
+_Last updated: 2026-04-23 08:53 UTC_
 
 - Models tracked: **82**
 - Regions in snapshot: **32**
@@ -69,40 +69,40 @@ SKU labels observed:
 | gpt-4o-mini | 🟢 Broad | 28 | 9 (Datazone provisioned managed, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5 | 🟢 Broad | 28 | 8 (Datazone provisioned managed, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5-mini | 🟢 Broad | 28 | 6 (Datazone provisioned managed, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.1-chat | 🟢 Broad | 28 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5.1-codex | 🟢 Broad | 28 | 4 (Datazone provisioned managed, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.1-codex-mini | 🟢 Broad | 28 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5.2 | 🟢 Broad | 28 | 8 (Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.2-chat | 🟢 Broad | 28 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5.2-codex | 🟢 Broad | 28 | 3 (Global Standard, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.3-chat | 🟢 Broad | 28 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5.3-codex | 🟢 Broad | 28 | 4 (Datazone standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5.4 | 🟢 Broad | 28 | 8 (Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.4-mini | 🟢 Broad | 28 | 5 (Datazone Standard Priority Processing, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.4-nano | 🟢 Broad | 28 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | o1 | 🟢 Broad | 28 | 7 (Datazone provisioned managed, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | o3 | 🟢 Broad | 28 | 8 (Datazone provisioned managed, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | o4-mini | 🟢 Broad | 28 | 9 (Datazone provisioned managed, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5-chat | 🟢 Broad | 27 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5-codex | 🟢 Broad | 27 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5-pro | 🟢 Broad | 27 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5.1-chat | 🟢 Broad | 27 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5.1-codex-mini | 🟢 Broad | 27 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5.2-chat | 🟢 Broad | 27 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5.3-chat | 🟢 Broad | 27 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5.4-mini | 🟢 Broad | 27 | 5 (Datazone Standard Priority Processing, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5.4-nano | 🟢 Broad | 27 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | text-embedding-3-large | 🟢 Broad | 27 | 5 (Datazone standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada East`, `Central US`, `East US`, `East US 2` |
+| gpt-5-nano | 🟢 Broad | 26 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada East`, `Central US`, `East US`, `East US 2` |
+| text-embedding-3-small | 🟢 Broad | 26 | 5 (Datazone standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada East`, `Central US`, `East US`, `East US 2` |
 | text-embedding-ada-002 | 🟢 Broad | 26 | 5 (Datazone standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada East`, `Central US`, `East US`, `East US 2` |
-| gpt-5-nano | 🟢 Broad | 25 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada East`, `Central US`, `East US`, `East US 2` |
-| text-embedding-3-small | 🟢 Broad | 25 | 5 (Datazone standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada East`, `Central US`, `East US`, `East US 2` |
 | whisper | 🔴 Emerging | 8 | 2 (Global coverage, Standard) | `East US 2`, `North Central US`, `Norway East`, `South India`, `Sweden Central`, `Switzerland North` |
 | MAI-Image-2 | 🔴 Emerging | 6 | 2 (Global Standard, Global coverage) | `East US`, `South India`, `Sweden Central`, `West Central US`, `West Europe`, `West US` |
 | gpt-4o-mini-transcribe | 🔴 Emerging | 5 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `Sweden Central` |
 | gpt-4o-transcribe | 🔴 Emerging | 5 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `Sweden Central` |
 | gpt-4o-transcribe-diarize | 🔴 Emerging | 5 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `Sweden Central` |
+| gpt-image-1 | 🔴 Emerging | 5 | 2 (Global Standard, Global coverage) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
+| gpt-image-1-mini | 🔴 Emerging | 5 | 2 (Global Standard, Global coverage) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
+| gpt-image-1.5 | 🔴 Emerging | 5 | 3 (Datazone standard, Global Standard, Global coverage) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
+| gpt-image-2 | 🔴 Emerging | 5 | 2 (Global Standard, Global coverage) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
 | gpt-realtime | 🔴 Emerging | 5 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `Sweden Central` |
 | gpt-realtime-1.5 | 🔴 Emerging | 5 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `Sweden Central` |
 | gpt-realtime-mini | 🔴 Emerging | 5 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `Sweden Central` |
 | gpt-5.4-pro | 🔴 Emerging | 4 | 2 (Global Standard, Global coverage) | `East US 2`, `Poland Central`, `South Central US`, `Sweden Central` |
-| gpt-image-1 | 🔴 Emerging | 4 | 2 (Global Standard, Global coverage) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North` |
-| gpt-image-1-mini | 🔴 Emerging | 4 | 2 (Global Standard, Global coverage) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North` |
-| gpt-image-1.5 | 🔴 Emerging | 4 | 3 (Datazone standard, Global Standard, Global coverage) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North` |
-| gpt-image-2 | 🔴 Emerging | 4 | 2 (Global Standard, Global coverage) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North` |
 | codex-mini | 🔴 Emerging | 3 | 2 (Global Standard, Global coverage) | `Central US`, `East US 2`, `Sweden Central` |
 | computer-use-preview | 🔴 Emerging | 3 | 2 (Global Standard, Global coverage) | `East US 2`, `South India`, `Sweden Central` |
 | gpt-audio | 🔴 Emerging | 3 | 2 (Global Standard, Global coverage) | `Central US`, `East US 2`, `Sweden Central` |
@@ -1059,7 +1059,7 @@ SKU labels observed:
 - `UK South` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global Priority Processing
 - `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global Priority Processing
 - `West US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global Priority Processing
-- `West US 3` — Datazone Standard Priority Processing, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard
+- `West US 3` — Datazone Standard Priority Processing, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard
 - `usgovarizona` — Datazone Standard Gov, Global coverage, Standard Models Gov
 
 </details>
@@ -1093,7 +1093,7 @@ SKU labels observed:
 - `UK South` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard
 - `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard
 - `West US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard
-- `West US 3` — Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard
+- `West US 3` — Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard
 - `usgovarizona` — Datazone Provisioned Managed Gov, Datazone Standard Gov, Global coverage, Standard Models Gov
 
 </details>
@@ -1127,7 +1127,7 @@ SKU labels observed:
 - `UK South` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard
 - `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global
 - `West US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard
-- `West US 3` — Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard
+- `West US 3` — Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard
 - `usgovarizona` — Datazone Provisioned Managed Gov, Datazone Standard Gov, Global coverage, Provisioned Models Gov, Standard Models Gov
 
 </details>
@@ -1161,7 +1161,7 @@ SKU labels observed:
 - `UK South` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global Priority Processing
 - `West Europe` — Datazone provisioned managed, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global Priority Processing
 - `West US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global Priority Processing
-- `West US 3` — Datazone Standard Priority Processing, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard
+- `West US 3` — Datazone Standard Priority Processing, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard
 - `usgovarizona` — Datazone Standard Gov, Global coverage
 
 </details>
@@ -1195,7 +1195,7 @@ SKU labels observed:
 - `UK South` — Global Standard, Global batch, Global coverage, Provisioned global
 - `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned global
 - `West US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global
-- `West US 3` — Global batch, Global batch datazone, Global coverage, Provisioned global
+- `West US 3` — Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global
 - `usgovarizona` — Datazone Provisioned Managed Gov, Datazone Standard Gov, Global coverage
 
 </details>
@@ -1229,7 +1229,7 @@ SKU labels observed:
 - `UK South` — Global Standard, Global batch, Global coverage, Provisioned global
 - `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global
 - `West US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global
-- `West US 3` — Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global
+- `West US 3` — Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global
 
 </details>
 <details>
@@ -1262,7 +1262,7 @@ SKU labels observed:
 - `UK South` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global
 - `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global
 - `West US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard
-- `West US 3` — Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard
+- `West US 3` — Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard
 
 </details>
 <details>
@@ -1295,7 +1295,7 @@ SKU labels observed:
 - `UK South` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global
 - `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned global
 - `West US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global
-- `West US 3` — Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global
+- `West US 3` — Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global
 
 </details>
 <details>
@@ -1328,7 +1328,40 @@ SKU labels observed:
 - `UK South` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global
 - `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
 - `West US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
-- `West US 3` — Global coverage, Provisioned (PTU managed), Provisioned global
+- `West US 3` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global
+
+</details>
+<details>
+<summary>gpt-5.1-chat — 28 regions across 2 SKU labels</summary>
+
+- `Australia East` — Global Standard, Global coverage
+- `Brazil South` — Global Standard, Global coverage
+- `Canada Central` — Global Standard, Global coverage
+- `Canada East` — Global Standard, Global coverage
+- `Central US` — Global Standard, Global coverage
+- `East US` — Global Standard, Global coverage
+- `East US 2` — Global Standard, Global coverage
+- `France Central` — Global Standard, Global coverage
+- `Germany West Central` — Global Standard, Global coverage
+- `Italy North` — Global Standard, Global coverage
+- `Japan East` — Global Standard, Global coverage
+- `Korea Central` — Global Standard, Global coverage
+- `North Central US` — Global Standard, Global coverage
+- `Norway East` — Global Standard, Global coverage
+- `Poland Central` — Global Standard, Global coverage
+- `South Africa North` — Global Standard, Global coverage
+- `South Central US` — Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage
+- `Southeast Asia` — Global Standard, Global coverage
+- `Spain Central` — Global Standard, Global coverage
+- `Sweden Central` — Global Standard, Global coverage
+- `Switzerland North` — Global Standard, Global coverage
+- `Switzerland West` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `UK South` — Global Standard, Global coverage
+- `West Europe` — Global Standard, Global coverage
+- `West US` — Global Standard, Global coverage
+- `West US 3` — Global Standard, Global coverage
 
 </details>
 <details>
@@ -1361,7 +1394,40 @@ SKU labels observed:
 - `UK South` — Global Standard, Global coverage, Provisioned global
 - `West Europe` — Datazone provisioned managed, Global Standard, Global coverage, Provisioned global
 - `West US` — Datazone provisioned managed, Global Standard, Global coverage, Provisioned global
-- `West US 3` — Global coverage, Provisioned global
+- `West US 3` — Global Standard, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>gpt-5.1-codex-mini — 28 regions across 2 SKU labels</summary>
+
+- `Australia East` — Global Standard, Global coverage
+- `Brazil South` — Global Standard, Global coverage
+- `Canada Central` — Global Standard, Global coverage
+- `Canada East` — Global Standard, Global coverage
+- `Central US` — Global Standard, Global coverage
+- `East US` — Global Standard, Global coverage
+- `East US 2` — Global Standard, Global coverage
+- `France Central` — Global Standard, Global coverage
+- `Germany West Central` — Global Standard, Global coverage
+- `Italy North` — Global Standard, Global coverage
+- `Japan East` — Global Standard, Global coverage
+- `Korea Central` — Global Standard, Global coverage
+- `North Central US` — Global Standard, Global coverage
+- `Norway East` — Global Standard, Global coverage
+- `Poland Central` — Global Standard, Global coverage
+- `South Africa North` — Global Standard, Global coverage
+- `South Central US` — Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage
+- `Southeast Asia` — Global Standard, Global coverage
+- `Spain Central` — Global Standard, Global coverage
+- `Sweden Central` — Global Standard, Global coverage
+- `Switzerland North` — Global Standard, Global coverage
+- `Switzerland West` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `UK South` — Global Standard, Global coverage
+- `West Europe` — Global Standard, Global coverage
+- `West US` — Global Standard, Global coverage
+- `West US 3` — Global Standard, Global coverage
 
 </details>
 <details>
@@ -1394,7 +1460,40 @@ SKU labels observed:
 - `UK South` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global Priority Processing
 - `West Europe` — Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global Priority Processing
 - `West US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global Priority Processing
-- `West US 3` — Datazone Standard Priority Processing, Global coverage, Provisioned (PTU managed), Provisioned global
+- `West US 3` — Datazone Standard Priority Processing, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global
+
+</details>
+<details>
+<summary>gpt-5.2-chat — 28 regions across 2 SKU labels</summary>
+
+- `Australia East` — Global Standard, Global coverage
+- `Brazil South` — Global Standard, Global coverage
+- `Canada Central` — Global Standard, Global coverage
+- `Canada East` — Global Standard, Global coverage
+- `Central US` — Global Standard, Global coverage
+- `East US` — Global Standard, Global coverage
+- `East US 2` — Global Standard, Global coverage
+- `France Central` — Global Standard, Global coverage
+- `Germany West Central` — Global Standard, Global coverage
+- `Italy North` — Global Standard, Global coverage
+- `Japan East` — Global Standard, Global coverage
+- `Korea Central` — Global Standard, Global coverage
+- `North Central US` — Global Standard, Global coverage
+- `Norway East` — Global Standard, Global coverage
+- `Poland Central` — Global Standard, Global coverage
+- `South Africa North` — Global Standard, Global coverage
+- `South Central US` — Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage
+- `Southeast Asia` — Global Standard, Global coverage
+- `Spain Central` — Global Standard, Global coverage
+- `Sweden Central` — Global Standard, Global coverage
+- `Switzerland North` — Global Standard, Global coverage
+- `Switzerland West` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `UK South` — Global Standard, Global coverage
+- `West Europe` — Global Standard, Global coverage
+- `West US` — Global Standard, Global coverage
+- `West US 3` — Global Standard, Global coverage
 
 </details>
 <details>
@@ -1427,7 +1526,40 @@ SKU labels observed:
 - `UK South` — Global Standard, Global coverage, Provisioned global
 - `West Europe` — Global Standard, Global coverage, Provisioned global
 - `West US` — Global Standard, Global coverage, Provisioned global
-- `West US 3` — Global coverage, Provisioned global
+- `West US 3` — Global Standard, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>gpt-5.3-chat — 28 regions across 2 SKU labels</summary>
+
+- `Australia East` — Global Standard, Global coverage
+- `Brazil South` — Global Standard, Global coverage
+- `Canada Central` — Global Standard, Global coverage
+- `Canada East` — Global Standard, Global coverage
+- `Central US` — Global Standard, Global coverage
+- `East US` — Global Standard, Global coverage
+- `East US 2` — Global Standard, Global coverage
+- `France Central` — Global Standard, Global coverage
+- `Germany West Central` — Global Standard, Global coverage
+- `Italy North` — Global Standard, Global coverage
+- `Japan East` — Global Standard, Global coverage
+- `Korea Central` — Global Standard, Global coverage
+- `North Central US` — Global Standard, Global coverage
+- `Norway East` — Global Standard, Global coverage
+- `Poland Central` — Global Standard, Global coverage
+- `South Africa North` — Global Standard, Global coverage
+- `South Central US` — Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage
+- `Southeast Asia` — Global Standard, Global coverage
+- `Spain Central` — Global Standard, Global coverage
+- `Sweden Central` — Global Standard, Global coverage
+- `Switzerland North` — Global Standard, Global coverage
+- `Switzerland West` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `UK South` — Global Standard, Global coverage
+- `West Europe` — Global Standard, Global coverage
+- `West US` — Global Standard, Global coverage
+- `West US 3` — Global Standard, Global coverage
 
 </details>
 <details>
@@ -1460,7 +1592,7 @@ SKU labels observed:
 - `UK South` — Global Standard, Global coverage, Provisioned global
 - `West Europe` — Global Standard, Global coverage, Provisioned global
 - `West US` — Datazone standard, Global Standard, Global coverage, Provisioned global
-- `West US 3` — Global coverage, Provisioned global
+- `West US 3` — Global Standard, Global coverage, Provisioned global
 
 </details>
 <details>
@@ -1493,7 +1625,73 @@ SKU labels observed:
 - `UK South` — Global Standard, Global coverage, Provisioned global, Standard Global Priority Processing
 - `West Europe` — Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global Priority Processing
 - `West US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global Priority Processing
-- `West US 3` — Datazone Standard Priority Processing, Global coverage, Provisioned global
+- `West US 3` — Datazone Standard Priority Processing, Global Standard, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>gpt-5.4-mini — 28 regions across 5 SKU labels</summary>
+
+- `Australia East` — Global Standard, Global coverage
+- `Brazil South` — Global Standard, Global coverage
+- `Canada Central` — Global Standard, Global coverage
+- `Canada East` — Global Standard, Global coverage
+- `Central US` — Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global Priority Processing
+- `East US` — Datazone standard, Global Standard, Global coverage
+- `East US 2` — Datazone standard, Global Standard, Global coverage
+- `France Central` — Global Standard, Global coverage
+- `Germany West Central` — Global Standard, Global coverage
+- `Italy North` — Global Standard, Global coverage
+- `Japan East` — Global Standard, Global coverage
+- `Korea Central` — Global Standard, Global coverage, Standard Global Priority Processing
+- `North Central US` — Datazone standard, Global Standard, Global coverage
+- `Norway East` — Global Standard, Global coverage
+- `Poland Central` — Global Standard, Global coverage, Standard Global Priority Processing
+- `South Africa North` — Global Standard, Global coverage
+- `South Central US` — Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global Priority Processing
+- `South India` — Global Standard, Global coverage
+- `Southeast Asia` — Global Standard, Global coverage
+- `Spain Central` — Global Standard, Global coverage
+- `Sweden Central` — Global Standard, Global coverage, Standard Global Priority Processing
+- `Switzerland North` — Global Standard, Global coverage
+- `Switzerland West` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `UK South` — Global Standard, Global coverage, Standard Global Priority Processing
+- `West Europe` — Global Standard, Global coverage
+- `West US` — Datazone standard, Global Standard, Global coverage
+- `West US 3` — Global Standard, Global coverage
+
+</details>
+<details>
+<summary>gpt-5.4-nano — 28 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global Standard, Global coverage
+- `Brazil South` — Global Standard, Global coverage
+- `Canada Central` — Global Standard, Global coverage
+- `Canada East` — Global Standard, Global coverage
+- `Central US` — Datazone standard, Global Standard, Global coverage
+- `East US` — Datazone standard, Global Standard, Global coverage
+- `East US 2` — Datazone standard, Global Standard, Global coverage
+- `France Central` — Global Standard, Global coverage
+- `Germany West Central` — Global Standard, Global coverage
+- `Italy North` — Global Standard, Global coverage
+- `Japan East` — Global Standard, Global coverage
+- `Korea Central` — Global Standard, Global coverage
+- `North Central US` — Datazone standard, Global Standard, Global coverage
+- `Norway East` — Global Standard, Global coverage
+- `Poland Central` — Global Standard, Global coverage
+- `South Africa North` — Global Standard, Global coverage
+- `South Central US` — Datazone standard, Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage
+- `Southeast Asia` — Global Standard, Global coverage
+- `Spain Central` — Global Standard, Global coverage
+- `Sweden Central` — Global Standard, Global coverage
+- `Switzerland North` — Global Standard, Global coverage
+- `Switzerland West` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `UK South` — Global Standard, Global coverage
+- `West Europe` — Global Standard, Global coverage
+- `West US` — Datazone standard, Global Standard, Global coverage
+- `West US 3` — Global Standard, Global coverage
 
 </details>
 <details>
@@ -1526,7 +1724,7 @@ SKU labels observed:
 - `UK South` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global
 - `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
 - `West US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard
-- `West US 3` — Global coverage, Provisioned global, Standard
+- `West US 3` — Global Standard, Global coverage, Provisioned global, Standard
 
 </details>
 <details>
@@ -1559,7 +1757,7 @@ SKU labels observed:
 - `UK South` — Global Standard, Global batch, Global coverage, Provisioned global
 - `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global
 - `West US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global
-- `West US 3` — Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global
+- `West US 3` — Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global
 
 </details>
 <details>
@@ -1592,7 +1790,7 @@ SKU labels observed:
 - `UK South` — Global Standard, Global batch, Global coverage, Provisioned global
 - `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global
 - `West US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard
-- `West US 3` — Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard
+- `West US 3` — Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard
 
 </details>
 <details>
@@ -1692,198 +1890,6 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>gpt-5.1-chat — 27 regions across 2 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage
-- `Brazil South` — Global Standard, Global coverage
-- `Canada Central` — Global Standard, Global coverage
-- `Canada East` — Global Standard, Global coverage
-- `Central US` — Global Standard, Global coverage
-- `East US` — Global Standard, Global coverage
-- `East US 2` — Global Standard, Global coverage
-- `France Central` — Global Standard, Global coverage
-- `Germany West Central` — Global Standard, Global coverage
-- `Italy North` — Global Standard, Global coverage
-- `Japan East` — Global Standard, Global coverage
-- `Korea Central` — Global Standard, Global coverage
-- `North Central US` — Global Standard, Global coverage
-- `Norway East` — Global Standard, Global coverage
-- `Poland Central` — Global Standard, Global coverage
-- `South Africa North` — Global Standard, Global coverage
-- `South Central US` — Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Southeast Asia` — Global Standard, Global coverage
-- `Spain Central` — Global Standard, Global coverage
-- `Sweden Central` — Global Standard, Global coverage
-- `Switzerland North` — Global Standard, Global coverage
-- `Switzerland West` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-- `UK South` — Global Standard, Global coverage
-- `West Europe` — Global Standard, Global coverage
-- `West US` — Global Standard, Global coverage
-
-</details>
-<details>
-<summary>gpt-5.1-codex-mini — 27 regions across 2 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage
-- `Brazil South` — Global Standard, Global coverage
-- `Canada Central` — Global Standard, Global coverage
-- `Canada East` — Global Standard, Global coverage
-- `Central US` — Global Standard, Global coverage
-- `East US` — Global Standard, Global coverage
-- `East US 2` — Global Standard, Global coverage
-- `France Central` — Global Standard, Global coverage
-- `Germany West Central` — Global Standard, Global coverage
-- `Italy North` — Global Standard, Global coverage
-- `Japan East` — Global Standard, Global coverage
-- `Korea Central` — Global Standard, Global coverage
-- `North Central US` — Global Standard, Global coverage
-- `Norway East` — Global Standard, Global coverage
-- `Poland Central` — Global Standard, Global coverage
-- `South Africa North` — Global Standard, Global coverage
-- `South Central US` — Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Southeast Asia` — Global Standard, Global coverage
-- `Spain Central` — Global Standard, Global coverage
-- `Sweden Central` — Global Standard, Global coverage
-- `Switzerland North` — Global Standard, Global coverage
-- `Switzerland West` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-- `UK South` — Global Standard, Global coverage
-- `West Europe` — Global Standard, Global coverage
-- `West US` — Global Standard, Global coverage
-
-</details>
-<details>
-<summary>gpt-5.2-chat — 27 regions across 2 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage
-- `Brazil South` — Global Standard, Global coverage
-- `Canada Central` — Global Standard, Global coverage
-- `Canada East` — Global Standard, Global coverage
-- `Central US` — Global Standard, Global coverage
-- `East US` — Global Standard, Global coverage
-- `East US 2` — Global Standard, Global coverage
-- `France Central` — Global Standard, Global coverage
-- `Germany West Central` — Global Standard, Global coverage
-- `Italy North` — Global Standard, Global coverage
-- `Japan East` — Global Standard, Global coverage
-- `Korea Central` — Global Standard, Global coverage
-- `North Central US` — Global Standard, Global coverage
-- `Norway East` — Global Standard, Global coverage
-- `Poland Central` — Global Standard, Global coverage
-- `South Africa North` — Global Standard, Global coverage
-- `South Central US` — Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Southeast Asia` — Global Standard, Global coverage
-- `Spain Central` — Global Standard, Global coverage
-- `Sweden Central` — Global Standard, Global coverage
-- `Switzerland North` — Global Standard, Global coverage
-- `Switzerland West` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-- `UK South` — Global Standard, Global coverage
-- `West Europe` — Global Standard, Global coverage
-- `West US` — Global Standard, Global coverage
-
-</details>
-<details>
-<summary>gpt-5.3-chat — 27 regions across 2 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage
-- `Brazil South` — Global Standard, Global coverage
-- `Canada Central` — Global Standard, Global coverage
-- `Canada East` — Global Standard, Global coverage
-- `Central US` — Global Standard, Global coverage
-- `East US` — Global Standard, Global coverage
-- `East US 2` — Global Standard, Global coverage
-- `France Central` — Global Standard, Global coverage
-- `Germany West Central` — Global Standard, Global coverage
-- `Italy North` — Global Standard, Global coverage
-- `Japan East` — Global Standard, Global coverage
-- `Korea Central` — Global Standard, Global coverage
-- `North Central US` — Global Standard, Global coverage
-- `Norway East` — Global Standard, Global coverage
-- `Poland Central` — Global Standard, Global coverage
-- `South Africa North` — Global Standard, Global coverage
-- `South Central US` — Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Southeast Asia` — Global Standard, Global coverage
-- `Spain Central` — Global Standard, Global coverage
-- `Sweden Central` — Global Standard, Global coverage
-- `Switzerland North` — Global Standard, Global coverage
-- `Switzerland West` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-- `UK South` — Global Standard, Global coverage
-- `West Europe` — Global Standard, Global coverage
-- `West US` — Global Standard, Global coverage
-
-</details>
-<details>
-<summary>gpt-5.4-mini — 27 regions across 5 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage
-- `Brazil South` — Global Standard, Global coverage
-- `Canada Central` — Global Standard, Global coverage
-- `Canada East` — Global Standard, Global coverage
-- `Central US` — Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global Priority Processing
-- `East US` — Datazone standard, Global Standard, Global coverage
-- `East US 2` — Datazone standard, Global Standard, Global coverage
-- `France Central` — Global Standard, Global coverage
-- `Germany West Central` — Global Standard, Global coverage
-- `Italy North` — Global Standard, Global coverage
-- `Japan East` — Global Standard, Global coverage
-- `Korea Central` — Global Standard, Global coverage, Standard Global Priority Processing
-- `North Central US` — Datazone standard, Global Standard, Global coverage
-- `Norway East` — Global Standard, Global coverage
-- `Poland Central` — Global Standard, Global coverage, Standard Global Priority Processing
-- `South Africa North` — Global Standard, Global coverage
-- `South Central US` — Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global Priority Processing
-- `South India` — Global Standard, Global coverage
-- `Southeast Asia` — Global Standard, Global coverage
-- `Spain Central` — Global Standard, Global coverage
-- `Sweden Central` — Global Standard, Global coverage, Standard Global Priority Processing
-- `Switzerland North` — Global Standard, Global coverage
-- `Switzerland West` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-- `UK South` — Global Standard, Global coverage, Standard Global Priority Processing
-- `West Europe` — Global Standard, Global coverage
-- `West US` — Datazone standard, Global Standard, Global coverage
-
-</details>
-<details>
-<summary>gpt-5.4-nano — 27 regions across 3 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage
-- `Brazil South` — Global Standard, Global coverage
-- `Canada Central` — Global Standard, Global coverage
-- `Canada East` — Global Standard, Global coverage
-- `Central US` — Datazone standard, Global Standard, Global coverage
-- `East US` — Datazone standard, Global Standard, Global coverage
-- `East US 2` — Datazone standard, Global Standard, Global coverage
-- `France Central` — Global Standard, Global coverage
-- `Germany West Central` — Global Standard, Global coverage
-- `Italy North` — Global Standard, Global coverage
-- `Japan East` — Global Standard, Global coverage
-- `Korea Central` — Global Standard, Global coverage
-- `North Central US` — Datazone standard, Global Standard, Global coverage
-- `Norway East` — Global Standard, Global coverage
-- `Poland Central` — Global Standard, Global coverage
-- `South Africa North` — Global Standard, Global coverage
-- `South Central US` — Datazone standard, Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Southeast Asia` — Global Standard, Global coverage
-- `Spain Central` — Global Standard, Global coverage
-- `Sweden Central` — Global Standard, Global coverage
-- `Switzerland North` — Global Standard, Global coverage
-- `Switzerland West` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-- `UK South` — Global Standard, Global coverage
-- `West Europe` — Global Standard, Global coverage
-- `West US` — Datazone standard, Global Standard, Global coverage
-
-</details>
-<details>
 <summary>text-embedding-3-large — 27 regions across 5 SKU labels</summary>
 
 - `Australia East` — Global Standard, Global coverage, Standard
@@ -1911,7 +1917,69 @@ SKU labels observed:
 - `UK South` — Global Standard, Global coverage, Standard
 - `West Europe` — Datazone standard, Global Standard, Global coverage
 - `West US` — Datazone standard, Global Standard, Global coverage
-- `West US 3` — Global coverage, Standard
+- `West US 3` — Global Standard, Global coverage, Standard
+- `usgovarizona` — Global coverage, Standard Models Gov
+
+</details>
+<details>
+<summary>gpt-5-nano — 26 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global Standard, Global coverage
+- `Brazil South` — Global Standard, Global coverage
+- `Canada East` — Global Standard, Global coverage
+- `Central US` — Datazone standard, Global Standard, Global coverage
+- `East US` — Datazone standard, Global Standard, Global coverage
+- `East US 2` — Datazone standard, Global Standard, Global coverage
+- `France Central` — Datazone standard, Global Standard, Global coverage
+- `Germany West Central` — Datazone standard, Global Standard, Global coverage
+- `Italy North` — Datazone standard, Global Standard, Global coverage
+- `Japan East` — Global Standard, Global coverage
+- `Korea Central` — Global Standard, Global coverage
+- `North Central US` — Datazone standard, Global Standard, Global coverage
+- `Norway East` — Global Standard, Global coverage
+- `Poland Central` — Datazone standard, Global Standard, Global coverage
+- `South Africa North` — Global Standard, Global coverage
+- `South Central US` — Datazone standard, Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage
+- `Southeast Asia` — Global Standard, Global coverage
+- `Spain Central` — Datazone standard, Global Standard, Global coverage
+- `Sweden Central` — Datazone standard, Global Standard, Global coverage
+- `Switzerland North` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `UK South` — Global Standard, Global coverage
+- `West Europe` — Datazone standard, Global Standard, Global coverage
+- `West US` — Datazone standard, Global Standard, Global coverage
+- `West US 3` — Global Standard, Global coverage
+
+</details>
+<details>
+<summary>text-embedding-3-small — 26 regions across 5 SKU labels</summary>
+
+- `Australia East` — Global Standard, Global coverage, Standard
+- `Brazil South` — Global Standard, Global coverage
+- `Canada East` — Global Standard, Global coverage, Standard
+- `Central US` — Datazone standard, Global Standard, Global coverage
+- `East US` — Datazone standard, Global Standard, Global coverage, Standard
+- `East US 2` — Datazone standard, Global Standard, Global coverage, Standard
+- `France Central` — Datazone standard, Global Standard, Global coverage
+- `Germany West Central` — Datazone standard, Global Standard, Global coverage
+- `Italy North` — Datazone standard, Global Standard, Global coverage
+- `Japan East` — Global Standard, Global coverage, Standard
+- `Korea Central` — Global Standard, Global coverage
+- `North Central US` — Datazone standard, Global Standard, Global coverage
+- `Norway East` — Global Standard, Global coverage
+- `Poland Central` — Datazone standard, Global Standard, Global coverage
+- `South Africa North` — Global Standard, Global coverage
+- `South Central US` — Datazone standard, Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage
+- `Spain Central` — Datazone standard, Global Standard, Global coverage
+- `Sweden Central` — Datazone standard, Global Standard, Global coverage
+- `Switzerland North` — Global Standard, Global coverage, Standard
+- `UAE North` — Global Standard, Global coverage, Standard
+- `UK South` — Global Standard, Global coverage
+- `West Europe` — Datazone standard, Global Standard, Global coverage
+- `West US` — Datazone standard, Global Standard, Global coverage, Standard
+- `West US 3` — Global Standard, Global coverage
 - `usgovarizona` — Global coverage, Standard Models Gov
 
 </details>
@@ -1942,67 +2010,7 @@ SKU labels observed:
 - `UK South` — Global Standard, Global coverage, Standard
 - `West Europe` — Datazone standard, Global Standard, Global coverage, Standard
 - `West US` — Datazone standard, Global Standard, Global coverage, Standard
-- `West US 3` — Global coverage, Standard
-- `usgovarizona` — Global coverage, Standard Models Gov
-
-</details>
-<details>
-<summary>gpt-5-nano — 25 regions across 3 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage
-- `Brazil South` — Global Standard, Global coverage
-- `Canada East` — Global Standard, Global coverage
-- `Central US` — Datazone standard, Global Standard, Global coverage
-- `East US` — Datazone standard, Global Standard, Global coverage
-- `East US 2` — Datazone standard, Global Standard, Global coverage
-- `France Central` — Datazone standard, Global Standard, Global coverage
-- `Germany West Central` — Datazone standard, Global Standard, Global coverage
-- `Italy North` — Datazone standard, Global Standard, Global coverage
-- `Japan East` — Global Standard, Global coverage
-- `Korea Central` — Global Standard, Global coverage
-- `North Central US` — Datazone standard, Global Standard, Global coverage
-- `Norway East` — Global Standard, Global coverage
-- `Poland Central` — Datazone standard, Global Standard, Global coverage
-- `South Africa North` — Global Standard, Global coverage
-- `South Central US` — Datazone standard, Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Southeast Asia` — Global Standard, Global coverage
-- `Spain Central` — Datazone standard, Global Standard, Global coverage
-- `Sweden Central` — Datazone standard, Global Standard, Global coverage
-- `Switzerland North` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-- `UK South` — Global Standard, Global coverage
-- `West Europe` — Datazone standard, Global Standard, Global coverage
-- `West US` — Datazone standard, Global Standard, Global coverage
-
-</details>
-<details>
-<summary>text-embedding-3-small — 25 regions across 5 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage, Standard
-- `Brazil South` — Global Standard, Global coverage
-- `Canada East` — Global Standard, Global coverage, Standard
-- `Central US` — Datazone standard, Global Standard, Global coverage
-- `East US` — Datazone standard, Global Standard, Global coverage, Standard
-- `East US 2` — Datazone standard, Global Standard, Global coverage, Standard
-- `France Central` — Datazone standard, Global Standard, Global coverage
-- `Germany West Central` — Datazone standard, Global Standard, Global coverage
-- `Italy North` — Datazone standard, Global Standard, Global coverage
-- `Japan East` — Global Standard, Global coverage, Standard
-- `Korea Central` — Global Standard, Global coverage
-- `North Central US` — Datazone standard, Global Standard, Global coverage
-- `Norway East` — Global Standard, Global coverage
-- `Poland Central` — Datazone standard, Global Standard, Global coverage
-- `South Africa North` — Global Standard, Global coverage
-- `South Central US` — Datazone standard, Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Spain Central` — Datazone standard, Global Standard, Global coverage
-- `Sweden Central` — Datazone standard, Global Standard, Global coverage
-- `Switzerland North` — Global Standard, Global coverage, Standard
-- `UAE North` — Global Standard, Global coverage, Standard
-- `UK South` — Global Standard, Global coverage
-- `West Europe` — Datazone standard, Global Standard, Global coverage
-- `West US` — Datazone standard, Global Standard, Global coverage, Standard
+- `West US 3` — Global Standard, Global coverage, Standard
 - `usgovarizona` — Global coverage, Standard Models Gov
 
 </details>
@@ -2061,6 +2069,46 @@ SKU labels observed:
 
 </details>
 <details>
+<summary>gpt-image-1 — 5 regions across 2 SKU labels</summary>
+
+- `East US 2` — Global Standard, Global coverage
+- `Poland Central` — Global Standard, Global coverage
+- `Sweden Central` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `West US 3` — Global Standard, Global coverage
+
+</details>
+<details>
+<summary>gpt-image-1-mini — 5 regions across 2 SKU labels</summary>
+
+- `East US 2` — Global Standard, Global coverage
+- `Poland Central` — Global Standard, Global coverage
+- `Sweden Central` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `West US 3` — Global Standard, Global coverage
+
+</details>
+<details>
+<summary>gpt-image-1.5 — 5 regions across 3 SKU labels</summary>
+
+- `East US 2` — Datazone standard, Global Standard, Global coverage
+- `Poland Central` — Datazone standard, Global Standard, Global coverage
+- `Sweden Central` — Datazone standard, Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `West US 3` — Global Standard, Global coverage
+
+</details>
+<details>
+<summary>gpt-image-2 — 5 regions across 2 SKU labels</summary>
+
+- `East US 2` — Global Standard, Global coverage
+- `Poland Central` — Global Standard, Global coverage
+- `Sweden Central` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `West US 3` — Global Standard, Global coverage
+
+</details>
+<details>
 <summary>gpt-realtime — 5 regions across 2 SKU labels</summary>
 
 - `Canada Central` — Global Standard, Global coverage
@@ -2097,42 +2145,6 @@ SKU labels observed:
 - `Poland Central` — Global Standard, Global coverage
 - `South Central US` — Global Standard, Global coverage
 - `Sweden Central` — Global Standard, Global coverage
-
-</details>
-<details>
-<summary>gpt-image-1 — 4 regions across 2 SKU labels</summary>
-
-- `East US 2` — Global Standard, Global coverage
-- `Poland Central` — Global Standard, Global coverage
-- `Sweden Central` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-
-</details>
-<details>
-<summary>gpt-image-1-mini — 4 regions across 2 SKU labels</summary>
-
-- `East US 2` — Global Standard, Global coverage
-- `Poland Central` — Global Standard, Global coverage
-- `Sweden Central` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-
-</details>
-<details>
-<summary>gpt-image-1.5 — 4 regions across 3 SKU labels</summary>
-
-- `East US 2` — Datazone standard, Global Standard, Global coverage
-- `Poland Central` — Datazone standard, Global Standard, Global coverage
-- `Sweden Central` — Datazone standard, Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-
-</details>
-<details>
-<summary>gpt-image-2 — 4 regions across 2 SKU labels</summary>
-
-- `East US 2` — Global Standard, Global coverage
-- `Poland Central` — Global Standard, Global coverage
-- `Sweden Central` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
 
 </details>
 <details>
@@ -2236,6 +2248,7 @@ SKU labels observed:
 
 ## Recent changes
 
+- **2026-04-23 08:53 UTC** — gpt-4.1: Standard global deployments added West US 3 | gpt-4.1-mini: Standard global deployments added West US 3 | gpt-4.1-nano: Standard global deployments added West US 3 | gpt-4o: Standard global deployments added West US 3 | gpt-4o-mini: Standard global deployments added West US 3 | gpt-5: Standard global deployments added West US 3 | gpt-5-mini: Standard global deployments added West US 3 | gpt-5-nano: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-5.1: Standard global deployments added West US 3 | gpt-5.1-chat: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-5.1-codex: Standard global deployments added West US 3 | gpt-5.1-codex-mini: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-5.2: Standard global deployments added West US 3 | gpt-5.2-chat: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-5.2-codex: Standard global deployments added West US 3 | gpt-5.3-chat: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-5.3-codex: Standard global deployments added West US 3 | gpt-5.4: Standard global deployments added West US 3 | gpt-5.4-mini: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-5.4-nano: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-image-1: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-image-1-mini: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-image-1.5: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-image-2: Global coverage added West US 3; Standard global deployments added West US 3 | o1: Standard global deployments added West US 3 | o3: Standard global deployments added West US 3 | o3-mini: Standard global deployments added West US 3 | o4-mini: Standard global deployments added West US 3 | text-embedding-3-large: Standard global deployments added West US 3 | text-embedding-3-small: Global coverage added West US 3; Standard global deployments added West US 3 | text-embedding-ada-002: Standard global deployments added West US 3
 - **2026-04-22 08:48 UTC** — gpt-4.1: Standard global deployments removed West US 3; Standard Global Priority Processing removed West US 3 | gpt-4.1-mini: Standard global deployments removed West US 3 | gpt-4.1-nano: Standard global deployments removed West US 3 | gpt-4o: Standard global deployments removed West US 3 | gpt-4o-mini: Standard global deployments removed West US 3 | gpt-5: Standard global deployments removed West US 3 | gpt-5-mini: Standard global deployments removed West US 3 | gpt-5-nano: Global coverage removed West US 3; Standard global deployments removed West US 3 | gpt-5.1: Standard global deployments removed West US 3; Standard Global Priority Processing removed West US 3 | gpt-5.1-chat: Global coverage removed West US 3; Standard global deployments removed West US 3 | gpt-5.1-codex: Standard global deployments removed West US 3 | gpt-5.1-codex-mini: Global coverage removed West US 3; Standard global deployments removed West US 3 | gpt-5.2: Provisioned (PTU managed) added West US; Standard global deployments removed West US 3; Standard Global Priority Processing removed West US 3 | gpt-5.2-chat: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US; Standard global deployments added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US | gpt-5.2-codex: Standard global deployments added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US | gpt-5.3-chat: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US; Standard global deployments added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US | gpt-5.3-codex: Standard global deployments added Australia East, Brazil South, Canada Central, Canada East, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US | gpt-5.4: Standard global deployments removed West US 3; Standard Global Priority Processing added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, South Africa North, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US | gpt-5.4-mini: Global coverage removed West US 3; Datazone Standard Priority Processing added Central US and South Central US; Standard global deployments removed West US 3; Standard Global Priority Processing added Central US, Korea Central, Poland Central, South Central US, Sweden Central, and UK South | gpt-5.4-nano: Global coverage removed West US 3; Standard global deployments removed West US 3 | gpt-image-1: Global coverage removed West US 3; Standard global deployments removed West US 3 | gpt-image-1-mini: Global coverage removed West US 3; Standard global deployments removed West US 3 | gpt-image-1.5: Global coverage removed West US 3; Standard global deployments removed West US 3 | gpt-image-2: Global coverage added East US 2, Poland Central, Sweden Central, and UAE North; Standard global deployments added East US 2, Poland Central, Sweden Central, and UAE North | o1: Standard global deployments removed West US 3 | o3: Standard global deployments removed West US 3 | o3-mini: Standard global deployments removed West US 3 | o4-mini: Standard global deployments removed West US 3 | text-embedding-3-large: Standard global deployments removed West US 3 | text-embedding-3-small: Global coverage removed West US 3; Standard global deployments removed West US 3 | text-embedding-ada-002: Standard global deployments removed West US 3
 - **2026-04-11 07:50 UTC** — gpt-5.4-nano: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Japan East, Korea Central, North Central US, Norway East, South Africa North, Switzerland North, UAE North, West US, and West US 3; Datazone standard added North Central US and West US; Standard global deployments added Australia East, Brazil South, Canada Central, Canada East, Japan East, Korea Central, North Central US, Norway East, South Africa North, Switzerland North, UAE North, West US, and West US 3
 - **2026-04-09 08:20 UTC** — dall-e-3: Global coverage removed Australia East, East US, and Sweden Central; Standard (all) removed Australia East, East US, and Sweden Central | gpt-4.1: Global coverage added usgovarizona; Datazone standard removed West US 3; Datazone Standard Gov added usgovarizona; Standard global deployments added West US 3; Standard Models Gov added usgovarizona | gpt-4.1-mini: Global coverage added usgovarizona; Datazone Provisioned Managed Gov added usgovarizona; Datazone standard removed West US 3; Datazone Standard Gov added usgovarizona; Standard global deployments added West US 3; Standard Models Gov added usgovarizona | gpt-4.1-nano: Datazone standard removed West US 3; Standard global deployments added West US 3; Standard (all) removed North Central US and Sweden Central | gpt-4o: Global coverage added usgovarizona; Datazone Provisioned Managed Gov added usgovarizona; Datazone standard removed West US 3; Datazone Standard Gov added usgovarizona; Provisioned Models Gov added usgovarizona; Standard global deployments added West US 3; Standard Models Gov added usgovarizona | gpt-4o-mini: Datazone standard removed West US 3; Standard global deployments added West US 3 | gpt-5: Datazone standard removed West US 3; Standard global deployments added West US 3 | gpt-5-mini: Datazone standard removed West US 3; Standard global deployments added West US 3 | gpt-5-nano: Datazone standard removed West US 3; Standard global deployments added West US 3 | gpt-5.1: Global coverage added usgovarizona; Datazone standard removed West US 3; Datazone Standard Gov added usgovarizona; Standard global deployments added West US 3 | gpt-5.1-chat: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-5.1-codex: Standard global deployments added West US 3 | gpt-5.1-codex-mini: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-5.2: Datazone standard removed West US 3; Provisioned (PTU managed) added West US 3; Standard global deployments added West US 3 | gpt-5.3-codex: Datazone standard removed West US 3 | gpt-5.4: Datazone standard removed West US 3; Standard global deployments added West US 3 | gpt-5.4-mini: Global coverage added West US 3; Datazone standard added Central US, East US, East US 2, North Central US, South Central US, and West US; Standard global deployments added West US 3 | gpt-5.4-nano: Global coverage added Central US, East US, France Central, UK South, and West Europe; Datazone standard added Central US and East US; Standard global deployments added Central US, East US, France Central, UK South, and West Europe | gpt-image-1: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-image-1-mini: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-image-1.5: Datazone standard removed West US 3; Standard global deployments added West US 3 | o1: Datazone standard removed West US 3; Standard global deployments added West US 3 | o3: Datazone standard removed West US 3; Standard global deployments added West US 3 | o3-mini: Global coverage added usgovarizona; Datazone Provisioned Managed Gov added usgovarizona; Datazone standard removed West US 3; Datazone Standard Gov added usgovarizona; Standard global deployments added West US 3 | o4-mini: Datazone standard removed West US 3; Standard global deployments added West US 3 | sora: Global coverage removed East US 2; Standard (all) removed East US 2 | text-embedding-3-large: Global coverage added usgovarizona; Datazone standard removed West US 3; Standard global deployments added West US 3; Standard Models Gov added usgovarizona | text-embedding-3-small: Global coverage added usgovarizona; Datazone standard removed West US 3; Standard global deployments added West US 3; Standard Models Gov added usgovarizona | text-embedding-ada-002: Global coverage added usgovarizona; Datazone standard removed West US 3; Standard global deployments added West US 3; Standard Models Gov added usgovarizona
