@@ -4663,7 +4663,11 @@
         "label": "Datazone Standard Priority Processing",
         "regions": [
           "Central US",
-          "South Central US"
+          "East US",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
         ]
       },
       "standard-global": {
@@ -4702,12 +4706,32 @@
       "standard-global-priority-processing": {
         "label": "Standard Global Priority Processing",
         "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada Central",
+          "Canada East",
           "Central US",
+          "East US",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
           "Korea Central",
+          "North Central US",
+          "Norway East",
           "Poland Central",
+          "South Africa North",
           "South Central US",
+          "South India",
+          "Southeast Asia",
+          "Spain Central",
           "Sweden Central",
-          "UK South"
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US"
         ]
       }
     }

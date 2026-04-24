@@ -1,6 +1,6 @@
 # AI Foundry Model Availability by Region
 
-_Last updated: 2026-04-23 08:53 UTC_
+_Last updated: 2026-04-24 09:00 UTC_
 
 - Models tracked: **82**
 - Regions in snapshot: **32**
@@ -1631,34 +1631,34 @@ SKU labels observed:
 <details>
 <summary>gpt-5.4-mini — 28 regions across 5 SKU labels</summary>
 
-- `Australia East` — Global Standard, Global coverage
-- `Brazil South` — Global Standard, Global coverage
-- `Canada Central` — Global Standard, Global coverage
-- `Canada East` — Global Standard, Global coverage
+- `Australia East` — Global Standard, Global coverage, Standard Global Priority Processing
+- `Brazil South` — Global Standard, Global coverage, Standard Global Priority Processing
+- `Canada Central` — Global Standard, Global coverage, Standard Global Priority Processing
+- `Canada East` — Global Standard, Global coverage, Standard Global Priority Processing
 - `Central US` — Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global Priority Processing
-- `East US` — Datazone standard, Global Standard, Global coverage
+- `East US` — Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global Priority Processing
 - `East US 2` — Datazone standard, Global Standard, Global coverage
-- `France Central` — Global Standard, Global coverage
-- `Germany West Central` — Global Standard, Global coverage
-- `Italy North` — Global Standard, Global coverage
-- `Japan East` — Global Standard, Global coverage
+- `France Central` — Global Standard, Global coverage, Standard Global Priority Processing
+- `Germany West Central` — Global Standard, Global coverage, Standard Global Priority Processing
+- `Italy North` — Global Standard, Global coverage, Standard Global Priority Processing
+- `Japan East` — Global Standard, Global coverage, Standard Global Priority Processing
 - `Korea Central` — Global Standard, Global coverage, Standard Global Priority Processing
-- `North Central US` — Datazone standard, Global Standard, Global coverage
-- `Norway East` — Global Standard, Global coverage
+- `North Central US` — Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global Priority Processing
+- `Norway East` — Global Standard, Global coverage, Standard Global Priority Processing
 - `Poland Central` — Global Standard, Global coverage, Standard Global Priority Processing
-- `South Africa North` — Global Standard, Global coverage
+- `South Africa North` — Global Standard, Global coverage, Standard Global Priority Processing
 - `South Central US` — Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global Priority Processing
-- `South India` — Global Standard, Global coverage
-- `Southeast Asia` — Global Standard, Global coverage
-- `Spain Central` — Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage, Standard Global Priority Processing
+- `Southeast Asia` — Global Standard, Global coverage, Standard Global Priority Processing
+- `Spain Central` — Global Standard, Global coverage, Standard Global Priority Processing
 - `Sweden Central` — Global Standard, Global coverage, Standard Global Priority Processing
-- `Switzerland North` — Global Standard, Global coverage
-- `Switzerland West` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
+- `Switzerland North` — Global Standard, Global coverage, Standard Global Priority Processing
+- `Switzerland West` — Global Standard, Global coverage, Standard Global Priority Processing
+- `UAE North` — Global Standard, Global coverage, Standard Global Priority Processing
 - `UK South` — Global Standard, Global coverage, Standard Global Priority Processing
-- `West Europe` — Global Standard, Global coverage
-- `West US` — Datazone standard, Global Standard, Global coverage
-- `West US 3` — Global Standard, Global coverage
+- `West Europe` — Global Standard, Global coverage, Standard Global Priority Processing
+- `West US` — Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global Priority Processing
+- `West US 3` — Datazone Standard Priority Processing, Global Standard, Global coverage
 
 </details>
 <details>
@@ -2248,6 +2248,7 @@ SKU labels observed:
 
 ## Recent changes
 
+- **2026-04-24 09:00 UTC** — gpt-5.4-mini: Datazone Standard Priority Processing added East US, North Central US, West US, and West US 3; Standard Global Priority Processing added Australia East, Brazil South, Canada Central, Canada East, East US, France Central, Germany West Central, Italy North, Japan East, North Central US, Norway East, South Africa North, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, West Europe, and West US
 - **2026-04-23 08:53 UTC** — gpt-4.1: Standard global deployments added West US 3 | gpt-4.1-mini: Standard global deployments added West US 3 | gpt-4.1-nano: Standard global deployments added West US 3 | gpt-4o: Standard global deployments added West US 3 | gpt-4o-mini: Standard global deployments added West US 3 | gpt-5: Standard global deployments added West US 3 | gpt-5-mini: Standard global deployments added West US 3 | gpt-5-nano: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-5.1: Standard global deployments added West US 3 | gpt-5.1-chat: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-5.1-codex: Standard global deployments added West US 3 | gpt-5.1-codex-mini: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-5.2: Standard global deployments added West US 3 | gpt-5.2-chat: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-5.2-codex: Standard global deployments added West US 3 | gpt-5.3-chat: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-5.3-codex: Standard global deployments added West US 3 | gpt-5.4: Standard global deployments added West US 3 | gpt-5.4-mini: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-5.4-nano: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-image-1: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-image-1-mini: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-image-1.5: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-image-2: Global coverage added West US 3; Standard global deployments added West US 3 | o1: Standard global deployments added West US 3 | o3: Standard global deployments added West US 3 | o3-mini: Standard global deployments added West US 3 | o4-mini: Standard global deployments added West US 3 | text-embedding-3-large: Standard global deployments added West US 3 | text-embedding-3-small: Global coverage added West US 3; Standard global deployments added West US 3 | text-embedding-ada-002: Standard global deployments added West US 3
 - **2026-04-22 08:48 UTC** — gpt-4.1: Standard global deployments removed West US 3; Standard Global Priority Processing removed West US 3 | gpt-4.1-mini: Standard global deployments removed West US 3 | gpt-4.1-nano: Standard global deployments removed West US 3 | gpt-4o: Standard global deployments removed West US 3 | gpt-4o-mini: Standard global deployments removed West US 3 | gpt-5: Standard global deployments removed West US 3 | gpt-5-mini: Standard global deployments removed West US 3 | gpt-5-nano: Global coverage removed West US 3; Standard global deployments removed West US 3 | gpt-5.1: Standard global deployments removed West US 3; Standard Global Priority Processing removed West US 3 | gpt-5.1-chat: Global coverage removed West US 3; Standard global deployments removed West US 3 | gpt-5.1-codex: Standard global deployments removed West US 3 | gpt-5.1-codex-mini: Global coverage removed West US 3; Standard global deployments removed West US 3 | gpt-5.2: Provisioned (PTU managed) added West US; Standard global deployments removed West US 3; Standard Global Priority Processing removed West US 3 | gpt-5.2-chat: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US; Standard global deployments added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US | gpt-5.2-codex: Standard global deployments added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US | gpt-5.3-chat: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US; Standard global deployments added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US | gpt-5.3-codex: Standard global deployments added Australia East, Brazil South, Canada Central, Canada East, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US | gpt-5.4: Standard global deployments removed West US 3; Standard Global Priority Processing added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, South Africa North, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US | gpt-5.4-mini: Global coverage removed West US 3; Datazone Standard Priority Processing added Central US and South Central US; Standard global deployments removed West US 3; Standard Global Priority Processing added Central US, Korea Central, Poland Central, South Central US, Sweden Central, and UK South | gpt-5.4-nano: Global coverage removed West US 3; Standard global deployments removed West US 3 | gpt-image-1: Global coverage removed West US 3; Standard global deployments removed West US 3 | gpt-image-1-mini: Global coverage removed West US 3; Standard global deployments removed West US 3 | gpt-image-1.5: Global coverage removed West US 3; Standard global deployments removed West US 3 | gpt-image-2: Global coverage added East US 2, Poland Central, Sweden Central, and UAE North; Standard global deployments added East US 2, Poland Central, Sweden Central, and UAE North | o1: Standard global deployments removed West US 3 | o3: Standard global deployments removed West US 3 | o3-mini: Standard global deployments removed West US 3 | o4-mini: Standard global deployments removed West US 3 | text-embedding-3-large: Standard global deployments removed West US 3 | text-embedding-3-small: Global coverage removed West US 3; Standard global deployments removed West US 3 | text-embedding-ada-002: Standard global deployments removed West US 3
 - **2026-04-11 07:50 UTC** — gpt-5.4-nano: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Japan East, Korea Central, North Central US, Norway East, South Africa North, Switzerland North, UAE North, West US, and West US 3; Datazone standard added North Central US and West US; Standard global deployments added Australia East, Brazil South, Canada Central, Canada East, Japan East, Korea Central, North Central US, Norway East, South Africa North, Switzerland North, UAE North, West US, and West US 3
