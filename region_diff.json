@@ -1,51 +1,6 @@
 {
-  "timestamp": "2026-04-24T09:00:20.248749+00:00",
-  "changes": {
-    "gpt-5.4-mini": {
-      "all": {
-        "added": [],
-        "removed": []
-      },
-      "skus": {
-        "datazone-standard-priority-processing": {
-          "label": "Datazone Standard Priority Processing",
-          "added": [
-            "East US",
-            "North Central US",
-            "West US",
-            "West US 3"
-          ],
-          "removed": []
-        },
-        "standard-global-priority-processing": {
-          "label": "Standard Global Priority Processing",
-          "added": [
-            "Australia East",
-            "Brazil South",
-            "Canada Central",
-            "Canada East",
-            "East US",
-            "France Central",
-            "Germany West Central",
-            "Italy North",
-            "Japan East",
-            "North Central US",
-            "Norway East",
-            "South Africa North",
-            "South India",
-            "Southeast Asia",
-            "Spain Central",
-            "Switzerland North",
-            "Switzerland West",
-            "UAE North",
-            "West Europe",
-            "West US"
-          ],
-          "removed": []
-        }
-      }
-    }
-  },
+  "timestamp": "2026-04-25T08:04:54.071703+00:00",
+  "changes": {},
   "current": {
     "codex-mini": {
       "all": [
