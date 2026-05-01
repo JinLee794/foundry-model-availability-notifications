@@ -1,0 +1,4175 @@
+{
+  "changes": {
+    "australiaeast": {
+      "all": {
+        "added": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini",
+          "text-embedding-3-large",
+          "text-embedding-3-small",
+          "text-embedding-ada-002"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-asia-pacific": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o4-mini",
+            "text-embedding-3-large",
+            "text-embedding-3-small",
+            "text-embedding-ada-002"
+          ],
+          "label": "Region Asia Pacific",
+          "removed": []
+        }
+      }
+    },
+    "brazilsouth": {
+      "all": {
+        "added": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini",
+          "text-embedding-3-large",
+          "text-embedding-3-small",
+          "text-embedding-ada-002"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-americas": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o4-mini",
+            "text-embedding-3-large",
+            "text-embedding-3-small",
+            "text-embedding-ada-002"
+          ],
+          "label": "Region Americas",
+          "removed": []
+        }
+      }
+    },
+    "canadacentral": {
+      "all": {
+        "added": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-4o-mini-transcribe",
+          "gpt-4o-transcribe",
+          "gpt-4o-transcribe-diarize",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "gpt-realtime",
+          "gpt-realtime-1.5",
+          "gpt-realtime-mini",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-americas": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-4o-mini-transcribe",
+            "gpt-4o-transcribe",
+            "gpt-4o-transcribe-diarize",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "gpt-realtime",
+            "gpt-realtime-1.5",
+            "gpt-realtime-mini",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o4-mini"
+          ],
+          "label": "Region Americas",
+          "removed": []
+        }
+      }
+    },
+    "canadaeast": {
+      "all": {
+        "added": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini",
+          "text-embedding-3-large",
+          "text-embedding-3-small",
+          "text-embedding-ada-002"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-americas": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o4-mini",
+            "text-embedding-3-large",
+            "text-embedding-3-small",
+            "text-embedding-ada-002"
+          ],
+          "label": "Region Americas",
+          "removed": []
+        }
+      }
+    },
+    "centralus": {
+      "all": {
+        "added": [
+          "codex-mini",
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-4o-mini-transcribe",
+          "gpt-4o-transcribe",
+          "gpt-4o-transcribe-diarize",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "gpt-audio",
+          "gpt-audio-1.5",
+          "gpt-audio-mini",
+          "gpt-realtime",
+          "gpt-realtime-1.5",
+          "gpt-realtime-mini",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o3-pro",
+          "o4-mini",
+          "text-embedding-3-large",
+          "text-embedding-3-small",
+          "text-embedding-ada-002"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-americas": {
+          "added": [
+            "codex-mini",
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-4o-mini-transcribe",
+            "gpt-4o-transcribe",
+            "gpt-4o-transcribe-diarize",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "gpt-audio",
+            "gpt-audio-1.5",
+            "gpt-audio-mini",
+            "gpt-realtime",
+            "gpt-realtime-1.5",
+            "gpt-realtime-mini",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o3-pro",
+            "o4-mini",
+            "text-embedding-3-large",
+            "text-embedding-3-small",
+            "text-embedding-ada-002"
+          ],
+          "label": "Region Americas",
+          "removed": []
+        }
+      }
+    },
+    "codex-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "Central US",
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "computer-use-preview": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "East US 2",
+            "South India",
+            "Sweden Central"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "eastus": {
+      "all": {
+        "added": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini",
+          "text-embedding-3-large",
+          "text-embedding-3-small",
+          "text-embedding-ada-002"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-americas": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "gpt-5.5",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o4-mini",
+            "text-embedding-3-large",
+            "text-embedding-3-small",
+            "text-embedding-ada-002"
+          ],
+          "label": "Region Americas",
+          "removed": []
+        }
+      }
+    },
+    "eastus2": {
+      "all": {
+        "added": [
+          "codex-mini",
+          "computer-use-preview",
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-4o-mini-transcribe",
+          "gpt-4o-mini-tts",
+          "gpt-4o-transcribe",
+          "gpt-4o-transcribe-diarize",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-max",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "gpt-5.4-pro",
+          "gpt-5.5",
+          "gpt-audio",
+          "gpt-audio-1.5",
+          "gpt-audio-mini",
+          "gpt-image-1",
+          "gpt-image-1-mini",
+          "gpt-image-1.5",
+          "gpt-image-2",
+          "gpt-realtime",
+          "gpt-realtime-1.5",
+          "gpt-realtime-mini",
+          "model-router",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o3-pro",
+          "o4-mini",
+          "sora-2",
+          "text-embedding-3-large",
+          "text-embedding-3-small",
+          "text-embedding-ada-002",
+          "whisper"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-americas": {
+          "added": [
+            "codex-mini",
+            "computer-use-preview",
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-4o-mini-transcribe",
+            "gpt-4o-mini-tts",
+            "gpt-4o-transcribe",
+            "gpt-4o-transcribe-diarize",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-max",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "gpt-5.4-pro",
+            "gpt-5.5",
+            "gpt-audio",
+            "gpt-audio-1.5",
+            "gpt-audio-mini",
+            "gpt-image-1",
+            "gpt-image-1-mini",
+            "gpt-image-1.5",
+            "gpt-image-2",
+            "gpt-realtime",
+            "gpt-realtime-1.5",
+            "gpt-realtime-mini",
+            "model-router",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o3-pro",
+            "o4-mini",
+            "sora-2",
+            "text-embedding-3-large",
+            "text-embedding-3-small",
+            "text-embedding-ada-002",
+            "whisper"
+          ],
+          "label": "Region Americas",
+          "removed": []
+        }
+      }
+    },
+    "francecentral": {
+      "all": {
+        "added": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-4o-mini-transcribe",
+          "gpt-4o-transcribe",
+          "gpt-4o-transcribe-diarize",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "gpt-realtime",
+          "gpt-realtime-1.5",
+          "gpt-realtime-mini",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini",
+          "text-embedding-3-large",
+          "text-embedding-3-small",
+          "text-embedding-ada-002"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-europe": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-4o-mini-transcribe",
+            "gpt-4o-transcribe",
+            "gpt-4o-transcribe-diarize",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "gpt-realtime",
+            "gpt-realtime-1.5",
+            "gpt-realtime-mini",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o4-mini",
+            "text-embedding-3-large",
+            "text-embedding-3-small",
+            "text-embedding-ada-002"
+          ],
+          "label": "Region Europe",
+          "removed": []
+        }
+      }
+    },
+    "germanywestcentral": {
+      "all": {
+        "added": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini",
+          "text-embedding-3-large",
+          "text-embedding-3-small",
+          "text-embedding-ada-002"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-europe": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o4-mini",
+            "text-embedding-3-large",
+            "text-embedding-3-small",
+            "text-embedding-ada-002"
+          ],
+          "label": "Region Europe",
+          "removed": []
+        }
+      }
+    },
+    "gpt-4.1": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Datazone provisioned managed",
+          "removed": []
+        },
+        "provisioned-global": {
+          "added": [],
+          "label": "Provisioned global",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-4.1-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Datazone provisioned managed",
+          "removed": []
+        },
+        "provisioned-global": {
+          "added": [],
+          "label": "Provisioned global",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-4.1-nano": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Datazone provisioned managed",
+          "removed": []
+        },
+        "provisioned-global": {
+          "added": [],
+          "label": "Provisioned global",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-4o": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Datazone provisioned managed",
+          "removed": []
+        },
+        "provisioned-global": {
+          "added": [],
+          "label": "Provisioned global",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-4o-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Datazone provisioned managed",
+          "removed": []
+        },
+        "provisioned-global": {
+          "added": [],
+          "label": "Provisioned global",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-4o-mini-transcribe": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "Canada Central",
+            "Central US",
+            "East US 2",
+            "France Central",
+            "South India",
+            "Sweden Central"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-4o-mini-tts": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "East US 2"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-4o-transcribe": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "Canada Central",
+            "Central US",
+            "East US 2",
+            "France Central",
+            "South India",
+            "Sweden Central"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-4o-transcribe-diarize": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "Canada Central",
+            "Central US",
+            "East US 2",
+            "France Central",
+            "South India",
+            "Sweden Central"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Datazone provisioned managed",
+          "removed": []
+        },
+        "provisioned-global": {
+          "added": [],
+          "label": "Provisioned global",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5-chat": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5-codex": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Datazone provisioned managed",
+          "removed": []
+        },
+        "provisioned-global": {
+          "added": [],
+          "label": "Provisioned global",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5-nano": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5-pro": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.1": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Datazone provisioned managed",
+          "removed": []
+        },
+        "provisioned-global": {
+          "added": [],
+          "label": "Provisioned global",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.1-chat": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.1-codex": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Datazone provisioned managed",
+          "removed": []
+        },
+        "provisioned-global": {
+          "added": [],
+          "label": "Provisioned global",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.1-codex-max": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.1-codex-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.2": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Datazone provisioned managed",
+          "removed": []
+        },
+        "provisioned-global": {
+          "added": [],
+          "label": "Provisioned global",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.2-chat": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.2-codex": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "provisioned-global": {
+          "added": [],
+          "label": "Provisioned global",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.3-chat": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.3-codex": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "provisioned-global": {
+          "added": [],
+          "label": "Provisioned global",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.4": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Datazone provisioned managed",
+          "removed": []
+        },
+        "provisioned-global": {
+          "added": [],
+          "label": "Provisioned global",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.4-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.4-nano": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.4-pro": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "East US 2",
+            "Poland Central",
+            "South Central US",
+            "Sweden Central"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.5": {
+      "all": {
+        "added": [
+          "East US",
+          "North Central US"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [
+            "East US",
+            "North Central US"
+          ],
+          "label": "Datazone provisioned managed",
+          "removed": []
+        },
+        "provisioned-global": {
+          "added": [
+            "East US",
+            "North Central US"
+          ],
+          "label": "Provisioned global",
+          "removed": []
+        },
+        "provisioned-models": {
+          "added": [
+            "East US"
+          ],
+          "label": "Provisioned (PTU managed)",
+          "removed": []
+        },
+        "standard-global-by-capability": {
+          "added": [
+            "East US 2",
+            "Poland Central",
+            "South Central US",
+            "Sweden Central"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-audio": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "Central US",
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-audio-1.5": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "Central US",
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-audio-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "Central US",
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-image-1": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "East US 2",
+            "Poland Central",
+            "Sweden Central",
+            "UAE North",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-image-1-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "East US 2",
+            "Poland Central",
+            "Sweden Central",
+            "UAE North",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-image-1.5": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "East US 2",
+            "Poland Central",
+            "Sweden Central",
+            "UAE North",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-image-2": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "East US 2",
+            "Poland Central",
+            "Sweden Central",
+            "UAE North",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-realtime": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "Canada Central",
+            "Central US",
+            "East US 2",
+            "France Central",
+            "South India",
+            "Sweden Central"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-realtime-1.5": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "Canada Central",
+            "Central US",
+            "East US 2",
+            "France Central",
+            "South India",
+            "Sweden Central"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-realtime-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "Canada Central",
+            "Central US",
+            "East US 2",
+            "France Central",
+            "South India",
+            "Sweden Central"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "italynorth": {
+      "all": {
+        "added": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini",
+          "text-embedding-3-large",
+          "text-embedding-3-small",
+          "text-embedding-ada-002"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-europe": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o4-mini",
+            "text-embedding-3-large",
+            "text-embedding-3-small",
+            "text-embedding-ada-002"
+          ],
+          "label": "Region Europe",
+          "removed": []
+        }
+      }
+    },
+    "japaneast": {
+      "all": {
+        "added": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini",
+          "text-embedding-3-large",
+          "text-embedding-3-small",
+          "text-embedding-ada-002"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-asia-pacific": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o4-mini",
+            "text-embedding-3-large",
+            "text-embedding-3-small",
+            "text-embedding-ada-002"
+          ],
+          "label": "Region Asia Pacific",
+          "removed": []
+        }
+      }
+    },
+    "koreacentral": {
+      "all": {
+        "added": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini",
+          "text-embedding-3-large",
+          "text-embedding-3-small",
+          "text-embedding-ada-002"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-asia-pacific": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o4-mini",
+            "text-embedding-3-large",
+            "text-embedding-3-small",
+            "text-embedding-ada-002"
+          ],
+          "label": "Region Asia Pacific",
+          "removed": []
+        }
+      }
+    },
+    "model-router": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "northcentralus": {
+      "all": {
+        "added": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini",
+          "text-embedding-3-large",
+          "text-embedding-3-small",
+          "text-embedding-ada-002",
+          "tts",
+          "tts-hd",
+          "whisper"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-americas": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "gpt-5.5",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o4-mini",
+            "text-embedding-3-large",
+            "text-embedding-3-small",
+            "text-embedding-ada-002",
+            "tts",
+            "tts-hd",
+            "whisper"
+          ],
+          "label": "Region Americas",
+          "removed": []
+        }
+      }
+    },
+    "norwayeast": {
+      "all": {
+        "added": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "o1",
+          "o3",
+          "o3-deep-research",
+          "o3-mini",
+          "o4-mini",
+          "text-embedding-3-large",
+          "text-embedding-3-small",
+          "text-embedding-ada-002",
+          "whisper"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-europe": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "o1",
+            "o3",
+            "o3-deep-research",
+            "o3-mini",
+            "o4-mini",
+            "text-embedding-3-large",
+            "text-embedding-3-small",
+            "text-embedding-ada-002",
+            "whisper"
+          ],
+          "label": "Region Europe",
+          "removed": []
+        }
+      }
+    },
+    "o1": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Datazone provisioned managed",
+          "removed": []
+        },
+        "provisioned-global": {
+          "added": [],
+          "label": "Provisioned global",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "o3": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Datazone provisioned managed",
+          "removed": []
+        },
+        "provisioned-global": {
+          "added": [],
+          "label": "Provisioned global",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "o3-deep-research": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "Norway East",
+            "West US"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "o3-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Datazone provisioned managed",
+          "removed": []
+        },
+        "provisioned-global": {
+          "added": [],
+          "label": "Provisioned global",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "o3-pro": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "Central US",
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "o4-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Datazone provisioned managed",
+          "removed": []
+        },
+        "provisioned-global": {
+          "added": [],
+          "label": "Provisioned global",
+          "removed": [
+            "West US 3"
+          ]
+        },
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "polandcentral": {
+      "all": {
+        "added": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "gpt-5.4-pro",
+          "gpt-5.5",
+          "gpt-image-1",
+          "gpt-image-1-mini",
+          "gpt-image-1.5",
+          "gpt-image-2",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini",
+          "text-embedding-3-large",
+          "text-embedding-3-small",
+          "text-embedding-ada-002"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-europe": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "gpt-5.4-pro",
+            "gpt-5.5",
+            "gpt-image-1",
+            "gpt-image-1-mini",
+            "gpt-image-1.5",
+            "gpt-image-2",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o4-mini",
+            "text-embedding-3-large",
+            "text-embedding-3-small",
+            "text-embedding-ada-002"
+          ],
+          "label": "Region Europe",
+          "removed": []
+        }
+      }
+    },
+    "sora-2": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "southafricanorth": {
+      "all": {
+        "added": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini",
+          "text-embedding-3-large",
+          "text-embedding-3-small",
+          "text-embedding-ada-002"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-middle-east-africa": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o4-mini",
+            "text-embedding-3-large",
+            "text-embedding-3-small",
+            "text-embedding-ada-002"
+          ],
+          "label": "Region Middle East Africa",
+          "removed": []
+        }
+      }
+    },
+    "southcentralus": {
+      "all": {
+        "added": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "gpt-5.4-pro",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini",
+          "text-embedding-3-large",
+          "text-embedding-3-small",
+          "text-embedding-ada-002"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-americas": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "gpt-5.4-pro",
+            "gpt-5.5",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o4-mini",
+            "text-embedding-3-large",
+            "text-embedding-3-small",
+            "text-embedding-ada-002"
+          ],
+          "label": "Region Americas",
+          "removed": []
+        }
+      }
+    },
+    "southeastasia": {
+      "all": {
+        "added": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini",
+          "text-embedding-3-large"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-asia-pacific": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o4-mini",
+            "text-embedding-3-large"
+          ],
+          "label": "Region Asia Pacific",
+          "removed": []
+        }
+      }
+    },
+    "southindia": {
+      "all": {
+        "added": [
+          "computer-use-preview",
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-4o-mini-transcribe",
+          "gpt-4o-transcribe",
+          "gpt-4o-transcribe-diarize",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "gpt-realtime",
+          "gpt-realtime-1.5",
+          "gpt-realtime-mini",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini",
+          "text-embedding-3-large",
+          "text-embedding-3-small",
+          "text-embedding-ada-002",
+          "whisper"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-asia-pacific": {
+          "added": [
+            "computer-use-preview",
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-4o-mini-transcribe",
+            "gpt-4o-transcribe",
+            "gpt-4o-transcribe-diarize",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "gpt-realtime",
+            "gpt-realtime-1.5",
+            "gpt-realtime-mini",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o4-mini",
+            "text-embedding-3-large",
+            "text-embedding-3-small",
+            "text-embedding-ada-002",
+            "whisper"
+          ],
+          "label": "Region Asia Pacific",
+          "removed": []
+        }
+      }
+    },
+    "spaincentral": {
+      "all": {
+        "added": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini",
+          "text-embedding-3-large",
+          "text-embedding-3-small",
+          "text-embedding-ada-002"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-europe": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o4-mini",
+            "text-embedding-3-large",
+            "text-embedding-3-small",
+            "text-embedding-ada-002"
+          ],
+          "label": "Region Europe",
+          "removed": []
+        }
+      }
+    },
+    "swedencentral": {
+      "all": {
+        "added": [
+          "codex-mini",
+          "computer-use-preview",
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-4o-mini-transcribe",
+          "gpt-4o-transcribe",
+          "gpt-4o-transcribe-diarize",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-max",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "gpt-5.4-pro",
+          "gpt-5.5",
+          "gpt-audio",
+          "gpt-audio-1.5",
+          "gpt-audio-mini",
+          "gpt-image-1",
+          "gpt-image-1-mini",
+          "gpt-image-1.5",
+          "gpt-image-2",
+          "gpt-realtime",
+          "gpt-realtime-1.5",
+          "gpt-realtime-mini",
+          "model-router",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o3-pro",
+          "o4-mini",
+          "sora-2",
+          "text-embedding-3-large",
+          "text-embedding-3-small",
+          "text-embedding-ada-002",
+          "tts",
+          "tts-hd",
+          "whisper"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-europe": {
+          "added": [
+            "codex-mini",
+            "computer-use-preview",
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-4o-mini-transcribe",
+            "gpt-4o-transcribe",
+            "gpt-4o-transcribe-diarize",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-max",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "gpt-5.4-pro",
+            "gpt-5.5",
+            "gpt-audio",
+            "gpt-audio-1.5",
+            "gpt-audio-mini",
+            "gpt-image-1",
+            "gpt-image-1-mini",
+            "gpt-image-1.5",
+            "gpt-image-2",
+            "gpt-realtime",
+            "gpt-realtime-1.5",
+            "gpt-realtime-mini",
+            "model-router",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o3-pro",
+            "o4-mini",
+            "sora-2",
+            "text-embedding-3-large",
+            "text-embedding-3-small",
+            "text-embedding-ada-002",
+            "tts",
+            "tts-hd",
+            "whisper"
+          ],
+          "label": "Region Europe",
+          "removed": []
+        }
+      }
+    },
+    "switzerlandnorth": {
+      "all": {
+        "added": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini",
+          "text-embedding-3-large",
+          "text-embedding-3-small",
+          "text-embedding-ada-002",
+          "whisper"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-europe": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o4-mini",
+            "text-embedding-3-large",
+            "text-embedding-3-small",
+            "text-embedding-ada-002",
+            "whisper"
+          ],
+          "label": "Region Europe",
+          "removed": []
+        }
+      }
+    },
+    "switzerlandwest": {
+      "all": {
+        "added": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-europe": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o4-mini"
+          ],
+          "label": "Region Europe",
+          "removed": []
+        }
+      }
+    },
+    "text-embedding-3-large": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "text-embedding-3-small": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "text-embedding-ada-002": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada East",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "uaenorth": {
+      "all": {
+        "added": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "gpt-image-1",
+          "gpt-image-1-mini",
+          "gpt-image-1.5",
+          "gpt-image-2",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini",
+          "text-embedding-3-large",
+          "text-embedding-3-small",
+          "text-embedding-ada-002",
+          "whisper"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-middle-east-africa": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "gpt-image-1",
+            "gpt-image-1-mini",
+            "gpt-image-1.5",
+            "gpt-image-2",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o4-mini",
+            "text-embedding-3-large",
+            "text-embedding-3-small",
+            "text-embedding-ada-002",
+            "whisper"
+          ],
+          "label": "Region Middle East Africa",
+          "removed": []
+        }
+      }
+    },
+    "uksouth": {
+      "all": {
+        "added": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini",
+          "text-embedding-3-large",
+          "text-embedding-3-small",
+          "text-embedding-ada-002"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-europe": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o4-mini",
+            "text-embedding-3-large",
+            "text-embedding-3-small",
+            "text-embedding-ada-002"
+          ],
+          "label": "Region Europe",
+          "removed": []
+        }
+      }
+    },
+    "westeurope": {
+      "all": {
+        "added": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini",
+          "text-embedding-3-large",
+          "text-embedding-3-small",
+          "text-embedding-ada-002",
+          "whisper"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-europe": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o4-mini",
+            "text-embedding-3-large",
+            "text-embedding-3-small",
+            "text-embedding-ada-002",
+            "whisper"
+          ],
+          "label": "Region Europe",
+          "removed": []
+        }
+      }
+    },
+    "westus": {
+      "all": {
+        "added": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-chat",
+          "gpt-5-codex",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5-pro",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "o1",
+          "o3",
+          "o3-deep-research",
+          "o3-mini",
+          "o4-mini",
+          "text-embedding-3-large",
+          "text-embedding-3-small",
+          "text-embedding-ada-002"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-americas": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-5",
+            "gpt-5-chat",
+            "gpt-5-codex",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-pro",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "o1",
+            "o3",
+            "o3-deep-research",
+            "o3-mini",
+            "o4-mini",
+            "text-embedding-3-large",
+            "text-embedding-3-small",
+            "text-embedding-ada-002"
+          ],
+          "label": "Region Americas",
+          "removed": []
+        }
+      }
+    },
+    "westus3": {
+      "all": {
+        "added": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "gpt-5.1",
+          "gpt-5.1-chat",
+          "gpt-5.1-codex",
+          "gpt-5.1-codex-mini",
+          "gpt-5.2",
+          "gpt-5.2-chat",
+          "gpt-5.2-codex",
+          "gpt-5.3-chat",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "gpt-image-1",
+          "gpt-image-1-mini",
+          "gpt-image-1.5",
+          "gpt-image-2",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini",
+          "text-embedding-3-large",
+          "text-embedding-3-small",
+          "text-embedding-ada-002",
+          "tts",
+          "tts-hd"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-americas": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-5",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "gpt-5.2-codex",
+            "gpt-5.3-chat",
+            "gpt-5.3-codex",
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano",
+            "gpt-image-1",
+            "gpt-image-1-mini",
+            "gpt-image-1.5",
+            "gpt-image-2",
+            "o1",
+            "o3",
+            "o3-mini",
+            "o4-mini",
+            "text-embedding-3-large",
+            "text-embedding-3-small",
+            "text-embedding-ada-002",
+            "tts",
+            "tts-hd"
+          ],
+          "label": "Region Americas",
+          "removed": []
+        }
+      }
+    }
+  },
+  "timestamp": "2026-05-01T09:01:47.934450+00:00"
+}
