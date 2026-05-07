@@ -1,6 +1,75 @@
 {
-  "timestamp": "2026-05-06T09:23:33.126153+00:00",
-  "changes": {},
+  "timestamp": "2026-05-07T09:33:35.258569+00:00",
+  "changes": {
+    "eastus2": {
+      "all": {
+        "added": [
+          "gpt-chat-latest"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-americas": {
+          "label": "Region Americas",
+          "added": [
+            "gpt-chat-latest"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "polandcentral": {
+      "all": {
+        "added": [
+          "gpt-chat-latest"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-europe": {
+          "label": "Region Europe",
+          "added": [
+            "gpt-chat-latest"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "southcentralus": {
+      "all": {
+        "added": [
+          "gpt-chat-latest"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-americas": {
+          "label": "Region Americas",
+          "added": [
+            "gpt-chat-latest"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "swedencentral": {
+      "all": {
+        "added": [
+          "gpt-chat-latest"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-europe": {
+          "label": "Region Europe",
+          "added": [
+            "gpt-chat-latest"
+          ],
+          "removed": []
+        }
+      }
+    }
+  },
   "current": {
     "australiaeast": {
       "all": [
@@ -1287,6 +1356,7 @@
         "gpt-audio",
         "gpt-audio-1.5",
         "gpt-audio-mini",
+        "gpt-chat-latest",
         "gpt-image-1",
         "gpt-image-1-mini",
         "gpt-image-1.5",
@@ -1345,6 +1415,7 @@
             "gpt-audio",
             "gpt-audio-1.5",
             "gpt-audio-mini",
+            "gpt-chat-latest",
             "gpt-image-1",
             "gpt-image-1-mini",
             "gpt-image-1.5",
@@ -8829,6 +8900,7 @@
         "gpt-5.4-nano",
         "gpt-5.4-pro",
         "gpt-5.5",
+        "gpt-chat-latest",
         "gpt-image-1",
         "gpt-image-1-mini",
         "gpt-image-1.5",
@@ -8870,6 +8942,7 @@
             "gpt-5.4-nano",
             "gpt-5.4-pro",
             "gpt-5.5",
+            "gpt-chat-latest",
             "gpt-image-1",
             "gpt-image-1-mini",
             "gpt-image-1.5",
@@ -9005,6 +9078,7 @@
         "gpt-5.4-nano",
         "gpt-5.4-pro",
         "gpt-5.5",
+        "gpt-chat-latest",
         "o1",
         "o3",
         "o3-mini",
@@ -9042,6 +9116,7 @@
             "gpt-5.4-nano",
             "gpt-5.4-pro",
             "gpt-5.5",
+            "gpt-chat-latest",
             "o1",
             "o3",
             "o3-mini",
@@ -9314,6 +9389,7 @@
         "gpt-audio",
         "gpt-audio-1.5",
         "gpt-audio-mini",
+        "gpt-chat-latest",
         "gpt-image-1",
         "gpt-image-1-mini",
         "gpt-image-1.5",
@@ -9373,6 +9449,7 @@
             "gpt-audio",
             "gpt-audio-1.5",
             "gpt-audio-mini",
+            "gpt-chat-latest",
             "gpt-image-1",
             "gpt-image-1-mini",
             "gpt-image-1.5",

@@ -1,0 +1,73 @@
+{
+  "changes": {
+    "eastus2": {
+      "all": {
+        "added": [
+          "gpt-chat-latest"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-americas": {
+          "added": [
+            "gpt-chat-latest"
+          ],
+          "label": "Region Americas",
+          "removed": []
+        }
+      }
+    },
+    "polandcentral": {
+      "all": {
+        "added": [
+          "gpt-chat-latest"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-europe": {
+          "added": [
+            "gpt-chat-latest"
+          ],
+          "label": "Region Europe",
+          "removed": []
+        }
+      }
+    },
+    "southcentralus": {
+      "all": {
+        "added": [
+          "gpt-chat-latest"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-americas": {
+          "added": [
+            "gpt-chat-latest"
+          ],
+          "label": "Region Americas",
+          "removed": []
+        }
+      }
+    },
+    "swedencentral": {
+      "all": {
+        "added": [
+          "gpt-chat-latest"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-europe": {
+          "added": [
+            "gpt-chat-latest"
+          ],
+          "label": "Region Europe",
+          "removed": []
+        }
+      }
+    }
+  },
+  "timestamp": "2026-05-07T09:33:35.258569+00:00"
+}
