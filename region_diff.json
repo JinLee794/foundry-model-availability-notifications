@@ -1,6 +1,140 @@
 {
-  "timestamp": "2026-05-11T10:38:38.602099+00:00",
-  "changes": {},
+  "timestamp": "2026-05-12T09:41:41.293130+00:00",
+  "changes": {
+    "gpt-4.1": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-priority-processing": {
+          "label": "Standard Global Priority Processing",
+          "added": [],
+          "removed": [
+            "West US 3"
+          ]
+        }
+      }
+    },
+    "gpt-5.1": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard-priority-processing": {
+          "label": "Datazone Standard Priority Processing",
+          "added": [
+            "East US 2"
+          ],
+          "removed": []
+        },
+        "standard-global-priority-processing": {
+          "label": "Standard Global Priority Processing",
+          "added": [
+            "East US 2"
+          ],
+          "removed": [
+            "West US 3"
+          ]
+        }
+      }
+    },
+    "gpt-5.2": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard-priority-processing": {
+          "label": "Datazone Standard Priority Processing",
+          "added": [
+            "East US 2"
+          ],
+          "removed": []
+        },
+        "standard-global-priority-processing": {
+          "label": "Standard Global Priority Processing",
+          "added": [
+            "East US 2"
+          ],
+          "removed": [
+            "West US 3"
+          ]
+        }
+      }
+    },
+    "gpt-5.4": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard-priority-processing": {
+          "label": "Datazone Standard Priority Processing",
+          "added": [
+            "East US 2"
+          ],
+          "removed": []
+        },
+        "standard-global-priority-processing": {
+          "label": "Standard Global Priority Processing",
+          "added": [
+            "East US 2"
+          ],
+          "removed": [
+            "West US 3"
+          ]
+        }
+      }
+    },
+    "gpt-5.4-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard-priority-processing": {
+          "label": "Datazone Standard Priority Processing",
+          "added": [
+            "East US 2"
+          ],
+          "removed": []
+        },
+        "standard-global-priority-processing": {
+          "label": "Standard Global Priority Processing",
+          "added": [
+            "East US 2"
+          ],
+          "removed": [
+            "West US 3"
+          ]
+        }
+      }
+    },
+    "gpt-5.5": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard-priority-processing": {
+          "label": "Datazone Standard Priority Processing",
+          "added": [
+            "East US 2"
+          ],
+          "removed": []
+        },
+        "standard-global-priority-processing": {
+          "label": "Standard Global Priority Processing",
+          "added": [
+            "East US 2"
+          ],
+          "removed": []
+        }
+      }
+    }
+  },
   "current": {
     "australiaeast": {
       "all": [
@@ -2217,8 +2351,7 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US",
-            "West US 3"
+            "West US"
           ]
         },
         "standard-models": {
@@ -4258,6 +4391,7 @@
           "regions": [
             "Central US",
             "East US",
+            "East US 2",
             "North Central US",
             "South Central US",
             "West US",
@@ -4422,6 +4556,7 @@
             "Canada East",
             "Central US",
             "East US",
+            "East US 2",
             "France Central",
             "Germany West Central",
             "Italy North",
@@ -4441,8 +4576,7 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US",
-            "West US 3"
+            "West US"
           ]
         },
         "standard-models": {
@@ -4899,6 +5033,7 @@
           "regions": [
             "Central US",
             "East US",
+            "East US 2",
             "North Central US",
             "South Central US",
             "West US",
@@ -5024,6 +5159,7 @@
             "Canada East",
             "Central US",
             "East US",
+            "East US 2",
             "France Central",
             "Germany West Central",
             "Italy North",
@@ -5043,8 +5179,7 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US",
-            "West US 3"
+            "West US"
           ]
         }
       }
@@ -5599,6 +5734,7 @@
           "regions": [
             "Central US",
             "East US",
+            "East US 2",
             "North Central US",
             "South Central US",
             "West US",
@@ -5719,6 +5855,7 @@
             "Canada East",
             "Central US",
             "East US",
+            "East US 2",
             "France Central",
             "Germany West Central",
             "Italy North",
@@ -5738,8 +5875,7 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US",
-            "West US 3"
+            "West US"
           ]
         }
       }
@@ -5793,6 +5929,7 @@
           "regions": [
             "Central US",
             "East US",
+            "East US 2",
             "North Central US",
             "South Central US",
             "West US",
@@ -5874,6 +6011,7 @@
             "Canada East",
             "Central US",
             "East US",
+            "East US 2",
             "France Central",
             "Germany West Central",
             "Italy North",
@@ -5893,8 +6031,7 @@
             "UAE North",
             "UK South",
             "West Europe",
-            "West US",
-            "West US 3"
+            "West US"
           ]
         }
       }
@@ -6068,6 +6205,7 @@
         "datazone-standard-priority-processing": {
           "label": "Datazone Standard Priority Processing",
           "regions": [
+            "East US 2",
             "South Central US"
           ]
         },
@@ -6105,6 +6243,7 @@
         "standard-global-priority-processing": {
           "label": "Standard Global Priority Processing",
           "regions": [
+            "East US 2",
             "Poland Central",
             "South Central US",
             "Sweden Central"

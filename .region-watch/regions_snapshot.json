@@ -2577,8 +2577,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       },
       "standard-models": {
@@ -4618,6 +4617,7 @@
         "regions": [
           "Central US",
           "East US",
+          "East US 2",
           "North Central US",
           "South Central US",
           "West US",
@@ -4782,6 +4782,7 @@
           "Canada East",
           "Central US",
           "East US",
+          "East US 2",
           "France Central",
           "Germany West Central",
           "Italy North",
@@ -4801,8 +4802,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       },
       "standard-models": {
@@ -5259,6 +5259,7 @@
         "regions": [
           "Central US",
           "East US",
+          "East US 2",
           "North Central US",
           "South Central US",
           "West US",
@@ -5384,6 +5385,7 @@
           "Canada East",
           "Central US",
           "East US",
+          "East US 2",
           "France Central",
           "Germany West Central",
           "Italy North",
@@ -5403,8 +5405,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       }
     }
@@ -5959,6 +5960,7 @@
         "regions": [
           "Central US",
           "East US",
+          "East US 2",
           "North Central US",
           "South Central US",
           "West US",
@@ -6079,6 +6081,7 @@
           "Canada East",
           "Central US",
           "East US",
+          "East US 2",
           "France Central",
           "Germany West Central",
           "Italy North",
@@ -6098,8 +6101,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       }
     }
@@ -6153,6 +6155,7 @@
         "regions": [
           "Central US",
           "East US",
+          "East US 2",
           "North Central US",
           "South Central US",
           "West US",
@@ -6234,6 +6237,7 @@
           "Canada East",
           "Central US",
           "East US",
+          "East US 2",
           "France Central",
           "Germany West Central",
           "Italy North",
@@ -6253,8 +6257,7 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US",
-          "West US 3"
+          "West US"
         ]
       }
     }
@@ -6428,6 +6431,7 @@
       "datazone-standard-priority-processing": {
         "label": "Datazone Standard Priority Processing",
         "regions": [
+          "East US 2",
           "South Central US"
         ]
       },
@@ -6465,6 +6469,7 @@
       "standard-global-priority-processing": {
         "label": "Standard Global Priority Processing",
         "regions": [
+          "East US 2",
           "Poland Central",
           "South Central US",
           "Sweden Central"

@@ -1,0 +1,138 @@
+{
+  "changes": {
+    "gpt-4.1": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "standard-global-priority-processing": {
+          "added": [],
+          "label": "Standard Global Priority Processing",
+          "removed": [
+            "West US 3"
+          ]
+        }
+      }
+    },
+    "gpt-5.1": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard-priority-processing": {
+          "added": [
+            "East US 2"
+          ],
+          "label": "Datazone Standard Priority Processing",
+          "removed": []
+        },
+        "standard-global-priority-processing": {
+          "added": [
+            "East US 2"
+          ],
+          "label": "Standard Global Priority Processing",
+          "removed": [
+            "West US 3"
+          ]
+        }
+      }
+    },
+    "gpt-5.2": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard-priority-processing": {
+          "added": [
+            "East US 2"
+          ],
+          "label": "Datazone Standard Priority Processing",
+          "removed": []
+        },
+        "standard-global-priority-processing": {
+          "added": [
+            "East US 2"
+          ],
+          "label": "Standard Global Priority Processing",
+          "removed": [
+            "West US 3"
+          ]
+        }
+      }
+    },
+    "gpt-5.4": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard-priority-processing": {
+          "added": [
+            "East US 2"
+          ],
+          "label": "Datazone Standard Priority Processing",
+          "removed": []
+        },
+        "standard-global-priority-processing": {
+          "added": [
+            "East US 2"
+          ],
+          "label": "Standard Global Priority Processing",
+          "removed": [
+            "West US 3"
+          ]
+        }
+      }
+    },
+    "gpt-5.4-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard-priority-processing": {
+          "added": [
+            "East US 2"
+          ],
+          "label": "Datazone Standard Priority Processing",
+          "removed": []
+        },
+        "standard-global-priority-processing": {
+          "added": [
+            "East US 2"
+          ],
+          "label": "Standard Global Priority Processing",
+          "removed": [
+            "West US 3"
+          ]
+        }
+      }
+    },
+    "gpt-5.5": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard-priority-processing": {
+          "added": [
+            "East US 2"
+          ],
+          "label": "Datazone Standard Priority Processing",
+          "removed": []
+        },
+        "standard-global-priority-processing": {
+          "added": [
+            "East US 2"
+          ],
+          "label": "Standard Global Priority Processing",
+          "removed": []
+        }
+      }
+    }
+  },
+  "timestamp": "2026-05-12T09:41:41.293130+00:00"
+}
