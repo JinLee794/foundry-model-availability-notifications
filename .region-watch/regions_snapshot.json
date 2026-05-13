@@ -1407,6 +1407,7 @@
       "gpt-5.4",
       "gpt-5.4-mini",
       "gpt-5.4-nano",
+      "gpt-5.5",
       "o1",
       "o3",
       "o3-mini",
@@ -1416,8 +1417,46 @@
       "text-embedding-ada-002"
     ],
     "skus": {
-      "region-asia-pacific": {
-        "label": "Region Asia Pacific",
+      "deployments-batch": {
+        "label": "Deployments Batch",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5.1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
         "regions": [
           "gpt-4.1",
           "gpt-4.1-mini",
@@ -1478,6 +1517,7 @@
       "gpt-5.4",
       "gpt-5.4-mini",
       "gpt-5.4-nano",
+      "gpt-5.5",
       "o1",
       "o3",
       "o3-mini",
@@ -1487,8 +1527,46 @@
       "text-embedding-ada-002"
     ],
     "skus": {
-      "region-americas": {
-        "label": "Region Americas",
+      "deployments-batch": {
+        "label": "Deployments Batch",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5.1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
         "regions": [
           "gpt-4.1",
           "gpt-4.1-mini",
@@ -1551,30 +1629,49 @@
       "gpt-5.4",
       "gpt-5.4-mini",
       "gpt-5.4-nano",
+      "gpt-5.5",
       "gpt-realtime",
       "gpt-realtime-1.5",
       "gpt-realtime-mini",
+      "gpt-realtime-translate",
+      "gpt-realtime-whisper",
       "o1",
       "o3",
       "o3-mini",
       "o4-mini"
     ],
     "skus": {
-      "region-americas": {
-        "label": "Region Americas",
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
         "regions": [
           "gpt-4.1",
           "gpt-4.1-mini",
           "gpt-4.1-nano",
           "gpt-4o",
           "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
+        "regions": [
           "gpt-4o-mini-transcribe",
           "gpt-4o-transcribe",
           "gpt-4o-transcribe-diarize",
-          "gpt-5",
           "gpt-5-chat",
           "gpt-5-codex",
-          "gpt-5-mini",
           "gpt-5-pro",
           "gpt-5.1",
           "gpt-5.1-chat",
@@ -1591,10 +1688,8 @@
           "gpt-realtime",
           "gpt-realtime-1.5",
           "gpt-realtime-mini",
-          "o1",
-          "o3",
-          "o3-mini",
-          "o4-mini"
+          "gpt-realtime-translate",
+          "gpt-realtime-whisper"
         ]
       }
     }
@@ -1624,6 +1719,7 @@
       "gpt-5.4",
       "gpt-5.4-mini",
       "gpt-5.4-nano",
+      "gpt-5.5",
       "o1",
       "o3",
       "o3-mini",
@@ -1633,8 +1729,46 @@
       "text-embedding-ada-002"
     ],
     "skus": {
-      "region-americas": {
-        "label": "Region Americas",
+      "deployments-batch": {
+        "label": "Deployments Batch",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5.1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
         "regions": [
           "gpt-4.1",
           "gpt-4.1-mini",
@@ -1699,6 +1833,7 @@
       "gpt-5.4",
       "gpt-5.4-mini",
       "gpt-5.4-nano",
+      "gpt-5.5",
       "gpt-audio",
       "gpt-audio-1.5",
       "gpt-audio-mini",
@@ -1715,8 +1850,46 @@
       "text-embedding-ada-002"
     ],
     "skus": {
-      "region-americas": {
-        "label": "Region Americas",
+      "deployments-batch": {
+        "label": "Deployments Batch",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5.1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
         "regions": [
           "codex-mini",
           "gpt-4.1",
@@ -1919,8 +2092,46 @@
       "text-embedding-ada-002"
     ],
     "skus": {
-      "region-americas": {
-        "label": "Region Americas",
+      "deployments-batch": {
+        "label": "Deployments Batch",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5.1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
         "regions": [
           "gpt-4.1",
           "gpt-4.1-mini",
@@ -1945,7 +2156,6 @@
           "gpt-5.4",
           "gpt-5.4-mini",
           "gpt-5.4-nano",
-          "gpt-5.5",
           "o1",
           "o3",
           "o3-mini",
@@ -2015,8 +2225,46 @@
       "whisper"
     ],
     "skus": {
-      "region-americas": {
-        "label": "Region Americas",
+      "deployments-batch": {
+        "label": "Deployments Batch",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5.1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
         "regions": [
           "codex-mini",
           "computer-use-preview",
@@ -2175,9 +2423,12 @@
       "gpt-5.4",
       "gpt-5.4-mini",
       "gpt-5.4-nano",
+      "gpt-5.5",
       "gpt-realtime",
       "gpt-realtime-1.5",
       "gpt-realtime-mini",
+      "gpt-realtime-translate",
+      "gpt-realtime-whisper",
       "o1",
       "o3",
       "o3-mini",
@@ -2187,8 +2438,46 @@
       "text-embedding-ada-002"
     ],
     "skus": {
-      "region-europe": {
-        "label": "Region Europe",
+      "deployments-batch": {
+        "label": "Deployments Batch",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5.1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
         "regions": [
           "gpt-4.1",
           "gpt-4.1-mini",
@@ -2219,6 +2508,8 @@
           "gpt-realtime",
           "gpt-realtime-1.5",
           "gpt-realtime-mini",
+          "gpt-realtime-translate",
+          "gpt-realtime-whisper",
           "o1",
           "o3",
           "o3-mini",
@@ -2255,6 +2546,7 @@
       "gpt-5.4",
       "gpt-5.4-mini",
       "gpt-5.4-nano",
+      "gpt-5.5",
       "o1",
       "o3",
       "o3-mini",
@@ -2264,8 +2556,46 @@
       "text-embedding-ada-002"
     ],
     "skus": {
-      "region-europe": {
-        "label": "Region Europe",
+      "deployments-batch": {
+        "label": "Deployments Batch",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5.1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
         "regions": [
           "gpt-4.1",
           "gpt-4.1-mini",
@@ -7322,6 +7652,7 @@
       "gpt-5.4",
       "gpt-5.4-mini",
       "gpt-5.4-nano",
+      "gpt-5.5",
       "o1",
       "o3",
       "o3-mini",
@@ -7331,8 +7662,31 @@
       "text-embedding-ada-002"
     ],
     "skus": {
-      "region-europe": {
-        "label": "Region Europe",
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
         "regions": [
           "gpt-4.1",
           "gpt-4.1-mini",
@@ -7393,6 +7747,7 @@
       "gpt-5.4",
       "gpt-5.4-mini",
       "gpt-5.4-nano",
+      "gpt-5.5",
       "o1",
       "o3",
       "o3-mini",
@@ -7402,8 +7757,46 @@
       "text-embedding-ada-002"
     ],
     "skus": {
-      "region-asia-pacific": {
-        "label": "Region Asia Pacific",
+      "deployments-batch": {
+        "label": "Deployments Batch",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5.1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
         "regions": [
           "gpt-4.1",
           "gpt-4.1-mini",
@@ -7464,6 +7857,7 @@
       "gpt-5.4",
       "gpt-5.4-mini",
       "gpt-5.4-nano",
+      "gpt-5.5",
       "o1",
       "o3",
       "o3-mini",
@@ -7473,8 +7867,46 @@
       "text-embedding-ada-002"
     ],
     "skus": {
-      "region-asia-pacific": {
-        "label": "Region Asia Pacific",
+      "deployments-batch": {
+        "label": "Deployments Batch",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5.1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
         "regions": [
           "gpt-4.1",
           "gpt-4.1-mini",
@@ -7775,8 +8207,46 @@
       "whisper"
     ],
     "skus": {
-      "region-americas": {
-        "label": "Region Americas",
+      "deployments-batch": {
+        "label": "Deployments Batch",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5.1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
         "regions": [
           "gpt-4.1",
           "gpt-4.1-mini",
@@ -7801,7 +8271,6 @@
           "gpt-5.4",
           "gpt-5.4-mini",
           "gpt-5.4-nano",
-          "gpt-5.5",
           "o1",
           "o3",
           "o3-mini",
@@ -7841,6 +8310,7 @@
       "gpt-5.4",
       "gpt-5.4-mini",
       "gpt-5.4-nano",
+      "gpt-5.5",
       "o1",
       "o3",
       "o3-deep-research",
@@ -7852,8 +8322,46 @@
       "whisper"
     ],
     "skus": {
-      "region-europe": {
-        "label": "Region Europe",
+      "deployments-batch": {
+        "label": "Deployments Batch",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5.1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
         "regions": [
           "gpt-4.1",
           "gpt-4.1-mini",
@@ -8847,8 +9355,46 @@
       "text-embedding-ada-002"
     ],
     "skus": {
-      "region-europe": {
-        "label": "Region Europe",
+      "deployments-batch": {
+        "label": "Deployments Batch",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5.1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
         "regions": [
           "gpt-4.1",
           "gpt-4.1-mini",
@@ -8938,6 +9484,7 @@
       "gpt-5.4",
       "gpt-5.4-mini",
       "gpt-5.4-nano",
+      "gpt-5.5",
       "o1",
       "o3",
       "o3-mini",
@@ -8947,8 +9494,46 @@
       "text-embedding-ada-002"
     ],
     "skus": {
-      "region-middle-east-africa": {
-        "label": "Region Middle East Africa",
+      "deployments-batch": {
+        "label": "Deployments Batch",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5.1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
         "regions": [
           "gpt-4.1",
           "gpt-4.1-mini",
@@ -9021,8 +9606,46 @@
       "text-embedding-ada-002"
     ],
     "skus": {
-      "region-americas": {
-        "label": "Region Americas",
+      "deployments-batch": {
+        "label": "Deployments Batch",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5.1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
         "regions": [
           "gpt-4.1",
           "gpt-4.1-mini",
@@ -9086,6 +9709,7 @@
       "gpt-5.4",
       "gpt-5.4-mini",
       "gpt-5.4-nano",
+      "gpt-5.5",
       "o1",
       "o3",
       "o3-mini",
@@ -9093,14 +9717,35 @@
       "text-embedding-3-large"
     ],
     "skus": {
-      "region-asia-pacific": {
-        "label": "Region Asia Pacific",
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
         "regions": [
           "gpt-4.1",
           "gpt-4.1-mini",
           "gpt-4.1-nano",
           "gpt-4o",
           "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
           "gpt-5",
           "gpt-5-chat",
           "gpt-5-codex",
@@ -9119,9 +9764,7 @@
           "gpt-5.4",
           "gpt-5.4-mini",
           "gpt-5.4-nano",
-          "o1",
           "o3",
-          "o3-mini",
           "o4-mini",
           "text-embedding-3-large"
         ]
@@ -9157,9 +9800,12 @@
       "gpt-5.4",
       "gpt-5.4-mini",
       "gpt-5.4-nano",
+      "gpt-5.5",
       "gpt-realtime",
       "gpt-realtime-1.5",
       "gpt-realtime-mini",
+      "gpt-realtime-translate",
+      "gpt-realtime-whisper",
       "o1",
       "o3",
       "o3-mini",
@@ -9170,8 +9816,46 @@
       "whisper"
     ],
     "skus": {
-      "region-asia-pacific": {
-        "label": "Region Asia Pacific",
+      "deployments-batch": {
+        "label": "Deployments Batch",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5.1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
         "regions": [
           "computer-use-preview",
           "gpt-4.1",
@@ -9203,6 +9887,8 @@
           "gpt-realtime",
           "gpt-realtime-1.5",
           "gpt-realtime-mini",
+          "gpt-realtime-translate",
+          "gpt-realtime-whisper",
           "o1",
           "o3",
           "o3-mini",
@@ -9240,6 +9926,7 @@
       "gpt-5.4",
       "gpt-5.4-mini",
       "gpt-5.4-nano",
+      "gpt-5.5",
       "o1",
       "o3",
       "o3-mini",
@@ -9249,8 +9936,31 @@
       "text-embedding-ada-002"
     ],
     "skus": {
-      "region-europe": {
-        "label": "Region Europe",
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
         "regions": [
           "gpt-4.1",
           "gpt-4.1-mini",
@@ -9345,8 +10055,46 @@
       "whisper"
     ],
     "skus": {
-      "region-europe": {
-        "label": "Region Europe",
+      "deployments-batch": {
+        "label": "Deployments Batch",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5.1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
         "regions": [
           "codex-mini",
           "computer-use-preview",
@@ -9432,6 +10180,7 @@
       "gpt-5.4",
       "gpt-5.4-mini",
       "gpt-5.4-nano",
+      "gpt-5.5",
       "o1",
       "o3",
       "o3-mini",
@@ -9442,8 +10191,46 @@
       "whisper"
     ],
     "skus": {
-      "region-europe": {
-        "label": "Region Europe",
+      "deployments-batch": {
+        "label": "Deployments Batch",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5.1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
         "regions": [
           "gpt-4.1",
           "gpt-4.1-mini",
@@ -9504,14 +10291,15 @@
       "gpt-5.4",
       "gpt-5.4-mini",
       "gpt-5.4-nano",
+      "gpt-5.5",
       "o1",
       "o3",
       "o3-mini",
       "o4-mini"
     ],
     "skus": {
-      "region-europe": {
-        "label": "Region Europe",
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
         "regions": [
           "gpt-4.1",
           "gpt-4.1-mini",
@@ -9519,9 +10307,25 @@
           "gpt-4o",
           "gpt-4o-mini",
           "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
+        "regions": [
           "gpt-5-chat",
           "gpt-5-codex",
-          "gpt-5-mini",
           "gpt-5-pro",
           "gpt-5.1",
           "gpt-5.1-chat",
@@ -9534,11 +10338,7 @@
           "gpt-5.3-codex",
           "gpt-5.4",
           "gpt-5.4-mini",
-          "gpt-5.4-nano",
-          "o1",
-          "o3",
-          "o3-mini",
-          "o4-mini"
+          "gpt-5.4-nano"
         ]
       }
     }
@@ -10013,6 +10813,7 @@
       "gpt-5.4",
       "gpt-5.4-mini",
       "gpt-5.4-nano",
+      "gpt-5.5",
       "gpt-image-1",
       "gpt-image-1-mini",
       "gpt-image-1.5",
@@ -10027,8 +10828,31 @@
       "whisper"
     ],
     "skus": {
-      "region-middle-east-africa": {
-        "label": "Region Middle East Africa",
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
         "regions": [
           "gpt-4.1",
           "gpt-4.1-mini",
@@ -10094,6 +10918,7 @@
       "gpt-5.4",
       "gpt-5.4-mini",
       "gpt-5.4-nano",
+      "gpt-5.5",
       "o1",
       "o3",
       "o3-mini",
@@ -10103,8 +10928,46 @@
       "text-embedding-ada-002"
     ],
     "skus": {
-      "region-europe": {
-        "label": "Region Europe",
+      "deployments-batch": {
+        "label": "Deployments Batch",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5.1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
         "regions": [
           "gpt-4.1",
           "gpt-4.1-mini",
@@ -10165,6 +11028,7 @@
       "gpt-5.4",
       "gpt-5.4-mini",
       "gpt-5.4-nano",
+      "gpt-5.5",
       "o1",
       "o3",
       "o3-mini",
@@ -10175,8 +11039,46 @@
       "whisper"
     ],
     "skus": {
-      "region-europe": {
-        "label": "Region Europe",
+      "deployments-batch": {
+        "label": "Deployments Batch",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5.1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
         "regions": [
           "gpt-4.1",
           "gpt-4.1-mini",
@@ -10238,6 +11140,7 @@
       "gpt-5.4",
       "gpt-5.4-mini",
       "gpt-5.4-nano",
+      "gpt-5.5",
       "o1",
       "o3",
       "o3-deep-research",
@@ -10248,8 +11151,46 @@
       "text-embedding-ada-002"
     ],
     "skus": {
-      "region-americas": {
-        "label": "Region Americas",
+      "deployments-batch": {
+        "label": "Deployments Batch",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5.1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
         "regions": [
           "gpt-4.1",
           "gpt-4.1-mini",
@@ -10308,6 +11249,7 @@
       "gpt-5.4",
       "gpt-5.4-mini",
       "gpt-5.4-nano",
+      "gpt-5.5",
       "gpt-image-1",
       "gpt-image-1-mini",
       "gpt-image-1.5",
@@ -10323,8 +11265,47 @@
       "tts-hd"
     ],
     "skus": {
-      "region-americas": {
-        "label": "Region Americas",
+      "deployments-batch": {
+        "label": "Deployments Batch",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5.1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-mini",
+          "gpt-5.1",
+          "gpt-5.1-codex",
+          "gpt-5.2",
+          "gpt-5.2-codex",
+          "gpt-5.3-codex",
+          "gpt-5.4",
+          "gpt-5.4-mini",
+          "gpt-5.5",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
         "regions": [
           "gpt-4.1",
           "gpt-4.1-mini",

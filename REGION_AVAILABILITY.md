@@ -1,10 +1,10 @@
 # AI Foundry Model Availability by Region
 
-_Last updated: 2026-05-12 09:41 UTC_
+_Last updated: 2026-05-13 09:46 UTC_
 
 - Models tracked: **111**
-- Regions in snapshot: **89**
-- Distinct SKU labels: **21**
+- Regions in snapshot: **91**
+- Distinct SKU labels: **20**
 
 Coverage legend:
 - 🟢 Broad — 25+ regions available
@@ -18,6 +18,9 @@ SKU labels observed:
 - Datazone Standard Priority Processing
 - Datazone provisioned managed
 - Datazone standard
+- Deployments Batch
+- Deployments Provisioned
+- Deployments Standard
 - Global Provisioned Managed
 - Global Standard
 - Global batch
@@ -26,10 +29,6 @@ SKU labels observed:
 - Provisioned (PTU managed)
 - Provisioned Models Gov
 - Provisioned global
-- Region Americas
-- Region Asia Pacific
-- Region Europe
-- Region Middle East Africa
 - Standard
 - Standard Global By Capability
 - Standard Global Priority Processing
@@ -39,22 +38,32 @@ SKU labels observed:
 
 | Model | Coverage | Regions | SKU labels | Regions (sample) |
 | --- | --- | --- | --- | --- |
-| swedencentral | 🟢 Broad | 55 | 2 (Global coverage, Region Europe) | `codex-mini`, `computer-use-preview`, `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o` |
-| eastus2 | 🟢 Broad | 54 | 2 (Global coverage, Region Americas) | `codex-mini`, `computer-use-preview`, `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o` |
-| centralus | 🟢 Broad | 41 | 2 (Global coverage, Region Americas) | `codex-mini`, `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini` |
-| southindia | 🟢 Broad | 38 | 2 (Global coverage, Region Asia Pacific) | `computer-use-preview`, `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini` |
-| polandcentral | 🟢 Broad | 37 | 2 (Global coverage, Region Europe) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| francecentral | 🟢 Broad | 36 | 2 (Global coverage, Region Europe) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-4o-mini-transcribe` |
-| uaenorth | 🟢 Broad | 35 | 2 (Global coverage, Region Middle East Africa) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| northcentralus | 🟢 Broad | 34 | 2 (Global coverage, Region Americas) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| southcentralus | 🟢 Broad | 33 | 2 (Global coverage, Region Americas) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| westus3 | 🟢 Broad | 33 | 2 (Global coverage, Region Americas) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| canadacentral | 🟢 Broad | 32 | 2 (Global coverage, Region Americas) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-4o-mini-transcribe` |
-| norwayeast | 🟢 Broad | 32 | 2 (Global coverage, Region Europe) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| eastus | 🟢 Broad | 31 | 2 (Global coverage, Region Americas) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| switzerlandnorth | 🟢 Broad | 31 | 2 (Global coverage, Region Europe) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| westeurope | 🟢 Broad | 31 | 2 (Global coverage, Region Europe) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| westus | 🟢 Broad | 31 | 2 (Global coverage, Region Americas) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
+| swedencentral | 🟢 Broad | 55 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `codex-mini`, `computer-use-preview`, `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o` |
+| eastus2 | 🟢 Broad | 54 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `codex-mini`, `computer-use-preview`, `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o` |
+| centralus | 🟢 Broad | 42 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `codex-mini`, `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini` |
+| southindia | 🟢 Broad | 41 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `computer-use-preview`, `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini` |
+| francecentral | 🟢 Broad | 39 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-4o-mini-transcribe` |
+| polandcentral | 🟢 Broad | 37 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
+| uaenorth | 🟢 Broad | 36 | 3 (Deployments Provisioned, Deployments Standard, Global coverage) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
+| canadacentral | 🟢 Broad | 35 | 3 (Deployments Provisioned, Deployments Standard, Global coverage) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-4o-mini-transcribe` |
+| northcentralus | 🟢 Broad | 34 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
+| westus3 | 🟢 Broad | 34 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
+| norwayeast | 🟢 Broad | 33 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
+| southcentralus | 🟢 Broad | 33 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
+| switzerlandnorth | 🟢 Broad | 32 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
+| westeurope | 🟢 Broad | 32 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
+| westus | 🟢 Broad | 32 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
+| australiaeast | 🟢 Broad | 31 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
+| brazilsouth | 🟢 Broad | 31 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
+| canadaeast | 🟢 Broad | 31 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
+| eastus | 🟢 Broad | 31 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
+| germanywestcentral | 🟢 Broad | 31 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
+| italynorth | 🟢 Broad | 31 | 3 (Deployments Provisioned, Deployments Standard, Global coverage) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
+| japaneast | 🟢 Broad | 31 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
+| koreacentral | 🟢 Broad | 31 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
+| southafricanorth | 🟢 Broad | 31 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
+| spaincentral | 🟢 Broad | 31 | 3 (Deployments Provisioned, Deployments Standard, Global coverage) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
+| uksouth | 🟢 Broad | 31 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
 | Cohere-rerank-v4.0-fast | 🟢 Broad | 30 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | Cohere-rerank-v4.0-pro | 🟢 Broad | 30 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | DeepSeek-R1 | 🟢 Broad | 30 | 3 (Global Provisioned Managed, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
@@ -71,31 +80,22 @@ SKU labels observed:
 | Llama-3.3-70B-Instruct | 🟢 Broad | 30 | 3 (Global Provisioned Managed, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | Llama-4-Maverick-17B-128E-Instruct-FP8 | 🟢 Broad | 30 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | Mistral-Large-3 | 🟢 Broad | 30 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| australiaeast | 🟢 Broad | 30 | 2 (Global coverage, Region Asia Pacific) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| brazilsouth | 🟢 Broad | 30 | 2 (Global coverage, Region Americas) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| canadaeast | 🟢 Broad | 30 | 2 (Global coverage, Region Americas) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
 | cohere-command-a | 🟢 Broad | 30 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | embed-v-4-0 | 🟢 Broad | 30 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| germanywestcentral | 🟢 Broad | 30 | 2 (Global coverage, Region Europe) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
 | grok-3 | 🟢 Broad | 30 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | grok-3-mini | 🟢 Broad | 30 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | grok-4-1-fast-non-reasoning | 🟢 Broad | 30 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | grok-4-1-fast-reasoning | 🟢 Broad | 30 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | grok-4-fast-non-reasoning | 🟢 Broad | 30 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | grok-4-fast-reasoning | 🟢 Broad | 30 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| italynorth | 🟢 Broad | 30 | 2 (Global coverage, Region Europe) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| japaneast | 🟢 Broad | 30 | 2 (Global coverage, Region Asia Pacific) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| koreacentral | 🟢 Broad | 30 | 2 (Global coverage, Region Asia Pacific) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
 | mistral-document-ai-2505 | 🟢 Broad | 30 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | mistral-document-ai-2512 | 🟢 Broad | 30 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| southafricanorth | 🟢 Broad | 30 | 2 (Global coverage, Region Middle East Africa) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| spaincentral | 🟢 Broad | 30 | 2 (Global coverage, Region Europe) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| uksouth | 🟢 Broad | 30 | 2 (Global coverage, Region Europe) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
 | gpt-4.1 | 🟢 Broad | 29 | 14 (Datazone Standard Gov, Datazone Standard Priority Processing, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-4.1-mini | 🟢 Broad | 29 | 13 (Datazone Provisioned Managed Gov, Datazone Standard Gov, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-4o | 🟢 Broad | 29 | 14 (Datazone Provisioned Managed Gov, Datazone Standard Gov, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5.1 | 🟢 Broad | 29 | 13 (Datazone Standard Gov, Datazone Standard Priority Processing, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | o3-mini | 🟢 Broad | 29 | 11 (Datazone Provisioned Managed Gov, Datazone Standard Gov, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| southeastasia | 🟢 Broad | 29 | 3 (Deployments Provisioned, Deployments Standard, Global coverage) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
 | gpt-4.1-nano | 🟢 Broad | 28 | 9 (Datazone provisioned managed, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-4o-mini | 🟢 Broad | 28 | 10 (Datazone provisioned managed, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5 | 🟢 Broad | 28 | 9 (Datazone provisioned managed, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
@@ -114,13 +114,12 @@ SKU labels observed:
 | o1 | 🟢 Broad | 28 | 8 (Datazone provisioned managed, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | o3 | 🟢 Broad | 28 | 9 (Datazone provisioned managed, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | o4-mini | 🟢 Broad | 28 | 10 (Datazone provisioned managed, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| southeastasia | 🟢 Broad | 28 | 2 (Global coverage, Region Asia Pacific) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
 | gpt-5-chat | 🟢 Broad | 27 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5-codex | 🟢 Broad | 27 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5-pro | 🟢 Broad | 27 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| switzerlandwest | 🟢 Broad | 27 | 3 (Deployments Provisioned, Deployments Standard, Global coverage) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
 | text-embedding-3-large | 🟢 Broad | 27 | 6 (Datazone standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada East`, `Central US`, `East US`, `East US 2` |
 | gpt-5-nano | 🟢 Broad | 26 | 4 (Datazone standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada East`, `Central US`, `East US`, `East US 2` |
-| switzerlandwest | 🟢 Broad | 26 | 2 (Global coverage, Region Europe) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
 | text-embedding-3-small | 🟢 Broad | 26 | 6 (Datazone standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada East`, `Central US`, `East US`, `East US 2` |
 | text-embedding-ada-002 | 🟢 Broad | 26 | 6 (Datazone standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada East`, `Central US`, `East US`, `East US 2` |
 | whisper | 🔴 Emerging | 8 | 2 (Global coverage, Standard) | `East US 2`, `North Central US`, `Norway East`, `South India`, `Sweden Central`, `Switzerland North` |
@@ -154,667 +153,1043 @@ SKU labels observed:
 ## Regional rosters by model
 
 <details>
-<summary>swedencentral — 55 regions across 2 SKU labels</summary>
+<summary>swedencentral — 55 regions across 4 SKU labels</summary>
 
-- `codex-mini` — Global coverage, Region Europe
-- `computer-use-preview` — Global coverage, Region Europe
-- `gpt-4.1` — Global coverage, Region Europe
-- `gpt-4.1-mini` — Global coverage, Region Europe
-- `gpt-4.1-nano` — Global coverage, Region Europe
-- `gpt-4o` — Global coverage, Region Europe
-- `gpt-4o-mini` — Global coverage, Region Europe
-- `gpt-4o-mini-transcribe` — Global coverage, Region Europe
-- `gpt-4o-transcribe` — Global coverage, Region Europe
-- `gpt-4o-transcribe-diarize` — Global coverage, Region Europe
-- `gpt-5` — Global coverage, Region Europe
-- `gpt-5-chat` — Global coverage, Region Europe
-- `gpt-5-codex` — Global coverage, Region Europe
-- `gpt-5-mini` — Global coverage, Region Europe
-- `gpt-5-nano` — Global coverage, Region Europe
-- `gpt-5-pro` — Global coverage, Region Europe
-- `gpt-5.1` — Global coverage, Region Europe
-- `gpt-5.1-chat` — Global coverage, Region Europe
-- `gpt-5.1-codex` — Global coverage, Region Europe
-- `gpt-5.1-codex-max` — Global coverage, Region Europe
-- `gpt-5.1-codex-mini` — Global coverage, Region Europe
-- `gpt-5.2` — Global coverage, Region Europe
-- `gpt-5.2-chat` — Global coverage, Region Europe
-- `gpt-5.2-codex` — Global coverage, Region Europe
-- `gpt-5.3-chat` — Global coverage, Region Europe
-- `gpt-5.3-codex` — Global coverage, Region Europe
-- `gpt-5.4` — Global coverage, Region Europe
-- `gpt-5.4-mini` — Global coverage, Region Europe
-- `gpt-5.4-nano` — Global coverage, Region Europe
-- `gpt-5.4-pro` — Global coverage, Region Europe
-- `gpt-5.5` — Global coverage, Region Europe
-- `gpt-audio` — Global coverage, Region Europe
-- `gpt-audio-1.5` — Global coverage, Region Europe
-- `gpt-audio-mini` — Global coverage, Region Europe
-- `gpt-chat-latest` — Global coverage, Region Europe
-- `gpt-image-1` — Global coverage, Region Europe
-- `gpt-image-1-mini` — Global coverage, Region Europe
-- `gpt-image-1.5` — Global coverage, Region Europe
-- `gpt-image-2` — Global coverage, Region Europe
-- `gpt-realtime` — Global coverage, Region Europe
-- `gpt-realtime-1.5` — Global coverage, Region Europe
-- `gpt-realtime-mini` — Global coverage, Region Europe
-- `model-router` — Global coverage, Region Europe
-- `o1` — Global coverage, Region Europe
-- `o3` — Global coverage, Region Europe
-- `o3-mini` — Global coverage, Region Europe
-- `o3-pro` — Global coverage, Region Europe
-- `o4-mini` — Global coverage, Region Europe
-- `sora-2` — Global coverage, Region Europe
-- `text-embedding-3-large` — Global coverage, Region Europe
-- `text-embedding-3-small` — Global coverage, Region Europe
-- `text-embedding-ada-002` — Global coverage, Region Europe
-- `tts` — Global coverage, Region Europe
-- `tts-hd` — Global coverage, Region Europe
-- `whisper` — Global coverage, Region Europe
-
-</details>
-<details>
-<summary>eastus2 — 54 regions across 2 SKU labels</summary>
-
-- `codex-mini` — Global coverage, Region Americas
-- `computer-use-preview` — Global coverage, Region Americas
-- `gpt-4.1` — Global coverage, Region Americas
-- `gpt-4.1-mini` — Global coverage, Region Americas
-- `gpt-4.1-nano` — Global coverage, Region Americas
-- `gpt-4o` — Global coverage, Region Americas
-- `gpt-4o-mini` — Global coverage, Region Americas
-- `gpt-4o-mini-transcribe` — Global coverage, Region Americas
-- `gpt-4o-mini-tts` — Global coverage, Region Americas
-- `gpt-4o-transcribe` — Global coverage, Region Americas
-- `gpt-4o-transcribe-diarize` — Global coverage, Region Americas
-- `gpt-5` — Global coverage, Region Americas
-- `gpt-5-chat` — Global coverage, Region Americas
-- `gpt-5-codex` — Global coverage, Region Americas
-- `gpt-5-mini` — Global coverage, Region Americas
-- `gpt-5-nano` — Global coverage, Region Americas
-- `gpt-5-pro` — Global coverage, Region Americas
-- `gpt-5.1` — Global coverage, Region Americas
-- `gpt-5.1-chat` — Global coverage, Region Americas
-- `gpt-5.1-codex` — Global coverage, Region Americas
-- `gpt-5.1-codex-max` — Global coverage, Region Americas
-- `gpt-5.1-codex-mini` — Global coverage, Region Americas
-- `gpt-5.2` — Global coverage, Region Americas
-- `gpt-5.2-chat` — Global coverage, Region Americas
-- `gpt-5.2-codex` — Global coverage, Region Americas
-- `gpt-5.3-chat` — Global coverage, Region Americas
-- `gpt-5.3-codex` — Global coverage, Region Americas
-- `gpt-5.4` — Global coverage, Region Americas
-- `gpt-5.4-mini` — Global coverage, Region Americas
-- `gpt-5.4-nano` — Global coverage, Region Americas
-- `gpt-5.4-pro` — Global coverage, Region Americas
-- `gpt-5.5` — Global coverage, Region Americas
-- `gpt-audio` — Global coverage, Region Americas
-- `gpt-audio-1.5` — Global coverage, Region Americas
-- `gpt-audio-mini` — Global coverage, Region Americas
-- `gpt-chat-latest` — Global coverage, Region Americas
-- `gpt-image-1` — Global coverage, Region Americas
-- `gpt-image-1-mini` — Global coverage, Region Americas
-- `gpt-image-1.5` — Global coverage, Region Americas
-- `gpt-image-2` — Global coverage, Region Americas
-- `gpt-realtime` — Global coverage, Region Americas
-- `gpt-realtime-1.5` — Global coverage, Region Americas
-- `gpt-realtime-mini` — Global coverage, Region Americas
-- `model-router` — Global coverage, Region Americas
-- `o1` — Global coverage, Region Americas
-- `o3` — Global coverage, Region Americas
-- `o3-mini` — Global coverage, Region Americas
-- `o3-pro` — Global coverage, Region Americas
-- `o4-mini` — Global coverage, Region Americas
-- `sora-2` — Global coverage, Region Americas
-- `text-embedding-3-large` — Global coverage, Region Americas
-- `text-embedding-3-small` — Global coverage, Region Americas
-- `text-embedding-ada-002` — Global coverage, Region Americas
-- `whisper` — Global coverage, Region Americas
+- `codex-mini` — Deployments Standard, Global coverage
+- `computer-use-preview` — Deployments Standard, Global coverage
+- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini-transcribe` — Deployments Standard, Global coverage
+- `gpt-4o-transcribe` — Deployments Standard, Global coverage
+- `gpt-4o-transcribe-diarize` — Deployments Standard, Global coverage
+- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-max` — Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.4-pro` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-audio` — Deployments Standard, Global coverage
+- `gpt-audio-1.5` — Deployments Standard, Global coverage
+- `gpt-audio-mini` — Deployments Standard, Global coverage
+- `gpt-chat-latest` — Deployments Standard, Global coverage
+- `gpt-image-1` — Deployments Standard, Global coverage
+- `gpt-image-1-mini` — Deployments Standard, Global coverage
+- `gpt-image-1.5` — Deployments Standard, Global coverage
+- `gpt-image-2` — Deployments Standard, Global coverage
+- `gpt-realtime` — Deployments Standard, Global coverage
+- `gpt-realtime-1.5` — Deployments Standard, Global coverage
+- `gpt-realtime-mini` — Deployments Standard, Global coverage
+- `model-router` — Deployments Standard, Global coverage
+- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-pro` — Deployments Standard, Global coverage
+- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `sora-2` — Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
+- `text-embedding-3-small` — Deployments Standard, Global coverage
+- `text-embedding-ada-002` — Deployments Standard, Global coverage
+- `tts` — Deployments Standard, Global coverage
+- `tts-hd` — Deployments Standard, Global coverage
+- `whisper` — Deployments Standard, Global coverage
 
 </details>
 <details>
-<summary>centralus — 41 regions across 2 SKU labels</summary>
+<summary>eastus2 — 54 regions across 4 SKU labels</summary>
 
-- `codex-mini` — Global coverage, Region Americas
-- `gpt-4.1` — Global coverage, Region Americas
-- `gpt-4.1-mini` — Global coverage, Region Americas
-- `gpt-4.1-nano` — Global coverage, Region Americas
-- `gpt-4o` — Global coverage, Region Americas
-- `gpt-4o-mini` — Global coverage, Region Americas
-- `gpt-4o-mini-transcribe` — Global coverage, Region Americas
-- `gpt-4o-transcribe` — Global coverage, Region Americas
-- `gpt-4o-transcribe-diarize` — Global coverage, Region Americas
-- `gpt-5` — Global coverage, Region Americas
-- `gpt-5-chat` — Global coverage, Region Americas
-- `gpt-5-codex` — Global coverage, Region Americas
-- `gpt-5-mini` — Global coverage, Region Americas
-- `gpt-5-nano` — Global coverage, Region Americas
-- `gpt-5-pro` — Global coverage, Region Americas
-- `gpt-5.1` — Global coverage, Region Americas
-- `gpt-5.1-chat` — Global coverage, Region Americas
-- `gpt-5.1-codex` — Global coverage, Region Americas
-- `gpt-5.1-codex-mini` — Global coverage, Region Americas
-- `gpt-5.2` — Global coverage, Region Americas
-- `gpt-5.2-chat` — Global coverage, Region Americas
-- `gpt-5.2-codex` — Global coverage, Region Americas
-- `gpt-5.3-chat` — Global coverage, Region Americas
-- `gpt-5.3-codex` — Global coverage, Region Americas
-- `gpt-5.4` — Global coverage, Region Americas
-- `gpt-5.4-mini` — Global coverage, Region Americas
-- `gpt-5.4-nano` — Global coverage, Region Americas
-- `gpt-audio` — Global coverage, Region Americas
-- `gpt-audio-1.5` — Global coverage, Region Americas
-- `gpt-audio-mini` — Global coverage, Region Americas
-- `gpt-realtime` — Global coverage, Region Americas
-- `gpt-realtime-1.5` — Global coverage, Region Americas
-- `gpt-realtime-mini` — Global coverage, Region Americas
-- `o1` — Global coverage, Region Americas
-- `o3` — Global coverage, Region Americas
-- `o3-mini` — Global coverage, Region Americas
-- `o3-pro` — Global coverage, Region Americas
-- `o4-mini` — Global coverage, Region Americas
-- `text-embedding-3-large` — Global coverage, Region Americas
-- `text-embedding-3-small` — Global coverage, Region Americas
-- `text-embedding-ada-002` — Global coverage, Region Americas
-
-</details>
-<details>
-<summary>southindia — 38 regions across 2 SKU labels</summary>
-
-- `computer-use-preview` — Global coverage, Region Asia Pacific
-- `gpt-4.1` — Global coverage, Region Asia Pacific
-- `gpt-4.1-mini` — Global coverage, Region Asia Pacific
-- `gpt-4.1-nano` — Global coverage, Region Asia Pacific
-- `gpt-4o` — Global coverage, Region Asia Pacific
-- `gpt-4o-mini` — Global coverage, Region Asia Pacific
-- `gpt-4o-mini-transcribe` — Global coverage, Region Asia Pacific
-- `gpt-4o-transcribe` — Global coverage, Region Asia Pacific
-- `gpt-4o-transcribe-diarize` — Global coverage, Region Asia Pacific
-- `gpt-5` — Global coverage, Region Asia Pacific
-- `gpt-5-chat` — Global coverage, Region Asia Pacific
-- `gpt-5-codex` — Global coverage, Region Asia Pacific
-- `gpt-5-mini` — Global coverage, Region Asia Pacific
-- `gpt-5-nano` — Global coverage, Region Asia Pacific
-- `gpt-5-pro` — Global coverage, Region Asia Pacific
-- `gpt-5.1` — Global coverage, Region Asia Pacific
-- `gpt-5.1-chat` — Global coverage, Region Asia Pacific
-- `gpt-5.1-codex` — Global coverage, Region Asia Pacific
-- `gpt-5.1-codex-mini` — Global coverage, Region Asia Pacific
-- `gpt-5.2` — Global coverage, Region Asia Pacific
-- `gpt-5.2-chat` — Global coverage, Region Asia Pacific
-- `gpt-5.2-codex` — Global coverage, Region Asia Pacific
-- `gpt-5.3-chat` — Global coverage, Region Asia Pacific
-- `gpt-5.3-codex` — Global coverage, Region Asia Pacific
-- `gpt-5.4` — Global coverage, Region Asia Pacific
-- `gpt-5.4-mini` — Global coverage, Region Asia Pacific
-- `gpt-5.4-nano` — Global coverage, Region Asia Pacific
-- `gpt-realtime` — Global coverage, Region Asia Pacific
-- `gpt-realtime-1.5` — Global coverage, Region Asia Pacific
-- `gpt-realtime-mini` — Global coverage, Region Asia Pacific
-- `o1` — Global coverage, Region Asia Pacific
-- `o3` — Global coverage, Region Asia Pacific
-- `o3-mini` — Global coverage, Region Asia Pacific
-- `o4-mini` — Global coverage, Region Asia Pacific
-- `text-embedding-3-large` — Global coverage, Region Asia Pacific
-- `text-embedding-3-small` — Global coverage, Region Asia Pacific
-- `text-embedding-ada-002` — Global coverage, Region Asia Pacific
-- `whisper` — Global coverage, Region Asia Pacific
+- `codex-mini` — Deployments Standard, Global coverage
+- `computer-use-preview` — Deployments Standard, Global coverage
+- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini-transcribe` — Deployments Standard, Global coverage
+- `gpt-4o-mini-tts` — Deployments Standard, Global coverage
+- `gpt-4o-transcribe` — Deployments Standard, Global coverage
+- `gpt-4o-transcribe-diarize` — Deployments Standard, Global coverage
+- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-max` — Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.4-pro` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-audio` — Deployments Standard, Global coverage
+- `gpt-audio-1.5` — Deployments Standard, Global coverage
+- `gpt-audio-mini` — Deployments Standard, Global coverage
+- `gpt-chat-latest` — Deployments Standard, Global coverage
+- `gpt-image-1` — Deployments Standard, Global coverage
+- `gpt-image-1-mini` — Deployments Standard, Global coverage
+- `gpt-image-1.5` — Deployments Standard, Global coverage
+- `gpt-image-2` — Deployments Standard, Global coverage
+- `gpt-realtime` — Deployments Standard, Global coverage
+- `gpt-realtime-1.5` — Deployments Standard, Global coverage
+- `gpt-realtime-mini` — Deployments Standard, Global coverage
+- `model-router` — Deployments Standard, Global coverage
+- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-pro` — Deployments Standard, Global coverage
+- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `sora-2` — Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
+- `text-embedding-3-small` — Deployments Standard, Global coverage
+- `text-embedding-ada-002` — Deployments Standard, Global coverage
+- `whisper` — Deployments Standard, Global coverage
 
 </details>
 <details>
-<summary>polandcentral — 37 regions across 2 SKU labels</summary>
+<summary>centralus — 42 regions across 4 SKU labels</summary>
 
-- `gpt-4.1` — Global coverage, Region Europe
-- `gpt-4.1-mini` — Global coverage, Region Europe
-- `gpt-4.1-nano` — Global coverage, Region Europe
-- `gpt-4o` — Global coverage, Region Europe
-- `gpt-4o-mini` — Global coverage, Region Europe
-- `gpt-5` — Global coverage, Region Europe
-- `gpt-5-chat` — Global coverage, Region Europe
-- `gpt-5-codex` — Global coverage, Region Europe
-- `gpt-5-mini` — Global coverage, Region Europe
-- `gpt-5-nano` — Global coverage, Region Europe
-- `gpt-5-pro` — Global coverage, Region Europe
-- `gpt-5.1` — Global coverage, Region Europe
-- `gpt-5.1-chat` — Global coverage, Region Europe
-- `gpt-5.1-codex` — Global coverage, Region Europe
-- `gpt-5.1-codex-mini` — Global coverage, Region Europe
-- `gpt-5.2` — Global coverage, Region Europe
-- `gpt-5.2-chat` — Global coverage, Region Europe
-- `gpt-5.2-codex` — Global coverage, Region Europe
-- `gpt-5.3-chat` — Global coverage, Region Europe
-- `gpt-5.3-codex` — Global coverage, Region Europe
-- `gpt-5.4` — Global coverage, Region Europe
-- `gpt-5.4-mini` — Global coverage, Region Europe
-- `gpt-5.4-nano` — Global coverage, Region Europe
-- `gpt-5.4-pro` — Global coverage, Region Europe
-- `gpt-5.5` — Global coverage, Region Europe
-- `gpt-chat-latest` — Global coverage, Region Europe
-- `gpt-image-1` — Global coverage, Region Europe
-- `gpt-image-1-mini` — Global coverage, Region Europe
-- `gpt-image-1.5` — Global coverage, Region Europe
-- `gpt-image-2` — Global coverage, Region Europe
-- `o1` — Global coverage, Region Europe
-- `o3` — Global coverage, Region Europe
-- `o3-mini` — Global coverage, Region Europe
-- `o4-mini` — Global coverage, Region Europe
-- `text-embedding-3-large` — Global coverage, Region Europe
-- `text-embedding-3-small` — Global coverage, Region Europe
-- `text-embedding-ada-002` — Global coverage, Region Europe
-
-</details>
-<details>
-<summary>francecentral — 36 regions across 2 SKU labels</summary>
-
-- `gpt-4.1` — Global coverage, Region Europe
-- `gpt-4.1-mini` — Global coverage, Region Europe
-- `gpt-4.1-nano` — Global coverage, Region Europe
-- `gpt-4o` — Global coverage, Region Europe
-- `gpt-4o-mini` — Global coverage, Region Europe
-- `gpt-4o-mini-transcribe` — Global coverage, Region Europe
-- `gpt-4o-transcribe` — Global coverage, Region Europe
-- `gpt-4o-transcribe-diarize` — Global coverage, Region Europe
-- `gpt-5` — Global coverage, Region Europe
-- `gpt-5-chat` — Global coverage, Region Europe
-- `gpt-5-codex` — Global coverage, Region Europe
-- `gpt-5-mini` — Global coverage, Region Europe
-- `gpt-5-nano` — Global coverage, Region Europe
-- `gpt-5-pro` — Global coverage, Region Europe
-- `gpt-5.1` — Global coverage, Region Europe
-- `gpt-5.1-chat` — Global coverage, Region Europe
-- `gpt-5.1-codex` — Global coverage, Region Europe
-- `gpt-5.1-codex-mini` — Global coverage, Region Europe
-- `gpt-5.2` — Global coverage, Region Europe
-- `gpt-5.2-chat` — Global coverage, Region Europe
-- `gpt-5.2-codex` — Global coverage, Region Europe
-- `gpt-5.3-chat` — Global coverage, Region Europe
-- `gpt-5.3-codex` — Global coverage, Region Europe
-- `gpt-5.4` — Global coverage, Region Europe
-- `gpt-5.4-mini` — Global coverage, Region Europe
-- `gpt-5.4-nano` — Global coverage, Region Europe
-- `gpt-realtime` — Global coverage, Region Europe
-- `gpt-realtime-1.5` — Global coverage, Region Europe
-- `gpt-realtime-mini` — Global coverage, Region Europe
-- `o1` — Global coverage, Region Europe
-- `o3` — Global coverage, Region Europe
-- `o3-mini` — Global coverage, Region Europe
-- `o4-mini` — Global coverage, Region Europe
-- `text-embedding-3-large` — Global coverage, Region Europe
-- `text-embedding-3-small` — Global coverage, Region Europe
-- `text-embedding-ada-002` — Global coverage, Region Europe
+- `codex-mini` — Deployments Standard, Global coverage
+- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini-transcribe` — Deployments Standard, Global coverage
+- `gpt-4o-transcribe` — Deployments Standard, Global coverage
+- `gpt-4o-transcribe-diarize` — Deployments Standard, Global coverage
+- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `gpt-audio` — Deployments Standard, Global coverage
+- `gpt-audio-1.5` — Deployments Standard, Global coverage
+- `gpt-audio-mini` — Deployments Standard, Global coverage
+- `gpt-realtime` — Deployments Standard, Global coverage
+- `gpt-realtime-1.5` — Deployments Standard, Global coverage
+- `gpt-realtime-mini` — Deployments Standard, Global coverage
+- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-pro` — Deployments Standard, Global coverage
+- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
+- `text-embedding-3-small` — Deployments Standard, Global coverage
+- `text-embedding-ada-002` — Deployments Standard, Global coverage
 
 </details>
 <details>
-<summary>uaenorth — 35 regions across 2 SKU labels</summary>
+<summary>southindia — 41 regions across 4 SKU labels</summary>
 
-- `gpt-4.1` — Global coverage, Region Middle East Africa
-- `gpt-4.1-mini` — Global coverage, Region Middle East Africa
-- `gpt-4.1-nano` — Global coverage, Region Middle East Africa
-- `gpt-4o` — Global coverage, Region Middle East Africa
-- `gpt-4o-mini` — Global coverage, Region Middle East Africa
-- `gpt-5` — Global coverage, Region Middle East Africa
-- `gpt-5-chat` — Global coverage, Region Middle East Africa
-- `gpt-5-codex` — Global coverage, Region Middle East Africa
-- `gpt-5-mini` — Global coverage, Region Middle East Africa
-- `gpt-5-nano` — Global coverage, Region Middle East Africa
-- `gpt-5-pro` — Global coverage, Region Middle East Africa
-- `gpt-5.1` — Global coverage, Region Middle East Africa
-- `gpt-5.1-chat` — Global coverage, Region Middle East Africa
-- `gpt-5.1-codex` — Global coverage, Region Middle East Africa
-- `gpt-5.1-codex-mini` — Global coverage, Region Middle East Africa
-- `gpt-5.2` — Global coverage, Region Middle East Africa
-- `gpt-5.2-chat` — Global coverage, Region Middle East Africa
-- `gpt-5.2-codex` — Global coverage, Region Middle East Africa
-- `gpt-5.3-chat` — Global coverage, Region Middle East Africa
-- `gpt-5.3-codex` — Global coverage, Region Middle East Africa
-- `gpt-5.4` — Global coverage, Region Middle East Africa
-- `gpt-5.4-mini` — Global coverage, Region Middle East Africa
-- `gpt-5.4-nano` — Global coverage, Region Middle East Africa
-- `gpt-image-1` — Global coverage, Region Middle East Africa
-- `gpt-image-1-mini` — Global coverage, Region Middle East Africa
-- `gpt-image-1.5` — Global coverage, Region Middle East Africa
-- `gpt-image-2` — Global coverage, Region Middle East Africa
-- `o1` — Global coverage, Region Middle East Africa
-- `o3` — Global coverage, Region Middle East Africa
-- `o3-mini` — Global coverage, Region Middle East Africa
-- `o4-mini` — Global coverage, Region Middle East Africa
-- `text-embedding-3-large` — Global coverage, Region Middle East Africa
-- `text-embedding-3-small` — Global coverage, Region Middle East Africa
-- `text-embedding-ada-002` — Global coverage, Region Middle East Africa
-- `whisper` — Global coverage, Region Middle East Africa
-
-</details>
-<details>
-<summary>northcentralus — 34 regions across 2 SKU labels</summary>
-
-- `gpt-4.1` — Global coverage, Region Americas
-- `gpt-4.1-mini` — Global coverage, Region Americas
-- `gpt-4.1-nano` — Global coverage, Region Americas
-- `gpt-4o` — Global coverage, Region Americas
-- `gpt-4o-mini` — Global coverage, Region Americas
-- `gpt-5` — Global coverage, Region Americas
-- `gpt-5-chat` — Global coverage, Region Americas
-- `gpt-5-codex` — Global coverage, Region Americas
-- `gpt-5-mini` — Global coverage, Region Americas
-- `gpt-5-nano` — Global coverage, Region Americas
-- `gpt-5-pro` — Global coverage, Region Americas
-- `gpt-5.1` — Global coverage, Region Americas
-- `gpt-5.1-chat` — Global coverage, Region Americas
-- `gpt-5.1-codex` — Global coverage, Region Americas
-- `gpt-5.1-codex-mini` — Global coverage, Region Americas
-- `gpt-5.2` — Global coverage, Region Americas
-- `gpt-5.2-chat` — Global coverage, Region Americas
-- `gpt-5.2-codex` — Global coverage, Region Americas
-- `gpt-5.3-chat` — Global coverage, Region Americas
-- `gpt-5.3-codex` — Global coverage, Region Americas
-- `gpt-5.4` — Global coverage, Region Americas
-- `gpt-5.4-mini` — Global coverage, Region Americas
-- `gpt-5.4-nano` — Global coverage, Region Americas
-- `gpt-5.5` — Global coverage, Region Americas
-- `o1` — Global coverage, Region Americas
-- `o3` — Global coverage, Region Americas
-- `o3-mini` — Global coverage, Region Americas
-- `o4-mini` — Global coverage, Region Americas
-- `text-embedding-3-large` — Global coverage, Region Americas
-- `text-embedding-3-small` — Global coverage, Region Americas
-- `text-embedding-ada-002` — Global coverage, Region Americas
-- `tts` — Global coverage, Region Americas
-- `tts-hd` — Global coverage, Region Americas
-- `whisper` — Global coverage, Region Americas
+- `computer-use-preview` — Deployments Standard, Global coverage
+- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini-transcribe` — Deployments Standard, Global coverage
+- `gpt-4o-transcribe` — Deployments Standard, Global coverage
+- `gpt-4o-transcribe-diarize` — Deployments Standard, Global coverage
+- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `gpt-realtime` — Deployments Standard, Global coverage
+- `gpt-realtime-1.5` — Deployments Standard, Global coverage
+- `gpt-realtime-mini` — Deployments Standard, Global coverage
+- `gpt-realtime-translate` — Deployments Standard, Global coverage
+- `gpt-realtime-whisper` — Deployments Standard, Global coverage
+- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
+- `text-embedding-3-small` — Deployments Standard, Global coverage
+- `text-embedding-ada-002` — Deployments Standard, Global coverage
+- `whisper` — Deployments Standard, Global coverage
 
 </details>
 <details>
-<summary>southcentralus — 33 regions across 2 SKU labels</summary>
+<summary>francecentral — 39 regions across 4 SKU labels</summary>
 
-- `gpt-4.1` — Global coverage, Region Americas
-- `gpt-4.1-mini` — Global coverage, Region Americas
-- `gpt-4.1-nano` — Global coverage, Region Americas
-- `gpt-4o` — Global coverage, Region Americas
-- `gpt-4o-mini` — Global coverage, Region Americas
-- `gpt-5` — Global coverage, Region Americas
-- `gpt-5-chat` — Global coverage, Region Americas
-- `gpt-5-codex` — Global coverage, Region Americas
-- `gpt-5-mini` — Global coverage, Region Americas
-- `gpt-5-nano` — Global coverage, Region Americas
-- `gpt-5-pro` — Global coverage, Region Americas
-- `gpt-5.1` — Global coverage, Region Americas
-- `gpt-5.1-chat` — Global coverage, Region Americas
-- `gpt-5.1-codex` — Global coverage, Region Americas
-- `gpt-5.1-codex-mini` — Global coverage, Region Americas
-- `gpt-5.2` — Global coverage, Region Americas
-- `gpt-5.2-chat` — Global coverage, Region Americas
-- `gpt-5.2-codex` — Global coverage, Region Americas
-- `gpt-5.3-chat` — Global coverage, Region Americas
-- `gpt-5.3-codex` — Global coverage, Region Americas
-- `gpt-5.4` — Global coverage, Region Americas
-- `gpt-5.4-mini` — Global coverage, Region Americas
-- `gpt-5.4-nano` — Global coverage, Region Americas
-- `gpt-5.4-pro` — Global coverage, Region Americas
-- `gpt-5.5` — Global coverage, Region Americas
-- `gpt-chat-latest` — Global coverage, Region Americas
-- `o1` — Global coverage, Region Americas
-- `o3` — Global coverage, Region Americas
-- `o3-mini` — Global coverage, Region Americas
-- `o4-mini` — Global coverage, Region Americas
-- `text-embedding-3-large` — Global coverage, Region Americas
-- `text-embedding-3-small` — Global coverage, Region Americas
-- `text-embedding-ada-002` — Global coverage, Region Americas
-
-</details>
-<details>
-<summary>westus3 — 33 regions across 2 SKU labels</summary>
-
-- `gpt-4.1` — Global coverage, Region Americas
-- `gpt-4.1-mini` — Global coverage, Region Americas
-- `gpt-4.1-nano` — Global coverage, Region Americas
-- `gpt-4o` — Global coverage, Region Americas
-- `gpt-4o-mini` — Global coverage, Region Americas
-- `gpt-5` — Global coverage, Region Americas
-- `gpt-5-mini` — Global coverage, Region Americas
-- `gpt-5-nano` — Global coverage, Region Americas
-- `gpt-5.1` — Global coverage, Region Americas
-- `gpt-5.1-chat` — Global coverage, Region Americas
-- `gpt-5.1-codex` — Global coverage, Region Americas
-- `gpt-5.1-codex-mini` — Global coverage, Region Americas
-- `gpt-5.2` — Global coverage, Region Americas
-- `gpt-5.2-chat` — Global coverage, Region Americas
-- `gpt-5.2-codex` — Global coverage, Region Americas
-- `gpt-5.3-chat` — Global coverage, Region Americas
-- `gpt-5.3-codex` — Global coverage, Region Americas
-- `gpt-5.4` — Global coverage, Region Americas
-- `gpt-5.4-mini` — Global coverage, Region Americas
-- `gpt-5.4-nano` — Global coverage, Region Americas
-- `gpt-image-1` — Global coverage, Region Americas
-- `gpt-image-1-mini` — Global coverage, Region Americas
-- `gpt-image-1.5` — Global coverage, Region Americas
-- `gpt-image-2` — Global coverage, Region Americas
-- `o1` — Global coverage, Region Americas
-- `o3` — Global coverage, Region Americas
-- `o3-mini` — Global coverage, Region Americas
-- `o4-mini` — Global coverage, Region Americas
-- `text-embedding-3-large` — Global coverage, Region Americas
-- `text-embedding-3-small` — Global coverage, Region Americas
-- `text-embedding-ada-002` — Global coverage, Region Americas
-- `tts` — Global coverage, Region Americas
-- `tts-hd` — Global coverage, Region Americas
+- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini-transcribe` — Deployments Standard, Global coverage
+- `gpt-4o-transcribe` — Deployments Standard, Global coverage
+- `gpt-4o-transcribe-diarize` — Deployments Standard, Global coverage
+- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `gpt-realtime` — Deployments Standard, Global coverage
+- `gpt-realtime-1.5` — Deployments Standard, Global coverage
+- `gpt-realtime-mini` — Deployments Standard, Global coverage
+- `gpt-realtime-translate` — Deployments Standard, Global coverage
+- `gpt-realtime-whisper` — Deployments Standard, Global coverage
+- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
+- `text-embedding-3-small` — Deployments Standard, Global coverage
+- `text-embedding-ada-002` — Deployments Standard, Global coverage
 
 </details>
 <details>
-<summary>canadacentral — 32 regions across 2 SKU labels</summary>
+<summary>polandcentral — 37 regions across 4 SKU labels</summary>
 
-- `gpt-4.1` — Global coverage, Region Americas
-- `gpt-4.1-mini` — Global coverage, Region Americas
-- `gpt-4.1-nano` — Global coverage, Region Americas
-- `gpt-4o` — Global coverage, Region Americas
-- `gpt-4o-mini` — Global coverage, Region Americas
-- `gpt-4o-mini-transcribe` — Global coverage, Region Americas
-- `gpt-4o-transcribe` — Global coverage, Region Americas
-- `gpt-4o-transcribe-diarize` — Global coverage, Region Americas
-- `gpt-5` — Global coverage, Region Americas
-- `gpt-5-chat` — Global coverage, Region Americas
-- `gpt-5-codex` — Global coverage, Region Americas
-- `gpt-5-mini` — Global coverage, Region Americas
-- `gpt-5-pro` — Global coverage, Region Americas
-- `gpt-5.1` — Global coverage, Region Americas
-- `gpt-5.1-chat` — Global coverage, Region Americas
-- `gpt-5.1-codex` — Global coverage, Region Americas
-- `gpt-5.1-codex-mini` — Global coverage, Region Americas
-- `gpt-5.2` — Global coverage, Region Americas
-- `gpt-5.2-chat` — Global coverage, Region Americas
-- `gpt-5.2-codex` — Global coverage, Region Americas
-- `gpt-5.3-chat` — Global coverage, Region Americas
-- `gpt-5.3-codex` — Global coverage, Region Americas
-- `gpt-5.4` — Global coverage, Region Americas
-- `gpt-5.4-mini` — Global coverage, Region Americas
-- `gpt-5.4-nano` — Global coverage, Region Americas
-- `gpt-realtime` — Global coverage, Region Americas
-- `gpt-realtime-1.5` — Global coverage, Region Americas
-- `gpt-realtime-mini` — Global coverage, Region Americas
-- `o1` — Global coverage, Region Americas
-- `o3` — Global coverage, Region Americas
-- `o3-mini` — Global coverage, Region Americas
-- `o4-mini` — Global coverage, Region Americas
-
-</details>
-<details>
-<summary>norwayeast — 32 regions across 2 SKU labels</summary>
-
-- `gpt-4.1` — Global coverage, Region Europe
-- `gpt-4.1-mini` — Global coverage, Region Europe
-- `gpt-4.1-nano` — Global coverage, Region Europe
-- `gpt-4o` — Global coverage, Region Europe
-- `gpt-4o-mini` — Global coverage, Region Europe
-- `gpt-5` — Global coverage, Region Europe
-- `gpt-5-chat` — Global coverage, Region Europe
-- `gpt-5-codex` — Global coverage, Region Europe
-- `gpt-5-mini` — Global coverage, Region Europe
-- `gpt-5-nano` — Global coverage, Region Europe
-- `gpt-5-pro` — Global coverage, Region Europe
-- `gpt-5.1` — Global coverage, Region Europe
-- `gpt-5.1-chat` — Global coverage, Region Europe
-- `gpt-5.1-codex` — Global coverage, Region Europe
-- `gpt-5.1-codex-mini` — Global coverage, Region Europe
-- `gpt-5.2` — Global coverage, Region Europe
-- `gpt-5.2-chat` — Global coverage, Region Europe
-- `gpt-5.2-codex` — Global coverage, Region Europe
-- `gpt-5.3-chat` — Global coverage, Region Europe
-- `gpt-5.3-codex` — Global coverage, Region Europe
-- `gpt-5.4` — Global coverage, Region Europe
-- `gpt-5.4-mini` — Global coverage, Region Europe
-- `gpt-5.4-nano` — Global coverage, Region Europe
-- `o1` — Global coverage, Region Europe
-- `o3` — Global coverage, Region Europe
-- `o3-deep-research` — Global coverage, Region Europe
-- `o3-mini` — Global coverage, Region Europe
-- `o4-mini` — Global coverage, Region Europe
-- `text-embedding-3-large` — Global coverage, Region Europe
-- `text-embedding-3-small` — Global coverage, Region Europe
-- `text-embedding-ada-002` — Global coverage, Region Europe
-- `whisper` — Global coverage, Region Europe
+- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.4-pro` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-chat-latest` — Deployments Standard, Global coverage
+- `gpt-image-1` — Deployments Standard, Global coverage
+- `gpt-image-1-mini` — Deployments Standard, Global coverage
+- `gpt-image-1.5` — Deployments Standard, Global coverage
+- `gpt-image-2` — Deployments Standard, Global coverage
+- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
+- `text-embedding-3-small` — Deployments Standard, Global coverage
+- `text-embedding-ada-002` — Deployments Standard, Global coverage
 
 </details>
 <details>
-<summary>eastus — 31 regions across 2 SKU labels</summary>
+<summary>uaenorth — 36 regions across 3 SKU labels</summary>
 
-- `gpt-4.1` — Global coverage, Region Americas
-- `gpt-4.1-mini` — Global coverage, Region Americas
-- `gpt-4.1-nano` — Global coverage, Region Americas
-- `gpt-4o` — Global coverage, Region Americas
-- `gpt-4o-mini` — Global coverage, Region Americas
-- `gpt-5` — Global coverage, Region Americas
-- `gpt-5-chat` — Global coverage, Region Americas
-- `gpt-5-codex` — Global coverage, Region Americas
-- `gpt-5-mini` — Global coverage, Region Americas
-- `gpt-5-nano` — Global coverage, Region Americas
-- `gpt-5-pro` — Global coverage, Region Americas
-- `gpt-5.1` — Global coverage, Region Americas
-- `gpt-5.1-chat` — Global coverage, Region Americas
-- `gpt-5.1-codex` — Global coverage, Region Americas
-- `gpt-5.1-codex-mini` — Global coverage, Region Americas
-- `gpt-5.2` — Global coverage, Region Americas
-- `gpt-5.2-chat` — Global coverage, Region Americas
-- `gpt-5.2-codex` — Global coverage, Region Americas
-- `gpt-5.3-chat` — Global coverage, Region Americas
-- `gpt-5.3-codex` — Global coverage, Region Americas
-- `gpt-5.4` — Global coverage, Region Americas
-- `gpt-5.4-mini` — Global coverage, Region Americas
-- `gpt-5.4-nano` — Global coverage, Region Americas
-- `gpt-5.5` — Global coverage, Region Americas
-- `o1` — Global coverage, Region Americas
-- `o3` — Global coverage, Region Americas
-- `o3-mini` — Global coverage, Region Americas
-- `o4-mini` — Global coverage, Region Americas
-- `text-embedding-3-large` — Global coverage, Region Americas
-- `text-embedding-3-small` — Global coverage, Region Americas
-- `text-embedding-ada-002` — Global coverage, Region Americas
-
-</details>
-<details>
-<summary>switzerlandnorth — 31 regions across 2 SKU labels</summary>
-
-- `gpt-4.1` — Global coverage, Region Europe
-- `gpt-4.1-mini` — Global coverage, Region Europe
-- `gpt-4.1-nano` — Global coverage, Region Europe
-- `gpt-4o` — Global coverage, Region Europe
-- `gpt-4o-mini` — Global coverage, Region Europe
-- `gpt-5` — Global coverage, Region Europe
-- `gpt-5-chat` — Global coverage, Region Europe
-- `gpt-5-codex` — Global coverage, Region Europe
-- `gpt-5-mini` — Global coverage, Region Europe
-- `gpt-5-nano` — Global coverage, Region Europe
-- `gpt-5-pro` — Global coverage, Region Europe
-- `gpt-5.1` — Global coverage, Region Europe
-- `gpt-5.1-chat` — Global coverage, Region Europe
-- `gpt-5.1-codex` — Global coverage, Region Europe
-- `gpt-5.1-codex-mini` — Global coverage, Region Europe
-- `gpt-5.2` — Global coverage, Region Europe
-- `gpt-5.2-chat` — Global coverage, Region Europe
-- `gpt-5.2-codex` — Global coverage, Region Europe
-- `gpt-5.3-chat` — Global coverage, Region Europe
-- `gpt-5.3-codex` — Global coverage, Region Europe
-- `gpt-5.4` — Global coverage, Region Europe
-- `gpt-5.4-mini` — Global coverage, Region Europe
-- `gpt-5.4-nano` — Global coverage, Region Europe
-- `o1` — Global coverage, Region Europe
-- `o3` — Global coverage, Region Europe
-- `o3-mini` — Global coverage, Region Europe
-- `o4-mini` — Global coverage, Region Europe
-- `text-embedding-3-large` — Global coverage, Region Europe
-- `text-embedding-3-small` — Global coverage, Region Europe
-- `text-embedding-ada-002` — Global coverage, Region Europe
-- `whisper` — Global coverage, Region Europe
+- `gpt-4.1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `gpt-image-1` — Deployments Standard, Global coverage
+- `gpt-image-1-mini` — Deployments Standard, Global coverage
+- `gpt-image-1.5` — Deployments Standard, Global coverage
+- `gpt-image-2` — Deployments Standard, Global coverage
+- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o4-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
+- `text-embedding-3-small` — Deployments Standard, Global coverage
+- `text-embedding-ada-002` — Deployments Standard, Global coverage
+- `whisper` — Deployments Standard, Global coverage
 
 </details>
 <details>
-<summary>westeurope — 31 regions across 2 SKU labels</summary>
+<summary>canadacentral — 35 regions across 3 SKU labels</summary>
 
-- `gpt-4.1` — Global coverage, Region Europe
-- `gpt-4.1-mini` — Global coverage, Region Europe
-- `gpt-4.1-nano` — Global coverage, Region Europe
-- `gpt-4o` — Global coverage, Region Europe
-- `gpt-4o-mini` — Global coverage, Region Europe
-- `gpt-5` — Global coverage, Region Europe
-- `gpt-5-chat` — Global coverage, Region Europe
-- `gpt-5-codex` — Global coverage, Region Europe
-- `gpt-5-mini` — Global coverage, Region Europe
-- `gpt-5-nano` — Global coverage, Region Europe
-- `gpt-5-pro` — Global coverage, Region Europe
-- `gpt-5.1` — Global coverage, Region Europe
-- `gpt-5.1-chat` — Global coverage, Region Europe
-- `gpt-5.1-codex` — Global coverage, Region Europe
-- `gpt-5.1-codex-mini` — Global coverage, Region Europe
-- `gpt-5.2` — Global coverage, Region Europe
-- `gpt-5.2-chat` — Global coverage, Region Europe
-- `gpt-5.2-codex` — Global coverage, Region Europe
-- `gpt-5.3-chat` — Global coverage, Region Europe
-- `gpt-5.3-codex` — Global coverage, Region Europe
-- `gpt-5.4` — Global coverage, Region Europe
-- `gpt-5.4-mini` — Global coverage, Region Europe
-- `gpt-5.4-nano` — Global coverage, Region Europe
-- `o1` — Global coverage, Region Europe
-- `o3` — Global coverage, Region Europe
-- `o3-mini` — Global coverage, Region Europe
-- `o4-mini` — Global coverage, Region Europe
-- `text-embedding-3-large` — Global coverage, Region Europe
-- `text-embedding-3-small` — Global coverage, Region Europe
-- `text-embedding-ada-002` — Global coverage, Region Europe
-- `whisper` — Global coverage, Region Europe
+- `gpt-4.1` — Deployments Provisioned, Global coverage
+- `gpt-4.1-mini` — Deployments Provisioned, Global coverage
+- `gpt-4.1-nano` — Deployments Provisioned, Global coverage
+- `gpt-4o` — Deployments Provisioned, Global coverage
+- `gpt-4o-mini` — Deployments Provisioned, Global coverage
+- `gpt-4o-mini-transcribe` — Deployments Standard, Global coverage
+- `gpt-4o-transcribe` — Deployments Standard, Global coverage
+- `gpt-4o-transcribe-diarize` — Deployments Standard, Global coverage
+- `gpt-5` — Deployments Provisioned, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `gpt-realtime` — Deployments Standard, Global coverage
+- `gpt-realtime-1.5` — Deployments Standard, Global coverage
+- `gpt-realtime-mini` — Deployments Standard, Global coverage
+- `gpt-realtime-translate` — Deployments Standard, Global coverage
+- `gpt-realtime-whisper` — Deployments Standard, Global coverage
+- `o1` — Deployments Provisioned, Global coverage
+- `o3` — Deployments Provisioned, Global coverage
+- `o3-mini` — Deployments Provisioned, Global coverage
+- `o4-mini` — Deployments Provisioned, Global coverage
 
 </details>
 <details>
-<summary>westus — 31 regions across 2 SKU labels</summary>
+<summary>northcentralus — 34 regions across 4 SKU labels</summary>
 
-- `gpt-4.1` — Global coverage, Region Americas
-- `gpt-4.1-mini` — Global coverage, Region Americas
-- `gpt-4.1-nano` — Global coverage, Region Americas
-- `gpt-4o` — Global coverage, Region Americas
-- `gpt-4o-mini` — Global coverage, Region Americas
-- `gpt-5` — Global coverage, Region Americas
-- `gpt-5-chat` — Global coverage, Region Americas
-- `gpt-5-codex` — Global coverage, Region Americas
-- `gpt-5-mini` — Global coverage, Region Americas
-- `gpt-5-nano` — Global coverage, Region Americas
-- `gpt-5-pro` — Global coverage, Region Americas
-- `gpt-5.1` — Global coverage, Region Americas
-- `gpt-5.1-chat` — Global coverage, Region Americas
-- `gpt-5.1-codex` — Global coverage, Region Americas
-- `gpt-5.1-codex-mini` — Global coverage, Region Americas
-- `gpt-5.2` — Global coverage, Region Americas
-- `gpt-5.2-chat` — Global coverage, Region Americas
-- `gpt-5.2-codex` — Global coverage, Region Americas
-- `gpt-5.3-chat` — Global coverage, Region Americas
-- `gpt-5.3-codex` — Global coverage, Region Americas
-- `gpt-5.4` — Global coverage, Region Americas
-- `gpt-5.4-mini` — Global coverage, Region Americas
-- `gpt-5.4-nano` — Global coverage, Region Americas
-- `o1` — Global coverage, Region Americas
-- `o3` — Global coverage, Region Americas
-- `o3-deep-research` — Global coverage, Region Americas
-- `o3-mini` — Global coverage, Region Americas
-- `o4-mini` — Global coverage, Region Americas
-- `text-embedding-3-large` — Global coverage, Region Americas
-- `text-embedding-3-small` — Global coverage, Region Americas
-- `text-embedding-ada-002` — Global coverage, Region Americas
+- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
+- `text-embedding-3-small` — Deployments Standard, Global coverage
+- `text-embedding-ada-002` — Deployments Standard, Global coverage
+- `tts` — Deployments Standard, Global coverage
+- `tts-hd` — Deployments Standard, Global coverage
+- `whisper` — Deployments Standard, Global coverage
+
+</details>
+<details>
+<summary>westus3 — 34 regions across 4 SKU labels</summary>
+
+- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `gpt-image-1` — Deployments Standard, Global coverage
+- `gpt-image-1-mini` — Deployments Standard, Global coverage
+- `gpt-image-1.5` — Deployments Standard, Global coverage
+- `gpt-image-2` — Deployments Standard, Global coverage
+- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
+- `text-embedding-3-small` — Deployments Standard, Global coverage
+- `text-embedding-ada-002` — Deployments Standard, Global coverage
+- `tts` — Deployments Standard, Global coverage
+- `tts-hd` — Deployments Standard, Global coverage
+
+</details>
+<details>
+<summary>norwayeast — 33 regions across 4 SKU labels</summary>
+
+- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-deep-research` — Deployments Standard, Global coverage
+- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
+- `text-embedding-3-small` — Deployments Standard, Global coverage
+- `text-embedding-ada-002` — Deployments Standard, Global coverage
+- `whisper` — Deployments Standard, Global coverage
+
+</details>
+<details>
+<summary>southcentralus — 33 regions across 4 SKU labels</summary>
+
+- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.4-pro` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-chat-latest` — Deployments Standard, Global coverage
+- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
+- `text-embedding-3-small` — Deployments Standard, Global coverage
+- `text-embedding-ada-002` — Deployments Standard, Global coverage
+
+</details>
+<details>
+<summary>switzerlandnorth — 32 regions across 4 SKU labels</summary>
+
+- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
+- `text-embedding-3-small` — Deployments Standard, Global coverage
+- `text-embedding-ada-002` — Deployments Standard, Global coverage
+- `whisper` — Deployments Standard, Global coverage
+
+</details>
+<details>
+<summary>westeurope — 32 regions across 4 SKU labels</summary>
+
+- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
+- `text-embedding-3-small` — Deployments Standard, Global coverage
+- `text-embedding-ada-002` — Deployments Standard, Global coverage
+- `whisper` — Deployments Standard, Global coverage
+
+</details>
+<details>
+<summary>westus — 32 regions across 4 SKU labels</summary>
+
+- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-deep-research` — Deployments Standard, Global coverage
+- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
+- `text-embedding-3-small` — Deployments Standard, Global coverage
+- `text-embedding-ada-002` — Deployments Standard, Global coverage
+
+</details>
+<details>
+<summary>australiaeast — 31 regions across 4 SKU labels</summary>
+
+- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
+- `text-embedding-3-small` — Deployments Standard, Global coverage
+- `text-embedding-ada-002` — Deployments Standard, Global coverage
+
+</details>
+<details>
+<summary>brazilsouth — 31 regions across 4 SKU labels</summary>
+
+- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
+- `text-embedding-3-small` — Deployments Standard, Global coverage
+- `text-embedding-ada-002` — Deployments Standard, Global coverage
+
+</details>
+<details>
+<summary>canadaeast — 31 regions across 4 SKU labels</summary>
+
+- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
+- `text-embedding-3-small` — Deployments Standard, Global coverage
+- `text-embedding-ada-002` — Deployments Standard, Global coverage
+
+</details>
+<details>
+<summary>eastus — 31 regions across 4 SKU labels</summary>
+
+- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
+- `text-embedding-3-small` — Deployments Standard, Global coverage
+- `text-embedding-ada-002` — Deployments Standard, Global coverage
+
+</details>
+<details>
+<summary>germanywestcentral — 31 regions across 4 SKU labels</summary>
+
+- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
+- `text-embedding-3-small` — Deployments Standard, Global coverage
+- `text-embedding-ada-002` — Deployments Standard, Global coverage
+
+</details>
+<details>
+<summary>italynorth — 31 regions across 3 SKU labels</summary>
+
+- `gpt-4.1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o4-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
+- `text-embedding-3-small` — Deployments Standard, Global coverage
+- `text-embedding-ada-002` — Deployments Standard, Global coverage
+
+</details>
+<details>
+<summary>japaneast — 31 regions across 4 SKU labels</summary>
+
+- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
+- `text-embedding-3-small` — Deployments Standard, Global coverage
+- `text-embedding-ada-002` — Deployments Standard, Global coverage
+
+</details>
+<details>
+<summary>koreacentral — 31 regions across 4 SKU labels</summary>
+
+- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
+- `text-embedding-3-small` — Deployments Standard, Global coverage
+- `text-embedding-ada-002` — Deployments Standard, Global coverage
+
+</details>
+<details>
+<summary>southafricanorth — 31 regions across 4 SKU labels</summary>
+
+- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
+- `text-embedding-3-small` — Deployments Standard, Global coverage
+- `text-embedding-ada-002` — Deployments Standard, Global coverage
+
+</details>
+<details>
+<summary>spaincentral — 31 regions across 3 SKU labels</summary>
+
+- `gpt-4.1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o4-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
+- `text-embedding-3-small` — Deployments Standard, Global coverage
+- `text-embedding-ada-002` — Deployments Standard, Global coverage
+
+</details>
+<details>
+<summary>uksouth — 31 regions across 4 SKU labels</summary>
+
+- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
+- `text-embedding-3-small` — Deployments Standard, Global coverage
+- `text-embedding-ada-002` — Deployments Standard, Global coverage
 
 </details>
 <details>
@@ -1378,111 +1753,6 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>australiaeast — 30 regions across 2 SKU labels</summary>
-
-- `gpt-4.1` — Global coverage, Region Asia Pacific
-- `gpt-4.1-mini` — Global coverage, Region Asia Pacific
-- `gpt-4.1-nano` — Global coverage, Region Asia Pacific
-- `gpt-4o` — Global coverage, Region Asia Pacific
-- `gpt-4o-mini` — Global coverage, Region Asia Pacific
-- `gpt-5` — Global coverage, Region Asia Pacific
-- `gpt-5-chat` — Global coverage, Region Asia Pacific
-- `gpt-5-codex` — Global coverage, Region Asia Pacific
-- `gpt-5-mini` — Global coverage, Region Asia Pacific
-- `gpt-5-nano` — Global coverage, Region Asia Pacific
-- `gpt-5-pro` — Global coverage, Region Asia Pacific
-- `gpt-5.1` — Global coverage, Region Asia Pacific
-- `gpt-5.1-chat` — Global coverage, Region Asia Pacific
-- `gpt-5.1-codex` — Global coverage, Region Asia Pacific
-- `gpt-5.1-codex-mini` — Global coverage, Region Asia Pacific
-- `gpt-5.2` — Global coverage, Region Asia Pacific
-- `gpt-5.2-chat` — Global coverage, Region Asia Pacific
-- `gpt-5.2-codex` — Global coverage, Region Asia Pacific
-- `gpt-5.3-chat` — Global coverage, Region Asia Pacific
-- `gpt-5.3-codex` — Global coverage, Region Asia Pacific
-- `gpt-5.4` — Global coverage, Region Asia Pacific
-- `gpt-5.4-mini` — Global coverage, Region Asia Pacific
-- `gpt-5.4-nano` — Global coverage, Region Asia Pacific
-- `o1` — Global coverage, Region Asia Pacific
-- `o3` — Global coverage, Region Asia Pacific
-- `o3-mini` — Global coverage, Region Asia Pacific
-- `o4-mini` — Global coverage, Region Asia Pacific
-- `text-embedding-3-large` — Global coverage, Region Asia Pacific
-- `text-embedding-3-small` — Global coverage, Region Asia Pacific
-- `text-embedding-ada-002` — Global coverage, Region Asia Pacific
-
-</details>
-<details>
-<summary>brazilsouth — 30 regions across 2 SKU labels</summary>
-
-- `gpt-4.1` — Global coverage, Region Americas
-- `gpt-4.1-mini` — Global coverage, Region Americas
-- `gpt-4.1-nano` — Global coverage, Region Americas
-- `gpt-4o` — Global coverage, Region Americas
-- `gpt-4o-mini` — Global coverage, Region Americas
-- `gpt-5` — Global coverage, Region Americas
-- `gpt-5-chat` — Global coverage, Region Americas
-- `gpt-5-codex` — Global coverage, Region Americas
-- `gpt-5-mini` — Global coverage, Region Americas
-- `gpt-5-nano` — Global coverage, Region Americas
-- `gpt-5-pro` — Global coverage, Region Americas
-- `gpt-5.1` — Global coverage, Region Americas
-- `gpt-5.1-chat` — Global coverage, Region Americas
-- `gpt-5.1-codex` — Global coverage, Region Americas
-- `gpt-5.1-codex-mini` — Global coverage, Region Americas
-- `gpt-5.2` — Global coverage, Region Americas
-- `gpt-5.2-chat` — Global coverage, Region Americas
-- `gpt-5.2-codex` — Global coverage, Region Americas
-- `gpt-5.3-chat` — Global coverage, Region Americas
-- `gpt-5.3-codex` — Global coverage, Region Americas
-- `gpt-5.4` — Global coverage, Region Americas
-- `gpt-5.4-mini` — Global coverage, Region Americas
-- `gpt-5.4-nano` — Global coverage, Region Americas
-- `o1` — Global coverage, Region Americas
-- `o3` — Global coverage, Region Americas
-- `o3-mini` — Global coverage, Region Americas
-- `o4-mini` — Global coverage, Region Americas
-- `text-embedding-3-large` — Global coverage, Region Americas
-- `text-embedding-3-small` — Global coverage, Region Americas
-- `text-embedding-ada-002` — Global coverage, Region Americas
-
-</details>
-<details>
-<summary>canadaeast — 30 regions across 2 SKU labels</summary>
-
-- `gpt-4.1` — Global coverage, Region Americas
-- `gpt-4.1-mini` — Global coverage, Region Americas
-- `gpt-4.1-nano` — Global coverage, Region Americas
-- `gpt-4o` — Global coverage, Region Americas
-- `gpt-4o-mini` — Global coverage, Region Americas
-- `gpt-5` — Global coverage, Region Americas
-- `gpt-5-chat` — Global coverage, Region Americas
-- `gpt-5-codex` — Global coverage, Region Americas
-- `gpt-5-mini` — Global coverage, Region Americas
-- `gpt-5-nano` — Global coverage, Region Americas
-- `gpt-5-pro` — Global coverage, Region Americas
-- `gpt-5.1` — Global coverage, Region Americas
-- `gpt-5.1-chat` — Global coverage, Region Americas
-- `gpt-5.1-codex` — Global coverage, Region Americas
-- `gpt-5.1-codex-mini` — Global coverage, Region Americas
-- `gpt-5.2` — Global coverage, Region Americas
-- `gpt-5.2-chat` — Global coverage, Region Americas
-- `gpt-5.2-codex` — Global coverage, Region Americas
-- `gpt-5.3-chat` — Global coverage, Region Americas
-- `gpt-5.3-codex` — Global coverage, Region Americas
-- `gpt-5.4` — Global coverage, Region Americas
-- `gpt-5.4-mini` — Global coverage, Region Americas
-- `gpt-5.4-nano` — Global coverage, Region Americas
-- `o1` — Global coverage, Region Americas
-- `o3` — Global coverage, Region Americas
-- `o3-mini` — Global coverage, Region Americas
-- `o4-mini` — Global coverage, Region Americas
-- `text-embedding-3-large` — Global coverage, Region Americas
-- `text-embedding-3-small` — Global coverage, Region Americas
-- `text-embedding-ada-002` — Global coverage, Region Americas
-
-</details>
-<details>
 <summary>cohere-command-a — 30 regions across 2 SKU labels</summary>
 
 - `Australia East` — Global Standard, Global coverage
@@ -1550,41 +1820,6 @@ SKU labels observed:
 - `West US` — Global Standard, Global coverage
 - `West US 2` — Global Standard, Global coverage
 - `West US 3` — Global Standard, Global coverage
-
-</details>
-<details>
-<summary>germanywestcentral — 30 regions across 2 SKU labels</summary>
-
-- `gpt-4.1` — Global coverage, Region Europe
-- `gpt-4.1-mini` — Global coverage, Region Europe
-- `gpt-4.1-nano` — Global coverage, Region Europe
-- `gpt-4o` — Global coverage, Region Europe
-- `gpt-4o-mini` — Global coverage, Region Europe
-- `gpt-5` — Global coverage, Region Europe
-- `gpt-5-chat` — Global coverage, Region Europe
-- `gpt-5-codex` — Global coverage, Region Europe
-- `gpt-5-mini` — Global coverage, Region Europe
-- `gpt-5-nano` — Global coverage, Region Europe
-- `gpt-5-pro` — Global coverage, Region Europe
-- `gpt-5.1` — Global coverage, Region Europe
-- `gpt-5.1-chat` — Global coverage, Region Europe
-- `gpt-5.1-codex` — Global coverage, Region Europe
-- `gpt-5.1-codex-mini` — Global coverage, Region Europe
-- `gpt-5.2` — Global coverage, Region Europe
-- `gpt-5.2-chat` — Global coverage, Region Europe
-- `gpt-5.2-codex` — Global coverage, Region Europe
-- `gpt-5.3-chat` — Global coverage, Region Europe
-- `gpt-5.3-codex` — Global coverage, Region Europe
-- `gpt-5.4` — Global coverage, Region Europe
-- `gpt-5.4-mini` — Global coverage, Region Europe
-- `gpt-5.4-nano` — Global coverage, Region Europe
-- `o1` — Global coverage, Region Europe
-- `o3` — Global coverage, Region Europe
-- `o3-mini` — Global coverage, Region Europe
-- `o4-mini` — Global coverage, Region Europe
-- `text-embedding-3-large` — Global coverage, Region Europe
-- `text-embedding-3-small` — Global coverage, Region Europe
-- `text-embedding-ada-002` — Global coverage, Region Europe
 
 </details>
 <details>
@@ -1798,111 +2033,6 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>italynorth — 30 regions across 2 SKU labels</summary>
-
-- `gpt-4.1` — Global coverage, Region Europe
-- `gpt-4.1-mini` — Global coverage, Region Europe
-- `gpt-4.1-nano` — Global coverage, Region Europe
-- `gpt-4o` — Global coverage, Region Europe
-- `gpt-4o-mini` — Global coverage, Region Europe
-- `gpt-5` — Global coverage, Region Europe
-- `gpt-5-chat` — Global coverage, Region Europe
-- `gpt-5-codex` — Global coverage, Region Europe
-- `gpt-5-mini` — Global coverage, Region Europe
-- `gpt-5-nano` — Global coverage, Region Europe
-- `gpt-5-pro` — Global coverage, Region Europe
-- `gpt-5.1` — Global coverage, Region Europe
-- `gpt-5.1-chat` — Global coverage, Region Europe
-- `gpt-5.1-codex` — Global coverage, Region Europe
-- `gpt-5.1-codex-mini` — Global coverage, Region Europe
-- `gpt-5.2` — Global coverage, Region Europe
-- `gpt-5.2-chat` — Global coverage, Region Europe
-- `gpt-5.2-codex` — Global coverage, Region Europe
-- `gpt-5.3-chat` — Global coverage, Region Europe
-- `gpt-5.3-codex` — Global coverage, Region Europe
-- `gpt-5.4` — Global coverage, Region Europe
-- `gpt-5.4-mini` — Global coverage, Region Europe
-- `gpt-5.4-nano` — Global coverage, Region Europe
-- `o1` — Global coverage, Region Europe
-- `o3` — Global coverage, Region Europe
-- `o3-mini` — Global coverage, Region Europe
-- `o4-mini` — Global coverage, Region Europe
-- `text-embedding-3-large` — Global coverage, Region Europe
-- `text-embedding-3-small` — Global coverage, Region Europe
-- `text-embedding-ada-002` — Global coverage, Region Europe
-
-</details>
-<details>
-<summary>japaneast — 30 regions across 2 SKU labels</summary>
-
-- `gpt-4.1` — Global coverage, Region Asia Pacific
-- `gpt-4.1-mini` — Global coverage, Region Asia Pacific
-- `gpt-4.1-nano` — Global coverage, Region Asia Pacific
-- `gpt-4o` — Global coverage, Region Asia Pacific
-- `gpt-4o-mini` — Global coverage, Region Asia Pacific
-- `gpt-5` — Global coverage, Region Asia Pacific
-- `gpt-5-chat` — Global coverage, Region Asia Pacific
-- `gpt-5-codex` — Global coverage, Region Asia Pacific
-- `gpt-5-mini` — Global coverage, Region Asia Pacific
-- `gpt-5-nano` — Global coverage, Region Asia Pacific
-- `gpt-5-pro` — Global coverage, Region Asia Pacific
-- `gpt-5.1` — Global coverage, Region Asia Pacific
-- `gpt-5.1-chat` — Global coverage, Region Asia Pacific
-- `gpt-5.1-codex` — Global coverage, Region Asia Pacific
-- `gpt-5.1-codex-mini` — Global coverage, Region Asia Pacific
-- `gpt-5.2` — Global coverage, Region Asia Pacific
-- `gpt-5.2-chat` — Global coverage, Region Asia Pacific
-- `gpt-5.2-codex` — Global coverage, Region Asia Pacific
-- `gpt-5.3-chat` — Global coverage, Region Asia Pacific
-- `gpt-5.3-codex` — Global coverage, Region Asia Pacific
-- `gpt-5.4` — Global coverage, Region Asia Pacific
-- `gpt-5.4-mini` — Global coverage, Region Asia Pacific
-- `gpt-5.4-nano` — Global coverage, Region Asia Pacific
-- `o1` — Global coverage, Region Asia Pacific
-- `o3` — Global coverage, Region Asia Pacific
-- `o3-mini` — Global coverage, Region Asia Pacific
-- `o4-mini` — Global coverage, Region Asia Pacific
-- `text-embedding-3-large` — Global coverage, Region Asia Pacific
-- `text-embedding-3-small` — Global coverage, Region Asia Pacific
-- `text-embedding-ada-002` — Global coverage, Region Asia Pacific
-
-</details>
-<details>
-<summary>koreacentral — 30 regions across 2 SKU labels</summary>
-
-- `gpt-4.1` — Global coverage, Region Asia Pacific
-- `gpt-4.1-mini` — Global coverage, Region Asia Pacific
-- `gpt-4.1-nano` — Global coverage, Region Asia Pacific
-- `gpt-4o` — Global coverage, Region Asia Pacific
-- `gpt-4o-mini` — Global coverage, Region Asia Pacific
-- `gpt-5` — Global coverage, Region Asia Pacific
-- `gpt-5-chat` — Global coverage, Region Asia Pacific
-- `gpt-5-codex` — Global coverage, Region Asia Pacific
-- `gpt-5-mini` — Global coverage, Region Asia Pacific
-- `gpt-5-nano` — Global coverage, Region Asia Pacific
-- `gpt-5-pro` — Global coverage, Region Asia Pacific
-- `gpt-5.1` — Global coverage, Region Asia Pacific
-- `gpt-5.1-chat` — Global coverage, Region Asia Pacific
-- `gpt-5.1-codex` — Global coverage, Region Asia Pacific
-- `gpt-5.1-codex-mini` — Global coverage, Region Asia Pacific
-- `gpt-5.2` — Global coverage, Region Asia Pacific
-- `gpt-5.2-chat` — Global coverage, Region Asia Pacific
-- `gpt-5.2-codex` — Global coverage, Region Asia Pacific
-- `gpt-5.3-chat` — Global coverage, Region Asia Pacific
-- `gpt-5.3-codex` — Global coverage, Region Asia Pacific
-- `gpt-5.4` — Global coverage, Region Asia Pacific
-- `gpt-5.4-mini` — Global coverage, Region Asia Pacific
-- `gpt-5.4-nano` — Global coverage, Region Asia Pacific
-- `o1` — Global coverage, Region Asia Pacific
-- `o3` — Global coverage, Region Asia Pacific
-- `o3-mini` — Global coverage, Region Asia Pacific
-- `o4-mini` — Global coverage, Region Asia Pacific
-- `text-embedding-3-large` — Global coverage, Region Asia Pacific
-- `text-embedding-3-small` — Global coverage, Region Asia Pacific
-- `text-embedding-ada-002` — Global coverage, Region Asia Pacific
-
-</details>
-<details>
 <summary>mistral-document-ai-2505 — 30 regions across 3 SKU labels</summary>
 
 - `Australia East` — Global Standard, Global coverage
@@ -1970,111 +2100,6 @@ SKU labels observed:
 - `West US` — Datazone standard, Global Standard, Global coverage
 - `West US 2` — Datazone standard, Global Standard, Global coverage
 - `West US 3` — Datazone standard, Global Standard, Global coverage
-
-</details>
-<details>
-<summary>southafricanorth — 30 regions across 2 SKU labels</summary>
-
-- `gpt-4.1` — Global coverage, Region Middle East Africa
-- `gpt-4.1-mini` — Global coverage, Region Middle East Africa
-- `gpt-4.1-nano` — Global coverage, Region Middle East Africa
-- `gpt-4o` — Global coverage, Region Middle East Africa
-- `gpt-4o-mini` — Global coverage, Region Middle East Africa
-- `gpt-5` — Global coverage, Region Middle East Africa
-- `gpt-5-chat` — Global coverage, Region Middle East Africa
-- `gpt-5-codex` — Global coverage, Region Middle East Africa
-- `gpt-5-mini` — Global coverage, Region Middle East Africa
-- `gpt-5-nano` — Global coverage, Region Middle East Africa
-- `gpt-5-pro` — Global coverage, Region Middle East Africa
-- `gpt-5.1` — Global coverage, Region Middle East Africa
-- `gpt-5.1-chat` — Global coverage, Region Middle East Africa
-- `gpt-5.1-codex` — Global coverage, Region Middle East Africa
-- `gpt-5.1-codex-mini` — Global coverage, Region Middle East Africa
-- `gpt-5.2` — Global coverage, Region Middle East Africa
-- `gpt-5.2-chat` — Global coverage, Region Middle East Africa
-- `gpt-5.2-codex` — Global coverage, Region Middle East Africa
-- `gpt-5.3-chat` — Global coverage, Region Middle East Africa
-- `gpt-5.3-codex` — Global coverage, Region Middle East Africa
-- `gpt-5.4` — Global coverage, Region Middle East Africa
-- `gpt-5.4-mini` — Global coverage, Region Middle East Africa
-- `gpt-5.4-nano` — Global coverage, Region Middle East Africa
-- `o1` — Global coverage, Region Middle East Africa
-- `o3` — Global coverage, Region Middle East Africa
-- `o3-mini` — Global coverage, Region Middle East Africa
-- `o4-mini` — Global coverage, Region Middle East Africa
-- `text-embedding-3-large` — Global coverage, Region Middle East Africa
-- `text-embedding-3-small` — Global coverage, Region Middle East Africa
-- `text-embedding-ada-002` — Global coverage, Region Middle East Africa
-
-</details>
-<details>
-<summary>spaincentral — 30 regions across 2 SKU labels</summary>
-
-- `gpt-4.1` — Global coverage, Region Europe
-- `gpt-4.1-mini` — Global coverage, Region Europe
-- `gpt-4.1-nano` — Global coverage, Region Europe
-- `gpt-4o` — Global coverage, Region Europe
-- `gpt-4o-mini` — Global coverage, Region Europe
-- `gpt-5` — Global coverage, Region Europe
-- `gpt-5-chat` — Global coverage, Region Europe
-- `gpt-5-codex` — Global coverage, Region Europe
-- `gpt-5-mini` — Global coverage, Region Europe
-- `gpt-5-nano` — Global coverage, Region Europe
-- `gpt-5-pro` — Global coverage, Region Europe
-- `gpt-5.1` — Global coverage, Region Europe
-- `gpt-5.1-chat` — Global coverage, Region Europe
-- `gpt-5.1-codex` — Global coverage, Region Europe
-- `gpt-5.1-codex-mini` — Global coverage, Region Europe
-- `gpt-5.2` — Global coverage, Region Europe
-- `gpt-5.2-chat` — Global coverage, Region Europe
-- `gpt-5.2-codex` — Global coverage, Region Europe
-- `gpt-5.3-chat` — Global coverage, Region Europe
-- `gpt-5.3-codex` — Global coverage, Region Europe
-- `gpt-5.4` — Global coverage, Region Europe
-- `gpt-5.4-mini` — Global coverage, Region Europe
-- `gpt-5.4-nano` — Global coverage, Region Europe
-- `o1` — Global coverage, Region Europe
-- `o3` — Global coverage, Region Europe
-- `o3-mini` — Global coverage, Region Europe
-- `o4-mini` — Global coverage, Region Europe
-- `text-embedding-3-large` — Global coverage, Region Europe
-- `text-embedding-3-small` — Global coverage, Region Europe
-- `text-embedding-ada-002` — Global coverage, Region Europe
-
-</details>
-<details>
-<summary>uksouth — 30 regions across 2 SKU labels</summary>
-
-- `gpt-4.1` — Global coverage, Region Europe
-- `gpt-4.1-mini` — Global coverage, Region Europe
-- `gpt-4.1-nano` — Global coverage, Region Europe
-- `gpt-4o` — Global coverage, Region Europe
-- `gpt-4o-mini` — Global coverage, Region Europe
-- `gpt-5` — Global coverage, Region Europe
-- `gpt-5-chat` — Global coverage, Region Europe
-- `gpt-5-codex` — Global coverage, Region Europe
-- `gpt-5-mini` — Global coverage, Region Europe
-- `gpt-5-nano` — Global coverage, Region Europe
-- `gpt-5-pro` — Global coverage, Region Europe
-- `gpt-5.1` — Global coverage, Region Europe
-- `gpt-5.1-chat` — Global coverage, Region Europe
-- `gpt-5.1-codex` — Global coverage, Region Europe
-- `gpt-5.1-codex-mini` — Global coverage, Region Europe
-- `gpt-5.2` — Global coverage, Region Europe
-- `gpt-5.2-chat` — Global coverage, Region Europe
-- `gpt-5.2-codex` — Global coverage, Region Europe
-- `gpt-5.3-chat` — Global coverage, Region Europe
-- `gpt-5.3-codex` — Global coverage, Region Europe
-- `gpt-5.4` — Global coverage, Region Europe
-- `gpt-5.4-mini` — Global coverage, Region Europe
-- `gpt-5.4-nano` — Global coverage, Region Europe
-- `o1` — Global coverage, Region Europe
-- `o3` — Global coverage, Region Europe
-- `o3-mini` — Global coverage, Region Europe
-- `o4-mini` — Global coverage, Region Europe
-- `text-embedding-3-large` — Global coverage, Region Europe
-- `text-embedding-3-small` — Global coverage, Region Europe
-- `text-embedding-ada-002` — Global coverage, Region Europe
 
 </details>
 <details>
@@ -2245,6 +2270,40 @@ SKU labels observed:
 - `West US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
 - `West US 3` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Standard Global By Capability
 - `usgovarizona` — Datazone Provisioned Managed Gov, Datazone Standard Gov, Global coverage
+
+</details>
+<details>
+<summary>southeastasia — 29 regions across 3 SKU labels</summary>
+
+- `gpt-4.1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1-nano` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Provisioned, Global coverage
+- `gpt-4o-mini` — Deployments Provisioned, Global coverage
+- `gpt-5` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5-nano` — Deployments Standard, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `o1` — Deployments Provisioned, Global coverage
+- `o3` — Deployments Provisioned, Deployments Standard, Global coverage
+- `o3-mini` — Deployments Provisioned, Global coverage
+- `o4-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `text-embedding-3-large` — Deployments Standard, Global coverage
 
 </details>
 <details>
@@ -2842,39 +2901,6 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>southeastasia — 28 regions across 2 SKU labels</summary>
-
-- `gpt-4.1` — Global coverage, Region Asia Pacific
-- `gpt-4.1-mini` — Global coverage, Region Asia Pacific
-- `gpt-4.1-nano` — Global coverage, Region Asia Pacific
-- `gpt-4o` — Global coverage, Region Asia Pacific
-- `gpt-4o-mini` — Global coverage, Region Asia Pacific
-- `gpt-5` — Global coverage, Region Asia Pacific
-- `gpt-5-chat` — Global coverage, Region Asia Pacific
-- `gpt-5-codex` — Global coverage, Region Asia Pacific
-- `gpt-5-mini` — Global coverage, Region Asia Pacific
-- `gpt-5-nano` — Global coverage, Region Asia Pacific
-- `gpt-5-pro` — Global coverage, Region Asia Pacific
-- `gpt-5.1` — Global coverage, Region Asia Pacific
-- `gpt-5.1-chat` — Global coverage, Region Asia Pacific
-- `gpt-5.1-codex` — Global coverage, Region Asia Pacific
-- `gpt-5.1-codex-mini` — Global coverage, Region Asia Pacific
-- `gpt-5.2` — Global coverage, Region Asia Pacific
-- `gpt-5.2-chat` — Global coverage, Region Asia Pacific
-- `gpt-5.2-codex` — Global coverage, Region Asia Pacific
-- `gpt-5.3-chat` — Global coverage, Region Asia Pacific
-- `gpt-5.3-codex` — Global coverage, Region Asia Pacific
-- `gpt-5.4` — Global coverage, Region Asia Pacific
-- `gpt-5.4-mini` — Global coverage, Region Asia Pacific
-- `gpt-5.4-nano` — Global coverage, Region Asia Pacific
-- `o1` — Global coverage, Region Asia Pacific
-- `o3` — Global coverage, Region Asia Pacific
-- `o3-mini` — Global coverage, Region Asia Pacific
-- `o4-mini` — Global coverage, Region Asia Pacific
-- `text-embedding-3-large` — Global coverage, Region Asia Pacific
-
-</details>
-<details>
 <summary>gpt-5-chat — 27 regions across 3 SKU labels</summary>
 
 - `Australia East` — Global Standard, Global coverage, Standard Global By Capability
@@ -2971,6 +2997,38 @@ SKU labels observed:
 
 </details>
 <details>
+<summary>switzerlandwest — 27 regions across 3 SKU labels</summary>
+
+- `gpt-4.1` — Deployments Provisioned, Global coverage
+- `gpt-4.1-mini` — Deployments Provisioned, Global coverage
+- `gpt-4.1-nano` — Deployments Provisioned, Global coverage
+- `gpt-4o` — Deployments Provisioned, Global coverage
+- `gpt-4o-mini` — Deployments Provisioned, Global coverage
+- `gpt-5` — Deployments Provisioned, Global coverage
+- `gpt-5-chat` — Deployments Standard, Global coverage
+- `gpt-5-codex` — Deployments Standard, Global coverage
+- `gpt-5-mini` — Deployments Provisioned, Global coverage
+- `gpt-5-pro` — Deployments Standard, Global coverage
+- `gpt-5.1` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-chat` — Deployments Standard, Global coverage
+- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
+- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.2-chat` — Deployments Standard, Global coverage
+- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.3-chat` — Deployments Standard, Global coverage
+- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-5.4-mini` — Deployments Standard, Global coverage
+- `gpt-5.4-nano` — Deployments Standard, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `o1` — Deployments Provisioned, Global coverage
+- `o3` — Deployments Provisioned, Global coverage
+- `o3-mini` — Deployments Provisioned, Global coverage
+- `o4-mini` — Deployments Provisioned, Global coverage
+
+</details>
+<details>
 <summary>text-embedding-3-large — 27 regions across 6 SKU labels</summary>
 
 - `Australia East` — Global Standard, Global coverage, Standard, Standard Global By Capability
@@ -3031,37 +3089,6 @@ SKU labels observed:
 - `West Europe` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
 - `West US` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
 - `West US 3` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>switzerlandwest — 26 regions across 2 SKU labels</summary>
-
-- `gpt-4.1` — Global coverage, Region Europe
-- `gpt-4.1-mini` — Global coverage, Region Europe
-- `gpt-4.1-nano` — Global coverage, Region Europe
-- `gpt-4o` — Global coverage, Region Europe
-- `gpt-4o-mini` — Global coverage, Region Europe
-- `gpt-5` — Global coverage, Region Europe
-- `gpt-5-chat` — Global coverage, Region Europe
-- `gpt-5-codex` — Global coverage, Region Europe
-- `gpt-5-mini` — Global coverage, Region Europe
-- `gpt-5-pro` — Global coverage, Region Europe
-- `gpt-5.1` — Global coverage, Region Europe
-- `gpt-5.1-chat` — Global coverage, Region Europe
-- `gpt-5.1-codex` — Global coverage, Region Europe
-- `gpt-5.1-codex-mini` — Global coverage, Region Europe
-- `gpt-5.2` — Global coverage, Region Europe
-- `gpt-5.2-chat` — Global coverage, Region Europe
-- `gpt-5.2-codex` — Global coverage, Region Europe
-- `gpt-5.3-chat` — Global coverage, Region Europe
-- `gpt-5.3-codex` — Global coverage, Region Europe
-- `gpt-5.4` — Global coverage, Region Europe
-- `gpt-5.4-mini` — Global coverage, Region Europe
-- `gpt-5.4-nano` — Global coverage, Region Europe
-- `o1` — Global coverage, Region Europe
-- `o3` — Global coverage, Region Europe
-- `o3-mini` — Global coverage, Region Europe
-- `o4-mini` — Global coverage, Region Europe
 
 </details>
 <details>
@@ -3377,6 +3404,7 @@ SKU labels observed:
 
 ## Recent changes
 
+- **2026-05-13 09:46 UTC** — australiaeast: Global coverage added gpt-5.5; Deployments Batch added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Asia Pacific removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | brazilsouth: Global coverage added gpt-5.5; Deployments Batch added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Americas removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | canadacentral: Global coverage added gpt-5.5, gpt-realtime-translate, and gpt-realtime-whisper; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5-chat, gpt-5-codex, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-realtime, gpt-realtime-1.5, gpt-realtime-mini, gpt-realtime-translate, and gpt-realtime-whisper; Region Americas removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-realtime, gpt-realtime-1.5, gpt-realtime-mini, o1, o3, o3-mini, and o4-mini | canadaeast: Global coverage added gpt-5.5; Deployments Batch added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Americas removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | centralus: Global coverage added gpt-5.5; Deployments Batch added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added codex-mini, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-audio, gpt-audio-1.5, gpt-audio-mini, gpt-realtime, gpt-realtime-1.5, gpt-realtime-mini, o1, o3, o3-mini, o3-pro, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Americas removed codex-mini, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-audio, gpt-audio-1.5, gpt-audio-mini, gpt-realtime, gpt-realtime-1.5, gpt-realtime-mini, o1, o3, o3-mini, o3-pro, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | eastus: Deployments Batch added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Americas removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | eastus2: Deployments Batch added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added codex-mini, computer-use-preview, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-mini-tts, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-max, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-audio, gpt-audio-1.5, gpt-audio-mini, gpt-chat-latest, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, gpt-realtime, gpt-realtime-1.5, gpt-realtime-mini, model-router, o1, o3, o3-mini, o3-pro, o4-mini, sora-2, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper; Region Americas removed codex-mini, computer-use-preview, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-mini-tts, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-max, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-audio, gpt-audio-1.5, gpt-audio-mini, gpt-chat-latest, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, gpt-realtime, gpt-realtime-1.5, gpt-realtime-mini, model-router, o1, o3, o3-mini, o3-pro, o4-mini, sora-2, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper | francecentral: Global coverage added gpt-5.5, gpt-realtime-translate, and gpt-realtime-whisper; Deployments Batch added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-realtime, gpt-realtime-1.5, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Europe removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-realtime, gpt-realtime-1.5, gpt-realtime-mini, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | germanywestcentral: Global coverage added gpt-5.5; Deployments Batch added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Europe removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | italynorth: Global coverage added gpt-5.5; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Europe removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | japaneast: Global coverage added gpt-5.5; Deployments Batch added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Asia Pacific removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | koreacentral: Global coverage added gpt-5.5; Deployments Batch added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Asia Pacific removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | northcentralus: Deployments Batch added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, tts, tts-hd, and whisper; Region Americas removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, tts, tts-hd, and whisper | norwayeast: Global coverage added gpt-5.5; Deployments Batch added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-deep-research, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper; Region Europe removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-deep-research, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper | polandcentral: Deployments Batch added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-chat-latest, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Europe removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-chat-latest, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | southafricanorth: Global coverage added gpt-5.5; Deployments Batch added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Middle East Africa removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | southcentralus: Deployments Batch added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-chat-latest, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Americas removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-chat-latest, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | southeastasia: Global coverage added gpt-5.5; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o3, o4-mini, and text-embedding-3-large; Region Asia Pacific removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, and text-embedding-3-large | southindia: Global coverage added gpt-5.5, gpt-realtime-translate, and gpt-realtime-whisper; Deployments Batch added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added computer-use-preview, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-realtime, gpt-realtime-1.5, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper; Region Asia Pacific removed computer-use-preview, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-realtime, gpt-realtime-1.5, gpt-realtime-mini, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper | spaincentral: Global coverage added gpt-5.5; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Europe removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | swedencentral: Deployments Batch added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added codex-mini, computer-use-preview, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-max, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-audio, gpt-audio-1.5, gpt-audio-mini, gpt-chat-latest, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, gpt-realtime, gpt-realtime-1.5, gpt-realtime-mini, model-router, o1, o3, o3-mini, o3-pro, o4-mini, sora-2, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, tts, tts-hd, and whisper; Region Europe removed codex-mini, computer-use-preview, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-max, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-audio, gpt-audio-1.5, gpt-audio-mini, gpt-chat-latest, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, gpt-realtime, gpt-realtime-1.5, gpt-realtime-mini, model-router, o1, o3, o3-mini, o3-pro, o4-mini, sora-2, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, tts, tts-hd, and whisper | switzerlandnorth: Global coverage added gpt-5.5; Deployments Batch added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper; Region Europe removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper | switzerlandwest: Global coverage added gpt-5.5; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added gpt-5-chat, gpt-5-codex, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, and gpt-5.4-nano; Region Europe removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, and o4-mini | uaenorth: Global coverage added gpt-5.5; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper; Region Middle East Africa removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper | uksouth: Global coverage added gpt-5.5; Deployments Batch added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Europe removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | westeurope: Global coverage added gpt-5.5; Deployments Batch added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper; Region Europe removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper | westus: Global coverage added gpt-5.5; Deployments Batch added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-deep-research, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Americas removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-deep-research, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | westus3: Global coverage added gpt-5.5; Deployments Batch added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5-nano, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, tts, and tts-hd; Region Americas removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5-nano, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, tts, and tts-hd
 - **2026-05-12 09:41 UTC** — gpt-4.1: Standard Global Priority Processing removed West US 3 | gpt-5.1: Datazone Standard Priority Processing added East US 2; Standard Global Priority Processing added East US 2; Standard Global Priority Processing removed West US 3 | gpt-5.2: Datazone Standard Priority Processing added East US 2; Standard Global Priority Processing added East US 2; Standard Global Priority Processing removed West US 3 | gpt-5.4: Datazone Standard Priority Processing added East US 2; Standard Global Priority Processing added East US 2; Standard Global Priority Processing removed West US 3 | gpt-5.4-mini: Datazone Standard Priority Processing added East US 2; Standard Global Priority Processing added East US 2; Standard Global Priority Processing removed West US 3 | gpt-5.5: Datazone Standard Priority Processing added East US 2; Standard Global Priority Processing added East US 2
 - **2026-05-07 09:33 UTC** — eastus2: Global coverage added gpt-chat-latest; Region Americas added gpt-chat-latest | polandcentral: Global coverage added gpt-chat-latest; Region Europe added gpt-chat-latest | southcentralus: Global coverage added gpt-chat-latest; Region Americas added gpt-chat-latest | swedencentral: Global coverage added gpt-chat-latest; Region Europe added gpt-chat-latest
 - **2026-05-01 09:01 UTC** — australiaeast: Global coverage added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Asia Pacific added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | brazilsouth: Global coverage added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Americas added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | canadacentral: Global coverage added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-realtime, gpt-realtime-1.5, gpt-realtime-mini, o1, o3, o3-mini, and o4-mini; Region Americas added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-realtime, gpt-realtime-1.5, gpt-realtime-mini, o1, o3, o3-mini, and o4-mini | canadaeast: Global coverage added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Americas added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | centralus: Global coverage added codex-mini, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-audio, gpt-audio-1.5, gpt-audio-mini, gpt-realtime, gpt-realtime-1.5, gpt-realtime-mini, o1, o3, o3-mini, o3-pro, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Americas added codex-mini, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-audio, gpt-audio-1.5, gpt-audio-mini, gpt-realtime, gpt-realtime-1.5, gpt-realtime-mini, o1, o3, o3-mini, o3-pro, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | codex-mini: Standard Global By Capability added Central US, East US 2, and Sweden Central | computer-use-preview: Standard Global By Capability added East US 2, South India, and Sweden Central | eastus: Global coverage added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Americas added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | eastus2: Global coverage added codex-mini, computer-use-preview, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-mini-tts, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-max, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-audio, gpt-audio-1.5, gpt-audio-mini, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, gpt-realtime, gpt-realtime-1.5, gpt-realtime-mini, model-router, o1, o3, o3-mini, o3-pro, o4-mini, sora-2, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper; Region Americas added codex-mini, computer-use-preview, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-mini-tts, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-max, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-audio, gpt-audio-1.5, gpt-audio-mini, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, gpt-realtime, gpt-realtime-1.5, gpt-realtime-mini, model-router, o1, o3, o3-mini, o3-pro, o4-mini, sora-2, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper | francecentral: Global coverage added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-realtime, gpt-realtime-1.5, gpt-realtime-mini, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Europe added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-realtime, gpt-realtime-1.5, gpt-realtime-mini, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | germanywestcentral: Global coverage added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Europe added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | gpt-4.1: Datazone provisioned managed added West US 3; Provisioned global removed West US 3; Standard Global By Capability added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | gpt-4.1-mini: Datazone provisioned managed added West US 3; Provisioned global removed West US 3; Standard Global By Capability added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | gpt-4.1-nano: Datazone provisioned managed added West US 3; Provisioned global removed West US 3; Standard Global By Capability added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | gpt-4o: Datazone provisioned managed added West US 3; Provisioned global removed West US 3; Standard Global By Capability added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | gpt-4o-mini: Datazone provisioned managed added West US 3; Provisioned global removed West US 3; Standard Global By Capability added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | gpt-4o-mini-transcribe: Standard Global By Capability added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | gpt-4o-mini-tts: Standard Global By Capability added East US 2 | gpt-4o-transcribe: Standard Global By Capability added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | gpt-4o-transcribe-diarize: Standard Global By Capability added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | gpt-5: Datazone provisioned managed added West US 3; Provisioned global removed West US 3; Standard Global By Capability added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5-chat: Standard Global By Capability added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US | gpt-5-codex: Standard Global By Capability added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US | gpt-5-mini: Datazone provisioned managed added West US 3; Provisioned global removed West US 3; Standard Global By Capability added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5-nano: Standard Global By Capability added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5-pro: Standard Global By Capability added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US | gpt-5.1: Datazone provisioned managed added West US 3; Provisioned global removed West US 3; Standard Global By Capability added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.1-chat: Standard Global By Capability added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.1-codex: Datazone provisioned managed added West US 3; Provisioned global removed West US 3; Standard Global By Capability added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.1-codex-max: Standard Global By Capability added East US 2 and Sweden Central | gpt-5.1-codex-mini: Standard Global By Capability added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.2: Datazone provisioned managed added West US 3; Provisioned global removed West US 3; Standard Global By Capability added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.2-chat: Standard Global By Capability added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.2-codex: Provisioned global removed West US 3; Standard Global By Capability added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.3-chat: Standard Global By Capability added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.3-codex: Provisioned global removed West US 3; Standard Global By Capability added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.4: Datazone provisioned managed added West US 3; Provisioned global removed West US 3; Standard Global By Capability added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.4-mini: Standard Global By Capability added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.4-nano: Standard Global By Capability added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.4-pro: Standard Global By Capability added East US 2, Poland Central, South Central US, and Sweden Central | gpt-5.5: Global coverage added East US and North Central US; Datazone provisioned managed added East US and North Central US; Provisioned global added East US and North Central US; Provisioned (PTU managed) added East US; Standard Global By Capability added East US 2, Poland Central, South Central US, and Sweden Central | gpt-audio: Standard Global By Capability added Central US, East US 2, and Sweden Central | gpt-audio-1.5: Standard Global By Capability added Central US, East US 2, and Sweden Central | gpt-audio-mini: Standard Global By Capability added Central US, East US 2, and Sweden Central | gpt-image-1: Standard Global By Capability added East US 2, Poland Central, Sweden Central, UAE North, and West US 3 | gpt-image-1-mini: Standard Global By Capability added East US 2, Poland Central, Sweden Central, UAE North, and West US 3 | gpt-image-1.5: Standard Global By Capability added East US 2, Poland Central, Sweden Central, UAE North, and West US 3 | gpt-image-2: Standard Global By Capability added East US 2, Poland Central, Sweden Central, UAE North, and West US 3 | gpt-realtime: Standard Global By Capability added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | gpt-realtime-1.5: Standard Global By Capability added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | gpt-realtime-mini: Standard Global By Capability added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | italynorth: Global coverage added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Europe added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | japaneast: Global coverage added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Asia Pacific added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | koreacentral: Global coverage added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Asia Pacific added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | model-router: Standard Global By Capability added East US 2 and Sweden Central | northcentralus: Global coverage added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, tts, tts-hd, and whisper; Region Americas added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, tts, tts-hd, and whisper | norwayeast: Global coverage added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-deep-research, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper; Region Europe added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-deep-research, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper | o1: Datazone provisioned managed added West US 3; Provisioned global removed West US 3; Standard Global By Capability added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | o3: Datazone provisioned managed added West US 3; Provisioned global removed West US 3; Standard Global By Capability added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | o3-deep-research: Standard Global By Capability added Norway East and West US | o3-mini: Datazone provisioned managed added West US 3; Provisioned global removed West US 3; Standard Global By Capability added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | o3-pro: Standard Global By Capability added Central US, East US 2, and Sweden Central | o4-mini: Datazone provisioned managed added West US 3; Provisioned global removed West US 3; Standard Global By Capability added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | polandcentral: Global coverage added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Europe added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | sora-2: Standard Global By Capability added East US 2 and Sweden Central | southafricanorth: Global coverage added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Middle East Africa added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | southcentralus: Global coverage added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Americas added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | southeastasia: Global coverage added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, and text-embedding-3-large; Region Asia Pacific added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, and text-embedding-3-large | southindia: Global coverage added computer-use-preview, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-realtime, gpt-realtime-1.5, gpt-realtime-mini, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper; Region Asia Pacific added computer-use-preview, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-realtime, gpt-realtime-1.5, gpt-realtime-mini, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper | spaincentral: Global coverage added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Europe added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | swedencentral: Global coverage added codex-mini, computer-use-preview, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-max, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-audio, gpt-audio-1.5, gpt-audio-mini, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, gpt-realtime, gpt-realtime-1.5, gpt-realtime-mini, model-router, o1, o3, o3-mini, o3-pro, o4-mini, sora-2, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, tts, tts-hd, and whisper; Region Europe added codex-mini, computer-use-preview, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-max, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-audio, gpt-audio-1.5, gpt-audio-mini, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, gpt-realtime, gpt-realtime-1.5, gpt-realtime-mini, model-router, o1, o3, o3-mini, o3-pro, o4-mini, sora-2, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, tts, tts-hd, and whisper | switzerlandnorth: Global coverage added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper; Region Europe added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper | switzerlandwest: Global coverage added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, and o4-mini; Region Europe added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, and o4-mini | text-embedding-3-large: Standard Global By Capability added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | text-embedding-3-small: Standard Global By Capability added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | text-embedding-ada-002: Standard Global By Capability added Australia East, Brazil South, Canada East, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | uaenorth: Global coverage added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper; Region Middle East Africa added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper | uksouth: Global coverage added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Europe added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | westeurope: Global coverage added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper; Region Europe added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper | westus: Global coverage added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-deep-research, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Region Americas added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-deep-research, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | westus3: Global coverage added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5-nano, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, tts, and tts-hd; Region Americas added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5-nano, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, tts, and tts-hd
