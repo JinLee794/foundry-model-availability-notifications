@@ -26,16 +26,16 @@ Real-time tracking of Azure AI Foundry model availability across regions and dep
 ???+ tip "Recent Availability Changes"
     | Date | Change | Model | Region | SKU Type |
     |------|--------|-------|--------|----------|
-    | 2026-02-25 | <span class="badge-added">Added</span> | [gpt-realtime-1.5](models/gpt-realtime-1-5/) | East US 2 | Standard global deployments |
-    | 2026-02-25 | <span class="badge-added">Added</span> | [gpt-realtime-1.5](models/gpt-realtime-1-5/) | Sweden Central | Standard global deployments |
+    | 2026-02-25 | <span class="badge-added">Added</span> | [gpt-realtime-1.5](models/gpt-realtime-1-5.md) | East US 2 | Standard global deployments |
+    | 2026-02-25 | <span class="badge-added">Added</span> | [gpt-realtime-1.5](models/gpt-realtime-1-5.md) | Sweden Central | Standard global deployments |
     | 2026-02-18 | <span class="badge-added">Added</span> | [Claude Sonnet 4.6 (preview)](models/claude-sonnet-4-6-(preview)/) | East US 2 | Region Availability Maas |
     | 2026-02-18 | <span class="badge-added">Added</span> | [Claude Sonnet 4.6 (preview)](models/claude-sonnet-4-6-(preview)/) | Sweden Central | Region Availability Maas |
-    | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-large](models/text-embedding-3-large/) | France Central | Datazone standard |
-    | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-large](models/text-embedding-3-large/) | Germany West Central | Datazone standard |
-    | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-large](models/text-embedding-3-large/) | Italy North | Datazone standard |
-    | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-large](models/text-embedding-3-large/) | Poland Central | Datazone standard |
-    | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-large](models/text-embedding-3-large/) | Spain Central | Datazone standard |
-    | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-large](models/text-embedding-3-large/) | Sweden Central | Datazone standard |
+    | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-large](models/text-embedding-3-large.md) | France Central | Datazone standard |
+    | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-large](models/text-embedding-3-large.md) | Germany West Central | Datazone standard |
+    | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-large](models/text-embedding-3-large.md) | Italy North | Datazone standard |
+    | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-large](models/text-embedding-3-large.md) | Poland Central | Datazone standard |
+    | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-large](models/text-embedding-3-large.md) | Spain Central | Datazone standard |
+    | 2026-02-12 | <span class="badge-added">Added</span> | [text-embedding-3-large](models/text-embedding-3-large.md) | Sweden Central | Datazone standard |
 
     *… and 965 more — see [full change history](history.md)*
 
@@ -49,26 +49,26 @@ Real-time tracking of Azure AI Foundry model availability across regions and dep
 
     | Model | Version | Category | Retirement Date | Status | Replacement |
     |-------|---------|----------|-----------------|--------|-------------|
-    | [gpt-5-chat](models/gpt-5-chat/) | 2025-08-07 | Text Generation | 2026-03-01 | <span class="badge badge-retiring-soon">Retiring Soon</span> | [gpt-5.2-chat](models/gpt-5-2-chat/) |
-    | [gpt-5-chat](models/gpt-5-chat/) | 2025-10-03 | Text Generation | 2026-03-01 | <span class="badge badge-retiring-soon">Retiring Soon</span> | [gpt-5.2-chat](models/gpt-5-2-chat/) |
+    | [gpt-5-chat](models/gpt-5-chat.md) | 2025-08-07 | Text Generation | 2026-03-01 | <span class="badge badge-retiring-soon">Retiring Soon</span> | [gpt-5.2-chat](models/gpt-5-2-chat.md) |
+    | [gpt-5-chat](models/gpt-5-chat.md) | 2025-10-03 | Text Generation | 2026-03-01 | <span class="badge badge-retiring-soon">Retiring Soon</span> | [gpt-5.2-chat](models/gpt-5-2-chat.md) |
 
 !!! warning "Upcoming Retirements (31-90 Days) — 3 model versions"
     Plan and test your migration to the replacement model.
 
     | Model | Version | Category | Retirement Date | Status | Replacement |
     |-------|---------|----------|-----------------|--------|-------------|
-    | [gpt-4o](models/gpt-4o/) | 2024-05-13 | Text Generation | 2026-03-31 | <span class="badge badge-retiring">Retiring</span> | [gpt-5.1](models/gpt-5-1/) |
-    | [gpt-4o](models/gpt-4o/) | 2024-08-06 | Text Generation | 2026-03-31 | <span class="badge badge-retiring">Retiring</span> | [gpt-5.1](models/gpt-5-1/) |
-    | [gpt-4o-mini](models/gpt-4o-mini/) | 2024-07-18 | Text Generation | 2026-03-31 | <span class="badge badge-retiring">Retiring</span> | [gpt-4.1-mini](models/gpt-4-1-mini/) |
+    | [gpt-4o](models/gpt-4o.md) | 2024-05-13 | Text Generation | 2026-03-31 | <span class="badge badge-retiring">Retiring</span> | [gpt-5.1](models/gpt-5-1.md) |
+    | [gpt-4o](models/gpt-4o.md) | 2024-08-06 | Text Generation | 2026-03-31 | <span class="badge badge-retiring">Retiring</span> | [gpt-5.1](models/gpt-5-1.md) |
+    | [gpt-4o-mini](models/gpt-4o-mini.md) | 2024-07-18 | Text Generation | 2026-03-31 | <span class="badge badge-retiring">Retiring</span> | [gpt-4.1-mini](models/gpt-4-1-mini.md) |
 
 !!! failure "Already Retired — 3 model versions"
     These models are no longer available. Migrate to the listed replacement.
 
     | Model | Version | Category | Retirement Date | Status | Replacement |
     |-------|---------|----------|-----------------|--------|-------------|
-    | [gpt-4o-audio-preview](models/gpt-4o-audio-preview/) | 2024-12-17 | Audio | 2026-02-02 | <span class="badge badge-retired">Retired</span> | [gpt-audio](models/gpt-audio/) |
-    | [gpt-4o-realtime-preview](models/gpt-4o-realtime-preview/) | 2024-12-17 | Audio | 2026-02-02 | <span class="badge badge-retired">Retired</span> | [gpt-realtime](models/gpt-realtime/) |
-    | [dall-e-3](models/dall-e-3/) | 3 | Image And Video | 2026-02-18 | <span class="badge badge-retired">Retired</span> | [gpt-image-1-mini](models/gpt-image-1-mini/) |
+    | [gpt-4o-audio-preview](models/gpt-4o-audio-preview.md) | 2024-12-17 | Audio | 2026-02-02 | <span class="badge badge-retired">Retired</span> | [gpt-audio](models/gpt-audio.md) |
+    | [gpt-4o-realtime-preview](models/gpt-4o-realtime-preview.md) | 2024-12-17 | Audio | 2026-02-02 | <span class="badge badge-retired">Retired</span> | [gpt-realtime](models/gpt-realtime.md) |
+    | [dall-e-3](models/dall-e-3.md) | 3 | Image And Video | 2026-02-18 | <span class="badge badge-retired">Retired</span> | [gpt-image-1-mini](models/gpt-image-1-mini.md) |
 
 
 ??? info "Deprecation vs Retirement — What's the Difference?"

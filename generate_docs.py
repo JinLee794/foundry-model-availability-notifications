@@ -432,7 +432,7 @@ def generate_retirements_page(
             category = entry.get("category", "").replace("_", " ").title()
             
             model_slug = slugify(model)
-            model_link = f"[{model}](./models/{model_slug}/)"
+            model_link = f"[{model}](models/{model_slug}.md)"
             
             replacement_cell = "-"
             if replacement:
@@ -441,7 +441,7 @@ def generate_retirements_page(
                 replacement_norm = replacement.lower().replace(".", "-")
                 if replacement_norm in model_regions:
                     region_count = len(model_regions[replacement_norm])
-                    replacement_cell = f"[{replacement}](./models/{replacement_slug}/) ({region_count} regions)"
+                    replacement_cell = f"[{replacement}](models/{replacement_slug}.md) ({region_count} regions)"
                 else:
                     replacement_cell = f"`{replacement}` (not yet available)"
             
@@ -464,7 +464,7 @@ def generate_retirements_page(
         model_slug = slugify(model)
         note_str = f" ({note})" if note else ""
         
-        fine_tuned_rows.append(f"| [{model}](./models/{model_slug}/) | {version} | {training_ret}{note_str} | {deploy_ret} |")
+        fine_tuned_rows.append(f"| [{model}](models/{model_slug}.md) | {version} | {training_ret}{note_str} | {deploy_ret} |")
     
     fine_tuned_section = ""
     if fine_tuned_rows:
@@ -630,10 +630,10 @@ def generate_index_page(
 
             replacement_cell = "-"
             if replacement:
-                replacement_cell = f"[{replacement}](models/{slugify(replacement)}/)"
+                replacement_cell = f"[{replacement}](models/{slugify(replacement)}.md)"
 
             rows.append(
-                f"    | [{model}](models/{slugify(model)}/) | {version} | {cat_label} | {retirement} | {status_badge} | {replacement_cell} |"
+                f"    | [{model}](models/{slugify(model)}.md) | {version} | {cat_label} | {retirement} | {status_badge} | {replacement_cell} |"
             )
         return chr(10).join(rows)
 
@@ -689,14 +689,14 @@ def generate_index_page(
                     recent_rows.append(
                         f'    | {timestamp:%Y-%m-%d} | '
                         f'<span class="badge-added">Added</span> | '
-                        f'[{model}](models/{slugify(model)}/) | '
+                        f'[{model}](models/{slugify(model)}.md) | '
                         f'{region} | {sku_label} |'
                     )
                 for region in sorted(sku_change.get("removed", [])):
                     recent_rows.append(
                         f'    | {timestamp:%Y-%m-%d} | '
                         f'<span class="badge-removed">Removed</span> | '
-                        f'[{model}](models/{slugify(model)}/) | '
+                        f'[{model}](models/{slugify(model)}.md) | '
                         f'{region} | {sku_label} |'
                     )
             if change.get("model_removed"):
