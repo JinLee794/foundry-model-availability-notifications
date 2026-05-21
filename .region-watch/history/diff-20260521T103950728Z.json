@@ -1,0 +1,119 @@
+{
+  "changes": {
+    "canadacentral": {
+      "all": {
+        "added": [
+          "gpt-realtime-2"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "added": [
+            "gpt-realtime-2"
+          ],
+          "label": "Deployments Standard",
+          "removed": []
+        }
+      }
+    },
+    "centralus": {
+      "all": {
+        "added": [
+          "gpt-realtime-2",
+          "gpt-realtime-translate",
+          "gpt-realtime-whisper"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "added": [
+            "gpt-realtime-2",
+            "gpt-realtime-translate",
+            "gpt-realtime-whisper"
+          ],
+          "label": "Deployments Standard",
+          "removed": []
+        }
+      }
+    },
+    "eastus2": {
+      "all": {
+        "added": [
+          "gpt-realtime-2",
+          "gpt-realtime-translate",
+          "gpt-realtime-whisper"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "added": [
+            "gpt-realtime-2",
+            "gpt-realtime-translate",
+            "gpt-realtime-whisper"
+          ],
+          "label": "Deployments Standard",
+          "removed": []
+        }
+      }
+    },
+    "francecentral": {
+      "all": {
+        "added": [
+          "gpt-realtime-2"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "added": [
+            "gpt-realtime-2"
+          ],
+          "label": "Deployments Standard",
+          "removed": []
+        }
+      }
+    },
+    "southindia": {
+      "all": {
+        "added": [
+          "gpt-realtime-2"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "added": [
+            "gpt-realtime-2"
+          ],
+          "label": "Deployments Standard",
+          "removed": []
+        }
+      }
+    },
+    "swedencentral": {
+      "all": {
+        "added": [
+          "gpt-realtime-2",
+          "gpt-realtime-translate",
+          "gpt-realtime-whisper"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "added": [
+            "gpt-realtime-2",
+            "gpt-realtime-translate",
+            "gpt-realtime-whisper"
+          ],
+          "label": "Deployments Standard",
+          "removed": []
+        }
+      }
+    }
+  },
+  "timestamp": "2026-05-21T10:39:50.728836+00:00"
+}

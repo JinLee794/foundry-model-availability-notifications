@@ -1,6 +1,121 @@
 {
-  "timestamp": "2026-05-20T10:24:50.182268+00:00",
-  "changes": {},
+  "timestamp": "2026-05-21T10:39:50.728836+00:00",
+  "changes": {
+    "canadacentral": {
+      "all": {
+        "added": [
+          "gpt-realtime-2"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "gpt-realtime-2"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "centralus": {
+      "all": {
+        "added": [
+          "gpt-realtime-2",
+          "gpt-realtime-translate",
+          "gpt-realtime-whisper"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "gpt-realtime-2",
+            "gpt-realtime-translate",
+            "gpt-realtime-whisper"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "eastus2": {
+      "all": {
+        "added": [
+          "gpt-realtime-2",
+          "gpt-realtime-translate",
+          "gpt-realtime-whisper"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "gpt-realtime-2",
+            "gpt-realtime-translate",
+            "gpt-realtime-whisper"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "francecentral": {
+      "all": {
+        "added": [
+          "gpt-realtime-2"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "gpt-realtime-2"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "southindia": {
+      "all": {
+        "added": [
+          "gpt-realtime-2"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "gpt-realtime-2"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "swedencentral": {
+      "all": {
+        "added": [
+          "gpt-realtime-2",
+          "gpt-realtime-translate",
+          "gpt-realtime-whisper"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "gpt-realtime-2",
+            "gpt-realtime-translate",
+            "gpt-realtime-whisper"
+          ],
+          "removed": []
+        }
+      }
+    }
+  },
   "current": {
     "australiaeast": {
       "all": [
@@ -252,6 +367,7 @@
         "gpt-5.5",
         "gpt-realtime",
         "gpt-realtime-1.5",
+        "gpt-realtime-2",
         "gpt-realtime-mini",
         "gpt-realtime-translate",
         "gpt-realtime-whisper",
@@ -307,6 +423,7 @@
             "gpt-5.4-nano",
             "gpt-realtime",
             "gpt-realtime-1.5",
+            "gpt-realtime-2",
             "gpt-realtime-mini",
             "gpt-realtime-translate",
             "gpt-realtime-whisper"
@@ -459,7 +576,10 @@
         "gpt-audio-mini",
         "gpt-realtime",
         "gpt-realtime-1.5",
+        "gpt-realtime-2",
         "gpt-realtime-mini",
+        "gpt-realtime-translate",
+        "gpt-realtime-whisper",
         "o1",
         "o3",
         "o3-mini",
@@ -543,7 +663,10 @@
             "gpt-audio-mini",
             "gpt-realtime",
             "gpt-realtime-1.5",
+            "gpt-realtime-2",
             "gpt-realtime-mini",
+            "gpt-realtime-translate",
+            "gpt-realtime-whisper",
             "o1",
             "o3",
             "o3-mini",
@@ -1504,7 +1627,10 @@
         "gpt-image-2",
         "gpt-realtime",
         "gpt-realtime-1.5",
+        "gpt-realtime-2",
         "gpt-realtime-mini",
+        "gpt-realtime-translate",
+        "gpt-realtime-whisper",
         "model-router",
         "o1",
         "o3",
@@ -1601,7 +1727,10 @@
             "gpt-image-2",
             "gpt-realtime",
             "gpt-realtime-1.5",
+            "gpt-realtime-2",
             "gpt-realtime-mini",
+            "gpt-realtime-translate",
+            "gpt-realtime-whisper",
             "model-router",
             "o1",
             "o3",
@@ -2066,6 +2195,7 @@
         "gpt-5.5",
         "gpt-realtime",
         "gpt-realtime-1.5",
+        "gpt-realtime-2",
         "gpt-realtime-mini",
         "gpt-realtime-translate",
         "gpt-realtime-whisper",
@@ -2147,6 +2277,7 @@
             "gpt-5.4-nano",
             "gpt-realtime",
             "gpt-realtime-1.5",
+            "gpt-realtime-2",
             "gpt-realtime-mini",
             "gpt-realtime-translate",
             "gpt-realtime-whisper",
@@ -9806,6 +9937,7 @@
         "gpt-5.5",
         "gpt-realtime",
         "gpt-realtime-1.5",
+        "gpt-realtime-2",
         "gpt-realtime-mini",
         "gpt-realtime-translate",
         "gpt-realtime-whisper",
@@ -9889,6 +10021,7 @@
             "gpt-5.4-nano",
             "gpt-realtime",
             "gpt-realtime-1.5",
+            "gpt-realtime-2",
             "gpt-realtime-mini",
             "gpt-realtime-translate",
             "gpt-realtime-whisper",
@@ -10042,7 +10175,10 @@
         "gpt-image-2",
         "gpt-realtime",
         "gpt-realtime-1.5",
+        "gpt-realtime-2",
         "gpt-realtime-mini",
+        "gpt-realtime-translate",
+        "gpt-realtime-whisper",
         "model-router",
         "o1",
         "o3",
@@ -10140,7 +10276,10 @@
             "gpt-image-2",
             "gpt-realtime",
             "gpt-realtime-1.5",
+            "gpt-realtime-2",
             "gpt-realtime-mini",
+            "gpt-realtime-translate",
+            "gpt-realtime-whisper",
             "model-router",
             "o1",
             "o3",
