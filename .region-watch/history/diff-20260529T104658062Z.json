@@ -1,0 +1,22 @@
+{
+  "changes": {
+    "westus3": {
+      "all": {
+        "added": [
+          "gpt-chat-latest"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "added": [
+            "gpt-chat-latest"
+          ],
+          "label": "Deployments Standard",
+          "removed": []
+        }
+      }
+    }
+  },
+  "timestamp": "2026-05-29T10:46:58.062968+00:00"
+}

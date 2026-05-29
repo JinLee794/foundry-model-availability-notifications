@@ -1,6 +1,24 @@
 {
-  "timestamp": "2026-05-28T10:56:44.142529+00:00",
-  "changes": {},
+  "timestamp": "2026-05-29T10:46:58.062968+00:00",
+  "changes": {
+    "westus3": {
+      "all": {
+        "added": [
+          "gpt-chat-latest"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "gpt-chat-latest"
+          ],
+          "removed": []
+        }
+      }
+    }
+  },
   "current": {
     "australiaeast": {
       "all": [
@@ -11277,6 +11295,7 @@
         "gpt-5.4-mini",
         "gpt-5.4-nano",
         "gpt-5.5",
+        "gpt-chat-latest",
         "gpt-image-1",
         "gpt-image-1-mini",
         "gpt-image-1.5",
@@ -11354,6 +11373,7 @@
             "gpt-5.4",
             "gpt-5.4-mini",
             "gpt-5.4-nano",
+            "gpt-chat-latest",
             "gpt-image-1",
             "gpt-image-1-mini",
             "gpt-image-1.5",
