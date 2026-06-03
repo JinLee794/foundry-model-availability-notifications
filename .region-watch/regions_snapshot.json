@@ -1558,6 +1558,7 @@
           "gpt-5.2-codex",
           "gpt-5.3-codex",
           "gpt-5.4",
+          "gpt-5.4-mini",
           "gpt-5.5",
           "o1",
           "o3",
@@ -1639,7 +1640,9 @@
       "o1",
       "o3",
       "o3-mini",
-      "o4-mini"
+      "o4-mini",
+      "text-embedding-3-large",
+      "text-embedding-3-small"
     ],
     "skus": {
       "deployments-provisioned": {
@@ -1658,6 +1661,7 @@
           "gpt-5.2-codex",
           "gpt-5.3-codex",
           "gpt-5.4",
+          "gpt-5.4-mini",
           "gpt-5.5",
           "o1",
           "o3",
@@ -1668,6 +1672,11 @@
       "deployments-standard": {
         "label": "Deployments Standard",
         "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
           "gpt-4o-mini-transcribe",
           "gpt-4o-transcribe",
           "gpt-4o-transcribe-diarize",
@@ -1691,7 +1700,9 @@
           "gpt-realtime-2",
           "gpt-realtime-mini",
           "gpt-realtime-translate",
-          "gpt-realtime-whisper"
+          "gpt-realtime-whisper",
+          "text-embedding-3-large",
+          "text-embedding-3-small"
         ]
       }
     }
@@ -1762,6 +1773,7 @@
           "gpt-5.2-codex",
           "gpt-5.3-codex",
           "gpt-5.4",
+          "gpt-5.4-mini",
           "gpt-5.5",
           "o1",
           "o3",
@@ -1886,6 +1898,7 @@
           "gpt-5.2-codex",
           "gpt-5.3-codex",
           "gpt-5.4",
+          "gpt-5.4-mini",
           "gpt-5.5",
           "o1",
           "o3",
@@ -2131,6 +2144,7 @@
           "gpt-5.2-codex",
           "gpt-5.3-codex",
           "gpt-5.4",
+          "gpt-5.4-mini",
           "gpt-5.5",
           "o1",
           "o3",
@@ -2267,6 +2281,7 @@
           "gpt-5.2-codex",
           "gpt-5.3-codex",
           "gpt-5.4",
+          "gpt-5.4-mini",
           "gpt-5.5",
           "o1",
           "o3",
@@ -8254,6 +8269,7 @@
           "gpt-5.2-codex",
           "gpt-5.3-codex",
           "gpt-5.4",
+          "gpt-5.4-mini",
           "gpt-5.5",
           "o1",
           "o3",
@@ -8287,6 +8303,7 @@
           "gpt-5.4",
           "gpt-5.4-mini",
           "gpt-5.4-nano",
+          "gpt-5.5",
           "o1",
           "o3",
           "o3-mini",
@@ -9653,6 +9670,7 @@
           "gpt-5.2-codex",
           "gpt-5.3-codex",
           "gpt-5.4",
+          "gpt-5.4-mini",
           "gpt-5.5",
           "o1",
           "o3",
@@ -9730,7 +9748,8 @@
       "o3",
       "o3-mini",
       "o4-mini",
-      "text-embedding-3-large"
+      "text-embedding-3-large",
+      "text-embedding-3-small"
     ],
     "skus": {
       "deployments-provisioned": {
@@ -9762,6 +9781,8 @@
           "gpt-4.1",
           "gpt-4.1-mini",
           "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
           "gpt-5",
           "gpt-5-chat",
           "gpt-5-codex",
@@ -9782,7 +9803,8 @@
           "gpt-5.4-nano",
           "o3",
           "o4-mini",
-          "text-embedding-3-large"
+          "text-embedding-3-large",
+          "text-embedding-3-small"
         ]
       }
     }
@@ -10319,7 +10341,9 @@
       "o1",
       "o3",
       "o3-mini",
-      "o4-mini"
+      "o4-mini",
+      "text-embedding-3-large",
+      "text-embedding-3-small"
     ],
     "skus": {
       "deployments-provisioned": {
@@ -10348,6 +10372,11 @@
       "deployments-standard": {
         "label": "Deployments Standard",
         "regions": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
           "gpt-5-chat",
           "gpt-5-codex",
           "gpt-5-pro",
@@ -10362,7 +10391,9 @@
           "gpt-5.3-codex",
           "gpt-5.4",
           "gpt-5.4-mini",
-          "gpt-5.4-nano"
+          "gpt-5.4-nano",
+          "text-embedding-3-large",
+          "text-embedding-3-small"
         ]
       }
     }
@@ -11206,6 +11237,7 @@
           "gpt-5.2-codex",
           "gpt-5.3-codex",
           "gpt-5.4",
+          "gpt-5.4-mini",
           "gpt-5.5",
           "o1",
           "o3",
@@ -11352,6 +11384,7 @@
           "gpt-5.4",
           "gpt-5.4-mini",
           "gpt-5.4-nano",
+          "gpt-5.5",
           "gpt-chat-latest",
           "gpt-image-1",
           "gpt-image-1-mini",

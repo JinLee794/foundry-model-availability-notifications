@@ -1,0 +1,221 @@
+{
+  "changes": {
+    "brazilsouth": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "added": [
+            "gpt-5.4-mini"
+          ],
+          "label": "Deployments Provisioned",
+          "removed": []
+        }
+      }
+    },
+    "canadacentral": {
+      "all": {
+        "added": [
+          "text-embedding-3-large",
+          "text-embedding-3-small"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "added": [
+            "gpt-5.4-mini"
+          ],
+          "label": "Deployments Provisioned",
+          "removed": []
+        },
+        "deployments-standard": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "text-embedding-3-large",
+            "text-embedding-3-small"
+          ],
+          "label": "Deployments Standard",
+          "removed": []
+        }
+      }
+    },
+    "canadaeast": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "added": [
+            "gpt-5.4-mini"
+          ],
+          "label": "Deployments Provisioned",
+          "removed": []
+        }
+      }
+    },
+    "centralus": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "added": [
+            "gpt-5.4-mini"
+          ],
+          "label": "Deployments Provisioned",
+          "removed": []
+        }
+      }
+    },
+    "eastus": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "added": [
+            "gpt-5.4-mini"
+          ],
+          "label": "Deployments Provisioned",
+          "removed": []
+        }
+      }
+    },
+    "eastus2": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "added": [
+            "gpt-5.4-mini"
+          ],
+          "label": "Deployments Provisioned",
+          "removed": []
+        }
+      }
+    },
+    "northcentralus": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "added": [
+            "gpt-5.4-mini"
+          ],
+          "label": "Deployments Provisioned",
+          "removed": []
+        },
+        "deployments-standard": {
+          "added": [
+            "gpt-5.5"
+          ],
+          "label": "Deployments Standard",
+          "removed": []
+        }
+      }
+    },
+    "southcentralus": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "added": [
+            "gpt-5.4-mini"
+          ],
+          "label": "Deployments Provisioned",
+          "removed": []
+        }
+      }
+    },
+    "southeastasia": {
+      "all": {
+        "added": [
+          "text-embedding-3-small"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "added": [
+            "gpt-4o",
+            "gpt-4o-mini",
+            "text-embedding-3-small"
+          ],
+          "label": "Deployments Standard",
+          "removed": []
+        }
+      }
+    },
+    "switzerlandwest": {
+      "all": {
+        "added": [
+          "text-embedding-3-large",
+          "text-embedding-3-small"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "added": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini",
+            "text-embedding-3-large",
+            "text-embedding-3-small"
+          ],
+          "label": "Deployments Standard",
+          "removed": []
+        }
+      }
+    },
+    "westus": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "added": [
+            "gpt-5.4-mini"
+          ],
+          "label": "Deployments Provisioned",
+          "removed": []
+        }
+      }
+    },
+    "westus3": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "added": [
+            "gpt-5.5"
+          ],
+          "label": "Deployments Standard",
+          "removed": []
+        }
+      }
+    }
+  },
+  "timestamp": "2026-06-03T11:56:48.839769+00:00"
+}
