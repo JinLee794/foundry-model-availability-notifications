@@ -1,6 +1,6 @@
 # AI Foundry Model Availability by Region
 
-_Last updated: 2026-06-03 11:56 UTC_
+_Last updated: 2026-06-04 10:38 UTC_
 
 - Models tracked: **111**
 - Regions in snapshot: **92**
@@ -307,7 +307,7 @@ SKU labels observed:
 - `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
 - `gpt-5.4-mini` — Deployments Provisioned, Deployments Standard, Global coverage
 - `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
 - `gpt-audio` — Deployments Standard, Global coverage
 - `gpt-audio-1.5` — Deployments Standard, Global coverage
 - `gpt-audio-mini` — Deployments Standard, Global coverage
@@ -403,7 +403,7 @@ SKU labels observed:
 - `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
 - `gpt-5.4-mini` — Deployments Standard, Global coverage
 - `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
 - `gpt-realtime` — Deployments Standard, Global coverage
 - `gpt-realtime-1.5` — Deployments Standard, Global coverage
 - `gpt-realtime-2` — Deployments Standard, Global coverage
@@ -422,11 +422,11 @@ SKU labels observed:
 <details>
 <summary>canadacentral — 38 regions across 3 SKU labels</summary>
 
-- `gpt-4.1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1` — Deployments Provisioned, Global coverage
+- `gpt-4.1-mini` — Deployments Provisioned, Global coverage
+- `gpt-4.1-nano` — Deployments Provisioned, Global coverage
+- `gpt-4o` — Deployments Provisioned, Global coverage
+- `gpt-4o-mini` — Deployments Provisioned, Global coverage
 - `gpt-4o-mini-transcribe` — Deployments Standard, Global coverage
 - `gpt-4o-transcribe` — Deployments Standard, Global coverage
 - `gpt-4o-transcribe-diarize` — Deployments Standard, Global coverage
@@ -650,7 +650,7 @@ SKU labels observed:
 - `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
 - `gpt-5.4-mini` — Deployments Standard, Global coverage
 - `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
 - `o1` — Deployments Provisioned, Deployments Standard, Global coverage
 - `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
 - `o3-deep-research` — Deployments Standard, Global coverage
@@ -726,7 +726,7 @@ SKU labels observed:
 - `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
 - `gpt-5.4-mini` — Deployments Standard, Global coverage
 - `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
 - `o1` — Deployments Provisioned, Deployments Standard, Global coverage
 - `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
 - `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
@@ -763,7 +763,7 @@ SKU labels observed:
 - `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
 - `gpt-5.4-mini` — Deployments Standard, Global coverage
 - `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
 - `o1` — Deployments Provisioned, Deployments Standard, Global coverage
 - `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
 - `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
@@ -800,7 +800,7 @@ SKU labels observed:
 - `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
 - `gpt-5.4-mini` — Deployments Provisioned, Deployments Standard, Global coverage
 - `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
 - `o1` — Deployments Provisioned, Deployments Standard, Global coverage
 - `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
 - `o3-deep-research` — Deployments Standard, Global coverage
@@ -945,7 +945,7 @@ SKU labels observed:
 - `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
 - `gpt-5.4-mini` — Deployments Provisioned, Deployments Standard, Global coverage
 - `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
 - `o1` — Deployments Provisioned, Deployments Standard, Global coverage
 - `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
 - `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
@@ -981,7 +981,7 @@ SKU labels observed:
 - `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
 - `gpt-5.4-mini` — Deployments Standard, Global coverage
 - `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
 - `o1` — Deployments Provisioned, Deployments Standard, Global coverage
 - `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
 - `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
@@ -1017,7 +1017,7 @@ SKU labels observed:
 - `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
 - `gpt-5.4-mini` — Deployments Standard, Global coverage
 - `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
 - `o1` — Deployments Provisioned, Deployments Standard, Global coverage
 - `o3` — Deployments Provisioned, Deployments Standard, Global coverage
 - `o3-mini` — Deployments Provisioned, Deployments Standard, Global coverage
@@ -1161,7 +1161,7 @@ SKU labels observed:
 - `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
 - `gpt-5.4-mini` — Deployments Standard, Global coverage
 - `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Global coverage
+- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
 - `o1` — Deployments Provisioned, Deployments Standard, Global coverage
 - `o3` — Deployments Provisioned, Deployments Standard, Global coverage
 - `o3-mini` — Deployments Provisioned, Deployments Standard, Global coverage
@@ -2123,8 +2123,8 @@ SKU labels observed:
 - `gpt-4.1` — Deployments Provisioned, Deployments Standard, Global coverage
 - `gpt-4.1-mini` — Deployments Provisioned, Deployments Standard, Global coverage
 - `gpt-4.1-nano` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4o` — Deployments Provisioned, Global coverage
+- `gpt-4o-mini` — Deployments Provisioned, Global coverage
 - `gpt-5` — Deployments Provisioned, Deployments Standard, Global coverage
 - `gpt-5-chat` — Deployments Standard, Global coverage
 - `gpt-5-codex` — Deployments Standard, Global coverage
@@ -2325,11 +2325,11 @@ SKU labels observed:
 <details>
 <summary>switzerlandwest — 29 regions across 3 SKU labels</summary>
 
-- `gpt-4.1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Provisioned, Deployments Standard, Global coverage
+- `gpt-4.1` — Deployments Provisioned, Global coverage
+- `gpt-4.1-mini` — Deployments Provisioned, Global coverage
+- `gpt-4.1-nano` — Deployments Provisioned, Global coverage
+- `gpt-4o` — Deployments Provisioned, Global coverage
+- `gpt-4o-mini` — Deployments Provisioned, Global coverage
 - `gpt-5` — Deployments Provisioned, Global coverage
 - `gpt-5-chat` — Deployments Standard, Global coverage
 - `gpt-5-codex` — Deployments Standard, Global coverage
@@ -3422,6 +3422,7 @@ SKU labels observed:
 
 ## Recent changes
 
+- **2026-06-04 10:38 UTC** — canadacentral: Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, and gpt-4o-mini | centralus: Deployments Standard added gpt-5.5 | eastus: Deployments Standard added gpt-5.5 | francecentral: Deployments Standard added gpt-5.5 | germanywestcentral: Deployments Standard added gpt-5.5 | italynorth: Deployments Standard added gpt-5.5 | norwayeast: Deployments Standard added gpt-5.5 | southeastasia: Deployments Standard removed gpt-4o and gpt-4o-mini | spaincentral: Deployments Standard added gpt-5.5 | switzerlandnorth: Deployments Standard added gpt-5.5 | switzerlandwest: Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, and gpt-4o-mini | westeurope: Deployments Standard added gpt-5.5 | westus: Deployments Standard added gpt-5.5
 - **2026-06-03 11:56 UTC** — brazilsouth: Deployments Provisioned added gpt-5.4-mini | canadacentral: Global coverage added text-embedding-3-large and text-embedding-3-small; Deployments Provisioned added gpt-5.4-mini; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, text-embedding-3-large, and text-embedding-3-small | canadaeast: Deployments Provisioned added gpt-5.4-mini | centralus: Deployments Provisioned added gpt-5.4-mini | eastus: Deployments Provisioned added gpt-5.4-mini | eastus2: Deployments Provisioned added gpt-5.4-mini | northcentralus: Deployments Provisioned added gpt-5.4-mini; Deployments Standard added gpt-5.5 | southcentralus: Deployments Provisioned added gpt-5.4-mini | southeastasia: Global coverage added text-embedding-3-small; Deployments Standard added gpt-4o, gpt-4o-mini, and text-embedding-3-small | switzerlandwest: Global coverage added text-embedding-3-large and text-embedding-3-small; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, text-embedding-3-large, and text-embedding-3-small | westus: Deployments Provisioned added gpt-5.4-mini | westus3: Deployments Standard added gpt-5.5
 - **2026-05-29 10:46 UTC** — westus3: Global coverage added gpt-chat-latest; Deployments Standard added gpt-chat-latest
 - **2026-05-21 10:39 UTC** — canadacentral: Global coverage added gpt-realtime-2; Deployments Standard added gpt-realtime-2 | centralus: Global coverage added gpt-realtime-2, gpt-realtime-translate, and gpt-realtime-whisper; Deployments Standard added gpt-realtime-2, gpt-realtime-translate, and gpt-realtime-whisper | eastus2: Global coverage added gpt-realtime-2, gpt-realtime-translate, and gpt-realtime-whisper; Deployments Standard added gpt-realtime-2, gpt-realtime-translate, and gpt-realtime-whisper | francecentral: Global coverage added gpt-realtime-2; Deployments Standard added gpt-realtime-2 | southindia: Global coverage added gpt-realtime-2; Deployments Standard added gpt-realtime-2 | swedencentral: Global coverage added gpt-realtime-2, gpt-realtime-translate, and gpt-realtime-whisper; Deployments Standard added gpt-realtime-2, gpt-realtime-translate, and gpt-realtime-whisper

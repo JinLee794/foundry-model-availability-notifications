@@ -1,64 +1,22 @@
 {
-  "timestamp": "2026-06-03T11:56:48.839769+00:00",
+  "timestamp": "2026-06-04T10:38:58.558199+00:00",
   "changes": {
-    "brazilsouth": {
+    "canadacentral": {
       "all": {
         "added": [],
         "removed": []
       },
       "skus": {
-        "deployments-provisioned": {
-          "label": "Deployments Provisioned",
-          "added": [
-            "gpt-5.4-mini"
-          ],
-          "removed": []
-        }
-      }
-    },
-    "canadacentral": {
-      "all": {
-        "added": [
-          "text-embedding-3-large",
-          "text-embedding-3-small"
-        ],
-        "removed": []
-      },
-      "skus": {
-        "deployments-provisioned": {
-          "label": "Deployments Provisioned",
-          "added": [
-            "gpt-5.4-mini"
-          ],
-          "removed": []
-        },
         "deployments-standard": {
           "label": "Deployments Standard",
-          "added": [
+          "added": [],
+          "removed": [
             "gpt-4.1",
             "gpt-4.1-mini",
             "gpt-4.1-nano",
             "gpt-4o",
-            "gpt-4o-mini",
-            "text-embedding-3-large",
-            "text-embedding-3-small"
-          ],
-          "removed": []
-        }
-      }
-    },
-    "canadaeast": {
-      "all": {
-        "added": [],
-        "removed": []
-      },
-      "skus": {
-        "deployments-provisioned": {
-          "label": "Deployments Provisioned",
-          "added": [
-            "gpt-5.4-mini"
-          ],
-          "removed": []
+            "gpt-4o-mini"
+          ]
         }
       }
     },
@@ -68,10 +26,10 @@
         "removed": []
       },
       "skus": {
-        "deployments-provisioned": {
-          "label": "Deployments Provisioned",
+        "deployments-standard": {
+          "label": "Deployments Standard",
           "added": [
-            "gpt-5.4-mini"
+            "gpt-5.5"
           ],
           "removed": []
         }
@@ -83,43 +41,6 @@
         "removed": []
       },
       "skus": {
-        "deployments-provisioned": {
-          "label": "Deployments Provisioned",
-          "added": [
-            "gpt-5.4-mini"
-          ],
-          "removed": []
-        }
-      }
-    },
-    "eastus2": {
-      "all": {
-        "added": [],
-        "removed": []
-      },
-      "skus": {
-        "deployments-provisioned": {
-          "label": "Deployments Provisioned",
-          "added": [
-            "gpt-5.4-mini"
-          ],
-          "removed": []
-        }
-      }
-    },
-    "northcentralus": {
-      "all": {
-        "added": [],
-        "removed": []
-      },
-      "skus": {
-        "deployments-provisioned": {
-          "label": "Deployments Provisioned",
-          "added": [
-            "gpt-5.4-mini"
-          ],
-          "removed": []
-        },
         "deployments-standard": {
           "label": "Deployments Standard",
           "added": [
@@ -129,16 +50,61 @@
         }
       }
     },
-    "southcentralus": {
+    "francecentral": {
       "all": {
         "added": [],
         "removed": []
       },
       "skus": {
-        "deployments-provisioned": {
-          "label": "Deployments Provisioned",
+        "deployments-standard": {
+          "label": "Deployments Standard",
           "added": [
-            "gpt-5.4-mini"
+            "gpt-5.5"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "germanywestcentral": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "gpt-5.5"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "italynorth": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "gpt-5.5"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "norwayeast": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "gpt-5.5"
           ],
           "removed": []
         }
@@ -146,18 +112,45 @@
     },
     "southeastasia": {
       "all": {
-        "added": [
-          "text-embedding-3-small"
-        ],
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [],
+          "removed": [
+            "gpt-4o",
+            "gpt-4o-mini"
+          ]
+        }
+      }
+    },
+    "spaincentral": {
+      "all": {
+        "added": [],
         "removed": []
       },
       "skus": {
         "deployments-standard": {
           "label": "Deployments Standard",
           "added": [
-            "gpt-4o",
-            "gpt-4o-mini",
-            "text-embedding-3-small"
+            "gpt-5.5"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "switzerlandnorth": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "gpt-5.5"
           ],
           "removed": []
         }
@@ -165,44 +158,39 @@
     },
     "switzerlandwest": {
       "all": {
-        "added": [
-          "text-embedding-3-large",
-          "text-embedding-3-small"
-        ],
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [],
+          "removed": [
+            "gpt-4.1",
+            "gpt-4.1-mini",
+            "gpt-4.1-nano",
+            "gpt-4o",
+            "gpt-4o-mini"
+          ]
+        }
+      }
+    },
+    "westeurope": {
+      "all": {
+        "added": [],
         "removed": []
       },
       "skus": {
         "deployments-standard": {
           "label": "Deployments Standard",
           "added": [
-            "gpt-4.1",
-            "gpt-4.1-mini",
-            "gpt-4.1-nano",
-            "gpt-4o",
-            "gpt-4o-mini",
-            "text-embedding-3-large",
-            "text-embedding-3-small"
+            "gpt-5.5"
           ],
           "removed": []
         }
       }
     },
     "westus": {
-      "all": {
-        "added": [],
-        "removed": []
-      },
-      "skus": {
-        "deployments-provisioned": {
-          "label": "Deployments Provisioned",
-          "added": [
-            "gpt-5.4-mini"
-          ],
-          "removed": []
-        }
-      }
-    },
-    "westus3": {
       "all": {
         "added": [],
         "removed": []
@@ -509,11 +497,6 @@
         "deployments-standard": {
           "label": "Deployments Standard",
           "regions": [
-            "gpt-4.1",
-            "gpt-4.1-mini",
-            "gpt-4.1-nano",
-            "gpt-4o",
-            "gpt-4o-mini",
             "gpt-4o-mini-transcribe",
             "gpt-4o-transcribe",
             "gpt-4o-transcribe-diarize",
@@ -773,6 +756,7 @@
             "gpt-5.4",
             "gpt-5.4-mini",
             "gpt-5.4-nano",
+            "gpt-5.5",
             "gpt-audio",
             "gpt-audio-1.5",
             "gpt-audio-mini",
@@ -1688,6 +1672,7 @@
             "gpt-5.4",
             "gpt-5.4-mini",
             "gpt-5.4-nano",
+            "gpt-5.5",
             "o1",
             "o3",
             "o3-mini",
@@ -2392,6 +2377,7 @@
             "gpt-5.4",
             "gpt-5.4-mini",
             "gpt-5.4-nano",
+            "gpt-5.5",
             "gpt-realtime",
             "gpt-realtime-1.5",
             "gpt-realtime-2",
@@ -2508,6 +2494,7 @@
             "gpt-5.4",
             "gpt-5.4-mini",
             "gpt-5.4-nano",
+            "gpt-5.5",
             "o1",
             "o3",
             "o3-mini",
@@ -7599,6 +7586,7 @@
             "gpt-5.4",
             "gpt-5.4-mini",
             "gpt-5.4-nano",
+            "gpt-5.5",
             "o1",
             "o3",
             "o3-mini",
@@ -8639,6 +8627,7 @@
             "gpt-5.4",
             "gpt-5.4-mini",
             "gpt-5.4-nano",
+            "gpt-5.5",
             "o1",
             "o3",
             "o3-deep-research",
@@ -10001,8 +9990,6 @@
             "gpt-4.1",
             "gpt-4.1-mini",
             "gpt-4.1-nano",
-            "gpt-4o",
-            "gpt-4o-mini",
             "gpt-5",
             "gpt-5-chat",
             "gpt-5-codex",
@@ -10245,6 +10232,7 @@
             "gpt-5.4",
             "gpt-5.4-mini",
             "gpt-5.4-nano",
+            "gpt-5.5",
             "o1",
             "o3",
             "o3-mini",
@@ -10521,6 +10509,7 @@
             "gpt-5.4",
             "gpt-5.4-mini",
             "gpt-5.4-nano",
+            "gpt-5.5",
             "o1",
             "o3",
             "o3-mini",
@@ -10592,11 +10581,6 @@
         "deployments-standard": {
           "label": "Deployments Standard",
           "regions": [
-            "gpt-4.1",
-            "gpt-4.1-mini",
-            "gpt-4.1-nano",
-            "gpt-4o",
-            "gpt-4o-mini",
             "gpt-5-chat",
             "gpt-5-codex",
             "gpt-5-pro",
@@ -11378,6 +11362,7 @@
             "gpt-5.4",
             "gpt-5.4-mini",
             "gpt-5.4-nano",
+            "gpt-5.5",
             "o1",
             "o3",
             "o3-mini",
@@ -11491,6 +11476,7 @@
             "gpt-5.4",
             "gpt-5.4-mini",
             "gpt-5.4-nano",
+            "gpt-5.5",
             "o1",
             "o3",
             "o3-deep-research",
