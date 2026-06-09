@@ -324,8 +324,26 @@ def parse_table(table: str) -> dict:
     if not header_cells:
         return {}
 
+    first_header = header_cells[0].lower()
+    header_regions = [format_region_name(cell) for cell in header_cells]
     header_models = [parse_model_names(cell) for cell in header_cells]
     model_regions = defaultdict(set)
+
+    if "model" in first_header and any(header_regions[1:]):
+        for row in rows[2:]:  # skip separator row
+            cells = split_cells(row)
+            if not cells:
+                continue
+            models = parse_model_names(cells[0])
+            if not models:
+                continue
+            for idx, region in enumerate(header_regions):
+                if idx == 0 or idx >= len(cells) or not region:
+                    continue
+                if is_available_cell(cells[idx]):
+                    for model in models:
+                        model_regions[model].add(region)
+        return model_regions
 
     for row in rows[2:]:  # skip separator row
         cells = split_cells(row)

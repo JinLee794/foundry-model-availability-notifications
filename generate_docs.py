@@ -6,8 +6,10 @@ from __future__ import annotations
 import json
 from collections import defaultdict
 from datetime import datetime, timezone
+from html import escape as html_escape
 from pathlib import Path
 from typing import Dict, List, Set, Tuple
+from urllib.parse import quote
 
 HERE = Path(__file__).resolve().parent
 REGION_WATCH_DIR = HERE / ".region-watch"
@@ -75,6 +77,23 @@ SKU_CATEGORIES = {
 # Provisioned sub-SKU groupings for granular column display
 PROVISIONED_PTU_SKUS: Set[str] = {"Provisioned (PTU managed)"}
 PROVISIONED_GLOBAL_SKUS: Set[str] = {"Provisioned global", "Global Provisioned Managed"}
+
+KNOWN_AZURE_REGION_NAMES: Set[str] = {
+    "East US", "East US 2", "West US", "West US 2", "West US 3",
+    "Central US", "North Central US", "South Central US", "West Central US",
+    "Brazil South", "Brazil Southeast", "Canada Central", "Canada East",
+    "North Europe", "West Europe", "UK South", "UK West", "France Central",
+    "France South", "Germany North", "Germany West Central", "Switzerland North",
+    "Switzerland West", "Norway East", "Norway West", "Sweden Central",
+    "Sweden South", "Spain Central", "Italy North", "Poland Central",
+    "Netherlands West", "Finland Central", "UAE North", "UAE Central",
+    "Qatar Central", "Saudi Arabia Central", "South Africa North",
+    "South Africa West", "East Asia", "Southeast Asia", "Japan East",
+    "Japan West", "Korea Central", "Korea South", "Australia East",
+    "Australia Southeast", "Australia Central", "Australia Central 2",
+    "India Central", "India South", "West India", "Central India", "South India",
+    "Jio India West", "Jio India Central",
+}
 
 
 def get_sku_category(label: str) -> str:
@@ -231,6 +250,268 @@ def slugify(name: str) -> str:
     return name.lower().replace(" ", "-").replace(".", "-")
 
 
+def normalize_lookup_key(value: str) -> str:
+    """Normalize names for model/region lookup comparisons."""
+    return "".join(ch for ch in str(value).lower() if ch.isalnum())
+
+
+def normalize_sku_label(label: str) -> str:
+    """Normalize SKU labels for display and filtering."""
+    return SKU_LABEL_NORMALIZATION.get(label, label)
+
+
+def query_url(base: str, params: Dict[str, str]) -> str:
+    """Build a relative URL with encoded query-string filters."""
+    query_parts = []
+    for key, value in params.items():
+        if value in (None, "", "-"):
+            continue
+        query_parts.append(f"{quote(str(key), safe='')}={quote(str(value), safe='')}")
+    if not query_parts:
+        return base
+    return f"{base}?{'&'.join(query_parts)}"
+
+
+def model_link(model: str, prefix: str = "models/", class_name: str = "") -> str:
+    """Return a model detail link."""
+    class_attr = f' class="{class_name}"' if class_name else ""
+    return f'<a{class_attr} href="{prefix}{slugify(model)}/">{html_escape(model)}</a>'
+
+
+def region_link(region: str, prefix: str = "by-region/", class_name: str = "region-badge") -> str:
+    """Return a link to the region explorer with the region filter applied."""
+    if region.startswith("("):
+        return html_escape(region)
+    class_attr = f' class="{class_name}"' if class_name else ""
+    href = query_url(prefix, {"region": region})
+    return f'<a{class_attr} href="{href}">{html_escape(region)}</a>'
+
+
+def sku_link(sku_label: str, prefix: str = "by-sku/", class_name: str = "change-link-pill") -> str:
+    """Return a link to the SKU explorer with the SKU filter applied."""
+    if sku_label in ("", "-"):
+        return "-"
+    class_attr = f' class="{class_name}"' if class_name else ""
+    href = query_url(prefix, {"sku": sku_label})
+    return f'<a{class_attr} href="{href}">{html_escape(sku_label)}</a>'
+
+
+def history_link(prefix: str = "history/", **params: str) -> str:
+    """Return a link to the change history with filters applied."""
+    return query_url(prefix, params)
+
+
+def flatten_history_changes(
+    history: List[Dict],
+    known_regions: Set[str] = None,
+    known_models: Set[str] = None,
+    limit: int = None,
+) -> List[Dict]:
+    """Flatten history payloads into model/region/SKU change rows.
+
+    Older history snapshots were region-centric, while current snapshots are
+    model-centric. This normalizes both shapes so rendered history stays useful.
+    """
+    rows: List[Dict] = []
+    entries = history[:limit] if limit else history
+    region_candidates = set(known_regions or set()) | KNOWN_AZURE_REGION_NAMES
+    region_lookup = {
+        normalize_lookup_key(region): region
+        for region in region_candidates
+        if region in KNOWN_AZURE_REGION_NAMES
+    }
+    region_keys = set(region_lookup.keys())
+    model_lookup = {
+        normalize_lookup_key(model): model
+        for model in (known_models or set())
+        if normalize_lookup_key(model) not in region_keys
+    }
+
+    for entry in entries:
+        timestamp = entry.get("timestamp")
+        changes = entry.get("changes", {})
+        if not timestamp or not isinstance(changes, dict):
+            continue
+        has_model_subjects = bool(model_lookup) and any(
+            normalize_lookup_key(subject) in model_lookup
+            for subject in changes
+        )
+
+        for subject, change in sorted(changes.items(), key=lambda item: item[0].lower()):
+            if not isinstance(change, dict):
+                continue
+            subject_region = region_lookup.get(normalize_lookup_key(subject))
+            if subject_region and has_model_subjects:
+                continue
+            skus_data = change.get("skus", {})
+
+            for sku_key, sku_change in skus_data.items():
+                if not isinstance(sku_change, dict):
+                    continue
+                sku_label = normalize_sku_label(sku_change.get("label", sku_key))
+
+                for change_type in ("added", "removed"):
+                    for value in sorted(sku_change.get(change_type, [])):
+                        if subject_region:
+                            model = value
+                            region = subject_region
+                        else:
+                            model = subject
+                            region = value
+                        rows.append({
+                            "timestamp": timestamp,
+                            "change": change_type,
+                            "model": model,
+                            "region": region,
+                            "sku": sku_label,
+                        })
+
+            if change.get("model_removed") and not subject_region:
+                rows.append({
+                    "timestamp": timestamp,
+                    "change": "removed",
+                    "model": subject,
+                    "region": "(entire model)",
+                    "sku": "-",
+                })
+
+    return sorted(
+        rows,
+        key=lambda row: (
+            -row["timestamp"].timestamp(),
+            0 if row["change"] == "removed" else 1,
+            row["model"].lower(),
+            row["sku"].lower(),
+            row["region"].lower(),
+        ),
+    )
+
+
+def pluralize(count: int, singular: str, plural: str = None) -> str:
+    """Return a count-aware label."""
+    label = singular if count == 1 else (plural or f"{singular}s")
+    return f"{count} {label}"
+
+
+def format_digest_date(timestamp: datetime) -> str:
+    """Format a compact date without platform-specific strftime flags."""
+    return f"{timestamp:%b} {timestamp.day}, {timestamp:%Y}"
+
+
+def format_region_links(regions: Set[str], max_visible: int = 3) -> str:
+    """Format region links for a compact digest row."""
+    sorted_regions = sorted(regions)
+    visible = sorted_regions[:max_visible]
+    parts = [region_link(region) for region in visible]
+    remaining = len(sorted_regions) - len(visible)
+    if remaining:
+        parts.append(f'<span class="change-more-count">+{remaining} more</span>')
+    return " ".join(parts)
+
+
+def build_recent_changes_block(history: List[Dict], all_regions: Set[str], known_models: Set[str]) -> str:
+    """Build the grouped recent availability digest for the home page."""
+    rows = flatten_history_changes(history, all_regions, known_models, limit=10)
+    if not rows:
+        return f"""<div class="changes-digest" aria-label="Recent availability changes">
+    <div class="changes-digest__header">
+        <div>
+            <span class="changes-digest__eyebrow">Recent availability changes</span>
+            <h2 class="changes-digest__title">Latest Availability Digest</h2>
+            <p>No recent changes detected.</p>
+        </div>
+        <a class="md-button" href="history/">View full history</a>
+    </div>
+</div>"""
+
+    latest_timestamp = rows[0]["timestamp"]
+    latest_date = f"{latest_timestamp:%Y-%m-%d}"
+    latest_rows = [row for row in rows if row["timestamp"] == latest_timestamp]
+    latest_additions = sum(1 for row in latest_rows if row["change"] == "added")
+    latest_removals = sum(1 for row in latest_rows if row["change"] == "removed")
+    latest_models = len({row["model"] for row in latest_rows})
+    latest_regions = len({row["region"] for row in latest_rows if not row["region"].startswith("(")})
+
+    grouped: Dict[Tuple[datetime, str, str, str], Dict] = {}
+    for row in rows:
+        key = (row["timestamp"], row["change"], row["model"], row["sku"])
+        if key not in grouped:
+            grouped[key] = {
+                "timestamp": row["timestamp"],
+                "change": row["change"],
+                "model": row["model"],
+                "sku": row["sku"],
+                "regions": set(),
+            }
+        grouped[key]["regions"].add(row["region"])
+
+    digest_rows = []
+    groups = list(grouped.values())
+    for group in groups[:16]:
+        change_type = group["change"]
+        badge = '<span class="badge-added">Added</span>' if change_type == "added" else '<span class="badge-removed">Removed</span>'
+        row_class = "change-row--added" if change_type == "added" else "change-row--removed"
+        regions = group["regions"]
+        region_count = len([region for region in regions if not region.startswith("(")])
+        region_phrase = pluralize(region_count, "region") if region_count else "Catalog"
+        sku = group["sku"]
+        sku_html = sku_link(sku, class_name="change-link-pill change-link-pill--sku") if sku != "-" else "Model availability"
+        digest_rows.append(f"""        <div class="change-row {row_class}" role="row">
+            <div class="change-row__date" role="cell"><time datetime="{group['timestamp']:%Y-%m-%d}">{group['timestamp']:%b} {group['timestamp'].day}</time></div>
+            <div class="change-row__change" role="cell">{badge}</div>
+            <div class="change-row__model" role="cell">{model_link(group['model'])}</div>
+            <div class="change-row__sku" role="cell">{sku_html}</div>
+            <div class="change-row__scope" role="cell">{region_phrase}</div>
+            <div class="change-row__regions" role="cell">{format_region_links(regions)}</div>
+        </div>""")
+
+    remaining_groups = len(groups) - len(digest_rows)
+    more_note = ""
+    if remaining_groups > 0:
+        more_note = f"""
+    <p class="changes-digest__more">{pluralize(remaining_groups, "more grouped change")} available in <a href="history/">full change history</a>.</p>"""
+
+    return f"""<div class="changes-digest" aria-label="Recent availability changes">
+    <div class="changes-digest__header">
+        <div>
+            <span class="changes-digest__eyebrow">Recent availability changes</span>
+            <h2 class="changes-digest__title">Latest Availability Digest</h2>
+            <p>Latest run: {format_digest_date(latest_timestamp)}. Changes are grouped by model, deployment SKU, and affected regions.</p>
+        </div>
+        <a class="md-button" href="history/">View full history</a>
+    </div>
+    <div class="changes-summary" aria-label="Latest change summary">
+        <a class="changes-summary__item changes-summary__item--added" href="{history_link(date=latest_date, type='Added')}">
+            <strong>{latest_additions}</strong>
+            <span>Additions</span>
+        </a>
+        <a class="changes-summary__item changes-summary__item--removed" href="{history_link(date=latest_date, type='Removed')}">
+            <strong>{latest_removals}</strong>
+            <span>Removals</span>
+        </a>
+        <a class="changes-summary__item" href="{history_link(date=latest_date)}">
+            <strong>{latest_models}</strong>
+            <span>Models affected</span>
+        </a>
+        <a class="changes-summary__item" href="{history_link(date=latest_date)}">
+            <strong>{latest_regions}</strong>
+            <span>Regions affected</span>
+        </a>
+    </div>
+    <div class="changes-table" role="table" aria-label="Grouped availability updates">
+        <div class="change-row change-row--head" role="row">
+            <div role="columnheader">Date</div>
+            <div role="columnheader">Change</div>
+            <div role="columnheader">Model</div>
+            <div role="columnheader">SKU type</div>
+            <div role="columnheader">Scope</div>
+            <div role="columnheader">Regions</div>
+        </div>
+{chr(10).join(digest_rows)}
+    </div>{more_note}
+</div>"""
+
+
 def get_retirement_status(retirement_date: str, today: datetime = None) -> Tuple[str, str]:
     """Determine retirement status and return (status_text, css_class)."""
     if today is None:
@@ -285,16 +566,15 @@ def generate_retirement_section(
         replacement_cell = "-"
         if replacement:
             replacement_slug = slugify(replacement)
-            replacement_cell = f"[{replacement}](../{replacement_slug}/)"
-            
-            # Collect replacement info for availability section
-            replacement_norm = replacement.lower().replace(".", "-")
-            if replacement_norm in model_regions_lookup:
+            if replacement_slug in model_regions_lookup:
+                replacement_cell = f"[{replacement}](../{replacement_slug}/)"
                 replacement_info.append({
                     "model": replacement,
                     "slug": replacement_slug,
-                    "regions": len(model_regions_lookup[replacement_norm])
+                    "regions": len(model_regions_lookup[replacement_slug])
                 })
+            else:
+                replacement_cell = f"`{replacement}` (not yet available)"
         
         rows.append(f"| {version} | {status} | {deprecation} | {retirement} | {status_badge} | {replacement_cell} |")
     
@@ -432,15 +712,14 @@ def generate_retirements_page(
             category = entry.get("category", "").replace("_", " ").title()
             
             model_slug = slugify(model)
-            model_link = f"[{model}](models/{model_slug}.md)"
+            model_link = f"[{model}](models/{model_slug}.md)" if model_slug in model_regions else f"`{model}`"
             
             replacement_cell = "-"
             if replacement:
                 replacement_slug = slugify(replacement)
                 # Check if replacement model exists in our data
-                replacement_norm = replacement.lower().replace(".", "-")
-                if replacement_norm in model_regions:
-                    region_count = len(model_regions[replacement_norm])
+                if replacement_slug in model_regions:
+                    region_count = len(model_regions[replacement_slug])
                     replacement_cell = f"[{replacement}](models/{replacement_slug}.md) ({region_count} regions)"
                 else:
                     replacement_cell = f"`{replacement}` (not yet available)"
@@ -463,8 +742,9 @@ def generate_retirements_page(
         
         model_slug = slugify(model)
         note_str = f" ({note})" if note else ""
+        model_cell = f"[{model}](models/{model_slug}.md)" if model_slug in model_regions else f"`{model}`"
         
-        fine_tuned_rows.append(f"| [{model}](models/{model_slug}.md) | {version} | {training_ret}{note_str} | {deploy_ret} |")
+        fine_tuned_rows.append(f"| {model_cell} | {version} | {training_ret}{note_str} | {deploy_ret} |")
     
     fine_tuned_section = ""
     if fine_tuned_rows:
@@ -618,6 +898,8 @@ def generate_index_page(
     upcoming.sort(key=_sort_key)
 
     # Build retirement table rows helper
+    available_model_slugs = {slugify(model) for model in model_regions}
+
     def _retirement_rows(entries: List[Dict]) -> str:
         rows = []
         for e in entries:
@@ -627,13 +909,19 @@ def generate_index_page(
             retirement = e.get("retirement_date") or "-"
             replacement = e.get("replacement")
             status_badge = f'<span class="badge {e["_status_class"]}">{e["_status_text"]}</span>'
+            model_slug = slugify(model)
+            model_cell = f"[{model}](models/{model_slug}.md)" if model_slug in available_model_slugs else f"`{model}`"
 
             replacement_cell = "-"
             if replacement:
-                replacement_cell = f"[{replacement}](models/{slugify(replacement)}.md)"
+                replacement_slug = slugify(replacement)
+                if replacement_slug in available_model_slugs:
+                    replacement_cell = f"[{replacement}](models/{replacement_slug}.md)"
+                else:
+                    replacement_cell = f"`{replacement}` (not yet available)"
 
             rows.append(
-                f"    | [{model}](models/{slugify(model)}.md) | {version} | {cat_label} | {retirement} | {status_badge} | {replacement_cell} |"
+                f"    | {model_cell} | {version} | {cat_label} | {retirement} | {status_badge} | {replacement_cell} |"
             )
         return chr(10).join(rows)
 
@@ -675,54 +963,136 @@ def generate_index_page(
     # Scheduled count for the stat card
     total_action_needed = len(retiring_soon) + len(upcoming) + len(already_retired)
 
-    # Build the recent changes section from history data
     history = history or []
-    recent_rows = []
-    for entry in history[:10]:  # Last 10 change sets
-        timestamp = entry["timestamp"]
-        changes = entry["changes"]
-        for model, change in sorted(changes.items()):
-            skus_data = change.get("skus", {})
-            for sku_key, sku_change in skus_data.items():
-                sku_label = sku_change.get("label", sku_key)
-                for region in sorted(sku_change.get("added", [])):
-                    recent_rows.append(
-                        f'    | {timestamp:%Y-%m-%d} | '
-                        f'<span class="badge-added">Added</span> | '
-                        f'[{model}](models/{slugify(model)}.md) | '
-                        f'{region} | {sku_label} |'
-                    )
-                for region in sorted(sku_change.get("removed", [])):
-                    recent_rows.append(
-                        f'    | {timestamp:%Y-%m-%d} | '
-                        f'<span class="badge-removed">Removed</span> | '
-                        f'[{model}](models/{slugify(model)}.md) | '
-                        f'{region} | {sku_label} |'
-                    )
-            if change.get("model_removed"):
-                recent_rows.append(
-                    f'    | {timestamp:%Y-%m-%d} | '
-                    f'<span class="badge-removed">Removed</span> | '
-                    f'{model} | (entire model) | - |'
-                )
+    recent_changes_block = build_recent_changes_block(history, all_regions, set(model_regions.keys()))
 
-    if recent_rows:
-        remaining = max(0, len(recent_rows) - 10)
-        see_more = f"\n    *… and {remaining} more — see [full change history](history.md)*" if remaining else ""
-        recent_changes_block = f"""???+ tip "Recent Availability Changes"
-    | Date | Change | Model | Region | SKU Type |
-    |------|--------|-------|--------|----------|
-{chr(10).join(recent_rows[:10])}
-{see_more}
-"""
-    else:
-        recent_changes_block = """???+ tip "Recent Availability Changes"
-    No recent changes detected. See [full change history](history.md) for historical data.
+    lifecycle_guide = """<div class="lifecycle-guide" aria-label="Model lifecycle guidance">
+    <div class="lifecycle-guide__header">
+        <span class="lifecycle-guide__eyebrow">Lifecycle signals</span>
+        <p>Microsoft Foundry models move through predictable stages so teams can test replacements before old versions stop serving traffic. Use this dashboard for dates and model-level risk, then validate active deployments with the Models API and Azure Service Health.</p>
+    </div>
+
+    <div class="lifecycle-rail" aria-label="Lifecycle stages">
+        <div class="lifecycle-stage lifecycle-stage--preview">
+            <span class="lifecycle-stage__number">1</span>
+            <strong>Preview</strong>
+            <span>Experimental. Suitable for evaluation, not production.</span>
+        </div>
+        <div class="lifecycle-stage lifecycle-stage--ga">
+            <span class="lifecycle-stage__number">2</span>
+            <strong>Generally available</strong>
+            <span>Production-ready. Retirement date is set at launch.</span>
+        </div>
+        <div class="lifecycle-stage lifecycle-stage--legacy">
+            <span class="lifecycle-stage__number">3</span>
+            <strong>Legacy</strong>
+            <span>Newer models exist. Begin replacement evaluation.</span>
+        </div>
+        <div class="lifecycle-stage lifecycle-stage--deprecated">
+            <span class="lifecycle-stage__number">4</span>
+            <strong>Deprecated</strong>
+            <span>Existing customers can continue. New customers are blocked.</span>
+        </div>
+        <div class="lifecycle-stage lifecycle-stage--retired">
+            <span class="lifecycle-stage__number">5</span>
+            <strong>Retired</strong>
+            <span>Removed from service. Inference returns 410 Gone.</span>
+        </div>
+    </div>
+
+    <div class="lifecycle-timelines">
+        <section class="lifecycle-timeline lifecycle-timeline--ga" aria-labelledby="ga-lifecycle-title">
+            <div class="lifecycle-timeline__title" id="ga-lifecycle-title">GA model retirement path</div>
+            <ol class="lifecycle-steps">
+                <li>
+                    <span class="lifecycle-step__marker">Launch</span>
+                    <strong>GA starts</strong>
+                    <span>Retirement date is set about 18 months out and exposed by the Models API.</span>
+                </li>
+                <li>
+                    <span class="lifecycle-step__marker">12 mo</span>
+                    <strong>Deprecated</strong>
+                    <span>Existing subscriptions can continue; new customers cannot access that version.</span>
+                </li>
+                <li>
+                    <span class="lifecycle-step__marker">90 d</span>
+                    <strong>Replacement named</strong>
+                    <span>Replacement is typically available in Global Standard for evaluation.</span>
+                </li>
+                <li>
+                    <span class="lifecycle-step__marker">30 d</span>
+                    <strong>Provisioned window</strong>
+                    <span>Provisioned regions get a short manual migration window.</span>
+                </li>
+                <li>
+                    <span class="lifecycle-step__marker">Retire</span>
+                    <strong>Traffic stops</strong>
+                    <span>Requests to the retired version fail. Retirement dates are not extended.</span>
+                </li>
+            </ol>
+        </section>
+
+        <section class="lifecycle-timeline lifecycle-timeline--preview" aria-labelledby="preview-lifecycle-title">
+            <div class="lifecycle-timeline__title" id="preview-lifecycle-title">Preview model retirement path</div>
+            <ol class="lifecycle-steps lifecycle-steps--compact">
+                <li>
+                    <span class="lifecycle-step__marker">Preview</span>
+                    <strong>Not for production</strong>
+                    <span>Launches with a not-sooner-than retirement date, often around 90 days out.</span>
+                </li>
+                <li>
+                    <span class="lifecycle-step__marker">30 d</span>
+                    <strong>Notice period</strong>
+                    <span>Customers receive at least 30 days notice before upgrade or retirement.</span>
+                </li>
+                <li>
+                    <span class="lifecycle-step__marker">Upgrade</span>
+                    <strong>Force-upgrade or end</strong>
+                    <span>Preview deployments move to a newer preview or GA model, or retire if no replacement exists.</span>
+                </li>
+            </ol>
+        </section>
+    </div>
+
+    <div class="attention-grid" aria-label="When to pay attention">
+        <div class="attention-item attention-item--watch">
+            <strong>Start watching</strong>
+            <span>A model enters Legacy or Deprecated, or appears as Scheduled in this dashboard.</span>
+        </div>
+        <div class="attention-item attention-item--test">
+            <strong>Start testing</strong>
+            <span>The replacement is declared, usually 90-120 days before retirement.</span>
+        </div>
+        <div class="attention-item attention-item--notify">
+            <strong>Expect notifications</strong>
+            <span>GA retirements get at least 60 days active notice; preview models get at least 30 days.</span>
+        </div>
+        <div class="attention-item attention-item--manual">
+            <strong>Check deployment type</strong>
+            <span>Global Standard, Data Zone Standard, and Standard can auto-upgrade. Provisioned deployments must be migrated manually.</span>
+        </div>
+        <div class="attention-item attention-item--api">
+            <strong>Read API status carefully</strong>
+            <span>In the Models API, <code>Deprecating</code> means deprecated; <code>Deprecated</code> means retired.</span>
+        </div>
+    </div>
+
+    <p class="lifecycle-guide__source">Adapted from <a href="https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirements">Microsoft Foundry Models lifecycle and support policy</a>. See <a href="retirements/">full retirement details</a> for model-specific dates.</p>
+</div>
 """
 
     return f"""# AI Foundry Model Availability
 
-Real-time tracking of Azure AI Foundry model availability across regions and deployment types.
+<div class="dashboard-hero">
+    <div class="dashboard-hero__copy">
+        <p class="dashboard-hero__eyebrow">Azure AI Foundry operations</p>
+        <p class="dashboard-hero__lede">Track model availability, regional coverage, deployment SKUs, and retirement risk from one searchable dashboard.</p>
+    </div>
+    <div class="dashboard-hero__actions">
+        <a class="md-button md-button--primary" href="models/">Browse models</a>
+        <a class="md-button" href="retirements/">Review retirements</a>
+    </div>
+</div>
 
 <div class="stats-grid">
   <div class="stat-card">
@@ -753,31 +1123,34 @@ Real-time tracking of Azure AI Foundry model availability across regions and dep
 
 {retirement_blocks}
 
-??? info "Deprecation vs Retirement — What's the Difference?"
-    **Deprecation** marks a model version as no longer recommended. It still works, but no new deployments can be created.
-    After deprecation you should begin migrating to the replacement model.
-
-    **Retirement** means the model version is fully removed. API calls will return errors after the retirement date.
-    Always migrate **before** the retirement date.
-
-    | Phase | New Deployments | Existing Deployments | API Calls |
-    |-------|-----------------|----------------------|-----------|
-    | **Active** | :material-check: Allowed | :material-check: Running | :material-check: Working |
-    | **Deprecated** | :material-close: Blocked | :material-check: Running | :material-check: Working |
-    | **Retired** | :material-close: Blocked | :material-close: Removed | :material-close: Errors |
-
-    See [full retirement details](retirements.md) and [Microsoft's model lifecycle docs](https://learn.microsoft.com/azure/ai-services/openai/concepts/model-retirements).
+{lifecycle_guide}
 
 ---
 
 ## :material-book-open-variant: Browse By
 
-| View | Description |
-|------|-------------|
-| [**All Models**](models/index.md) | Complete model catalog with SKU details |
-| [**By Region**](by-region.md) | Find what's available in your region |
-| [**By SKU Type**](by-sku.md) | Filter by deployment type |
-| [**Change History**](history.md) | Recent availability changes |
+<div class="browse-grid">
+    <a class="browse-card" href="models/">
+        <span class="browse-card__label">Catalog</span>
+        <strong>All Models</strong>
+        <span>Complete model catalog with SKU and region coverage details.</span>
+    </a>
+    <a class="browse-card" href="by-region/">
+        <span class="browse-card__label">Regions</span>
+        <strong>By Region</strong>
+        <span>Find what is available in each Azure region.</span>
+    </a>
+    <a class="browse-card" href="by-sku/">
+        <span class="browse-card__label">Deployment</span>
+        <strong>By SKU Type</strong>
+        <span>Compare Global, Datazone, Standard, and Provisioned options.</span>
+    </a>
+    <a class="browse-card" href="history/">
+        <span class="browse-card__label">Changes</span>
+        <strong>Change History</strong>
+        <span>Review recent availability additions and removals.</span>
+    </a>
+</div>
 
 ---
 
@@ -965,58 +1338,149 @@ def generate_model_detail_page(
     model_regions_lookup: Dict[str, Set[str]] = None,
 ) -> str:
     """Generate detailed page for a single model."""
-    
+
     count = len(regions)
-    bucket_label, bucket_class, _ = pick_bucket(count)
-    
+    total_region_count = max(len(all_regions), 1)
+    coverage_pct = round(count / total_region_count * 100)
+    bucket_label, bucket_class, bucket_description = pick_bucket(count)
+
     # Group SKUs by category
     sku_by_category: Dict[str, List[Tuple[str, Set[str]]]] = defaultdict(list)
     for sku, sku_regs in sorted(sku_regions.items()):
         cat = get_sku_category(sku)
         sku_by_category[cat].append((sku, sku_regs))
-    
+
     # Build retirement section if applicable
     retirement_section = ""
     if retirement_info:
         retirement_section = generate_retirement_section(model, retirement_info, model_regions_lookup or {})
-    
-    # Build SKU breakdown sections
-    sku_sections = []
+
+    categories = sorted(sku_by_category.keys())
+    category_summary = ", ".join(categories) if categories else "No SKU categories"
+    category_chips = " ".join(sku_category_badge(cat) for cat in categories) or '<span class="sku-badge sku-other">No SKU data</span>'
+
+    if sku_regions:
+        top_sku, top_sku_regions = max(sku_regions.items(), key=lambda item: (len(item[1]), item[0]))
+        top_sku_pct = round(len(top_sku_regions) / total_region_count * 100)
+        top_sku_href = query_url("../by-sku/", {"sku": top_sku})
+        top_sku_html = f'<a href="{top_sku_href}">{html_escape(top_sku)}</a>'
+        top_sku_category = get_sku_category(top_sku)
+    else:
+        top_sku = "No SKU data"
+        top_sku_regions = set()
+        top_sku_pct = 0
+        top_sku_html = html_escape(top_sku)
+        top_sku_category = "Other"
+
+    def render_region_chips(values: Set[str], max_visible: int = 18) -> str:
+        sorted_values = sorted(values)
+        if not sorted_values:
+            return '<span class="model-region-empty">No regions listed</span>'
+        chips = [
+            region_link(region, prefix="../by-region/", class_name="region-badge model-region-chip")
+            for region in sorted_values[:max_visible]
+        ]
+        remaining = len(sorted_values) - len(chips)
+        if remaining:
+            chips.append(f'<span class="model-region-more">+{remaining} more in matrix</span>')
+        return " ".join(chips)
+
+    metric_cards = f"""<div class="model-profile__metrics" aria-label="Model availability metrics">
+    <div class="model-metric">
+        <span>Total regions</span>
+        <strong>{count}</strong>
+    </div>
+    <div class="model-metric">
+        <span>Coverage</span>
+        <strong>{coverage_pct}%</strong>
+    </div>
+    <div class="model-metric">
+        <span>SKU types</span>
+        <strong>{len(sku_regions)}</strong>
+    </div>
+    <div class="model-metric">
+        <span>Categories</span>
+        <strong>{len(categories)}</strong>
+    </div>
+</div>"""
+
+    model_profile = f"""<div class="model-profile" aria-label="Model availability profile">
+    <div class="model-profile__main">
+        <div class="model-profile__badges">
+            <span class="badge {bucket_class}">{bucket_label}</span>
+            <span class="model-profile__coverage-note">{bucket_description} tracked</span>
+        </div>
+        <p class="model-profile__lead">Available in <strong>{count}</strong> of <strong>{len(all_regions)}</strong> tracked regions with <strong>{len(sku_regions)}</strong> deployment SKU types.</p>
+        <div class="model-profile__chips" aria-label="Deployment categories">{category_chips}</div>
+        <div class="model-profile__actions">
+            <a class="md-button md-button--primary" href="#deployment-options">Deployment options</a>
+            <a class="md-button" href="#full-availability-matrix">Availability matrix</a>
+        </div>
+    </div>
+    {metric_cards}
+    <div class="model-profile__insight">
+        <span>Widest SKU footprint</span>
+        <strong>{top_sku_html}</strong>
+        <small>{len(top_sku_regions)} regions · {top_sku_pct}% coverage · {html_escape(top_sku_category)}</small>
+    </div>
+</div>"""
+
+    deployment_lanes = []
     for cat in ["Global", "Datazone", "Standard", "Provisioned", "Other"]:
         if cat not in sku_by_category:
             continue
-        
-        cat_info = SKU_CATEGORIES.get(cat, {"description": "", "use_case": ""})
-        
-        section = f"""### {cat} Deployments
 
-!!! tip "Use Case"
-    {cat_info.get('use_case', 'Various deployment options')}
+        cat_info = SKU_CATEGORIES.get(cat, {})
+        description = cat_info.get("description") or "Deployment labels outside the canonical SKU groups"
+        use_case = cat_info.get("use_case") or "Review individual SKU labels for deployment behavior."
+        compliance = cat_info.get("compliance", "")
+        compliance_html = f'<p class="deployment-lane__compliance">{html_escape(compliance)}</p>' if compliance else ""
 
-| SKU Type | Regions | Coverage |
-|----------|---------|----------|
-"""
-        for sku, sku_regs in sku_by_category[cat]:
-            pct = round(len(sku_regs) / len(all_regions) * 100)
-            section += f"| {sku} | {len(sku_regs)} | {pct}% |\n"
-        
-        # Add region list for this category
-        section += "\n**Available Regions:**\n\n"
+        sku_rows = []
         all_cat_regions = set()
-        for _, sku_regs in sku_by_category[cat]:
+        for sku, sku_regs in sku_by_category[cat]:
             all_cat_regions.update(sku_regs)
-        section += ", ".join([f"`{r}`" for r in sorted(all_cat_regions)])
-        section += "\n"
-        
-        sku_sections.append(section)
-    
+            sku_pct = round(len(sku_regs) / total_region_count * 100)
+            meter_pct = max(2, min(sku_pct, 100)) if sku_regs else 0
+            sku_href = query_url("../by-sku/", {"sku": sku})
+            sku_rows.append(f"""        <div class="deployment-sku-row">
+            <div class="deployment-sku-row__copy">
+                <a class="deployment-sku-row__name" href="{sku_href}">{html_escape(sku)}</a>
+                <span>{len(sku_regs)} regions · {sku_pct}% coverage</span>
+            </div>
+            <div class="availability-meter" aria-hidden="true"><span style="width: {meter_pct}%;"></span></div>
+        </div>""")
+
+        cat_slug = cat.lower().replace(" ", "-")
+        deployment_lanes.append(f"""<section class="deployment-lane deployment-lane--{cat_slug}" aria-labelledby="{cat_slug}-deployments">
+    <div class="deployment-lane__header">
+        <div>
+            <div class="deployment-lane__badge">{sku_category_badge(cat)}</div>
+            <h3 id="{cat_slug}-deployments">{html_escape(cat)} deployments</h3>
+            <p>{html_escape(description)}</p>
+        </div>
+        <p class="deployment-lane__use-case">{html_escape(use_case)}</p>
+    </div>
+    <div class="deployment-lane__body">
+        <div class="deployment-sku-list">
+{chr(10).join(sku_rows)}
+        </div>
+        <div class="deployment-lane__regions" aria-label="{html_escape(cat)} deployment regions">
+            {render_region_chips(all_cat_regions)}
+        </div>
+        {compliance_html}
+    </div>
+</section>""")
+
+    deployment_options_html = "\n".join(deployment_lanes) if deployment_lanes else "<p>No deployment SKU information is available for this model.</p>"
+
     # Build region matrix - which SKUs are available in each region
     # Use HTML table for proper rendering
     sku_labels = sorted(sku_regions.keys())
-    
+
     # Build HTML table header
-    header_cells = "".join([f"<th>{sku}</th>" for sku in sku_labels])
-    
+    header_cells = "".join([f"<th>{html_escape(sku)}</th>" for sku in sku_labels])
+
     # Build HTML table rows
     html_rows = []
     for region in sorted(regions):
@@ -1026,8 +1490,8 @@ def generate_model_detail_page(
                 cells.append('<td class="matrix-yes">&#10003;</td>')
             else:
                 cells.append('<td class="matrix-no">&mdash;</td>')
-        html_rows.append(f"<tr><td><strong>{region}</strong></td>{''.join(cells)}</tr>")
-    
+        html_rows.append(f"<tr><td><strong>{html_escape(region)}</strong></td>{''.join(cells)}</tr>")
+
     matrix_html = f"""<div class="table-responsive">
 <table class="matrix-table">
 <thead>
@@ -1038,37 +1502,26 @@ def generate_model_detail_page(
 </tbody>
 </table>
 </div>"""
-    
+
     return f"""# {model}
 
-<span class="badge {bucket_class}">{bucket_label}</span> Available in **{count}** of {len(all_regions)} regions
+{model_profile}
 {retirement_section}
----
-
-## :material-chart-box-outline: Quick Stats
-
-| Metric | Value |
-|--------|-------|
-| Total Regions | {count} |
-| Coverage | {round(count / len(all_regions) * 100)}% |
-| SKU Types | {len(sku_regions)} |
-| Categories | {", ".join(sorted(sku_by_category.keys()))} |
-
----
 
 ## :material-target: Deployment Options
 
-{chr(10).join(sku_sections)}
-
----
+<div class="deployment-lanes">
+{deployment_options_html}
+</div>
 
 ## :material-clipboard-list: Full Availability Matrix
 
-This table shows exactly which SKU types are available in each region.
+<div class="matrix-intro">
+    <strong>Exact region-by-SKU map</strong>
+    <span>Use this matrix when you need to verify a specific deployment type in a specific region. Summary chips above intentionally show a compact region preview.</span>
+</div>
 
 {matrix_html}
-
----
 
 [← Back to All Models](index.md)
 
@@ -1083,7 +1536,6 @@ def generate_by_region_page(
 ) -> str:
     """Generate the by-region view page with proper SKU tables."""
     
-    # Build region to models mapping
     region_models: Dict[str, Set[str]] = defaultdict(set)
     region_model_skus: Dict[str, Dict[str, Set[str]]] = defaultdict(lambda: defaultdict(set))
     
@@ -1092,7 +1544,6 @@ def generate_by_region_page(
             region_models[region].add(model)
             region_model_skus[region][model] = model_region_skus[model].get(region, set())
     
-    # Sort regions alphabetically
     sorted_regions = sorted(region_models.keys())
     
     # Build region options for filter
@@ -1507,7 +1958,7 @@ _Last updated: {datetime.utcnow():%Y-%m-%d %H:%M UTC}_
 """
 
 
-def generate_history_page(history: List[Dict]) -> str:
+def generate_history_page(history: List[Dict], all_regions: Set[str], known_models: Set[str]) -> str:
     """Generate the change history page with clean grouped format."""
     
     if not history:
@@ -1519,63 +1970,39 @@ No changes have been recorded yet.
 
 _Last updated: """ + f"{datetime.utcnow():%Y-%m-%d %H:%M UTC}_"
     
-    entries = []
-    all_models = set()
-    all_change_regions = set()
-    all_skus = set()
-    all_dates = set()
-    all_rows = []  # Collect all changes for the unified table
-    
-    for entry in history[:20]:  # Last 20 change sets
-        timestamp = entry["timestamp"]
-        changes = entry["changes"]
-        
-        # Collect all changes into structured data with SKU info
-        for model, change in sorted(changes.items()):
-            all_models.add(model)
-            # Get per-SKU changes for more detail
-            skus_data = change.get("skus", {})
-            
-            for sku_key, sku_change in skus_data.items():
-                sku_label = sku_change.get("label", sku_key)
-                all_skus.add(sku_label)
-                sku_added = sku_change.get("added", [])
-                sku_removed = sku_change.get("removed", [])
-                
-                for region in sorted(sku_added):
-                    all_change_regions.add(region)
-                    all_dates.add(f"{timestamp:%Y-%m-%d}")
-                    all_rows.append((timestamp, "added", model, region, sku_label))
-                for region in sorted(sku_removed):
-                    all_change_regions.add(region)
-                    all_dates.add(f"{timestamp:%Y-%m-%d}")
-                    all_rows.append((timestamp, "removed", model, region, sku_label))
-            
-            if change.get("model_removed"):
-                all_rows.append((timestamp, "removed", model, "(entire model)", "-"))
+    all_rows = flatten_history_changes(history, all_regions, known_models, limit=20)
+    all_models = {row["model"] for row in all_rows}
+    all_change_regions = {row["region"] for row in all_rows if not row["region"].startswith("(")}
+    all_skus = {row["sku"] for row in all_rows if row["sku"] != "-"}
+    all_dates = {f"{row['timestamp']:%Y-%m-%d}" for row in all_rows}
     
     # Build filter options
-    model_options = "\n".join([f'      <option value="{m}">{m}</option>' for m in sorted(all_models)])
-    region_options = "\n".join([f'      <option value="{r}">{r}</option>' for r in sorted(all_change_regions)])
-    sku_options = "\n".join([f'      <option value="{s}">{s}</option>' for s in sorted(all_skus)])
+    model_options = "\n".join([f'      <option value="{html_escape(m)}">{html_escape(m)}</option>' for m in sorted(all_models)])
+    region_options = "\n".join([f'      <option value="{html_escape(r)}">{html_escape(r)}</option>' for r in sorted(all_change_regions)])
+    sku_options = "\n".join([f'      <option value="{html_escape(s)}">{html_escape(s)}</option>' for s in sorted(all_skus)])
     date_options = "\n".join([f'      <option value="{d}">{d}</option>' for d in sorted(all_dates, reverse=True)])
     
     # Build table rows
     table_rows = []
-    for timestamp, change_type, model, region, sku in all_rows:
+    for row in all_rows:
+        timestamp = row["timestamp"]
+        change_type = row["change"]
+        model = row["model"]
+        region = row["region"]
+        sku = row["sku"]
         type_badge = '<span class="badge-added">Added</span>' if change_type == "added" else '<span class="badge-removed">Removed</span>'
         date_str = f"{timestamp:%Y-%m-%d}"
         table_rows.append(f'''    <tr>
-      <td data-order="{timestamp:%Y%m%d%H%M%S}">{date_str}</td>
-      <td>{type_badge}</td>
-      <td><a href="../models/{slugify(model)}/">{model}</a></td>
-      <td>{region}</td>
-      <td>{sku}</td>
+            <td data-order="{timestamp:%Y%m%d%H%M%S}">{date_str}</td>
+            <td>{type_badge}</td>
+            <td>{model_link(model, prefix="../models/")}</td>
+            <td>{region_link(region, prefix="../by-region/")}</td>
+            <td>{sku_link(sku, prefix="../by-sku/", class_name="change-link-pill change-link-pill--sku")}</td>
     </tr>''')
 
     # Calculate summary stats (per-SKU changes)
-    total_additions = sum(1 for r in all_rows if r[1] == "added")
-    total_removals = sum(1 for r in all_rows if r[1] == "removed")
+    total_additions = sum(1 for row in all_rows if row["change"] == "added")
+    total_removals = sum(1 for row in all_rows if row["change"] == "removed")
 
     return f"""# Change History
 
@@ -1696,7 +2123,7 @@ def main():
         "models/index.md": generate_model_index_page(model_regions, model_sku_regions, all_regions),
         "by-region.md": generate_by_region_page(model_regions, model_region_skus, all_regions),
         "by-sku.md": generate_by_sku_page(model_regions, model_sku_regions, all_labels, all_regions),
-        "history.md": generate_history_page(history),
+        "history.md": generate_history_page(history, all_regions, set(model_regions.keys())),
         "retirements.md": generate_retirements_page(retirement_data, model_regions_normalized),
     }
     

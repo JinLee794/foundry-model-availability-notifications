@@ -66,6 +66,14 @@
   }
 })();
 
+function escapeRegex(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function commaSeparatedExactSearch(value) {
+  return '(^|,\\s*)' + escapeRegex(value.trim()) + '(\\s*,|$)';
+}
+
 // Initialize DataTables with filtering
 document.addEventListener('DOMContentLoaded', function() {
   // Wait for jQuery and DataTables to load
@@ -140,7 +148,75 @@ document.addEventListener('DOMContentLoaded', function() {
       ]
     });
   }
+
+  applyLinkedFilters();
 });
+
+function getQueryValue(name) {
+  const params = new URLSearchParams(window.location.search);
+  return params.get(name) || '';
+}
+
+function setSelectIfPresent(selector, value) {
+  if (!value) return false;
+  const select = document.querySelector(selector);
+  if (!select) return false;
+  const hasOption = Array.from(select.options).some(function(option) {
+    return option.value === value;
+  });
+  if (!hasOption) return false;
+  select.value = value;
+  return true;
+}
+
+function setInputIfPresent(selector, value) {
+  if (!value) return false;
+  const input = document.querySelector(selector);
+  if (!input) return false;
+  input.value = value;
+  return true;
+}
+
+function applyLinkedFilters() {
+  if (typeof jQuery === 'undefined' || !jQuery.fn.DataTable) return;
+
+  const region = getQueryValue('region');
+  const model = getQueryValue('model');
+  const sku = getQueryValue('sku');
+  const category = getQueryValue('category');
+  const date = getQueryValue('date');
+  const type = getQueryValue('type');
+
+  if (document.getElementById('region-table') && jQuery.fn.DataTable.isDataTable('#region-table')) {
+    const changed = [
+      setSelectIfPresent('#region-select', region),
+      setInputIfPresent('#model-search', model),
+      setSelectIfPresent('#sku-category-filter', category)
+    ].some(Boolean);
+    if (changed) filterRegionTable();
+  }
+
+  if (document.getElementById('sku-table') && jQuery.fn.DataTable.isDataTable('#sku-table')) {
+    const changed = [
+      setSelectIfPresent('#sku-cat-filter', category),
+      setSelectIfPresent('#sku-type-filter', sku),
+      setInputIfPresent('#sku-model-search', model),
+      setSelectIfPresent('#sku-region-filter', region)
+    ].some(Boolean);
+    if (changed) filterSkuTable();
+  }
+
+  if (document.getElementById('history-table') && jQuery.fn.DataTable.isDataTable('#history-table')) {
+    const changed = [
+      setSelectIfPresent('#history-date-filter', date),
+      setSelectIfPresent('#history-type-filter', type),
+      setSelectIfPresent('#history-model-filter', model),
+      setSelectIfPresent('#history-region-filter', region),
+      setSelectIfPresent('#history-sku-filter', sku)
+    ].some(Boolean);
+    if (changed) filterHistoryTable();
+  }
+}
 
 // Filter function for models table (All Models page)
 window.filterModelsTable = function() {
@@ -166,7 +242,7 @@ window.filterModelsTable = function() {
 
   // Apply region filter (column 9 - hidden Region List)
   if (regionVal) {
-    table.column(9).search(regionVal);
+    table.column(9).search(commaSeparatedExactSearch(regionVal), true, false);
   }
 
   table.draw();
@@ -321,7 +397,7 @@ window.filterSkuTable = function() {
 
   // Apply region filter (column 6 - hidden Region List)
   if (regionVal) {
-    table.column(6).search(regionVal);
+    table.column(6).search(commaSeparatedExactSearch(regionVal), true, false);
   }
 
   table.draw();
@@ -470,6 +546,8 @@ if (typeof document$ !== 'undefined') {
           ]
         });
       }
+
+      applyLinkedFilters();
     }
   });
 }

@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.618322db.min.css">
       
         
         <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
@@ -5306,119 +5306,244 @@
 
 
 <h1 id="ai-foundry-model-availability">AI Foundry Model Availability<a class="headerlink" href="#ai-foundry-model-availability" title="Permanent link">&para;</a></h1>
-<p>Real-time tracking of Azure AI Foundry model availability across regions and deployment types.</p>
+<div class="dashboard-hero">
+    <div class="dashboard-hero__copy">
+        <p class="dashboard-hero__eyebrow">Azure AI Foundry operations</p>
+        <p class="dashboard-hero__lede">Track model availability, regional coverage, deployment SKUs, and retirement risk from one searchable dashboard.</p>
+    </div>
+    <div class="dashboard-hero__actions">
+        <a class="md-button md-button--primary" href="models/">Browse models</a>
+        <a class="md-button" href="retirements/">Review retirements</a>
+    </div>
+</div>
+
 <div class="stats-grid">
   <div class="stat-card">
-    <div class="stat-value">112</div>
+    <div class="stat-value">111</div>
     <div class="stat-label">Models Tracked</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value">28</div>
+    <div class="stat-value">92</div>
     <div class="stat-label">Azure Regions</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value">8</div>
+    <div class="stat-value">11</div>
     <div class="stat-label">Action Needed</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value">45</div>
+    <div class="stat-value">42</div>
     <div class="stat-label">Scheduled Retirements</div>
   </div>
 </div>
 
 <hr />
-<details class="tip" open="open">
-<summary>Recent Availability Changes</summary>
+<div class="changes-digest" aria-label="Recent availability changes">
+    <div class="changes-digest__header">
+        <div>
+            <span class="changes-digest__eyebrow">Recent availability changes</span>
+            <h2 class="changes-digest__title">Latest Availability Digest</h2>
+            <p>Latest run: Jun 4, 2026. Changes are grouped by model, deployment SKU, and affected regions.</p>
+        </div>
+        <a class="md-button" href="history/">View full history</a>
+    </div>
+    <div class="changes-summary" aria-label="Latest change summary">
+        <a class="changes-summary__item changes-summary__item--added" href="history/?date=2026-06-04&type=Added">
+            <strong>10</strong>
+            <span>Additions</span>
+        </a>
+        <a class="changes-summary__item changes-summary__item--removed" href="history/?date=2026-06-04&type=Removed">
+            <strong>12</strong>
+            <span>Removals</span>
+        </a>
+        <a class="changes-summary__item" href="history/?date=2026-06-04">
+            <strong>6</strong>
+            <span>Models affected</span>
+        </a>
+        <a class="changes-summary__item" href="history/?date=2026-06-04">
+            <strong>13</strong>
+            <span>Regions affected</span>
+        </a>
+    </div>
+    <div class="changes-table" role="table" aria-label="Grouped availability updates">
+        <div class="change-row change-row--head" role="row">
+            <div role="columnheader">Date</div>
+            <div role="columnheader">Change</div>
+            <div role="columnheader">Model</div>
+            <div role="columnheader">SKU type</div>
+            <div role="columnheader">Scope</div>
+            <div role="columnheader">Regions</div>
+        </div>
+        <div class="change-row change-row--removed" role="row">
+            <div class="change-row__date" role="cell"><time datetime="2026-06-04">Jun 4</time></div>
+            <div class="change-row__change" role="cell"><span class="badge-removed">Removed</span></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-4-1/">gpt-4.1</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
+            <div class="change-row__scope" role="cell">2 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Switzerland%20West">Switzerland West</a></div>
+        </div>
+        <div class="change-row change-row--removed" role="row">
+            <div class="change-row__date" role="cell"><time datetime="2026-06-04">Jun 4</time></div>
+            <div class="change-row__change" role="cell"><span class="badge-removed">Removed</span></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-4-1-mini/">gpt-4.1-mini</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
+            <div class="change-row__scope" role="cell">2 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Switzerland%20West">Switzerland West</a></div>
+        </div>
+        <div class="change-row change-row--removed" role="row">
+            <div class="change-row__date" role="cell"><time datetime="2026-06-04">Jun 4</time></div>
+            <div class="change-row__change" role="cell"><span class="badge-removed">Removed</span></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-4-1-nano/">gpt-4.1-nano</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
+            <div class="change-row__scope" role="cell">2 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Switzerland%20West">Switzerland West</a></div>
+        </div>
+        <div class="change-row change-row--removed" role="row">
+            <div class="change-row__date" role="cell"><time datetime="2026-06-04">Jun 4</time></div>
+            <div class="change-row__change" role="cell"><span class="badge-removed">Removed</span></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-4o/">gpt-4o</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
+            <div class="change-row__scope" role="cell">3 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Southeast%20Asia">Southeast Asia</a> <a class="region-badge" href="by-region/?region=Switzerland%20West">Switzerland West</a></div>
+        </div>
+        <div class="change-row change-row--removed" role="row">
+            <div class="change-row__date" role="cell"><time datetime="2026-06-04">Jun 4</time></div>
+            <div class="change-row__change" role="cell"><span class="badge-removed">Removed</span></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-4o-mini/">gpt-4o-mini</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
+            <div class="change-row__scope" role="cell">3 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Southeast%20Asia">Southeast Asia</a> <a class="region-badge" href="by-region/?region=Switzerland%20West">Switzerland West</a></div>
+        </div>
+        <div class="change-row change-row--added" role="row">
+            <div class="change-row__date" role="cell"><time datetime="2026-06-04">Jun 4</time></div>
+            <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-5-5/">gpt-5.5</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
+            <div class="change-row__scope" role="cell">10 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Central%20US">Central US</a> <a class="region-badge" href="by-region/?region=East%20US">East US</a> <a class="region-badge" href="by-region/?region=France%20Central">France Central</a> <span class="change-more-count">+7 more</span></div>
+        </div>
+        <div class="change-row change-row--added" role="row">
+            <div class="change-row__date" role="cell"><time datetime="2026-06-03">Jun 3</time></div>
+            <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-4-1/">gpt-4.1</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
+            <div class="change-row__scope" role="cell">2 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Switzerland%20West">Switzerland West</a></div>
+        </div>
+        <div class="change-row change-row--added" role="row">
+            <div class="change-row__date" role="cell"><time datetime="2026-06-03">Jun 3</time></div>
+            <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-4-1-mini/">gpt-4.1-mini</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
+            <div class="change-row__scope" role="cell">2 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Switzerland%20West">Switzerland West</a></div>
+        </div>
+        <div class="change-row change-row--added" role="row">
+            <div class="change-row__date" role="cell"><time datetime="2026-06-03">Jun 3</time></div>
+            <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-4-1-nano/">gpt-4.1-nano</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
+            <div class="change-row__scope" role="cell">2 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Switzerland%20West">Switzerland West</a></div>
+        </div>
+        <div class="change-row change-row--added" role="row">
+            <div class="change-row__date" role="cell"><time datetime="2026-06-03">Jun 3</time></div>
+            <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-4o/">gpt-4o</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
+            <div class="change-row__scope" role="cell">3 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Southeast%20Asia">Southeast Asia</a> <a class="region-badge" href="by-region/?region=Switzerland%20West">Switzerland West</a></div>
+        </div>
+        <div class="change-row change-row--added" role="row">
+            <div class="change-row__date" role="cell"><time datetime="2026-06-03">Jun 3</time></div>
+            <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-4o-mini/">gpt-4o-mini</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
+            <div class="change-row__scope" role="cell">3 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Southeast%20Asia">Southeast Asia</a> <a class="region-badge" href="by-region/?region=Switzerland%20West">Switzerland West</a></div>
+        </div>
+        <div class="change-row change-row--added" role="row">
+            <div class="change-row__date" role="cell"><time datetime="2026-06-03">Jun 3</time></div>
+            <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-5-4-mini/">gpt-5.4-mini</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Provisioned">Deployments Provisioned</a></div>
+            <div class="change-row__scope" role="cell">9 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Brazil%20South">Brazil South</a> <a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Canada%20East">Canada East</a> <span class="change-more-count">+6 more</span></div>
+        </div>
+        <div class="change-row change-row--added" role="row">
+            <div class="change-row__date" role="cell"><time datetime="2026-06-03">Jun 3</time></div>
+            <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-5-5/">gpt-5.5</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
+            <div class="change-row__scope" role="cell">2 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=North%20Central%20US">North Central US</a> <a class="region-badge" href="by-region/?region=West%20US%203">West US 3</a></div>
+        </div>
+        <div class="change-row change-row--added" role="row">
+            <div class="change-row__date" role="cell"><time datetime="2026-06-03">Jun 3</time></div>
+            <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
+            <div class="change-row__model" role="cell"><a href="models/text-embedding-3-large/">text-embedding-3-large</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
+            <div class="change-row__scope" role="cell">2 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Switzerland%20West">Switzerland West</a></div>
+        </div>
+        <div class="change-row change-row--added" role="row">
+            <div class="change-row__date" role="cell"><time datetime="2026-06-03">Jun 3</time></div>
+            <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
+            <div class="change-row__model" role="cell"><a href="models/text-embedding-3-small/">text-embedding-3-small</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
+            <div class="change-row__scope" role="cell">3 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Southeast%20Asia">Southeast Asia</a> <a class="region-badge" href="by-region/?region=Switzerland%20West">Switzerland West</a></div>
+        </div>
+        <div class="change-row change-row--added" role="row">
+            <div class="change-row__date" role="cell"><time datetime="2026-05-29">May 29</time></div>
+            <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-chat-latest/">gpt-chat-latest</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
+            <div class="change-row__scope" role="cell">1 region</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=West%20US%203">West US 3</a></div>
+        </div>
+    </div>
+    <p class="changes-digest__more">421 more grouped changes available in <a href="history/">full change history</a>.</p>
+</div>
+
+<hr />
+<h2 id="deprecation-retirement-notices"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 13h-2V7h2m0 10h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span> Deprecation &amp; Retirement Notices<a class="headerlink" href="#deprecation-retirement-notices" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Upcoming Retirements (31-90 Days) — 2 model versions</p>
+<p>Plan and test your migration to the replacement model.</p>
 <table>
 <thead>
 <tr>
-<th>Date</th>
-<th>Change</th>
 <th>Model</th>
-<th>Region</th>
-<th>SKU Type</th>
+<th>Version</th>
+<th>Category</th>
+<th>Retirement Date</th>
+<th>Status</th>
+<th>Replacement</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>2026-02-25</td>
-<td><span class="badge-added">Added</span></td>
-<td><a href="models/gpt-realtime-1-5/">gpt-realtime-1.5</a></td>
-<td>East US 2</td>
-<td>Standard global deployments</td>
+<td><a href="models/o1/">o1</a></td>
+<td>2024-12-17</td>
+<td>Text Generation</td>
+<td>2026-07-15</td>
+<td><span class="badge badge-retiring">Retiring</span></td>
+<td><a href="models/o3/">o3</a></td>
 </tr>
 <tr>
-<td>2026-02-25</td>
-<td><span class="badge-added">Added</span></td>
-<td><a href="models/gpt-realtime-1-5/">gpt-realtime-1.5</a></td>
-<td>Sweden Central</td>
-<td>Standard global deployments</td>
-</tr>
-<tr>
-<td>2026-02-18</td>
-<td><span class="badge-added">Added</span></td>
-<td><a href="models/claude-sonnet-4-6-(preview)/">Claude Sonnet 4.6 (preview)</a></td>
-<td>East US 2</td>
-<td>Region Availability Maas</td>
-</tr>
-<tr>
-<td>2026-02-18</td>
-<td><span class="badge-added">Added</span></td>
-<td><a href="models/claude-sonnet-4-6-(preview)/">Claude Sonnet 4.6 (preview)</a></td>
-<td>Sweden Central</td>
-<td>Region Availability Maas</td>
-</tr>
-<tr>
-<td>2026-02-12</td>
-<td><span class="badge-added">Added</span></td>
-<td><a href="models/text-embedding-3-large/">text-embedding-3-large</a></td>
-<td>France Central</td>
-<td>Datazone standard</td>
-</tr>
-<tr>
-<td>2026-02-12</td>
-<td><span class="badge-added">Added</span></td>
-<td><a href="models/text-embedding-3-large/">text-embedding-3-large</a></td>
-<td>Germany West Central</td>
-<td>Datazone standard</td>
-</tr>
-<tr>
-<td>2026-02-12</td>
-<td><span class="badge-added">Added</span></td>
-<td><a href="models/text-embedding-3-large/">text-embedding-3-large</a></td>
-<td>Italy North</td>
-<td>Datazone standard</td>
-</tr>
-<tr>
-<td>2026-02-12</td>
-<td><span class="badge-added">Added</span></td>
-<td><a href="models/text-embedding-3-large/">text-embedding-3-large</a></td>
-<td>Poland Central</td>
-<td>Datazone standard</td>
-</tr>
-<tr>
-<td>2026-02-12</td>
-<td><span class="badge-added">Added</span></td>
-<td><a href="models/text-embedding-3-large/">text-embedding-3-large</a></td>
-<td>Spain Central</td>
-<td>Datazone standard</td>
-</tr>
-<tr>
-<td>2026-02-12</td>
-<td><span class="badge-added">Added</span></td>
-<td><a href="models/text-embedding-3-large/">text-embedding-3-large</a></td>
-<td>Sweden Central</td>
-<td>Datazone standard</td>
+<td><a href="models/o3-mini/">o3-mini</a></td>
+<td>2025-01-31</td>
+<td>Text Generation</td>
+<td>2026-08-02</td>
+<td><span class="badge badge-retiring">Retiring</span></td>
+<td><a href="models/o4-mini/">o4-mini</a></td>
 </tr>
 </tbody>
 </table>
-<p><em>… and 965 more — see <a href="history/">full change history</a></em></p>
-</details>
-<hr />
-<h2 id="deprecation-retirement-notices"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 13h-2V7h2m0 10h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span> Deprecation &amp; Retirement Notices<a class="headerlink" href="#deprecation-retirement-notices" title="Permanent link">&para;</a></h2>
-<div class="admonition danger">
-<p class="admonition-title">Retiring Within 30 Days — 2 model versions</p>
-<p>These models require <strong>immediate migration</strong>. After the retirement date, API calls will return errors.</p>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">Already Retired — 9 model versions</p>
+<p>These models are no longer available. Migrate to the listed replacement.</p>
 <table>
 <thead>
 <tr>
@@ -5436,7 +5561,7 @@
 <td>2025-08-07</td>
 <td>Text Generation</td>
 <td>2026-03-01</td>
-<td><span class="badge badge-retiring-soon">Retiring Soon</span></td>
+<td><span class="badge badge-retired">Retired</span></td>
 <td><a href="models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
 </tr>
 <tr>
@@ -5444,33 +5569,15 @@
 <td>2025-10-03</td>
 <td>Text Generation</td>
 <td>2026-03-01</td>
-<td><span class="badge badge-retiring-soon">Retiring Soon</span></td>
+<td><span class="badge badge-retired">Retired</span></td>
 <td><a href="models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
 </tr>
-</tbody>
-</table>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Upcoming Retirements (31-90 Days) — 3 model versions</p>
-<p>Plan and test your migration to the replacement model.</p>
-<table>
-<thead>
-<tr>
-<th>Model</th>
-<th>Version</th>
-<th>Category</th>
-<th>Retirement Date</th>
-<th>Status</th>
-<th>Replacement</th>
-</tr>
-</thead>
-<tbody>
 <tr>
 <td><a href="models/gpt-4o/">gpt-4o</a></td>
 <td>2024-05-13</td>
 <td>Text Generation</td>
 <td>2026-03-31</td>
-<td><span class="badge badge-retiring">Retiring</span></td>
+<td><span class="badge badge-retired">Retired</span></td>
 <td><a href="models/gpt-5-1/">gpt-5.1</a></td>
 </tr>
 <tr>
@@ -5478,7 +5585,15 @@
 <td>2024-08-06</td>
 <td>Text Generation</td>
 <td>2026-03-31</td>
-<td><span class="badge badge-retiring">Retiring</span></td>
+<td><span class="badge badge-retired">Retired</span></td>
+<td><a href="models/gpt-5-1/">gpt-5.1</a></td>
+</tr>
+<tr>
+<td><a href="models/gpt-4o/">gpt-4o</a></td>
+<td>2024-11-20</td>
+<td>Text Generation</td>
+<td>2026-06-05</td>
+<td><span class="badge badge-retired">Retired</span></td>
 <td><a href="models/gpt-5-1/">gpt-5.1</a></td>
 </tr>
 <tr>
@@ -5486,29 +5601,11 @@
 <td>2024-07-18</td>
 <td>Text Generation</td>
 <td>2026-03-31</td>
-<td><span class="badge badge-retiring">Retiring</span></td>
+<td><span class="badge badge-retired">Retired</span></td>
 <td><a href="models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
 </tr>
-</tbody>
-</table>
-</div>
-<div class="admonition failure">
-<p class="admonition-title">Already Retired — 3 model versions</p>
-<p>These models are no longer available. Migrate to the listed replacement.</p>
-<table>
-<thead>
 <tr>
-<th>Model</th>
-<th>Version</th>
-<th>Category</th>
-<th>Retirement Date</th>
-<th>Status</th>
-<th>Replacement</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="models/gpt-4o-audio-preview/">gpt-4o-audio-preview</a></td>
+<td><code>gpt-4o-audio-preview</code></td>
 <td>2024-12-17</td>
 <td>Audio</td>
 <td>2026-02-02</td>
@@ -5516,7 +5613,7 @@
 <td><a href="models/gpt-audio/">gpt-audio</a></td>
 </tr>
 <tr>
-<td><a href="models/gpt-4o-realtime-preview/">gpt-4o-realtime-preview</a></td>
+<td><code>gpt-4o-realtime-preview</code></td>
 <td>2024-12-17</td>
 <td>Audio</td>
 <td>2026-02-02</td>
@@ -5524,7 +5621,7 @@
 <td><a href="models/gpt-realtime/">gpt-realtime</a></td>
 </tr>
 <tr>
-<td><a href="models/dall-e-3/">dall-e-3</a></td>
+<td><code>dall-e-3</code></td>
 <td>3</td>
 <td>Image And Video</td>
 <td>2026-02-18</td>
@@ -5534,74 +5631,147 @@
 </tbody>
 </table>
 </div>
-<details class="info">
-<summary>Deprecation vs Retirement — What's the Difference?</summary>
-<p><strong>Deprecation</strong> marks a model version as no longer recommended. It still works, but no new deployments can be created.
-After deprecation you should begin migrating to the replacement model.</p>
-<p><strong>Retirement</strong> means the model version is fully removed. API calls will return errors after the retirement date.
-Always migrate <strong>before</strong> the retirement date.</p>
-<table>
-<thead>
-<tr>
-<th>Phase</th>
-<th>New Deployments</th>
-<th>Existing Deployments</th>
-<th>API Calls</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Active</strong></td>
-<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span> Allowed</td>
-<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span> Running</td>
-<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span> Working</td>
-</tr>
-<tr>
-<td><strong>Deprecated</strong></td>
-<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></span> Blocked</td>
-<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span> Running</td>
-<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span> Working</td>
-</tr>
-<tr>
-<td><strong>Retired</strong></td>
-<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></span> Blocked</td>
-<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></span> Removed</td>
-<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></span> Errors</td>
-</tr>
-</tbody>
-</table>
-<p>See <a href="retirements/">full retirement details</a> and <a href="https://learn.microsoft.com/azure/ai-services/openai/concepts/model-retirements">Microsoft's model lifecycle docs</a>.</p>
-</details>
+<div class="lifecycle-guide" aria-label="Model lifecycle guidance">
+    <div class="lifecycle-guide__header">
+        <span class="lifecycle-guide__eyebrow">Lifecycle signals</span>
+        <p>Microsoft Foundry models move through predictable stages so teams can test replacements before old versions stop serving traffic. Use this dashboard for dates and model-level risk, then validate active deployments with the Models API and Azure Service Health.</p>
+    </div>
+
+    <div class="lifecycle-rail" aria-label="Lifecycle stages">
+        <div class="lifecycle-stage lifecycle-stage--preview">
+            <span class="lifecycle-stage__number">1</span>
+            <strong>Preview</strong>
+            <span>Experimental. Suitable for evaluation, not production.</span>
+        </div>
+        <div class="lifecycle-stage lifecycle-stage--ga">
+            <span class="lifecycle-stage__number">2</span>
+            <strong>Generally available</strong>
+            <span>Production-ready. Retirement date is set at launch.</span>
+        </div>
+        <div class="lifecycle-stage lifecycle-stage--legacy">
+            <span class="lifecycle-stage__number">3</span>
+            <strong>Legacy</strong>
+            <span>Newer models exist. Begin replacement evaluation.</span>
+        </div>
+        <div class="lifecycle-stage lifecycle-stage--deprecated">
+            <span class="lifecycle-stage__number">4</span>
+            <strong>Deprecated</strong>
+            <span>Existing customers can continue. New customers are blocked.</span>
+        </div>
+        <div class="lifecycle-stage lifecycle-stage--retired">
+            <span class="lifecycle-stage__number">5</span>
+            <strong>Retired</strong>
+            <span>Removed from service. Inference returns 410 Gone.</span>
+        </div>
+    </div>
+
+    <div class="lifecycle-timelines">
+        <section class="lifecycle-timeline lifecycle-timeline--ga" aria-labelledby="ga-lifecycle-title">
+            <div class="lifecycle-timeline__title" id="ga-lifecycle-title">GA model retirement path</div>
+            <ol class="lifecycle-steps">
+                <li>
+                    <span class="lifecycle-step__marker">Launch</span>
+                    <strong>GA starts</strong>
+                    <span>Retirement date is set about 18 months out and exposed by the Models API.</span>
+                </li>
+                <li>
+                    <span class="lifecycle-step__marker">12 mo</span>
+                    <strong>Deprecated</strong>
+                    <span>Existing subscriptions can continue; new customers cannot access that version.</span>
+                </li>
+                <li>
+                    <span class="lifecycle-step__marker">90 d</span>
+                    <strong>Replacement named</strong>
+                    <span>Replacement is typically available in Global Standard for evaluation.</span>
+                </li>
+                <li>
+                    <span class="lifecycle-step__marker">30 d</span>
+                    <strong>Provisioned window</strong>
+                    <span>Provisioned regions get a short manual migration window.</span>
+                </li>
+                <li>
+                    <span class="lifecycle-step__marker">Retire</span>
+                    <strong>Traffic stops</strong>
+                    <span>Requests to the retired version fail. Retirement dates are not extended.</span>
+                </li>
+            </ol>
+        </section>
+
+        <section class="lifecycle-timeline lifecycle-timeline--preview" aria-labelledby="preview-lifecycle-title">
+            <div class="lifecycle-timeline__title" id="preview-lifecycle-title">Preview model retirement path</div>
+            <ol class="lifecycle-steps lifecycle-steps--compact">
+                <li>
+                    <span class="lifecycle-step__marker">Preview</span>
+                    <strong>Not for production</strong>
+                    <span>Launches with a not-sooner-than retirement date, often around 90 days out.</span>
+                </li>
+                <li>
+                    <span class="lifecycle-step__marker">30 d</span>
+                    <strong>Notice period</strong>
+                    <span>Customers receive at least 30 days notice before upgrade or retirement.</span>
+                </li>
+                <li>
+                    <span class="lifecycle-step__marker">Upgrade</span>
+                    <strong>Force-upgrade or end</strong>
+                    <span>Preview deployments move to a newer preview or GA model, or retire if no replacement exists.</span>
+                </li>
+            </ol>
+        </section>
+    </div>
+
+    <div class="attention-grid" aria-label="When to pay attention">
+        <div class="attention-item attention-item--watch">
+            <strong>Start watching</strong>
+            <span>A model enters Legacy or Deprecated, or appears as Scheduled in this dashboard.</span>
+        </div>
+        <div class="attention-item attention-item--test">
+            <strong>Start testing</strong>
+            <span>The replacement is declared, usually 90-120 days before retirement.</span>
+        </div>
+        <div class="attention-item attention-item--notify">
+            <strong>Expect notifications</strong>
+            <span>GA retirements get at least 60 days active notice; preview models get at least 30 days.</span>
+        </div>
+        <div class="attention-item attention-item--manual">
+            <strong>Check deployment type</strong>
+            <span>Global Standard, Data Zone Standard, and Standard can auto-upgrade. Provisioned deployments must be migrated manually.</span>
+        </div>
+        <div class="attention-item attention-item--api">
+            <strong>Read API status carefully</strong>
+            <span>In the Models API, <code>Deprecating</code> means deprecated; <code>Deprecated</code> means retired.</span>
+        </div>
+    </div>
+
+    <p class="lifecycle-guide__source">Adapted from <a href="https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirements">Microsoft Foundry Models lifecycle and support policy</a>. See <a href="retirements/">full retirement details</a> for model-specific dates.</p>
+</div>
+
 <hr />
 <h2 id="browse-by"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.5c-1.35-.85-3.8-1.5-5.5-1.5-1.65 0-3.35.3-4.75 1.05-.1.05-.15.05-.25.05-.25 0-.5-.25-.5-.5V6c.6-.45 1.25-.75 2-1 1.11-.35 2.33-.5 3.5-.5 1.95 0 4.05.4 5.5 1.5 1.45-1.1 3.55-1.5 5.5-1.5 1.17 0 2.39.15 3.5.5.75.25 1.4.55 2 1v14.6c0 .25-.25.5-.5.5-.1 0-.15 0-.25-.05-1.4-.75-3.1-1.05-4.75-1.05-1.7 0-4.15.65-5.5 1.5M12 8v11.5c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5V7c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5m1 3.5c1.11-.68 2.6-1 4.5-1 .91 0 1.76.09 2.5.28V9.23c-.87-.15-1.71-.23-2.5-.23q-2.655 0-4.5.84zm4.5.17c-1.71 0-3.21.26-4.5.79v1.69c1.11-.65 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24v-1.5c-.87-.16-1.71-.23-2.5-.23m2.5 2.9c-.87-.16-1.71-.24-2.5-.24-1.83 0-3.33.27-4.5.8v1.69c1.11-.66 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24z"/></svg></span> Browse By<a class="headerlink" href="#browse-by" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>View</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="models/"><strong>All Models</strong></a></td>
-<td>Complete model catalog with SKU details</td>
-</tr>
-<tr>
-<td><a href="by-region/"><strong>By Region</strong></a></td>
-<td>Find what's available in your region</td>
-</tr>
-<tr>
-<td><a href="by-sku/"><strong>By SKU Type</strong></a></td>
-<td>Filter by deployment type</td>
-</tr>
-<tr>
-<td><a href="history/"><strong>Change History</strong></a></td>
-<td>Recent availability changes</td>
-</tr>
-</tbody>
-</table>
+<div class="browse-grid">
+    <a class="browse-card" href="models/">
+        <span class="browse-card__label">Catalog</span>
+        <strong>All Models</strong>
+        <span>Complete model catalog with SKU and region coverage details.</span>
+    </a>
+    <a class="browse-card" href="by-region/">
+        <span class="browse-card__label">Regions</span>
+        <strong>By Region</strong>
+        <span>Find what is available in each Azure region.</span>
+    </a>
+    <a class="browse-card" href="by-sku/">
+        <span class="browse-card__label">Deployment</span>
+        <strong>By SKU Type</strong>
+        <span>Compare Global, Datazone, Standard, and Provisioned options.</span>
+    </a>
+    <a class="browse-card" href="history/">
+        <span class="browse-card__label">Changes</span>
+        <strong>Change History</strong>
+        <span>Review recent availability additions and removals.</span>
+    </a>
+</div>
+
 <hr />
-<p><em>Last updated: 2026-02-25 19:41 UTC</em></p>
+<p><em>Last updated: 2026-06-09 17:19 UTC</em></p>
 
 
 
@@ -5659,10 +5829,10 @@ Always migrate <strong>before</strong> the retirement date.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "search.share", "content.tabs.link", "content.tooltips", "toc.integrate"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "search.share", "content.tabs.link", "content.tooltips", "toc.integrate"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
       
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
       
