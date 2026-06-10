@@ -1,9 +1,9 @@
 # AI Foundry Model Availability by Region
 
-_Last updated: 2026-06-04 10:38 UTC_
+_Last updated: 2026-06-10 10:56 UTC_
 
-- Models tracked: **111**
-- Regions in snapshot: **92**
+- Models tracked: **87**
+- Regions in snapshot: **32**
 - Distinct SKU labels: **20**
 
 Coverage legend:
@@ -38,32 +38,6 @@ SKU labels observed:
 
 | Model | Coverage | Regions | SKU labels | Regions (sample) |
 | --- | --- | --- | --- | --- |
-| swedencentral | 🟢 Broad | 58 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `codex-mini`, `computer-use-preview`, `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o` |
-| eastus2 | 🟢 Broad | 57 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `codex-mini`, `computer-use-preview`, `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o` |
-| centralus | 🟢 Broad | 45 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `codex-mini`, `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini` |
-| southindia | 🟢 Broad | 42 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `computer-use-preview`, `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini` |
-| francecentral | 🟢 Broad | 40 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-4o-mini-transcribe` |
-| canadacentral | 🟢 Broad | 38 | 3 (Deployments Provisioned, Deployments Standard, Global coverage) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-4o-mini-transcribe` |
-| polandcentral | 🟢 Broad | 37 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| uaenorth | 🟢 Broad | 36 | 3 (Deployments Provisioned, Deployments Standard, Global coverage) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| westus3 | 🟢 Broad | 35 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| northcentralus | 🟢 Broad | 34 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| norwayeast | 🟢 Broad | 33 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| southcentralus | 🟢 Broad | 33 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| switzerlandnorth | 🟢 Broad | 32 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| westeurope | 🟢 Broad | 32 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| westus | 🟢 Broad | 32 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| australiaeast | 🟢 Broad | 31 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| brazilsouth | 🟢 Broad | 31 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| canadaeast | 🟢 Broad | 31 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| eastus | 🟢 Broad | 31 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| germanywestcentral | 🟢 Broad | 31 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| italynorth | 🟢 Broad | 31 | 3 (Deployments Provisioned, Deployments Standard, Global coverage) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| japaneast | 🟢 Broad | 31 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| koreacentral | 🟢 Broad | 31 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| southafricanorth | 🟢 Broad | 31 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| spaincentral | 🟢 Broad | 31 | 3 (Deployments Provisioned, Deployments Standard, Global coverage) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| uksouth | 🟢 Broad | 31 | 4 (Deployments Batch, Deployments Provisioned, Deployments Standard +) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
 | Cohere-rerank-v4.0-fast | 🟢 Broad | 30 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | Cohere-rerank-v4.0-pro | 🟢 Broad | 30 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | DeepSeek-R1 | 🟢 Broad | 30 | 3 (Global Provisioned Managed, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
@@ -90,1123 +64,70 @@ SKU labels observed:
 | grok-4-fast-reasoning | 🟢 Broad | 30 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | mistral-document-ai-2505 | 🟢 Broad | 30 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | mistral-document-ai-2512 | 🟢 Broad | 30 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| southeastasia | 🟢 Broad | 30 | 3 (Deployments Provisioned, Deployments Standard, Global coverage) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| gpt-4.1 | 🟢 Broad | 29 | 14 (Datazone Standard Gov, Datazone Standard Priority Processing, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-4.1-mini | 🟢 Broad | 29 | 13 (Datazone Provisioned Managed Gov, Datazone Standard Gov, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-4o | 🟢 Broad | 29 | 14 (Datazone Provisioned Managed Gov, Datazone Standard Gov, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5.1 | 🟢 Broad | 29 | 13 (Datazone Standard Gov, Datazone Standard Priority Processing, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| o3-mini | 🟢 Broad | 29 | 11 (Datazone Provisioned Managed Gov, Datazone Standard Gov, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| switzerlandwest | 🟢 Broad | 29 | 3 (Deployments Provisioned, Deployments Standard, Global coverage) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-4o`, `gpt-4o-mini`, `gpt-5` |
-| gpt-4.1-nano | 🟢 Broad | 28 | 9 (Datazone provisioned managed, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-4o-mini | 🟢 Broad | 28 | 10 (Datazone provisioned managed, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5 | 🟢 Broad | 28 | 9 (Datazone provisioned managed, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5-mini | 🟢 Broad | 28 | 7 (Datazone provisioned managed, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5.1-chat | 🟢 Broad | 28 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5.1-codex | 🟢 Broad | 28 | 5 (Datazone provisioned managed, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5.1-codex-mini | 🟢 Broad | 28 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5.2 | 🟢 Broad | 28 | 9 (Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5.2-chat | 🟢 Broad | 28 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5.2-codex | 🟢 Broad | 28 | 4 (Global Standard, Global coverage, Provisioned global +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5.3-chat | 🟢 Broad | 28 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5.3-codex | 🟢 Broad | 28 | 5 (Datazone standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5.4 | 🟢 Broad | 28 | 9 (Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5.4-mini | 🟢 Broad | 28 | 6 (Datazone Standard Priority Processing, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5.4-nano | 🟢 Broad | 28 | 4 (Datazone standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| o1 | 🟢 Broad | 28 | 8 (Datazone provisioned managed, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| o3 | 🟢 Broad | 28 | 9 (Datazone provisioned managed, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| o4-mini | 🟢 Broad | 28 | 10 (Datazone provisioned managed, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5-chat | 🟢 Broad | 27 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5-codex | 🟢 Broad | 27 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5-pro | 🟢 Broad | 27 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| text-embedding-3-large | 🟢 Broad | 27 | 6 (Datazone standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada East`, `Central US`, `East US`, `East US 2` |
-| gpt-5-nano | 🟢 Broad | 26 | 4 (Datazone standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada East`, `Central US`, `East US`, `East US 2` |
-| text-embedding-3-small | 🟢 Broad | 26 | 6 (Datazone standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada East`, `Central US`, `East US`, `East US 2` |
-| text-embedding-ada-002 | 🟢 Broad | 26 | 6 (Datazone standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada East`, `Central US`, `East US`, `East US 2` |
-| whisper | 🔴 Emerging | 8 | 2 (Global coverage, Standard) | `East US 2`, `North Central US`, `Norway East`, `South India`, `Sweden Central`, `Switzerland North` |
+| gpt-4.1 | 🟢 Broad | 29 | 17 (Datazone Standard Gov, Datazone Standard Priority Processing, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-4.1-mini | 🟢 Broad | 29 | 16 (Datazone Provisioned Managed Gov, Datazone Standard Gov, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-4o | 🟢 Broad | 29 | 17 (Datazone Provisioned Managed Gov, Datazone Standard Gov, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.1 | 🟢 Broad | 29 | 16 (Datazone Standard Gov, Datazone Standard Priority Processing, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| o3-mini | 🟢 Broad | 29 | 14 (Datazone Provisioned Managed Gov, Datazone Standard Gov, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| text-embedding-3-large | 🟢 Broad | 29 | 7 (Datazone standard, Deployments Standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| text-embedding-3-small | 🟢 Broad | 29 | 7 (Datazone standard, Deployments Standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-4.1-nano | 🟢 Broad | 28 | 12 (Datazone provisioned managed, Datazone standard, Deployments Batch +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-4o-mini | 🟢 Broad | 28 | 13 (Datazone provisioned managed, Datazone standard, Deployments Batch +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5 | 🟢 Broad | 28 | 12 (Datazone provisioned managed, Datazone standard, Deployments Batch +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5-mini | 🟢 Broad | 28 | 9 (Datazone provisioned managed, Datazone standard, Deployments Provisioned +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.1-chat | 🟢 Broad | 28 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.1-codex | 🟢 Broad | 28 | 7 (Datazone provisioned managed, Deployments Provisioned, Deployments Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.1-codex-mini | 🟢 Broad | 28 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.2 | 🟢 Broad | 28 | 11 (Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.2-chat | 🟢 Broad | 28 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.2-codex | 🟢 Broad | 28 | 6 (Deployments Provisioned, Deployments Standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.3-chat | 🟢 Broad | 28 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.3-codex | 🟢 Broad | 28 | 7 (Datazone standard, Deployments Provisioned, Deployments Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.4 | 🟢 Broad | 28 | 11 (Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.4-mini | 🟢 Broad | 28 | 8 (Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.4-nano | 🟢 Broad | 28 | 5 (Datazone standard, Deployments Standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.5 | 🟢 Broad | 28 | 11 (Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| o1 | 🟢 Broad | 28 | 10 (Datazone provisioned managed, Datazone standard, Deployments Provisioned +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| o3 | 🟢 Broad | 28 | 12 (Datazone provisioned managed, Datazone standard, Deployments Batch +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| o4-mini | 🟢 Broad | 28 | 13 (Datazone provisioned managed, Datazone standard, Deployments Batch +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5-chat | 🟢 Broad | 27 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5-codex | 🟢 Broad | 27 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5-pro | 🟢 Broad | 27 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5-nano | 🟢 Broad | 26 | 5 (Datazone standard, Deployments Standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada East`, `Central US`, `East US`, `East US 2` |
+| text-embedding-ada-002 | 🟢 Broad | 26 | 7 (Datazone standard, Deployments Standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada East`, `Central US`, `East US`, `East US 2` |
+| whisper | 🔴 Emerging | 8 | 3 (Deployments Standard, Global coverage, Standard) | `East US 2`, `North Central US`, `Norway East`, `South India`, `Sweden Central`, `Switzerland North` |
 | MAI-Image-2 | 🔴 Emerging | 6 | 2 (Global Standard, Global coverage) | `East US`, `South India`, `Sweden Central`, `West Central US`, `West Europe`, `West US` |
-| gpt-4o-mini-transcribe | 🔴 Emerging | 6 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
-| gpt-4o-transcribe | 🔴 Emerging | 6 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
-| gpt-4o-transcribe-diarize | 🔴 Emerging | 6 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
-| gpt-5.5 | 🔴 Emerging | 6 | 9 (Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard +) | `East US`, `East US 2`, `North Central US`, `Poland Central`, `South Central US`, `Sweden Central` |
-| gpt-realtime | 🔴 Emerging | 6 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
-| gpt-realtime-1.5 | 🔴 Emerging | 6 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
-| gpt-realtime-mini | 🔴 Emerging | 6 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
-| gpt-image-1 | 🔴 Emerging | 5 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
-| gpt-image-1-mini | 🔴 Emerging | 5 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
-| gpt-image-1.5 | 🔴 Emerging | 5 | 4 (Datazone standard, Global Standard, Global coverage +) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
-| gpt-image-2 | 🔴 Emerging | 5 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
-| gpt-5.4-pro | 🔴 Emerging | 4 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `East US 2`, `Poland Central`, `South Central US`, `Sweden Central` |
-| codex-mini | 🔴 Emerging | 3 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Central US`, `East US 2`, `Sweden Central` |
-| computer-use-preview | 🔴 Emerging | 3 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `East US 2`, `South India`, `Sweden Central` |
-| gpt-audio | 🔴 Emerging | 3 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Central US`, `East US 2`, `Sweden Central` |
-| gpt-audio-1.5 | 🔴 Emerging | 3 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Central US`, `East US 2`, `Sweden Central` |
-| gpt-audio-mini | 🔴 Emerging | 3 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Central US`, `East US 2`, `Sweden Central` |
-| o3-pro | 🔴 Emerging | 3 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Central US`, `East US 2`, `Sweden Central` |
-| tts | 🔴 Emerging | 3 | 2 (Global coverage, Standard) | `North Central US`, `Sweden Central`, `West US 3` |
-| tts-hd | 🔴 Emerging | 3 | 2 (Global coverage, Standard) | `North Central US`, `Sweden Central`, `West US 3` |
-| gpt-5.1-codex-max | 🔴 Emerging | 2 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `East US 2`, `Sweden Central` |
-| model-router | 🔴 Emerging | 2 | 4 (Datazone standard, Global Standard, Global coverage +) | `East US 2`, `Sweden Central` |
-| o3-deep-research | 🔴 Emerging | 2 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Norway East`, `West US` |
-| sora-2 | 🔴 Emerging | 2 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `East US 2`, `Sweden Central` |
-| gpt-4o-mini-tts | 🔴 Emerging | 1 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `East US 2` |
+| gpt-4o-mini-transcribe | 🔴 Emerging | 6 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
+| gpt-4o-transcribe | 🔴 Emerging | 6 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
+| gpt-4o-transcribe-diarize | 🔴 Emerging | 6 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
+| gpt-realtime | 🔴 Emerging | 6 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
+| gpt-realtime-1.5 | 🔴 Emerging | 6 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
+| gpt-realtime-2 | 🔴 Emerging | 6 | 2 (Deployments Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
+| gpt-realtime-mini | 🔴 Emerging | 6 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
+| gpt-realtime-translate | 🔴 Emerging | 6 | 2 (Deployments Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
+| gpt-realtime-whisper | 🔴 Emerging | 6 | 2 (Deployments Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
+| gpt-chat-latest | 🔴 Emerging | 5 | 2 (Deployments Standard, Global coverage) | `East US 2`, `Poland Central`, `South Central US`, `Sweden Central`, `West US 3` |
+| gpt-image-1 | 🔴 Emerging | 5 | 4 (Deployments Standard, Global Standard, Global coverage +) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
+| gpt-image-1-mini | 🔴 Emerging | 5 | 4 (Deployments Standard, Global Standard, Global coverage +) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
+| gpt-image-1.5 | 🔴 Emerging | 5 | 5 (Datazone standard, Deployments Standard, Global Standard +) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
+| gpt-image-2 | 🔴 Emerging | 5 | 4 (Deployments Standard, Global Standard, Global coverage +) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
+| gpt-5.4-pro | 🔴 Emerging | 4 | 4 (Deployments Standard, Global Standard, Global coverage +) | `East US 2`, `Poland Central`, `South Central US`, `Sweden Central` |
+| codex-mini | 🔴 Emerging | 3 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Central US`, `East US 2`, `Sweden Central` |
+| computer-use-preview | 🔴 Emerging | 3 | 4 (Deployments Standard, Global Standard, Global coverage +) | `East US 2`, `South India`, `Sweden Central` |
+| gpt-audio | 🔴 Emerging | 3 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Central US`, `East US 2`, `Sweden Central` |
+| gpt-audio-1.5 | 🔴 Emerging | 3 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Central US`, `East US 2`, `Sweden Central` |
+| gpt-audio-mini | 🔴 Emerging | 3 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Central US`, `East US 2`, `Sweden Central` |
+| o3-pro | 🔴 Emerging | 3 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Central US`, `East US 2`, `Sweden Central` |
+| tts | 🔴 Emerging | 3 | 3 (Deployments Standard, Global coverage, Standard) | `North Central US`, `Sweden Central`, `West US 3` |
+| tts-hd | 🔴 Emerging | 3 | 3 (Deployments Standard, Global coverage, Standard) | `North Central US`, `Sweden Central`, `West US 3` |
+| gpt-5.1-codex-max | 🔴 Emerging | 2 | 4 (Deployments Standard, Global Standard, Global coverage +) | `East US 2`, `Sweden Central` |
+| model-router | 🔴 Emerging | 2 | 5 (Datazone standard, Deployments Standard, Global Standard +) | `East US 2`, `Sweden Central` |
+| o3-deep-research | 🔴 Emerging | 2 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Norway East`, `West US` |
+| sora-2 | 🔴 Emerging | 2 | 4 (Deployments Standard, Global Standard, Global coverage +) | `East US 2`, `Sweden Central` |
+| gpt-4o-mini-tts | 🔴 Emerging | 1 | 4 (Deployments Standard, Global Standard, Global coverage +) | `East US 2` |
 
 ## Regional rosters by model
 
-<details>
-<summary>swedencentral — 58 regions across 4 SKU labels</summary>
-
-- `codex-mini` — Deployments Standard, Global coverage
-- `computer-use-preview` — Deployments Standard, Global coverage
-- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini-transcribe` — Deployments Standard, Global coverage
-- `gpt-4o-transcribe` — Deployments Standard, Global coverage
-- `gpt-4o-transcribe-diarize` — Deployments Standard, Global coverage
-- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-max` — Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.4-pro` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-audio` — Deployments Standard, Global coverage
-- `gpt-audio-1.5` — Deployments Standard, Global coverage
-- `gpt-audio-mini` — Deployments Standard, Global coverage
-- `gpt-chat-latest` — Deployments Standard, Global coverage
-- `gpt-image-1` — Deployments Standard, Global coverage
-- `gpt-image-1-mini` — Deployments Standard, Global coverage
-- `gpt-image-1.5` — Deployments Standard, Global coverage
-- `gpt-image-2` — Deployments Standard, Global coverage
-- `gpt-realtime` — Deployments Standard, Global coverage
-- `gpt-realtime-1.5` — Deployments Standard, Global coverage
-- `gpt-realtime-2` — Deployments Standard, Global coverage
-- `gpt-realtime-mini` — Deployments Standard, Global coverage
-- `gpt-realtime-translate` — Deployments Standard, Global coverage
-- `gpt-realtime-whisper` — Deployments Standard, Global coverage
-- `model-router` — Deployments Standard, Global coverage
-- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-pro` — Deployments Standard, Global coverage
-- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `sora-2` — Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-- `text-embedding-ada-002` — Deployments Standard, Global coverage
-- `tts` — Deployments Standard, Global coverage
-- `tts-hd` — Deployments Standard, Global coverage
-- `whisper` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>eastus2 — 57 regions across 4 SKU labels</summary>
-
-- `codex-mini` — Deployments Standard, Global coverage
-- `computer-use-preview` — Deployments Standard, Global coverage
-- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini-transcribe` — Deployments Standard, Global coverage
-- `gpt-4o-mini-tts` — Deployments Standard, Global coverage
-- `gpt-4o-transcribe` — Deployments Standard, Global coverage
-- `gpt-4o-transcribe-diarize` — Deployments Standard, Global coverage
-- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-max` — Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.4-pro` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-audio` — Deployments Standard, Global coverage
-- `gpt-audio-1.5` — Deployments Standard, Global coverage
-- `gpt-audio-mini` — Deployments Standard, Global coverage
-- `gpt-chat-latest` — Deployments Standard, Global coverage
-- `gpt-image-1` — Deployments Standard, Global coverage
-- `gpt-image-1-mini` — Deployments Standard, Global coverage
-- `gpt-image-1.5` — Deployments Standard, Global coverage
-- `gpt-image-2` — Deployments Standard, Global coverage
-- `gpt-realtime` — Deployments Standard, Global coverage
-- `gpt-realtime-1.5` — Deployments Standard, Global coverage
-- `gpt-realtime-2` — Deployments Standard, Global coverage
-- `gpt-realtime-mini` — Deployments Standard, Global coverage
-- `gpt-realtime-translate` — Deployments Standard, Global coverage
-- `gpt-realtime-whisper` — Deployments Standard, Global coverage
-- `model-router` — Deployments Standard, Global coverage
-- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-pro` — Deployments Standard, Global coverage
-- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `sora-2` — Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-- `text-embedding-ada-002` — Deployments Standard, Global coverage
-- `whisper` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>centralus — 45 regions across 4 SKU labels</summary>
-
-- `codex-mini` — Deployments Standard, Global coverage
-- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini-transcribe` — Deployments Standard, Global coverage
-- `gpt-4o-transcribe` — Deployments Standard, Global coverage
-- `gpt-4o-transcribe-diarize` — Deployments Standard, Global coverage
-- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-audio` — Deployments Standard, Global coverage
-- `gpt-audio-1.5` — Deployments Standard, Global coverage
-- `gpt-audio-mini` — Deployments Standard, Global coverage
-- `gpt-realtime` — Deployments Standard, Global coverage
-- `gpt-realtime-1.5` — Deployments Standard, Global coverage
-- `gpt-realtime-2` — Deployments Standard, Global coverage
-- `gpt-realtime-mini` — Deployments Standard, Global coverage
-- `gpt-realtime-translate` — Deployments Standard, Global coverage
-- `gpt-realtime-whisper` — Deployments Standard, Global coverage
-- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-pro` — Deployments Standard, Global coverage
-- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-- `text-embedding-ada-002` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>southindia — 42 regions across 4 SKU labels</summary>
-
-- `computer-use-preview` — Deployments Standard, Global coverage
-- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini-transcribe` — Deployments Standard, Global coverage
-- `gpt-4o-transcribe` — Deployments Standard, Global coverage
-- `gpt-4o-transcribe-diarize` — Deployments Standard, Global coverage
-- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Global coverage
-- `gpt-realtime` — Deployments Standard, Global coverage
-- `gpt-realtime-1.5` — Deployments Standard, Global coverage
-- `gpt-realtime-2` — Deployments Standard, Global coverage
-- `gpt-realtime-mini` — Deployments Standard, Global coverage
-- `gpt-realtime-translate` — Deployments Standard, Global coverage
-- `gpt-realtime-whisper` — Deployments Standard, Global coverage
-- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-- `text-embedding-ada-002` — Deployments Standard, Global coverage
-- `whisper` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>francecentral — 40 regions across 4 SKU labels</summary>
-
-- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini-transcribe` — Deployments Standard, Global coverage
-- `gpt-4o-transcribe` — Deployments Standard, Global coverage
-- `gpt-4o-transcribe-diarize` — Deployments Standard, Global coverage
-- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-realtime` — Deployments Standard, Global coverage
-- `gpt-realtime-1.5` — Deployments Standard, Global coverage
-- `gpt-realtime-2` — Deployments Standard, Global coverage
-- `gpt-realtime-mini` — Deployments Standard, Global coverage
-- `gpt-realtime-translate` — Deployments Standard, Global coverage
-- `gpt-realtime-whisper` — Deployments Standard, Global coverage
-- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-- `text-embedding-ada-002` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>canadacentral — 38 regions across 3 SKU labels</summary>
-
-- `gpt-4.1` — Deployments Provisioned, Global coverage
-- `gpt-4.1-mini` — Deployments Provisioned, Global coverage
-- `gpt-4.1-nano` — Deployments Provisioned, Global coverage
-- `gpt-4o` — Deployments Provisioned, Global coverage
-- `gpt-4o-mini` — Deployments Provisioned, Global coverage
-- `gpt-4o-mini-transcribe` — Deployments Standard, Global coverage
-- `gpt-4o-transcribe` — Deployments Standard, Global coverage
-- `gpt-4o-transcribe-diarize` — Deployments Standard, Global coverage
-- `gpt-5` — Deployments Provisioned, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Global coverage
-- `gpt-realtime` — Deployments Standard, Global coverage
-- `gpt-realtime-1.5` — Deployments Standard, Global coverage
-- `gpt-realtime-2` — Deployments Standard, Global coverage
-- `gpt-realtime-mini` — Deployments Standard, Global coverage
-- `gpt-realtime-translate` — Deployments Standard, Global coverage
-- `gpt-realtime-whisper` — Deployments Standard, Global coverage
-- `o1` — Deployments Provisioned, Global coverage
-- `o3` — Deployments Provisioned, Global coverage
-- `o3-mini` — Deployments Provisioned, Global coverage
-- `o4-mini` — Deployments Provisioned, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>polandcentral — 37 regions across 4 SKU labels</summary>
-
-- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.4-pro` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-chat-latest` — Deployments Standard, Global coverage
-- `gpt-image-1` — Deployments Standard, Global coverage
-- `gpt-image-1-mini` — Deployments Standard, Global coverage
-- `gpt-image-1.5` — Deployments Standard, Global coverage
-- `gpt-image-2` — Deployments Standard, Global coverage
-- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-- `text-embedding-ada-002` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>uaenorth — 36 regions across 3 SKU labels</summary>
-
-- `gpt-4.1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Global coverage
-- `gpt-image-1` — Deployments Standard, Global coverage
-- `gpt-image-1-mini` — Deployments Standard, Global coverage
-- `gpt-image-1.5` — Deployments Standard, Global coverage
-- `gpt-image-2` — Deployments Standard, Global coverage
-- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o4-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-- `text-embedding-ada-002` — Deployments Standard, Global coverage
-- `whisper` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>westus3 — 35 regions across 4 SKU labels</summary>
-
-- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-chat-latest` — Deployments Standard, Global coverage
-- `gpt-image-1` — Deployments Standard, Global coverage
-- `gpt-image-1-mini` — Deployments Standard, Global coverage
-- `gpt-image-1.5` — Deployments Standard, Global coverage
-- `gpt-image-2` — Deployments Standard, Global coverage
-- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-- `text-embedding-ada-002` — Deployments Standard, Global coverage
-- `tts` — Deployments Standard, Global coverage
-- `tts-hd` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>northcentralus — 34 regions across 4 SKU labels</summary>
-
-- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-- `text-embedding-ada-002` — Deployments Standard, Global coverage
-- `tts` — Deployments Standard, Global coverage
-- `tts-hd` — Deployments Standard, Global coverage
-- `whisper` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>norwayeast — 33 regions across 4 SKU labels</summary>
-
-- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-deep-research` — Deployments Standard, Global coverage
-- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-- `text-embedding-ada-002` — Deployments Standard, Global coverage
-- `whisper` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>southcentralus — 33 regions across 4 SKU labels</summary>
-
-- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.4-pro` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-chat-latest` — Deployments Standard, Global coverage
-- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-- `text-embedding-ada-002` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>switzerlandnorth — 32 regions across 4 SKU labels</summary>
-
-- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-- `text-embedding-ada-002` — Deployments Standard, Global coverage
-- `whisper` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>westeurope — 32 regions across 4 SKU labels</summary>
-
-- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-- `text-embedding-ada-002` — Deployments Standard, Global coverage
-- `whisper` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>westus — 32 regions across 4 SKU labels</summary>
-
-- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-deep-research` — Deployments Standard, Global coverage
-- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-- `text-embedding-ada-002` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>australiaeast — 31 regions across 4 SKU labels</summary>
-
-- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Global coverage
-- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-- `text-embedding-ada-002` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>brazilsouth — 31 regions across 4 SKU labels</summary>
-
-- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Global coverage
-- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-- `text-embedding-ada-002` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>canadaeast — 31 regions across 4 SKU labels</summary>
-
-- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Global coverage
-- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-- `text-embedding-ada-002` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>eastus — 31 regions across 4 SKU labels</summary>
-
-- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-- `text-embedding-ada-002` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>germanywestcentral — 31 regions across 4 SKU labels</summary>
-
-- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-- `text-embedding-ada-002` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>italynorth — 31 regions across 3 SKU labels</summary>
-
-- `gpt-4.1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o4-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-- `text-embedding-ada-002` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>japaneast — 31 regions across 4 SKU labels</summary>
-
-- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Global coverage
-- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-- `text-embedding-ada-002` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>koreacentral — 31 regions across 4 SKU labels</summary>
-
-- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Global coverage
-- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-- `text-embedding-ada-002` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>southafricanorth — 31 regions across 4 SKU labels</summary>
-
-- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Global coverage
-- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-- `text-embedding-ada-002` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>spaincentral — 31 regions across 3 SKU labels</summary>
-
-- `gpt-4.1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o4-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-- `text-embedding-ada-002` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>uksouth — 31 regions across 4 SKU labels</summary>
-
-- `gpt-4.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Global coverage
-- `o1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `o4-mini` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-- `text-embedding-ada-002` — Deployments Standard, Global coverage
-
-</details>
 <details>
 <summary>Cohere-rerank-v4.0-fast — 30 regions across 2 SKU labels</summary>
 
@@ -2118,1070 +1039,1039 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>southeastasia — 30 regions across 3 SKU labels</summary>
+<summary>gpt-4.1 — 29 regions across 17 SKU labels</summary>
 
-- `gpt-4.1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4.1-nano` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-4o` — Deployments Provisioned, Global coverage
-- `gpt-4o-mini` — Deployments Provisioned, Global coverage
-- `gpt-5` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5-nano` — Deployments Standard, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Global coverage
-- `o1` — Deployments Provisioned, Global coverage
-- `o3` — Deployments Provisioned, Deployments Standard, Global coverage
-- `o3-mini` — Deployments Provisioned, Global coverage
-- `o4-mini` — Deployments Provisioned, Deployments Standard, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>gpt-4.1 — 29 regions across 14 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Brazil South` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Canada Central` — Global coverage, Provisioned global, Standard Global Priority Processing
-- `Canada East` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Central US` — Datazone Standard Priority Processing, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `East US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
-- `East US 2` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `France Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Germany West Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Italy North` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Japan East` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Korea Central` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `North Central US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
-- `Norway East` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Poland Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `South Africa North` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `South Central US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
-- `South India` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Southeast Asia` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Spain Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Sweden Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
-- `Switzerland North` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
-- `Switzerland West` — Global coverage, Provisioned global, Standard Global Priority Processing
-- `UAE North` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `UK South` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `West US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
-- `West US 3` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability
+- `Australia East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Brazil South` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Canada Central` — Deployments Provisioned, Global coverage, Provisioned global, Standard Global Priority Processing
+- `Canada East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Central US` — Datazone Standard Priority Processing, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `East US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
+- `East US 2` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `France Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Germany West Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Italy North` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Japan East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Korea Central` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `North Central US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
+- `Norway East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Poland Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `South Africa North` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `South Central US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
+- `South India` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Southeast Asia` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Spain Central` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Sweden Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
+- `Switzerland North` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
+- `Switzerland West` — Deployments Provisioned, Global coverage, Provisioned global, Standard Global Priority Processing
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `UK South` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `West Europe` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `West US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
+- `West US 3` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability
 - `usgovarizona` — Datazone Standard Gov, Global coverage, Standard Models Gov
 
 </details>
 <details>
-<summary>gpt-4.1-mini — 29 regions across 13 SKU labels</summary>
+<summary>gpt-4.1-mini — 29 regions across 16 SKU labels</summary>
 
-- `Australia East` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `Brazil South` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Canada Central` — Global coverage, Provisioned global
-- `Canada East` — Global Standard, Global batch, Global coverage, Provisioned global, Standard, Standard Global By Capability
-- `Central US` — Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
-- `East US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `East US 2` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `France Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability
-- `Germany West Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
-- `Italy North` — Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Japan East` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `Korea Central` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `North Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `Norway East` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Poland Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
-- `South Africa North` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `South Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `South India` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `Southeast Asia` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Spain Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Sweden Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `Switzerland North` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `Switzerland West` — Global coverage, Provisioned global
-- `UAE North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `UK South` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability
-- `West US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `West US 3` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability
+- `Australia East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `Brazil South` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Canada Central` — Deployments Provisioned, Global coverage, Provisioned global
+- `Canada East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard, Standard Global By Capability
+- `Central US` — Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
+- `East US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `East US 2` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `France Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability
+- `Germany West Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
+- `Italy North` — Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Japan East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `Korea Central` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `North Central US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `Norway East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Poland Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
+- `South Africa North` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `South Central US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `South India` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `Southeast Asia` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Spain Central` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Sweden Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `Switzerland North` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `Switzerland West` — Deployments Provisioned, Global coverage, Provisioned global
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `UK South` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `West Europe` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability
+- `West US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `West US 3` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability
 - `usgovarizona` — Datazone Provisioned Managed Gov, Datazone Standard Gov, Global coverage, Standard Models Gov
 
 </details>
 <details>
-<summary>gpt-4o — 29 regions across 14 SKU labels</summary>
+<summary>gpt-4o — 29 regions across 17 SKU labels</summary>
 
-- `Australia East` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `Brazil South` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Canada Central` — Global coverage, Provisioned (PTU managed), Provisioned global
-- `Canada East` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `Central US` — Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `East US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `East US 2` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `France Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `Germany West Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Italy North` — Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Japan East` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `Korea Central` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `North Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `Norway East` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `Poland Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `South Africa North` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `South Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `South India` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `Southeast Asia` — Global coverage, Provisioned (PTU managed), Provisioned global
-- `Spain Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Sweden Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `Switzerland North` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `Switzerland West` — Global coverage, Provisioned (PTU managed), Provisioned global
-- `UAE North` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `UK South` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `West US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `West US 3` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability
+- `Australia East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `Brazil South` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Canada Central` — Deployments Provisioned, Global coverage, Provisioned (PTU managed), Provisioned global
+- `Canada East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `Central US` — Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `East US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `East US 2` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `France Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `Germany West Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Italy North` — Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Japan East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `Korea Central` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `North Central US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `Norway East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `Poland Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `South Africa North` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `South Central US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `South India` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `Southeast Asia` — Deployments Provisioned, Global coverage, Provisioned (PTU managed), Provisioned global
+- `Spain Central` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Sweden Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `Switzerland North` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `Switzerland West` — Deployments Provisioned, Global coverage, Provisioned (PTU managed), Provisioned global
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `UK South` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `West Europe` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `West US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `West US 3` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability
 - `usgovarizona` — Datazone Provisioned Managed Gov, Datazone Standard Gov, Global coverage, Provisioned Models Gov, Standard Models Gov
 
 </details>
 <details>
-<summary>gpt-5.1 — 29 regions across 13 SKU labels</summary>
+<summary>gpt-5.1 — 29 regions across 16 SKU labels</summary>
 
-- `Australia East` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Brazil South` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Canada Central` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Canada East` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Central US` — Datazone Standard Priority Processing, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
-- `East US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
-- `East US 2` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
-- `France Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Germany West Central` — Datazone provisioned managed, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Italy North` — Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Japan East` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Korea Central` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `North Central US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
-- `Norway East` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Poland Central` — Datazone provisioned managed, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `South Africa North` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `South Central US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
-- `South India` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Southeast Asia` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Spain Central` — Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Sweden Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
-- `Switzerland North` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Switzerland West` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `UAE North` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `UK South` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `West Europe` — Datazone provisioned managed, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `West US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
-- `West US 3` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability
+- `Australia East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Brazil South` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Canada Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Canada East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Central US` — Datazone Standard Priority Processing, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
+- `East US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
+- `East US 2` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
+- `France Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Germany West Central` — Datazone provisioned managed, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Italy North` — Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Japan East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Korea Central` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `North Central US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
+- `Norway East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Poland Central` — Datazone provisioned managed, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `South Africa North` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `South Central US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
+- `South India` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Southeast Asia` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Spain Central` — Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Sweden Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
+- `Switzerland North` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Switzerland West` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `UK South` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `West Europe` — Datazone provisioned managed, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `West US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
+- `West US 3` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability
 - `usgovarizona` — Datazone Standard Gov, Global coverage
 
 </details>
 <details>
-<summary>o3-mini — 29 regions across 11 SKU labels</summary>
+<summary>o3-mini — 29 regions across 14 SKU labels</summary>
 
-- `Australia East` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Brazil South` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Canada Central` — Global coverage, Provisioned global
-- `Canada East` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Central US` — Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
-- `East US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
-- `East US 2` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `France Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Germany West Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Italy North` — Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Japan East` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Korea Central` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `North Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
-- `Norway East` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Poland Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `South Africa North` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `South Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `South India` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Southeast Asia` — Global coverage, Provisioned global
-- `Spain Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Sweden Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Switzerland North` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Switzerland West` — Global coverage, Provisioned global
-- `UAE North` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `UK South` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `West US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
-- `West US 3` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Standard Global By Capability
+- `Australia East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Brazil South` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Canada Central` — Deployments Provisioned, Global coverage, Provisioned global
+- `Canada East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Central US` — Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
+- `East US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
+- `East US 2` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `France Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Germany West Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Italy North` — Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Japan East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Korea Central` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `North Central US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
+- `Norway East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Poland Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `South Africa North` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `South Central US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `South India` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Southeast Asia` — Deployments Provisioned, Global coverage, Provisioned global
+- `Spain Central` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Sweden Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Switzerland North` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Switzerland West` — Deployments Provisioned, Global coverage, Provisioned global
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `UK South` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `West Europe` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `West US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
+- `West US 3` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Standard Global By Capability
 - `usgovarizona` — Datazone Provisioned Managed Gov, Datazone Standard Gov, Global coverage
 
 </details>
 <details>
-<summary>switzerlandwest — 29 regions across 3 SKU labels</summary>
+<summary>text-embedding-3-large — 29 regions across 7 SKU labels</summary>
 
-- `gpt-4.1` — Deployments Provisioned, Global coverage
-- `gpt-4.1-mini` — Deployments Provisioned, Global coverage
-- `gpt-4.1-nano` — Deployments Provisioned, Global coverage
-- `gpt-4o` — Deployments Provisioned, Global coverage
-- `gpt-4o-mini` — Deployments Provisioned, Global coverage
-- `gpt-5` — Deployments Provisioned, Global coverage
-- `gpt-5-chat` — Deployments Standard, Global coverage
-- `gpt-5-codex` — Deployments Standard, Global coverage
-- `gpt-5-mini` — Deployments Provisioned, Global coverage
-- `gpt-5-pro` — Deployments Standard, Global coverage
-- `gpt-5.1` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-chat` — Deployments Standard, Global coverage
-- `gpt-5.1-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.1-codex-mini` — Deployments Standard, Global coverage
-- `gpt-5.2` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.2-chat` — Deployments Standard, Global coverage
-- `gpt-5.2-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.3-chat` — Deployments Standard, Global coverage
-- `gpt-5.3-codex` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4` — Deployments Provisioned, Deployments Standard, Global coverage
-- `gpt-5.4-mini` — Deployments Standard, Global coverage
-- `gpt-5.4-nano` — Deployments Standard, Global coverage
-- `gpt-5.5` — Deployments Provisioned, Global coverage
-- `o1` — Deployments Provisioned, Global coverage
-- `o3` — Deployments Provisioned, Global coverage
-- `o3-mini` — Deployments Provisioned, Global coverage
-- `o4-mini` — Deployments Provisioned, Global coverage
-- `text-embedding-3-large` — Deployments Standard, Global coverage
-- `text-embedding-3-small` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>gpt-4.1-nano — 28 regions across 9 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Brazil South` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Canada Central` — Global coverage, Provisioned global
-- `Canada East` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Central US` — Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
-- `East US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `East US 2` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `France Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
-- `Germany West Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
-- `Italy North` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Japan East` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Korea Central` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `North Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Norway East` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Poland Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
-- `South Africa North` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `South Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `South India` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Southeast Asia` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Spain Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Sweden Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Switzerland North` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Switzerland West` — Global coverage, Provisioned global
-- `UAE North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `UK South` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
-- `West US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `West US 3` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard Global By Capability
-
-</details>
-<details>
-<summary>gpt-4o-mini — 28 regions across 10 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Brazil South` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Canada Central` — Global coverage, Provisioned (PTU managed), Provisioned global
-- `Canada East` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Central US` — Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
-- `East US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `East US 2` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `France Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Germany West Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
-- `Italy North` — Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Japan East` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Korea Central` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `North Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `Norway East` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Poland Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
-- `South Africa North` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `South Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `South India` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Southeast Asia` — Global coverage, Provisioned (PTU managed), Provisioned global
-- `Spain Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Sweden Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `Switzerland North` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Switzerland West` — Global coverage, Provisioned (PTU managed), Provisioned global
-- `UAE North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `UK South` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
-- `West US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `West US 3` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability
-
-</details>
-<details>
-<summary>gpt-5 — 28 regions across 9 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Brazil South` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Canada Central` — Global coverage, Provisioned global
-- `Canada East` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Central US` — Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `East US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `East US 2` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `France Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Germany West Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Italy North` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Japan East` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Korea Central` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `North Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Norway East` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Poland Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `South Africa North` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `South Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `South India` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Southeast Asia` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Spain Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Sweden Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Switzerland North` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Switzerland West` — Global coverage, Provisioned global
-- `UAE North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `UK South` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `West US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `West US 3` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard Global By Capability
-
-</details>
-<details>
-<summary>gpt-5-mini — 28 regions across 7 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Brazil South` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Canada Central` — Global coverage, Provisioned global
-- `Canada East` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Central US` — Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `East US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `East US 2` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `France Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Germany West Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Italy North` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Japan East` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Korea Central` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `North Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Norway East` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Poland Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `South Africa North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `South Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `South India` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Southeast Asia` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Spain Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Sweden Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Switzerland North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Switzerland West` — Global coverage, Provisioned global
-- `UAE North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `UK South` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `West US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `West US 3` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned (PTU managed), Standard Global By Capability
-
-</details>
-<details>
-<summary>gpt-5.1-chat — 28 regions across 3 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage, Standard Global By Capability
-- `Brazil South` — Global Standard, Global coverage, Standard Global By Capability
-- `Canada Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Canada East` — Global Standard, Global coverage, Standard Global By Capability
-- `Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `East US` — Global Standard, Global coverage, Standard Global By Capability
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
-- `France Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Germany West Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Italy North` — Global Standard, Global coverage, Standard Global By Capability
-- `Japan East` — Global Standard, Global coverage, Standard Global By Capability
-- `Korea Central` — Global Standard, Global coverage, Standard Global By Capability
-- `North Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `Norway East` — Global Standard, Global coverage, Standard Global By Capability
-- `Poland Central` — Global Standard, Global coverage, Standard Global By Capability
-- `South Africa North` — Global Standard, Global coverage, Standard Global By Capability
-- `South Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `South India` — Global Standard, Global coverage, Standard Global By Capability
-- `Southeast Asia` — Global Standard, Global coverage, Standard Global By Capability
-- `Spain Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland North` — Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland West` — Global Standard, Global coverage, Standard Global By Capability
-- `UAE North` — Global Standard, Global coverage, Standard Global By Capability
-- `UK South` — Global Standard, Global coverage, Standard Global By Capability
-- `West Europe` — Global Standard, Global coverage, Standard Global By Capability
-- `West US` — Global Standard, Global coverage, Standard Global By Capability
-- `West US 3` — Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>gpt-5.1-codex — 28 regions across 5 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Brazil South` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Canada Central` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Canada East` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Central US` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `East US` — Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `East US 2` — Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `France Central` — Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Germany West Central` — Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Italy North` — Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Japan East` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Korea Central` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `North Central US` — Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Norway East` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Poland Central` — Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `South Africa North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `South Central US` — Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `South India` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Southeast Asia` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Spain Central` — Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Sweden Central` — Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Switzerland North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Switzerland West` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `UAE North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `UK South` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `West Europe` — Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `West US` — Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `West US 3` — Datazone provisioned managed, Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>gpt-5.1-codex-mini — 28 regions across 3 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage, Standard Global By Capability
-- `Brazil South` — Global Standard, Global coverage, Standard Global By Capability
-- `Canada Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Canada East` — Global Standard, Global coverage, Standard Global By Capability
-- `Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `East US` — Global Standard, Global coverage, Standard Global By Capability
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
-- `France Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Germany West Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Italy North` — Global Standard, Global coverage, Standard Global By Capability
-- `Japan East` — Global Standard, Global coverage, Standard Global By Capability
-- `Korea Central` — Global Standard, Global coverage, Standard Global By Capability
-- `North Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `Norway East` — Global Standard, Global coverage, Standard Global By Capability
-- `Poland Central` — Global Standard, Global coverage, Standard Global By Capability
-- `South Africa North` — Global Standard, Global coverage, Standard Global By Capability
-- `South Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `South India` — Global Standard, Global coverage, Standard Global By Capability
-- `Southeast Asia` — Global Standard, Global coverage, Standard Global By Capability
-- `Spain Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland North` — Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland West` — Global Standard, Global coverage, Standard Global By Capability
-- `UAE North` — Global Standard, Global coverage, Standard Global By Capability
-- `UK South` — Global Standard, Global coverage, Standard Global By Capability
-- `West Europe` — Global Standard, Global coverage, Standard Global By Capability
-- `West US` — Global Standard, Global coverage, Standard Global By Capability
-- `West US 3` — Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>gpt-5.2 — 28 regions across 9 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Brazil South` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Canada Central` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Canada East` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Central US` — Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `East US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `East US 2` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `France Central` — Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Germany West Central` — Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Italy North` — Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Japan East` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Korea Central` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `North Central US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Norway East` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Poland Central` — Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `South Africa North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `South Central US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `South India` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Southeast Asia` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Spain Central` — Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Sweden Central` — Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Switzerland North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Switzerland West` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `UAE North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `UK South` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `West Europe` — Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `West US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `West US 3` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned (PTU managed), Standard Global By Capability
-
-</details>
-<details>
-<summary>gpt-5.2-chat — 28 regions across 3 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage, Standard Global By Capability
-- `Brazil South` — Global Standard, Global coverage, Standard Global By Capability
-- `Canada Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Canada East` — Global Standard, Global coverage, Standard Global By Capability
-- `Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `East US` — Global Standard, Global coverage, Standard Global By Capability
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
-- `France Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Germany West Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Italy North` — Global Standard, Global coverage, Standard Global By Capability
-- `Japan East` — Global Standard, Global coverage, Standard Global By Capability
-- `Korea Central` — Global Standard, Global coverage, Standard Global By Capability
-- `North Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `Norway East` — Global Standard, Global coverage, Standard Global By Capability
-- `Poland Central` — Global Standard, Global coverage, Standard Global By Capability
-- `South Africa North` — Global Standard, Global coverage, Standard Global By Capability
-- `South Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `South India` — Global Standard, Global coverage, Standard Global By Capability
-- `Southeast Asia` — Global Standard, Global coverage, Standard Global By Capability
-- `Spain Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland North` — Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland West` — Global Standard, Global coverage, Standard Global By Capability
-- `UAE North` — Global Standard, Global coverage, Standard Global By Capability
-- `UK South` — Global Standard, Global coverage, Standard Global By Capability
-- `West Europe` — Global Standard, Global coverage, Standard Global By Capability
-- `West US` — Global Standard, Global coverage, Standard Global By Capability
-- `West US 3` — Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>gpt-5.2-codex — 28 regions across 4 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Brazil South` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Canada Central` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Canada East` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Central US` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `East US` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `East US 2` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `France Central` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Germany West Central` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Italy North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Japan East` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Korea Central` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `North Central US` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Norway East` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Poland Central` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `South Africa North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `South Central US` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `South India` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Southeast Asia` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Spain Central` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Switzerland North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Switzerland West` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `UAE North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `UK South` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `West Europe` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `West US` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `West US 3` — Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>gpt-5.3-chat — 28 regions across 3 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage, Standard Global By Capability
-- `Brazil South` — Global Standard, Global coverage, Standard Global By Capability
-- `Canada Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Canada East` — Global Standard, Global coverage, Standard Global By Capability
-- `Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `East US` — Global Standard, Global coverage, Standard Global By Capability
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
-- `France Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Germany West Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Italy North` — Global Standard, Global coverage, Standard Global By Capability
-- `Japan East` — Global Standard, Global coverage, Standard Global By Capability
-- `Korea Central` — Global Standard, Global coverage, Standard Global By Capability
-- `North Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `Norway East` — Global Standard, Global coverage, Standard Global By Capability
-- `Poland Central` — Global Standard, Global coverage, Standard Global By Capability
-- `South Africa North` — Global Standard, Global coverage, Standard Global By Capability
-- `South Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `South India` — Global Standard, Global coverage, Standard Global By Capability
-- `Southeast Asia` — Global Standard, Global coverage, Standard Global By Capability
-- `Spain Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland North` — Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland West` — Global Standard, Global coverage, Standard Global By Capability
-- `UAE North` — Global Standard, Global coverage, Standard Global By Capability
-- `UK South` — Global Standard, Global coverage, Standard Global By Capability
-- `West Europe` — Global Standard, Global coverage, Standard Global By Capability
-- `West US` — Global Standard, Global coverage, Standard Global By Capability
-- `West US 3` — Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>gpt-5.3-codex — 28 regions across 5 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Brazil South` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Canada Central` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Canada East` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Central US` — Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `East US` — Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `East US 2` — Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `France Central` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Germany West Central` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Italy North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Japan East` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Korea Central` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `North Central US` — Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Norway East` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Poland Central` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `South Africa North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `South Central US` — Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `South India` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Southeast Asia` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Spain Central` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Switzerland North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Switzerland West` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `UAE North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `UK South` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `West Europe` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `West US` — Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `West US 3` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>gpt-5.4 — 28 regions across 9 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Brazil South` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Canada Central` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Canada East` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Central US` — Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `East US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `East US 2` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `France Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Germany West Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Italy North` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Japan East` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Korea Central` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `North Central US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Norway East` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Poland Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `South Africa North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `South Central US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `South India` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Southeast Asia` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Spain Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Sweden Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Switzerland North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `Switzerland West` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `UAE North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `UK South` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `West US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `West US 3` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>gpt-5.4-mini — 28 regions across 6 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Brazil South` — Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Canada Central` — Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Canada East` — Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Central US` — Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `East US` — Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `East US 2` — Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `France Central` — Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Germany West Central` — Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Italy North` — Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Japan East` — Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Korea Central` — Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `North Central US` — Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Norway East` — Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Poland Central` — Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `South Africa North` — Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `South Central US` — Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `South India` — Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Southeast Asia` — Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Spain Central` — Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Switzerland North` — Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Switzerland West` — Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `UAE North` — Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `UK South` — Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `West Europe` — Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `West US` — Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `West US 3` — Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>gpt-5.4-nano — 28 regions across 4 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage, Standard Global By Capability
-- `Brazil South` — Global Standard, Global coverage, Standard Global By Capability
-- `Canada Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Canada East` — Global Standard, Global coverage, Standard Global By Capability
-- `Central US` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `East US` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `East US 2` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `France Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Germany West Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Italy North` — Global Standard, Global coverage, Standard Global By Capability
-- `Japan East` — Global Standard, Global coverage, Standard Global By Capability
-- `Korea Central` — Global Standard, Global coverage, Standard Global By Capability
-- `North Central US` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `Norway East` — Global Standard, Global coverage, Standard Global By Capability
-- `Poland Central` — Global Standard, Global coverage, Standard Global By Capability
-- `South Africa North` — Global Standard, Global coverage, Standard Global By Capability
-- `South Central US` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `South India` — Global Standard, Global coverage, Standard Global By Capability
-- `Southeast Asia` — Global Standard, Global coverage, Standard Global By Capability
-- `Spain Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland North` — Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland West` — Global Standard, Global coverage, Standard Global By Capability
-- `UAE North` — Global Standard, Global coverage, Standard Global By Capability
-- `UK South` — Global Standard, Global coverage, Standard Global By Capability
-- `West Europe` — Global Standard, Global coverage, Standard Global By Capability
-- `West US` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `West US 3` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>o1 — 28 regions across 8 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Brazil South` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Canada Central` — Global coverage, Provisioned global
-- `Canada East` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Central US` — Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `East US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard, Standard Global By Capability
-- `East US 2` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard, Standard Global By Capability
-- `France Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Germany West Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Italy North` — Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Japan East` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Korea Central` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `North Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard, Standard Global By Capability
-- `Norway East` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Poland Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `South Africa North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `South Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard, Standard Global By Capability
-- `South India` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Southeast Asia` — Global coverage, Provisioned global
-- `Spain Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Sweden Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard, Standard Global By Capability
-- `Switzerland North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Switzerland West` — Global coverage, Provisioned global
-- `UAE North` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `UK South` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `West US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard, Standard Global By Capability
-- `West US 3` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability
-
-</details>
-<details>
-<summary>o3 — 28 regions across 9 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Brazil South` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Canada Central` — Global coverage, Provisioned global
-- `Canada East` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Central US` — Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
-- `East US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `East US 2` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `France Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
-- `Germany West Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
-- `Italy North` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Japan East` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Korea Central` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `North Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Norway East` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Poland Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
-- `South Africa North` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `South Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `South India` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Southeast Asia` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Spain Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Sweden Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
-- `Switzerland North` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Switzerland West` — Global coverage, Provisioned global
-- `UAE North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `UK South` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `West US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `West US 3` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard Global By Capability
-
-</details>
-<details>
-<summary>o4-mini — 28 regions across 10 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Brazil South` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Canada Central` — Global coverage, Provisioned global
-- `Canada East` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Central US` — Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `East US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `East US 2` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `France Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
-- `Germany West Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
-- `Italy North` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Japan East` — Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `Korea Central` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `North Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `Norway East` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Poland Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
-- `South Africa North` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `South Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `South India` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Southeast Asia` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Spain Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Sweden Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability
-- `Switzerland North` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `Switzerland West` — Global coverage, Provisioned global
-- `UAE North` — Global Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `UK South` — Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
-- `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
-- `West US` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
-- `West US 3` — Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability
-
-</details>
-<details>
-<summary>gpt-5-chat — 27 regions across 3 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage, Standard Global By Capability
-- `Brazil South` — Global Standard, Global coverage, Standard Global By Capability
-- `Canada Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Canada East` — Global Standard, Global coverage, Standard Global By Capability
-- `Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `East US` — Global Standard, Global coverage, Standard Global By Capability
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
-- `France Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Germany West Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Italy North` — Global Standard, Global coverage, Standard Global By Capability
-- `Japan East` — Global Standard, Global coverage, Standard Global By Capability
-- `Korea Central` — Global Standard, Global coverage, Standard Global By Capability
-- `North Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `Norway East` — Global Standard, Global coverage, Standard Global By Capability
-- `Poland Central` — Global Standard, Global coverage, Standard Global By Capability
-- `South Africa North` — Global Standard, Global coverage, Standard Global By Capability
-- `South Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `South India` — Global Standard, Global coverage, Standard Global By Capability
-- `Southeast Asia` — Global Standard, Global coverage, Standard Global By Capability
-- `Spain Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland North` — Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland West` — Global Standard, Global coverage, Standard Global By Capability
-- `UAE North` — Global Standard, Global coverage, Standard Global By Capability
-- `UK South` — Global Standard, Global coverage, Standard Global By Capability
-- `West Europe` — Global Standard, Global coverage, Standard Global By Capability
-- `West US` — Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>gpt-5-codex — 27 regions across 3 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage, Standard Global By Capability
-- `Brazil South` — Global Standard, Global coverage, Standard Global By Capability
-- `Canada Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Canada East` — Global Standard, Global coverage, Standard Global By Capability
-- `Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `East US` — Global Standard, Global coverage, Standard Global By Capability
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
-- `France Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Germany West Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Italy North` — Global Standard, Global coverage, Standard Global By Capability
-- `Japan East` — Global Standard, Global coverage, Standard Global By Capability
-- `Korea Central` — Global Standard, Global coverage, Standard Global By Capability
-- `North Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `Norway East` — Global Standard, Global coverage, Standard Global By Capability
-- `Poland Central` — Global Standard, Global coverage, Standard Global By Capability
-- `South Africa North` — Global Standard, Global coverage, Standard Global By Capability
-- `South Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `South India` — Global Standard, Global coverage, Standard Global By Capability
-- `Southeast Asia` — Global Standard, Global coverage, Standard Global By Capability
-- `Spain Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland North` — Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland West` — Global Standard, Global coverage, Standard Global By Capability
-- `UAE North` — Global Standard, Global coverage, Standard Global By Capability
-- `UK South` — Global Standard, Global coverage, Standard Global By Capability
-- `West Europe` — Global Standard, Global coverage, Standard Global By Capability
-- `West US` — Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>gpt-5-pro — 27 regions across 3 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage, Standard Global By Capability
-- `Brazil South` — Global Standard, Global coverage, Standard Global By Capability
-- `Canada Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Canada East` — Global Standard, Global coverage, Standard Global By Capability
-- `Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `East US` — Global Standard, Global coverage, Standard Global By Capability
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
-- `France Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Germany West Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Italy North` — Global Standard, Global coverage, Standard Global By Capability
-- `Japan East` — Global Standard, Global coverage, Standard Global By Capability
-- `Korea Central` — Global Standard, Global coverage, Standard Global By Capability
-- `North Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `Norway East` — Global Standard, Global coverage, Standard Global By Capability
-- `Poland Central` — Global Standard, Global coverage, Standard Global By Capability
-- `South Africa North` — Global Standard, Global coverage, Standard Global By Capability
-- `South Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `South India` — Global Standard, Global coverage, Standard Global By Capability
-- `Southeast Asia` — Global Standard, Global coverage, Standard Global By Capability
-- `Spain Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland North` — Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland West` — Global Standard, Global coverage, Standard Global By Capability
-- `UAE North` — Global Standard, Global coverage, Standard Global By Capability
-- `UK South` — Global Standard, Global coverage, Standard Global By Capability
-- `West Europe` — Global Standard, Global coverage, Standard Global By Capability
-- `West US` — Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>text-embedding-3-large — 27 regions across 6 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage, Standard, Standard Global By Capability
-- `Brazil South` — Global Standard, Global coverage, Standard Global By Capability
-- `Canada East` — Global Standard, Global coverage, Standard, Standard Global By Capability
-- `Central US` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `East US` — Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability
-- `East US 2` — Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability
-- `France Central` — Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability
-- `Germany West Central` — Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability
-- `Italy North` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `Japan East` — Global Standard, Global coverage, Standard, Standard Global By Capability
-- `Korea Central` — Global Standard, Global coverage, Standard, Standard Global By Capability
-- `North Central US` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `Norway East` — Global Standard, Global coverage, Standard, Standard Global By Capability
-- `Poland Central` — Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability
-- `South Africa North` — Global Standard, Global coverage, Standard, Standard Global By Capability
-- `South Central US` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `South India` — Global Standard, Global coverage, Standard, Standard Global By Capability
-- `Southeast Asia` — Global coverage, Standard
-- `Spain Central` — Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability
-- `Sweden Central` — Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability
-- `Switzerland North` — Global Standard, Global coverage, Standard, Standard Global By Capability
-- `UAE North` — Global Standard, Global coverage, Standard, Standard Global By Capability
-- `UK South` — Global Standard, Global coverage, Standard, Standard Global By Capability
-- `West Europe` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `West US` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `West US 3` — Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `Australia East` — Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `Brazil South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Canada Central` — Deployments Standard, Global coverage
+- `Canada East` — Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `East US 2` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `France Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `Germany West Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `Italy North` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Japan East` — Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `Korea Central` — Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `North Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Norway East` — Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `Poland Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `South Africa North` — Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `South Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South India` — Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `Southeast Asia` — Deployments Standard, Global coverage, Standard
+- `Spain Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `Sweden Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `Switzerland North` — Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `Switzerland West` — Deployments Standard, Global coverage
+- `UAE North` — Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `UK South` — Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `West Europe` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West US` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West US 3` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
 - `usgovarizona` — Global coverage, Standard Models Gov
 
 </details>
 <details>
-<summary>gpt-5-nano — 26 regions across 4 SKU labels</summary>
+<summary>text-embedding-3-small — 29 regions across 7 SKU labels</summary>
 
-- `Australia East` — Global Standard, Global coverage, Standard Global By Capability
-- `Brazil South` — Global Standard, Global coverage, Standard Global By Capability
-- `Canada East` — Global Standard, Global coverage, Standard Global By Capability
-- `Central US` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `East US` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `East US 2` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `France Central` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `Germany West Central` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `Italy North` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `Japan East` — Global Standard, Global coverage, Standard Global By Capability
-- `Korea Central` — Global Standard, Global coverage, Standard Global By Capability
-- `North Central US` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `Norway East` — Global Standard, Global coverage, Standard Global By Capability
-- `Poland Central` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `South Africa North` — Global Standard, Global coverage, Standard Global By Capability
-- `South Central US` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `South India` — Global Standard, Global coverage, Standard Global By Capability
-- `Southeast Asia` — Global Standard, Global coverage, Standard Global By Capability
-- `Spain Central` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland North` — Global Standard, Global coverage, Standard Global By Capability
-- `UAE North` — Global Standard, Global coverage, Standard Global By Capability
-- `UK South` — Global Standard, Global coverage, Standard Global By Capability
-- `West Europe` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `West US` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `West US 3` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>text-embedding-3-small — 26 regions across 6 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage, Standard, Standard Global By Capability
-- `Brazil South` — Global Standard, Global coverage, Standard Global By Capability
-- `Canada East` — Global Standard, Global coverage, Standard, Standard Global By Capability
-- `Central US` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `East US` — Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability
-- `East US 2` — Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability
-- `France Central` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `Germany West Central` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `Italy North` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `Japan East` — Global Standard, Global coverage, Standard, Standard Global By Capability
-- `Korea Central` — Global Standard, Global coverage, Standard Global By Capability
-- `North Central US` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `Norway East` — Global Standard, Global coverage, Standard Global By Capability
-- `Poland Central` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `South Africa North` — Global Standard, Global coverage, Standard Global By Capability
-- `South Central US` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `South India` — Global Standard, Global coverage, Standard Global By Capability
-- `Spain Central` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland North` — Global Standard, Global coverage, Standard, Standard Global By Capability
-- `UAE North` — Global Standard, Global coverage, Standard, Standard Global By Capability
-- `UK South` — Global Standard, Global coverage, Standard Global By Capability
-- `West Europe` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `West US` — Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability
-- `West US 3` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
+- `Australia East` — Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `Brazil South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Canada Central` — Deployments Standard, Global coverage
+- `Canada East` — Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `East US 2` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `France Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Germany West Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Italy North` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Japan East` — Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `Korea Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `North Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Norway East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Poland Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South Africa North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South India` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Southeast Asia` — Deployments Standard, Global coverage
+- `Spain Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland North` — Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `Switzerland West` — Deployments Standard, Global coverage
+- `UAE North` — Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `UK South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West Europe` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West US` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `West US 3` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
 - `usgovarizona` — Global coverage, Standard Models Gov
 
 </details>
 <details>
-<summary>text-embedding-ada-002 — 26 regions across 6 SKU labels</summary>
+<summary>gpt-4.1-nano — 28 regions across 12 SKU labels</summary>
 
-- `Australia East` — Global Standard, Global coverage, Standard, Standard Global By Capability
-- `Brazil South` — Global Standard, Global coverage, Standard, Standard Global By Capability
-- `Canada East` — Global Standard, Global coverage, Standard, Standard Global By Capability
-- `Central US` — Datazone standard, Global coverage
-- `East US` — Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability
-- `East US 2` — Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability
-- `France Central` — Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability
-- `Germany West Central` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `Italy North` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `Japan East` — Global Standard, Global coverage, Standard, Standard Global By Capability
-- `Korea Central` — Global Standard, Global coverage, Standard Global By Capability
-- `North Central US` — Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability
-- `Norway East` — Global Standard, Global coverage, Standard, Standard Global By Capability
-- `Poland Central` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `South Africa North` — Global Standard, Global coverage, Standard, Standard Global By Capability
-- `South Central US` — Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability
-- `South India` — Global Standard, Global coverage, Standard, Standard Global By Capability
-- `Spain Central` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability
-- `Switzerland North` — Global Standard, Global coverage, Standard, Standard Global By Capability
-- `UAE North` — Global Standard, Global coverage, Standard, Standard Global By Capability
-- `UK South` — Global Standard, Global coverage, Standard, Standard Global By Capability
-- `West Europe` — Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability
-- `West US` — Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability
-- `West US 3` — Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `Australia East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Brazil South` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Canada Central` — Deployments Provisioned, Global coverage, Provisioned global
+- `Canada East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Central US` — Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
+- `East US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `East US 2` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `France Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
+- `Germany West Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
+- `Italy North` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Japan East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Korea Central` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `North Central US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Norway East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Poland Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
+- `South Africa North` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `South Central US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `South India` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Southeast Asia` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Spain Central` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Sweden Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Switzerland North` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Switzerland West` — Deployments Provisioned, Global coverage, Provisioned global
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `UK South` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `West Europe` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
+- `West US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `West US 3` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard Global By Capability
+
+</details>
+<details>
+<summary>gpt-4o-mini — 28 regions across 13 SKU labels</summary>
+
+- `Australia East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Brazil South` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Canada Central` — Deployments Provisioned, Global coverage, Provisioned (PTU managed), Provisioned global
+- `Canada East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Central US` — Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
+- `East US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `East US 2` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `France Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Germany West Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
+- `Italy North` — Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Japan East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Korea Central` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `North Central US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `Norway East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Poland Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
+- `South Africa North` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `South Central US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `South India` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Southeast Asia` — Deployments Provisioned, Global coverage, Provisioned (PTU managed), Provisioned global
+- `Spain Central` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Sweden Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `Switzerland North` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Switzerland West` — Deployments Provisioned, Global coverage, Provisioned (PTU managed), Provisioned global
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `UK South` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `West Europe` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
+- `West US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `West US 3` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability
+
+</details>
+<details>
+<summary>gpt-5 — 28 regions across 12 SKU labels</summary>
+
+- `Australia East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Brazil South` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Canada Central` — Deployments Provisioned, Global coverage, Provisioned global
+- `Canada East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Central US` — Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `East US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `East US 2` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `France Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Germany West Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Italy North` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Japan East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Korea Central` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `North Central US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Norway East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Poland Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `South Africa North` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `South Central US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `South India` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Southeast Asia` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Spain Central` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Sweden Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Switzerland North` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Switzerland West` — Deployments Provisioned, Global coverage, Provisioned global
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `UK South` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `West Europe` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `West US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `West US 3` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard Global By Capability
+
+</details>
+<details>
+<summary>gpt-5-mini — 28 regions across 9 SKU labels</summary>
+
+- `Australia East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Brazil South` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Canada Central` — Deployments Provisioned, Global coverage, Provisioned global
+- `Canada East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Central US` — Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `East US` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `East US 2` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `France Central` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Germany West Central` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Italy North` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Japan East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Korea Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `North Central US` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Norway East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Poland Central` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `South Africa North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `South Central US` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `South India` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Southeast Asia` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Spain Central` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Sweden Central` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Switzerland North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Switzerland West` — Deployments Provisioned, Global coverage, Provisioned global
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `UK South` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `West Europe` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `West US` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `West US 3` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Standard Global By Capability
+
+</details>
+<details>
+<summary>gpt-5.1-chat — 28 regions across 4 SKU labels</summary>
+
+- `Australia East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Brazil South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Canada Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Canada East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `France Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Germany West Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Italy North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Japan East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Korea Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `North Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Norway East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Poland Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South Africa North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South India` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Southeast Asia` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Spain Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland West` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `UAE North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `UK South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West Europe` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West US 3` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>gpt-5.1-codex — 28 regions across 7 SKU labels</summary>
+
+- `Australia East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Brazil South` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Canada Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Canada East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Central US` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `East US` — Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `East US 2` — Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `France Central` — Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Germany West Central` — Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Italy North` — Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Japan East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Korea Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `North Central US` — Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Norway East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Poland Central` — Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `South Africa North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `South Central US` — Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `South India` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Southeast Asia` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Spain Central` — Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Sweden Central` — Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Switzerland North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Switzerland West` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `UK South` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `West Europe` — Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `West US` — Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `West US 3` — Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>gpt-5.1-codex-mini — 28 regions across 4 SKU labels</summary>
+
+- `Australia East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Brazil South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Canada Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Canada East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `France Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Germany West Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Italy North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Japan East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Korea Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `North Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Norway East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Poland Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South Africa North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South India` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Southeast Asia` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Spain Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland West` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `UAE North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `UK South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West Europe` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West US 3` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>gpt-5.2 — 28 regions across 11 SKU labels</summary>
+
+- `Australia East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Brazil South` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Canada Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Canada East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Central US` — Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `East US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `East US 2` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `France Central` — Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Germany West Central` — Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Italy North` — Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Japan East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Korea Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `North Central US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Norway East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Poland Central` — Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `South Africa North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `South Central US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `South India` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Southeast Asia` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Spain Central` — Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Sweden Central` — Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Switzerland North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Switzerland West` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `UK South` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `West Europe` — Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `West US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `West US 3` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Standard Global By Capability
+
+</details>
+<details>
+<summary>gpt-5.2-chat — 28 regions across 4 SKU labels</summary>
+
+- `Australia East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Brazil South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Canada Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Canada East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `France Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Germany West Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Italy North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Japan East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Korea Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `North Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Norway East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Poland Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South Africa North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South India` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Southeast Asia` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Spain Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland West` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `UAE North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `UK South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West Europe` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West US 3` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>gpt-5.2-codex — 28 regions across 6 SKU labels</summary>
+
+- `Australia East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Brazil South` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Canada Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Canada East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Central US` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `East US` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `East US 2` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `France Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Germany West Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Italy North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Japan East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Korea Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `North Central US` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Norway East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Poland Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `South Africa North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `South Central US` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `South India` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Southeast Asia` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Spain Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Sweden Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Switzerland North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Switzerland West` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `UK South` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `West Europe` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `West US` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `West US 3` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>gpt-5.3-chat — 28 regions across 4 SKU labels</summary>
+
+- `Australia East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Brazil South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Canada Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Canada East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `France Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Germany West Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Italy North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Japan East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Korea Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `North Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Norway East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Poland Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South Africa North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South India` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Southeast Asia` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Spain Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland West` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `UAE North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `UK South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West Europe` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West US 3` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>gpt-5.3-codex — 28 regions across 7 SKU labels</summary>
+
+- `Australia East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Brazil South` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Canada Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Canada East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Central US` — Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `East US` — Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `East US 2` — Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `France Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Germany West Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Italy North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Japan East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Korea Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `North Central US` — Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Norway East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Poland Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `South Africa North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `South Central US` — Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `South India` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Southeast Asia` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Spain Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Sweden Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Switzerland North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Switzerland West` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `UK South` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `West Europe` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `West US` — Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `West US 3` — Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>gpt-5.4 — 28 regions across 11 SKU labels</summary>
+
+- `Australia East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Brazil South` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Canada Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Canada East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Central US` — Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `East US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `East US 2` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `France Central` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Germany West Central` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Italy North` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Japan East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Korea Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `North Central US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Norway East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Poland Central` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `South Africa North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `South Central US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `South India` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Southeast Asia` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Spain Central` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Sweden Central` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Switzerland North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Switzerland West` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `UK South` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `West Europe` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `West US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `West US 3` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>gpt-5.4-mini — 28 regions across 8 SKU labels</summary>
+
+- `Australia East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Brazil South` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Canada Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Canada East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Central US` — Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `East US` — Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `East US 2` — Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `France Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Germany West Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Italy North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Japan East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Korea Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `North Central US` — Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Norway East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Poland Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `South Africa North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `South Central US` — Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `South India` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Southeast Asia` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Spain Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Switzerland North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Switzerland West` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `UAE North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `UK South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `West Europe` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `West US` — Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `West US 3` — Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>gpt-5.4-nano — 28 regions across 5 SKU labels</summary>
+
+- `Australia East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Brazil South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Canada Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Canada East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `France Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Germany West Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Italy North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Japan East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Korea Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `North Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Norway East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Poland Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South Africa North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South India` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Southeast Asia` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Spain Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland West` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `UAE North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `UK South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West Europe` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West US` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West US 3` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>gpt-5.5 — 28 regions across 11 SKU labels</summary>
+
+- `Australia East` — Deployments Provisioned, Global coverage
+- `Brazil South` — Deployments Provisioned, Global coverage
+- `Canada Central` — Deployments Provisioned, Global coverage
+- `Canada East` — Deployments Provisioned, Global coverage
+- `Central US` — Deployments Provisioned, Deployments Standard, Global coverage
+- `East US` — Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global coverage, Provisioned (PTU managed), Provisioned global
+- `East US 2` — Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `France Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Germany West Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Italy North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Japan East` — Deployments Provisioned, Global coverage
+- `Korea Central` — Deployments Provisioned, Global coverage
+- `North Central US` — Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global coverage, Provisioned global
+- `Norway East` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Poland Central` — Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `South Africa North` — Deployments Provisioned, Global coverage
+- `South Central US` — Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `South India` — Deployments Provisioned, Global coverage
+- `Southeast Asia` — Deployments Provisioned, Global coverage
+- `Spain Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Sweden Central` — Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Switzerland North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Switzerland West` — Deployments Provisioned, Global coverage
+- `UAE North` — Deployments Provisioned, Global coverage
+- `UK South` — Deployments Provisioned, Global coverage
+- `West Europe` — Deployments Provisioned, Deployments Standard, Global coverage
+- `West US` — Deployments Provisioned, Deployments Standard, Global coverage
+- `West US 3` — Deployments Provisioned, Deployments Standard, Global coverage
+
+</details>
+<details>
+<summary>o1 — 28 regions across 10 SKU labels</summary>
+
+- `Australia East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Brazil South` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Canada Central` — Deployments Provisioned, Global coverage, Provisioned global
+- `Canada East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Central US` — Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `East US` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard, Standard Global By Capability
+- `East US 2` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard, Standard Global By Capability
+- `France Central` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Germany West Central` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Italy North` — Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Japan East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Korea Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `North Central US` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard, Standard Global By Capability
+- `Norway East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Poland Central` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `South Africa North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `South Central US` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard, Standard Global By Capability
+- `South India` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Southeast Asia` — Deployments Provisioned, Global coverage, Provisioned global
+- `Spain Central` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Sweden Central` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard, Standard Global By Capability
+- `Switzerland North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Switzerland West` — Deployments Provisioned, Global coverage, Provisioned global
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `UK South` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `West Europe` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `West US` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard, Standard Global By Capability
+- `West US 3` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+
+</details>
+<details>
+<summary>o3 — 28 regions across 12 SKU labels</summary>
+
+- `Australia East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Brazil South` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Canada Central` — Deployments Provisioned, Global coverage, Provisioned global
+- `Canada East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Central US` — Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
+- `East US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `East US 2` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `France Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
+- `Germany West Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
+- `Italy North` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Japan East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Korea Central` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `North Central US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Norway East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Poland Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
+- `South Africa North` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `South Central US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `South India` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Southeast Asia` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Spain Central` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Sweden Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
+- `Switzerland North` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Switzerland West` — Deployments Provisioned, Global coverage, Provisioned global
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `UK South` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `West Europe` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `West US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `West US 3` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard Global By Capability
+
+</details>
+<details>
+<summary>o4-mini — 28 regions across 13 SKU labels</summary>
+
+- `Australia East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Brazil South` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Canada Central` — Deployments Provisioned, Global coverage, Provisioned global
+- `Canada East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Central US` — Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `East US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `East US 2` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `France Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
+- `Germany West Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
+- `Italy North` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Japan East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Korea Central` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `North Central US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `Norway East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Poland Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability
+- `South Africa North` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `South Central US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `South India` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Southeast Asia` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Spain Central` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `Sweden Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability
+- `Switzerland North` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `Switzerland West` — Deployments Provisioned, Global coverage, Provisioned global
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability
+- `UK South` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability
+- `West Europe` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `West US` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `West US 3` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability
+
+</details>
+<details>
+<summary>gpt-5-chat — 27 regions across 4 SKU labels</summary>
+
+- `Australia East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Brazil South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Canada Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Canada East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `France Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Germany West Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Italy North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Japan East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Korea Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `North Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Norway East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Poland Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South Africa North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South India` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Southeast Asia` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Spain Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland West` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `UAE North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `UK South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West Europe` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>gpt-5-codex — 27 regions across 4 SKU labels</summary>
+
+- `Australia East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Brazil South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Canada Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Canada East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `France Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Germany West Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Italy North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Japan East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Korea Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `North Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Norway East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Poland Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South Africa North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South India` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Southeast Asia` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Spain Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland West` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `UAE North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `UK South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West Europe` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>gpt-5-pro — 27 regions across 4 SKU labels</summary>
+
+- `Australia East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Brazil South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Canada Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Canada East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `France Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Germany West Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Italy North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Japan East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Korea Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `North Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Norway East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Poland Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South Africa North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South India` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Southeast Asia` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Spain Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland West` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `UAE North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `UK South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West Europe` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>gpt-5-nano — 26 regions across 5 SKU labels</summary>
+
+- `Australia East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Brazil South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Canada East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `France Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Germany West Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Italy North` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Japan East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Korea Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `North Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Norway East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Poland Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South Africa North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South India` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Southeast Asia` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Spain Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `UAE North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `UK South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West Europe` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West US` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West US 3` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>text-embedding-ada-002 — 26 regions across 7 SKU labels</summary>
+
+- `Australia East` — Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `Brazil South` — Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `Canada East` — Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `Central US` — Datazone standard, Deployments Standard, Global coverage
+- `East US` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `East US 2` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `France Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `Germany West Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Italy North` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Japan East` — Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `Korea Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `North Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `Norway East` — Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `Poland Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South Africa North` — Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `South Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `South India` — Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `Spain Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `Switzerland North` — Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `UAE North` — Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `UK South` — Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `West Europe` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `West US` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
+- `West US 3` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability
 - `usgovarizona` — Global coverage, Standard Models Gov
 
 </details>
 <details>
-<summary>whisper — 8 regions across 2 SKU labels</summary>
+<summary>whisper — 8 regions across 3 SKU labels</summary>
 
-- `East US 2` — Global coverage, Standard
-- `North Central US` — Global coverage, Standard
-- `Norway East` — Global coverage, Standard
-- `South India` — Global coverage, Standard
-- `Sweden Central` — Global coverage, Standard
-- `Switzerland North` — Global coverage, Standard
-- `UAE North` — Global coverage, Standard
-- `West Europe` — Global coverage, Standard
+- `East US 2` — Deployments Standard, Global coverage, Standard
+- `North Central US` — Deployments Standard, Global coverage, Standard
+- `Norway East` — Deployments Standard, Global coverage, Standard
+- `South India` — Deployments Standard, Global coverage, Standard
+- `Sweden Central` — Deployments Standard, Global coverage, Standard
+- `Switzerland North` — Deployments Standard, Global coverage, Standard
+- `UAE North` — Deployments Standard, Global coverage, Standard
+- `West Europe` — Deployments Standard, Global coverage, Standard
 
 </details>
 <details>
@@ -3196,232 +2086,265 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>gpt-4o-mini-transcribe — 6 regions across 3 SKU labels</summary>
+<summary>gpt-4o-mini-transcribe — 6 regions across 4 SKU labels</summary>
 
-- `Canada Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
-- `France Central` — Global Standard, Global coverage, Standard Global By Capability
-- `South India` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>gpt-4o-transcribe — 6 regions across 3 SKU labels</summary>
-
-- `Canada Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
-- `France Central` — Global Standard, Global coverage, Standard Global By Capability
-- `South India` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Canada Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `France Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South India` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
 
 </details>
 <details>
-<summary>gpt-4o-transcribe-diarize — 6 regions across 3 SKU labels</summary>
+<summary>gpt-4o-transcribe — 6 regions across 4 SKU labels</summary>
 
-- `Canada Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
-- `France Central` — Global Standard, Global coverage, Standard Global By Capability
-- `South India` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>gpt-5.5 — 6 regions across 9 SKU labels</summary>
-
-- `East US` — Datazone provisioned managed, Global coverage, Provisioned (PTU managed), Provisioned global
-- `East US 2` — Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
-- `Poland Central` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `South Central US` — Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Sweden Central` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Canada Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `France Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South India` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
 
 </details>
 <details>
-<summary>gpt-realtime — 6 regions across 3 SKU labels</summary>
+<summary>gpt-4o-transcribe-diarize — 6 regions across 4 SKU labels</summary>
 
-- `Canada Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
-- `France Central` — Global Standard, Global coverage, Standard Global By Capability
-- `South India` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>gpt-realtime-1.5 — 6 regions across 3 SKU labels</summary>
-
-- `Canada Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
-- `France Central` — Global Standard, Global coverage, Standard Global By Capability
-- `South India` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Canada Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `France Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South India` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
 
 </details>
 <details>
-<summary>gpt-realtime-mini — 6 regions across 3 SKU labels</summary>
+<summary>gpt-realtime — 6 regions across 4 SKU labels</summary>
 
-- `Canada Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
-- `France Central` — Global Standard, Global coverage, Standard Global By Capability
-- `South India` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>gpt-image-1 — 5 regions across 3 SKU labels</summary>
-
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
-- `Poland Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
-- `UAE North` — Global Standard, Global coverage, Standard Global By Capability
-- `West US 3` — Global Standard, Global coverage, Standard Global By Capability
+- `Canada Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `France Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South India` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
 
 </details>
 <details>
-<summary>gpt-image-1-mini — 5 regions across 3 SKU labels</summary>
+<summary>gpt-realtime-1.5 — 6 regions across 4 SKU labels</summary>
 
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
-- `Poland Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
-- `UAE North` — Global Standard, Global coverage, Standard Global By Capability
-- `West US 3` — Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>gpt-image-1.5 — 5 regions across 4 SKU labels</summary>
-
-- `East US 2` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `Poland Central` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `UAE North` — Global Standard, Global coverage, Standard Global By Capability
-- `West US 3` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
+- `Canada Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `France Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South India` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
 
 </details>
 <details>
-<summary>gpt-image-2 — 5 regions across 3 SKU labels</summary>
+<summary>gpt-realtime-2 — 6 regions across 2 SKU labels</summary>
 
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
-- `Poland Central` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
-- `UAE North` — Global Standard, Global coverage, Standard Global By Capability
-- `West US 3` — Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>gpt-5.4-pro — 4 regions across 3 SKU labels</summary>
-
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
-- `Poland Central` — Global Standard, Global coverage, Standard Global By Capability
-- `South Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Canada Central` — Deployments Standard, Global coverage
+- `Central US` — Deployments Standard, Global coverage
+- `East US 2` — Deployments Standard, Global coverage
+- `France Central` — Deployments Standard, Global coverage
+- `South India` — Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Standard, Global coverage
 
 </details>
 <details>
-<summary>codex-mini — 3 regions across 3 SKU labels</summary>
+<summary>gpt-realtime-mini — 6 regions across 4 SKU labels</summary>
 
-- `Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>computer-use-preview — 3 regions across 3 SKU labels</summary>
-
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
-- `South India` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Canada Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `France Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South India` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
 
 </details>
 <details>
-<summary>gpt-audio — 3 regions across 3 SKU labels</summary>
+<summary>gpt-realtime-translate — 6 regions across 2 SKU labels</summary>
 
-- `Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>gpt-audio-1.5 — 3 regions across 3 SKU labels</summary>
-
-- `Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Canada Central` — Deployments Standard, Global coverage
+- `Central US` — Deployments Standard, Global coverage
+- `East US 2` — Deployments Standard, Global coverage
+- `France Central` — Deployments Standard, Global coverage
+- `South India` — Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Standard, Global coverage
 
 </details>
 <details>
-<summary>gpt-audio-mini — 3 regions across 3 SKU labels</summary>
+<summary>gpt-realtime-whisper — 6 regions across 2 SKU labels</summary>
 
-- `Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>o3-pro — 3 regions across 3 SKU labels</summary>
-
-- `Central US` — Global Standard, Global coverage, Standard Global By Capability
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Canada Central` — Deployments Standard, Global coverage
+- `Central US` — Deployments Standard, Global coverage
+- `East US 2` — Deployments Standard, Global coverage
+- `France Central` — Deployments Standard, Global coverage
+- `South India` — Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Standard, Global coverage
 
 </details>
 <details>
-<summary>tts — 3 regions across 2 SKU labels</summary>
+<summary>gpt-chat-latest — 5 regions across 2 SKU labels</summary>
 
-- `North Central US` — Global coverage, Standard
-- `Sweden Central` — Global coverage, Standard
-- `West US 3` — Global coverage, Standard
-
-</details>
-<details>
-<summary>tts-hd — 3 regions across 2 SKU labels</summary>
-
-- `North Central US` — Global coverage, Standard
-- `Sweden Central` — Global coverage, Standard
-- `West US 3` — Global coverage, Standard
+- `East US 2` — Deployments Standard, Global coverage
+- `Poland Central` — Deployments Standard, Global coverage
+- `South Central US` — Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Standard, Global coverage
+- `West US 3` — Deployments Standard, Global coverage
 
 </details>
 <details>
-<summary>gpt-5.1-codex-max — 2 regions across 3 SKU labels</summary>
+<summary>gpt-image-1 — 5 regions across 4 SKU labels</summary>
 
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>model-router — 2 regions across 4 SKU labels</summary>
-
-- `East US 2` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Datazone standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Poland Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `UAE North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West US 3` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
 
 </details>
 <details>
-<summary>o3-deep-research — 2 regions across 3 SKU labels</summary>
+<summary>gpt-image-1-mini — 5 regions across 4 SKU labels</summary>
 
-- `Norway East` — Global Standard, Global coverage, Standard Global By Capability
-- `West US` — Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
-<summary>sora-2 — 2 regions across 3 SKU labels</summary>
-
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Poland Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `UAE North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West US 3` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
 
 </details>
 <details>
-<summary>gpt-4o-mini-tts — 1 regions across 3 SKU labels</summary>
+<summary>gpt-image-1.5 — 5 regions across 5 SKU labels</summary>
 
-- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Poland Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `UAE North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West US 3` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>gpt-image-2 — 5 regions across 4 SKU labels</summary>
+
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Poland Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `UAE North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West US 3` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>gpt-5.4-pro — 4 regions across 4 SKU labels</summary>
+
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Poland Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>codex-mini — 3 regions across 4 SKU labels</summary>
+
+- `Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>computer-use-preview — 3 regions across 4 SKU labels</summary>
+
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South India` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>gpt-audio — 3 regions across 4 SKU labels</summary>
+
+- `Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>gpt-audio-1.5 — 3 regions across 4 SKU labels</summary>
+
+- `Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>gpt-audio-mini — 3 regions across 4 SKU labels</summary>
+
+- `Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>o3-pro — 3 regions across 4 SKU labels</summary>
+
+- `Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>tts — 3 regions across 3 SKU labels</summary>
+
+- `North Central US` — Deployments Standard, Global coverage, Standard
+- `Sweden Central` — Deployments Standard, Global coverage, Standard
+- `West US 3` — Deployments Standard, Global coverage, Standard
+
+</details>
+<details>
+<summary>tts-hd — 3 regions across 3 SKU labels</summary>
+
+- `North Central US` — Deployments Standard, Global coverage, Standard
+- `Sweden Central` — Deployments Standard, Global coverage, Standard
+- `West US 3` — Deployments Standard, Global coverage, Standard
+
+</details>
+<details>
+<summary>gpt-5.1-codex-max — 2 regions across 4 SKU labels</summary>
+
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>model-router — 2 regions across 5 SKU labels</summary>
+
+- `East US 2` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>o3-deep-research — 2 regions across 4 SKU labels</summary>
+
+- `Norway East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>sora-2 — 2 regions across 4 SKU labels</summary>
+
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>gpt-4o-mini-tts — 1 regions across 4 SKU labels</summary>
+
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
 
 </details>
 
 ## Recent changes
 
+- **2026-06-10 10:56 UTC** — australiaeast: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | brazilsouth: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | canadacentral: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, gpt-realtime, gpt-realtime-1.5, gpt-realtime-2, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, o1, o3, o3-mini, o4-mini, text-embedding-3-large, and text-embedding-3-small; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5-chat, gpt-5-codex, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-realtime, gpt-realtime-1.5, gpt-realtime-2, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, text-embedding-3-large, and text-embedding-3-small | canadaeast: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | centralus: Global coverage removed codex-mini, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, gpt-audio, gpt-audio-1.5, gpt-audio-mini, gpt-realtime, gpt-realtime-1.5, gpt-realtime-2, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, o1, o3, o3-mini, o3-pro, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed codex-mini, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, gpt-audio, gpt-audio-1.5, gpt-audio-mini, gpt-realtime, gpt-realtime-1.5, gpt-realtime-2, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, o1, o3, o3-mini, o3-pro, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | codex-mini: Deployments Standard added Central US, East US 2, and Sweden Central | computer-use-preview: Deployments Standard added East US 2, South India, and Sweden Central | eastus: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | eastus2: Global coverage removed codex-mini, computer-use-preview, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-mini-tts, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-max, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-audio, gpt-audio-1.5, gpt-audio-mini, gpt-chat-latest, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, gpt-realtime, gpt-realtime-1.5, gpt-realtime-2, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, model-router, o1, o3, o3-mini, o3-pro, o4-mini, sora-2, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed codex-mini, computer-use-preview, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-mini-tts, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-max, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-audio, gpt-audio-1.5, gpt-audio-mini, gpt-chat-latest, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, gpt-realtime, gpt-realtime-1.5, gpt-realtime-2, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, model-router, o1, o3, o3-mini, o3-pro, o4-mini, sora-2, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper | francecentral: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, gpt-realtime, gpt-realtime-1.5, gpt-realtime-2, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, gpt-realtime, gpt-realtime-1.5, gpt-realtime-2, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | germanywestcentral: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | gpt-4.1: Deployments Batch added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, and West US 3; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | gpt-4.1-mini: Deployments Batch added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, and West US 3; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | gpt-4.1-nano: Deployments Batch added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, and West US 3; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | gpt-4o: Deployments Batch added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, and West US 3; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | gpt-4o-mini: Deployments Batch added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, and West US 3; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | gpt-4o-mini-transcribe: Deployments Standard added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | gpt-4o-mini-tts: Deployments Standard added East US 2 | gpt-4o-transcribe: Deployments Standard added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | gpt-4o-transcribe-diarize: Deployments Standard added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | gpt-5: Deployments Batch added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, and West US 3; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5-chat: Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US | gpt-5-codex: Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US | gpt-5-mini: Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5-nano: Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5-pro: Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US | gpt-5.1: Deployments Batch added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, and West US 3; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.1-chat: Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.1-codex: Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.1-codex-max: Deployments Standard added East US 2 and Sweden Central | gpt-5.1-codex-mini: Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.2: Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.2-chat: Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.2-codex: Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.3-chat: Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.3-codex: Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.4: Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.4-mini: Deployments Provisioned added Brazil South, Canada Central, Canada East, Central US, East US, East US 2, North Central US, South Central US, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.4-nano: Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.4-pro: Deployments Standard added East US 2, Poland Central, South Central US, and Sweden Central | gpt-5.5: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, France Central, Germany West Central, Italy North, Japan East, Korea Central, Norway East, South Africa North, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Central US, East US, East US 2, France Central, Germany West Central, Italy North, North Central US, Norway East, Poland Central, South Central US, Spain Central, Sweden Central, Switzerland North, West Europe, West US, and West US 3 | gpt-audio: Deployments Standard added Central US, East US 2, and Sweden Central | gpt-audio-1.5: Deployments Standard added Central US, East US 2, and Sweden Central | gpt-audio-mini: Deployments Standard added Central US, East US 2, and Sweden Central | gpt-chat-latest: Global coverage added East US 2, Poland Central, South Central US, Sweden Central, and West US 3; Deployments Standard added East US 2, Poland Central, South Central US, Sweden Central, and West US 3 | gpt-image-1: Deployments Standard added East US 2, Poland Central, Sweden Central, UAE North, and West US 3 | gpt-image-1-mini: Deployments Standard added East US 2, Poland Central, Sweden Central, UAE North, and West US 3 | gpt-image-1.5: Deployments Standard added East US 2, Poland Central, Sweden Central, UAE North, and West US 3 | gpt-image-2: Deployments Standard added East US 2, Poland Central, Sweden Central, UAE North, and West US 3 | gpt-realtime: Deployments Standard added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | gpt-realtime-1.5: Deployments Standard added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | gpt-realtime-2: Global coverage added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central; Deployments Standard added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | gpt-realtime-mini: Deployments Standard added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | gpt-realtime-translate: Global coverage added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central; Deployments Standard added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | gpt-realtime-whisper: Global coverage added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central; Deployments Standard added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | italynorth: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | japaneast: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | koreacentral: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | model-router: Deployments Standard added East US 2 and Sweden Central | northcentralus: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, tts, tts-hd, and whisper; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, tts, tts-hd, and whisper | norwayeast: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-deep-research, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-deep-research, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper | o1: Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | o3: Deployments Batch added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, and West US 3; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | o3-deep-research: Deployments Standard added Norway East and West US | o3-mini: Deployments Batch added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, and West US 3; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | o3-pro: Deployments Standard added Central US, East US 2, and Sweden Central | o4-mini: Deployments Batch added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, and West US 3; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | polandcentral: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-chat-latest, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-chat-latest, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | sora-2: Deployments Standard added East US 2 and Sweden Central | southafricanorth: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | southcentralus: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-chat-latest, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-chat-latest, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | southeastasia: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, and text-embedding-3-small; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o3, o4-mini, text-embedding-3-large, and text-embedding-3-small | southindia: Global coverage removed computer-use-preview, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, gpt-realtime, gpt-realtime-1.5, gpt-realtime-2, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed computer-use-preview, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-realtime, gpt-realtime-1.5, gpt-realtime-2, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper | spaincentral: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | swedencentral: Global coverage removed codex-mini, computer-use-preview, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-max, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-audio, gpt-audio-1.5, gpt-audio-mini, gpt-chat-latest, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, gpt-realtime, gpt-realtime-1.5, gpt-realtime-2, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, model-router, o1, o3, o3-mini, o3-pro, o4-mini, sora-2, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, tts, tts-hd, and whisper; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed codex-mini, computer-use-preview, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-max, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-audio, gpt-audio-1.5, gpt-audio-mini, gpt-chat-latest, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, gpt-realtime, gpt-realtime-1.5, gpt-realtime-2, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, model-router, o1, o3, o3-mini, o3-pro, o4-mini, sora-2, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, tts, tts-hd, and whisper | switzerlandnorth: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper | switzerlandwest: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, and text-embedding-3-small; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-5-chat, gpt-5-codex, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, text-embedding-3-large, and text-embedding-3-small | text-embedding-3-large: Global coverage added Canada Central and Switzerland West; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | text-embedding-3-small: Global coverage added Canada Central, Southeast Asia, and Switzerland West; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | text-embedding-ada-002: Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | tts: Deployments Standard added North Central US, Sweden Central, and West US 3 | tts-hd: Deployments Standard added North Central US, Sweden Central, and West US 3 | uaenorth: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper | uksouth: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | westeurope: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper | westus: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-deep-research, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-deep-research, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | westus3: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5-nano, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, gpt-chat-latest, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, tts, and tts-hd; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5-nano, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, gpt-chat-latest, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, tts, and tts-hd | whisper: Deployments Standard added East US 2, North Central US, Norway East, South India, Sweden Central, Switzerland North, UAE North, and West Europe
 - **2026-06-04 10:38 UTC** — canadacentral: Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, and gpt-4o-mini | centralus: Deployments Standard added gpt-5.5 | eastus: Deployments Standard added gpt-5.5 | francecentral: Deployments Standard added gpt-5.5 | germanywestcentral: Deployments Standard added gpt-5.5 | italynorth: Deployments Standard added gpt-5.5 | norwayeast: Deployments Standard added gpt-5.5 | southeastasia: Deployments Standard removed gpt-4o and gpt-4o-mini | spaincentral: Deployments Standard added gpt-5.5 | switzerlandnorth: Deployments Standard added gpt-5.5 | switzerlandwest: Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, and gpt-4o-mini | westeurope: Deployments Standard added gpt-5.5 | westus: Deployments Standard added gpt-5.5
 - **2026-06-03 11:56 UTC** — brazilsouth: Deployments Provisioned added gpt-5.4-mini | canadacentral: Global coverage added text-embedding-3-large and text-embedding-3-small; Deployments Provisioned added gpt-5.4-mini; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, text-embedding-3-large, and text-embedding-3-small | canadaeast: Deployments Provisioned added gpt-5.4-mini | centralus: Deployments Provisioned added gpt-5.4-mini | eastus: Deployments Provisioned added gpt-5.4-mini | eastus2: Deployments Provisioned added gpt-5.4-mini | northcentralus: Deployments Provisioned added gpt-5.4-mini; Deployments Standard added gpt-5.5 | southcentralus: Deployments Provisioned added gpt-5.4-mini | southeastasia: Global coverage added text-embedding-3-small; Deployments Standard added gpt-4o, gpt-4o-mini, and text-embedding-3-small | switzerlandwest: Global coverage added text-embedding-3-large and text-embedding-3-small; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, text-embedding-3-large, and text-embedding-3-small | westus: Deployments Provisioned added gpt-5.4-mini | westus3: Deployments Standard added gpt-5.5
 - **2026-05-29 10:46 UTC** — westus3: Global coverage added gpt-chat-latest; Deployments Standard added gpt-chat-latest
