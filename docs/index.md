@@ -13,19 +13,19 @@
 
 <div class="stats-grid">
   <div class="stat-card">
-    <div class="stat-value">111</div>
+    <div class="stat-value">87</div>
     <div class="stat-label">Models Tracked</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value">92</div>
+    <div class="stat-value">32</div>
     <div class="stat-label">Azure Regions</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value">11</div>
+    <div class="stat-value">12</div>
     <div class="stat-label">Action Needed</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value">42</div>
+    <div class="stat-value">41</div>
     <div class="stat-label">Scheduled Retirements</div>
   </div>
 </div>
@@ -37,25 +37,25 @@
         <div>
             <span class="changes-digest__eyebrow">Recent availability changes</span>
             <h2 class="changes-digest__title">Latest Availability Digest</h2>
-            <p>Latest run: Jun 4, 2026. Changes are grouped by model, deployment SKU, and affected regions.</p>
+            <p>Latest run: Jun 10, 2026. Changes are grouped by model, deployment SKU, and affected regions.</p>
         </div>
         <a class="md-button" href="history/">View full history</a>
     </div>
     <div class="changes-summary" aria-label="Latest change summary">
-        <a class="changes-summary__item changes-summary__item--added" href="history/?date=2026-06-04&type=Added">
-            <strong>10</strong>
+        <a class="changes-summary__item changes-summary__item--added" href="history/?date=2026-06-10&type=Added">
+            <strong>1680</strong>
             <span>Additions</span>
         </a>
-        <a class="changes-summary__item changes-summary__item--removed" href="history/?date=2026-06-04&type=Removed">
-            <strong>12</strong>
+        <a class="changes-summary__item changes-summary__item--removed" href="history/?date=2026-06-10&type=Removed">
+            <strong>0</strong>
             <span>Removals</span>
         </a>
-        <a class="changes-summary__item" href="history/?date=2026-06-04">
-            <strong>6</strong>
+        <a class="changes-summary__item" href="history/?date=2026-06-10">
+            <strong>60</strong>
             <span>Models affected</span>
         </a>
-        <a class="changes-summary__item" href="history/?date=2026-06-04">
-            <strong>13</strong>
+        <a class="changes-summary__item" href="history/?date=2026-06-10">
+            <strong>28</strong>
             <span>Regions affected</span>
         </a>
     </div>
@@ -68,149 +68,156 @@
             <div role="columnheader">Scope</div>
             <div role="columnheader">Regions</div>
         </div>
-        <div class="change-row change-row--removed" role="row">
-            <div class="change-row__date" role="cell"><time datetime="2026-06-04">Jun 4</time></div>
-            <div class="change-row__change" role="cell"><span class="badge-removed">Removed</span></div>
-            <div class="change-row__model" role="cell"><a href="models/gpt-4-1/">gpt-4.1</a></div>
-            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
-            <div class="change-row__scope" role="cell">2 regions</div>
-            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Switzerland%20West">Switzerland West</a></div>
-        </div>
-        <div class="change-row change-row--removed" role="row">
-            <div class="change-row__date" role="cell"><time datetime="2026-06-04">Jun 4</time></div>
-            <div class="change-row__change" role="cell"><span class="badge-removed">Removed</span></div>
-            <div class="change-row__model" role="cell"><a href="models/gpt-4-1-mini/">gpt-4.1-mini</a></div>
-            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
-            <div class="change-row__scope" role="cell">2 regions</div>
-            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Switzerland%20West">Switzerland West</a></div>
-        </div>
-        <div class="change-row change-row--removed" role="row">
-            <div class="change-row__date" role="cell"><time datetime="2026-06-04">Jun 4</time></div>
-            <div class="change-row__change" role="cell"><span class="badge-removed">Removed</span></div>
-            <div class="change-row__model" role="cell"><a href="models/gpt-4-1-nano/">gpt-4.1-nano</a></div>
-            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
-            <div class="change-row__scope" role="cell">2 regions</div>
-            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Switzerland%20West">Switzerland West</a></div>
-        </div>
-        <div class="change-row change-row--removed" role="row">
-            <div class="change-row__date" role="cell"><time datetime="2026-06-04">Jun 4</time></div>
-            <div class="change-row__change" role="cell"><span class="badge-removed">Removed</span></div>
-            <div class="change-row__model" role="cell"><a href="models/gpt-4o/">gpt-4o</a></div>
-            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
-            <div class="change-row__scope" role="cell">3 regions</div>
-            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Southeast%20Asia">Southeast Asia</a> <a class="region-badge" href="by-region/?region=Switzerland%20West">Switzerland West</a></div>
-        </div>
-        <div class="change-row change-row--removed" role="row">
-            <div class="change-row__date" role="cell"><time datetime="2026-06-04">Jun 4</time></div>
-            <div class="change-row__change" role="cell"><span class="badge-removed">Removed</span></div>
-            <div class="change-row__model" role="cell"><a href="models/gpt-4o-mini/">gpt-4o-mini</a></div>
-            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
-            <div class="change-row__scope" role="cell">3 regions</div>
-            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Southeast%20Asia">Southeast Asia</a> <a class="region-badge" href="by-region/?region=Switzerland%20West">Switzerland West</a></div>
-        </div>
         <div class="change-row change-row--added" role="row">
-            <div class="change-row__date" role="cell"><time datetime="2026-06-04">Jun 4</time></div>
+            <div class="change-row__date" role="cell"><time datetime="2026-06-10">Jun 10</time></div>
             <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
-            <div class="change-row__model" role="cell"><a href="models/gpt-5-5/">gpt-5.5</a></div>
+            <div class="change-row__model" role="cell"><a href="models/codex-mini/">codex-mini</a></div>
             <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
-            <div class="change-row__scope" role="cell">10 regions</div>
-            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Central%20US">Central US</a> <a class="region-badge" href="by-region/?region=East%20US">East US</a> <a class="region-badge" href="by-region/?region=France%20Central">France Central</a> <span class="change-more-count">+7 more</span></div>
+            <div class="change-row__scope" role="cell">3 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Central%20US">Central US</a> <a class="region-badge" href="by-region/?region=East%20US%202">East US 2</a> <a class="region-badge" href="by-region/?region=Sweden%20Central">Sweden Central</a></div>
         </div>
         <div class="change-row change-row--added" role="row">
-            <div class="change-row__date" role="cell"><time datetime="2026-06-03">Jun 3</time></div>
+            <div class="change-row__date" role="cell"><time datetime="2026-06-10">Jun 10</time></div>
+            <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
+            <div class="change-row__model" role="cell"><a href="models/computer-use-preview/">computer-use-preview</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
+            <div class="change-row__scope" role="cell">3 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=East%20US%202">East US 2</a> <a class="region-badge" href="by-region/?region=South%20India">South India</a> <a class="region-badge" href="by-region/?region=Sweden%20Central">Sweden Central</a></div>
+        </div>
+        <div class="change-row change-row--added" role="row">
+            <div class="change-row__date" role="cell"><time datetime="2026-06-10">Jun 10</time></div>
             <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
             <div class="change-row__model" role="cell"><a href="models/gpt-4-1/">gpt-4.1</a></div>
-            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
-            <div class="change-row__scope" role="cell">2 regions</div>
-            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Switzerland%20West">Switzerland West</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Batch">Deployments Batch</a></div>
+            <div class="change-row__scope" role="cell">22 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Australia%20East">Australia East</a> <a class="region-badge" href="by-region/?region=Brazil%20South">Brazil South</a> <a class="region-badge" href="by-region/?region=Canada%20East">Canada East</a> <span class="change-more-count">+19 more</span></div>
         </div>
         <div class="change-row change-row--added" role="row">
-            <div class="change-row__date" role="cell"><time datetime="2026-06-03">Jun 3</time></div>
+            <div class="change-row__date" role="cell"><time datetime="2026-06-10">Jun 10</time></div>
             <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
-            <div class="change-row__model" role="cell"><a href="models/gpt-4-1-mini/">gpt-4.1-mini</a></div>
-            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
-            <div class="change-row__scope" role="cell">2 regions</div>
-            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Switzerland%20West">Switzerland West</a></div>
-        </div>
-        <div class="change-row change-row--added" role="row">
-            <div class="change-row__date" role="cell"><time datetime="2026-06-03">Jun 3</time></div>
-            <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
-            <div class="change-row__model" role="cell"><a href="models/gpt-4-1-nano/">gpt-4.1-nano</a></div>
-            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
-            <div class="change-row__scope" role="cell">2 regions</div>
-            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Switzerland%20West">Switzerland West</a></div>
-        </div>
-        <div class="change-row change-row--added" role="row">
-            <div class="change-row__date" role="cell"><time datetime="2026-06-03">Jun 3</time></div>
-            <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
-            <div class="change-row__model" role="cell"><a href="models/gpt-4o/">gpt-4o</a></div>
-            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
-            <div class="change-row__scope" role="cell">3 regions</div>
-            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Southeast%20Asia">Southeast Asia</a> <a class="region-badge" href="by-region/?region=Switzerland%20West">Switzerland West</a></div>
-        </div>
-        <div class="change-row change-row--added" role="row">
-            <div class="change-row__date" role="cell"><time datetime="2026-06-03">Jun 3</time></div>
-            <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
-            <div class="change-row__model" role="cell"><a href="models/gpt-4o-mini/">gpt-4o-mini</a></div>
-            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
-            <div class="change-row__scope" role="cell">3 regions</div>
-            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Southeast%20Asia">Southeast Asia</a> <a class="region-badge" href="by-region/?region=Switzerland%20West">Switzerland West</a></div>
-        </div>
-        <div class="change-row change-row--added" role="row">
-            <div class="change-row__date" role="cell"><time datetime="2026-06-03">Jun 3</time></div>
-            <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
-            <div class="change-row__model" role="cell"><a href="models/gpt-5-4-mini/">gpt-5.4-mini</a></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-4-1/">gpt-4.1</a></div>
             <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Provisioned">Deployments Provisioned</a></div>
-            <div class="change-row__scope" role="cell">9 regions</div>
-            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Brazil%20South">Brazil South</a> <a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Canada%20East">Canada East</a> <span class="change-more-count">+6 more</span></div>
+            <div class="change-row__scope" role="cell">28 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Australia%20East">Australia East</a> <a class="region-badge" href="by-region/?region=Brazil%20South">Brazil South</a> <a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <span class="change-more-count">+25 more</span></div>
         </div>
         <div class="change-row change-row--added" role="row">
-            <div class="change-row__date" role="cell"><time datetime="2026-06-03">Jun 3</time></div>
+            <div class="change-row__date" role="cell"><time datetime="2026-06-10">Jun 10</time></div>
             <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
-            <div class="change-row__model" role="cell"><a href="models/gpt-5-5/">gpt-5.5</a></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-4-1/">gpt-4.1</a></div>
             <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
-            <div class="change-row__scope" role="cell">2 regions</div>
-            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=North%20Central%20US">North Central US</a> <a class="region-badge" href="by-region/?region=West%20US%203">West US 3</a></div>
+            <div class="change-row__scope" role="cell">26 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Australia%20East">Australia East</a> <a class="region-badge" href="by-region/?region=Brazil%20South">Brazil South</a> <a class="region-badge" href="by-region/?region=Canada%20East">Canada East</a> <span class="change-more-count">+23 more</span></div>
         </div>
         <div class="change-row change-row--added" role="row">
-            <div class="change-row__date" role="cell"><time datetime="2026-06-03">Jun 3</time></div>
+            <div class="change-row__date" role="cell"><time datetime="2026-06-10">Jun 10</time></div>
             <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
-            <div class="change-row__model" role="cell"><a href="models/text-embedding-3-large/">text-embedding-3-large</a></div>
-            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
-            <div class="change-row__scope" role="cell">2 regions</div>
-            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Switzerland%20West">Switzerland West</a></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-4-1-mini/">gpt-4.1-mini</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Batch">Deployments Batch</a></div>
+            <div class="change-row__scope" role="cell">22 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Australia%20East">Australia East</a> <a class="region-badge" href="by-region/?region=Brazil%20South">Brazil South</a> <a class="region-badge" href="by-region/?region=Canada%20East">Canada East</a> <span class="change-more-count">+19 more</span></div>
         </div>
         <div class="change-row change-row--added" role="row">
-            <div class="change-row__date" role="cell"><time datetime="2026-06-03">Jun 3</time></div>
+            <div class="change-row__date" role="cell"><time datetime="2026-06-10">Jun 10</time></div>
             <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
-            <div class="change-row__model" role="cell"><a href="models/text-embedding-3-small/">text-embedding-3-small</a></div>
-            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
-            <div class="change-row__scope" role="cell">3 regions</div>
-            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge" href="by-region/?region=Southeast%20Asia">Southeast Asia</a> <a class="region-badge" href="by-region/?region=Switzerland%20West">Switzerland West</a></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-4-1-mini/">gpt-4.1-mini</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Provisioned">Deployments Provisioned</a></div>
+            <div class="change-row__scope" role="cell">28 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Australia%20East">Australia East</a> <a class="region-badge" href="by-region/?region=Brazil%20South">Brazil South</a> <a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <span class="change-more-count">+25 more</span></div>
         </div>
         <div class="change-row change-row--added" role="row">
-            <div class="change-row__date" role="cell"><time datetime="2026-05-29">May 29</time></div>
+            <div class="change-row__date" role="cell"><time datetime="2026-06-10">Jun 10</time></div>
             <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
-            <div class="change-row__model" role="cell"><a href="models/gpt-chat-latest/">gpt-chat-latest</a></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-4-1-mini/">gpt-4.1-mini</a></div>
             <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
-            <div class="change-row__scope" role="cell">1 region</div>
-            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=West%20US%203">West US 3</a></div>
+            <div class="change-row__scope" role="cell">26 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Australia%20East">Australia East</a> <a class="region-badge" href="by-region/?region=Brazil%20South">Brazil South</a> <a class="region-badge" href="by-region/?region=Canada%20East">Canada East</a> <span class="change-more-count">+23 more</span></div>
+        </div>
+        <div class="change-row change-row--added" role="row">
+            <div class="change-row__date" role="cell"><time datetime="2026-06-10">Jun 10</time></div>
+            <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-4-1-nano/">gpt-4.1-nano</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Batch">Deployments Batch</a></div>
+            <div class="change-row__scope" role="cell">22 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Australia%20East">Australia East</a> <a class="region-badge" href="by-region/?region=Brazil%20South">Brazil South</a> <a class="region-badge" href="by-region/?region=Canada%20East">Canada East</a> <span class="change-more-count">+19 more</span></div>
+        </div>
+        <div class="change-row change-row--added" role="row">
+            <div class="change-row__date" role="cell"><time datetime="2026-06-10">Jun 10</time></div>
+            <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-4-1-nano/">gpt-4.1-nano</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Provisioned">Deployments Provisioned</a></div>
+            <div class="change-row__scope" role="cell">28 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Australia%20East">Australia East</a> <a class="region-badge" href="by-region/?region=Brazil%20South">Brazil South</a> <a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <span class="change-more-count">+25 more</span></div>
+        </div>
+        <div class="change-row change-row--added" role="row">
+            <div class="change-row__date" role="cell"><time datetime="2026-06-10">Jun 10</time></div>
+            <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-4-1-nano/">gpt-4.1-nano</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
+            <div class="change-row__scope" role="cell">26 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Australia%20East">Australia East</a> <a class="region-badge" href="by-region/?region=Brazil%20South">Brazil South</a> <a class="region-badge" href="by-region/?region=Canada%20East">Canada East</a> <span class="change-more-count">+23 more</span></div>
+        </div>
+        <div class="change-row change-row--added" role="row">
+            <div class="change-row__date" role="cell"><time datetime="2026-06-10">Jun 10</time></div>
+            <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-4o/">gpt-4o</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Batch">Deployments Batch</a></div>
+            <div class="change-row__scope" role="cell">22 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Australia%20East">Australia East</a> <a class="region-badge" href="by-region/?region=Brazil%20South">Brazil South</a> <a class="region-badge" href="by-region/?region=Canada%20East">Canada East</a> <span class="change-more-count">+19 more</span></div>
+        </div>
+        <div class="change-row change-row--added" role="row">
+            <div class="change-row__date" role="cell"><time datetime="2026-06-10">Jun 10</time></div>
+            <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-4o/">gpt-4o</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Provisioned">Deployments Provisioned</a></div>
+            <div class="change-row__scope" role="cell">28 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Australia%20East">Australia East</a> <a class="region-badge" href="by-region/?region=Brazil%20South">Brazil South</a> <a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <span class="change-more-count">+25 more</span></div>
+        </div>
+        <div class="change-row change-row--added" role="row">
+            <div class="change-row__date" role="cell"><time datetime="2026-06-10">Jun 10</time></div>
+            <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-4o/">gpt-4o</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Standard">Deployments Standard</a></div>
+            <div class="change-row__scope" role="cell">25 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Australia%20East">Australia East</a> <a class="region-badge" href="by-region/?region=Brazil%20South">Brazil South</a> <a class="region-badge" href="by-region/?region=Canada%20East">Canada East</a> <span class="change-more-count">+22 more</span></div>
+        </div>
+        <div class="change-row change-row--added" role="row">
+            <div class="change-row__date" role="cell"><time datetime="2026-06-10">Jun 10</time></div>
+            <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-4o-mini/">gpt-4o-mini</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Batch">Deployments Batch</a></div>
+            <div class="change-row__scope" role="cell">22 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Australia%20East">Australia East</a> <a class="region-badge" href="by-region/?region=Brazil%20South">Brazil South</a> <a class="region-badge" href="by-region/?region=Canada%20East">Canada East</a> <span class="change-more-count">+19 more</span></div>
+        </div>
+        <div class="change-row change-row--added" role="row">
+            <div class="change-row__date" role="cell"><time datetime="2026-06-10">Jun 10</time></div>
+            <div class="change-row__change" role="cell"><span class="badge-added">Added</span></div>
+            <div class="change-row__model" role="cell"><a href="models/gpt-4o-mini/">gpt-4o-mini</a></div>
+            <div class="change-row__sku" role="cell"><a class="change-link-pill change-link-pill--sku" href="by-sku/?sku=Deployments%20Provisioned">Deployments Provisioned</a></div>
+            <div class="change-row__scope" role="cell">28 regions</div>
+            <div class="change-row__regions" role="cell"><a class="region-badge" href="by-region/?region=Australia%20East">Australia East</a> <a class="region-badge" href="by-region/?region=Brazil%20South">Brazil South</a> <a class="region-badge" href="by-region/?region=Canada%20Central">Canada Central</a> <span class="change-more-count">+25 more</span></div>
         </div>
     </div>
-    <p class="changes-digest__more">421 more grouped changes available in <a href="history/">full change history</a>.</p>
+    <p class="changes-digest__more">508 more grouped changes available in <a href="history/">full change history</a>.</p>
 </div>
 
 ---
 
 ## :material-alert-circle: Deprecation & Retirement Notices
 
-!!! warning "Upcoming Retirements (31-90 Days) — 2 model versions"
+!!! danger "Retiring Within 30 Days — 2 model versions"
+    These models require **immediate migration**. After the retirement date, API calls will return errors.
+
+    | Model | Version | Category | Retirement Date | Status | Replacement |
+    |-------|---------|----------|-----------------|--------|-------------|
+    | [o1](models/o1.md) | 2024-12-17 | Text Generation | 2026-07-15 | <span class="badge badge-retiring-soon">Retiring Soon</span> | [o3](models/o3.md) |
+    | [o3-mini](models/o3-mini.md) | 2025-01-31 | Text Generation | 2026-08-02 | <span class="badge badge-retiring-soon">Retiring Soon</span> | [o4-mini](models/o4-mini.md) |
+
+!!! warning "Upcoming Retirements (31-90 Days) — 1 model version"
     Plan and test your migration to the replacement model.
 
     | Model | Version | Category | Retirement Date | Status | Replacement |
     |-------|---------|----------|-----------------|--------|-------------|
-    | [o1](models/o1.md) | 2024-12-17 | Text Generation | 2026-07-15 | <span class="badge badge-retiring">Retiring</span> | [o3](models/o3.md) |
-    | [o3-mini](models/o3-mini.md) | 2025-01-31 | Text Generation | 2026-08-02 | <span class="badge badge-retiring">Retiring</span> | [o4-mini](models/o4-mini.md) |
+    | `o1-pro` | 2025-03-19 | Text Generation | 2026-09-18 | <span class="badge badge-retiring">Retiring</span> | [o3-pro](models/o3-pro.md) |
 
 !!! failure "Already Retired — 9 model versions"
     These models are no longer available. Migrate to the listed replacement.
@@ -372,4 +379,4 @@
 
 ---
 
-_Last updated: 2026-06-09 17:19 UTC_
+_Last updated: 2026-07-06 16:37 UTC_

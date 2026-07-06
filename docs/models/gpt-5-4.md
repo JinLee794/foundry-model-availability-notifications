@@ -6,7 +6,7 @@
             <span class="badge badge-broad">Broad</span>
             <span class="model-profile__coverage-note">25+ regions tracked</span>
         </div>
-        <p class="model-profile__lead">Available in <strong>28</strong> of <strong>92</strong> tracked regions with <strong>9</strong> deployment SKU types.</p>
+        <p class="model-profile__lead">Available in <strong>28</strong> of <strong>32</strong> tracked regions with <strong>11</strong> deployment SKU types.</p>
         <div class="model-profile__chips" aria-label="Deployment categories"><span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span> <span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-other">Other</span> <span class="sku-badge sku-provisioned" data-tooltip="Reserved throughput capacity (PTU) | Best for predictable, high-volume production workloads | ✓ Single-region deployment — HIPAA-eligible in supported regions with a BAA from Microsoft">Provisioned</span></div>
         <div class="model-profile__actions">
             <a class="md-button md-button--primary" href="#deployment-options">Deployment options</a>
@@ -20,11 +20,11 @@
     </div>
     <div class="model-metric">
         <span>Coverage</span>
-        <strong>30%</strong>
+        <strong>88%</strong>
     </div>
     <div class="model-metric">
         <span>SKU types</span>
-        <strong>9</strong>
+        <strong>11</strong>
     </div>
     <div class="model-metric">
         <span>Categories</span>
@@ -34,7 +34,7 @@
     <div class="model-profile__insight">
         <span>Widest SKU footprint</span>
         <strong><a href="../by-sku/?sku=Standard%20Global%20By%20Capability">Standard Global By Capability</a></strong>
-        <small>28 regions · 30% coverage · Other</small>
+        <small>28 regions · 88% coverage · Other</small>
     </div>
 </div>
 
@@ -56,16 +56,16 @@
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
                 <a class="deployment-sku-row__name" href="../by-sku/?sku=Global%20Standard">Global Standard</a>
-                <span>28 regions · 30% coverage</span>
+                <span>28 regions · 88% coverage</span>
             </div>
-            <div class="availability-meter" aria-hidden="true"><span style="width: 30%;"></span></div>
+            <div class="availability-meter" aria-hidden="true"><span style="width: 88%;"></span></div>
         </div>
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
                 <a class="deployment-sku-row__name" href="../by-sku/?sku=Global%20coverage">Global coverage</a>
-                <span>28 regions · 30% coverage</span>
+                <span>28 regions · 88% coverage</span>
             </div>
-            <div class="availability-meter" aria-hidden="true"><span style="width: 30%;"></span></div>
+            <div class="availability-meter" aria-hidden="true"><span style="width: 88%;"></span></div>
         </div>
         </div>
         <div class="deployment-lane__regions" aria-label="Global deployment regions">
@@ -88,16 +88,16 @@
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
                 <a class="deployment-sku-row__name" href="../by-sku/?sku=Datazone%20provisioned%20managed">Datazone provisioned managed</a>
-                <span>13 regions · 14% coverage</span>
+                <span>13 regions · 41% coverage</span>
             </div>
-            <div class="availability-meter" aria-hidden="true"><span style="width: 14%;"></span></div>
+            <div class="availability-meter" aria-hidden="true"><span style="width: 41%;"></span></div>
         </div>
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
                 <a class="deployment-sku-row__name" href="../by-sku/?sku=Datazone%20standard">Datazone standard</a>
-                <span>14 regions · 15% coverage</span>
+                <span>14 regions · 44% coverage</span>
             </div>
-            <div class="availability-meter" aria-hidden="true"><span style="width: 15%;"></span></div>
+            <div class="availability-meter" aria-hidden="true"><span style="width: 44%;"></span></div>
         </div>
         </div>
         <div class="deployment-lane__regions" aria-label="Datazone deployment regions">
@@ -120,16 +120,16 @@
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
                 <a class="deployment-sku-row__name" href="../by-sku/?sku=Provisioned%20%28PTU%20managed%29">Provisioned (PTU managed)</a>
-                <span>2 regions · 2% coverage</span>
+                <span>2 regions · 6% coverage</span>
             </div>
-            <div class="availability-meter" aria-hidden="true"><span style="width: 2%;"></span></div>
+            <div class="availability-meter" aria-hidden="true"><span style="width: 6%;"></span></div>
         </div>
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
                 <a class="deployment-sku-row__name" href="../by-sku/?sku=Provisioned%20global">Provisioned global</a>
-                <span>27 regions · 29% coverage</span>
+                <span>27 regions · 84% coverage</span>
             </div>
-            <div class="availability-meter" aria-hidden="true"><span style="width: 29%;"></span></div>
+            <div class="availability-meter" aria-hidden="true"><span style="width: 84%;"></span></div>
         </div>
         </div>
         <div class="deployment-lane__regions" aria-label="Provisioned deployment regions">
@@ -152,23 +152,37 @@
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
                 <a class="deployment-sku-row__name" href="../by-sku/?sku=Datazone%20Standard%20Priority%20Processing">Datazone Standard Priority Processing</a>
-                <span>7 regions · 8% coverage</span>
+                <span>7 regions · 22% coverage</span>
             </div>
-            <div class="availability-meter" aria-hidden="true"><span style="width: 8%;"></span></div>
+            <div class="availability-meter" aria-hidden="true"><span style="width: 22%;"></span></div>
+        </div>
+        <div class="deployment-sku-row">
+            <div class="deployment-sku-row__copy">
+                <a class="deployment-sku-row__name" href="../by-sku/?sku=Deployments%20Provisioned">Deployments Provisioned</a>
+                <span>28 regions · 88% coverage</span>
+            </div>
+            <div class="availability-meter" aria-hidden="true"><span style="width: 88%;"></span></div>
+        </div>
+        <div class="deployment-sku-row">
+            <div class="deployment-sku-row__copy">
+                <a class="deployment-sku-row__name" href="../by-sku/?sku=Deployments%20Standard">Deployments Standard</a>
+                <span>28 regions · 88% coverage</span>
+            </div>
+            <div class="availability-meter" aria-hidden="true"><span style="width: 88%;"></span></div>
         </div>
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
                 <a class="deployment-sku-row__name" href="../by-sku/?sku=Standard%20Global%20By%20Capability">Standard Global By Capability</a>
-                <span>28 regions · 30% coverage</span>
+                <span>28 regions · 88% coverage</span>
             </div>
-            <div class="availability-meter" aria-hidden="true"><span style="width: 30%;"></span></div>
+            <div class="availability-meter" aria-hidden="true"><span style="width: 88%;"></span></div>
         </div>
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
                 <a class="deployment-sku-row__name" href="../by-sku/?sku=Standard%20Global%20Priority%20Processing">Standard Global Priority Processing</a>
-                <span>27 regions · 29% coverage</span>
+                <span>27 regions · 84% coverage</span>
             </div>
-            <div class="availability-meter" aria-hidden="true"><span style="width: 29%;"></span></div>
+            <div class="availability-meter" aria-hidden="true"><span style="width: 84%;"></span></div>
         </div>
         </div>
         <div class="deployment-lane__regions" aria-label="Other deployment regions">
@@ -189,41 +203,41 @@
 <div class="table-responsive">
 <table class="matrix-table">
 <thead>
-<tr><th>Region</th><th>Datazone Standard Priority Processing</th><th>Datazone provisioned managed</th><th>Datazone standard</th><th>Global Standard</th><th>Global coverage</th><th>Provisioned (PTU managed)</th><th>Provisioned global</th><th>Standard Global By Capability</th><th>Standard Global Priority Processing</th></tr>
+<tr><th>Region</th><th>Datazone Standard Priority Processing</th><th>Datazone provisioned managed</th><th>Datazone standard</th><th>Deployments Provisioned</th><th>Deployments Standard</th><th>Global Standard</th><th>Global coverage</th><th>Provisioned (PTU managed)</th><th>Provisioned global</th><th>Standard Global By Capability</th><th>Standard Global Priority Processing</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Australia East</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Brazil South</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Canada Central</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Canada East</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Central US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>East US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>East US 2</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>France Central</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Germany West Central</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Italy North</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Japan East</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Korea Central</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>North Central US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Norway East</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Poland Central</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>South Africa North</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>South Central US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>South India</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Southeast Asia</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Spain Central</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Sweden Central</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Switzerland North</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Switzerland West</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>UAE North</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>UK South</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>West Europe</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>West US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>West US 3</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td></tr>
+<tr><td><strong>Australia East</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Brazil South</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Canada Central</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Canada East</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Central US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>East US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>East US 2</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>France Central</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Germany West Central</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Italy North</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Japan East</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Korea Central</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>North Central US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Norway East</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Poland Central</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>South Africa North</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>South Central US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>South India</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Southeast Asia</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Spain Central</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Sweden Central</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Switzerland North</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Switzerland West</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>UAE North</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>UK South</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>West Europe</strong></td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>West US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>West US 3</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td></tr>
 </tbody>
 </table>
 </div>
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-06-09 17:19 UTC_
+_Last updated: 2026-07-06 16:37 UTC_

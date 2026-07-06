@@ -6,7 +6,7 @@
             <span class="badge badge-broad">Broad</span>
             <span class="model-profile__coverage-note">25+ regions tracked</span>
         </div>
-        <p class="model-profile__lead">Available in <strong>30</strong> of <strong>92</strong> tracked regions with <strong>3</strong> deployment SKU types.</p>
+        <p class="model-profile__lead">Available in <strong>30</strong> of <strong>32</strong> tracked regions with <strong>3</strong> deployment SKU types.</p>
         <div class="model-profile__chips" aria-label="Deployment categories"><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-provisioned" data-tooltip="Reserved throughput capacity (PTU) | Best for predictable, high-volume production workloads | ✓ Single-region deployment — HIPAA-eligible in supported regions with a BAA from Microsoft">Provisioned</span></div>
         <div class="model-profile__actions">
             <a class="md-button md-button--primary" href="#deployment-options">Deployment options</a>
@@ -20,7 +20,7 @@
     </div>
     <div class="model-metric">
         <span>Coverage</span>
-        <strong>33%</strong>
+        <strong>94%</strong>
     </div>
     <div class="model-metric">
         <span>SKU types</span>
@@ -34,7 +34,7 @@
     <div class="model-profile__insight">
         <span>Widest SKU footprint</span>
         <strong><a href="../by-sku/?sku=Global%20coverage">Global coverage</a></strong>
-        <small>30 regions · 33% coverage · Global</small>
+        <small>30 regions · 94% coverage · Global</small>
     </div>
 </div>
 
@@ -56,16 +56,16 @@
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
                 <a class="deployment-sku-row__name" href="../by-sku/?sku=Global%20Standard">Global Standard</a>
-                <span>30 regions · 33% coverage</span>
+                <span>30 regions · 94% coverage</span>
             </div>
-            <div class="availability-meter" aria-hidden="true"><span style="width: 33%;"></span></div>
+            <div class="availability-meter" aria-hidden="true"><span style="width: 94%;"></span></div>
         </div>
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
                 <a class="deployment-sku-row__name" href="../by-sku/?sku=Global%20coverage">Global coverage</a>
-                <span>30 regions · 33% coverage</span>
+                <span>30 regions · 94% coverage</span>
             </div>
-            <div class="availability-meter" aria-hidden="true"><span style="width: 33%;"></span></div>
+            <div class="availability-meter" aria-hidden="true"><span style="width: 94%;"></span></div>
         </div>
         </div>
         <div class="deployment-lane__regions" aria-label="Global deployment regions">
@@ -88,9 +88,9 @@
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
                 <a class="deployment-sku-row__name" href="../by-sku/?sku=Global%20Provisioned%20Managed">Global Provisioned Managed</a>
-                <span>30 regions · 33% coverage</span>
+                <span>30 regions · 94% coverage</span>
             </div>
-            <div class="availability-meter" aria-hidden="true"><span style="width: 33%;"></span></div>
+            <div class="availability-meter" aria-hidden="true"><span style="width: 94%;"></span></div>
         </div>
         </div>
         <div class="deployment-lane__regions" aria-label="Provisioned deployment regions">
@@ -150,4 +150,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-06-09 17:19 UTC_
+_Last updated: 2026-07-06 16:37 UTC_

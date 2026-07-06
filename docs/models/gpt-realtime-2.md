@@ -1,4 +1,4 @@
-# gpt-audio
+# gpt-realtime-2
 
 <div class="model-profile" aria-label="Model availability profile">
     <div class="model-profile__main">
@@ -6,7 +6,7 @@
             <span class="badge badge-emerging">Emerging</span>
             <span class="model-profile__coverage-note">Under 15 regions tracked</span>
         </div>
-        <p class="model-profile__lead">Available in <strong>3</strong> of <strong>32</strong> tracked regions with <strong>4</strong> deployment SKU types.</p>
+        <p class="model-profile__lead">Available in <strong>6</strong> of <strong>32</strong> tracked regions with <strong>2</strong> deployment SKU types.</p>
         <div class="model-profile__chips" aria-label="Deployment categories"><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-other">Other</span></div>
         <div class="model-profile__actions">
             <a class="md-button md-button--primary" href="#deployment-options">Deployment options</a>
@@ -16,15 +16,15 @@
     <div class="model-profile__metrics" aria-label="Model availability metrics">
     <div class="model-metric">
         <span>Total regions</span>
-        <strong>3</strong>
+        <strong>6</strong>
     </div>
     <div class="model-metric">
         <span>Coverage</span>
-        <strong>9%</strong>
+        <strong>19%</strong>
     </div>
     <div class="model-metric">
         <span>SKU types</span>
-        <strong>4</strong>
+        <strong>2</strong>
     </div>
     <div class="model-metric">
         <span>Categories</span>
@@ -33,21 +33,10 @@
 </div>
     <div class="model-profile__insight">
         <span>Widest SKU footprint</span>
-        <strong><a href="../by-sku/?sku=Standard%20Global%20By%20Capability">Standard Global By Capability</a></strong>
-        <small>3 regions · 9% coverage · Other</small>
+        <strong><a href="../by-sku/?sku=Global%20coverage">Global coverage</a></strong>
+        <small>6 regions · 19% coverage · Global</small>
     </div>
 </div>
-
-
-!!! warning "Retirement Notice"
-    This model has scheduled retirement dates. Plan your migration to the replacement model.
-
-## :material-clock-alert: Retirement Schedule
-
-| Version | Status | Deprecation Date | Retirement Date | Timeline | Replacement |
-|---------|--------|------------------|-----------------|----------|-------------|
-| 2025-08-28 | Generally Available | 2026-08-28 | 2027-02-28 | <span class="badge badge-scheduled">Scheduled</span> | - |
-
 
 
 ## :material-target: Deployment Options
@@ -66,21 +55,14 @@
         <div class="deployment-sku-list">
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
-                <a class="deployment-sku-row__name" href="../by-sku/?sku=Global%20Standard">Global Standard</a>
-                <span>3 regions · 9% coverage</span>
-            </div>
-            <div class="availability-meter" aria-hidden="true"><span style="width: 9%;"></span></div>
-        </div>
-        <div class="deployment-sku-row">
-            <div class="deployment-sku-row__copy">
                 <a class="deployment-sku-row__name" href="../by-sku/?sku=Global%20coverage">Global coverage</a>
-                <span>3 regions · 9% coverage</span>
+                <span>6 regions · 19% coverage</span>
             </div>
-            <div class="availability-meter" aria-hidden="true"><span style="width: 9%;"></span></div>
+            <div class="availability-meter" aria-hidden="true"><span style="width: 19%;"></span></div>
         </div>
         </div>
         <div class="deployment-lane__regions" aria-label="Global deployment regions">
-            <a class="region-badge model-region-chip" href="../by-region/?region=Central%20US">Central US</a> <a class="region-badge model-region-chip" href="../by-region/?region=East%20US%202">East US 2</a> <a class="region-badge model-region-chip" href="../by-region/?region=Sweden%20Central">Sweden Central</a>
+            <a class="region-badge model-region-chip" href="../by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge model-region-chip" href="../by-region/?region=Central%20US">Central US</a> <a class="region-badge model-region-chip" href="../by-region/?region=East%20US%202">East US 2</a> <a class="region-badge model-region-chip" href="../by-region/?region=France%20Central">France Central</a> <a class="region-badge model-region-chip" href="../by-region/?region=South%20India">South India</a> <a class="region-badge model-region-chip" href="../by-region/?region=Sweden%20Central">Sweden Central</a>
         </div>
         <p class="deployment-lane__compliance">⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements</p>
     </div>
@@ -99,20 +81,13 @@
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
                 <a class="deployment-sku-row__name" href="../by-sku/?sku=Deployments%20Standard">Deployments Standard</a>
-                <span>3 regions · 9% coverage</span>
+                <span>6 regions · 19% coverage</span>
             </div>
-            <div class="availability-meter" aria-hidden="true"><span style="width: 9%;"></span></div>
-        </div>
-        <div class="deployment-sku-row">
-            <div class="deployment-sku-row__copy">
-                <a class="deployment-sku-row__name" href="../by-sku/?sku=Standard%20Global%20By%20Capability">Standard Global By Capability</a>
-                <span>3 regions · 9% coverage</span>
-            </div>
-            <div class="availability-meter" aria-hidden="true"><span style="width: 9%;"></span></div>
+            <div class="availability-meter" aria-hidden="true"><span style="width: 19%;"></span></div>
         </div>
         </div>
         <div class="deployment-lane__regions" aria-label="Other deployment regions">
-            <a class="region-badge model-region-chip" href="../by-region/?region=Central%20US">Central US</a> <a class="region-badge model-region-chip" href="../by-region/?region=East%20US%202">East US 2</a> <a class="region-badge model-region-chip" href="../by-region/?region=Sweden%20Central">Sweden Central</a>
+            <a class="region-badge model-region-chip" href="../by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge model-region-chip" href="../by-region/?region=Central%20US">Central US</a> <a class="region-badge model-region-chip" href="../by-region/?region=East%20US%202">East US 2</a> <a class="region-badge model-region-chip" href="../by-region/?region=France%20Central">France Central</a> <a class="region-badge model-region-chip" href="../by-region/?region=South%20India">South India</a> <a class="region-badge model-region-chip" href="../by-region/?region=Sweden%20Central">Sweden Central</a>
         </div>
         
     </div>
@@ -129,12 +104,15 @@
 <div class="table-responsive">
 <table class="matrix-table">
 <thead>
-<tr><th>Region</th><th>Deployments Standard</th><th>Global Standard</th><th>Global coverage</th><th>Standard Global By Capability</th></tr>
+<tr><th>Region</th><th>Deployments Standard</th><th>Global coverage</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Central US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>East US 2</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Sweden Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Canada Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Central US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>East US 2</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>France Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>South India</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr><td><strong>Sweden Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
 </tbody>
 </table>
 </div>

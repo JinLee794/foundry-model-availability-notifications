@@ -4,15 +4,15 @@ Track upcoming Azure AI Foundry model retirements and plan your migrations.
 
 <div class="stats-grid">
   <div class="stat-card" style="border-left-color: #ef4444;">
-    <div class="stat-value" style="color: #ef4444;">0</div>
+    <div class="stat-value" style="color: #ef4444;">2</div>
     <div class="stat-label">Retiring in 30 Days</div>
   </div>
   <div class="stat-card" style="border-left-color: #f59e0b;">
-    <div class="stat-value" style="color: #f59e0b;">2</div>
+    <div class="stat-value" style="color: #f59e0b;">1</div>
     <div class="stat-label">Retiring in 90 Days</div>
   </div>
   <div class="stat-card" style="border-left-color: #3b82f6;">
-    <div class="stat-value" style="color: #3b82f6;">42</div>
+    <div class="stat-value" style="color: #3b82f6;">41</div>
     <div class="stat-label">Scheduled</div>
   </div>
   <div class="stat-card">
@@ -23,8 +23,14 @@ Track upcoming Azure AI Foundry model retirements and plan your migrations.
 
 ---
 
+## :material-alert-circle:{ .md-icon-retiring-soon } Retiring Soon (Within 30 Days)
 
+These models require immediate migration attention.
 
+| Model | Version | Category | Retirement Date | Status | Replacement |
+|-------|---------|----------|-----------------|--------|-------------|
+| [o1](models/o1.md) | 2024-12-17 | Text Generation | 2026-07-15 | <span class="badge badge-retiring-soon">Retiring Soon</span> | [o3](models/o3.md) (28 regions) |
+| [o3-mini](models/o3-mini.md) | 2025-01-31 | Text Generation | 2026-08-02 | <span class="badge badge-retiring-soon">Retiring Soon</span> | [o4-mini](models/o4-mini.md) (28 regions) |
 
 
 ## :material-calendar-alert:{ .md-icon-upcoming } Upcoming Retirements (31-90 Days)
@@ -33,8 +39,7 @@ Plan your migrations for these models.
 
 | Model | Version | Category | Retirement Date | Status | Replacement |
 |-------|---------|----------|-----------------|--------|-------------|
-| [o1](models/o1.md) | 2024-12-17 | Text Generation | 2026-07-15 | <span class="badge badge-retiring">Retiring</span> | [o3](models/o3.md) (28 regions) |
-| [o3-mini](models/o3-mini.md) | 2025-01-31 | Text Generation | 2026-08-02 | <span class="badge badge-retiring">Retiring</span> | [o4-mini](models/o4-mini.md) (28 regions) |
+| `o1-pro` | 2025-03-19 | Text Generation | 2026-09-18 | <span class="badge badge-retiring">Retiring</span> | [o3-pro](models/o3-pro.md) (3 regions) |
 
 !!! note "**gpt-4o** and **gpt-4o-mini** Retirement Update"
     Standard deployment type retires 2026-03-31, with auto-upgrades starting 2026-03-09. For Provisioned, Global Standard, and Data Zone Standard deployment types, the retirement date has been moved to 2026-10-01.
@@ -60,9 +65,9 @@ Complete list of model retirements with replacement recommendations.
 | [gpt-4o](models/gpt-4o.md) | 2024-08-06 | Text Generation | 2026-03-31 | <span class="badge badge-retired">Retired</span> | [gpt-5.1](models/gpt-5-1.md) (29 regions) |
 | [gpt-4o-mini](models/gpt-4o-mini.md) | 2024-07-18 | Text Generation | 2026-03-31 | <span class="badge badge-retired">Retired</span> | [gpt-4.1-mini](models/gpt-4-1-mini.md) (29 regions) |
 | [gpt-4o](models/gpt-4o.md) | 2024-11-20 | Text Generation | 2026-06-05 | <span class="badge badge-retired">Retired</span> | [gpt-5.1](models/gpt-5-1.md) (29 regions) |
-| [o1](models/o1.md) | 2024-12-17 | Text Generation | 2026-07-15 | <span class="badge badge-retiring">Retiring</span> | [o3](models/o3.md) (28 regions) |
-| [o3-mini](models/o3-mini.md) | 2025-01-31 | Text Generation | 2026-08-02 | <span class="badge badge-retiring">Retiring</span> | [o4-mini](models/o4-mini.md) (28 regions) |
-| `o1-pro` | 2025-03-19 | Text Generation | 2026-09-18 | <span class="badge badge-scheduled">Scheduled</span> | [o3-pro](models/o3-pro.md) (3 regions) |
+| [o1](models/o1.md) | 2024-12-17 | Text Generation | 2026-07-15 | <span class="badge badge-retiring-soon">Retiring Soon</span> | [o3](models/o3.md) (28 regions) |
+| [o3-mini](models/o3-mini.md) | 2025-01-31 | Text Generation | 2026-08-02 | <span class="badge badge-retiring-soon">Retiring Soon</span> | [o4-mini](models/o4-mini.md) (28 regions) |
+| `o1-pro` | 2025-03-19 | Text Generation | 2026-09-18 | <span class="badge badge-retiring">Retiring</span> | [o3-pro](models/o3-pro.md) (3 regions) |
 | [gpt-4.1](models/gpt-4-1.md) | 2025-04-14 | Text Generation | 2026-10-14 | <span class="badge badge-scheduled">Scheduled</span> | [gpt-5](models/gpt-5.md) (28 regions) |
 | [gpt-4.1-mini](models/gpt-4-1-mini.md) | 2025-04-14 | Text Generation | 2026-10-14 | <span class="badge badge-scheduled">Scheduled</span> | [gpt-5-mini](models/gpt-5-mini.md) (28 regions) |
 | [gpt-4.1-nano](models/gpt-4-1-nano.md) | 2025-04-14 | Text Generation | 2026-10-14 | <span class="badge badge-scheduled">Scheduled</span> | [gpt-5-nano](models/gpt-5-nano.md) (26 regions) |
@@ -151,4 +156,4 @@ Fine-tuned models retire in two phases: training and deployment.
 
 _Data sourced from [Microsoft Azure AI Documentation](https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/foundry/openai/includes/retirement/models.md)_
 
-_Last updated: 2026-06-09 17:19 UTC_
+_Last updated: 2026-07-06 16:37 UTC_
