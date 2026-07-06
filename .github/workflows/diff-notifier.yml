@@ -85,9 +85,9 @@ jobs:
                       if sku_removed:
                           model_lines.append(f"  - {label}: -{', '.join(sku_removed)}")
                       if sku_change.get("sku_removed"):
-                          model_lines.append(f"  - {label}: SKU removed")
+                          model_lines.append(f"{model} ({label}): deployment type removed")
                   if change.get("model_removed"):
-                      model_lines.append("  - model removed")
+                      model_lines.append(f"{model}: model removed from all regions")
 
               if model_lines:
                   entries.append({

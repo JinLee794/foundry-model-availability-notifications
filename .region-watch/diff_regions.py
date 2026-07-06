@@ -621,9 +621,9 @@ def main() -> int:
                         f"  - {sku_change['label']} ({sku_key}): removed -> {', '.join(sku_change['removed'])}"
                     )
                 if sku_change.get("sku_removed"):
-                    lines.append(f"  - {sku_change['label']} ({sku_key}): sku removed")
+                    lines.append(f"  - {model} ({sku_change['label']} / {sku_key}): deployment type removed")
             if change.get("model_removed"):
-                lines.append("  - model removed")
+                lines.append(f"• {model}: model removed from all regions")
         try:
             requests.post(os.getenv("TEAMS_WEBHOOK"), json={"text": "\n".join(lines)}, timeout=10)
         except Exception:
