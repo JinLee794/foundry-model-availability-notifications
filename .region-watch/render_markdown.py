@@ -16,7 +16,7 @@ OUTPUT_PATH = HERE.parent / "REGION_AVAILABILITY.md"
 DEFAULT_LABEL = "Global coverage"
 
 # Normalize legacy/non-canonical SKU labels to valid Azure AI Foundry deployment type names.
-# Source: https://learn.microsoft.com/azure/ai-foundry/foundry-models/concepts/deployment-types
+# Source: https://learn.microsoft.com/azure/foundry/foundry-models/concepts/deployment-types
 SKU_LABEL_NORMALIZATION: Dict[str, str] = {
     # Legacy model-family-specific Standard labels → canonical "Standard"
     "Standard (all)": "Standard",

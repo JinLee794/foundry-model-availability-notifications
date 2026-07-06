@@ -29,7 +29,7 @@ BUCKETS: List[Tuple[int, str, str, str]] = [
 ]
 
 # Normalize legacy/non-canonical SKU labels to valid Azure AI Foundry deployment type names.
-# Source: https://learn.microsoft.com/azure/ai-foundry/foundry-models/concepts/deployment-types
+# Source: https://learn.microsoft.com/azure/foundry/foundry-models/concepts/deployment-types
 SKU_LABEL_NORMALIZATION: Dict[str, str] = {
     # Legacy model-family-specific Standard labels → canonical "Standard"
     "Standard (all)": "Standard",
@@ -597,7 +597,7 @@ def generate_retirement_section(
                 f'    {note}\n'
                 f'\n'
                 f'    For more details, see the [Azure AI Foundry model retirements documentation]'
-                f'(https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/model-retirements'
+                f'(https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirements'
                 f'?view=foundry-classic&tabs=text).\n'
             )
         notes_section = "\n" + "\n".join(note_blocks)
@@ -696,7 +696,7 @@ def generate_retirements_page(
                 f'    {note}\n'
                 f'\n'
                 f'    For more details, see the [Azure AI Foundry model retirements documentation]'
-                f'(https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/model-retirements'
+                f'(https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirements'
                 f'?view=foundry-classic&tabs=text).\n'
             )
         return "\n".join(blocks)
@@ -835,9 +835,9 @@ Complete list of model retirements with replacement recommendations.
 
 ## :material-bookshelf: Resources
 
-- [Azure OpenAI Model Lifecycle](https://learn.microsoft.com/azure/ai-services/openai/concepts/model-lifecycle)
-- [Model Deprecation and Retirement](https://learn.microsoft.com/azure/ai-services/openai/concepts/model-retirements)
-- [Migration Best Practices](https://learn.microsoft.com/azure/ai-services/openai/how-to/migration)
+- [Azure OpenAI Model Lifecycle](https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirements)
+- [Model Deprecation and Retirement](https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirements)
+- [Migration Best Practices](https://learn.microsoft.com/azure/foundry-classic/openai/how-to/migration)
 
 ---
 

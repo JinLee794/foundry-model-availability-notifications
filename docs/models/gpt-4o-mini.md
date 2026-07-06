@@ -51,7 +51,7 @@
 !!! note "Retirement Date Update"
     Standard deployment type retires 2026-03-31, with auto-upgrades starting 2026-03-09. For Provisioned, Global Standard, and Data Zone Standard deployment types, the retirement date has been moved to 2026-10-01.
 
-    For more details, see the [Azure AI Foundry model retirements documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/model-retirements?view=foundry-classic&tabs=text).
+    For more details, see the [Azure AI Foundry model retirements documentation](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirements?view=foundry-classic&tabs=text).
 
 
 ### Replacement Model Availability
