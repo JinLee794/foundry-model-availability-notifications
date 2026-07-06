@@ -1,10 +1,10 @@
 # AI Foundry Model Availability by Region
 
-_Last updated: 2026-06-10 10:56 UTC_
+_Last updated: 2026-07-06 17:08 UTC_
 
-- Models tracked: **87**
+- Models tracked: **127**
 - Regions in snapshot: **32**
-- Distinct SKU labels: **20**
+- Distinct SKU labels: **21**
 
 Coverage legend:
 - 🟢 Broad — 25+ regions available
@@ -29,6 +29,7 @@ SKU labels observed:
 - Provisioned (PTU managed)
 - Provisioned Models Gov
 - Provisioned global
+- Region Availability Maas
 - Standard
 - Standard Global By Capability
 - Standard Global Priority Processing
@@ -40,9 +41,9 @@ SKU labels observed:
 | --- | --- | --- | --- | --- |
 | Cohere-rerank-v4.0-fast | 🟢 Broad | 30 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | Cohere-rerank-v4.0-pro | 🟢 Broad | 30 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| DeepSeek-R1 | 🟢 Broad | 30 | 3 (Global Provisioned Managed, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| DeepSeek-R1 | 🟢 Broad | 30 | 4 (Global Provisioned Managed, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | DeepSeek-R1-0528 | 🟢 Broad | 30 | 3 (Global Provisioned Managed, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| DeepSeek-V3-0324 | 🟢 Broad | 30 | 3 (Global Provisioned Managed, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| DeepSeek-V3-0324 | 🟢 Broad | 30 | 4 (Global Provisioned Managed, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | DeepSeek-V3.1 | 🟢 Broad | 30 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | DeepSeek-V3.2 | 🟢 Broad | 30 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | DeepSeek-V3.2-Speciale | 🟢 Broad | 30 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
@@ -51,7 +52,7 @@ SKU labels observed:
 | FLUX.2-flex | 🟢 Broad | 30 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | FLUX.2-pro | 🟢 Broad | 30 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | Kimi-K2.5 | 🟢 Broad | 30 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| Llama-3.3-70B-Instruct | 🟢 Broad | 30 | 3 (Global Provisioned Managed, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| Llama-3.3-70B-Instruct | 🟢 Broad | 30 | 4 (Global Provisioned Managed, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | Llama-4-Maverick-17B-128E-Instruct-FP8 | 🟢 Broad | 30 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | Mistral-Large-3 | 🟢 Broad | 30 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | cohere-command-a | 🟢 Broad | 30 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
@@ -62,7 +63,7 @@ SKU labels observed:
 | grok-4-1-fast-reasoning | 🟢 Broad | 30 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | grok-4-fast-non-reasoning | 🟢 Broad | 30 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | grok-4-fast-reasoning | 🟢 Broad | 30 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| mistral-document-ai-2505 | 🟢 Broad | 30 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| mistral-document-ai-2505 | 🟢 Broad | 30 | 4 (Datazone standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | mistral-document-ai-2512 | 🟢 Broad | 30 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-4.1 | 🟢 Broad | 29 | 17 (Datazone Standard Gov, Datazone Standard Priority Processing, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-4.1-mini | 🟢 Broad | 29 | 16 (Datazone Provisioned Managed Gov, Datazone Standard Gov, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
@@ -96,7 +97,37 @@ SKU labels observed:
 | gpt-5-nano | 🟢 Broad | 26 | 5 (Datazone standard, Deployments Standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada East`, `Central US`, `East US`, `East US 2` |
 | text-embedding-ada-002 | 🟢 Broad | 26 | 7 (Datazone standard, Deployments Standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada East`, `Central US`, `East US`, `East US 2` |
 | whisper | 🔴 Emerging | 8 | 3 (Deployments Standard, Global coverage, Standard) | `East US 2`, `North Central US`, `Norway East`, `South India`, `Sweden Central`, `Switzerland North` |
+| Codestral-2501 | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
+| Cohere Command R 08-2024 | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
+| Cohere Command R+ 08-2024 | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
+| Cohere Embed v3 - English | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
+| Cohere Embed v3 - Multilingual | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
+| Cohere Rerank v3.5 | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
+| Llama 3.1 8B Instruct | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
+| Llama 3.3 70B Instruct | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
+| Llama-3.2-11B-Vision-Instruct | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
+| Llama-3.2-1B | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
+| Llama-3.2-1B-Instruct | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
+| Llama-3.2-3B | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
+| Llama-3.2-3B-Instruct | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
+| Llama-3.2-90B-Vision-Instruct | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
+| Llama-Guard-3-11B-Vision | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
+| Llama-Guard-3-1B | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
+| Ministral-3B | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
+| Mistral Medium 3 (25.05) | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
+| Mistral Small 25.03 | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
+| Phi-4 | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
+| Phi-4-mini-instruct | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
+| Phi-4-multimodal-instruct | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
+| TimeGEN-1 | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
+| Llama 3.1 405B Instruct | 🔴 Emerging | 6 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `West US`, `West US 3` |
+| MAI-DS-R1 | 🔴 Emerging | 6 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `West US`, `West US 3` |
 | MAI-Image-2 | 🔴 Emerging | 6 | 2 (Global Standard, Global coverage) | `East US`, `South India`, `Sweden Central`, `West Central US`, `West Europe`, `West US` |
+| Phi-4-mini-reasoning | 🔴 Emerging | 6 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `West US`, `West US 3` |
+| Phi-4-reasoning | 🔴 Emerging | 6 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `West US`, `West US 3` |
+| Stable Diffusion 3.5 Large | 🔴 Emerging | 6 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `West US`, `West US 3` |
+| Stable Image Core | 🔴 Emerging | 6 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `West US`, `West US 3` |
+| Stable Image Ultra | 🔴 Emerging | 6 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `West US`, `West US 3` |
 | gpt-4o-mini-transcribe | 🔴 Emerging | 6 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
 | gpt-4o-transcribe | 🔴 Emerging | 6 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
 | gpt-4o-transcribe-diarize | 🔴 Emerging | 6 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
@@ -106,6 +137,7 @@ SKU labels observed:
 | gpt-realtime-mini | 🔴 Emerging | 6 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
 | gpt-realtime-translate | 🔴 Emerging | 6 | 2 (Deployments Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
 | gpt-realtime-whisper | 🔴 Emerging | 6 | 2 (Deployments Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
+| tsuzumi-7b | 🔴 Emerging | 6 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `West US`, `West US 3` |
 | gpt-chat-latest | 🔴 Emerging | 5 | 2 (Deployments Standard, Global coverage) | `East US 2`, `Poland Central`, `South Central US`, `Sweden Central`, `West US 3` |
 | gpt-image-1 | 🔴 Emerging | 5 | 4 (Deployments Standard, Global Standard, Global coverage +) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
 | gpt-image-1-mini | 🔴 Emerging | 5 | 4 (Deployments Standard, Global Standard, Global coverage +) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
@@ -120,6 +152,15 @@ SKU labels observed:
 | o3-pro | 🔴 Emerging | 3 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Central US`, `East US 2`, `Sweden Central` |
 | tts | 🔴 Emerging | 3 | 3 (Deployments Standard, Global coverage, Standard) | `North Central US`, `Sweden Central`, `West US 3` |
 | tts-hd | 🔴 Emerging | 3 | 3 (Deployments Standard, Global coverage, Standard) | `North Central US`, `Sweden Central`, `West US 3` |
+| Claude Haiku 4.5 (preview) | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
+| Claude Mythos Preview<sup>2< | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
+| Claude Opus 4.1 (preview) | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
+| Claude Opus 4.5 (preview) | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
+| Claude Opus 4.6 (preview) | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
+| Claude Opus 4.7 (preview) | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
+| Claude Opus 4.8 (preview) | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
+| Claude Sonnet 4.5 (preview) | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
+| Claude Sonnet 4.6 (preview) | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
 | gpt-5.1-codex-max | 🔴 Emerging | 2 | 4 (Deployments Standard, Global Standard, Global coverage +) | `East US 2`, `Sweden Central` |
 | model-router | 🔴 Emerging | 2 | 5 (Datazone standard, Deployments Standard, Global Standard +) | `East US 2`, `Sweden Central` |
 | o3-deep-research | 🔴 Emerging | 2 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Norway East`, `West US` |
@@ -199,26 +240,26 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>DeepSeek-R1 — 30 regions across 3 SKU labels</summary>
+<summary>DeepSeek-R1 — 30 regions across 4 SKU labels</summary>
 
 - `Australia East` — Global Provisioned Managed, Global Standard, Global coverage
 - `Brazil South` — Global Provisioned Managed, Global Standard, Global coverage
 - `Canada Central` — Global Provisioned Managed, Global Standard, Global coverage
 - `Canada East` — Global Provisioned Managed, Global Standard, Global coverage
 - `Central US` — Global Provisioned Managed, Global Standard, Global coverage
-- `East US` — Global Provisioned Managed, Global Standard, Global coverage
-- `East US 2` — Global Provisioned Managed, Global Standard, Global coverage
+- `East US` — Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
+- `East US 2` — Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
 - `France Central` — Global Provisioned Managed, Global Standard, Global coverage
 - `Germany West Central` — Global Provisioned Managed, Global Standard, Global coverage
 - `Italy North` — Global Provisioned Managed, Global Standard, Global coverage
 - `Japan East` — Global Provisioned Managed, Global Standard, Global coverage
 - `Japan West` — Global Provisioned Managed, Global Standard, Global coverage
 - `Korea Central` — Global Provisioned Managed, Global Standard, Global coverage
-- `North Central US` — Global Provisioned Managed, Global Standard, Global coverage
+- `North Central US` — Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
 - `Norway East` — Global Provisioned Managed, Global Standard, Global coverage
 - `Poland Central` — Global Provisioned Managed, Global Standard, Global coverage
 - `South Africa North` — Global Provisioned Managed, Global Standard, Global coverage
-- `South Central US` — Global Provisioned Managed, Global Standard, Global coverage
+- `South Central US` — Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
 - `South India` — Global Provisioned Managed, Global Standard, Global coverage
 - `Spain Central` — Global Provisioned Managed, Global Standard, Global coverage
 - `Sweden Central` — Global Provisioned Managed, Global Standard, Global coverage
@@ -228,9 +269,9 @@ SKU labels observed:
 - `UK South` — Global Provisioned Managed, Global Standard, Global coverage
 - `West Central US` — Global Provisioned Managed, Global Standard, Global coverage
 - `West Europe` — Global Provisioned Managed, Global Standard, Global coverage
-- `West US` — Global Provisioned Managed, Global Standard, Global coverage
+- `West US` — Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
 - `West US 2` — Global Provisioned Managed, Global Standard, Global coverage
-- `West US 3` — Global Provisioned Managed, Global Standard, Global coverage
+- `West US 3` — Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
 
 </details>
 <details>
@@ -269,26 +310,26 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>DeepSeek-V3-0324 — 30 regions across 3 SKU labels</summary>
+<summary>DeepSeek-V3-0324 — 30 regions across 4 SKU labels</summary>
 
 - `Australia East` — Global Provisioned Managed, Global Standard, Global coverage
 - `Brazil South` — Global Provisioned Managed, Global Standard, Global coverage
 - `Canada Central` — Global Provisioned Managed, Global Standard, Global coverage
 - `Canada East` — Global Provisioned Managed, Global Standard, Global coverage
 - `Central US` — Global Provisioned Managed, Global Standard, Global coverage
-- `East US` — Global Provisioned Managed, Global Standard, Global coverage
-- `East US 2` — Global Provisioned Managed, Global Standard, Global coverage
+- `East US` — Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
+- `East US 2` — Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
 - `France Central` — Global Provisioned Managed, Global Standard, Global coverage
 - `Germany West Central` — Global Provisioned Managed, Global Standard, Global coverage
 - `Italy North` — Global Provisioned Managed, Global Standard, Global coverage
 - `Japan East` — Global Provisioned Managed, Global Standard, Global coverage
 - `Japan West` — Global Provisioned Managed, Global Standard, Global coverage
 - `Korea Central` — Global Provisioned Managed, Global Standard, Global coverage
-- `North Central US` — Global Provisioned Managed, Global Standard, Global coverage
+- `North Central US` — Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
 - `Norway East` — Global Provisioned Managed, Global Standard, Global coverage
 - `Poland Central` — Global Provisioned Managed, Global Standard, Global coverage
 - `South Africa North` — Global Provisioned Managed, Global Standard, Global coverage
-- `South Central US` — Global Provisioned Managed, Global Standard, Global coverage
+- `South Central US` — Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
 - `South India` — Global Provisioned Managed, Global Standard, Global coverage
 - `Spain Central` — Global Provisioned Managed, Global Standard, Global coverage
 - `Sweden Central` — Global Provisioned Managed, Global Standard, Global coverage
@@ -298,9 +339,9 @@ SKU labels observed:
 - `UK South` — Global Provisioned Managed, Global Standard, Global coverage
 - `West Central US` — Global Provisioned Managed, Global Standard, Global coverage
 - `West Europe` — Global Provisioned Managed, Global Standard, Global coverage
-- `West US` — Global Provisioned Managed, Global Standard, Global coverage
+- `West US` — Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
 - `West US 2` — Global Provisioned Managed, Global Standard, Global coverage
-- `West US 3` — Global Provisioned Managed, Global Standard, Global coverage
+- `West US 3` — Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
 
 </details>
 <details>
@@ -584,38 +625,38 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>Llama-3.3-70B-Instruct — 30 regions across 3 SKU labels</summary>
+<summary>Llama-3.3-70B-Instruct — 30 regions across 4 SKU labels</summary>
 
 - `Australia East` — Global Provisioned Managed, Global Standard, Global coverage
 - `Brazil South` — Global Provisioned Managed, Global Standard, Global coverage
 - `Canada Central` — Global Provisioned Managed, Global Standard, Global coverage
 - `Canada East` — Global Provisioned Managed, Global Standard, Global coverage
 - `Central US` — Global Provisioned Managed, Global Standard, Global coverage
-- `East US` — Global Provisioned Managed, Global Standard, Global coverage
-- `East US 2` — Global Provisioned Managed, Global Standard, Global coverage
+- `East US` — Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
+- `East US 2` — Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
 - `France Central` — Global Provisioned Managed, Global Standard, Global coverage
 - `Germany West Central` — Global Provisioned Managed, Global Standard, Global coverage
 - `Italy North` — Global Provisioned Managed, Global Standard, Global coverage
 - `Japan East` — Global Provisioned Managed, Global Standard, Global coverage
 - `Japan West` — Global Provisioned Managed, Global Standard, Global coverage
 - `Korea Central` — Global Provisioned Managed, Global Standard, Global coverage
-- `North Central US` — Global Provisioned Managed, Global Standard, Global coverage
+- `North Central US` — Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
 - `Norway East` — Global Provisioned Managed, Global Standard, Global coverage
 - `Poland Central` — Global Provisioned Managed, Global Standard, Global coverage
 - `South Africa North` — Global Provisioned Managed, Global Standard, Global coverage
-- `South Central US` — Global Provisioned Managed, Global Standard, Global coverage
+- `South Central US` — Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
 - `South India` — Global Provisioned Managed, Global Standard, Global coverage
 - `Spain Central` — Global Provisioned Managed, Global Standard, Global coverage
-- `Sweden Central` — Global Provisioned Managed, Global Standard, Global coverage
+- `Sweden Central` — Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
 - `Switzerland North` — Global Provisioned Managed, Global Standard, Global coverage
 - `Switzerland West` — Global Provisioned Managed, Global Standard, Global coverage
 - `UAE North` — Global Provisioned Managed, Global Standard, Global coverage
 - `UK South` — Global Provisioned Managed, Global Standard, Global coverage
 - `West Central US` — Global Provisioned Managed, Global Standard, Global coverage
 - `West Europe` — Global Provisioned Managed, Global Standard, Global coverage
-- `West US` — Global Provisioned Managed, Global Standard, Global coverage
+- `West US` — Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
 - `West US 2` — Global Provisioned Managed, Global Standard, Global coverage
-- `West US 3` — Global Provisioned Managed, Global Standard, Global coverage
+- `West US 3` — Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
 
 </details>
 <details>
@@ -969,7 +1010,7 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>mistral-document-ai-2505 — 30 regions across 3 SKU labels</summary>
+<summary>mistral-document-ai-2505 — 30 regions across 4 SKU labels</summary>
 
 - `Australia East` — Global Standard, Global coverage
 - `Brazil South` — Global Standard, Global coverage
@@ -977,7 +1018,7 @@ SKU labels observed:
 - `Canada East` — Global Standard, Global coverage
 - `Central US` — Datazone standard, Global Standard, Global coverage
 - `East US` — Datazone standard, Global Standard, Global coverage
-- `East US 2` — Datazone standard, Global Standard, Global coverage
+- `East US 2` — Datazone standard, Global Standard, Global coverage, Region Availability Maas
 - `France Central` — Datazone standard, Global Standard, Global coverage
 - `Germany West Central` — Datazone standard, Global Standard, Global coverage
 - `Italy North` — Datazone standard, Global Standard, Global coverage
@@ -991,7 +1032,7 @@ SKU labels observed:
 - `South Central US` — Datazone standard, Global Standard, Global coverage
 - `South India` — Global Standard, Global coverage
 - `Spain Central` — Datazone standard, Global Standard, Global coverage
-- `Sweden Central` — Datazone standard, Global Standard, Global coverage
+- `Sweden Central` — Datazone standard, Global Standard, Global coverage, Region Availability Maas
 - `Switzerland North` — Global Standard, Global coverage
 - `Switzerland West` — Global Standard, Global coverage
 - `UAE North` — Global Standard, Global coverage
@@ -2075,6 +2116,304 @@ SKU labels observed:
 
 </details>
 <details>
+<summary>Codestral-2501 — 7 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Cohere Command R 08-2024 — 7 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Cohere Command R+ 08-2024 — 7 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Cohere Embed v3 - English — 7 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Cohere Embed v3 - Multilingual — 7 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Cohere Rerank v3.5 — 7 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Llama 3.1 8B Instruct — 7 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Llama 3.3 70B Instruct — 7 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Llama-3.2-11B-Vision-Instruct — 7 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Llama-3.2-1B — 7 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Llama-3.2-1B-Instruct — 7 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Llama-3.2-3B — 7 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Llama-3.2-3B-Instruct — 7 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Llama-3.2-90B-Vision-Instruct — 7 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Llama-Guard-3-11B-Vision — 7 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Llama-Guard-3-1B — 7 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Ministral-3B — 7 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Mistral Medium 3 (25.05) — 7 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Mistral Small 25.03 — 7 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Phi-4 — 7 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Phi-4-mini-instruct — 7 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Phi-4-multimodal-instruct — 7 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>TimeGEN-1 — 7 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Llama 3.1 405B Instruct — 6 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>MAI-DS-R1 — 6 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
 <summary>MAI-Image-2 — 6 regions across 2 SKU labels</summary>
 
 - `East US` — Global Standard, Global coverage
@@ -2083,6 +2422,61 @@ SKU labels observed:
 - `West Central US` — Global Standard, Global coverage
 - `West Europe` — Global Standard, Global coverage
 - `West US` — Global Standard, Global coverage
+
+</details>
+<details>
+<summary>Phi-4-mini-reasoning — 6 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Phi-4-reasoning — 6 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Stable Diffusion 3.5 Large — 6 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Stable Image Core — 6 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Stable Image Ultra — 6 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
 
 </details>
 <details>
@@ -2182,6 +2576,17 @@ SKU labels observed:
 - `France Central` — Deployments Standard, Global coverage
 - `South India` — Deployments Standard, Global coverage
 - `Sweden Central` — Deployments Standard, Global coverage
+
+</details>
+<details>
+<summary>tsuzumi-7b — 6 regions across 2 SKU labels</summary>
+
+- `East US` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Region Availability Maas
+- `North Central US` — Global coverage, Region Availability Maas
+- `South Central US` — Global coverage, Region Availability Maas
+- `West US` — Global coverage, Region Availability Maas
+- `West US 3` — Global coverage, Region Availability Maas
 
 </details>
 <details>
@@ -2308,6 +2713,69 @@ SKU labels observed:
 
 </details>
 <details>
+<summary>Claude Haiku 4.5 (preview) — 2 regions across 2 SKU labels</summary>
+
+- `East US 2` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Claude Mythos Preview<sup>2< — 2 regions across 2 SKU labels</summary>
+
+- `East US 2` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Claude Opus 4.1 (preview) — 2 regions across 2 SKU labels</summary>
+
+- `East US 2` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Claude Opus 4.5 (preview) — 2 regions across 2 SKU labels</summary>
+
+- `East US 2` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Claude Opus 4.6 (preview) — 2 regions across 2 SKU labels</summary>
+
+- `East US 2` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Claude Opus 4.7 (preview) — 2 regions across 2 SKU labels</summary>
+
+- `East US 2` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Claude Opus 4.8 (preview) — 2 regions across 2 SKU labels</summary>
+
+- `East US 2` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Claude Sonnet 4.5 (preview) — 2 regions across 2 SKU labels</summary>
+
+- `East US 2` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+
+</details>
+<details>
+<summary>Claude Sonnet 4.6 (preview) — 2 regions across 2 SKU labels</summary>
+
+- `East US 2` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
+
+</details>
+<details>
 <summary>gpt-5.1-codex-max — 2 regions across 4 SKU labels</summary>
 
 - `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
@@ -2344,6 +2812,7 @@ SKU labels observed:
 
 ## Recent changes
 
+- **2026-07-06 17:08 UTC** — Claude Haiku 4.5 (preview): Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Mythos Preview<sup>2<: Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Opus 4.1 (preview): Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Opus 4.5 (preview): Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Opus 4.6 (preview): Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Opus 4.7 (preview): Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Opus 4.8 (preview): Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Sonnet 4.5 (preview): Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Sonnet 4.6 (preview): Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Codestral-2501: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Cohere Command R 08-2024: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Cohere Command R+ 08-2024: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Cohere Embed v3 - English: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Cohere Embed v3 - Multilingual: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Cohere Rerank v3.5: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | DeepSeek-R1: Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | DeepSeek-V3-0324: Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | Llama 3.1 405B Instruct: Global coverage added East US, East US 2, North Central US, South Central US, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | Llama 3.1 8B Instruct: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama 3.3 70B Instruct: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-3.2-11B-Vision-Instruct: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-3.2-1B: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-3.2-1B-Instruct: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-3.2-3B: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-3.2-3B-Instruct: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-3.2-90B-Vision-Instruct: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-3.3-70B-Instruct: Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-Guard-3-11B-Vision: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-Guard-3-1B: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | MAI-DS-R1: Global coverage added East US, East US 2, North Central US, South Central US, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | Ministral-3B: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Mistral Medium 3 (25.05): Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Mistral Small 25.03: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Phi-4: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Phi-4-mini-instruct: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Phi-4-mini-reasoning: Global coverage added East US, East US 2, North Central US, South Central US, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | Phi-4-multimodal-instruct: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Phi-4-reasoning: Global coverage added East US, East US 2, North Central US, South Central US, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | Stable Diffusion 3.5 Large: Global coverage added East US, East US 2, North Central US, South Central US, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | Stable Image Core: Global coverage added East US, East US 2, North Central US, South Central US, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | Stable Image Ultra: Global coverage added East US, East US 2, North Central US, South Central US, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | TimeGEN-1: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | mistral-document-ai-2505: Region Availability Maas added East US 2 and Sweden Central | tsuzumi-7b: Global coverage added East US, East US 2, North Central US, South Central US, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3
 - **2026-06-10 10:56 UTC** — australiaeast: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | brazilsouth: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | canadacentral: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, gpt-realtime, gpt-realtime-1.5, gpt-realtime-2, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, o1, o3, o3-mini, o4-mini, text-embedding-3-large, and text-embedding-3-small; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5-chat, gpt-5-codex, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-realtime, gpt-realtime-1.5, gpt-realtime-2, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, text-embedding-3-large, and text-embedding-3-small | canadaeast: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | centralus: Global coverage removed codex-mini, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, gpt-audio, gpt-audio-1.5, gpt-audio-mini, gpt-realtime, gpt-realtime-1.5, gpt-realtime-2, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, o1, o3, o3-mini, o3-pro, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed codex-mini, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, gpt-audio, gpt-audio-1.5, gpt-audio-mini, gpt-realtime, gpt-realtime-1.5, gpt-realtime-2, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, o1, o3, o3-mini, o3-pro, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | codex-mini: Deployments Standard added Central US, East US 2, and Sweden Central | computer-use-preview: Deployments Standard added East US 2, South India, and Sweden Central | eastus: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | eastus2: Global coverage removed codex-mini, computer-use-preview, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-mini-tts, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-max, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-audio, gpt-audio-1.5, gpt-audio-mini, gpt-chat-latest, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, gpt-realtime, gpt-realtime-1.5, gpt-realtime-2, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, model-router, o1, o3, o3-mini, o3-pro, o4-mini, sora-2, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed codex-mini, computer-use-preview, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-mini-tts, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-max, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-audio, gpt-audio-1.5, gpt-audio-mini, gpt-chat-latest, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, gpt-realtime, gpt-realtime-1.5, gpt-realtime-2, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, model-router, o1, o3, o3-mini, o3-pro, o4-mini, sora-2, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper | francecentral: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, gpt-realtime, gpt-realtime-1.5, gpt-realtime-2, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, gpt-realtime, gpt-realtime-1.5, gpt-realtime-2, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | germanywestcentral: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | gpt-4.1: Deployments Batch added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, and West US 3; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | gpt-4.1-mini: Deployments Batch added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, and West US 3; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | gpt-4.1-nano: Deployments Batch added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, and West US 3; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | gpt-4o: Deployments Batch added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, and West US 3; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | gpt-4o-mini: Deployments Batch added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, and West US 3; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | gpt-4o-mini-transcribe: Deployments Standard added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | gpt-4o-mini-tts: Deployments Standard added East US 2 | gpt-4o-transcribe: Deployments Standard added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | gpt-4o-transcribe-diarize: Deployments Standard added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | gpt-5: Deployments Batch added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, and West US 3; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5-chat: Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US | gpt-5-codex: Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US | gpt-5-mini: Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5-nano: Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5-pro: Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US | gpt-5.1: Deployments Batch added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, and West US 3; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.1-chat: Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.1-codex: Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.1-codex-max: Deployments Standard added East US 2 and Sweden Central | gpt-5.1-codex-mini: Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.2: Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.2-chat: Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.2-codex: Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.3-chat: Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.3-codex: Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.4: Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.4-mini: Deployments Provisioned added Brazil South, Canada Central, Canada East, Central US, East US, East US 2, North Central US, South Central US, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.4-nano: Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.4-pro: Deployments Standard added East US 2, Poland Central, South Central US, and Sweden Central | gpt-5.5: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, France Central, Germany West Central, Italy North, Japan East, Korea Central, Norway East, South Africa North, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Central US, East US, East US 2, France Central, Germany West Central, Italy North, North Central US, Norway East, Poland Central, South Central US, Spain Central, Sweden Central, Switzerland North, West Europe, West US, and West US 3 | gpt-audio: Deployments Standard added Central US, East US 2, and Sweden Central | gpt-audio-1.5: Deployments Standard added Central US, East US 2, and Sweden Central | gpt-audio-mini: Deployments Standard added Central US, East US 2, and Sweden Central | gpt-chat-latest: Global coverage added East US 2, Poland Central, South Central US, Sweden Central, and West US 3; Deployments Standard added East US 2, Poland Central, South Central US, Sweden Central, and West US 3 | gpt-image-1: Deployments Standard added East US 2, Poland Central, Sweden Central, UAE North, and West US 3 | gpt-image-1-mini: Deployments Standard added East US 2, Poland Central, Sweden Central, UAE North, and West US 3 | gpt-image-1.5: Deployments Standard added East US 2, Poland Central, Sweden Central, UAE North, and West US 3 | gpt-image-2: Deployments Standard added East US 2, Poland Central, Sweden Central, UAE North, and West US 3 | gpt-realtime: Deployments Standard added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | gpt-realtime-1.5: Deployments Standard added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | gpt-realtime-2: Global coverage added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central; Deployments Standard added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | gpt-realtime-mini: Deployments Standard added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | gpt-realtime-translate: Global coverage added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central; Deployments Standard added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | gpt-realtime-whisper: Global coverage added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central; Deployments Standard added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | italynorth: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | japaneast: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | koreacentral: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | model-router: Deployments Standard added East US 2 and Sweden Central | northcentralus: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, tts, tts-hd, and whisper; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, tts, tts-hd, and whisper | norwayeast: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-deep-research, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-deep-research, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper | o1: Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | o3: Deployments Batch added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, and West US 3; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | o3-deep-research: Deployments Standard added Norway East and West US | o3-mini: Deployments Batch added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, and West US 3; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | o3-pro: Deployments Standard added Central US, East US 2, and Sweden Central | o4-mini: Deployments Batch added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, and West US 3; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | polandcentral: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-chat-latest, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-chat-latest, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | sora-2: Deployments Standard added East US 2 and Sweden Central | southafricanorth: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | southcentralus: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-chat-latest, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-chat-latest, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | southeastasia: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, and text-embedding-3-small; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o3, o4-mini, text-embedding-3-large, and text-embedding-3-small | southindia: Global coverage removed computer-use-preview, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, gpt-realtime, gpt-realtime-1.5, gpt-realtime-2, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed computer-use-preview, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-realtime, gpt-realtime-1.5, gpt-realtime-2, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper | spaincentral: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | swedencentral: Global coverage removed codex-mini, computer-use-preview, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-max, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-audio, gpt-audio-1.5, gpt-audio-mini, gpt-chat-latest, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, gpt-realtime, gpt-realtime-1.5, gpt-realtime-2, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, model-router, o1, o3, o3-mini, o3-pro, o4-mini, sora-2, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, tts, tts-hd, and whisper; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed codex-mini, computer-use-preview, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-4o-mini-transcribe, gpt-4o-transcribe, gpt-4o-transcribe-diarize, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-max, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.4-pro, gpt-5.5, gpt-audio, gpt-audio-1.5, gpt-audio-mini, gpt-chat-latest, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, gpt-realtime, gpt-realtime-1.5, gpt-realtime-2, gpt-realtime-mini, gpt-realtime-translate, gpt-realtime-whisper, model-router, o1, o3, o3-mini, o3-pro, o4-mini, sora-2, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, tts, tts-hd, and whisper | switzerlandnorth: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper | switzerlandwest: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, and text-embedding-3-small; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-5-chat, gpt-5-codex, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, text-embedding-3-large, and text-embedding-3-small | text-embedding-3-large: Global coverage added Canada Central and Switzerland West; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | text-embedding-3-small: Global coverage added Canada Central, Southeast Asia, and Switzerland West; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | text-embedding-ada-002: Deployments Standard added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3 | tts: Deployments Standard added North Central US, Sweden Central, and West US 3 | tts-hd: Deployments Standard added North Central US, Sweden Central, and West US 3 | uaenorth: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper | uksouth: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | westeurope: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, and whisper | westus: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-deep-research, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-chat, gpt-5-codex, gpt-5-mini, gpt-5-nano, gpt-5-pro, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, o1, o3, o3-deep-research, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, and text-embedding-ada-002 | westus3: Global coverage removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5-nano, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, gpt-chat-latest, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, tts, and tts-hd; Deployments Batch removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5.1, o3, o3-mini, and o4-mini; Deployments Provisioned removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5.1, gpt-5.1-codex, gpt-5.2, gpt-5.2-codex, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.5, o1, o3, o3-mini, and o4-mini; Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5, gpt-5-mini, gpt-5-nano, gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.2, gpt-5.2-chat, gpt-5.2-codex, gpt-5.3-chat, gpt-5.3-codex, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.5, gpt-chat-latest, gpt-image-1, gpt-image-1-mini, gpt-image-1.5, gpt-image-2, o1, o3, o3-mini, o4-mini, text-embedding-3-large, text-embedding-3-small, text-embedding-ada-002, tts, and tts-hd | whisper: Deployments Standard added East US 2, North Central US, Norway East, South India, Sweden Central, Switzerland North, UAE North, and West Europe
 - **2026-06-04 10:38 UTC** — canadacentral: Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, and gpt-4o-mini | centralus: Deployments Standard added gpt-5.5 | eastus: Deployments Standard added gpt-5.5 | francecentral: Deployments Standard added gpt-5.5 | germanywestcentral: Deployments Standard added gpt-5.5 | italynorth: Deployments Standard added gpt-5.5 | norwayeast: Deployments Standard added gpt-5.5 | southeastasia: Deployments Standard removed gpt-4o and gpt-4o-mini | spaincentral: Deployments Standard added gpt-5.5 | switzerlandnorth: Deployments Standard added gpt-5.5 | switzerlandwest: Deployments Standard removed gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, and gpt-4o-mini | westeurope: Deployments Standard added gpt-5.5 | westus: Deployments Standard added gpt-5.5
 - **2026-06-03 11:56 UTC** — brazilsouth: Deployments Provisioned added gpt-5.4-mini | canadacentral: Global coverage added text-embedding-3-large and text-embedding-3-small; Deployments Provisioned added gpt-5.4-mini; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, text-embedding-3-large, and text-embedding-3-small | canadaeast: Deployments Provisioned added gpt-5.4-mini | centralus: Deployments Provisioned added gpt-5.4-mini | eastus: Deployments Provisioned added gpt-5.4-mini | eastus2: Deployments Provisioned added gpt-5.4-mini | northcentralus: Deployments Provisioned added gpt-5.4-mini; Deployments Standard added gpt-5.5 | southcentralus: Deployments Provisioned added gpt-5.4-mini | southeastasia: Global coverage added text-embedding-3-small; Deployments Standard added gpt-4o, gpt-4o-mini, and text-embedding-3-small | switzerlandwest: Global coverage added text-embedding-3-large and text-embedding-3-small; Deployments Standard added gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, text-embedding-3-large, and text-embedding-3-small | westus: Deployments Provisioned added gpt-5.4-mini | westus3: Deployments Standard added gpt-5.5
