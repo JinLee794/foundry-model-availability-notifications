@@ -835,7 +835,7 @@ Complete list of model retirements with replacement recommendations.
 
 ## :material-bookshelf: Resources
 
-- [Azure OpenAI Model Lifecycle](https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirements)
+- [Foundry Models Lifecycle & Support Policy](https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirements)
 - [Model Deprecation and Retirement](https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirements)
 - [Migration Best Practices](https://learn.microsoft.com/azure/foundry-classic/openai/how-to/migration)
 
