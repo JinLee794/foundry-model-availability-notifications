@@ -13,7 +13,7 @@ MODEL_MATRIX_DIRS = [
 # Serverless/MaaS (Models-as-a-Service) files with transposed table format
 # These files have models in rows and regions in text columns
 MAAS_FILES = [
-    "articles/foundry/includes/region-availability-maas.md",  # Serverless API models (Anthropic, Cohere, Phi, Mistral, etc.)
+    "articles/foundry-classic/includes/region-availability-maas.md",  # Serverless API models (Anthropic, Cohere, Phi, Mistral, etc.)
 ]
 
 def get_model_matrix_directories() -> list[str]:

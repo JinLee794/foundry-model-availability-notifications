@@ -44,7 +44,7 @@ Plan your migrations for these models.
 !!! note "**gpt-4o** and **gpt-4o-mini** Retirement Update"
     Standard deployment type retires 2026-03-31, with auto-upgrades starting 2026-03-09. For Provisioned, Global Standard, and Data Zone Standard deployment types, the retirement date has been moved to 2026-10-01.
 
-    For more details, see the [Azure AI Foundry model retirements documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/model-retirements?view=foundry-classic&tabs=text).
+    For more details, see the [Azure AI Foundry model retirements documentation](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirements?view=foundry-classic&tabs=text).
 
 
 ## :material-calendar-clock: All Scheduled Retirements
@@ -148,9 +148,9 @@ Fine-tuned models retire in two phases: training and deployment.
 
 ## :material-bookshelf: Resources
 
-- [Azure OpenAI Model Lifecycle](https://learn.microsoft.com/azure/ai-services/openai/concepts/model-lifecycle)
-- [Model Deprecation and Retirement](https://learn.microsoft.com/azure/ai-services/openai/concepts/model-retirements)
-- [Migration Best Practices](https://learn.microsoft.com/azure/ai-services/openai/how-to/migration)
+- [Foundry Models Lifecycle & Support Policy](https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirements)
+- [Model Deprecation and Retirement](https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirements)
+- [Migration Best Practices](https://learn.microsoft.com/azure/foundry-classic/openai/how-to/migration)
 
 ---
 
