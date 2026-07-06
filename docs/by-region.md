@@ -8,15 +8,15 @@ Find which AI models are available in your Azure region, including their deploym
 
 <div class="stats-cards">
   <div class="stat-card">
-    <div class="stat-value">92</div>
+    <div class="stat-value">32</div>
     <div class="stat-label">Regions</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value">111</div>
+    <div class="stat-value">87</div>
     <div class="stat-label">Models</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value">2712</div>
+    <div class="stat-value">1778</div>
     <div class="stat-label">Deployments</div>
   </div>
 </div>
@@ -61,67 +61,7 @@ Find which AI models are available in your Azure region, including their deploym
       <option value="West US">West US</option>
       <option value="West US 2">West US 2</option>
       <option value="West US 3">West US 3</option>
-      <option value="codex-mini">codex-mini</option>
-      <option value="computer-use-preview">computer-use-preview</option>
-      <option value="gpt-4.1">gpt-4.1</option>
-      <option value="gpt-4.1-mini">gpt-4.1-mini</option>
-      <option value="gpt-4.1-nano">gpt-4.1-nano</option>
-      <option value="gpt-4o">gpt-4o</option>
-      <option value="gpt-4o-mini">gpt-4o-mini</option>
-      <option value="gpt-4o-mini-transcribe">gpt-4o-mini-transcribe</option>
-      <option value="gpt-4o-mini-tts">gpt-4o-mini-tts</option>
-      <option value="gpt-4o-transcribe">gpt-4o-transcribe</option>
-      <option value="gpt-4o-transcribe-diarize">gpt-4o-transcribe-diarize</option>
-      <option value="gpt-5">gpt-5</option>
-      <option value="gpt-5-chat">gpt-5-chat</option>
-      <option value="gpt-5-codex">gpt-5-codex</option>
-      <option value="gpt-5-mini">gpt-5-mini</option>
-      <option value="gpt-5-nano">gpt-5-nano</option>
-      <option value="gpt-5-pro">gpt-5-pro</option>
-      <option value="gpt-5.1">gpt-5.1</option>
-      <option value="gpt-5.1-chat">gpt-5.1-chat</option>
-      <option value="gpt-5.1-codex">gpt-5.1-codex</option>
-      <option value="gpt-5.1-codex-max">gpt-5.1-codex-max</option>
-      <option value="gpt-5.1-codex-mini">gpt-5.1-codex-mini</option>
-      <option value="gpt-5.2">gpt-5.2</option>
-      <option value="gpt-5.2-chat">gpt-5.2-chat</option>
-      <option value="gpt-5.2-codex">gpt-5.2-codex</option>
-      <option value="gpt-5.3-chat">gpt-5.3-chat</option>
-      <option value="gpt-5.3-codex">gpt-5.3-codex</option>
-      <option value="gpt-5.4">gpt-5.4</option>
-      <option value="gpt-5.4-mini">gpt-5.4-mini</option>
-      <option value="gpt-5.4-nano">gpt-5.4-nano</option>
-      <option value="gpt-5.4-pro">gpt-5.4-pro</option>
-      <option value="gpt-5.5">gpt-5.5</option>
-      <option value="gpt-audio">gpt-audio</option>
-      <option value="gpt-audio-1.5">gpt-audio-1.5</option>
-      <option value="gpt-audio-mini">gpt-audio-mini</option>
-      <option value="gpt-chat-latest">gpt-chat-latest</option>
-      <option value="gpt-image-1">gpt-image-1</option>
-      <option value="gpt-image-1-mini">gpt-image-1-mini</option>
-      <option value="gpt-image-1.5">gpt-image-1.5</option>
-      <option value="gpt-image-2">gpt-image-2</option>
-      <option value="gpt-realtime">gpt-realtime</option>
-      <option value="gpt-realtime-1.5">gpt-realtime-1.5</option>
-      <option value="gpt-realtime-2">gpt-realtime-2</option>
-      <option value="gpt-realtime-mini">gpt-realtime-mini</option>
-      <option value="gpt-realtime-translate">gpt-realtime-translate</option>
-      <option value="gpt-realtime-whisper">gpt-realtime-whisper</option>
-      <option value="model-router">model-router</option>
-      <option value="o1">o1</option>
-      <option value="o3">o3</option>
-      <option value="o3-deep-research">o3-deep-research</option>
-      <option value="o3-mini">o3-mini</option>
-      <option value="o3-pro">o3-pro</option>
-      <option value="o4-mini">o4-mini</option>
-      <option value="sora-2">sora-2</option>
-      <option value="text-embedding-3-large">text-embedding-3-large</option>
-      <option value="text-embedding-3-small">text-embedding-3-small</option>
-      <option value="text-embedding-ada-002">text-embedding-ada-002</option>
-      <option value="tts">tts</option>
-      <option value="tts-hd">tts-hd</option>
       <option value="usgovarizona">usgovarizona</option>
-      <option value="whisper">whisper</option>
     </select>
   </div>
   <div class="filter-group">
@@ -267,139 +207,145 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Australia East</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Global, Other, Provisioned, Standard</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Global, Other, Provisioned, Standard</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>Australia East</strong></td>
+      <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Provisioned, Global coverage</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
@@ -453,43 +399,43 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Australia East</strong></td>
       <td><a href="../models/o1/">o1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
       <td>Global, Other, Standard</td>
-      <td>Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
       <td>Global, Other, Standard</td>
-      <td>Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Australia East</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
       <td>Global, Other, Standard</td>
-      <td>Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
@@ -603,139 +549,145 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>Brazil South</strong></td>
+      <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Provisioned, Global coverage</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
@@ -789,43 +741,43 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/o1/">o1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Brazil South</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
       <td>Global, Other, Standard</td>
-      <td>Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
@@ -939,169 +891,193 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global coverage, Provisioned global, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned global, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
-      <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global</td>
+      <td>Global, Other, Provisioned</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
-      <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global</td>
+      <td>Global, Other, Provisioned</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
-      <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned (PTU managed), Provisioned global</td>
+      <td>Global, Other, Provisioned</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned (PTU managed), Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
-      <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned (PTU managed), Provisioned global</td>
+      <td>Global, Other, Provisioned</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned (PTU managed), Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-4o-mini-transcribe/">gpt-4o-mini-transcribe</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-4o-transcribe/">gpt-4o-transcribe</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-4o-transcribe-diarize/">gpt-4o-transcribe-diarize</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global</td>
+      <td>Global, Other, Provisioned</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
-      <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global</td>
+      <td>Global, Other, Provisioned</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>Canada Central</strong></td>
+      <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Provisioned, Global coverage</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-realtime/">gpt-realtime</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-realtime-1-5/">gpt-realtime-1.5</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>Canada Central</strong></td>
+      <td><a href="../models/gpt-realtime-2/">gpt-realtime-2</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/gpt-realtime-mini/">gpt-realtime-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>Canada Central</strong></td>
+      <td><a href="../models/gpt-realtime-translate/">gpt-realtime-translate</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
+    </tr>
+    <tr>
+      <td><strong>Canada Central</strong></td>
+      <td><a href="../models/gpt-realtime-whisper/">gpt-realtime-whisper</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
@@ -1154,26 +1130,38 @@ Find which AI models are available in your Azure region, including their deploym
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/o1/">o1</a></td>
-      <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global</td>
+      <td>Global, Other, Provisioned</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/o3/">o3</a></td>
-      <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global</td>
+      <td>Global, Other, Provisioned</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
-      <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global</td>
+      <td>Global, Other, Provisioned</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Canada Central</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
-      <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global</td>
+      <td>Global, Other, Provisioned</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned global</td>
+    </tr>
+    <tr>
+      <td><strong>Canada Central</strong></td>
+      <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
+    </tr>
+    <tr>
+      <td><strong>Canada Central</strong></td>
+      <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
@@ -1287,139 +1275,145 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Canada East</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Global, Other, Provisioned, Standard</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Global, Other, Provisioned, Standard</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>Canada East</strong></td>
+      <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Provisioned, Global coverage</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
@@ -1473,43 +1467,43 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Canada East</strong></td>
       <td><a href="../models/o1/">o1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
       <td>Global, Other, Standard</td>
-      <td>Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
       <td>Global, Other, Standard</td>
-      <td>Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Canada East</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
       <td>Global, Other, Standard</td>
-      <td>Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
@@ -1611,7 +1605,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Central US</strong></td>
       <td><a href="../models/codex-mini/">codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
@@ -1629,193 +1623,217 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone Standard Priority Processing, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-4o-mini-transcribe/">gpt-4o-mini-transcribe</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-4o-transcribe/">gpt-4o-transcribe</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-4o-transcribe-diarize/">gpt-4o-transcribe-diarize</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone Standard Priority Processing, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>Central US</strong></td>
+      <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-audio/">gpt-audio</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-audio-1-5/">gpt-audio-1.5</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-audio-mini/">gpt-audio-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-realtime/">gpt-realtime</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-realtime-1-5/">gpt-realtime-1.5</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>Central US</strong></td>
+      <td><a href="../models/gpt-realtime-2/">gpt-realtime-2</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/gpt-realtime-mini/">gpt-realtime-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>Central US</strong></td>
+      <td><a href="../models/gpt-realtime-translate/">gpt-realtime-translate</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
+    </tr>
+    <tr>
+      <td><strong>Central US</strong></td>
+      <td><a href="../models/gpt-realtime-whisper/">gpt-realtime-whisper</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
@@ -1869,49 +1887,49 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Central US</strong></td>
       <td><a href="../models/o1/">o1</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/o3-pro/">o3-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Central US</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
-      <td>Datazone, Global</td>
-      <td>Datazone standard, Global coverage</td>
+      <td>Datazone, Global, Other</td>
+      <td>Datazone standard, Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
@@ -2031,145 +2049,145 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>East US</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-      <td>Datazone, Global, Provisioned</td>
-      <td>Datazone provisioned managed, Global coverage, Provisioned (PTU managed), Provisioned global</td>
+      <td>Datazone, Global, Other, Provisioned</td>
+      <td>Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global coverage, Provisioned (PTU managed), Provisioned global</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
@@ -2223,43 +2241,43 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>East US</strong></td>
       <td><a href="../models/o1/">o1</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
       <td>Datazone, Global, Other, Standard</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
       <td>Datazone, Global, Other, Standard</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
       <td>Datazone, Global, Other, Standard</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
@@ -2361,7 +2379,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>East US 2</strong></td>
       <td><a href="../models/codex-mini/">codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
@@ -2373,7 +2391,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>East US 2</strong></td>
       <td><a href="../models/computer-use-preview/">computer-use-preview</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
@@ -2385,241 +2403,265 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-4o-mini-transcribe/">gpt-4o-mini-transcribe</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-4o-mini-tts/">gpt-4o-mini-tts</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-4o-transcribe/">gpt-4o-transcribe</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-4o-transcribe-diarize/">gpt-4o-transcribe-diarize</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-5-1-codex-max/">gpt-5.1-codex-max</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-5-4-pro/">gpt-5.4-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-audio/">gpt-audio</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-audio-1-5/">gpt-audio-1.5</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-audio-mini/">gpt-audio-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>East US 2</strong></td>
+      <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-image-1/">gpt-image-1</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-image-1-mini/">gpt-image-1-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-image-1-5/">gpt-image-1.5</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-image-2/">gpt-image-2</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-realtime/">gpt-realtime</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-realtime-1-5/">gpt-realtime-1.5</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>East US 2</strong></td>
+      <td><a href="../models/gpt-realtime-2/">gpt-realtime-2</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/gpt-realtime-mini/">gpt-realtime-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>East US 2</strong></td>
+      <td><a href="../models/gpt-realtime-translate/">gpt-realtime-translate</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
+    </tr>
+    <tr>
+      <td><strong>East US 2</strong></td>
+      <td><a href="../models/gpt-realtime-whisper/">gpt-realtime-whisper</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
@@ -2673,67 +2715,67 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>East US 2</strong></td>
       <td><a href="../models/model-router/">model-router</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/o1/">o1</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/o3-pro/">o3-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/sora-2/">sora-2</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
       <td>Datazone, Global, Other, Standard</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
       <td>Datazone, Global, Other, Standard</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
       <td>Datazone, Global, Other, Standard</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>East US 2</strong></td>
       <td><a href="../models/whisper/">whisper</a></td>
-      <td>Global, Standard</td>
-      <td>Global coverage, Standard</td>
+      <td>Global, Other, Standard</td>
+      <td>Deployments Standard, Global coverage, Standard</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
@@ -2847,175 +2889,199 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-4o-mini-transcribe/">gpt-4o-mini-transcribe</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-4o-transcribe/">gpt-4o-transcribe</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-4o-transcribe-diarize/">gpt-4o-transcribe-diarize</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>France Central</strong></td>
+      <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-realtime/">gpt-realtime</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-realtime-1-5/">gpt-realtime-1.5</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>France Central</strong></td>
+      <td><a href="../models/gpt-realtime-2/">gpt-realtime-2</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/gpt-realtime-mini/">gpt-realtime-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>France Central</strong></td>
+      <td><a href="../models/gpt-realtime-translate/">gpt-realtime-translate</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
+    </tr>
+    <tr>
+      <td><strong>France Central</strong></td>
+      <td><a href="../models/gpt-realtime-whisper/">gpt-realtime-whisper</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
@@ -3069,43 +3135,43 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>France Central</strong></td>
       <td><a href="../models/o1/">o1</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
       <td>Datazone, Global, Other, Standard</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>France Central</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
       <td>Datazone, Global, Other, Standard</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
@@ -3219,139 +3285,145 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>Germany West Central</strong></td>
+      <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
@@ -3405,43 +3477,43 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/o1/">o1</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
       <td>Datazone, Global, Other, Standard</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Germany West Central</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
@@ -3555,139 +3627,145 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Italy North</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>Italy North</strong></td>
+      <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
@@ -3741,43 +3819,43 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Italy North</strong></td>
       <td><a href="../models/o1/">o1</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Italy North</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
@@ -3891,139 +3969,145 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Japan East</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Global, Other, Provisioned, Standard</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Global, Other, Provisioned, Standard</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>Japan East</strong></td>
+      <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Provisioned, Global coverage</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
@@ -4077,43 +4161,43 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Japan East</strong></td>
       <td><a href="../models/o1/">o1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
       <td>Global, Other, Standard</td>
-      <td>Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
       <td>Global, Other, Standard</td>
-      <td>Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Japan East</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
       <td>Global, Other, Standard</td>
-      <td>Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Japan West</strong></td>
@@ -4383,139 +4467,145 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>Korea Central</strong></td>
+      <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Provisioned, Global coverage</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
@@ -4569,43 +4659,43 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/o1/">o1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
       <td>Global, Other, Standard</td>
-      <td>Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Korea Central</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
@@ -4719,145 +4809,145 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>North Central US</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-      <td>Datazone, Global, Provisioned</td>
-      <td>Datazone provisioned managed, Global coverage, Provisioned global</td>
+      <td>Datazone, Global, Other, Provisioned</td>
+      <td>Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
@@ -4911,61 +5001,61 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>North Central US</strong></td>
       <td><a href="../models/o1/">o1</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
       <td>Datazone, Global, Other, Standard</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/tts/">tts</a></td>
-      <td>Global, Standard</td>
-      <td>Global coverage, Standard</td>
+      <td>Global, Other, Standard</td>
+      <td>Deployments Standard, Global coverage, Standard</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/tts-hd/">tts-hd</a></td>
-      <td>Global, Standard</td>
-      <td>Global coverage, Standard</td>
+      <td>Global, Other, Standard</td>
+      <td>Deployments Standard, Global coverage, Standard</td>
     </tr>
     <tr>
       <td><strong>North Central US</strong></td>
       <td><a href="../models/whisper/">whisper</a></td>
-      <td>Global, Standard</td>
-      <td>Global coverage, Standard</td>
+      <td>Global, Other, Standard</td>
+      <td>Deployments Standard, Global coverage, Standard</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
@@ -5079,139 +5169,145 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Norway East</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Global, Other, Provisioned, Standard</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>Norway East</strong></td>
+      <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
@@ -5265,55 +5361,55 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Norway East</strong></td>
       <td><a href="../models/o1/">o1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/o3-deep-research/">o3-deep-research</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
       <td>Global, Other, Standard</td>
-      <td>Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
       <td>Global, Other, Standard</td>
-      <td>Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Norway East</strong></td>
       <td><a href="../models/whisper/">whisper</a></td>
-      <td>Global, Standard</td>
-      <td>Global coverage, Standard</td>
+      <td>Global, Other, Standard</td>
+      <td>Deployments Standard, Global coverage, Standard</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
@@ -5427,175 +5523,181 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-5-4-pro/">gpt-5.4-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+    </tr>
+    <tr>
+      <td><strong>Poland Central</strong></td>
+      <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-image-1/">gpt-image-1</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-image-1-mini/">gpt-image-1-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-image-1-5/">gpt-image-1.5</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/gpt-image-2/">gpt-image-2</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
@@ -5649,43 +5751,43 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/o1/">o1</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
       <td>Datazone, Global, Other, Standard</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Poland Central</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
@@ -5799,139 +5901,145 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>South Africa North</strong></td>
+      <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Provisioned, Global coverage</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
@@ -5985,43 +6093,43 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/o1/">o1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
       <td>Global, Other, Standard</td>
-      <td>Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Africa North</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
       <td>Global, Other, Standard</td>
-      <td>Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
@@ -6135,151 +6243,157 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-5-4-pro/">gpt-5.4-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+    </tr>
+    <tr>
+      <td><strong>South Central US</strong></td>
+      <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
@@ -6333,43 +6447,43 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>South Central US</strong></td>
       <td><a href="../models/o1/">o1</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South Central US</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
       <td>Datazone, Global, Other, Standard</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
@@ -6483,7 +6597,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>South India</strong></td>
       <td><a href="../models/computer-use-preview/">computer-use-preview</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
@@ -6495,175 +6609,199 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Global, Other, Provisioned, Standard</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Global, Other, Provisioned, Standard</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-4o-mini-transcribe/">gpt-4o-mini-transcribe</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-4o-transcribe/">gpt-4o-transcribe</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-4o-transcribe-diarize/">gpt-4o-transcribe-diarize</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>South India</strong></td>
+      <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Provisioned, Global coverage</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-realtime/">gpt-realtime</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-realtime-1-5/">gpt-realtime-1.5</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>South India</strong></td>
+      <td><a href="../models/gpt-realtime-2/">gpt-realtime-2</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/gpt-realtime-mini/">gpt-realtime-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>South India</strong></td>
+      <td><a href="../models/gpt-realtime-translate/">gpt-realtime-translate</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
+    </tr>
+    <tr>
+      <td><strong>South India</strong></td>
+      <td><a href="../models/gpt-realtime-whisper/">gpt-realtime-whisper</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
@@ -6717,217 +6855,229 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>South India</strong></td>
       <td><a href="../models/o1/">o1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
       <td>Global, Other, Standard</td>
-      <td>Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
       <td>Global, Other, Standard</td>
-      <td>Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>South India</strong></td>
       <td><a href="../models/whisper/">whisper</a></td>
-      <td>Global, Standard</td>
-      <td>Global coverage, Standard</td>
+      <td>Global, Other, Standard</td>
+      <td>Deployments Standard, Global coverage, Standard</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
-      <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned (PTU managed), Provisioned global</td>
+      <td>Global, Other, Provisioned</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned (PTU managed), Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
-      <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned (PTU managed), Provisioned global</td>
+      <td>Global, Other, Provisioned</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned (PTU managed), Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>Southeast Asia</strong></td>
+      <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Provisioned, Global coverage</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/o1/">o1</a></td>
-      <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global</td>
+      <td>Global, Other, Provisioned</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
-      <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global</td>
+      <td>Global, Other, Provisioned</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Southeast Asia</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
-      <td>Global, Standard</td>
-      <td>Global coverage, Standard</td>
+      <td>Global, Other, Standard</td>
+      <td>Deployments Standard, Global coverage, Standard</td>
+    </tr>
+    <tr>
+      <td><strong>Southeast Asia</strong></td>
+      <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
@@ -7041,139 +7191,145 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>Spain Central</strong></td>
+      <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
@@ -7227,43 +7383,43 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/o1/">o1</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
       <td>Datazone, Global, Other, Standard</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Spain Central</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
@@ -7371,7 +7527,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/codex-mini/">codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
@@ -7383,7 +7539,7 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/computer-use-preview/">computer-use-preview</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
@@ -7395,235 +7551,259 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-4o-mini-transcribe/">gpt-4o-mini-transcribe</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-4o-transcribe/">gpt-4o-transcribe</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-4o-transcribe-diarize/">gpt-4o-transcribe-diarize</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-5-1-codex-max/">gpt-5.1-codex-max</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-5-4-pro/">gpt-5.4-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-audio/">gpt-audio</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-audio-1-5/">gpt-audio-1.5</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-audio-mini/">gpt-audio-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>Sweden Central</strong></td>
+      <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-image-1/">gpt-image-1</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-image-1-mini/">gpt-image-1-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-image-1-5/">gpt-image-1.5</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-image-2/">gpt-image-2</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-realtime/">gpt-realtime</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-realtime-1-5/">gpt-realtime-1.5</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>Sweden Central</strong></td>
+      <td><a href="../models/gpt-realtime-2/">gpt-realtime-2</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/gpt-realtime-mini/">gpt-realtime-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>Sweden Central</strong></td>
+      <td><a href="../models/gpt-realtime-translate/">gpt-realtime-translate</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
+    </tr>
+    <tr>
+      <td><strong>Sweden Central</strong></td>
+      <td><a href="../models/gpt-realtime-whisper/">gpt-realtime-whisper</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
@@ -7677,79 +7857,79 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/model-router/">model-router</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/o1/">o1</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/o3-pro/">o3-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/sora-2/">sora-2</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
       <td>Datazone, Global, Other, Standard</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
       <td>Datazone, Global, Other, Standard</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/tts/">tts</a></td>
-      <td>Global, Standard</td>
-      <td>Global coverage, Standard</td>
+      <td>Global, Other, Standard</td>
+      <td>Deployments Standard, Global coverage, Standard</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/tts-hd/">tts-hd</a></td>
-      <td>Global, Standard</td>
-      <td>Global coverage, Standard</td>
+      <td>Global, Other, Standard</td>
+      <td>Deployments Standard, Global coverage, Standard</td>
     </tr>
     <tr>
       <td><strong>Sweden Central</strong></td>
       <td><a href="../models/whisper/">whisper</a></td>
-      <td>Global, Standard</td>
-      <td>Global coverage, Standard</td>
+      <td>Global, Other, Standard</td>
+      <td>Deployments Standard, Global coverage, Standard</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
@@ -7863,139 +8043,145 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Global, Other, Provisioned, Standard</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Global, Other, Provisioned, Standard</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Global, Other, Provisioned, Standard</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>Switzerland North</strong></td>
+      <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
@@ -8049,49 +8235,49 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/o1/">o1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
       <td>Global, Other, Standard</td>
-      <td>Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
       <td>Global, Other, Standard</td>
-      <td>Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
       <td>Global, Other, Standard</td>
-      <td>Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland North</strong></td>
       <td><a href="../models/whisper/">whisper</a></td>
-      <td>Global, Standard</td>
-      <td>Global coverage, Standard</td>
+      <td>Global, Other, Standard</td>
+      <td>Deployments Standard, Global coverage, Standard</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
@@ -8205,133 +8391,139 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global coverage, Provisioned global, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned global, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
-      <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global</td>
+      <td>Global, Other, Provisioned</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
-      <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global</td>
+      <td>Global, Other, Provisioned</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
-      <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned (PTU managed), Provisioned global</td>
+      <td>Global, Other, Provisioned</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned (PTU managed), Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
-      <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned (PTU managed), Provisioned global</td>
+      <td>Global, Other, Provisioned</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned (PTU managed), Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
-      <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global</td>
+      <td>Global, Other, Provisioned</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
-      <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global</td>
+      <td>Global, Other, Provisioned</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>Switzerland West</strong></td>
+      <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Provisioned, Global coverage</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
@@ -8384,26 +8576,38 @@ Find which AI models are available in your Azure region, including their deploym
     <tr>
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/o1/">o1</a></td>
-      <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global</td>
+      <td>Global, Other, Provisioned</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/o3/">o3</a></td>
-      <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global</td>
+      <td>Global, Other, Provisioned</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
-      <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global</td>
+      <td>Global, Other, Provisioned</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned global</td>
     </tr>
     <tr>
       <td><strong>Switzerland West</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
-      <td>Global, Provisioned</td>
-      <td>Global coverage, Provisioned global</td>
+      <td>Global, Other, Provisioned</td>
+      <td>Deployments Provisioned, Global coverage, Provisioned global</td>
+    </tr>
+    <tr>
+      <td><strong>Switzerland West</strong></td>
+      <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
+    </tr>
+    <tr>
+      <td><strong>Switzerland West</strong></td>
+      <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
@@ -8517,163 +8721,169 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>UAE North</strong></td>
+      <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Provisioned, Global coverage</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-image-1/">gpt-image-1</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-image-1-mini/">gpt-image-1-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-image-1-5/">gpt-image-1.5</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/gpt-image-2/">gpt-image-2</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
@@ -8727,49 +8937,49 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>UAE North</strong></td>
       <td><a href="../models/o1/">o1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
       <td>Global, Other, Standard</td>
-      <td>Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
       <td>Global, Other, Standard</td>
-      <td>Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
       <td>Global, Other, Standard</td>
-      <td>Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UAE North</strong></td>
       <td><a href="../models/whisper/">whisper</a></td>
-      <td>Global, Standard</td>
-      <td>Global coverage, Standard</td>
+      <td>Global, Other, Standard</td>
+      <td>Deployments Standard, Global coverage, Standard</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
@@ -8883,139 +9093,145 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>UK South</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Global, Other, Provisioned, Standard</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Global, Other, Provisioned, Standard</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>UK South</strong></td>
+      <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Provisioned, Global coverage</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
@@ -9069,43 +9285,43 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>UK South</strong></td>
       <td><a href="../models/o1/">o1</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
       <td>Global, Other, Standard</td>
-      <td>Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>UK South</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
       <td>Global, Other, Standard</td>
-      <td>Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West Central US</strong></td>
@@ -9387,139 +9603,145 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>West Europe</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>West Europe</strong></td>
+      <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
@@ -9573,49 +9795,49 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>West Europe</strong></td>
       <td><a href="../models/o1/">o1</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
       <td>Datazone, Global, Other, Standard</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West Europe</strong></td>
       <td><a href="../models/whisper/">whisper</a></td>
-      <td>Global, Standard</td>
-      <td>Global coverage, Standard</td>
+      <td>Global, Other, Standard</td>
+      <td>Deployments Standard, Global coverage, Standard</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
@@ -9735,139 +9957,145 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>West US</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/gpt-5-chat/">gpt-5-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/gpt-5-codex/">gpt-5-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/gpt-5-pro/">gpt-5-pro</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other, Provisioned</td>
-      <td>Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
+      <td>Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>West US</strong></td>
+      <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
@@ -9921,49 +10149,49 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>West US</strong></td>
       <td><a href="../models/o1/">o1</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/o3-deep-research/">o3-deep-research</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
       <td>Datazone, Global, Other, Standard</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
       <td>Datazone, Global, Other, Standard</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 2</strong></td>
@@ -10233,145 +10461,157 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability</td>
+      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-4-1-nano/">gpt-4.1-nano</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-4o/">gpt-4o</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-4o-mini/">gpt-4o-mini</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-5/">gpt-5</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-5-mini/">gpt-5-mini</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned (PTU managed), Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-5-nano/">gpt-5-nano</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability</td>
+      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-5-1-chat/">gpt-5.1-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-5-1-codex/">gpt-5.1-codex</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone provisioned managed, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-5-1-codex-mini/">gpt-5.1-codex-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned (PTU managed), Standard Global By Capability</td>
+      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-5-2-chat/">gpt-5.2-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-5-2-codex/">gpt-5.2-codex</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-5-3-chat/">gpt-5.3-chat</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone Standard Priority Processing, Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-5-4-nano/">gpt-5.4-nano</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
+    </tr>
+    <tr>
+      <td><strong>West US 3</strong></td>
+      <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
+    </tr>
+    <tr>
+      <td><strong>West US 3</strong></td>
+      <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
+      <td>Global, Other</td>
+      <td>Deployments Standard, Global coverage</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-image-1/">gpt-image-1</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-image-1-mini/">gpt-image-1-mini</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-image-1-5/">gpt-image-1.5</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/gpt-image-2/">gpt-image-2</a></td>
       <td>Global, Other</td>
-      <td>Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
@@ -10425,5911 +10665,55 @@ Find which AI models are available in your Azure region, including their deploym
       <td><strong>West US 3</strong></td>
       <td><a href="../models/o1/">o1</a></td>
       <td>Datazone, Global, Other, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/o3/">o3</a></td>
       <td>Datazone, Global, Other, Provisioned</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/o3-mini/">o3-mini</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/o4-mini/">o4-mini</a></td>
       <td>Datazone, Global, Other, Provisioned, Standard</td>
-      <td>Datazone provisioned managed, Datazone standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability</td>
+      <td>Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
       <td>Datazone, Global, Other, Standard</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
       <td>Datazone, Global, Other</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
       <td>Datazone, Global, Other, Standard</td>
-      <td>Datazone standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
+      <td>Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard, Standard Global By Capability</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/tts/">tts</a></td>
-      <td>Global, Standard</td>
-      <td>Global coverage, Standard</td>
+      <td>Global, Other, Standard</td>
+      <td>Deployments Standard, Global coverage, Standard</td>
     </tr>
     <tr>
       <td><strong>West US 3</strong></td>
       <td><a href="../models/tts-hd/">tts-hd</a></td>
-      <td>Global, Standard</td>
-      <td>Global coverage, Standard</td>
-    </tr>
-    <tr>
-      <td><strong>codex-mini</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>codex-mini</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>codex-mini</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>computer-use-preview</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>computer-use-preview</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>computer-use-preview</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-mini</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4.1-nano</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini-transcribe</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini-transcribe</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini-transcribe</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini-transcribe</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini-transcribe</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini-transcribe</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-mini-tts</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-transcribe</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-transcribe</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-transcribe</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-transcribe</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-transcribe</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-transcribe</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-transcribe-diarize</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-transcribe-diarize</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-transcribe-diarize</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-transcribe-diarize</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-transcribe-diarize</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-4o-transcribe-diarize</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-chat</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-codex</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-mini</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-nano</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5-pro</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-chat</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-max</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-max</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.1-codex-mini</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-chat</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.2-codex</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-chat</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.3-codex</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-mini</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-nano</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-pro</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-pro</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-pro</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.4-pro</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-5.5</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-audio</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-audio</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-audio</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-audio-1.5</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-audio-1.5</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-audio-1.5</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-audio-mini</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-audio-mini</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-audio-mini</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-chat-latest</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-chat-latest</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-chat-latest</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-chat-latest</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-chat-latest</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-image-1</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-image-1</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-image-1</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-image-1</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-image-1</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-image-1-mini</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-image-1-mini</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-image-1-mini</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-image-1-mini</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-image-1-mini</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-image-1.5</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-image-1.5</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-image-1.5</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-image-1.5</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-image-1.5</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-image-2</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-image-2</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-image-2</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-image-2</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-image-2</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-1.5</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-1.5</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-1.5</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-1.5</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-1.5</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-1.5</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-2</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-2</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-2</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-2</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-2</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-2</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-mini</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-mini</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-mini</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-mini</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-mini</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-mini</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-translate</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-translate</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-translate</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-translate</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-translate</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-translate</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-whisper</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-whisper</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-whisper</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-whisper</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-whisper</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>gpt-realtime-whisper</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>model-router</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>model-router</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o1</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-deep-research</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-deep-research</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-mini</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-pro</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-pro</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o3-pro</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>o4-mini</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Batch, Deployments Provisioned, Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>sora-2</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>sora-2</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-large</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/canadacentral/">canadacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/southeastasia/">southeastasia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/switzerlandwest/">switzerlandwest</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-3-small</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-ada-002</strong></td>
-      <td><a href="../models/australiaeast/">australiaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-ada-002</strong></td>
-      <td><a href="../models/brazilsouth/">brazilsouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-ada-002</strong></td>
-      <td><a href="../models/canadaeast/">canadaeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-ada-002</strong></td>
-      <td><a href="../models/centralus/">centralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-ada-002</strong></td>
-      <td><a href="../models/eastus/">eastus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-ada-002</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-ada-002</strong></td>
-      <td><a href="../models/francecentral/">francecentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-ada-002</strong></td>
-      <td><a href="../models/germanywestcentral/">germanywestcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-ada-002</strong></td>
-      <td><a href="../models/italynorth/">italynorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-ada-002</strong></td>
-      <td><a href="../models/japaneast/">japaneast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-ada-002</strong></td>
-      <td><a href="../models/koreacentral/">koreacentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-ada-002</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-ada-002</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-ada-002</strong></td>
-      <td><a href="../models/polandcentral/">polandcentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-ada-002</strong></td>
-      <td><a href="../models/southafricanorth/">southafricanorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-ada-002</strong></td>
-      <td><a href="../models/southcentralus/">southcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-ada-002</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-ada-002</strong></td>
-      <td><a href="../models/spaincentral/">spaincentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-ada-002</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-ada-002</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-ada-002</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-ada-002</strong></td>
-      <td><a href="../models/uksouth/">uksouth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-ada-002</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-ada-002</strong></td>
-      <td><a href="../models/westus/">westus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>text-embedding-ada-002</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>tts</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>tts</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>tts</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>tts-hd</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>tts-hd</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>tts-hd</strong></td>
-      <td><a href="../models/westus3/">westus3</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
+      <td>Global, Other, Standard</td>
+      <td>Deployments Standard, Global coverage, Standard</td>
     </tr>
     <tr>
       <td><strong>usgovarizona</strong></td>
@@ -16379,58 +10763,10 @@ Find which AI models are available in your Azure region, including their deploym
       <td>Global, Other</td>
       <td>Global coverage, Standard Models Gov</td>
     </tr>
-    <tr>
-      <td><strong>whisper</strong></td>
-      <td><a href="../models/eastus2/">eastus2</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>whisper</strong></td>
-      <td><a href="../models/northcentralus/">northcentralus</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>whisper</strong></td>
-      <td><a href="../models/norwayeast/">norwayeast</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>whisper</strong></td>
-      <td><a href="../models/southindia/">southindia</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>whisper</strong></td>
-      <td><a href="../models/swedencentral/">swedencentral</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>whisper</strong></td>
-      <td><a href="../models/switzerlandnorth/">switzerlandnorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>whisper</strong></td>
-      <td><a href="../models/uaenorth/">uaenorth</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
-    <tr>
-      <td><strong>whisper</strong></td>
-      <td><a href="../models/westeurope/">westeurope</a></td>
-      <td>Global, Other</td>
-      <td>Deployments Standard, Global coverage</td>
-    </tr>
   </tbody>
 </table>
 </div>
 
 ---
 
-_Last updated: 2026-06-09 17:19 UTC_
+_Last updated: 2026-07-06 16:20 UTC_
