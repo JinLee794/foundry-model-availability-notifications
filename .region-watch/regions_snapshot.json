@@ -1,5 +1,5 @@
 {
-  "Claude Haiku 4.5 (preview)": {
+  "Claude Fable": {
     "all": [
       "East US 2",
       "Sweden Central"
@@ -14,7 +14,7 @@
       }
     }
   },
-  "Claude Mythos Preview<sup>2<": {
+  "Claude Haiku 4.5": {
     "all": [
       "East US 2",
       "Sweden Central"
@@ -29,7 +29,7 @@
       }
     }
   },
-  "Claude Opus 4.1 (preview)": {
+  "Claude Mythos 5<sup>1<": {
     "all": [
       "East US 2",
       "Sweden Central"
@@ -44,7 +44,7 @@
       }
     }
   },
-  "Claude Opus 4.5 (preview)": {
+  "Claude Mythos Preview<sup>1<": {
     "all": [
       "East US 2",
       "Sweden Central"
@@ -59,7 +59,7 @@
       }
     }
   },
-  "Claude Opus 4.6 (preview)": {
+  "Claude Opus 4.1": {
     "all": [
       "East US 2",
       "Sweden Central"
@@ -74,7 +74,7 @@
       }
     }
   },
-  "Claude Opus 4.7 (preview)": {
+  "Claude Opus 4.5": {
     "all": [
       "East US 2",
       "Sweden Central"
@@ -89,7 +89,7 @@
       }
     }
   },
-  "Claude Opus 4.8 (preview)": {
+  "Claude Opus 4.6": {
     "all": [
       "East US 2",
       "Sweden Central"
@@ -104,7 +104,7 @@
       }
     }
   },
-  "Claude Sonnet 4.5 (preview)": {
+  "Claude Opus 4.7": {
     "all": [
       "East US 2",
       "Sweden Central"
@@ -119,7 +119,52 @@
       }
     }
   },
-  "Claude Sonnet 4.6 (preview)": {
+  "Claude Opus 4.8": {
+    "all": [
+      "East US 2",
+      "Sweden Central"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US 2",
+          "Sweden Central"
+        ]
+      }
+    }
+  },
+  "Claude Sonnet 4.5": {
+    "all": [
+      "East US 2",
+      "Sweden Central"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US 2",
+          "Sweden Central"
+        ]
+      }
+    }
+  },
+  "Claude Sonnet 4.6": {
+    "all": [
+      "East US 2",
+      "Sweden Central"
+    ],
+    "skus": {
+      "region-availability-maas": {
+        "label": "Region Availability Maas",
+        "regions": [
+          "East US 2",
+          "Sweden Central"
+        ]
+      }
+    }
+  },
+  "Claude Sonnet 5": {
     "all": [
       "East US 2",
       "Sweden Central"
@@ -2525,7 +2570,8 @@
       "West Europe",
       "West US",
       "West US 3",
-      "usgovarizona"
+      "usgovarizona",
+      "usgovvirginia"
     ],
     "skus": {
       "datazone-provisioned-managed": {
@@ -2568,7 +2614,8 @@
       "datazone-standard-gov": {
         "label": "Datazone Standard Gov",
         "regions": [
-          "usgovarizona"
+          "usgovarizona",
+          "usgovvirginia"
         ]
       },
       "datazone-standard-priority-processing": {
@@ -2916,7 +2963,8 @@
       "West Europe",
       "West US",
       "West US 3",
-      "usgovarizona"
+      "usgovarizona",
+      "usgovvirginia"
     ],
     "skus": {
       "datazone-provisioned-managed": {
@@ -2964,7 +3012,8 @@
       "datazone-standard-gov": {
         "label": "Datazone Standard Gov",
         "regions": [
-          "usgovarizona"
+          "usgovarizona",
+          "usgovvirginia"
         ]
       },
       "deployments-batch": {
@@ -3585,7 +3634,8 @@
       "West Europe",
       "West US",
       "West US 3",
-      "usgovarizona"
+      "usgovarizona",
+      "usgovvirginia"
     ],
     "skus": {
       "datazone-provisioned-managed": {
@@ -3633,7 +3683,8 @@
       "datazone-standard-gov": {
         "label": "Datazone Standard Gov",
         "regions": [
-          "usgovarizona"
+          "usgovarizona",
+          "usgovvirginia"
         ]
       },
       "deployments-batch": {
@@ -5539,7 +5590,8 @@
       "West Europe",
       "West US",
       "West US 3",
-      "usgovarizona"
+      "usgovarizona",
+      "usgovvirginia"
     ],
     "skus": {
       "datazone-provisioned-managed": {
@@ -5577,7 +5629,8 @@
       "datazone-standard-gov": {
         "label": "Datazone Standard Gov",
         "regions": [
-          "usgovarizona"
+          "usgovarizona",
+          "usgovvirginia"
         ]
       },
       "datazone-standard-priority-processing": {
@@ -6445,11 +6498,16 @@
       "datazone-standard": {
         "label": "Datazone standard",
         "regions": [
+          "Australia East",
           "Central US",
           "East US",
           "East US 2",
+          "Japan East",
+          "Korea Central",
           "North Central US",
           "South Central US",
+          "South India",
+          "Southeast Asia",
           "West US",
           "West US 3"
         ]
@@ -7175,11 +7233,16 @@
       "datazone-standard": {
         "label": "Datazone standard",
         "regions": [
+          "Australia East",
           "Central US",
           "East US",
           "East US 2",
+          "Japan East",
+          "Korea Central",
           "North Central US",
           "South Central US",
+          "South India",
+          "Southeast Asia",
           "West US",
           "West US 3"
         ]
@@ -7403,17 +7466,24 @@
       "datazone-standard": {
         "label": "Datazone standard",
         "regions": [
+          "Australia East",
           "Central US",
           "East US",
           "East US 2",
           "France Central",
           "Germany West Central",
           "Italy North",
+          "Japan East",
+          "Korea Central",
           "North Central US",
+          "Norway East",
           "Poland Central",
           "South Central US",
+          "South India",
+          "Southeast Asia",
           "Spain Central",
           "Sweden Central",
+          "Switzerland North",
           "West Europe",
           "West US",
           "West US 3"
@@ -7493,6 +7563,45 @@
           "UAE North",
           "UK South",
           "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      },
+      "global-batch": {
+        "label": "Global batch",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada East",
+          "Central US",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Sweden Central",
+          "Switzerland North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      },
+      "global-batch-datazone": {
+        "label": "Global batch datazone",
+        "regions": [
+          "Central US",
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
           "West US",
           "West US 3"
         ]
@@ -7671,11 +7780,16 @@
       "datazone-standard": {
         "label": "Datazone standard",
         "regions": [
+          "Australia East",
           "Central US",
           "East US",
           "East US 2",
+          "Japan East",
+          "Korea Central",
           "North Central US",
           "South Central US",
+          "South India",
+          "Southeast Asia",
           "West US",
           "West US 3"
         ]
@@ -7701,8 +7815,11 @@
           "Central US",
           "East US",
           "East US 2",
+          "Japan East",
           "North Central US",
           "South Central US",
+          "South India",
+          "Southeast Asia",
           "West US",
           "West US 3"
         ]
@@ -7736,6 +7853,45 @@
           "UAE North",
           "UK South",
           "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      },
+      "global-batch": {
+        "label": "Global batch",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada East",
+          "Central US",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Sweden Central",
+          "Switzerland North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      },
+      "global-batch-datazone": {
+        "label": "Global batch datazone",
+        "regions": [
+          "Central US",
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
           "West US",
           "West US 3"
         ]
@@ -8064,10 +8220,27 @@
       "datazone-standard": {
         "label": "Datazone standard",
         "regions": [
+          "Australia East",
+          "Central US",
+          "East US",
           "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
           "Poland Central",
           "South Central US",
-          "Sweden Central"
+          "South India",
+          "Southeast Asia",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "West Europe",
+          "West US",
+          "West US 3"
         ]
       },
       "datazone-standard-priority-processing": {
@@ -8113,19 +8286,31 @@
       "deployments-standard": {
         "label": "Deployments Standard",
         "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada Central",
+          "Canada East",
           "Central US",
           "East US",
           "East US 2",
           "France Central",
           "Germany West Central",
           "Italy North",
+          "Japan East",
+          "Korea Central",
           "North Central US",
           "Norway East",
           "Poland Central",
+          "South Africa North",
           "South Central US",
+          "South India",
+          "Southeast Asia",
           "Spain Central",
           "Sweden Central",
           "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
           "West Europe",
           "West US",
           "West US 3"
@@ -8156,10 +8341,34 @@
       "standard-global-by-capability": {
         "label": "Standard Global By Capability",
         "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada Central",
+          "Canada East",
+          "Central US",
+          "East US",
           "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
           "Poland Central",
+          "South Africa North",
           "South Central US",
-          "Sweden Central"
+          "South India",
+          "Southeast Asia",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
         ]
       },
       "standard-global-priority-processing": {
@@ -8274,20 +8483,66 @@
   },
   "gpt-chat-latest": {
     "all": [
+      "Australia East",
+      "Brazil South",
+      "Canada Central",
+      "Canada East",
+      "Central US",
+      "East US",
       "East US 2",
+      "France Central",
+      "Germany West Central",
+      "Italy North",
+      "Japan East",
+      "Korea Central",
+      "North Central US",
+      "Norway East",
       "Poland Central",
+      "South Africa North",
       "South Central US",
+      "South India",
+      "Southeast Asia",
+      "Spain Central",
       "Sweden Central",
+      "Switzerland North",
+      "Switzerland West",
+      "UAE North",
+      "UK South",
+      "West Europe",
+      "West US",
       "West US 3"
     ],
     "skus": {
       "deployments-standard": {
         "label": "Deployments Standard",
         "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada Central",
+          "Canada East",
+          "Central US",
+          "East US",
           "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
           "Poland Central",
+          "South Africa North",
           "South Central US",
+          "South India",
+          "Southeast Asia",
+          "Spain Central",
           "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
           "West US 3"
         ]
       }
@@ -8557,6 +8812,52 @@
     }
   },
   "gpt-realtime-2": {
+    "all": [
+      "Canada Central",
+      "Central US",
+      "East US 2",
+      "France Central",
+      "South India",
+      "Sweden Central"
+    ],
+    "skus": {
+      "deployments-standard": {
+        "label": "Deployments Standard",
+        "regions": [
+          "Canada Central",
+          "Central US",
+          "East US 2",
+          "France Central",
+          "South India",
+          "Sweden Central"
+        ]
+      }
+    }
+  },
+  "gpt-realtime-2.1": {
+    "all": [
+      "Canada Central",
+      "Central US",
+      "East US 2",
+      "France Central",
+      "South India",
+      "Sweden Central"
+    ],
+    "skus": {
+      "deployments-standard": {
+        "label": "Deployments Standard",
+        "regions": [
+          "Canada Central",
+          "Central US",
+          "East US 2",
+          "France Central",
+          "South India",
+          "Sweden Central"
+        ]
+      }
+    }
+  },
+  "gpt-realtime-2.1-mini": {
     "all": [
       "Canada Central",
       "Central US",
@@ -9373,8 +9674,11 @@
   },
   "model-router": {
     "all": [
+      "Australia East",
       "East US 2",
-      "Sweden Central"
+      "South India",
+      "Sweden Central",
+      "West US 3"
     ],
     "skus": {
       "data-zone-standard": {
@@ -9388,14 +9692,18 @@
         "label": "Datazone standard",
         "regions": [
           "East US 2",
-          "Sweden Central"
+          "Sweden Central",
+          "West US 3"
         ]
       },
       "deployments-standard": {
         "label": "Deployments Standard",
         "regions": [
+          "Australia East",
           "East US 2",
-          "Sweden Central"
+          "South India",
+          "Sweden Central",
+          "West US 3"
         ]
       },
       "global-standard": {
@@ -10038,7 +10346,8 @@
       "West Europe",
       "West US",
       "West US 3",
-      "usgovarizona"
+      "usgovarizona",
+      "usgovvirginia"
     ],
     "skus": {
       "datazone-provisioned-managed": {
@@ -10086,7 +10395,8 @@
       "datazone-standard-gov": {
         "label": "Datazone Standard Gov",
         "regions": [
-          "usgovarizona"
+          "usgovarizona",
+          "usgovvirginia"
         ]
       },
       "deployments-batch": {
@@ -10745,7 +11055,8 @@
       "West Europe",
       "West US",
       "West US 3",
-      "usgovarizona"
+      "usgovarizona",
+      "usgovvirginia"
     ],
     "skus": {
       "datazone-standard": {
@@ -10765,6 +11076,13 @@
           "West Europe",
           "West US",
           "West US 3"
+        ]
+      },
+      "datazone-standard-gov": {
+        "label": "Datazone Standard Gov",
+        "regions": [
+          "usgovarizona",
+          "usgovvirginia"
         ]
       },
       "deployments-standard": {
@@ -10922,7 +11240,8 @@
       "West Europe",
       "West US",
       "West US 3",
-      "usgovarizona"
+      "usgovarizona",
+      "usgovvirginia"
     ],
     "skus": {
       "datazone-standard": {
@@ -10942,6 +11261,13 @@
           "West Europe",
           "West US",
           "West US 3"
+        ]
+      },
+      "datazone-standard-gov": {
+        "label": "Datazone Standard Gov",
+        "regions": [
+          "usgovarizona",
+          "usgovvirginia"
         ]
       },
       "deployments-standard": {
@@ -11062,6 +11388,7 @@
     "all": [
       "Australia East",
       "Brazil South",
+      "Canada Central",
       "Canada East",
       "Central US",
       "East US",
@@ -11077,9 +11404,11 @@
       "South Africa North",
       "South Central US",
       "South India",
+      "Southeast Asia",
       "Spain Central",
       "Sweden Central",
       "Switzerland North",
+      "Switzerland West",
       "UAE North",
       "UK South",
       "West Europe",
@@ -11112,6 +11441,7 @@
         "regions": [
           "Australia East",
           "Brazil South",
+          "Canada Central",
           "Canada East",
           "Central US",
           "East US",
@@ -11127,9 +11457,11 @@
           "South Africa North",
           "South Central US",
           "South India",
+          "Southeast Asia",
           "Spain Central",
           "Sweden Central",
           "Switzerland North",
+          "Switzerland West",
           "UAE North",
           "UK South",
           "West Europe",

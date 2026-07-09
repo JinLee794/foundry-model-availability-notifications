@@ -1,0 +1,955 @@
+{
+  "changes": {
+    "Claude Fable": {
+      "all": {
+        "added": [
+          "East US 2",
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Claude Haiku 4.5": {
+      "all": {
+        "added": [
+          "East US 2",
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Claude Haiku 4.5 (preview)": {
+      "all": {
+        "added": [],
+        "removed": [
+          "East US 2",
+          "Sweden Central"
+        ]
+      },
+      "model_removed": true,
+      "skus": {
+        "region-availability-maas": {
+          "added": [],
+          "label": "Region Availability Maas",
+          "removed": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "sku_removed": true
+        }
+      }
+    },
+    "Claude Mythos 5<sup>1<": {
+      "all": {
+        "added": [
+          "East US 2",
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Claude Mythos Preview<sup>1<": {
+      "all": {
+        "added": [
+          "East US 2",
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Claude Mythos Preview<sup>2<": {
+      "all": {
+        "added": [],
+        "removed": [
+          "East US 2",
+          "Sweden Central"
+        ]
+      },
+      "model_removed": true,
+      "skus": {
+        "region-availability-maas": {
+          "added": [],
+          "label": "Region Availability Maas",
+          "removed": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "sku_removed": true
+        }
+      }
+    },
+    "Claude Opus 4.1": {
+      "all": {
+        "added": [
+          "East US 2",
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Claude Opus 4.1 (preview)": {
+      "all": {
+        "added": [],
+        "removed": [
+          "East US 2",
+          "Sweden Central"
+        ]
+      },
+      "model_removed": true,
+      "skus": {
+        "region-availability-maas": {
+          "added": [],
+          "label": "Region Availability Maas",
+          "removed": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "sku_removed": true
+        }
+      }
+    },
+    "Claude Opus 4.5": {
+      "all": {
+        "added": [
+          "East US 2",
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Claude Opus 4.5 (preview)": {
+      "all": {
+        "added": [],
+        "removed": [
+          "East US 2",
+          "Sweden Central"
+        ]
+      },
+      "model_removed": true,
+      "skus": {
+        "region-availability-maas": {
+          "added": [],
+          "label": "Region Availability Maas",
+          "removed": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "sku_removed": true
+        }
+      }
+    },
+    "Claude Opus 4.6": {
+      "all": {
+        "added": [
+          "East US 2",
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Claude Opus 4.6 (preview)": {
+      "all": {
+        "added": [],
+        "removed": [
+          "East US 2",
+          "Sweden Central"
+        ]
+      },
+      "model_removed": true,
+      "skus": {
+        "region-availability-maas": {
+          "added": [],
+          "label": "Region Availability Maas",
+          "removed": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "sku_removed": true
+        }
+      }
+    },
+    "Claude Opus 4.7": {
+      "all": {
+        "added": [
+          "East US 2",
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Claude Opus 4.7 (preview)": {
+      "all": {
+        "added": [],
+        "removed": [
+          "East US 2",
+          "Sweden Central"
+        ]
+      },
+      "model_removed": true,
+      "skus": {
+        "region-availability-maas": {
+          "added": [],
+          "label": "Region Availability Maas",
+          "removed": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "sku_removed": true
+        }
+      }
+    },
+    "Claude Opus 4.8": {
+      "all": {
+        "added": [
+          "East US 2",
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Claude Opus 4.8 (preview)": {
+      "all": {
+        "added": [],
+        "removed": [
+          "East US 2",
+          "Sweden Central"
+        ]
+      },
+      "model_removed": true,
+      "skus": {
+        "region-availability-maas": {
+          "added": [],
+          "label": "Region Availability Maas",
+          "removed": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "sku_removed": true
+        }
+      }
+    },
+    "Claude Sonnet 4.5": {
+      "all": {
+        "added": [
+          "East US 2",
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Claude Sonnet 4.5 (preview)": {
+      "all": {
+        "added": [],
+        "removed": [
+          "East US 2",
+          "Sweden Central"
+        ]
+      },
+      "model_removed": true,
+      "skus": {
+        "region-availability-maas": {
+          "added": [],
+          "label": "Region Availability Maas",
+          "removed": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "sku_removed": true
+        }
+      }
+    },
+    "Claude Sonnet 4.6": {
+      "all": {
+        "added": [
+          "East US 2",
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "Claude Sonnet 4.6 (preview)": {
+      "all": {
+        "added": [],
+        "removed": [
+          "East US 2",
+          "Sweden Central"
+        ]
+      },
+      "model_removed": true,
+      "skus": {
+        "region-availability-maas": {
+          "added": [],
+          "label": "Region Availability Maas",
+          "removed": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "sku_removed": true
+        }
+      }
+    },
+    "Claude Sonnet 5": {
+      "all": {
+        "added": [
+          "East US 2",
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "region-availability-maas": {
+          "added": [
+            "East US 2",
+            "Sweden Central"
+          ],
+          "label": "Region Availability Maas",
+          "removed": []
+        }
+      }
+    },
+    "gpt-4.1": {
+      "all": {
+        "added": [
+          "usgovvirginia"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard-gov": {
+          "added": [
+            "usgovvirginia"
+          ],
+          "label": "Datazone Standard Gov",
+          "removed": []
+        }
+      }
+    },
+    "gpt-4.1-mini": {
+      "all": {
+        "added": [
+          "usgovvirginia"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard-gov": {
+          "added": [
+            "usgovvirginia"
+          ],
+          "label": "Datazone Standard Gov",
+          "removed": []
+        }
+      }
+    },
+    "gpt-4o": {
+      "all": {
+        "added": [
+          "usgovvirginia"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard-gov": {
+          "added": [
+            "usgovvirginia"
+          ],
+          "label": "Datazone Standard Gov",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.1": {
+      "all": {
+        "added": [
+          "usgovvirginia"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard-gov": {
+          "added": [
+            "usgovvirginia"
+          ],
+          "label": "Datazone Standard Gov",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.2": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard": {
+          "added": [
+            "Australia East",
+            "Japan East",
+            "Korea Central",
+            "South India",
+            "Southeast Asia"
+          ],
+          "label": "Datazone standard",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.3-codex": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard": {
+          "added": [
+            "Australia East",
+            "Japan East",
+            "Korea Central",
+            "South India",
+            "Southeast Asia"
+          ],
+          "label": "Datazone standard",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.4": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard": {
+          "added": [
+            "Australia East",
+            "Japan East",
+            "Korea Central",
+            "Norway East",
+            "South India",
+            "Southeast Asia",
+            "Switzerland North"
+          ],
+          "label": "Datazone standard",
+          "removed": []
+        },
+        "global-batch": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Sweden Central",
+            "Switzerland North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Global batch",
+          "removed": []
+        },
+        "global-batch-datazone": {
+          "added": [
+            "Central US",
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Global batch datazone",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.4-mini": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard": {
+          "added": [
+            "Australia East",
+            "Japan East",
+            "Korea Central",
+            "South India",
+            "Southeast Asia"
+          ],
+          "label": "Datazone standard",
+          "removed": []
+        },
+        "deployments-provisioned": {
+          "added": [
+            "Japan East",
+            "South India",
+            "Southeast Asia"
+          ],
+          "label": "Deployments Provisioned",
+          "removed": []
+        },
+        "global-batch": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Sweden Central",
+            "Switzerland North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Global batch",
+          "removed": []
+        },
+        "global-batch-datazone": {
+          "added": [
+            "Central US",
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Global batch datazone",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.5": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard": {
+          "added": [
+            "Australia East",
+            "Central US",
+            "East US",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Switzerland North",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Datazone standard",
+          "removed": []
+        },
+        "deployments-standard": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Japan East",
+            "Korea Central",
+            "South Africa North",
+            "South India",
+            "Southeast Asia",
+            "Switzerland West",
+            "UAE North",
+            "UK South"
+          ],
+          "label": "Deployments Standard",
+          "removed": []
+        },
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "South Africa North",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    },
+    "gpt-chat-latest": {
+      "all": {
+        "added": [
+          "Australia East",
+          "Brazil South",
+          "Canada Central",
+          "Canada East",
+          "Central US",
+          "East US",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "South Africa North",
+          "South India",
+          "Southeast Asia",
+          "Spain Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "South Africa North",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US"
+          ],
+          "label": "Deployments Standard",
+          "removed": []
+        }
+      }
+    },
+    "gpt-realtime-2.1": {
+      "all": {
+        "added": [
+          "Canada Central",
+          "Central US",
+          "East US 2",
+          "France Central",
+          "South India",
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "added": [
+            "Canada Central",
+            "Central US",
+            "East US 2",
+            "France Central",
+            "South India",
+            "Sweden Central"
+          ],
+          "label": "Deployments Standard",
+          "removed": []
+        }
+      }
+    },
+    "gpt-realtime-2.1-mini": {
+      "all": {
+        "added": [
+          "Canada Central",
+          "Central US",
+          "East US 2",
+          "France Central",
+          "South India",
+          "Sweden Central"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "added": [
+            "Canada Central",
+            "Central US",
+            "East US 2",
+            "France Central",
+            "South India",
+            "Sweden Central"
+          ],
+          "label": "Deployments Standard",
+          "removed": []
+        }
+      }
+    },
+    "model-router": {
+      "all": {
+        "added": [
+          "Australia East",
+          "South India",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Datazone standard",
+          "removed": []
+        },
+        "deployments-standard": {
+          "added": [
+            "Australia East",
+            "South India",
+            "West US 3"
+          ],
+          "label": "Deployments Standard",
+          "removed": []
+        }
+      }
+    },
+    "o3-mini": {
+      "all": {
+        "added": [
+          "usgovvirginia"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard-gov": {
+          "added": [
+            "usgovvirginia"
+          ],
+          "label": "Datazone Standard Gov",
+          "removed": []
+        }
+      }
+    },
+    "text-embedding-3-large": {
+      "all": {
+        "added": [
+          "usgovvirginia"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard-gov": {
+          "added": [
+            "usgovarizona",
+            "usgovvirginia"
+          ],
+          "label": "Datazone Standard Gov",
+          "removed": []
+        }
+      }
+    },
+    "text-embedding-3-small": {
+      "all": {
+        "added": [
+          "usgovvirginia"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard-gov": {
+          "added": [
+            "usgovarizona",
+            "usgovvirginia"
+          ],
+          "label": "Datazone Standard Gov",
+          "removed": []
+        }
+      }
+    },
+    "text-embedding-ada-002": {
+      "all": {
+        "added": [
+          "Canada Central",
+          "Southeast Asia",
+          "Switzerland West"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "added": [
+            "Canada Central",
+            "Southeast Asia",
+            "Switzerland West"
+          ],
+          "label": "Deployments Standard",
+          "removed": []
+        }
+      }
+    }
+  },
+  "timestamp": "2026-07-09T10:30:26.042102+00:00"
+}
