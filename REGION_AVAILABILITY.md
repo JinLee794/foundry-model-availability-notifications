@@ -1,8 +1,8 @@
 # AI Foundry Model Availability by Region
 
-_Last updated: 2026-07-10 10:23 UTC_
+_Last updated: 2026-07-16 09:15 UTC_
 
-- Models tracked: **144**
+- Models tracked: **143**
 - Regions in snapshot: **34**
 - Distinct SKU labels: **21**
 
@@ -21,11 +21,11 @@ SKU labels observed:
 - Deployments Batch
 - Deployments Provisioned
 - Deployments Standard
-- Global Provisioned Managed
 - Global Standard
 - Global batch
 - Global batch datazone
 - Global coverage
+- Marketplace Deployments Standard
 - Provisioned (PTU managed)
 - Provisioned Models Gov
 - Provisioned global
@@ -39,50 +39,49 @@ SKU labels observed:
 
 | Model | Coverage | Regions | SKU labels | Regions (sample) |
 | --- | --- | --- | --- | --- |
+| Codestral-2501 | 🟢 Broad | 31 | 3 (Global coverage, Marketplace Deployments Standard, Region Availability Maas) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | Cohere-command-a-plus-05-2026 | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| Cohere-rerank-v4.0-fast | 🟢 Broad | 31 | 3 (Deployments Standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| Cohere-rerank-v4.0-pro | 🟢 Broad | 31 | 3 (Deployments Standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| DeepSeek-R1 | 🟢 Broad | 31 | 6 (Deployments Provisioned, Deployments Standard, Global Provisioned Managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| DeepSeek-R1-0528 | 🟢 Broad | 31 | 5 (Deployments Provisioned, Deployments Standard, Global Provisioned Managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| DeepSeek-V3-0324 | 🟢 Broad | 31 | 6 (Deployments Provisioned, Deployments Standard, Global Provisioned Managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| DeepSeek-V3.1 | 🟢 Broad | 31 | 3 (Deployments Standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| DeepSeek-V3.2 | 🟢 Broad | 31 | 4 (Deployments Provisioned, Deployments Standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| DeepSeek-V3.2-Speciale | 🟢 Broad | 31 | 3 (Deployments Standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| Cohere-rerank-v4.0-fast | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| Cohere-rerank-v4.0-pro | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| DeepSeek-R1 | 🟢 Broad | 31 | 4 (Deployments Provisioned, Deployments Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| DeepSeek-R1-0528 | 🟢 Broad | 31 | 3 (Deployments Provisioned, Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| DeepSeek-V3-0324 | 🟢 Broad | 31 | 4 (Deployments Provisioned, Deployments Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| DeepSeek-V3.1 | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| DeepSeek-V3.2 | 🟢 Broad | 31 | 3 (Deployments Provisioned, Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| DeepSeek-V3.2-Speciale | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | DeepSeek-V4-Flash | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | DeepSeek-V4-Pro | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| FLUX-1.1-pro | 🟢 Broad | 31 | 4 (Datazone standard, Deployments Standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| FLUX.1-Kontext-pro | 🟢 Broad | 31 | 4 (Datazone standard, Deployments Standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| FLUX.2-flex | 🟢 Broad | 31 | 3 (Deployments Standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| FLUX.2-pro | 🟢 Broad | 31 | 4 (Datazone standard, Deployments Standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| Kimi-K2.5 | 🟢 Broad | 31 | 3 (Deployments Standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FLUX-1.1-pro | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FLUX.1-Kontext-pro | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FLUX.2-flex | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FLUX.2-pro | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| Kimi-K2.5 | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | Kimi-K2.6 | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | Kimi-K2.7-Code | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| Llama-3.3-70B-Instruct | 🟢 Broad | 31 | 6 (Deployments Provisioned, Deployments Standard, Global Provisioned Managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| Llama-4-Maverick-17B-128E-Instruct-FP8 | 🟢 Broad | 31 | 3 (Deployments Standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| Mistral-Large-3 | 🟢 Broad | 31 | 4 (Datazone standard, Deployments Standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| Llama-3.3-70B-Instruct | 🟢 Broad | 31 | 4 (Deployments Provisioned, Deployments Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| Llama-4-Maverick-17B-128E-Instruct-FP8 | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| Llama-4-Scout-17B-16E-Instruct | 🟢 Broad | 31 | 2 (Global coverage, Marketplace Deployments Standard) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| Ministral-3B | 🟢 Broad | 31 | 3 (Global coverage, Marketplace Deployments Standard, Region Availability Maas) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| Mistral-Large-3 | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| Mistral-large | 🟢 Broad | 31 | 2 (Global coverage, Marketplace Deployments Standard) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | Phi-4 | 🟢 Broad | 31 | 3 (Deployments Standard, Global coverage, Region Availability Maas) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | Phi-4-mini-instruct | 🟢 Broad | 31 | 3 (Deployments Standard, Global coverage, Region Availability Maas) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | Phi-4-mini-reasoning | 🟢 Broad | 31 | 3 (Deployments Standard, Global coverage, Region Availability Maas) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | Phi-4-multimodal-instruct | 🟢 Broad | 31 | 3 (Deployments Standard, Global coverage, Region Availability Maas) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | Phi-4-reasoning | 🟢 Broad | 31 | 3 (Deployments Standard, Global coverage, Region Availability Maas) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| cohere-command-a | 🟢 Broad | 31 | 3 (Deployments Standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| grok-4-1-fast-non-reasoning | 🟢 Broad | 31 | 4 (Datazone standard, Deployments Standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| grok-4-1-fast-reasoning | 🟢 Broad | 31 | 4 (Datazone standard, Deployments Standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| cohere-command-a | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| grok-4-1-fast-non-reasoning | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| grok-4-1-fast-reasoning | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | grok-4-20-non-reasoning | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | grok-4-20-reasoning | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | grok-4.3 | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| mistral-medium-2505 | 🟢 Broad | 31 | 2 (Global coverage, Marketplace Deployments Standard) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | mistral-medium-3-5 | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| embed-v-4-0 | 🟢 Broad | 30 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| mistral-small-2503 | 🟢 Broad | 31 | 2 (Global coverage, Marketplace Deployments Standard) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-4.1 | 🟢 Broad | 30 | 17 (Datazone Standard Gov, Datazone Standard Priority Processing, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-4.1-mini | 🟢 Broad | 30 | 16 (Datazone Provisioned Managed Gov, Datazone Standard Gov, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-4o | 🟢 Broad | 30 | 17 (Datazone Provisioned Managed Gov, Datazone Standard Gov, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5.1 | 🟢 Broad | 30 | 16 (Datazone Standard Gov, Datazone Standard Priority Processing, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| grok-3 | 🟢 Broad | 30 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| grok-3-mini | 🟢 Broad | 30 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| grok-4-fast-non-reasoning | 🟢 Broad | 30 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| grok-4-fast-reasoning | 🟢 Broad | 30 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| mistral-document-ai-2505 | 🟢 Broad | 30 | 4 (Datazone standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| mistral-document-ai-2512 | 🟢 Broad | 30 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | o3-mini | 🟢 Broad | 30 | 14 (Datazone Provisioned Managed Gov, Datazone Standard Gov, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | text-embedding-3-large | 🟢 Broad | 30 | 8 (Datazone Standard Gov, Datazone standard, Deployments Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | text-embedding-3-small | 🟢 Broad | 30 | 8 (Datazone Standard Gov, Datazone standard, Deployments Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
@@ -91,28 +90,34 @@ SKU labels observed:
 | gpt-4o-mini | 🟢 Broad | 28 | 13 (Datazone provisioned managed, Datazone standard, Deployments Batch +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5 | 🟢 Broad | 28 | 12 (Datazone provisioned managed, Datazone standard, Deployments Batch +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5-mini | 🟢 Broad | 28 | 9 (Datazone provisioned managed, Datazone standard, Deployments Provisioned +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5.1-chat | 🟢 Broad | 28 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.1-chat | 🟢 Broad | 28 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5.1-codex | 🟢 Broad | 28 | 7 (Datazone provisioned managed, Deployments Provisioned, Deployments Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5.1-codex-mini | 🟢 Broad | 28 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5.2 | 🟢 Broad | 28 | 11 (Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5.2-chat | 🟢 Broad | 28 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.2-chat | 🟢 Broad | 28 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5.2-codex | 🟢 Broad | 28 | 6 (Deployments Provisioned, Deployments Standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5.3-chat | 🟢 Broad | 28 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.3-chat | 🟢 Broad | 28 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5.3-codex | 🟢 Broad | 28 | 7 (Datazone standard, Deployments Provisioned, Deployments Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5.4 | 🟢 Broad | 28 | 13 (Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5.4-mini | 🟢 Broad | 28 | 10 (Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5.4-nano | 🟢 Broad | 28 | 5 (Datazone standard, Deployments Standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.4-pro | 🟢 Broad | 28 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5.5 | 🟢 Broad | 28 | 11 (Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.6-luna | 🟢 Broad | 28 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.6-sol | 🟢 Broad | 28 | 4 (Deployments Provisioned, Deployments Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.6-terra | 🟢 Broad | 28 | 3 (Deployments Standard, Global coverage, Standard Global Priority Processing) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-chat-latest | 🟢 Broad | 28 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | o1 | 🟢 Broad | 28 | 10 (Datazone provisioned managed, Datazone standard, Deployments Provisioned +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | o3 | 🟢 Broad | 28 | 12 (Datazone provisioned managed, Datazone standard, Deployments Batch +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | o4-mini | 🟢 Broad | 28 | 13 (Datazone provisioned managed, Datazone standard, Deployments Batch +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5-chat | 🟢 Broad | 27 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5-chat | 🟢 Broad | 27 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5-codex | 🟢 Broad | 27 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5-pro | 🟢 Broad | 27 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5-nano | 🟢 Broad | 26 | 5 (Datazone standard, Deployments Standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada East`, `Central US`, `East US`, `East US 2` |
+| claude-haiku-4-5 | 🔴 Emerging | 9 | 2 (Global coverage, Marketplace Deployments Standard) | `Central US`, `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central` |
+| claude-opus-4-8 | 🔴 Emerging | 9 | 2 (Global coverage, Marketplace Deployments Standard) | `Central US`, `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central` |
+| claude-sonnet-5 | 🔴 Emerging | 9 | 2 (Global coverage, Marketplace Deployments Standard) | `Central US`, `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central` |
 | whisper | 🔴 Emerging | 8 | 3 (Deployments Standard, Global coverage, Standard) | `East US 2`, `North Central US`, `Norway East`, `South India`, `Sweden Central`, `Switzerland North` |
-| Codestral-2501 | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
 | Cohere Command R 08-2024 | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
 | Cohere Command R+ 08-2024 | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
 | Cohere Embed v3 - English | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
@@ -128,11 +133,10 @@ SKU labels observed:
 | Llama-3.2-90B-Vision-Instruct | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
 | Llama-Guard-3-11B-Vision | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
 | Llama-Guard-3-1B | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
-| MAI-Image-2 | 🔴 Emerging | 7 | 3 (Deployments Standard, Global Standard, Global coverage) | `East US`, `South India`, `Sweden Central`, `UAE North`, `West Central US`, `West Europe` |
+| MAI-Image-2 | 🔴 Emerging | 7 | 2 (Deployments Standard, Global coverage) | `East US`, `South India`, `Sweden Central`, `UAE North`, `West Central US`, `West Europe` |
 | MAI-Image-2.5 | 🔴 Emerging | 7 | 2 (Deployments Standard, Global coverage) | `East US`, `South India`, `Sweden Central`, `UAE North`, `West Central US`, `West Europe` |
 | MAI-Image-2.5-Flash | 🔴 Emerging | 7 | 2 (Deployments Standard, Global coverage) | `East US`, `South India`, `Sweden Central`, `UAE North`, `West Central US`, `West Europe` |
 | MAI-Image-2e | 🔴 Emerging | 7 | 2 (Deployments Standard, Global coverage) | `East US`, `South India`, `Sweden Central`, `UAE North`, `West Central US`, `West Europe` |
-| Ministral-3B | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
 | Mistral Medium 3 (25.05) | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
 | Mistral Small 25.03 | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
 | TimeGEN-1 | 🔴 Emerging | 7 | 2 (Global coverage, Region Availability Maas) | `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central`, `West US` |
@@ -157,35 +161,66 @@ SKU labels observed:
 | gpt-image-1-mini | 🔴 Emerging | 5 | 4 (Deployments Standard, Global Standard, Global coverage +) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
 | gpt-image-1.5 | 🔴 Emerging | 5 | 5 (Datazone standard, Deployments Standard, Global Standard +) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
 | gpt-image-2 | 🔴 Emerging | 5 | 4 (Deployments Standard, Global Standard, Global coverage +) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
-| model-router | 🔴 Emerging | 5 | 5 (Datazone standard, Deployments Standard, Global Standard +) | `Australia East`, `East US 2`, `South India`, `Sweden Central`, `West US 3` |
-| gpt-5.4-pro | 🔴 Emerging | 4 | 4 (Deployments Standard, Global Standard, Global coverage +) | `East US 2`, `Poland Central`, `South Central US`, `Sweden Central` |
+| claude-opus-4-1 | 🔴 Emerging | 3 | 2 (Global coverage, Marketplace Deployments Standard) | `East US 2`, `Sweden Central`, `West Central US` |
+| claude-opus-4-5 | 🔴 Emerging | 3 | 2 (Global coverage, Marketplace Deployments Standard) | `East US 2`, `Sweden Central`, `West Central US` |
+| claude-sonnet-4-5 | 🔴 Emerging | 3 | 2 (Global coverage, Marketplace Deployments Standard) | `East US 2`, `Sweden Central`, `West Central US` |
 | codex-mini | 🔴 Emerging | 3 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Central US`, `East US 2`, `Sweden Central` |
 | computer-use-preview | 🔴 Emerging | 3 | 4 (Deployments Standard, Global Standard, Global coverage +) | `East US 2`, `South India`, `Sweden Central` |
 | gpt-audio | 🔴 Emerging | 3 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Central US`, `East US 2`, `Sweden Central` |
 | gpt-audio-1.5 | 🔴 Emerging | 3 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Central US`, `East US 2`, `Sweden Central` |
 | gpt-audio-mini | 🔴 Emerging | 3 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Central US`, `East US 2`, `Sweden Central` |
+| model-router | 🔴 Emerging | 3 | 5 (Datazone standard, Deployments Standard, Global Standard +) | `East US 2`, `Sweden Central`, `West US 3` |
 | o3-pro | 🔴 Emerging | 3 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Central US`, `East US 2`, `Sweden Central` |
 | tts | 🔴 Emerging | 3 | 3 (Deployments Standard, Global coverage, Standard) | `North Central US`, `Sweden Central`, `West US 3` |
 | tts-hd | 🔴 Emerging | 3 | 3 (Deployments Standard, Global coverage, Standard) | `North Central US`, `Sweden Central`, `West US 3` |
-| Claude Fable | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
-| Claude Haiku 4.5 | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
-| Claude Mythos 5<sup>1< | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
-| Claude Mythos Preview<sup>1< | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
-| Claude Opus 4.1 | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
-| Claude Opus 4.5 | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
-| Claude Opus 4.6 | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
-| Claude Opus 4.7 | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
-| Claude Opus 4.8 | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
-| Claude Sonnet 4.5 | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
-| Claude Sonnet 4.6 | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
-| Claude Sonnet 5 | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
+| claude-fable-5 | 🔴 Emerging | 2 | 2 (Global coverage, Marketplace Deployments Standard) | `East US 2`, `Sweden Central` |
+| claude-opus-4-6 | 🔴 Emerging | 2 | 2 (Global coverage, Marketplace Deployments Standard) | `East US 2`, `Sweden Central` |
+| claude-opus-4-7 | 🔴 Emerging | 2 | 2 (Global coverage, Marketplace Deployments Standard) | `East US 2`, `Sweden Central` |
+| claude-sonnet-4-6 | 🔴 Emerging | 2 | 2 (Global coverage, Marketplace Deployments Standard) | `East US 2`, `Sweden Central` |
 | gpt-5.1-codex-max | 🔴 Emerging | 2 | 4 (Deployments Standard, Global Standard, Global coverage +) | `East US 2`, `Sweden Central` |
+| mistral-document-ai-2505 | 🔴 Emerging | 2 | 2 (Global coverage, Region Availability Maas) | `East US 2`, `Sweden Central` |
 | o3-deep-research | 🔴 Emerging | 2 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Norway East`, `West US` |
 | sora-2 | 🔴 Emerging | 2 | 4 (Deployments Standard, Global Standard, Global coverage +) | `East US 2`, `Sweden Central` |
 | gpt-4o-mini-tts | 🔴 Emerging | 1 | 4 (Deployments Standard, Global Standard, Global coverage +) | `East US 2` |
 
 ## Regional rosters by model
 
+<details>
+<summary>Codestral-2501 — 31 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Marketplace Deployments Standard
+- `Brazil South` — Global coverage, Marketplace Deployments Standard
+- `Canada Central` — Global coverage, Marketplace Deployments Standard
+- `Canada East` — Global coverage, Marketplace Deployments Standard
+- `Central US` — Global coverage, Marketplace Deployments Standard
+- `East US` — Global coverage, Marketplace Deployments Standard, Region Availability Maas
+- `East US 2` — Global coverage, Marketplace Deployments Standard, Region Availability Maas
+- `France Central` — Global coverage, Marketplace Deployments Standard
+- `Germany West Central` — Global coverage, Marketplace Deployments Standard
+- `Italy North` — Global coverage, Marketplace Deployments Standard
+- `Japan East` — Global coverage, Marketplace Deployments Standard
+- `Japan West` — Global coverage, Marketplace Deployments Standard
+- `Korea Central` — Global coverage, Marketplace Deployments Standard
+- `North Central US` — Global coverage, Marketplace Deployments Standard, Region Availability Maas
+- `Norway East` — Global coverage, Marketplace Deployments Standard
+- `Poland Central` — Global coverage, Marketplace Deployments Standard
+- `South Africa North` — Global coverage, Marketplace Deployments Standard
+- `South Central US` — Global coverage, Marketplace Deployments Standard, Region Availability Maas
+- `South India` — Global coverage, Marketplace Deployments Standard
+- `Spain Central` — Global coverage, Marketplace Deployments Standard
+- `Sweden Central` — Global coverage, Marketplace Deployments Standard, Region Availability Maas
+- `Switzerland North` — Global coverage, Marketplace Deployments Standard
+- `Switzerland West` — Global coverage, Marketplace Deployments Standard
+- `UAE North` — Global coverage, Marketplace Deployments Standard
+- `UK South` — Global coverage, Marketplace Deployments Standard
+- `UK West` — Global coverage, Marketplace Deployments Standard
+- `West Central US` — Global coverage, Marketplace Deployments Standard
+- `West Europe` — Global coverage, Marketplace Deployments Standard
+- `West US` — Global coverage, Marketplace Deployments Standard, Region Availability Maas
+- `West US 2` — Global coverage, Marketplace Deployments Standard
+- `West US 3` — Global coverage, Marketplace Deployments Standard, Region Availability Maas
+
+</details>
 <details>
 <summary>Cohere-command-a-plus-05-2026 — 31 regions across 2 SKU labels</summary>
 
@@ -223,291 +258,291 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>Cohere-rerank-v4.0-fast — 31 regions across 3 SKU labels</summary>
+<summary>Cohere-rerank-v4.0-fast — 31 regions across 2 SKU labels</summary>
 
-- `Australia East` — Deployments Standard, Global Standard, Global coverage
-- `Brazil South` — Deployments Standard, Global Standard, Global coverage
-- `Canada Central` — Deployments Standard, Global Standard, Global coverage
-- `Canada East` — Deployments Standard, Global Standard, Global coverage
-- `Central US` — Deployments Standard, Global Standard, Global coverage
-- `East US` — Deployments Standard, Global Standard, Global coverage
-- `East US 2` — Deployments Standard, Global Standard, Global coverage
-- `France Central` — Deployments Standard, Global Standard, Global coverage
-- `Germany West Central` — Deployments Standard, Global Standard, Global coverage
-- `Italy North` — Deployments Standard, Global Standard, Global coverage
-- `Japan East` — Deployments Standard, Global Standard, Global coverage
-- `Japan West` — Deployments Standard, Global Standard, Global coverage
-- `Korea Central` — Deployments Standard, Global Standard, Global coverage
-- `North Central US` — Deployments Standard, Global Standard, Global coverage
-- `Norway East` — Deployments Standard, Global Standard, Global coverage
-- `Poland Central` — Deployments Standard, Global Standard, Global coverage
-- `South Africa North` — Deployments Standard, Global Standard, Global coverage
-- `South Central US` — Deployments Standard, Global Standard, Global coverage
-- `South India` — Deployments Standard, Global Standard, Global coverage
-- `Spain Central` — Deployments Standard, Global Standard, Global coverage
-- `Sweden Central` — Deployments Standard, Global Standard, Global coverage
-- `Switzerland North` — Deployments Standard, Global Standard, Global coverage
-- `Switzerland West` — Deployments Standard, Global Standard, Global coverage
-- `UAE North` — Deployments Standard, Global Standard, Global coverage
-- `UK South` — Deployments Standard, Global Standard, Global coverage
+- `Australia East` — Deployments Standard, Global coverage
+- `Brazil South` — Deployments Standard, Global coverage
+- `Canada Central` — Deployments Standard, Global coverage
+- `Canada East` — Deployments Standard, Global coverage
+- `Central US` — Deployments Standard, Global coverage
+- `East US` — Deployments Standard, Global coverage
+- `East US 2` — Deployments Standard, Global coverage
+- `France Central` — Deployments Standard, Global coverage
+- `Germany West Central` — Deployments Standard, Global coverage
+- `Italy North` — Deployments Standard, Global coverage
+- `Japan East` — Deployments Standard, Global coverage
+- `Japan West` — Deployments Standard, Global coverage
+- `Korea Central` — Deployments Standard, Global coverage
+- `North Central US` — Deployments Standard, Global coverage
+- `Norway East` — Deployments Standard, Global coverage
+- `Poland Central` — Deployments Standard, Global coverage
+- `South Africa North` — Deployments Standard, Global coverage
+- `South Central US` — Deployments Standard, Global coverage
+- `South India` — Deployments Standard, Global coverage
+- `Spain Central` — Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Standard, Global coverage
+- `Switzerland North` — Deployments Standard, Global coverage
+- `Switzerland West` — Deployments Standard, Global coverage
+- `UAE North` — Deployments Standard, Global coverage
+- `UK South` — Deployments Standard, Global coverage
 - `UK West` — Deployments Standard, Global coverage
-- `West Central US` — Deployments Standard, Global Standard, Global coverage
-- `West Europe` — Deployments Standard, Global Standard, Global coverage
-- `West US` — Deployments Standard, Global Standard, Global coverage
-- `West US 2` — Deployments Standard, Global Standard, Global coverage
-- `West US 3` — Deployments Standard, Global Standard, Global coverage
+- `West Central US` — Deployments Standard, Global coverage
+- `West Europe` — Deployments Standard, Global coverage
+- `West US` — Deployments Standard, Global coverage
+- `West US 2` — Deployments Standard, Global coverage
+- `West US 3` — Deployments Standard, Global coverage
 
 </details>
 <details>
-<summary>Cohere-rerank-v4.0-pro — 31 regions across 3 SKU labels</summary>
+<summary>Cohere-rerank-v4.0-pro — 31 regions across 2 SKU labels</summary>
 
-- `Australia East` — Deployments Standard, Global Standard, Global coverage
-- `Brazil South` — Deployments Standard, Global Standard, Global coverage
-- `Canada Central` — Deployments Standard, Global Standard, Global coverage
-- `Canada East` — Deployments Standard, Global Standard, Global coverage
-- `Central US` — Deployments Standard, Global Standard, Global coverage
-- `East US` — Deployments Standard, Global Standard, Global coverage
-- `East US 2` — Deployments Standard, Global Standard, Global coverage
-- `France Central` — Deployments Standard, Global Standard, Global coverage
-- `Germany West Central` — Deployments Standard, Global Standard, Global coverage
-- `Italy North` — Deployments Standard, Global Standard, Global coverage
-- `Japan East` — Deployments Standard, Global Standard, Global coverage
-- `Japan West` — Deployments Standard, Global Standard, Global coverage
-- `Korea Central` — Deployments Standard, Global Standard, Global coverage
-- `North Central US` — Deployments Standard, Global Standard, Global coverage
-- `Norway East` — Deployments Standard, Global Standard, Global coverage
-- `Poland Central` — Deployments Standard, Global Standard, Global coverage
-- `South Africa North` — Deployments Standard, Global Standard, Global coverage
-- `South Central US` — Deployments Standard, Global Standard, Global coverage
-- `South India` — Deployments Standard, Global Standard, Global coverage
-- `Spain Central` — Deployments Standard, Global Standard, Global coverage
-- `Sweden Central` — Deployments Standard, Global Standard, Global coverage
-- `Switzerland North` — Deployments Standard, Global Standard, Global coverage
-- `Switzerland West` — Deployments Standard, Global Standard, Global coverage
-- `UAE North` — Deployments Standard, Global Standard, Global coverage
-- `UK South` — Deployments Standard, Global Standard, Global coverage
+- `Australia East` — Deployments Standard, Global coverage
+- `Brazil South` — Deployments Standard, Global coverage
+- `Canada Central` — Deployments Standard, Global coverage
+- `Canada East` — Deployments Standard, Global coverage
+- `Central US` — Deployments Standard, Global coverage
+- `East US` — Deployments Standard, Global coverage
+- `East US 2` — Deployments Standard, Global coverage
+- `France Central` — Deployments Standard, Global coverage
+- `Germany West Central` — Deployments Standard, Global coverage
+- `Italy North` — Deployments Standard, Global coverage
+- `Japan East` — Deployments Standard, Global coverage
+- `Japan West` — Deployments Standard, Global coverage
+- `Korea Central` — Deployments Standard, Global coverage
+- `North Central US` — Deployments Standard, Global coverage
+- `Norway East` — Deployments Standard, Global coverage
+- `Poland Central` — Deployments Standard, Global coverage
+- `South Africa North` — Deployments Standard, Global coverage
+- `South Central US` — Deployments Standard, Global coverage
+- `South India` — Deployments Standard, Global coverage
+- `Spain Central` — Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Standard, Global coverage
+- `Switzerland North` — Deployments Standard, Global coverage
+- `Switzerland West` — Deployments Standard, Global coverage
+- `UAE North` — Deployments Standard, Global coverage
+- `UK South` — Deployments Standard, Global coverage
 - `UK West` — Deployments Standard, Global coverage
-- `West Central US` — Deployments Standard, Global Standard, Global coverage
-- `West Europe` — Deployments Standard, Global Standard, Global coverage
-- `West US` — Deployments Standard, Global Standard, Global coverage
-- `West US 2` — Deployments Standard, Global Standard, Global coverage
-- `West US 3` — Deployments Standard, Global Standard, Global coverage
+- `West Central US` — Deployments Standard, Global coverage
+- `West Europe` — Deployments Standard, Global coverage
+- `West US` — Deployments Standard, Global coverage
+- `West US 2` — Deployments Standard, Global coverage
+- `West US 3` — Deployments Standard, Global coverage
 
 </details>
 <details>
-<summary>DeepSeek-R1 — 31 regions across 6 SKU labels</summary>
+<summary>DeepSeek-R1 — 31 regions across 4 SKU labels</summary>
 
-- `Australia East` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Brazil South` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Canada Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Canada East` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Central US` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `East US` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
-- `East US 2` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
-- `France Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Germany West Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Italy North` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Japan East` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Japan West` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Korea Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `North Central US` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
-- `Norway East` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Poland Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `South Africa North` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `South Central US` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
-- `South India` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Spain Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Sweden Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Switzerland North` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Switzerland West` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `UAE North` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `UK South` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
+- `Australia East` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Brazil South` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Canada Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Canada East` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Central US` — Deployments Provisioned, Deployments Standard, Global coverage
+- `East US` — Deployments Provisioned, Deployments Standard, Global coverage, Region Availability Maas
+- `East US 2` — Deployments Provisioned, Deployments Standard, Global coverage, Region Availability Maas
+- `France Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Germany West Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Italy North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Japan East` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Japan West` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Korea Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `North Central US` — Deployments Provisioned, Deployments Standard, Global coverage, Region Availability Maas
+- `Norway East` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Poland Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `South Africa North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `South Central US` — Deployments Provisioned, Deployments Standard, Global coverage, Region Availability Maas
+- `South India` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Spain Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Switzerland North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Switzerland West` — Deployments Provisioned, Deployments Standard, Global coverage
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `UK South` — Deployments Provisioned, Deployments Standard, Global coverage
 - `UK West` — Deployments Provisioned, Deployments Standard, Global coverage
-- `West Central US` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `West Europe` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `West US` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
-- `West US 2` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `West US 3` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
+- `West Central US` — Deployments Provisioned, Deployments Standard, Global coverage
+- `West Europe` — Deployments Provisioned, Deployments Standard, Global coverage
+- `West US` — Deployments Provisioned, Deployments Standard, Global coverage, Region Availability Maas
+- `West US 2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `West US 3` — Deployments Provisioned, Deployments Standard, Global coverage, Region Availability Maas
 
 </details>
 <details>
-<summary>DeepSeek-R1-0528 — 31 regions across 5 SKU labels</summary>
+<summary>DeepSeek-R1-0528 — 31 regions across 3 SKU labels</summary>
 
-- `Australia East` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Brazil South` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Canada Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Canada East` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Central US` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `East US` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `East US 2` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `France Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Germany West Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Italy North` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Japan East` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Japan West` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Korea Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `North Central US` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Norway East` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Poland Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `South Africa North` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `South Central US` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `South India` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Spain Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Sweden Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Switzerland North` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Switzerland West` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `UAE North` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `UK South` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
+- `Australia East` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Brazil South` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Canada Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Canada East` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Central US` — Deployments Provisioned, Deployments Standard, Global coverage
+- `East US` — Deployments Provisioned, Deployments Standard, Global coverage
+- `East US 2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `France Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Germany West Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Italy North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Japan East` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Japan West` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Korea Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `North Central US` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Norway East` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Poland Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `South Africa North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `South Central US` — Deployments Provisioned, Deployments Standard, Global coverage
+- `South India` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Spain Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Switzerland North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Switzerland West` — Deployments Provisioned, Deployments Standard, Global coverage
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `UK South` — Deployments Provisioned, Deployments Standard, Global coverage
 - `UK West` — Deployments Provisioned, Deployments Standard, Global coverage
-- `West Central US` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `West Europe` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `West US` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `West US 2` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `West US 3` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
+- `West Central US` — Deployments Standard, Global coverage
+- `West Europe` — Deployments Provisioned, Deployments Standard, Global coverage
+- `West US` — Deployments Provisioned, Deployments Standard, Global coverage
+- `West US 2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `West US 3` — Deployments Provisioned, Deployments Standard, Global coverage
 
 </details>
 <details>
-<summary>DeepSeek-V3-0324 — 31 regions across 6 SKU labels</summary>
+<summary>DeepSeek-V3-0324 — 31 regions across 4 SKU labels</summary>
 
-- `Australia East` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Brazil South` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Canada Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Canada East` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Central US` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `East US` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
-- `East US 2` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
-- `France Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Germany West Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Italy North` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Japan East` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Japan West` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Korea Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `North Central US` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
-- `Norway East` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Poland Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `South Africa North` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `South Central US` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
-- `South India` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Spain Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Sweden Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Switzerland North` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Switzerland West` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `UAE North` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `UK South` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
+- `Australia East` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Brazil South` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Canada Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Canada East` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Central US` — Deployments Provisioned, Deployments Standard, Global coverage
+- `East US` — Deployments Provisioned, Deployments Standard, Global coverage, Region Availability Maas
+- `East US 2` — Deployments Provisioned, Deployments Standard, Global coverage, Region Availability Maas
+- `France Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Germany West Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Italy North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Japan East` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Japan West` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Korea Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `North Central US` — Deployments Provisioned, Deployments Standard, Global coverage, Region Availability Maas
+- `Norway East` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Poland Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `South Africa North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `South Central US` — Deployments Provisioned, Deployments Standard, Global coverage, Region Availability Maas
+- `South India` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Spain Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Switzerland North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Switzerland West` — Deployments Provisioned, Deployments Standard, Global coverage
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `UK South` — Deployments Provisioned, Deployments Standard, Global coverage
 - `UK West` — Deployments Provisioned, Deployments Standard, Global coverage
-- `West Central US` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `West Europe` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `West US` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
-- `West US 2` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `West US 3` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
+- `West Central US` — Deployments Standard, Global coverage
+- `West Europe` — Deployments Provisioned, Deployments Standard, Global coverage
+- `West US` — Deployments Provisioned, Deployments Standard, Global coverage, Region Availability Maas
+- `West US 2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `West US 3` — Deployments Provisioned, Deployments Standard, Global coverage, Region Availability Maas
 
 </details>
 <details>
-<summary>DeepSeek-V3.1 — 31 regions across 3 SKU labels</summary>
+<summary>DeepSeek-V3.1 — 31 regions across 2 SKU labels</summary>
 
-- `Australia East` — Deployments Standard, Global Standard, Global coverage
-- `Brazil South` — Deployments Standard, Global Standard, Global coverage
-- `Canada Central` — Deployments Standard, Global Standard, Global coverage
-- `Canada East` — Deployments Standard, Global Standard, Global coverage
-- `Central US` — Deployments Standard, Global Standard, Global coverage
-- `East US` — Deployments Standard, Global Standard, Global coverage
-- `East US 2` — Deployments Standard, Global Standard, Global coverage
-- `France Central` — Deployments Standard, Global Standard, Global coverage
-- `Germany West Central` — Deployments Standard, Global Standard, Global coverage
-- `Italy North` — Deployments Standard, Global Standard, Global coverage
-- `Japan East` — Deployments Standard, Global Standard, Global coverage
-- `Japan West` — Deployments Standard, Global Standard, Global coverage
-- `Korea Central` — Deployments Standard, Global Standard, Global coverage
-- `North Central US` — Deployments Standard, Global Standard, Global coverage
-- `Norway East` — Deployments Standard, Global Standard, Global coverage
-- `Poland Central` — Deployments Standard, Global Standard, Global coverage
-- `South Africa North` — Deployments Standard, Global Standard, Global coverage
-- `South Central US` — Deployments Standard, Global Standard, Global coverage
-- `South India` — Deployments Standard, Global Standard, Global coverage
-- `Spain Central` — Deployments Standard, Global Standard, Global coverage
-- `Sweden Central` — Deployments Standard, Global Standard, Global coverage
-- `Switzerland North` — Deployments Standard, Global Standard, Global coverage
-- `Switzerland West` — Deployments Standard, Global Standard, Global coverage
-- `UAE North` — Deployments Standard, Global Standard, Global coverage
-- `UK South` — Deployments Standard, Global Standard, Global coverage
+- `Australia East` — Deployments Standard, Global coverage
+- `Brazil South` — Deployments Standard, Global coverage
+- `Canada Central` — Deployments Standard, Global coverage
+- `Canada East` — Deployments Standard, Global coverage
+- `Central US` — Deployments Standard, Global coverage
+- `East US` — Deployments Standard, Global coverage
+- `East US 2` — Deployments Standard, Global coverage
+- `France Central` — Deployments Standard, Global coverage
+- `Germany West Central` — Deployments Standard, Global coverage
+- `Italy North` — Deployments Standard, Global coverage
+- `Japan East` — Deployments Standard, Global coverage
+- `Japan West` — Deployments Standard, Global coverage
+- `Korea Central` — Deployments Standard, Global coverage
+- `North Central US` — Deployments Standard, Global coverage
+- `Norway East` — Deployments Standard, Global coverage
+- `Poland Central` — Deployments Standard, Global coverage
+- `South Africa North` — Deployments Standard, Global coverage
+- `South Central US` — Deployments Standard, Global coverage
+- `South India` — Deployments Standard, Global coverage
+- `Spain Central` — Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Standard, Global coverage
+- `Switzerland North` — Deployments Standard, Global coverage
+- `Switzerland West` — Deployments Standard, Global coverage
+- `UAE North` — Deployments Standard, Global coverage
+- `UK South` — Deployments Standard, Global coverage
 - `UK West` — Deployments Standard, Global coverage
-- `West Central US` — Deployments Standard, Global Standard, Global coverage
-- `West Europe` — Deployments Standard, Global Standard, Global coverage
-- `West US` — Deployments Standard, Global Standard, Global coverage
-- `West US 2` — Deployments Standard, Global Standard, Global coverage
-- `West US 3` — Deployments Standard, Global Standard, Global coverage
+- `West Central US` — Deployments Standard, Global coverage
+- `West Europe` — Deployments Standard, Global coverage
+- `West US` — Deployments Standard, Global coverage
+- `West US 2` — Deployments Standard, Global coverage
+- `West US 3` — Deployments Standard, Global coverage
 
 </details>
 <details>
-<summary>DeepSeek-V3.2 — 31 regions across 4 SKU labels</summary>
+<summary>DeepSeek-V3.2 — 31 regions across 3 SKU labels</summary>
 
-- `Australia East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `Brazil South` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `Canada Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `Canada East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `Central US` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `East US` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `East US 2` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `France Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `Germany West Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `Italy North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `Japan East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `Japan West` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `Korea Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `North Central US` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `Norway East` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `Poland Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `South Africa North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `South Central US` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `South India` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `Spain Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `Sweden Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `Switzerland North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `Switzerland West` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `UAE North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `UK South` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
+- `Australia East` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Brazil South` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Canada Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Canada East` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Central US` — Deployments Provisioned, Deployments Standard, Global coverage
+- `East US` — Deployments Provisioned, Deployments Standard, Global coverage
+- `East US 2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `France Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Germany West Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Italy North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Japan East` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Japan West` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Korea Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `North Central US` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Norway East` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Poland Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `South Africa North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `South Central US` — Deployments Provisioned, Deployments Standard, Global coverage
+- `South India` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Spain Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Switzerland North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Switzerland West` — Deployments Provisioned, Deployments Standard, Global coverage
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `UK South` — Deployments Provisioned, Deployments Standard, Global coverage
 - `UK West` — Deployments Provisioned, Deployments Standard, Global coverage
-- `West Central US` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `West Europe` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `West US` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `West US 2` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
-- `West US 3` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage
+- `West Central US` — Deployments Provisioned, Deployments Standard, Global coverage
+- `West Europe` — Deployments Provisioned, Deployments Standard, Global coverage
+- `West US` — Deployments Provisioned, Deployments Standard, Global coverage
+- `West US 2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `West US 3` — Deployments Provisioned, Deployments Standard, Global coverage
 
 </details>
 <details>
-<summary>DeepSeek-V3.2-Speciale — 31 regions across 3 SKU labels</summary>
+<summary>DeepSeek-V3.2-Speciale — 31 regions across 2 SKU labels</summary>
 
-- `Australia East` — Deployments Standard, Global Standard, Global coverage
-- `Brazil South` — Deployments Standard, Global Standard, Global coverage
-- `Canada Central` — Deployments Standard, Global Standard, Global coverage
-- `Canada East` — Deployments Standard, Global Standard, Global coverage
-- `Central US` — Deployments Standard, Global Standard, Global coverage
-- `East US` — Deployments Standard, Global Standard, Global coverage
-- `East US 2` — Deployments Standard, Global Standard, Global coverage
-- `France Central` — Deployments Standard, Global Standard, Global coverage
-- `Germany West Central` — Deployments Standard, Global Standard, Global coverage
-- `Italy North` — Deployments Standard, Global Standard, Global coverage
-- `Japan East` — Deployments Standard, Global Standard, Global coverage
-- `Japan West` — Deployments Standard, Global Standard, Global coverage
-- `Korea Central` — Deployments Standard, Global Standard, Global coverage
-- `North Central US` — Deployments Standard, Global Standard, Global coverage
-- `Norway East` — Deployments Standard, Global Standard, Global coverage
-- `Poland Central` — Deployments Standard, Global Standard, Global coverage
-- `South Africa North` — Deployments Standard, Global Standard, Global coverage
-- `South Central US` — Deployments Standard, Global Standard, Global coverage
-- `South India` — Deployments Standard, Global Standard, Global coverage
-- `Spain Central` — Deployments Standard, Global Standard, Global coverage
-- `Sweden Central` — Deployments Standard, Global Standard, Global coverage
-- `Switzerland North` — Deployments Standard, Global Standard, Global coverage
-- `Switzerland West` — Deployments Standard, Global Standard, Global coverage
-- `UAE North` — Deployments Standard, Global Standard, Global coverage
-- `UK South` — Deployments Standard, Global Standard, Global coverage
+- `Australia East` — Deployments Standard, Global coverage
+- `Brazil South` — Deployments Standard, Global coverage
+- `Canada Central` — Deployments Standard, Global coverage
+- `Canada East` — Deployments Standard, Global coverage
+- `Central US` — Deployments Standard, Global coverage
+- `East US` — Deployments Standard, Global coverage
+- `East US 2` — Deployments Standard, Global coverage
+- `France Central` — Deployments Standard, Global coverage
+- `Germany West Central` — Deployments Standard, Global coverage
+- `Italy North` — Deployments Standard, Global coverage
+- `Japan East` — Deployments Standard, Global coverage
+- `Japan West` — Deployments Standard, Global coverage
+- `Korea Central` — Deployments Standard, Global coverage
+- `North Central US` — Deployments Standard, Global coverage
+- `Norway East` — Deployments Standard, Global coverage
+- `Poland Central` — Deployments Standard, Global coverage
+- `South Africa North` — Deployments Standard, Global coverage
+- `South Central US` — Deployments Standard, Global coverage
+- `South India` — Deployments Standard, Global coverage
+- `Spain Central` — Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Standard, Global coverage
+- `Switzerland North` — Deployments Standard, Global coverage
+- `Switzerland West` — Deployments Standard, Global coverage
+- `UAE North` — Deployments Standard, Global coverage
+- `UK South` — Deployments Standard, Global coverage
 - `UK West` — Deployments Standard, Global coverage
-- `West Central US` — Deployments Standard, Global Standard, Global coverage
-- `West Europe` — Deployments Standard, Global Standard, Global coverage
-- `West US` — Deployments Standard, Global Standard, Global coverage
-- `West US 2` — Deployments Standard, Global Standard, Global coverage
-- `West US 3` — Deployments Standard, Global Standard, Global coverage
+- `West Central US` — Deployments Standard, Global coverage
+- `West Europe` — Deployments Standard, Global coverage
+- `West US` — Deployments Standard, Global coverage
+- `West US 2` — Deployments Standard, Global coverage
+- `West US 3` — Deployments Standard, Global coverage
 
 </details>
 <details>
@@ -583,183 +618,183 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>FLUX-1.1-pro — 31 regions across 4 SKU labels</summary>
+<summary>FLUX-1.1-pro — 31 regions across 2 SKU labels</summary>
 
-- `Australia East` — Deployments Standard, Global Standard, Global coverage
-- `Brazil South` — Deployments Standard, Global Standard, Global coverage
-- `Canada Central` — Deployments Standard, Global Standard, Global coverage
-- `Canada East` — Deployments Standard, Global Standard, Global coverage
-- `Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `East US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `East US 2` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `France Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Germany West Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Italy North` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Japan East` — Deployments Standard, Global Standard, Global coverage
-- `Japan West` — Deployments Standard, Global Standard, Global coverage
-- `Korea Central` — Deployments Standard, Global Standard, Global coverage
-- `North Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Norway East` — Deployments Standard, Global Standard, Global coverage
-- `Poland Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `South Africa North` — Deployments Standard, Global Standard, Global coverage
-- `South Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `South India` — Deployments Standard, Global Standard, Global coverage
-- `Spain Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Sweden Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Switzerland North` — Deployments Standard, Global Standard, Global coverage
-- `Switzerland West` — Deployments Standard, Global Standard, Global coverage
-- `UAE North` — Deployments Standard, Global Standard, Global coverage
-- `UK South` — Deployments Standard, Global Standard, Global coverage
+- `Australia East` — Deployments Standard, Global coverage
+- `Brazil South` — Deployments Standard, Global coverage
+- `Canada Central` — Deployments Standard, Global coverage
+- `Canada East` — Deployments Standard, Global coverage
+- `Central US` — Deployments Standard, Global coverage
+- `East US` — Deployments Standard, Global coverage
+- `East US 2` — Deployments Standard, Global coverage
+- `France Central` — Deployments Standard, Global coverage
+- `Germany West Central` — Deployments Standard, Global coverage
+- `Italy North` — Deployments Standard, Global coverage
+- `Japan East` — Deployments Standard, Global coverage
+- `Japan West` — Deployments Standard, Global coverage
+- `Korea Central` — Deployments Standard, Global coverage
+- `North Central US` — Deployments Standard, Global coverage
+- `Norway East` — Deployments Standard, Global coverage
+- `Poland Central` — Deployments Standard, Global coverage
+- `South Africa North` — Deployments Standard, Global coverage
+- `South Central US` — Deployments Standard, Global coverage
+- `South India` — Deployments Standard, Global coverage
+- `Spain Central` — Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Standard, Global coverage
+- `Switzerland North` — Deployments Standard, Global coverage
+- `Switzerland West` — Deployments Standard, Global coverage
+- `UAE North` — Deployments Standard, Global coverage
+- `UK South` — Deployments Standard, Global coverage
 - `UK West` — Deployments Standard, Global coverage
-- `West Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `West Europe` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `West US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `West US 2` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `West US 3` — Datazone standard, Deployments Standard, Global Standard, Global coverage
+- `West Central US` — Deployments Standard, Global coverage
+- `West Europe` — Deployments Standard, Global coverage
+- `West US` — Deployments Standard, Global coverage
+- `West US 2` — Deployments Standard, Global coverage
+- `West US 3` — Deployments Standard, Global coverage
 
 </details>
 <details>
-<summary>FLUX.1-Kontext-pro — 31 regions across 4 SKU labels</summary>
+<summary>FLUX.1-Kontext-pro — 31 regions across 2 SKU labels</summary>
 
-- `Australia East` — Deployments Standard, Global Standard, Global coverage
-- `Brazil South` — Deployments Standard, Global Standard, Global coverage
-- `Canada Central` — Deployments Standard, Global Standard, Global coverage
-- `Canada East` — Deployments Standard, Global Standard, Global coverage
-- `Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `East US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `East US 2` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `France Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Germany West Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Italy North` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Japan East` — Deployments Standard, Global Standard, Global coverage
-- `Japan West` — Deployments Standard, Global Standard, Global coverage
-- `Korea Central` — Deployments Standard, Global Standard, Global coverage
-- `North Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Norway East` — Deployments Standard, Global Standard, Global coverage
-- `Poland Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `South Africa North` — Deployments Standard, Global Standard, Global coverage
-- `South Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `South India` — Deployments Standard, Global Standard, Global coverage
-- `Spain Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Sweden Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Switzerland North` — Deployments Standard, Global Standard, Global coverage
-- `Switzerland West` — Deployments Standard, Global Standard, Global coverage
-- `UAE North` — Deployments Standard, Global Standard, Global coverage
-- `UK South` — Deployments Standard, Global Standard, Global coverage
+- `Australia East` — Deployments Standard, Global coverage
+- `Brazil South` — Deployments Standard, Global coverage
+- `Canada Central` — Deployments Standard, Global coverage
+- `Canada East` — Deployments Standard, Global coverage
+- `Central US` — Deployments Standard, Global coverage
+- `East US` — Deployments Standard, Global coverage
+- `East US 2` — Deployments Standard, Global coverage
+- `France Central` — Deployments Standard, Global coverage
+- `Germany West Central` — Deployments Standard, Global coverage
+- `Italy North` — Deployments Standard, Global coverage
+- `Japan East` — Deployments Standard, Global coverage
+- `Japan West` — Deployments Standard, Global coverage
+- `Korea Central` — Deployments Standard, Global coverage
+- `North Central US` — Deployments Standard, Global coverage
+- `Norway East` — Deployments Standard, Global coverage
+- `Poland Central` — Deployments Standard, Global coverage
+- `South Africa North` — Deployments Standard, Global coverage
+- `South Central US` — Deployments Standard, Global coverage
+- `South India` — Deployments Standard, Global coverage
+- `Spain Central` — Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Standard, Global coverage
+- `Switzerland North` — Deployments Standard, Global coverage
+- `Switzerland West` — Deployments Standard, Global coverage
+- `UAE North` — Deployments Standard, Global coverage
+- `UK South` — Deployments Standard, Global coverage
 - `UK West` — Deployments Standard, Global coverage
-- `West Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `West Europe` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `West US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `West US 2` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `West US 3` — Datazone standard, Deployments Standard, Global Standard, Global coverage
+- `West Central US` — Deployments Standard, Global coverage
+- `West Europe` — Deployments Standard, Global coverage
+- `West US` — Deployments Standard, Global coverage
+- `West US 2` — Deployments Standard, Global coverage
+- `West US 3` — Deployments Standard, Global coverage
 
 </details>
 <details>
-<summary>FLUX.2-flex — 31 regions across 3 SKU labels</summary>
+<summary>FLUX.2-flex — 31 regions across 2 SKU labels</summary>
 
-- `Australia East` — Deployments Standard, Global Standard, Global coverage
-- `Brazil South` — Deployments Standard, Global Standard, Global coverage
-- `Canada Central` — Deployments Standard, Global Standard, Global coverage
-- `Canada East` — Deployments Standard, Global Standard, Global coverage
-- `Central US` — Deployments Standard, Global Standard, Global coverage
-- `East US` — Deployments Standard, Global Standard, Global coverage
-- `East US 2` — Deployments Standard, Global Standard, Global coverage
-- `France Central` — Deployments Standard, Global Standard, Global coverage
-- `Germany West Central` — Deployments Standard, Global Standard, Global coverage
-- `Italy North` — Deployments Standard, Global Standard, Global coverage
-- `Japan East` — Deployments Standard, Global Standard, Global coverage
-- `Japan West` — Deployments Standard, Global Standard, Global coverage
-- `Korea Central` — Deployments Standard, Global Standard, Global coverage
-- `North Central US` — Deployments Standard, Global Standard, Global coverage
-- `Norway East` — Deployments Standard, Global Standard, Global coverage
-- `Poland Central` — Deployments Standard, Global Standard, Global coverage
-- `South Africa North` — Deployments Standard, Global Standard, Global coverage
-- `South Central US` — Deployments Standard, Global Standard, Global coverage
-- `South India` — Deployments Standard, Global Standard, Global coverage
-- `Spain Central` — Deployments Standard, Global Standard, Global coverage
-- `Sweden Central` — Deployments Standard, Global Standard, Global coverage
-- `Switzerland North` — Deployments Standard, Global Standard, Global coverage
-- `Switzerland West` — Deployments Standard, Global Standard, Global coverage
-- `UAE North` — Deployments Standard, Global Standard, Global coverage
-- `UK South` — Deployments Standard, Global Standard, Global coverage
+- `Australia East` — Deployments Standard, Global coverage
+- `Brazil South` — Deployments Standard, Global coverage
+- `Canada Central` — Deployments Standard, Global coverage
+- `Canada East` — Deployments Standard, Global coverage
+- `Central US` — Deployments Standard, Global coverage
+- `East US` — Deployments Standard, Global coverage
+- `East US 2` — Deployments Standard, Global coverage
+- `France Central` — Deployments Standard, Global coverage
+- `Germany West Central` — Deployments Standard, Global coverage
+- `Italy North` — Deployments Standard, Global coverage
+- `Japan East` — Deployments Standard, Global coverage
+- `Japan West` — Deployments Standard, Global coverage
+- `Korea Central` — Deployments Standard, Global coverage
+- `North Central US` — Deployments Standard, Global coverage
+- `Norway East` — Deployments Standard, Global coverage
+- `Poland Central` — Deployments Standard, Global coverage
+- `South Africa North` — Deployments Standard, Global coverage
+- `South Central US` — Deployments Standard, Global coverage
+- `South India` — Deployments Standard, Global coverage
+- `Spain Central` — Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Standard, Global coverage
+- `Switzerland North` — Deployments Standard, Global coverage
+- `Switzerland West` — Deployments Standard, Global coverage
+- `UAE North` — Deployments Standard, Global coverage
+- `UK South` — Deployments Standard, Global coverage
 - `UK West` — Deployments Standard, Global coverage
-- `West Central US` — Deployments Standard, Global Standard, Global coverage
-- `West Europe` — Deployments Standard, Global Standard, Global coverage
-- `West US` — Deployments Standard, Global Standard, Global coverage
-- `West US 2` — Deployments Standard, Global Standard, Global coverage
-- `West US 3` — Deployments Standard, Global Standard, Global coverage
+- `West Central US` — Deployments Standard, Global coverage
+- `West Europe` — Deployments Standard, Global coverage
+- `West US` — Deployments Standard, Global coverage
+- `West US 2` — Deployments Standard, Global coverage
+- `West US 3` — Deployments Standard, Global coverage
 
 </details>
 <details>
-<summary>FLUX.2-pro — 31 regions across 4 SKU labels</summary>
+<summary>FLUX.2-pro — 31 regions across 2 SKU labels</summary>
 
-- `Australia East` — Deployments Standard, Global Standard, Global coverage
-- `Brazil South` — Deployments Standard, Global Standard, Global coverage
-- `Canada Central` — Deployments Standard, Global Standard, Global coverage
-- `Canada East` — Deployments Standard, Global Standard, Global coverage
-- `Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `East US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `East US 2` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `France Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Germany West Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Italy North` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Japan East` — Deployments Standard, Global Standard, Global coverage
-- `Japan West` — Deployments Standard, Global Standard, Global coverage
-- `Korea Central` — Deployments Standard, Global Standard, Global coverage
-- `North Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Norway East` — Deployments Standard, Global Standard, Global coverage
-- `Poland Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `South Africa North` — Deployments Standard, Global Standard, Global coverage
-- `South Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `South India` — Deployments Standard, Global Standard, Global coverage
-- `Spain Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Sweden Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Switzerland North` — Deployments Standard, Global Standard, Global coverage
-- `Switzerland West` — Deployments Standard, Global Standard, Global coverage
-- `UAE North` — Deployments Standard, Global Standard, Global coverage
-- `UK South` — Deployments Standard, Global Standard, Global coverage
+- `Australia East` — Deployments Standard, Global coverage
+- `Brazil South` — Deployments Standard, Global coverage
+- `Canada Central` — Deployments Standard, Global coverage
+- `Canada East` — Deployments Standard, Global coverage
+- `Central US` — Deployments Standard, Global coverage
+- `East US` — Deployments Standard, Global coverage
+- `East US 2` — Deployments Standard, Global coverage
+- `France Central` — Deployments Standard, Global coverage
+- `Germany West Central` — Deployments Standard, Global coverage
+- `Italy North` — Deployments Standard, Global coverage
+- `Japan East` — Deployments Standard, Global coverage
+- `Japan West` — Deployments Standard, Global coverage
+- `Korea Central` — Deployments Standard, Global coverage
+- `North Central US` — Deployments Standard, Global coverage
+- `Norway East` — Deployments Standard, Global coverage
+- `Poland Central` — Deployments Standard, Global coverage
+- `South Africa North` — Deployments Standard, Global coverage
+- `South Central US` — Deployments Standard, Global coverage
+- `South India` — Deployments Standard, Global coverage
+- `Spain Central` — Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Standard, Global coverage
+- `Switzerland North` — Deployments Standard, Global coverage
+- `Switzerland West` — Deployments Standard, Global coverage
+- `UAE North` — Deployments Standard, Global coverage
+- `UK South` — Deployments Standard, Global coverage
 - `UK West` — Deployments Standard, Global coverage
-- `West Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `West Europe` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `West US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `West US 2` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `West US 3` — Datazone standard, Deployments Standard, Global Standard, Global coverage
+- `West Central US` — Deployments Standard, Global coverage
+- `West Europe` — Deployments Standard, Global coverage
+- `West US` — Deployments Standard, Global coverage
+- `West US 2` — Deployments Standard, Global coverage
+- `West US 3` — Deployments Standard, Global coverage
 
 </details>
 <details>
-<summary>Kimi-K2.5 — 31 regions across 3 SKU labels</summary>
+<summary>Kimi-K2.5 — 31 regions across 2 SKU labels</summary>
 
-- `Australia East` — Deployments Standard, Global Standard, Global coverage
-- `Brazil South` — Deployments Standard, Global Standard, Global coverage
-- `Canada Central` — Deployments Standard, Global Standard, Global coverage
-- `Canada East` — Deployments Standard, Global Standard, Global coverage
-- `Central US` — Deployments Standard, Global Standard, Global coverage
-- `East US` — Deployments Standard, Global Standard, Global coverage
-- `East US 2` — Deployments Standard, Global Standard, Global coverage
-- `France Central` — Deployments Standard, Global Standard, Global coverage
-- `Germany West Central` — Deployments Standard, Global Standard, Global coverage
-- `Italy North` — Deployments Standard, Global Standard, Global coverage
-- `Japan East` — Deployments Standard, Global Standard, Global coverage
-- `Japan West` — Deployments Standard, Global Standard, Global coverage
-- `Korea Central` — Deployments Standard, Global Standard, Global coverage
-- `North Central US` — Deployments Standard, Global Standard, Global coverage
-- `Norway East` — Deployments Standard, Global Standard, Global coverage
-- `Poland Central` — Deployments Standard, Global Standard, Global coverage
-- `South Africa North` — Deployments Standard, Global Standard, Global coverage
-- `South Central US` — Deployments Standard, Global Standard, Global coverage
-- `South India` — Deployments Standard, Global Standard, Global coverage
-- `Spain Central` — Deployments Standard, Global Standard, Global coverage
-- `Sweden Central` — Deployments Standard, Global Standard, Global coverage
-- `Switzerland North` — Deployments Standard, Global Standard, Global coverage
-- `Switzerland West` — Deployments Standard, Global Standard, Global coverage
-- `UAE North` — Deployments Standard, Global Standard, Global coverage
-- `UK South` — Deployments Standard, Global Standard, Global coverage
+- `Australia East` — Deployments Standard, Global coverage
+- `Brazil South` — Deployments Standard, Global coverage
+- `Canada Central` — Deployments Standard, Global coverage
+- `Canada East` — Deployments Standard, Global coverage
+- `Central US` — Deployments Standard, Global coverage
+- `East US` — Deployments Standard, Global coverage
+- `East US 2` — Deployments Standard, Global coverage
+- `France Central` — Deployments Standard, Global coverage
+- `Germany West Central` — Deployments Standard, Global coverage
+- `Italy North` — Deployments Standard, Global coverage
+- `Japan East` — Deployments Standard, Global coverage
+- `Japan West` — Deployments Standard, Global coverage
+- `Korea Central` — Deployments Standard, Global coverage
+- `North Central US` — Deployments Standard, Global coverage
+- `Norway East` — Deployments Standard, Global coverage
+- `Poland Central` — Deployments Standard, Global coverage
+- `South Africa North` — Deployments Standard, Global coverage
+- `South Central US` — Deployments Standard, Global coverage
+- `South India` — Deployments Standard, Global coverage
+- `Spain Central` — Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Standard, Global coverage
+- `Switzerland North` — Deployments Standard, Global coverage
+- `Switzerland West` — Deployments Standard, Global coverage
+- `UAE North` — Deployments Standard, Global coverage
+- `UK South` — Deployments Standard, Global coverage
 - `UK West` — Deployments Standard, Global coverage
-- `West Central US` — Deployments Standard, Global Standard, Global coverage
-- `West Europe` — Deployments Standard, Global Standard, Global coverage
-- `West US` — Deployments Standard, Global Standard, Global coverage
-- `West US 2` — Deployments Standard, Global Standard, Global coverage
-- `West US 3` — Deployments Standard, Global Standard, Global coverage
+- `West Central US` — Deployments Standard, Global coverage
+- `West Europe` — Deployments Standard, Global coverage
+- `West US` — Deployments Standard, Global coverage
+- `West US 2` — Deployments Standard, Global coverage
+- `West US 3` — Deployments Standard, Global coverage
 
 </details>
 <details>
@@ -835,111 +870,219 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>Llama-3.3-70B-Instruct — 31 regions across 6 SKU labels</summary>
+<summary>Llama-3.3-70B-Instruct — 31 regions across 4 SKU labels</summary>
 
-- `Australia East` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Brazil South` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Canada Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Canada East` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Central US` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `East US` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
-- `East US 2` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
-- `France Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Germany West Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Italy North` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Japan East` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Japan West` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Korea Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `North Central US` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
-- `Norway East` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Poland Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `South Africa North` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `South Central US` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
-- `South India` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Spain Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Sweden Central` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
-- `Switzerland North` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `Switzerland West` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `UAE North` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `UK South` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
+- `Australia East` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Brazil South` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Canada Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Canada East` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Central US` — Deployments Provisioned, Deployments Standard, Global coverage
+- `East US` — Deployments Provisioned, Deployments Standard, Global coverage, Region Availability Maas
+- `East US 2` — Deployments Provisioned, Deployments Standard, Global coverage, Region Availability Maas
+- `France Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Germany West Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Italy North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Japan East` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Japan West` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Korea Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `North Central US` — Deployments Provisioned, Deployments Standard, Global coverage, Region Availability Maas
+- `Norway East` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Poland Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `South Africa North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `South Central US` — Deployments Provisioned, Deployments Standard, Global coverage, Region Availability Maas
+- `South India` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Spain Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Provisioned, Deployments Standard, Global coverage, Region Availability Maas
+- `Switzerland North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Switzerland West` — Deployments Provisioned, Deployments Standard, Global coverage
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `UK South` — Deployments Provisioned, Deployments Standard, Global coverage
 - `UK West` — Deployments Provisioned, Deployments Standard, Global coverage
-- `West Central US` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `West Europe` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `West US` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
-- `West US 2` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage
-- `West US 3` — Deployments Provisioned, Deployments Standard, Global Provisioned Managed, Global Standard, Global coverage, Region Availability Maas
+- `West Central US` — Deployments Provisioned, Deployments Standard, Global coverage
+- `West Europe` — Deployments Provisioned, Deployments Standard, Global coverage
+- `West US` — Deployments Provisioned, Deployments Standard, Global coverage, Region Availability Maas
+- `West US 2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `West US 3` — Deployments Provisioned, Deployments Standard, Global coverage, Region Availability Maas
 
 </details>
 <details>
-<summary>Llama-4-Maverick-17B-128E-Instruct-FP8 — 31 regions across 3 SKU labels</summary>
+<summary>Llama-4-Maverick-17B-128E-Instruct-FP8 — 31 regions across 2 SKU labels</summary>
 
-- `Australia East` — Deployments Standard, Global Standard, Global coverage
-- `Brazil South` — Deployments Standard, Global Standard, Global coverage
-- `Canada Central` — Deployments Standard, Global Standard, Global coverage
-- `Canada East` — Deployments Standard, Global Standard, Global coverage
-- `Central US` — Deployments Standard, Global Standard, Global coverage
-- `East US` — Deployments Standard, Global Standard, Global coverage
-- `East US 2` — Deployments Standard, Global Standard, Global coverage
-- `France Central` — Deployments Standard, Global Standard, Global coverage
-- `Germany West Central` — Deployments Standard, Global Standard, Global coverage
-- `Italy North` — Deployments Standard, Global Standard, Global coverage
-- `Japan East` — Deployments Standard, Global Standard, Global coverage
-- `Japan West` — Deployments Standard, Global Standard, Global coverage
-- `Korea Central` — Deployments Standard, Global Standard, Global coverage
-- `North Central US` — Deployments Standard, Global Standard, Global coverage
-- `Norway East` — Deployments Standard, Global Standard, Global coverage
-- `Poland Central` — Deployments Standard, Global Standard, Global coverage
-- `South Africa North` — Deployments Standard, Global Standard, Global coverage
-- `South Central US` — Deployments Standard, Global Standard, Global coverage
-- `South India` — Deployments Standard, Global Standard, Global coverage
-- `Spain Central` — Deployments Standard, Global Standard, Global coverage
-- `Sweden Central` — Deployments Standard, Global Standard, Global coverage
-- `Switzerland North` — Deployments Standard, Global Standard, Global coverage
-- `Switzerland West` — Deployments Standard, Global Standard, Global coverage
-- `UAE North` — Deployments Standard, Global Standard, Global coverage
-- `UK South` — Deployments Standard, Global Standard, Global coverage
+- `Australia East` — Deployments Standard, Global coverage
+- `Brazil South` — Deployments Standard, Global coverage
+- `Canada Central` — Deployments Standard, Global coverage
+- `Canada East` — Deployments Standard, Global coverage
+- `Central US` — Deployments Standard, Global coverage
+- `East US` — Deployments Standard, Global coverage
+- `East US 2` — Deployments Standard, Global coverage
+- `France Central` — Deployments Standard, Global coverage
+- `Germany West Central` — Deployments Standard, Global coverage
+- `Italy North` — Deployments Standard, Global coverage
+- `Japan East` — Deployments Standard, Global coverage
+- `Japan West` — Deployments Standard, Global coverage
+- `Korea Central` — Deployments Standard, Global coverage
+- `North Central US` — Deployments Standard, Global coverage
+- `Norway East` — Deployments Standard, Global coverage
+- `Poland Central` — Deployments Standard, Global coverage
+- `South Africa North` — Deployments Standard, Global coverage
+- `South Central US` — Deployments Standard, Global coverage
+- `South India` — Deployments Standard, Global coverage
+- `Spain Central` — Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Standard, Global coverage
+- `Switzerland North` — Deployments Standard, Global coverage
+- `Switzerland West` — Deployments Standard, Global coverage
+- `UAE North` — Deployments Standard, Global coverage
+- `UK South` — Deployments Standard, Global coverage
 - `UK West` — Deployments Standard, Global coverage
-- `West Central US` — Deployments Standard, Global Standard, Global coverage
-- `West Europe` — Deployments Standard, Global Standard, Global coverage
-- `West US` — Deployments Standard, Global Standard, Global coverage
-- `West US 2` — Deployments Standard, Global Standard, Global coverage
-- `West US 3` — Deployments Standard, Global Standard, Global coverage
+- `West Central US` — Deployments Standard, Global coverage
+- `West Europe` — Deployments Standard, Global coverage
+- `West US` — Deployments Standard, Global coverage
+- `West US 2` — Deployments Standard, Global coverage
+- `West US 3` — Deployments Standard, Global coverage
 
 </details>
 <details>
-<summary>Mistral-Large-3 — 31 regions across 4 SKU labels</summary>
+<summary>Llama-4-Scout-17B-16E-Instruct — 31 regions across 2 SKU labels</summary>
 
-- `Australia East` — Deployments Standard, Global Standard, Global coverage
-- `Brazil South` — Deployments Standard, Global Standard, Global coverage
-- `Canada Central` — Deployments Standard, Global Standard, Global coverage
-- `Canada East` — Deployments Standard, Global Standard, Global coverage
-- `Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `East US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `East US 2` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `France Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Germany West Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Italy North` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Japan East` — Deployments Standard, Global Standard, Global coverage
-- `Japan West` — Deployments Standard, Global Standard, Global coverage
-- `Korea Central` — Deployments Standard, Global Standard, Global coverage
-- `North Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Norway East` — Deployments Standard, Global Standard, Global coverage
-- `Poland Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `South Africa North` — Deployments Standard, Global Standard, Global coverage
-- `South Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `South India` — Deployments Standard, Global Standard, Global coverage
-- `Spain Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Sweden Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Switzerland North` — Deployments Standard, Global Standard, Global coverage
-- `Switzerland West` — Deployments Standard, Global Standard, Global coverage
-- `UAE North` — Deployments Standard, Global Standard, Global coverage
-- `UK South` — Deployments Standard, Global Standard, Global coverage
+- `Australia East` — Global coverage, Marketplace Deployments Standard
+- `Brazil South` — Global coverage, Marketplace Deployments Standard
+- `Canada Central` — Global coverage, Marketplace Deployments Standard
+- `Canada East` — Global coverage, Marketplace Deployments Standard
+- `Central US` — Global coverage, Marketplace Deployments Standard
+- `East US` — Global coverage, Marketplace Deployments Standard
+- `East US 2` — Global coverage, Marketplace Deployments Standard
+- `France Central` — Global coverage, Marketplace Deployments Standard
+- `Germany West Central` — Global coverage, Marketplace Deployments Standard
+- `Italy North` — Global coverage, Marketplace Deployments Standard
+- `Japan East` — Global coverage, Marketplace Deployments Standard
+- `Japan West` — Global coverage, Marketplace Deployments Standard
+- `Korea Central` — Global coverage, Marketplace Deployments Standard
+- `North Central US` — Global coverage, Marketplace Deployments Standard
+- `Norway East` — Global coverage, Marketplace Deployments Standard
+- `Poland Central` — Global coverage, Marketplace Deployments Standard
+- `South Africa North` — Global coverage, Marketplace Deployments Standard
+- `South Central US` — Global coverage, Marketplace Deployments Standard
+- `South India` — Global coverage, Marketplace Deployments Standard
+- `Spain Central` — Global coverage, Marketplace Deployments Standard
+- `Sweden Central` — Global coverage, Marketplace Deployments Standard
+- `Switzerland North` — Global coverage, Marketplace Deployments Standard
+- `Switzerland West` — Global coverage, Marketplace Deployments Standard
+- `UAE North` — Global coverage, Marketplace Deployments Standard
+- `UK South` — Global coverage, Marketplace Deployments Standard
+- `UK West` — Global coverage, Marketplace Deployments Standard
+- `West Central US` — Global coverage, Marketplace Deployments Standard
+- `West Europe` — Global coverage, Marketplace Deployments Standard
+- `West US` — Global coverage, Marketplace Deployments Standard
+- `West US 2` — Global coverage, Marketplace Deployments Standard
+- `West US 3` — Global coverage, Marketplace Deployments Standard
+
+</details>
+<details>
+<summary>Ministral-3B — 31 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Marketplace Deployments Standard
+- `Brazil South` — Global coverage, Marketplace Deployments Standard
+- `Canada Central` — Global coverage, Marketplace Deployments Standard
+- `Canada East` — Global coverage, Marketplace Deployments Standard
+- `Central US` — Global coverage, Marketplace Deployments Standard
+- `East US` — Global coverage, Marketplace Deployments Standard, Region Availability Maas
+- `East US 2` — Global coverage, Marketplace Deployments Standard, Region Availability Maas
+- `France Central` — Global coverage, Marketplace Deployments Standard
+- `Germany West Central` — Global coverage, Marketplace Deployments Standard
+- `Italy North` — Global coverage, Marketplace Deployments Standard
+- `Japan East` — Global coverage, Marketplace Deployments Standard
+- `Japan West` — Global coverage, Marketplace Deployments Standard
+- `Korea Central` — Global coverage, Marketplace Deployments Standard
+- `North Central US` — Global coverage, Marketplace Deployments Standard, Region Availability Maas
+- `Norway East` — Global coverage, Marketplace Deployments Standard
+- `Poland Central` — Global coverage, Marketplace Deployments Standard
+- `South Africa North` — Global coverage, Marketplace Deployments Standard
+- `South Central US` — Global coverage, Marketplace Deployments Standard, Region Availability Maas
+- `South India` — Global coverage, Marketplace Deployments Standard
+- `Spain Central` — Global coverage, Marketplace Deployments Standard
+- `Sweden Central` — Global coverage, Marketplace Deployments Standard, Region Availability Maas
+- `Switzerland North` — Global coverage, Marketplace Deployments Standard
+- `Switzerland West` — Global coverage, Marketplace Deployments Standard
+- `UAE North` — Global coverage, Marketplace Deployments Standard
+- `UK South` — Global coverage, Marketplace Deployments Standard
+- `UK West` — Global coverage, Marketplace Deployments Standard
+- `West Central US` — Global coverage, Marketplace Deployments Standard
+- `West Europe` — Global coverage, Marketplace Deployments Standard
+- `West US` — Global coverage, Marketplace Deployments Standard, Region Availability Maas
+- `West US 2` — Global coverage, Marketplace Deployments Standard
+- `West US 3` — Global coverage, Marketplace Deployments Standard, Region Availability Maas
+
+</details>
+<details>
+<summary>Mistral-Large-3 — 31 regions across 2 SKU labels</summary>
+
+- `Australia East` — Deployments Standard, Global coverage
+- `Brazil South` — Deployments Standard, Global coverage
+- `Canada Central` — Deployments Standard, Global coverage
+- `Canada East` — Deployments Standard, Global coverage
+- `Central US` — Deployments Standard, Global coverage
+- `East US` — Deployments Standard, Global coverage
+- `East US 2` — Deployments Standard, Global coverage
+- `France Central` — Deployments Standard, Global coverage
+- `Germany West Central` — Deployments Standard, Global coverage
+- `Italy North` — Deployments Standard, Global coverage
+- `Japan East` — Deployments Standard, Global coverage
+- `Japan West` — Deployments Standard, Global coverage
+- `Korea Central` — Deployments Standard, Global coverage
+- `North Central US` — Deployments Standard, Global coverage
+- `Norway East` — Deployments Standard, Global coverage
+- `Poland Central` — Deployments Standard, Global coverage
+- `South Africa North` — Deployments Standard, Global coverage
+- `South Central US` — Deployments Standard, Global coverage
+- `South India` — Deployments Standard, Global coverage
+- `Spain Central` — Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Standard, Global coverage
+- `Switzerland North` — Deployments Standard, Global coverage
+- `Switzerland West` — Deployments Standard, Global coverage
+- `UAE North` — Deployments Standard, Global coverage
+- `UK South` — Deployments Standard, Global coverage
 - `UK West` — Deployments Standard, Global coverage
-- `West Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `West Europe` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `West US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `West US 2` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `West US 3` — Datazone standard, Deployments Standard, Global Standard, Global coverage
+- `West Central US` — Deployments Standard, Global coverage
+- `West Europe` — Deployments Standard, Global coverage
+- `West US` — Deployments Standard, Global coverage
+- `West US 2` — Deployments Standard, Global coverage
+- `West US 3` — Deployments Standard, Global coverage
+
+</details>
+<details>
+<summary>Mistral-large — 31 regions across 2 SKU labels</summary>
+
+- `Australia East` — Global coverage, Marketplace Deployments Standard
+- `Brazil South` — Global coverage, Marketplace Deployments Standard
+- `Canada Central` — Global coverage, Marketplace Deployments Standard
+- `Canada East` — Global coverage, Marketplace Deployments Standard
+- `Central US` — Global coverage, Marketplace Deployments Standard
+- `East US` — Global coverage, Marketplace Deployments Standard
+- `East US 2` — Global coverage, Marketplace Deployments Standard
+- `France Central` — Global coverage, Marketplace Deployments Standard
+- `Germany West Central` — Global coverage, Marketplace Deployments Standard
+- `Italy North` — Global coverage, Marketplace Deployments Standard
+- `Japan East` — Global coverage, Marketplace Deployments Standard
+- `Japan West` — Global coverage, Marketplace Deployments Standard
+- `Korea Central` — Global coverage, Marketplace Deployments Standard
+- `North Central US` — Global coverage, Marketplace Deployments Standard
+- `Norway East` — Global coverage, Marketplace Deployments Standard
+- `Poland Central` — Global coverage, Marketplace Deployments Standard
+- `South Africa North` — Global coverage, Marketplace Deployments Standard
+- `South Central US` — Global coverage, Marketplace Deployments Standard
+- `South India` — Global coverage, Marketplace Deployments Standard
+- `Spain Central` — Global coverage, Marketplace Deployments Standard
+- `Sweden Central` — Global coverage, Marketplace Deployments Standard
+- `Switzerland North` — Global coverage, Marketplace Deployments Standard
+- `Switzerland West` — Global coverage, Marketplace Deployments Standard
+- `UAE North` — Global coverage, Marketplace Deployments Standard
+- `UK South` — Global coverage, Marketplace Deployments Standard
+- `UK West` — Global coverage, Marketplace Deployments Standard
+- `West Central US` — Global coverage, Marketplace Deployments Standard
+- `West Europe` — Global coverage, Marketplace Deployments Standard
+- `West US` — Global coverage, Marketplace Deployments Standard
+- `West US 2` — Global coverage, Marketplace Deployments Standard
+- `West US 3` — Global coverage, Marketplace Deployments Standard
 
 </details>
 <details>
@@ -1123,111 +1266,111 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>cohere-command-a — 31 regions across 3 SKU labels</summary>
+<summary>cohere-command-a — 31 regions across 2 SKU labels</summary>
 
-- `Australia East` — Deployments Standard, Global Standard, Global coverage
-- `Brazil South` — Deployments Standard, Global Standard, Global coverage
-- `Canada Central` — Deployments Standard, Global Standard, Global coverage
-- `Canada East` — Deployments Standard, Global Standard, Global coverage
-- `Central US` — Deployments Standard, Global Standard, Global coverage
-- `East US` — Deployments Standard, Global Standard, Global coverage
-- `East US 2` — Deployments Standard, Global Standard, Global coverage
-- `France Central` — Deployments Standard, Global Standard, Global coverage
-- `Germany West Central` — Deployments Standard, Global Standard, Global coverage
-- `Italy North` — Deployments Standard, Global Standard, Global coverage
-- `Japan East` — Deployments Standard, Global Standard, Global coverage
-- `Japan West` — Deployments Standard, Global Standard, Global coverage
-- `Korea Central` — Deployments Standard, Global Standard, Global coverage
-- `North Central US` — Deployments Standard, Global Standard, Global coverage
-- `Norway East` — Deployments Standard, Global Standard, Global coverage
-- `Poland Central` — Deployments Standard, Global Standard, Global coverage
-- `South Africa North` — Deployments Standard, Global Standard, Global coverage
-- `South Central US` — Deployments Standard, Global Standard, Global coverage
-- `South India` — Deployments Standard, Global Standard, Global coverage
-- `Spain Central` — Deployments Standard, Global Standard, Global coverage
-- `Sweden Central` — Deployments Standard, Global Standard, Global coverage
-- `Switzerland North` — Deployments Standard, Global Standard, Global coverage
-- `Switzerland West` — Deployments Standard, Global Standard, Global coverage
-- `UAE North` — Deployments Standard, Global Standard, Global coverage
-- `UK South` — Deployments Standard, Global Standard, Global coverage
+- `Australia East` — Deployments Standard, Global coverage
+- `Brazil South` — Deployments Standard, Global coverage
+- `Canada Central` — Deployments Standard, Global coverage
+- `Canada East` — Deployments Standard, Global coverage
+- `Central US` — Deployments Standard, Global coverage
+- `East US` — Deployments Standard, Global coverage
+- `East US 2` — Deployments Standard, Global coverage
+- `France Central` — Deployments Standard, Global coverage
+- `Germany West Central` — Deployments Standard, Global coverage
+- `Italy North` — Deployments Standard, Global coverage
+- `Japan East` — Deployments Standard, Global coverage
+- `Japan West` — Deployments Standard, Global coverage
+- `Korea Central` — Deployments Standard, Global coverage
+- `North Central US` — Deployments Standard, Global coverage
+- `Norway East` — Deployments Standard, Global coverage
+- `Poland Central` — Deployments Standard, Global coverage
+- `South Africa North` — Deployments Standard, Global coverage
+- `South Central US` — Deployments Standard, Global coverage
+- `South India` — Deployments Standard, Global coverage
+- `Spain Central` — Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Standard, Global coverage
+- `Switzerland North` — Deployments Standard, Global coverage
+- `Switzerland West` — Deployments Standard, Global coverage
+- `UAE North` — Deployments Standard, Global coverage
+- `UK South` — Deployments Standard, Global coverage
 - `UK West` — Deployments Standard, Global coverage
-- `West Central US` — Deployments Standard, Global Standard, Global coverage
-- `West Europe` — Deployments Standard, Global Standard, Global coverage
-- `West US` — Deployments Standard, Global Standard, Global coverage
-- `West US 2` — Deployments Standard, Global Standard, Global coverage
-- `West US 3` — Deployments Standard, Global Standard, Global coverage
+- `West Central US` — Deployments Standard, Global coverage
+- `West Europe` — Deployments Standard, Global coverage
+- `West US` — Deployments Standard, Global coverage
+- `West US 2` — Deployments Standard, Global coverage
+- `West US 3` — Deployments Standard, Global coverage
 
 </details>
 <details>
-<summary>grok-4-1-fast-non-reasoning — 31 regions across 4 SKU labels</summary>
+<summary>grok-4-1-fast-non-reasoning — 31 regions across 2 SKU labels</summary>
 
-- `Australia East` — Deployments Standard, Global Standard, Global coverage
-- `Brazil South` — Deployments Standard, Global Standard, Global coverage
-- `Canada Central` — Deployments Standard, Global Standard, Global coverage
-- `Canada East` — Deployments Standard, Global Standard, Global coverage
-- `Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `East US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `East US 2` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `France Central` — Deployments Standard, Global Standard, Global coverage
-- `Germany West Central` — Deployments Standard, Global Standard, Global coverage
-- `Italy North` — Deployments Standard, Global Standard, Global coverage
-- `Japan East` — Deployments Standard, Global Standard, Global coverage
-- `Japan West` — Deployments Standard, Global Standard, Global coverage
-- `Korea Central` — Deployments Standard, Global Standard, Global coverage
-- `North Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Norway East` — Deployments Standard, Global Standard, Global coverage
-- `Poland Central` — Deployments Standard, Global Standard, Global coverage
-- `South Africa North` — Deployments Standard, Global Standard, Global coverage
-- `South Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `South India` — Deployments Standard, Global Standard, Global coverage
-- `Spain Central` — Deployments Standard, Global Standard, Global coverage
-- `Sweden Central` — Deployments Standard, Global Standard, Global coverage
-- `Switzerland North` — Deployments Standard, Global Standard, Global coverage
-- `Switzerland West` — Deployments Standard, Global Standard, Global coverage
-- `UAE North` — Deployments Standard, Global Standard, Global coverage
-- `UK South` — Deployments Standard, Global Standard, Global coverage
+- `Australia East` — Deployments Standard, Global coverage
+- `Brazil South` — Deployments Standard, Global coverage
+- `Canada Central` — Deployments Standard, Global coverage
+- `Canada East` — Deployments Standard, Global coverage
+- `Central US` — Deployments Standard, Global coverage
+- `East US` — Deployments Standard, Global coverage
+- `East US 2` — Deployments Standard, Global coverage
+- `France Central` — Deployments Standard, Global coverage
+- `Germany West Central` — Deployments Standard, Global coverage
+- `Italy North` — Deployments Standard, Global coverage
+- `Japan East` — Deployments Standard, Global coverage
+- `Japan West` — Deployments Standard, Global coverage
+- `Korea Central` — Deployments Standard, Global coverage
+- `North Central US` — Deployments Standard, Global coverage
+- `Norway East` — Deployments Standard, Global coverage
+- `Poland Central` — Deployments Standard, Global coverage
+- `South Africa North` — Deployments Standard, Global coverage
+- `South Central US` — Deployments Standard, Global coverage
+- `South India` — Deployments Standard, Global coverage
+- `Spain Central` — Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Standard, Global coverage
+- `Switzerland North` — Deployments Standard, Global coverage
+- `Switzerland West` — Deployments Standard, Global coverage
+- `UAE North` — Deployments Standard, Global coverage
+- `UK South` — Deployments Standard, Global coverage
 - `UK West` — Deployments Standard, Global coverage
-- `West Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `West Europe` — Deployments Standard, Global Standard, Global coverage
-- `West US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `West US 2` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `West US 3` — Datazone standard, Deployments Standard, Global Standard, Global coverage
+- `West Central US` — Deployments Standard, Global coverage
+- `West Europe` — Deployments Standard, Global coverage
+- `West US` — Deployments Standard, Global coverage
+- `West US 2` — Deployments Standard, Global coverage
+- `West US 3` — Deployments Standard, Global coverage
 
 </details>
 <details>
-<summary>grok-4-1-fast-reasoning — 31 regions across 4 SKU labels</summary>
+<summary>grok-4-1-fast-reasoning — 31 regions across 2 SKU labels</summary>
 
-- `Australia East` — Deployments Standard, Global Standard, Global coverage
-- `Brazil South` — Deployments Standard, Global Standard, Global coverage
-- `Canada Central` — Deployments Standard, Global Standard, Global coverage
-- `Canada East` — Deployments Standard, Global Standard, Global coverage
-- `Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `East US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `East US 2` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `France Central` — Deployments Standard, Global Standard, Global coverage
-- `Germany West Central` — Deployments Standard, Global Standard, Global coverage
-- `Italy North` — Deployments Standard, Global Standard, Global coverage
-- `Japan East` — Deployments Standard, Global Standard, Global coverage
-- `Japan West` — Deployments Standard, Global Standard, Global coverage
-- `Korea Central` — Deployments Standard, Global Standard, Global coverage
-- `North Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `Norway East` — Deployments Standard, Global Standard, Global coverage
-- `Poland Central` — Deployments Standard, Global Standard, Global coverage
-- `South Africa North` — Deployments Standard, Global Standard, Global coverage
-- `South Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `South India` — Deployments Standard, Global Standard, Global coverage
-- `Spain Central` — Deployments Standard, Global Standard, Global coverage
-- `Sweden Central` — Deployments Standard, Global Standard, Global coverage
-- `Switzerland North` — Deployments Standard, Global Standard, Global coverage
-- `Switzerland West` — Deployments Standard, Global Standard, Global coverage
-- `UAE North` — Deployments Standard, Global Standard, Global coverage
-- `UK South` — Deployments Standard, Global Standard, Global coverage
+- `Australia East` — Deployments Standard, Global coverage
+- `Brazil South` — Deployments Standard, Global coverage
+- `Canada Central` — Deployments Standard, Global coverage
+- `Canada East` — Deployments Standard, Global coverage
+- `Central US` — Deployments Standard, Global coverage
+- `East US` — Deployments Standard, Global coverage
+- `East US 2` — Deployments Standard, Global coverage
+- `France Central` — Deployments Standard, Global coverage
+- `Germany West Central` — Deployments Standard, Global coverage
+- `Italy North` — Deployments Standard, Global coverage
+- `Japan East` — Deployments Standard, Global coverage
+- `Japan West` — Deployments Standard, Global coverage
+- `Korea Central` — Deployments Standard, Global coverage
+- `North Central US` — Deployments Standard, Global coverage
+- `Norway East` — Deployments Standard, Global coverage
+- `Poland Central` — Deployments Standard, Global coverage
+- `South Africa North` — Deployments Standard, Global coverage
+- `South Central US` — Deployments Standard, Global coverage
+- `South India` — Deployments Standard, Global coverage
+- `Spain Central` — Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Standard, Global coverage
+- `Switzerland North` — Deployments Standard, Global coverage
+- `Switzerland West` — Deployments Standard, Global coverage
+- `UAE North` — Deployments Standard, Global coverage
+- `UK South` — Deployments Standard, Global coverage
 - `UK West` — Deployments Standard, Global coverage
-- `West Central US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `West Europe` — Deployments Standard, Global Standard, Global coverage
-- `West US` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `West US 2` — Datazone standard, Deployments Standard, Global Standard, Global coverage
-- `West US 3` — Datazone standard, Deployments Standard, Global Standard, Global coverage
+- `West Central US` — Deployments Standard, Global coverage
+- `West Europe` — Deployments Standard, Global coverage
+- `West US` — Deployments Standard, Global coverage
+- `West US 2` — Deployments Standard, Global coverage
+- `West US 3` — Deployments Standard, Global coverage
 
 </details>
 <details>
@@ -1339,6 +1482,42 @@ SKU labels observed:
 
 </details>
 <details>
+<summary>mistral-medium-2505 — 31 regions across 2 SKU labels</summary>
+
+- `Australia East` — Global coverage, Marketplace Deployments Standard
+- `Brazil South` — Global coverage, Marketplace Deployments Standard
+- `Canada Central` — Global coverage, Marketplace Deployments Standard
+- `Canada East` — Global coverage, Marketplace Deployments Standard
+- `Central US` — Global coverage, Marketplace Deployments Standard
+- `East US` — Global coverage, Marketplace Deployments Standard
+- `East US 2` — Global coverage, Marketplace Deployments Standard
+- `France Central` — Global coverage, Marketplace Deployments Standard
+- `Germany West Central` — Global coverage, Marketplace Deployments Standard
+- `Italy North` — Global coverage, Marketplace Deployments Standard
+- `Japan East` — Global coverage, Marketplace Deployments Standard
+- `Japan West` — Global coverage, Marketplace Deployments Standard
+- `Korea Central` — Global coverage, Marketplace Deployments Standard
+- `North Central US` — Global coverage, Marketplace Deployments Standard
+- `Norway East` — Global coverage, Marketplace Deployments Standard
+- `Poland Central` — Global coverage, Marketplace Deployments Standard
+- `South Africa North` — Global coverage, Marketplace Deployments Standard
+- `South Central US` — Global coverage, Marketplace Deployments Standard
+- `South India` — Global coverage, Marketplace Deployments Standard
+- `Spain Central` — Global coverage, Marketplace Deployments Standard
+- `Sweden Central` — Global coverage, Marketplace Deployments Standard
+- `Switzerland North` — Global coverage, Marketplace Deployments Standard
+- `Switzerland West` — Global coverage, Marketplace Deployments Standard
+- `UAE North` — Global coverage, Marketplace Deployments Standard
+- `UK South` — Global coverage, Marketplace Deployments Standard
+- `UK West` — Global coverage, Marketplace Deployments Standard
+- `West Central US` — Global coverage, Marketplace Deployments Standard
+- `West Europe` — Global coverage, Marketplace Deployments Standard
+- `West US` — Global coverage, Marketplace Deployments Standard
+- `West US 2` — Global coverage, Marketplace Deployments Standard
+- `West US 3` — Global coverage, Marketplace Deployments Standard
+
+</details>
+<details>
 <summary>mistral-medium-3-5 — 31 regions across 2 SKU labels</summary>
 
 - `Australia East` — Deployments Standard, Global coverage
@@ -1375,38 +1554,39 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>embed-v-4-0 — 30 regions across 2 SKU labels</summary>
+<summary>mistral-small-2503 — 31 regions across 2 SKU labels</summary>
 
-- `Australia East` — Global Standard, Global coverage
-- `Brazil South` — Global Standard, Global coverage
-- `Canada Central` — Global Standard, Global coverage
-- `Canada East` — Global Standard, Global coverage
-- `Central US` — Global Standard, Global coverage
-- `East US` — Global Standard, Global coverage
-- `East US 2` — Global Standard, Global coverage
-- `France Central` — Global Standard, Global coverage
-- `Germany West Central` — Global Standard, Global coverage
-- `Italy North` — Global Standard, Global coverage
-- `Japan East` — Global Standard, Global coverage
-- `Japan West` — Global Standard, Global coverage
-- `Korea Central` — Global Standard, Global coverage
-- `North Central US` — Global Standard, Global coverage
-- `Norway East` — Global Standard, Global coverage
-- `Poland Central` — Global Standard, Global coverage
-- `South Africa North` — Global Standard, Global coverage
-- `South Central US` — Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Spain Central` — Global Standard, Global coverage
-- `Sweden Central` — Global Standard, Global coverage
-- `Switzerland North` — Global Standard, Global coverage
-- `Switzerland West` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-- `UK South` — Global Standard, Global coverage
-- `West Central US` — Global Standard, Global coverage
-- `West Europe` — Global Standard, Global coverage
-- `West US` — Global Standard, Global coverage
-- `West US 2` — Global Standard, Global coverage
-- `West US 3` — Global Standard, Global coverage
+- `Australia East` — Global coverage, Marketplace Deployments Standard
+- `Brazil South` — Global coverage, Marketplace Deployments Standard
+- `Canada Central` — Global coverage, Marketplace Deployments Standard
+- `Canada East` — Global coverage, Marketplace Deployments Standard
+- `Central US` — Global coverage, Marketplace Deployments Standard
+- `East US` — Global coverage, Marketplace Deployments Standard
+- `East US 2` — Global coverage, Marketplace Deployments Standard
+- `France Central` — Global coverage, Marketplace Deployments Standard
+- `Germany West Central` — Global coverage, Marketplace Deployments Standard
+- `Italy North` — Global coverage, Marketplace Deployments Standard
+- `Japan East` — Global coverage, Marketplace Deployments Standard
+- `Japan West` — Global coverage, Marketplace Deployments Standard
+- `Korea Central` — Global coverage, Marketplace Deployments Standard
+- `North Central US` — Global coverage, Marketplace Deployments Standard
+- `Norway East` — Global coverage, Marketplace Deployments Standard
+- `Poland Central` — Global coverage, Marketplace Deployments Standard
+- `South Africa North` — Global coverage, Marketplace Deployments Standard
+- `South Central US` — Global coverage, Marketplace Deployments Standard
+- `South India` — Global coverage, Marketplace Deployments Standard
+- `Spain Central` — Global coverage, Marketplace Deployments Standard
+- `Sweden Central` — Global coverage, Marketplace Deployments Standard
+- `Switzerland North` — Global coverage, Marketplace Deployments Standard
+- `Switzerland West` — Global coverage, Marketplace Deployments Standard
+- `UAE North` — Global coverage, Marketplace Deployments Standard
+- `UK South` — Global coverage, Marketplace Deployments Standard
+- `UK West` — Global coverage, Marketplace Deployments Standard
+- `West Central US` — Global coverage, Marketplace Deployments Standard
+- `West Europe` — Global coverage, Marketplace Deployments Standard
+- `West US` — Global coverage, Marketplace Deployments Standard
+- `West US 2` — Global coverage, Marketplace Deployments Standard
+- `West US 3` — Global coverage, Marketplace Deployments Standard
 
 </details>
 <details>
@@ -1418,7 +1598,7 @@ SKU labels observed:
 - `Canada East` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
 - `Central US` — Datazone Standard Priority Processing, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
 - `East US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
-- `East US 2` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability
+- `East US 2` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
 - `France Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
 - `Germany West Central` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
 - `Italy North` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
@@ -1439,7 +1619,7 @@ SKU labels observed:
 - `UK South` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
 - `West Europe` — Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
 - `West US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
-- `West US 3` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability
+- `West US 3` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability, Standard Global Priority Processing
 - `usgovarizona` — Datazone Standard Gov, Global coverage, Standard Models Gov
 - `usgovvirginia` — Datazone Standard Gov, Global coverage
 
@@ -1544,219 +1724,9 @@ SKU labels observed:
 - `UK South` — Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
 - `West Europe` — Datazone provisioned managed, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
 - `West US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard, Standard Global By Capability, Standard Global Priority Processing
-- `West US 3` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability
+- `West US 3` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Batch, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned (PTU managed), Standard, Standard Global By Capability, Standard Global Priority Processing
 - `usgovarizona` — Datazone Standard Gov, Global coverage
 - `usgovvirginia` — Datazone Standard Gov, Global coverage
-
-</details>
-<details>
-<summary>grok-3 — 30 regions across 3 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage
-- `Brazil South` — Global Standard, Global coverage
-- `Canada Central` — Global Standard, Global coverage
-- `Canada East` — Global Standard, Global coverage
-- `Central US` — Datazone standard, Global Standard, Global coverage
-- `East US` — Datazone standard, Global Standard, Global coverage
-- `East US 2` — Datazone standard, Global Standard, Global coverage
-- `France Central` — Global Standard, Global coverage
-- `Germany West Central` — Global Standard, Global coverage
-- `Italy North` — Global Standard, Global coverage
-- `Japan East` — Global Standard, Global coverage
-- `Japan West` — Global Standard, Global coverage
-- `Korea Central` — Global Standard, Global coverage
-- `North Central US` — Datazone standard, Global Standard, Global coverage
-- `Norway East` — Global Standard, Global coverage
-- `Poland Central` — Global Standard, Global coverage
-- `South Africa North` — Global Standard, Global coverage
-- `South Central US` — Datazone standard, Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Spain Central` — Global Standard, Global coverage
-- `Sweden Central` — Global Standard, Global coverage
-- `Switzerland North` — Global Standard, Global coverage
-- `Switzerland West` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-- `UK South` — Global Standard, Global coverage
-- `West Central US` — Datazone standard, Global Standard, Global coverage
-- `West Europe` — Global Standard, Global coverage
-- `West US` — Datazone standard, Global Standard, Global coverage
-- `West US 2` — Datazone standard, Global Standard, Global coverage
-- `West US 3` — Datazone standard, Global Standard, Global coverage
-
-</details>
-<details>
-<summary>grok-3-mini — 30 regions across 3 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage
-- `Brazil South` — Global Standard, Global coverage
-- `Canada Central` — Global Standard, Global coverage
-- `Canada East` — Global Standard, Global coverage
-- `Central US` — Datazone standard, Global Standard, Global coverage
-- `East US` — Datazone standard, Global Standard, Global coverage
-- `East US 2` — Datazone standard, Global Standard, Global coverage
-- `France Central` — Global Standard, Global coverage
-- `Germany West Central` — Global Standard, Global coverage
-- `Italy North` — Global Standard, Global coverage
-- `Japan East` — Global Standard, Global coverage
-- `Japan West` — Global Standard, Global coverage
-- `Korea Central` — Global Standard, Global coverage
-- `North Central US` — Datazone standard, Global Standard, Global coverage
-- `Norway East` — Global Standard, Global coverage
-- `Poland Central` — Global Standard, Global coverage
-- `South Africa North` — Global Standard, Global coverage
-- `South Central US` — Datazone standard, Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Spain Central` — Global Standard, Global coverage
-- `Sweden Central` — Global Standard, Global coverage
-- `Switzerland North` — Global Standard, Global coverage
-- `Switzerland West` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-- `UK South` — Global Standard, Global coverage
-- `West Central US` — Datazone standard, Global Standard, Global coverage
-- `West Europe` — Global Standard, Global coverage
-- `West US` — Datazone standard, Global Standard, Global coverage
-- `West US 2` — Datazone standard, Global Standard, Global coverage
-- `West US 3` — Datazone standard, Global Standard, Global coverage
-
-</details>
-<details>
-<summary>grok-4-fast-non-reasoning — 30 regions across 3 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage
-- `Brazil South` — Global Standard, Global coverage
-- `Canada Central` — Global Standard, Global coverage
-- `Canada East` — Global Standard, Global coverage
-- `Central US` — Datazone standard, Global Standard, Global coverage
-- `East US` — Datazone standard, Global Standard, Global coverage
-- `East US 2` — Datazone standard, Global Standard, Global coverage
-- `France Central` — Global Standard, Global coverage
-- `Germany West Central` — Global Standard, Global coverage
-- `Italy North` — Global Standard, Global coverage
-- `Japan East` — Global Standard, Global coverage
-- `Japan West` — Global Standard, Global coverage
-- `Korea Central` — Global Standard, Global coverage
-- `North Central US` — Datazone standard, Global Standard, Global coverage
-- `Norway East` — Global Standard, Global coverage
-- `Poland Central` — Global Standard, Global coverage
-- `South Africa North` — Global Standard, Global coverage
-- `South Central US` — Datazone standard, Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Spain Central` — Global Standard, Global coverage
-- `Sweden Central` — Global Standard, Global coverage
-- `Switzerland North` — Global Standard, Global coverage
-- `Switzerland West` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-- `UK South` — Global Standard, Global coverage
-- `West Central US` — Datazone standard, Global Standard, Global coverage
-- `West Europe` — Global Standard, Global coverage
-- `West US` — Datazone standard, Global Standard, Global coverage
-- `West US 2` — Datazone standard, Global Standard, Global coverage
-- `West US 3` — Datazone standard, Global Standard, Global coverage
-
-</details>
-<details>
-<summary>grok-4-fast-reasoning — 30 regions across 3 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage
-- `Brazil South` — Global Standard, Global coverage
-- `Canada Central` — Global Standard, Global coverage
-- `Canada East` — Global Standard, Global coverage
-- `Central US` — Datazone standard, Global Standard, Global coverage
-- `East US` — Datazone standard, Global Standard, Global coverage
-- `East US 2` — Datazone standard, Global Standard, Global coverage
-- `France Central` — Global Standard, Global coverage
-- `Germany West Central` — Global Standard, Global coverage
-- `Italy North` — Global Standard, Global coverage
-- `Japan East` — Global Standard, Global coverage
-- `Japan West` — Global Standard, Global coverage
-- `Korea Central` — Global Standard, Global coverage
-- `North Central US` — Datazone standard, Global Standard, Global coverage
-- `Norway East` — Global Standard, Global coverage
-- `Poland Central` — Global Standard, Global coverage
-- `South Africa North` — Global Standard, Global coverage
-- `South Central US` — Datazone standard, Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Spain Central` — Global Standard, Global coverage
-- `Sweden Central` — Global Standard, Global coverage
-- `Switzerland North` — Global Standard, Global coverage
-- `Switzerland West` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-- `UK South` — Global Standard, Global coverage
-- `West Central US` — Datazone standard, Global Standard, Global coverage
-- `West Europe` — Global Standard, Global coverage
-- `West US` — Datazone standard, Global Standard, Global coverage
-- `West US 2` — Datazone standard, Global Standard, Global coverage
-- `West US 3` — Datazone standard, Global Standard, Global coverage
-
-</details>
-<details>
-<summary>mistral-document-ai-2505 — 30 regions across 4 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage
-- `Brazil South` — Global Standard, Global coverage
-- `Canada Central` — Global Standard, Global coverage
-- `Canada East` — Global Standard, Global coverage
-- `Central US` — Datazone standard, Global Standard, Global coverage
-- `East US` — Datazone standard, Global Standard, Global coverage
-- `East US 2` — Datazone standard, Global Standard, Global coverage, Region Availability Maas
-- `France Central` — Datazone standard, Global Standard, Global coverage
-- `Germany West Central` — Datazone standard, Global Standard, Global coverage
-- `Italy North` — Datazone standard, Global Standard, Global coverage
-- `Japan East` — Global Standard, Global coverage
-- `Japan West` — Global Standard, Global coverage
-- `Korea Central` — Global Standard, Global coverage
-- `North Central US` — Datazone standard, Global Standard, Global coverage
-- `Norway East` — Global Standard, Global coverage
-- `Poland Central` — Datazone standard, Global Standard, Global coverage
-- `South Africa North` — Global Standard, Global coverage
-- `South Central US` — Datazone standard, Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Spain Central` — Datazone standard, Global Standard, Global coverage
-- `Sweden Central` — Datazone standard, Global Standard, Global coverage, Region Availability Maas
-- `Switzerland North` — Global Standard, Global coverage
-- `Switzerland West` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-- `UK South` — Global Standard, Global coverage
-- `West Central US` — Datazone standard, Global Standard, Global coverage
-- `West Europe` — Datazone standard, Global Standard, Global coverage
-- `West US` — Datazone standard, Global Standard, Global coverage
-- `West US 2` — Datazone standard, Global Standard, Global coverage
-- `West US 3` — Datazone standard, Global Standard, Global coverage
-
-</details>
-<details>
-<summary>mistral-document-ai-2512 — 30 regions across 3 SKU labels</summary>
-
-- `Australia East` — Global Standard, Global coverage
-- `Brazil South` — Global Standard, Global coverage
-- `Canada Central` — Global Standard, Global coverage
-- `Canada East` — Global Standard, Global coverage
-- `Central US` — Datazone standard, Global Standard, Global coverage
-- `East US` — Datazone standard, Global Standard, Global coverage
-- `East US 2` — Datazone standard, Global Standard, Global coverage
-- `France Central` — Datazone standard, Global Standard, Global coverage
-- `Germany West Central` — Datazone standard, Global Standard, Global coverage
-- `Italy North` — Datazone standard, Global Standard, Global coverage
-- `Japan East` — Global Standard, Global coverage
-- `Japan West` — Global Standard, Global coverage
-- `Korea Central` — Global Standard, Global coverage
-- `North Central US` — Datazone standard, Global Standard, Global coverage
-- `Norway East` — Global Standard, Global coverage
-- `Poland Central` — Datazone standard, Global Standard, Global coverage
-- `South Africa North` — Global Standard, Global coverage
-- `South Central US` — Datazone standard, Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Spain Central` — Datazone standard, Global Standard, Global coverage
-- `Sweden Central` — Datazone standard, Global Standard, Global coverage
-- `Switzerland North` — Global Standard, Global coverage
-- `Switzerland West` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-- `UK South` — Global Standard, Global coverage
-- `West Central US` — Datazone standard, Global Standard, Global coverage
-- `West Europe` — Datazone standard, Global Standard, Global coverage
-- `West US` — Datazone standard, Global Standard, Global coverage
-- `West US 2` — Datazone standard, Global Standard, Global coverage
-- `West US 3` — Datazone standard, Global Standard, Global coverage
 
 </details>
 <details>
@@ -2031,36 +2001,36 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>gpt-5.1-chat — 28 regions across 4 SKU labels</summary>
+<summary>gpt-5.1-chat — 28 regions across 3 SKU labels</summary>
 
-- `Australia East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Brazil South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Canada Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Canada East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `East US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `France Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Germany West Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Italy North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Japan East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Korea Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `North Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Norway East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Poland Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `South Africa North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `South Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `South India` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Southeast Asia` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Spain Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland West` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `UAE North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `UK South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `West Europe` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `West US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `West US 3` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Australia East` — Global Standard, Global coverage, Standard Global By Capability
+- `Brazil South` — Global Standard, Global coverage, Standard Global By Capability
+- `Canada Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Canada East` — Global Standard, Global coverage, Standard Global By Capability
+- `Central US` — Global Standard, Global coverage, Standard Global By Capability
+- `East US` — Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
+- `France Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Germany West Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Italy North` — Global Standard, Global coverage, Standard Global By Capability
+- `Japan East` — Global Standard, Global coverage, Standard Global By Capability
+- `Korea Central` — Global Standard, Global coverage, Standard Global By Capability
+- `North Central US` — Global Standard, Global coverage, Standard Global By Capability
+- `Norway East` — Global Standard, Global coverage, Standard Global By Capability
+- `Poland Central` — Global Standard, Global coverage, Standard Global By Capability
+- `South Africa North` — Global Standard, Global coverage, Standard Global By Capability
+- `South Central US` — Global Standard, Global coverage, Standard Global By Capability
+- `South India` — Global Standard, Global coverage, Standard Global By Capability
+- `Southeast Asia` — Global Standard, Global coverage, Standard Global By Capability
+- `Spain Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland North` — Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland West` — Global Standard, Global coverage, Standard Global By Capability
+- `UAE North` — Global Standard, Global coverage, Standard Global By Capability
+- `UK South` — Global Standard, Global coverage, Standard Global By Capability
+- `West Europe` — Global Standard, Global coverage, Standard Global By Capability
+- `West US` — Global Standard, Global coverage, Standard Global By Capability
+- `West US 3` — Global Standard, Global coverage, Standard Global By Capability
 
 </details>
 <details>
@@ -2159,40 +2129,40 @@ SKU labels observed:
 - `UK South` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
 - `West Europe` — Datazone provisioned managed, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
 - `West US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `West US 3` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Standard Global By Capability
+- `West US 3` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Provisioned (PTU managed), Standard Global By Capability, Standard Global Priority Processing
 
 </details>
 <details>
-<summary>gpt-5.2-chat — 28 regions across 4 SKU labels</summary>
+<summary>gpt-5.2-chat — 28 regions across 3 SKU labels</summary>
 
-- `Australia East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Brazil South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Canada Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Canada East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `East US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `France Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Germany West Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Italy North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Japan East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Korea Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `North Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Norway East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Poland Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `South Africa North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `South Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `South India` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Southeast Asia` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Spain Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland West` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `UAE North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `UK South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `West Europe` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `West US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `West US 3` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Australia East` — Global Standard, Global coverage, Standard Global By Capability
+- `Brazil South` — Global Standard, Global coverage, Standard Global By Capability
+- `Canada Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Canada East` — Global Standard, Global coverage, Standard Global By Capability
+- `Central US` — Global Standard, Global coverage, Standard Global By Capability
+- `East US` — Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
+- `France Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Germany West Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Italy North` — Global Standard, Global coverage, Standard Global By Capability
+- `Japan East` — Global Standard, Global coverage, Standard Global By Capability
+- `Korea Central` — Global Standard, Global coverage, Standard Global By Capability
+- `North Central US` — Global Standard, Global coverage, Standard Global By Capability
+- `Norway East` — Global Standard, Global coverage, Standard Global By Capability
+- `Poland Central` — Global Standard, Global coverage, Standard Global By Capability
+- `South Africa North` — Global Standard, Global coverage, Standard Global By Capability
+- `South Central US` — Global Standard, Global coverage, Standard Global By Capability
+- `South India` — Global Standard, Global coverage, Standard Global By Capability
+- `Southeast Asia` — Global Standard, Global coverage, Standard Global By Capability
+- `Spain Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland North` — Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland West` — Global Standard, Global coverage, Standard Global By Capability
+- `UAE North` — Global Standard, Global coverage, Standard Global By Capability
+- `UK South` — Global Standard, Global coverage, Standard Global By Capability
+- `West Europe` — Global Standard, Global coverage, Standard Global By Capability
+- `West US` — Global Standard, Global coverage, Standard Global By Capability
+- `West US 3` — Global Standard, Global coverage, Standard Global By Capability
 
 </details>
 <details>
@@ -2229,36 +2199,36 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>gpt-5.3-chat — 28 regions across 4 SKU labels</summary>
+<summary>gpt-5.3-chat — 28 regions across 3 SKU labels</summary>
 
-- `Australia East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Brazil South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Canada Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Canada East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `East US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `France Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Germany West Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Italy North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Japan East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Korea Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `North Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Norway East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Poland Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `South Africa North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `South Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `South India` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Southeast Asia` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Spain Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland West` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `UAE North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `UK South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `West Europe` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `West US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `West US 3` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Australia East` — Global Standard, Global coverage, Standard Global By Capability
+- `Brazil South` — Global Standard, Global coverage, Standard Global By Capability
+- `Canada Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Canada East` — Global Standard, Global coverage, Standard Global By Capability
+- `Central US` — Global Standard, Global coverage, Standard Global By Capability
+- `East US` — Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
+- `France Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Germany West Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Italy North` — Global Standard, Global coverage, Standard Global By Capability
+- `Japan East` — Global Standard, Global coverage, Standard Global By Capability
+- `Korea Central` — Global Standard, Global coverage, Standard Global By Capability
+- `North Central US` — Global Standard, Global coverage, Standard Global By Capability
+- `Norway East` — Global Standard, Global coverage, Standard Global By Capability
+- `Poland Central` — Global Standard, Global coverage, Standard Global By Capability
+- `South Africa North` — Global Standard, Global coverage, Standard Global By Capability
+- `South Central US` — Global Standard, Global coverage, Standard Global By Capability
+- `South India` — Global Standard, Global coverage, Standard Global By Capability
+- `Southeast Asia` — Global Standard, Global coverage, Standard Global By Capability
+- `Spain Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland North` — Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland West` — Global Standard, Global coverage, Standard Global By Capability
+- `UAE North` — Global Standard, Global coverage, Standard Global By Capability
+- `UK South` — Global Standard, Global coverage, Standard Global By Capability
+- `West Europe` — Global Standard, Global coverage, Standard Global By Capability
+- `West US` — Global Standard, Global coverage, Standard Global By Capability
+- `West US 3` — Global Standard, Global coverage, Standard Global By Capability
 
 </details>
 <details>
@@ -2324,40 +2294,40 @@ SKU labels observed:
 - `UK South` — Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
 - `West Europe` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
 - `West US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
-- `West US 3` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Standard Global By Capability
+- `West US 3` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Standard Global By Capability, Standard Global Priority Processing
 
 </details>
 <details>
 <summary>gpt-5.4-mini — 28 regions across 10 SKU labels</summary>
 
-- `Australia East` — Datazone standard, Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Australia East` — Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
 - `Brazil South` — Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
 - `Canada Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
 - `Canada East` — Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
 - `Central US` — Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Standard Global By Capability, Standard Global Priority Processing
 - `East US` — Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Standard Global By Capability, Standard Global Priority Processing
 - `East US 2` — Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `France Central` — Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Germany West Central` — Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Italy North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `France Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Germany West Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Italy North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
 - `Japan East` — Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Korea Central` — Datazone standard, Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Korea Central` — Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
 - `North Central US` — Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Norway East` — Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Poland Central` — Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `South Africa North` — Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Norway East` — Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Poland Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `South Africa North` — Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
 - `South Central US` — Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Standard Global By Capability, Standard Global Priority Processing
 - `South India` — Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
 - `Southeast Asia` — Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Spain Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Sweden Central` — Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Switzerland North` — Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Switzerland West` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `UAE North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `UK South` — Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `West Europe` — Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Spain Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Sweden Central` — Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Switzerland North` — Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Switzerland West` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `UK South` — Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `West Europe` — Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global coverage, Standard Global By Capability, Standard Global Priority Processing
 - `West US` — Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `West US 3` — Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Standard Global By Capability
+- `West US 3` — Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global batch, Global batch datazone, Global coverage, Standard Global By Capability, Standard Global Priority Processing
 
 </details>
 <details>
@@ -2394,36 +2364,168 @@ SKU labels observed:
 
 </details>
 <details>
+<summary>gpt-5.4-pro — 28 regions across 4 SKU labels</summary>
+
+- `Australia East` — Deployments Standard, Global coverage
+- `Brazil South` — Deployments Standard, Global coverage
+- `Canada Central` — Deployments Standard, Global coverage
+- `Canada East` — Deployments Standard, Global coverage
+- `Central US` — Deployments Standard, Global coverage
+- `East US` — Deployments Standard, Global coverage
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `France Central` — Deployments Standard, Global coverage
+- `Germany West Central` — Deployments Standard, Global coverage
+- `Italy North` — Deployments Standard, Global coverage
+- `Japan East` — Deployments Standard, Global coverage
+- `Korea Central` — Deployments Standard, Global coverage
+- `North Central US` — Deployments Standard, Global coverage
+- `Norway East` — Deployments Standard, Global coverage
+- `Poland Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South Africa North` — Deployments Standard, Global coverage
+- `South Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `South India` — Deployments Standard, Global coverage
+- `Southeast Asia` — Deployments Standard, Global coverage
+- `Spain Central` — Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland North` — Deployments Standard, Global coverage
+- `Switzerland West` — Deployments Standard, Global coverage
+- `UAE North` — Deployments Standard, Global coverage
+- `UK South` — Deployments Standard, Global coverage
+- `West Europe` — Deployments Standard, Global coverage
+- `West US` — Deployments Standard, Global coverage
+- `West US 3` — Deployments Standard, Global coverage
+
+</details>
+<details>
 <summary>gpt-5.5 — 28 regions across 11 SKU labels</summary>
 
-- `Australia East` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability
-- `Brazil South` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability
-- `Canada Central` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability
-- `Canada East` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability
-- `Central US` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability
-- `East US` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability
+- `Australia East` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Brazil South` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Canada Central` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Canada East` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Central US` — Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `East US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global By Capability, Standard Global Priority Processing
 - `East US 2` — Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `France Central` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability
-- `Germany West Central` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability
-- `Italy North` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability
-- `Japan East` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability
-- `Korea Central` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability
-- `North Central US` — Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Provisioned global, Standard Global By Capability
-- `Norway East` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability
+- `France Central` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Germany West Central` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Italy North` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Japan East` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Korea Central` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `North Central US` — Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Provisioned global, Standard Global By Capability, Standard Global Priority Processing
+- `Norway East` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
 - `Poland Central` — Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `South Africa North` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability
+- `South Africa North` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
 - `South Central US` — Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `South India` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability
-- `Southeast Asia` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability
-- `Spain Central` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability
+- `South India` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Southeast Asia` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Spain Central` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
 - `Sweden Central` — Datazone standard, Deployments Provisioned, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
-- `Switzerland North` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability
-- `Switzerland West` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability
-- `UAE North` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability
-- `UK South` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability
-- `West Europe` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability
-- `West US` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability
-- `West US 3` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability
+- `Switzerland North` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `Switzerland West` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `UK South` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `West Europe` — Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `West US` — Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+- `West US 3` — Datazone Standard Priority Processing, Datazone standard, Deployments Provisioned, Deployments Standard, Global coverage, Standard Global By Capability, Standard Global Priority Processing
+
+</details>
+<details>
+<summary>gpt-5.6-luna — 28 regions across 2 SKU labels</summary>
+
+- `Australia East` — Deployments Standard, Global coverage
+- `Brazil South` — Deployments Standard, Global coverage
+- `Canada Central` — Deployments Standard, Global coverage
+- `Canada East` — Deployments Standard, Global coverage
+- `Central US` — Deployments Standard, Global coverage
+- `East US` — Deployments Standard, Global coverage
+- `East US 2` — Deployments Standard, Global coverage
+- `France Central` — Deployments Standard, Global coverage
+- `Germany West Central` — Deployments Standard, Global coverage
+- `Italy North` — Deployments Standard, Global coverage
+- `Japan East` — Deployments Standard, Global coverage
+- `Korea Central` — Deployments Standard, Global coverage
+- `North Central US` — Deployments Standard, Global coverage
+- `Norway East` — Deployments Standard, Global coverage
+- `Poland Central` — Deployments Standard, Global coverage
+- `South Africa North` — Deployments Standard, Global coverage
+- `South Central US` — Deployments Standard, Global coverage
+- `South India` — Deployments Standard, Global coverage
+- `Southeast Asia` — Deployments Standard, Global coverage
+- `Spain Central` — Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Standard, Global coverage
+- `Switzerland North` — Deployments Standard, Global coverage
+- `Switzerland West` — Deployments Standard, Global coverage
+- `UAE North` — Deployments Standard, Global coverage
+- `UK South` — Deployments Standard, Global coverage
+- `West Europe` — Deployments Standard, Global coverage
+- `West US` — Deployments Standard, Global coverage
+- `West US 3` — Deployments Standard, Global coverage
+
+</details>
+<details>
+<summary>gpt-5.6-sol — 28 regions across 4 SKU labels</summary>
+
+- `Australia East` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Brazil South` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Canada Central` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Canada East` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Central US` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global Priority Processing
+- `East US` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `East US 2` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `France Central` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Germany West Central` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Italy North` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Japan East` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Korea Central` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `North Central US` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Norway East` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Poland Central` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `South Africa North` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `South Central US` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global Priority Processing
+- `South India` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Southeast Asia` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Spain Central` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Sweden Central` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Switzerland North` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Switzerland West` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global Priority Processing
+- `UK South` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global Priority Processing
+- `West Europe` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global Priority Processing
+- `West US` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global Priority Processing
+- `West US 3` — Deployments Provisioned, Deployments Standard, Global coverage, Standard Global Priority Processing
+
+</details>
+<details>
+<summary>gpt-5.6-terra — 28 regions across 3 SKU labels</summary>
+
+- `Australia East` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Brazil South` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Canada Central` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Canada East` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Central US` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `East US` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `East US 2` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `France Central` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Germany West Central` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Italy North` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Japan East` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Korea Central` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `North Central US` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Norway East` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Poland Central` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `South Africa North` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `South Central US` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `South India` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Southeast Asia` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Spain Central` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Sweden Central` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Switzerland North` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `Switzerland West` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `UAE North` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `UK South` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `West Europe` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `West US` — Deployments Standard, Global coverage, Standard Global Priority Processing
+- `West US 3` — Deployments Standard, Global coverage, Standard Global Priority Processing
 
 </details>
 <details>
@@ -2559,35 +2661,35 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>gpt-5-chat — 27 regions across 4 SKU labels</summary>
+<summary>gpt-5-chat — 27 regions across 3 SKU labels</summary>
 
-- `Australia East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Brazil South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Canada Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Canada East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `East US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `France Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Germany West Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Italy North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Japan East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Korea Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `North Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Norway East` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Poland Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `South Africa North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `South Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `South India` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Southeast Asia` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Spain Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Switzerland West` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `UAE North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `UK South` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `West Europe` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `West US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Australia East` — Global Standard, Global coverage, Standard Global By Capability
+- `Brazil South` — Global Standard, Global coverage, Standard Global By Capability
+- `Canada Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Canada East` — Global Standard, Global coverage, Standard Global By Capability
+- `Central US` — Global Standard, Global coverage, Standard Global By Capability
+- `East US` — Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Global Standard, Global coverage, Standard Global By Capability
+- `France Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Germany West Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Italy North` — Global Standard, Global coverage, Standard Global By Capability
+- `Japan East` — Global Standard, Global coverage, Standard Global By Capability
+- `Korea Central` — Global Standard, Global coverage, Standard Global By Capability
+- `North Central US` — Global Standard, Global coverage, Standard Global By Capability
+- `Norway East` — Global Standard, Global coverage, Standard Global By Capability
+- `Poland Central` — Global Standard, Global coverage, Standard Global By Capability
+- `South Africa North` — Global Standard, Global coverage, Standard Global By Capability
+- `South Central US` — Global Standard, Global coverage, Standard Global By Capability
+- `South India` — Global Standard, Global coverage, Standard Global By Capability
+- `Southeast Asia` — Global Standard, Global coverage, Standard Global By Capability
+- `Spain Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland North` — Global Standard, Global coverage, Standard Global By Capability
+- `Switzerland West` — Global Standard, Global coverage, Standard Global By Capability
+- `UAE North` — Global Standard, Global coverage, Standard Global By Capability
+- `UK South` — Global Standard, Global coverage, Standard Global By Capability
+- `West Europe` — Global Standard, Global coverage, Standard Global By Capability
+- `West US` — Global Standard, Global coverage, Standard Global By Capability
 
 </details>
 <details>
@@ -2686,6 +2788,48 @@ SKU labels observed:
 
 </details>
 <details>
+<summary>claude-haiku-4-5 — 9 regions across 2 SKU labels</summary>
+
+- `Central US` — Global coverage, Marketplace Deployments Standard
+- `East US` — Global coverage, Marketplace Deployments Standard
+- `East US 2` — Global coverage, Marketplace Deployments Standard
+- `North Central US` — Global coverage, Marketplace Deployments Standard
+- `South Central US` — Global coverage, Marketplace Deployments Standard
+- `Sweden Central` — Global coverage, Marketplace Deployments Standard
+- `West Central US` — Global coverage, Marketplace Deployments Standard
+- `West US` — Global coverage, Marketplace Deployments Standard
+- `West US 3` — Global coverage, Marketplace Deployments Standard
+
+</details>
+<details>
+<summary>claude-opus-4-8 — 9 regions across 2 SKU labels</summary>
+
+- `Central US` — Global coverage, Marketplace Deployments Standard
+- `East US` — Global coverage, Marketplace Deployments Standard
+- `East US 2` — Global coverage, Marketplace Deployments Standard
+- `North Central US` — Global coverage, Marketplace Deployments Standard
+- `South Central US` — Global coverage, Marketplace Deployments Standard
+- `Sweden Central` — Global coverage, Marketplace Deployments Standard
+- `West Central US` — Global coverage, Marketplace Deployments Standard
+- `West US` — Global coverage, Marketplace Deployments Standard
+- `West US 3` — Global coverage, Marketplace Deployments Standard
+
+</details>
+<details>
+<summary>claude-sonnet-5 — 9 regions across 2 SKU labels</summary>
+
+- `Central US` — Global coverage, Marketplace Deployments Standard
+- `East US` — Global coverage, Marketplace Deployments Standard
+- `East US 2` — Global coverage, Marketplace Deployments Standard
+- `North Central US` — Global coverage, Marketplace Deployments Standard
+- `South Central US` — Global coverage, Marketplace Deployments Standard
+- `Sweden Central` — Global coverage, Marketplace Deployments Standard
+- `West Central US` — Global coverage, Marketplace Deployments Standard
+- `West US` — Global coverage, Marketplace Deployments Standard
+- `West US 3` — Global coverage, Marketplace Deployments Standard
+
+</details>
+<details>
 <summary>whisper — 8 regions across 3 SKU labels</summary>
 
 - `East US 2` — Deployments Standard, Global coverage, Standard
@@ -2696,18 +2840,6 @@ SKU labels observed:
 - `Switzerland North` — Deployments Standard, Global coverage, Standard
 - `UAE North` — Deployments Standard, Global coverage, Standard
 - `West Europe` — Deployments Standard, Global coverage, Standard
-
-</details>
-<details>
-<summary>Codestral-2501 — 7 regions across 2 SKU labels</summary>
-
-- `East US` — Global coverage, Region Availability Maas
-- `East US 2` — Global coverage, Region Availability Maas
-- `North Central US` — Global coverage, Region Availability Maas
-- `South Central US` — Global coverage, Region Availability Maas
-- `Sweden Central` — Global coverage, Region Availability Maas
-- `West US` — Global coverage, Region Availability Maas
-- `West US 3` — Global coverage, Region Availability Maas
 
 </details>
 <details>
@@ -2891,15 +3023,15 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>MAI-Image-2 — 7 regions across 3 SKU labels</summary>
+<summary>MAI-Image-2 — 7 regions across 2 SKU labels</summary>
 
-- `East US` — Deployments Standard, Global Standard, Global coverage
-- `South India` — Deployments Standard, Global Standard, Global coverage
-- `Sweden Central` — Deployments Standard, Global Standard, Global coverage
+- `East US` — Deployments Standard, Global coverage
+- `South India` — Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Standard, Global coverage
 - `UAE North` — Deployments Standard, Global coverage
-- `West Central US` — Deployments Standard, Global Standard, Global coverage
-- `West Europe` — Deployments Standard, Global Standard, Global coverage
-- `West US` — Deployments Standard, Global Standard, Global coverage
+- `West Central US` — Deployments Standard, Global coverage
+- `West Europe` — Deployments Standard, Global coverage
+- `West US` — Deployments Standard, Global coverage
 
 </details>
 <details>
@@ -2936,18 +3068,6 @@ SKU labels observed:
 - `West Central US` — Deployments Standard, Global coverage
 - `West Europe` — Deployments Standard, Global coverage
 - `West US` — Deployments Standard, Global coverage
-
-</details>
-<details>
-<summary>Ministral-3B — 7 regions across 2 SKU labels</summary>
-
-- `East US` — Global coverage, Region Availability Maas
-- `East US 2` — Global coverage, Region Availability Maas
-- `North Central US` — Global coverage, Region Availability Maas
-- `South Central US` — Global coverage, Region Availability Maas
-- `Sweden Central` — Global coverage, Region Availability Maas
-- `West US` — Global coverage, Region Availability Maas
-- `West US 3` — Global coverage, Region Availability Maas
 
 </details>
 <details>
@@ -3214,22 +3334,27 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>model-router — 5 regions across 5 SKU labels</summary>
+<summary>claude-opus-4-1 — 3 regions across 2 SKU labels</summary>
 
-- `Australia East` — Deployments Standard, Global coverage
-- `East US 2` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `South India` — Deployments Standard, Global coverage
-- `Sweden Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `West US 3` — Datazone standard, Deployments Standard, Global coverage
+- `East US 2` — Global coverage, Marketplace Deployments Standard
+- `Sweden Central` — Global coverage, Marketplace Deployments Standard
+- `West Central US` — Global coverage, Marketplace Deployments Standard
 
 </details>
 <details>
-<summary>gpt-5.4-pro — 4 regions across 4 SKU labels</summary>
+<summary>claude-opus-4-5 — 3 regions across 2 SKU labels</summary>
 
-- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Poland Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `South Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `East US 2` — Global coverage, Marketplace Deployments Standard
+- `Sweden Central` — Global coverage, Marketplace Deployments Standard
+- `West Central US` — Global coverage, Marketplace Deployments Standard
+
+</details>
+<details>
+<summary>claude-sonnet-4-5 — 3 regions across 2 SKU labels</summary>
+
+- `East US 2` — Global coverage, Marketplace Deployments Standard
+- `Sweden Central` — Global coverage, Marketplace Deployments Standard
+- `West Central US` — Global coverage, Marketplace Deployments Standard
 
 </details>
 <details>
@@ -3273,6 +3398,14 @@ SKU labels observed:
 
 </details>
 <details>
+<summary>model-router — 3 regions across 5 SKU labels</summary>
+
+- `East US 2` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Datazone standard, Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West US 3` — Datazone standard, Global coverage
+
+</details>
+<details>
 <summary>o3-pro — 3 regions across 4 SKU labels</summary>
 
 - `Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
@@ -3297,87 +3430,31 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>Claude Fable — 2 regions across 2 SKU labels</summary>
+<summary>claude-fable-5 — 2 regions across 2 SKU labels</summary>
 
-- `East US 2` — Global coverage, Region Availability Maas
-- `Sweden Central` — Global coverage, Region Availability Maas
-
-</details>
-<details>
-<summary>Claude Haiku 4.5 — 2 regions across 2 SKU labels</summary>
-
-- `East US 2` — Global coverage, Region Availability Maas
-- `Sweden Central` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Marketplace Deployments Standard
+- `Sweden Central` — Global coverage, Marketplace Deployments Standard
 
 </details>
 <details>
-<summary>Claude Mythos 5<sup>1< — 2 regions across 2 SKU labels</summary>
+<summary>claude-opus-4-6 — 2 regions across 2 SKU labels</summary>
 
-- `East US 2` — Global coverage, Region Availability Maas
-- `Sweden Central` — Global coverage, Region Availability Maas
-
-</details>
-<details>
-<summary>Claude Mythos Preview<sup>1< — 2 regions across 2 SKU labels</summary>
-
-- `East US 2` — Global coverage, Region Availability Maas
-- `Sweden Central` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Marketplace Deployments Standard
+- `Sweden Central` — Global coverage, Marketplace Deployments Standard
 
 </details>
 <details>
-<summary>Claude Opus 4.1 — 2 regions across 2 SKU labels</summary>
+<summary>claude-opus-4-7 — 2 regions across 2 SKU labels</summary>
 
-- `East US 2` — Global coverage, Region Availability Maas
-- `Sweden Central` — Global coverage, Region Availability Maas
-
-</details>
-<details>
-<summary>Claude Opus 4.5 — 2 regions across 2 SKU labels</summary>
-
-- `East US 2` — Global coverage, Region Availability Maas
-- `Sweden Central` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Marketplace Deployments Standard
+- `Sweden Central` — Global coverage, Marketplace Deployments Standard
 
 </details>
 <details>
-<summary>Claude Opus 4.6 — 2 regions across 2 SKU labels</summary>
+<summary>claude-sonnet-4-6 — 2 regions across 2 SKU labels</summary>
 
-- `East US 2` — Global coverage, Region Availability Maas
-- `Sweden Central` — Global coverage, Region Availability Maas
-
-</details>
-<details>
-<summary>Claude Opus 4.7 — 2 regions across 2 SKU labels</summary>
-
-- `East US 2` — Global coverage, Region Availability Maas
-- `Sweden Central` — Global coverage, Region Availability Maas
-
-</details>
-<details>
-<summary>Claude Opus 4.8 — 2 regions across 2 SKU labels</summary>
-
-- `East US 2` — Global coverage, Region Availability Maas
-- `Sweden Central` — Global coverage, Region Availability Maas
-
-</details>
-<details>
-<summary>Claude Sonnet 4.5 — 2 regions across 2 SKU labels</summary>
-
-- `East US 2` — Global coverage, Region Availability Maas
-- `Sweden Central` — Global coverage, Region Availability Maas
-
-</details>
-<details>
-<summary>Claude Sonnet 4.6 — 2 regions across 2 SKU labels</summary>
-
-- `East US 2` — Global coverage, Region Availability Maas
-- `Sweden Central` — Global coverage, Region Availability Maas
-
-</details>
-<details>
-<summary>Claude Sonnet 5 — 2 regions across 2 SKU labels</summary>
-
-- `East US 2` — Global coverage, Region Availability Maas
-- `Sweden Central` — Global coverage, Region Availability Maas
+- `East US 2` — Global coverage, Marketplace Deployments Standard
+- `Sweden Central` — Global coverage, Marketplace Deployments Standard
 
 </details>
 <details>
@@ -3385,6 +3462,13 @@ SKU labels observed:
 
 - `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
 - `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
+<summary>mistral-document-ai-2505 — 2 regions across 2 SKU labels</summary>
+
+- `East US 2` — Global coverage, Region Availability Maas
+- `Sweden Central` — Global coverage, Region Availability Maas
 
 </details>
 <details>
@@ -3410,6 +3494,7 @@ SKU labels observed:
 
 ## Recent changes
 
+- **2026-07-16 09:15 UTC** — Claude Fable: Global coverage removed East US 2 and Sweden Central; Region Availability Maas removed East US 2 and Sweden Central | Claude Haiku 4.5: Global coverage removed East US 2 and Sweden Central; Region Availability Maas removed East US 2 and Sweden Central | Claude Mythos 5<sup>1<: Global coverage removed East US 2 and Sweden Central; Region Availability Maas removed East US 2 and Sweden Central | Claude Mythos Preview<sup>1<: Global coverage removed East US 2 and Sweden Central; Region Availability Maas removed East US 2 and Sweden Central | Claude Opus 4.1: Global coverage removed East US 2 and Sweden Central; Region Availability Maas removed East US 2 and Sweden Central | Claude Opus 4.5: Global coverage removed East US 2 and Sweden Central; Region Availability Maas removed East US 2 and Sweden Central | Claude Opus 4.6: Global coverage removed East US 2 and Sweden Central; Region Availability Maas removed East US 2 and Sweden Central | Claude Opus 4.7: Global coverage removed East US 2 and Sweden Central; Region Availability Maas removed East US 2 and Sweden Central | Claude Opus 4.8: Global coverage removed East US 2 and Sweden Central; Region Availability Maas removed East US 2 and Sweden Central | Claude Sonnet 4.5: Global coverage removed East US 2 and Sweden Central; Region Availability Maas removed East US 2 and Sweden Central | Claude Sonnet 4.6: Global coverage removed East US 2 and Sweden Central; Region Availability Maas removed East US 2 and Sweden Central | Claude Sonnet 5: Global coverage removed East US 2 and Sweden Central; Region Availability Maas removed East US 2 and Sweden Central | Codestral-2501: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, Norway East, Poland Central, South Africa North, South India, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, and West US 2; Marketplace Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | Cohere-rerank-v4.0-fast: Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | Cohere-rerank-v4.0-pro: Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | DeepSeek-R1: Global Provisioned Managed removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3; Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | DeepSeek-R1-0528: Deployments Provisioned removed West Central US; Global Provisioned Managed removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3; Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | DeepSeek-V3-0324: Deployments Provisioned removed West Central US; Global Provisioned Managed removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3; Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | DeepSeek-V3.1: Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | DeepSeek-V3.2: Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | DeepSeek-V3.2-Speciale: Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | FLUX-1.1-pro: Data Zone Standard removed Central US, East US, East US 2, France Central, Germany West Central, Italy North, North Central US, Poland Central, South Central US, Spain Central, Sweden Central, West Central US, West Europe, West US, West US 2, and West US 3; Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | FLUX.1-Kontext-pro: Data Zone Standard removed Central US, East US, East US 2, France Central, Germany West Central, Italy North, North Central US, Poland Central, South Central US, Spain Central, Sweden Central, West Central US, West Europe, West US, West US 2, and West US 3; Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | FLUX.2-flex: Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | FLUX.2-pro: Data Zone Standard removed Central US, East US, East US 2, France Central, Germany West Central, Italy North, North Central US, Poland Central, South Central US, Spain Central, Sweden Central, West Central US, West Europe, West US, West US 2, and West US 3; Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | Kimi-K2.5: Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | Llama-3.3-70B-Instruct: Global Provisioned Managed removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3; Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | Llama-4-Maverick-17B-128E-Instruct-FP8: Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | Llama-4-Scout-17B-16E-Instruct: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Marketplace Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | MAI-Image-2: Global Standard removed East US, South India, Sweden Central, West Central US, West Europe, and West US | Ministral-3B: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, Norway East, Poland Central, South Africa North, South India, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, and West US 2; Marketplace Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | Mistral-Large-3: Data Zone Standard removed Central US, East US, East US 2, France Central, Germany West Central, Italy North, North Central US, Poland Central, South Central US, Spain Central, Sweden Central, West Central US, West Europe, West US, West US 2, and West US 3; Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | Mistral-large: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Marketplace Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | claude-fable-5: Global coverage added East US 2 and Sweden Central; Marketplace Deployments Standard added East US 2 and Sweden Central | claude-haiku-4-5: Global coverage added Central US, East US, East US 2, North Central US, South Central US, Sweden Central, West Central US, West US, and West US 3; Marketplace Deployments Standard added Central US, East US, East US 2, North Central US, South Central US, Sweden Central, West Central US, West US, and West US 3 | claude-opus-4-1: Global coverage added East US 2, Sweden Central, and West Central US; Marketplace Deployments Standard added East US 2, Sweden Central, and West Central US | claude-opus-4-5: Global coverage added East US 2, Sweden Central, and West Central US; Marketplace Deployments Standard added East US 2, Sweden Central, and West Central US | claude-opus-4-6: Global coverage added East US 2 and Sweden Central; Marketplace Deployments Standard added East US 2 and Sweden Central | claude-opus-4-7: Global coverage added East US 2 and Sweden Central; Marketplace Deployments Standard added East US 2 and Sweden Central | claude-opus-4-8: Global coverage added Central US, East US, East US 2, North Central US, South Central US, Sweden Central, West Central US, West US, and West US 3; Marketplace Deployments Standard added Central US, East US, East US 2, North Central US, South Central US, Sweden Central, West Central US, West US, and West US 3 | claude-sonnet-4-5: Global coverage added East US 2, Sweden Central, and West Central US; Marketplace Deployments Standard added East US 2, Sweden Central, and West Central US | claude-sonnet-4-6: Global coverage added East US 2 and Sweden Central; Marketplace Deployments Standard added East US 2 and Sweden Central | claude-sonnet-5: Global coverage added Central US, East US, East US 2, North Central US, South Central US, Sweden Central, West Central US, West US, and West US 3; Marketplace Deployments Standard added Central US, East US, East US 2, North Central US, South Central US, Sweden Central, West Central US, West US, and West US 3 | cohere-command-a: Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | embed-v-4-0: Global coverage removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3; Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | gpt-4.1: Datazone Standard Priority Processing added East US 2; Standard Global Priority Processing added East US 2 and West US 3 | gpt-5-chat: Deployments Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US | gpt-5.1: Standard Global Priority Processing added West US 3 | gpt-5.1-chat: Deployments Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.2: Standard Global Priority Processing added West US 3 | gpt-5.2-chat: Deployments Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.3-chat: Deployments Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.4: Standard Global Priority Processing added West US 3 | gpt-5.4-mini: Deployments Provisioned added Australia East, France Central, Germany West Central, Italy North, Korea Central, Norway East, Poland Central, South Africa North, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, and West Europe; Standard Global Priority Processing added West US 3 | gpt-5.4-pro: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, South Africa North, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, South Africa North, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.5: Datazone Standard Priority Processing added Central US, East US, North Central US, West US, and West US 3; Standard Global Priority Processing added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, South Africa North, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.6-luna: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.6-sol: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Provisioned added Australia East, Canada East, Central US, Norway East, South Central US, South India, Sweden Central, Switzerland North, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Standard Global Priority Processing added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-5.6-terra: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Standard Global Priority Processing added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | grok-3: Global coverage removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3; Data Zone Standard removed Central US, East US, East US 2, North Central US, South Central US, West Central US, West US, West US 2, and West US 3; Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | grok-3-mini: Global coverage removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3; Data Zone Standard removed Central US, East US, East US 2, North Central US, South Central US, West Central US, West US, West US 2, and West US 3; Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | grok-4-1-fast-non-reasoning: Data Zone Standard removed Central US, East US, East US 2, North Central US, South Central US, West Central US, West US, West US 2, and West US 3; Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | grok-4-1-fast-reasoning: Data Zone Standard removed Central US, East US, East US 2, North Central US, South Central US, West Central US, West US, West US 2, and West US 3; Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | grok-4-fast-non-reasoning: Global coverage removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3; Data Zone Standard removed Central US, East US, East US 2, North Central US, South Central US, West Central US, West US, West US 2, and West US 3; Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | grok-4-fast-reasoning: Global coverage removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3; Data Zone Standard removed Central US, East US, East US 2, North Central US, South Central US, West Central US, West US, West US 2, and West US 3; Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | mistral-document-ai-2505: Global coverage removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3; Data Zone Standard removed Central US, East US, East US 2, France Central, Germany West Central, Italy North, North Central US, Poland Central, South Central US, Spain Central, Sweden Central, West Central US, West Europe, West US, West US 2, and West US 3; Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | mistral-document-ai-2512: Global coverage removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3; Data Zone Standard removed Central US, East US, East US 2, France Central, Germany West Central, Italy North, North Central US, Poland Central, South Central US, Spain Central, Sweden Central, West Central US, West Europe, West US, West US 2, and West US 3; Global Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Central US, West Europe, West US, West US 2, and West US 3 | mistral-medium-2505: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Marketplace Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | mistral-small-2503: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Marketplace Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | model-router: Global coverage removed Australia East and South India; Data Zone Standard removed East US 2 and Sweden Central; Deployments Standard removed Australia East, South India, and West US 3; Global Standard removed East US 2 and Sweden Central
 - **2026-07-10 10:23 UTC** — Cohere-command-a-plus-05-2026: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | Cohere-rerank-v4.0-fast: Global coverage added UK West; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | Cohere-rerank-v4.0-pro: Global coverage added UK West; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | DeepSeek-R1: Global coverage added UK West; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | DeepSeek-R1-0528: Global coverage added UK West; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | DeepSeek-V3-0324: Global coverage added UK West; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | DeepSeek-V3.1: Global coverage added UK West; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | DeepSeek-V3.2: Global coverage added UK West; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | DeepSeek-V3.2-Speciale: Global coverage added UK West; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | DeepSeek-V4-Flash: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | DeepSeek-V4-Pro: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | FLUX-1.1-pro: Global coverage added UK West; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | FLUX.1-Kontext-pro: Global coverage added UK West; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | FLUX.2-flex: Global coverage added UK West; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | FLUX.2-pro: Global coverage added UK West; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | Kimi-K2.5: Global coverage added UK West; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | Kimi-K2.6: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | Kimi-K2.7-Code: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | Llama-3.3-70B-Instruct: Global coverage added UK West; Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | Llama-4-Maverick-17B-128E-Instruct-FP8: Global coverage added UK West; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | MAI-Image-2: Global coverage added UAE North; Deployments Standard added East US, South India, Sweden Central, UAE North, West Central US, West Europe, and West US | MAI-Image-2.5: Global coverage added East US, South India, Sweden Central, UAE North, West Central US, West Europe, and West US; Deployments Standard added East US, South India, Sweden Central, UAE North, West Central US, West Europe, and West US | MAI-Image-2.5-Flash: Global coverage added East US, South India, Sweden Central, UAE North, West Central US, West Europe, and West US; Deployments Standard added East US, South India, Sweden Central, UAE North, West Central US, West Europe, and West US | MAI-Image-2e: Global coverage added East US, South India, Sweden Central, UAE North, West Central US, West Europe, and West US; Deployments Standard added East US, South India, Sweden Central, UAE North, West Central US, West Europe, and West US | Mistral-Large-3: Global coverage added UK West; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | Phi-4: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, Norway East, Poland Central, South Africa North, South India, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, and West US 2; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | Phi-4-mini-instruct: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, Norway East, Poland Central, South Africa North, South India, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, and West US 2; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | Phi-4-mini-reasoning: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, Norway East, Poland Central, South Africa North, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, and West US 2; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | Phi-4-multimodal-instruct: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, Norway East, Poland Central, South Africa North, South India, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, and West US 2; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | Phi-4-reasoning: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, Norway East, Poland Central, South Africa North, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, and West US 2; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | cohere-command-a: Global coverage added UK West; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | grok-4-1-fast-non-reasoning: Global coverage added UK West; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | grok-4-1-fast-reasoning: Global coverage added UK West; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | grok-4-20-non-reasoning: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | grok-4-20-reasoning: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | grok-4.3: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | mistral-medium-3-5: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3
 - **2026-07-09 10:30 UTC** — Claude Fable: Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Haiku 4.5: Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Haiku 4.5 (preview): Global coverage removed East US 2 and Sweden Central; Region Availability Maas removed East US 2 and Sweden Central | Claude Mythos 5<sup>1<: Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Mythos Preview<sup>1<: Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Mythos Preview<sup>2<: Global coverage removed East US 2 and Sweden Central; Region Availability Maas removed East US 2 and Sweden Central | Claude Opus 4.1: Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Opus 4.1 (preview): Global coverage removed East US 2 and Sweden Central; Region Availability Maas removed East US 2 and Sweden Central | Claude Opus 4.5: Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Opus 4.5 (preview): Global coverage removed East US 2 and Sweden Central; Region Availability Maas removed East US 2 and Sweden Central | Claude Opus 4.6: Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Opus 4.6 (preview): Global coverage removed East US 2 and Sweden Central; Region Availability Maas removed East US 2 and Sweden Central | Claude Opus 4.7: Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Opus 4.7 (preview): Global coverage removed East US 2 and Sweden Central; Region Availability Maas removed East US 2 and Sweden Central | Claude Opus 4.8: Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Opus 4.8 (preview): Global coverage removed East US 2 and Sweden Central; Region Availability Maas removed East US 2 and Sweden Central | Claude Sonnet 4.5: Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Sonnet 4.5 (preview): Global coverage removed East US 2 and Sweden Central; Region Availability Maas removed East US 2 and Sweden Central | Claude Sonnet 4.6: Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Sonnet 4.6 (preview): Global coverage removed East US 2 and Sweden Central; Region Availability Maas removed East US 2 and Sweden Central | Claude Sonnet 5: Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | gpt-4.1: Global coverage added usgovvirginia; Datazone Standard Gov added usgovvirginia | gpt-4.1-mini: Global coverage added usgovvirginia; Datazone Standard Gov added usgovvirginia | gpt-4o: Global coverage added usgovvirginia; Datazone Standard Gov added usgovvirginia | gpt-5.1: Global coverage added usgovvirginia; Datazone Standard Gov added usgovvirginia | gpt-5.2: Datazone standard added Australia East, Japan East, Korea Central, South India, and Southeast Asia | gpt-5.3-codex: Datazone standard added Australia East, Japan East, Korea Central, South India, and Southeast Asia | gpt-5.4: Datazone standard added Australia East, Japan East, Korea Central, Norway East, South India, Southeast Asia, and Switzerland North; Global batch added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, and West US 3; Global batch datazone added Central US, East US, East US 2, North Central US, South Central US, West US, and West US 3 | gpt-5.4-mini: Datazone standard added Australia East, Japan East, Korea Central, South India, and Southeast Asia; Deployments Provisioned added Japan East, South India, and Southeast Asia; Global batch added Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, and West US 3; Global batch datazone added Central US, East US, East US 2, North Central US, South Central US, West US, and West US 3 | gpt-5.5: Datazone standard added Australia East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, South India, Southeast Asia, Spain Central, Switzerland North, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Japan East, Korea Central, South Africa North, South India, Southeast Asia, Switzerland West, UAE North, and UK South; Standard Global By Capability added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, South Africa North, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-chat-latest: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, South Africa North, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, South Africa North, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, and West US | gpt-realtime-2.1: Global coverage added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central; Deployments Standard added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | gpt-realtime-2.1-mini: Global coverage added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central; Deployments Standard added Canada Central, Central US, East US 2, France Central, South India, and Sweden Central | model-router: Global coverage added Australia East, South India, and West US 3; Datazone standard added West US 3; Deployments Standard added Australia East, South India, and West US 3 | o3-mini: Global coverage added usgovvirginia; Datazone Standard Gov added usgovvirginia | text-embedding-3-large: Global coverage added usgovvirginia; Datazone Standard Gov added usgovarizona and usgovvirginia | text-embedding-3-small: Global coverage added usgovvirginia; Datazone Standard Gov added usgovarizona and usgovvirginia | text-embedding-ada-002: Global coverage added Canada Central, Southeast Asia, and Switzerland West; Deployments Standard added Canada Central, Southeast Asia, and Switzerland West
 - **2026-07-06 17:08 UTC** — Claude Haiku 4.5 (preview): Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Mythos Preview<sup>2<: Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Opus 4.1 (preview): Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Opus 4.5 (preview): Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Opus 4.6 (preview): Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Opus 4.7 (preview): Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Opus 4.8 (preview): Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Sonnet 4.5 (preview): Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Claude Sonnet 4.6 (preview): Global coverage added East US 2 and Sweden Central; Region Availability Maas added East US 2 and Sweden Central | Codestral-2501: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Cohere Command R 08-2024: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Cohere Command R+ 08-2024: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Cohere Embed v3 - English: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Cohere Embed v3 - Multilingual: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Cohere Rerank v3.5: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | DeepSeek-R1: Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | DeepSeek-V3-0324: Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | Llama 3.1 405B Instruct: Global coverage added East US, East US 2, North Central US, South Central US, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | Llama 3.1 8B Instruct: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama 3.3 70B Instruct: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-3.2-11B-Vision-Instruct: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-3.2-1B: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-3.2-1B-Instruct: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-3.2-3B: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-3.2-3B-Instruct: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-3.2-90B-Vision-Instruct: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-3.3-70B-Instruct: Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-Guard-3-11B-Vision: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Llama-Guard-3-1B: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | MAI-DS-R1: Global coverage added East US, East US 2, North Central US, South Central US, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | Ministral-3B: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Mistral Medium 3 (25.05): Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Mistral Small 25.03: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Phi-4: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Phi-4-mini-instruct: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Phi-4-mini-reasoning: Global coverage added East US, East US 2, North Central US, South Central US, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | Phi-4-multimodal-instruct: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | Phi-4-reasoning: Global coverage added East US, East US 2, North Central US, South Central US, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | Stable Diffusion 3.5 Large: Global coverage added East US, East US 2, North Central US, South Central US, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | Stable Image Core: Global coverage added East US, East US 2, North Central US, South Central US, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | Stable Image Ultra: Global coverage added East US, East US 2, North Central US, South Central US, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3 | TimeGEN-1: Global coverage added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, Sweden Central, West US, and West US 3 | mistral-document-ai-2505: Region Availability Maas added East US 2 and Sweden Central | tsuzumi-7b: Global coverage added East US, East US 2, North Central US, South Central US, West US, and West US 3; Region Availability Maas added East US, East US 2, North Central US, South Central US, West US, and West US 3
