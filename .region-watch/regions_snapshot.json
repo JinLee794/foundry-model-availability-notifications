@@ -5860,7 +5860,8 @@
       "UAE North",
       "UK South",
       "West Europe",
-      "West US"
+      "West US",
+      "West US 3"
     ],
     "skus": {
       "deployments-standard": {
@@ -5892,7 +5893,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "standard-global": {
@@ -6375,7 +6377,8 @@
       "UAE North",
       "UK South",
       "West Europe",
-      "West US"
+      "West US",
+      "West US 3"
     ],
     "skus": {
       "deployments-standard": {
@@ -6407,7 +6410,8 @@
           "UAE North",
           "UK South",
           "West Europe",
-          "West US"
+          "West US",
+          "West US 3"
         ]
       },
       "standard-global": {
@@ -9400,9 +9404,14 @@
           "Australia East",
           "Canada East",
           "Central US",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
           "Norway East",
+          "Poland Central",
           "South Central US",
           "South India",
+          "Spain Central",
           "Sweden Central",
           "Switzerland North",
           "UAE North",
@@ -9512,6 +9521,30 @@
       "West US 3"
     ],
     "skus": {
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "Brazil South",
+          "Canada Central",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "Southeast Asia",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "West Europe"
+        ]
+      },
       "deployments-standard": {
         "label": "Deployments Standard",
         "regions": [

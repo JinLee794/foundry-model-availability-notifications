@@ -1,0 +1,91 @@
+{
+  "changes": {
+    "gpt-5-codex": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Deployments Standard",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5-pro": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Deployments Standard",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.6-sol": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "added": [
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Poland Central",
+            "Spain Central"
+          ],
+          "label": "Deployments Provisioned",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.6-terra": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "added": [
+            "Brazil South",
+            "Canada Central",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "West Europe"
+          ],
+          "label": "Deployments Provisioned",
+          "removed": []
+        }
+      }
+    }
+  },
+  "timestamp": "2026-07-22T09:26:42.132713+00:00"
+}
