@@ -1,0 +1,288 @@
+{
+  "changes": {
+    "DeepSeek-R1-0528": {
+      "all": {
+        "added": [],
+        "removed": [
+          "West Central US"
+        ]
+      },
+      "skus": {
+        "deployments-standard": {
+          "added": [],
+          "label": "Deployments Standard",
+          "removed": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Japan West",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "UK West",
+            "West Central US",
+            "West Europe",
+            "West US",
+            "West US 2",
+            "West US 3"
+          ],
+          "sku_removed": true
+        }
+      }
+    },
+    "DeepSeek-V3-0324": {
+      "all": {
+        "added": [],
+        "removed": [
+          "West Central US"
+        ]
+      },
+      "skus": {
+        "deployments-standard": {
+          "added": [],
+          "label": "Deployments Standard",
+          "removed": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Japan West",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "UK West",
+            "West Central US",
+            "West Europe",
+            "West US",
+            "West US 2",
+            "West US 3"
+          ],
+          "sku_removed": true
+        }
+      }
+    },
+    "DeepSeek-V3.1": {
+      "all": {
+        "added": [],
+        "removed": [
+          "Australia East",
+          "Brazil South",
+          "Canada Central",
+          "Canada East",
+          "Central US",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Japan West",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "UK West",
+          "West Central US",
+          "West Europe",
+          "West US",
+          "West US 2",
+          "West US 3"
+        ]
+      },
+      "model_removed": true,
+      "skus": {
+        "deployments-standard": {
+          "added": [],
+          "label": "Deployments Standard",
+          "removed": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Japan West",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "UK West",
+            "West Central US",
+            "West Europe",
+            "West US",
+            "West US 2",
+            "West US 3"
+          ],
+          "sku_removed": true
+        }
+      }
+    },
+    "MAI-Image-2.5-Pro": {
+      "all": {
+        "added": [
+          "East US",
+          "South India",
+          "Sweden Central",
+          "UAE North",
+          "West Central US",
+          "West Europe",
+          "West US"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "added": [
+            "East US",
+            "South India",
+            "Sweden Central",
+            "UAE North",
+            "West Central US",
+            "West Europe",
+            "West US"
+          ],
+          "label": "Deployments Standard",
+          "removed": []
+        }
+      }
+    },
+    "claude-opus-5": {
+      "all": {
+        "added": [
+          "Central US",
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West Central US",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "marketplace-deployments-standard": {
+          "added": [
+            "Central US",
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West Central US",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Marketplace Deployments Standard",
+          "removed": []
+        }
+      }
+    },
+    "model-router": {
+      "all": {
+        "added": [
+          "Australia East",
+          "South India"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard": {
+          "added": [
+            "Australia East",
+            "South India"
+          ],
+          "label": "Datazone standard",
+          "removed": []
+        },
+        "deployments-standard": {
+          "added": [
+            "Australia East",
+            "South India",
+            "West US 3"
+          ],
+          "label": "Deployments Standard",
+          "removed": []
+        },
+        "standard-global": {
+          "added": [
+            "Australia East",
+            "South India",
+            "West US 3"
+          ],
+          "label": "Standard global deployments",
+          "removed": []
+        },
+        "standard-global-by-capability": {
+          "added": [
+            "Australia East",
+            "South India",
+            "West US 3"
+          ],
+          "label": "Standard Global By Capability",
+          "removed": []
+        }
+      }
+    }
+  },
+  "timestamp": "2026-07-25T09:02:36.256868+00:00"
+}

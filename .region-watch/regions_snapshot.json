@@ -576,7 +576,6 @@
       "UAE North",
       "UK South",
       "UK West",
-      "West Central US",
       "West Europe",
       "West US",
       "West US 2",
@@ -612,42 +611,6 @@
           "UAE North",
           "UK South",
           "UK West",
-          "West Europe",
-          "West US",
-          "West US 2",
-          "West US 3"
-        ]
-      },
-      "deployments-standard": {
-        "label": "Deployments Standard",
-        "regions": [
-          "Australia East",
-          "Brazil South",
-          "Canada Central",
-          "Canada East",
-          "Central US",
-          "East US",
-          "East US 2",
-          "France Central",
-          "Germany West Central",
-          "Italy North",
-          "Japan East",
-          "Japan West",
-          "Korea Central",
-          "North Central US",
-          "Norway East",
-          "Poland Central",
-          "South Africa North",
-          "South Central US",
-          "South India",
-          "Spain Central",
-          "Sweden Central",
-          "Switzerland North",
-          "Switzerland West",
-          "UAE North",
-          "UK South",
-          "UK West",
-          "West Central US",
           "West Europe",
           "West US",
           "West US 2",
@@ -684,7 +647,6 @@
       "UAE North",
       "UK South",
       "UK West",
-      "West Central US",
       "West Europe",
       "West US",
       "West US 2",
@@ -726,42 +688,6 @@
           "West US 3"
         ]
       },
-      "deployments-standard": {
-        "label": "Deployments Standard",
-        "regions": [
-          "Australia East",
-          "Brazil South",
-          "Canada Central",
-          "Canada East",
-          "Central US",
-          "East US",
-          "East US 2",
-          "France Central",
-          "Germany West Central",
-          "Italy North",
-          "Japan East",
-          "Japan West",
-          "Korea Central",
-          "North Central US",
-          "Norway East",
-          "Poland Central",
-          "South Africa North",
-          "South Central US",
-          "South India",
-          "Spain Central",
-          "Sweden Central",
-          "Switzerland North",
-          "Switzerland West",
-          "UAE North",
-          "UK South",
-          "UK West",
-          "West Central US",
-          "West Europe",
-          "West US",
-          "West US 2",
-          "West US 3"
-        ]
-      },
       "region-availability-maas": {
         "label": "Region Availability Maas",
         "regions": [
@@ -770,79 +696,6 @@
           "North Central US",
           "South Central US",
           "West US",
-          "West US 3"
-        ]
-      }
-    }
-  },
-  "DeepSeek-V3.1": {
-    "all": [
-      "Australia East",
-      "Brazil South",
-      "Canada Central",
-      "Canada East",
-      "Central US",
-      "East US",
-      "East US 2",
-      "France Central",
-      "Germany West Central",
-      "Italy North",
-      "Japan East",
-      "Japan West",
-      "Korea Central",
-      "North Central US",
-      "Norway East",
-      "Poland Central",
-      "South Africa North",
-      "South Central US",
-      "South India",
-      "Spain Central",
-      "Sweden Central",
-      "Switzerland North",
-      "Switzerland West",
-      "UAE North",
-      "UK South",
-      "UK West",
-      "West Central US",
-      "West Europe",
-      "West US",
-      "West US 2",
-      "West US 3"
-    ],
-    "skus": {
-      "deployments-standard": {
-        "label": "Deployments Standard",
-        "regions": [
-          "Australia East",
-          "Brazil South",
-          "Canada Central",
-          "Canada East",
-          "Central US",
-          "East US",
-          "East US 2",
-          "France Central",
-          "Germany West Central",
-          "Italy North",
-          "Japan East",
-          "Japan West",
-          "Korea Central",
-          "North Central US",
-          "Norway East",
-          "Poland Central",
-          "South Africa North",
-          "South Central US",
-          "South India",
-          "Spain Central",
-          "Sweden Central",
-          "Switzerland North",
-          "Switzerland West",
-          "UAE North",
-          "UK South",
-          "UK West",
-          "West Central US",
-          "West Europe",
-          "West US",
-          "West US 2",
           "West US 3"
         ]
       }
@@ -2325,6 +2178,31 @@
       }
     }
   },
+  "MAI-Image-2.5-Pro": {
+    "all": [
+      "East US",
+      "South India",
+      "Sweden Central",
+      "UAE North",
+      "West Central US",
+      "West Europe",
+      "West US"
+    ],
+    "skus": {
+      "deployments-standard": {
+        "label": "Deployments Standard",
+        "regions": [
+          "East US",
+          "South India",
+          "Sweden Central",
+          "UAE North",
+          "West Central US",
+          "West Europe",
+          "West US"
+        ]
+      }
+    }
+  },
   "MAI-Image-2e": {
     "all": [
       "East US",
@@ -3257,6 +3135,35 @@
     }
   },
   "claude-opus-4-8": {
+    "all": [
+      "Central US",
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West Central US",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "marketplace-deployments-standard": {
+        "label": "Marketplace Deployments Standard",
+        "regions": [
+          "Central US",
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West Central US",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "claude-opus-5": {
     "all": [
       "Central US",
       "East US",
@@ -10803,7 +10710,9 @@
   },
   "model-router": {
     "all": [
+      "Australia East",
       "East US 2",
+      "South India",
       "Sweden Central",
       "West US 3"
     ],
@@ -10811,7 +10720,9 @@
       "datazone-standard": {
         "label": "Datazone standard",
         "regions": [
+          "Australia East",
           "East US 2",
+          "South India",
           "Sweden Central",
           "West US 3"
         ]
@@ -10819,22 +10730,31 @@
       "deployments-standard": {
         "label": "Deployments Standard",
         "regions": [
+          "Australia East",
           "East US 2",
-          "Sweden Central"
+          "South India",
+          "Sweden Central",
+          "West US 3"
         ]
       },
       "standard-global": {
         "label": "Standard global deployments",
         "regions": [
+          "Australia East",
           "East US 2",
-          "Sweden Central"
+          "South India",
+          "Sweden Central",
+          "West US 3"
         ]
       },
       "standard-global-by-capability": {
         "label": "Standard Global By Capability",
         "regions": [
+          "Australia East",
           "East US 2",
-          "Sweden Central"
+          "South India",
+          "Sweden Central",
+          "West US 3"
         ]
       }
     }
