@@ -1,6 +1,74 @@
 {
-  "timestamp": "2026-08-03T10:42:37.503413+00:00",
-  "changes": {},
+  "timestamp": "2026-08-04T09:38:27.021849+00:00",
+  "changes": {
+    "gpt-5.1-codex-max": {
+      "all": {
+        "added": [
+          "Australia East",
+          "Brazil South",
+          "Canada Central",
+          "Canada East",
+          "Central US",
+          "East US",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Southeast Asia",
+          "Spain Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    }
+  },
   "current": {
     "claude-fable-5": {
       "all": [
@@ -5378,15 +5446,67 @@
     },
     "gpt-5.1-codex-max": {
       "all": [
+        "Australia East",
+        "Brazil South",
+        "Canada Central",
+        "Canada East",
+        "Central US",
+        "East US",
         "East US 2",
-        "Sweden Central"
+        "France Central",
+        "Germany West Central",
+        "Italy North",
+        "Japan East",
+        "Korea Central",
+        "North Central US",
+        "Norway East",
+        "Poland Central",
+        "South Africa North",
+        "South Central US",
+        "South India",
+        "Southeast Asia",
+        "Spain Central",
+        "Sweden Central",
+        "Switzerland North",
+        "Switzerland West",
+        "UAE North",
+        "UK South",
+        "West Europe",
+        "West US",
+        "West US 3"
       ],
       "skus": {
         "deployments-standard": {
           "label": "Deployments Standard",
           "regions": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
             "East US 2",
-            "Sweden Central"
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
           ]
         },
         "standard-global": {
