@@ -3070,23 +3070,6 @@
       }
     }
   },
-  "claude-opus-4-1": {
-    "all": [
-      "East US 2",
-      "Sweden Central",
-      "West Central US"
-    ],
-    "skus": {
-      "marketplace-deployments-standard": {
-        "label": "Marketplace Deployments Standard",
-        "regions": [
-          "East US 2",
-          "Sweden Central",
-          "West Central US"
-        ]
-      }
-    }
-  },
   "claude-opus-4-5": {
     "all": [
       "East US 2",

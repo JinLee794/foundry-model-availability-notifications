@@ -1,8 +1,8 @@
 # AI Foundry Model Availability by Region
 
-_Last updated: 2026-08-04 09:38 UTC_
+_Last updated: 2026-08-06 09:39 UTC_
 
-- Models tracked: **144**
+- Models tracked: **143**
 - Regions in snapshot: **34**
 - Distinct SKU labels: **21**
 
@@ -164,7 +164,6 @@ SKU labels observed:
 | gpt-image-1.5 | 🔴 Emerging | 5 | 5 (Datazone standard, Deployments Standard, Global Standard +) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
 | gpt-image-2 | 🔴 Emerging | 5 | 4 (Deployments Standard, Global Standard, Global coverage +) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
 | model-router | 🔴 Emerging | 5 | 5 (Datazone standard, Deployments Standard, Global Standard +) | `Australia East`, `East US 2`, `South India`, `Sweden Central`, `West US 3` |
-| claude-opus-4-1 | 🔴 Emerging | 3 | 2 (Global coverage, Marketplace Deployments Standard) | `East US 2`, `Sweden Central`, `West Central US` |
 | claude-opus-4-5 | 🔴 Emerging | 3 | 2 (Global coverage, Marketplace Deployments Standard) | `East US 2`, `Sweden Central`, `West Central US` |
 | claude-sonnet-4-5 | 🔴 Emerging | 3 | 2 (Global coverage, Marketplace Deployments Standard) | `East US 2`, `Sweden Central`, `West Central US` |
 | codex-mini | 🔴 Emerging | 3 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Central US`, `East US 2`, `Sweden Central` |
@@ -3368,14 +3367,6 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>claude-opus-4-1 — 3 regions across 2 SKU labels</summary>
-
-- `East US 2` — Global coverage, Marketplace Deployments Standard
-- `Sweden Central` — Global coverage, Marketplace Deployments Standard
-- `West Central US` — Global coverage, Marketplace Deployments Standard
-
-</details>
-<details>
 <summary>claude-opus-4-5 — 3 regions across 2 SKU labels</summary>
 
 - `East US 2` — Global coverage, Marketplace Deployments Standard
@@ -3513,6 +3504,7 @@ SKU labels observed:
 
 ## Recent changes
 
+- **2026-08-06 09:39 UTC** — claude-opus-4-1: Global coverage removed East US 2, Sweden Central, and West Central US; Marketplace Deployments Standard removed East US 2, Sweden Central, and West Central US
 - **2026-08-04 09:38 UTC** — gpt-5.1-codex-max: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3
 - **2026-07-25 09:02 UTC** — DeepSeek-R1-0528: Global coverage removed West Central US; Deployments Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | DeepSeek-V3-0324: Global coverage removed West Central US; Deployments Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | DeepSeek-V3.1: Global coverage removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Deployments Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | MAI-Image-2.5-Pro: Global coverage added East US, South India, Sweden Central, UAE North, West Central US, West Europe, and West US; Deployments Standard added East US, South India, Sweden Central, UAE North, West Central US, West Europe, and West US | claude-opus-5: Global coverage added Central US, East US, East US 2, North Central US, South Central US, Sweden Central, West Central US, West US, and West US 3; Marketplace Deployments Standard added Central US, East US, East US 2, North Central US, South Central US, Sweden Central, West Central US, West US, and West US 3 | model-router: Global coverage added Australia East and South India; Datazone standard added Australia East and South India; Deployments Standard added Australia East, South India, and West US 3; Standard global deployments added Australia East, South India, and West US 3; Standard Global By Capability added Australia East, South India, and West US 3
 - **2026-07-22 09:26 UTC** — gpt-5-codex: Global coverage added West US 3; Deployments Standard added West US 3 | gpt-5-pro: Global coverage added West US 3; Deployments Standard added West US 3 | gpt-5.6-sol: Deployments Provisioned added France Central, Germany West Central, Italy North, Poland Central, and Spain Central | gpt-5.6-terra: Deployments Provisioned added Brazil South, Canada Central, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, and West Europe

@@ -1,0 +1,28 @@
+{
+  "changes": {
+    "claude-opus-4-1": {
+      "all": {
+        "added": [],
+        "removed": [
+          "East US 2",
+          "Sweden Central",
+          "West Central US"
+        ]
+      },
+      "model_removed": true,
+      "skus": {
+        "marketplace-deployments-standard": {
+          "added": [],
+          "label": "Marketplace Deployments Standard",
+          "removed": [
+            "East US 2",
+            "Sweden Central",
+            "West Central US"
+          ],
+          "sku_removed": true
+        }
+      }
+    }
+  },
+  "timestamp": "2026-08-06T09:39:43.524538+00:00"
+}

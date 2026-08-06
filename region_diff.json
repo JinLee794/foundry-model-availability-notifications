@@ -1,6 +1,30 @@
 {
-  "timestamp": "2026-08-05T09:36:45.377700+00:00",
-  "changes": {},
+  "timestamp": "2026-08-06T09:39:43.524538+00:00",
+  "changes": {
+    "claude-opus-4-1": {
+      "all": {
+        "added": [],
+        "removed": [
+          "East US 2",
+          "Sweden Central",
+          "West Central US"
+        ]
+      },
+      "skus": {
+        "marketplace-deployments-standard": {
+          "label": "Marketplace Deployments Standard",
+          "added": [],
+          "removed": [
+            "East US 2",
+            "Sweden Central",
+            "West Central US"
+          ],
+          "sku_removed": true
+        }
+      },
+      "model_removed": true
+    }
+  },
   "current": {
     "claude-fable-5": {
       "all": [
@@ -42,23 +66,6 @@
             "West Central US",
             "West US",
             "West US 3"
-          ]
-        }
-      }
-    },
-    "claude-opus-4-1": {
-      "all": [
-        "East US 2",
-        "Sweden Central",
-        "West Central US"
-      ],
-      "skus": {
-        "marketplace-deployments-standard": {
-          "label": "Marketplace Deployments Standard",
-          "regions": [
-            "East US 2",
-            "Sweden Central",
-            "West Central US"
           ]
         }
       }
