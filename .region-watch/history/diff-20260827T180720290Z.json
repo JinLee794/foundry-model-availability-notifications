@@ -1,0 +1,82 @@
+{
+  "changes": {
+    "grok-4.6": {
+      "all": {
+        "added": [
+          "Australia East",
+          "Brazil South",
+          "Canada Central",
+          "Canada East",
+          "Central US",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Japan West",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "UK West",
+          "West Central US",
+          "West Europe",
+          "West US",
+          "West US 2",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Japan West",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "UK West",
+            "West Central US",
+            "West Europe",
+            "West US",
+            "West US 2",
+            "West US 3"
+          ],
+          "label": "Deployments Standard",
+          "removed": []
+        }
+      }
+    }
+  },
+  "timestamp": "2026-08-27T18:07:20.290301+00:00"
+}

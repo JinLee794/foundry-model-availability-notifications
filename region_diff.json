@@ -1,6 +1,84 @@
 {
-  "timestamp": "2026-08-26T07:46:42.508380+00:00",
-  "changes": {},
+  "timestamp": "2026-08-27T18:07:20.290301+00:00",
+  "changes": {
+    "grok-4.6": {
+      "all": {
+        "added": [
+          "Australia East",
+          "Brazil South",
+          "Canada Central",
+          "Canada East",
+          "Central US",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Japan West",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "UK West",
+          "West Central US",
+          "West Europe",
+          "West US",
+          "West US 2",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Japan West",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "UK West",
+            "West Central US",
+            "West Europe",
+            "West US",
+            "West US 2",
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    }
+  },
   "current": {
     "claude-fable-5": {
       "all": [
@@ -8581,6 +8659,79 @@
       }
     },
     "grok-4.3": {
+      "all": [
+        "Australia East",
+        "Brazil South",
+        "Canada Central",
+        "Canada East",
+        "Central US",
+        "East US",
+        "East US 2",
+        "France Central",
+        "Germany West Central",
+        "Italy North",
+        "Japan East",
+        "Japan West",
+        "Korea Central",
+        "North Central US",
+        "Norway East",
+        "Poland Central",
+        "South Africa North",
+        "South Central US",
+        "South India",
+        "Spain Central",
+        "Sweden Central",
+        "Switzerland North",
+        "Switzerland West",
+        "UAE North",
+        "UK South",
+        "UK West",
+        "West Central US",
+        "West Europe",
+        "West US",
+        "West US 2",
+        "West US 3"
+      ],
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "regions": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Japan West",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "UK West",
+            "West Central US",
+            "West Europe",
+            "West US",
+            "West US 2",
+            "West US 3"
+          ]
+        }
+      }
+    },
+    "grok-4.6": {
       "all": [
         "Australia East",
         "Brazil South",

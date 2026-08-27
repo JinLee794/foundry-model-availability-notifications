@@ -1,8 +1,8 @@
 # AI Foundry Model Availability by Region
 
-_Last updated: 2026-08-22 07:31 UTC_
+_Last updated: 2026-08-27 18:07 UTC_
 
-- Models tracked: **143**
+- Models tracked: **144**
 - Regions in snapshot: **34**
 - Distinct SKU labels: **21**
 
@@ -73,6 +73,7 @@ SKU labels observed:
 | grok-4-20-non-reasoning | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | grok-4-20-reasoning | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | grok-4.3 | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| grok-4.6 | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | mistral-medium-2505 | 🟢 Broad | 31 | 2 (Global coverage, Marketplace Deployments Standard) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | mistral-medium-3-5 | 🟢 Broad | 31 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | mistral-small-2503 | 🟢 Broad | 31 | 2 (Global coverage, Marketplace Deployments Standard) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
@@ -1375,6 +1376,42 @@ SKU labels observed:
 </details>
 <details>
 <summary>grok-4.3 — 31 regions across 2 SKU labels</summary>
+
+- `Australia East` — Deployments Standard, Global coverage
+- `Brazil South` — Deployments Standard, Global coverage
+- `Canada Central` — Deployments Standard, Global coverage
+- `Canada East` — Deployments Standard, Global coverage
+- `Central US` — Deployments Standard, Global coverage
+- `East US` — Deployments Standard, Global coverage
+- `East US 2` — Deployments Standard, Global coverage
+- `France Central` — Deployments Standard, Global coverage
+- `Germany West Central` — Deployments Standard, Global coverage
+- `Italy North` — Deployments Standard, Global coverage
+- `Japan East` — Deployments Standard, Global coverage
+- `Japan West` — Deployments Standard, Global coverage
+- `Korea Central` — Deployments Standard, Global coverage
+- `North Central US` — Deployments Standard, Global coverage
+- `Norway East` — Deployments Standard, Global coverage
+- `Poland Central` — Deployments Standard, Global coverage
+- `South Africa North` — Deployments Standard, Global coverage
+- `South Central US` — Deployments Standard, Global coverage
+- `South India` — Deployments Standard, Global coverage
+- `Spain Central` — Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Standard, Global coverage
+- `Switzerland North` — Deployments Standard, Global coverage
+- `Switzerland West` — Deployments Standard, Global coverage
+- `UAE North` — Deployments Standard, Global coverage
+- `UK South` — Deployments Standard, Global coverage
+- `UK West` — Deployments Standard, Global coverage
+- `West Central US` — Deployments Standard, Global coverage
+- `West Europe` — Deployments Standard, Global coverage
+- `West US` — Deployments Standard, Global coverage
+- `West US 2` — Deployments Standard, Global coverage
+- `West US 3` — Deployments Standard, Global coverage
+
+</details>
+<details>
+<summary>grok-4.6 — 31 regions across 2 SKU labels</summary>
 
 - `Australia East` — Deployments Standard, Global coverage
 - `Brazil South` — Deployments Standard, Global coverage
@@ -3480,6 +3517,7 @@ SKU labels observed:
 
 ## Recent changes
 
+- **2026-08-27 18:07 UTC** — grok-4.6: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3
 - **2026-08-22 07:31 UTC** — DeepSeek-R1: Global coverage removed Australia East, Brazil South, Canada Central, Canada East, Central US, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, Norway East, Poland Central, South Africa North, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, and West US 2; Deployments Provisioned removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Deployments Standard removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | DeepSeek-R1-0528: Global coverage removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Europe, West US, West US 2, and West US 3; Deployments Provisioned removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Europe, West US, West US 2, and West US 3 | DeepSeek-V3-0324: Global coverage removed Australia East, Brazil South, Canada Central, Canada East, Central US, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, Norway East, Poland Central, South Africa North, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Europe, and West US 2; Deployments Provisioned removed Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Europe, West US, West US 2, and West US 3 | DeepSeek-V4-Flash-0731: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | MAI-Image-2: Global coverage removed East US, South India, Sweden Central, UAE North, West Central US, West Europe, and West US; Deployments Standard removed East US, South India, Sweden Central, UAE North, West Central US, West Europe, and West US | MAI-Thinking-1: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3
 - **2026-08-06 09:39 UTC** — claude-opus-4-1: Global coverage removed East US 2, Sweden Central, and West Central US; Marketplace Deployments Standard removed East US 2, Sweden Central, and West Central US
 - **2026-08-04 09:38 UTC** — gpt-5.1-codex-max: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3
