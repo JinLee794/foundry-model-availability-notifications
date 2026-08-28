@@ -8160,6 +8160,33 @@
           "West US 3"
         ]
       },
+      "deployments-batch": {
+        "label": "Deployments Batch",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada East",
+          "Central US",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Sweden Central",
+          "Switzerland North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      },
       "deployments-provisioned": {
         "label": "Deployments Provisioned",
         "regions": [
@@ -8462,6 +8489,33 @@
           "East US 2",
           "North Central US",
           "South Central US",
+          "West US",
+          "West US 3"
+        ]
+      },
+      "deployments-batch": {
+        "label": "Deployments Batch",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada East",
+          "Central US",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Sweden Central",
+          "Switzerland North",
+          "UK South",
+          "West Europe",
           "West US",
           "West US 3"
         ]
@@ -9167,6 +9221,39 @@
       "West US 3"
     ],
     "skus": {
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada Central",
+          "Canada East",
+          "Central US",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Southeast Asia",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ]
+      },
       "deployments-standard": {
         "label": "Deployments Standard",
         "regions": [
@@ -9240,9 +9327,12 @@
           "Australia East",
           "Canada East",
           "Central US",
+          "East US",
+          "East US 2",
           "France Central",
           "Germany West Central",
           "Italy North",
+          "North Central US",
           "Norway East",
           "Poland Central",
           "South Central US",
@@ -9360,8 +9450,11 @@
       "deployments-provisioned": {
         "label": "Deployments Provisioned",
         "regions": [
+          "Australia East",
           "Brazil South",
           "Canada Central",
+          "Canada East",
+          "Central US",
           "East US",
           "East US 2",
           "France Central",
@@ -9373,12 +9466,18 @@
           "Norway East",
           "Poland Central",
           "South Africa North",
+          "South Central US",
+          "South India",
           "Southeast Asia",
           "Spain Central",
           "Sweden Central",
           "Switzerland North",
           "Switzerland West",
-          "West Europe"
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
         ]
       },
       "deployments-standard": {
