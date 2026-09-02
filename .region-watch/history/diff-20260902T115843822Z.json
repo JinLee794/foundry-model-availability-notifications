@@ -1,0 +1,83 @@
+{
+  "changes": {
+    "gpt-5.6-luna": {
+      "all": {
+        "added": [
+          "usgovarizona",
+          "usgovvirginia"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed-gov": {
+          "added": [
+            "usgovarizona"
+          ],
+          "label": "Datazone Provisioned Managed Gov",
+          "removed": []
+        },
+        "datazone-standard-gov": {
+          "added": [
+            "usgovarizona",
+            "usgovvirginia"
+          ],
+          "label": "Datazone Standard Gov",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.6-sol": {
+      "all": {
+        "added": [
+          "usgovarizona",
+          "usgovvirginia"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed-gov": {
+          "added": [
+            "usgovarizona"
+          ],
+          "label": "Datazone Provisioned Managed Gov",
+          "removed": []
+        },
+        "datazone-standard-gov": {
+          "added": [
+            "usgovarizona",
+            "usgovvirginia"
+          ],
+          "label": "Datazone Standard Gov",
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.6-terra": {
+      "all": {
+        "added": [
+          "usgovarizona",
+          "usgovvirginia"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed-gov": {
+          "added": [
+            "usgovarizona"
+          ],
+          "label": "Datazone Provisioned Managed Gov",
+          "removed": []
+        },
+        "datazone-standard-gov": {
+          "added": [
+            "usgovarizona",
+            "usgovvirginia"
+          ],
+          "label": "Datazone Standard Gov",
+          "removed": []
+        }
+      }
+    }
+  },
+  "timestamp": "2026-09-02T11:58:43.822596+00:00"
+}

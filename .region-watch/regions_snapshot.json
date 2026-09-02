@@ -9218,9 +9218,24 @@
       "UK South",
       "West Europe",
       "West US",
-      "West US 3"
+      "West US 3",
+      "usgovarizona",
+      "usgovvirginia"
     ],
     "skus": {
+      "datazone-provisioned-managed-gov": {
+        "label": "Datazone Provisioned Managed Gov",
+        "regions": [
+          "usgovarizona"
+        ]
+      },
+      "datazone-standard-gov": {
+        "label": "Datazone Standard Gov",
+        "regions": [
+          "usgovarizona",
+          "usgovvirginia"
+        ]
+      },
       "deployments-provisioned": {
         "label": "Deployments Provisioned",
         "regions": [
@@ -9318,9 +9333,24 @@
       "UK South",
       "West Europe",
       "West US",
-      "West US 3"
+      "West US 3",
+      "usgovarizona",
+      "usgovvirginia"
     ],
     "skus": {
+      "datazone-provisioned-managed-gov": {
+        "label": "Datazone Provisioned Managed Gov",
+        "regions": [
+          "usgovarizona"
+        ]
+      },
+      "datazone-standard-gov": {
+        "label": "Datazone Standard Gov",
+        "regions": [
+          "usgovarizona",
+          "usgovvirginia"
+        ]
+      },
       "deployments-provisioned": {
         "label": "Deployments Provisioned",
         "regions": [
@@ -9444,9 +9474,24 @@
       "UK South",
       "West Europe",
       "West US",
-      "West US 3"
+      "West US 3",
+      "usgovarizona",
+      "usgovvirginia"
     ],
     "skus": {
+      "datazone-provisioned-managed-gov": {
+        "label": "Datazone Provisioned Managed Gov",
+        "regions": [
+          "usgovarizona"
+        ]
+      },
+      "datazone-standard-gov": {
+        "label": "Datazone Standard Gov",
+        "regions": [
+          "usgovarizona",
+          "usgovvirginia"
+        ]
+      },
       "deployments-provisioned": {
         "label": "Deployments Provisioned",
         "regions": [
