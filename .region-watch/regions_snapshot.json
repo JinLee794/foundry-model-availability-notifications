@@ -2935,6 +2935,21 @@
       }
     }
   },
+  "claude-fable-5-1": {
+    "all": [
+      "East US 2",
+      "Sweden Central"
+    ],
+    "skus": {
+      "marketplace-deployments-standard": {
+        "label": "Marketplace Deployments Standard",
+        "regions": [
+          "East US 2",
+          "Sweden Central"
+        ]
+      }
+    }
+  },
   "claude-haiku-4-5": {
     "all": [
       "Central US",
@@ -2966,47 +2981,87 @@
   },
   "claude-opus-4-5": {
     "all": [
+      "Central US",
+      "East US",
       "East US 2",
+      "North Central US",
+      "South Central US",
       "Sweden Central",
-      "West Central US"
+      "West Central US",
+      "West US",
+      "West US 3"
     ],
     "skus": {
       "marketplace-deployments-standard": {
         "label": "Marketplace Deployments Standard",
         "regions": [
+          "Central US",
+          "East US",
           "East US 2",
+          "North Central US",
+          "South Central US",
           "Sweden Central",
-          "West Central US"
+          "West Central US",
+          "West US",
+          "West US 3"
         ]
       }
     }
   },
   "claude-opus-4-6": {
     "all": [
+      "Central US",
+      "East US",
       "East US 2",
-      "Sweden Central"
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West Central US",
+      "West US",
+      "West US 3"
     ],
     "skus": {
       "marketplace-deployments-standard": {
         "label": "Marketplace Deployments Standard",
         "regions": [
+          "Central US",
+          "East US",
           "East US 2",
-          "Sweden Central"
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West Central US",
+          "West US",
+          "West US 3"
         ]
       }
     }
   },
   "claude-opus-4-7": {
     "all": [
+      "Central US",
+      "East US",
       "East US 2",
-      "Sweden Central"
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West Central US",
+      "West US",
+      "West US 3"
     ],
     "skus": {
       "marketplace-deployments-standard": {
         "label": "Marketplace Deployments Standard",
         "regions": [
+          "Central US",
+          "East US",
           "East US 2",
-          "Sweden Central"
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West Central US",
+          "West US",
+          "West US 3"
         ]
       }
     }
@@ -3071,32 +3126,58 @@
   },
   "claude-sonnet-4-5": {
     "all": [
+      "Central US",
+      "East US",
       "East US 2",
+      "North Central US",
+      "South Central US",
       "Sweden Central",
-      "West Central US"
+      "West Central US",
+      "West US",
+      "West US 3"
     ],
     "skus": {
       "marketplace-deployments-standard": {
         "label": "Marketplace Deployments Standard",
         "regions": [
+          "Central US",
+          "East US",
           "East US 2",
+          "North Central US",
+          "South Central US",
           "Sweden Central",
-          "West Central US"
+          "West Central US",
+          "West US",
+          "West US 3"
         ]
       }
     }
   },
   "claude-sonnet-4-6": {
     "all": [
+      "Central US",
+      "East US",
       "East US 2",
-      "Sweden Central"
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West Central US",
+      "West US",
+      "West US 3"
     ],
     "skus": {
       "marketplace-deployments-standard": {
         "label": "Marketplace Deployments Standard",
         "regions": [
+          "Central US",
+          "East US",
           "East US 2",
-          "Sweden Central"
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West Central US",
+          "West US",
+          "West US 3"
         ]
       }
     }

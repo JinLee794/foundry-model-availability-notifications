@@ -1,79 +1,161 @@
 {
-  "timestamp": "2026-09-02T11:58:43.822596+00:00",
+  "timestamp": "2026-09-03T11:58:10.785953+00:00",
   "changes": {
-    "gpt-5.6-luna": {
+    "claude-fable-5-1": {
       "all": {
         "added": [
-          "usgovarizona",
-          "usgovvirginia"
+          "East US 2",
+          "Sweden Central"
         ],
         "removed": []
       },
       "skus": {
-        "datazone-provisioned-managed-gov": {
-          "label": "Datazone Provisioned Managed Gov",
+        "marketplace-deployments-standard": {
+          "label": "Marketplace Deployments Standard",
           "added": [
-            "usgovarizona"
-          ],
-          "removed": []
-        },
-        "datazone-standard-gov": {
-          "label": "Datazone Standard Gov",
-          "added": [
-            "usgovarizona",
-            "usgovvirginia"
+            "East US 2",
+            "Sweden Central"
           ],
           "removed": []
         }
       }
     },
-    "gpt-5.6-sol": {
+    "claude-opus-4-5": {
       "all": {
         "added": [
-          "usgovarizona",
-          "usgovvirginia"
+          "Central US",
+          "East US",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
         ],
         "removed": []
       },
       "skus": {
-        "datazone-provisioned-managed-gov": {
-          "label": "Datazone Provisioned Managed Gov",
+        "marketplace-deployments-standard": {
+          "label": "Marketplace Deployments Standard",
           "added": [
-            "usgovarizona"
-          ],
-          "removed": []
-        },
-        "datazone-standard-gov": {
-          "label": "Datazone Standard Gov",
-          "added": [
-            "usgovarizona",
-            "usgovvirginia"
+            "Central US",
+            "East US",
+            "North Central US",
+            "South Central US",
+            "West US",
+            "West US 3"
           ],
           "removed": []
         }
       }
     },
-    "gpt-5.6-terra": {
+    "claude-opus-4-6": {
       "all": {
         "added": [
-          "usgovarizona",
-          "usgovvirginia"
+          "Central US",
+          "East US",
+          "North Central US",
+          "South Central US",
+          "West Central US",
+          "West US",
+          "West US 3"
         ],
         "removed": []
       },
       "skus": {
-        "datazone-provisioned-managed-gov": {
-          "label": "Datazone Provisioned Managed Gov",
+        "marketplace-deployments-standard": {
+          "label": "Marketplace Deployments Standard",
           "added": [
-            "usgovarizona"
+            "Central US",
+            "East US",
+            "North Central US",
+            "South Central US",
+            "West Central US",
+            "West US",
+            "West US 3"
           ],
           "removed": []
-        },
-        "datazone-standard-gov": {
-          "label": "Datazone Standard Gov",
+        }
+      }
+    },
+    "claude-opus-4-7": {
+      "all": {
+        "added": [
+          "Central US",
+          "East US",
+          "North Central US",
+          "South Central US",
+          "West Central US",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "marketplace-deployments-standard": {
+          "label": "Marketplace Deployments Standard",
           "added": [
-            "usgovarizona",
-            "usgovvirginia"
+            "Central US",
+            "East US",
+            "North Central US",
+            "South Central US",
+            "West Central US",
+            "West US",
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "claude-sonnet-4-5": {
+      "all": {
+        "added": [
+          "Central US",
+          "East US",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "marketplace-deployments-standard": {
+          "label": "Marketplace Deployments Standard",
+          "added": [
+            "Central US",
+            "East US",
+            "North Central US",
+            "South Central US",
+            "West US",
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "claude-sonnet-4-6": {
+      "all": {
+        "added": [
+          "Central US",
+          "East US",
+          "North Central US",
+          "South Central US",
+          "West Central US",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "marketplace-deployments-standard": {
+          "label": "Marketplace Deployments Standard",
+          "added": [
+            "Central US",
+            "East US",
+            "North Central US",
+            "South Central US",
+            "West Central US",
+            "West US",
+            "West US 3"
           ],
           "removed": []
         }
@@ -82,6 +164,21 @@
   },
   "current": {
     "claude-fable-5": {
+      "all": [
+        "East US 2",
+        "Sweden Central"
+      ],
+      "skus": {
+        "marketplace-deployments-standard": {
+          "label": "Marketplace Deployments Standard",
+          "regions": [
+            "East US 2",
+            "Sweden Central"
+          ]
+        }
+      }
+    },
+    "claude-fable-5-1": {
       "all": [
         "East US 2",
         "Sweden Central"
@@ -127,47 +224,87 @@
     },
     "claude-opus-4-5": {
       "all": [
+        "Central US",
+        "East US",
         "East US 2",
+        "North Central US",
+        "South Central US",
         "Sweden Central",
-        "West Central US"
+        "West Central US",
+        "West US",
+        "West US 3"
       ],
       "skus": {
         "marketplace-deployments-standard": {
           "label": "Marketplace Deployments Standard",
           "regions": [
+            "Central US",
+            "East US",
             "East US 2",
+            "North Central US",
+            "South Central US",
             "Sweden Central",
-            "West Central US"
+            "West Central US",
+            "West US",
+            "West US 3"
           ]
         }
       }
     },
     "claude-opus-4-6": {
       "all": [
+        "Central US",
+        "East US",
         "East US 2",
-        "Sweden Central"
+        "North Central US",
+        "South Central US",
+        "Sweden Central",
+        "West Central US",
+        "West US",
+        "West US 3"
       ],
       "skus": {
         "marketplace-deployments-standard": {
           "label": "Marketplace Deployments Standard",
           "regions": [
+            "Central US",
+            "East US",
             "East US 2",
-            "Sweden Central"
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West Central US",
+            "West US",
+            "West US 3"
           ]
         }
       }
     },
     "claude-opus-4-7": {
       "all": [
+        "Central US",
+        "East US",
         "East US 2",
-        "Sweden Central"
+        "North Central US",
+        "South Central US",
+        "Sweden Central",
+        "West Central US",
+        "West US",
+        "West US 3"
       ],
       "skus": {
         "marketplace-deployments-standard": {
           "label": "Marketplace Deployments Standard",
           "regions": [
+            "Central US",
+            "East US",
             "East US 2",
-            "Sweden Central"
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West Central US",
+            "West US",
+            "West US 3"
           ]
         }
       }
@@ -232,32 +369,58 @@
     },
     "claude-sonnet-4-5": {
       "all": [
+        "Central US",
+        "East US",
         "East US 2",
+        "North Central US",
+        "South Central US",
         "Sweden Central",
-        "West Central US"
+        "West Central US",
+        "West US",
+        "West US 3"
       ],
       "skus": {
         "marketplace-deployments-standard": {
           "label": "Marketplace Deployments Standard",
           "regions": [
+            "Central US",
+            "East US",
             "East US 2",
+            "North Central US",
+            "South Central US",
             "Sweden Central",
-            "West Central US"
+            "West Central US",
+            "West US",
+            "West US 3"
           ]
         }
       }
     },
     "claude-sonnet-4-6": {
       "all": [
+        "Central US",
+        "East US",
         "East US 2",
-        "Sweden Central"
+        "North Central US",
+        "South Central US",
+        "Sweden Central",
+        "West Central US",
+        "West US",
+        "West US 3"
       ],
       "skus": {
         "marketplace-deployments-standard": {
           "label": "Marketplace Deployments Standard",
           "regions": [
+            "Central US",
+            "East US",
             "East US 2",
-            "Sweden Central"
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West Central US",
+            "West US",
+            "West US 3"
           ]
         }
       }
