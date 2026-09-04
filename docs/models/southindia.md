@@ -33,7 +33,7 @@
 </div>
     <div class="model-profile__insight">
         <span>Widest SKU footprint</span>
-        <strong><a href="../by-sku/?sku=Global%20coverage">Global coverage</a></strong>
+        <strong><a href="../../by-sku/?sku=Global%20coverage">Global coverage</a></strong>
         <small>42 regions · 46% coverage · Global</small>
     </div>
 </div>
@@ -55,14 +55,14 @@
         <div class="deployment-sku-list">
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
-                <a class="deployment-sku-row__name" href="../by-sku/?sku=Global%20coverage">Global coverage</a>
+                <a class="deployment-sku-row__name" href="../../by-sku/?sku=Global%20coverage">Global coverage</a>
                 <span>42 regions · 46% coverage</span>
             </div>
             <div class="availability-meter" aria-hidden="true"><span style="width: 46%;"></span></div>
         </div>
         </div>
         <div class="deployment-lane__regions" aria-label="Global deployment regions">
-            <a class="region-badge model-region-chip" href="../by-region/?region=computer-use-preview">computer-use-preview</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-4.1">gpt-4.1</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-4.1-mini">gpt-4.1-mini</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-4.1-nano">gpt-4.1-nano</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-4o">gpt-4o</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-4o-mini">gpt-4o-mini</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-4o-mini-transcribe">gpt-4o-mini-transcribe</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-4o-transcribe">gpt-4o-transcribe</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-4o-transcribe-diarize">gpt-4o-transcribe-diarize</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-5">gpt-5</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-5-chat">gpt-5-chat</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-5-codex">gpt-5-codex</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-5-mini">gpt-5-mini</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-5-nano">gpt-5-nano</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-5-pro">gpt-5-pro</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-5.1">gpt-5.1</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-5.1-chat">gpt-5.1-chat</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-5.1-codex">gpt-5.1-codex</a> <span class="model-region-more">+24 more in matrix</span>
+            <a class="region-badge model-region-chip" href="../../by-region/?region=computer-use-preview">computer-use-preview</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-4.1">gpt-4.1</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-4.1-mini">gpt-4.1-mini</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-4.1-nano">gpt-4.1-nano</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-4o">gpt-4o</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-4o-mini">gpt-4o-mini</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-4o-mini-transcribe">gpt-4o-mini-transcribe</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-4o-transcribe">gpt-4o-transcribe</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-4o-transcribe-diarize">gpt-4o-transcribe-diarize</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-5">gpt-5</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-5-chat">gpt-5-chat</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-5-codex">gpt-5-codex</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-5-mini">gpt-5-mini</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-5-nano">gpt-5-nano</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-5-pro">gpt-5-pro</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-5.1">gpt-5.1</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-5.1-chat">gpt-5.1-chat</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-5.1-codex">gpt-5.1-codex</a> <span class="model-region-more">+24 more in matrix</span>
         </div>
         <p class="deployment-lane__compliance">⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements</p>
     </div>
@@ -80,28 +80,28 @@
         <div class="deployment-sku-list">
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
-                <a class="deployment-sku-row__name" href="../by-sku/?sku=Deployments%20Batch">Deployments Batch</a>
+                <a class="deployment-sku-row__name" href="../../by-sku/?sku=Deployments%20Batch">Deployments Batch</a>
                 <span>10 regions · 11% coverage</span>
             </div>
             <div class="availability-meter" aria-hidden="true"><span style="width: 11%;"></span></div>
         </div>
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
-                <a class="deployment-sku-row__name" href="../by-sku/?sku=Deployments%20Provisioned">Deployments Provisioned</a>
+                <a class="deployment-sku-row__name" href="../../by-sku/?sku=Deployments%20Provisioned">Deployments Provisioned</a>
                 <span>18 regions · 20% coverage</span>
             </div>
             <div class="availability-meter" aria-hidden="true"><span style="width: 20%;"></span></div>
         </div>
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
-                <a class="deployment-sku-row__name" href="../by-sku/?sku=Deployments%20Standard">Deployments Standard</a>
+                <a class="deployment-sku-row__name" href="../../by-sku/?sku=Deployments%20Standard">Deployments Standard</a>
                 <span>41 regions · 45% coverage</span>
             </div>
             <div class="availability-meter" aria-hidden="true"><span style="width: 45%;"></span></div>
         </div>
         </div>
         <div class="deployment-lane__regions" aria-label="Other deployment regions">
-            <a class="region-badge model-region-chip" href="../by-region/?region=computer-use-preview">computer-use-preview</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-4.1">gpt-4.1</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-4.1-mini">gpt-4.1-mini</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-4.1-nano">gpt-4.1-nano</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-4o">gpt-4o</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-4o-mini">gpt-4o-mini</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-4o-mini-transcribe">gpt-4o-mini-transcribe</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-4o-transcribe">gpt-4o-transcribe</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-4o-transcribe-diarize">gpt-4o-transcribe-diarize</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-5">gpt-5</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-5-chat">gpt-5-chat</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-5-codex">gpt-5-codex</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-5-mini">gpt-5-mini</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-5-nano">gpt-5-nano</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-5-pro">gpt-5-pro</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-5.1">gpt-5.1</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-5.1-chat">gpt-5.1-chat</a> <a class="region-badge model-region-chip" href="../by-region/?region=gpt-5.1-codex">gpt-5.1-codex</a> <span class="model-region-more">+24 more in matrix</span>
+            <a class="region-badge model-region-chip" href="../../by-region/?region=computer-use-preview">computer-use-preview</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-4.1">gpt-4.1</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-4.1-mini">gpt-4.1-mini</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-4.1-nano">gpt-4.1-nano</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-4o">gpt-4o</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-4o-mini">gpt-4o-mini</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-4o-mini-transcribe">gpt-4o-mini-transcribe</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-4o-transcribe">gpt-4o-transcribe</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-4o-transcribe-diarize">gpt-4o-transcribe-diarize</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-5">gpt-5</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-5-chat">gpt-5-chat</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-5-codex">gpt-5-codex</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-5-mini">gpt-5-mini</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-5-nano">gpt-5-nano</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-5-pro">gpt-5-pro</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-5.1">gpt-5.1</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-5.1-chat">gpt-5.1-chat</a> <a class="region-badge model-region-chip" href="../../by-region/?region=gpt-5.1-codex">gpt-5.1-codex</a> <span class="model-region-more">+24 more in matrix</span>
         </div>
         
     </div>

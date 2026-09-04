@@ -33,7 +33,7 @@
 </div>
     <div class="model-profile__insight">
         <span>Widest SKU footprint</span>
-        <strong><a href="../by-sku/?sku=Standard%20Global%20By%20Capability">Standard Global By Capability</a></strong>
+        <strong><a href="../../by-sku/?sku=Standard%20Global%20By%20Capability">Standard Global By Capability</a></strong>
         <small>26 regions · 81% coverage · Other</small>
     </div>
 </div>
@@ -66,21 +66,21 @@
         <div class="deployment-sku-list">
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
-                <a class="deployment-sku-row__name" href="../by-sku/?sku=Global%20Standard">Global Standard</a>
+                <a class="deployment-sku-row__name" href="../../by-sku/?sku=Global%20Standard">Global Standard</a>
                 <span>26 regions · 81% coverage</span>
             </div>
             <div class="availability-meter" aria-hidden="true"><span style="width: 81%;"></span></div>
         </div>
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
-                <a class="deployment-sku-row__name" href="../by-sku/?sku=Global%20coverage">Global coverage</a>
+                <a class="deployment-sku-row__name" href="../../by-sku/?sku=Global%20coverage">Global coverage</a>
                 <span>26 regions · 81% coverage</span>
             </div>
             <div class="availability-meter" aria-hidden="true"><span style="width: 81%;"></span></div>
         </div>
         </div>
         <div class="deployment-lane__regions" aria-label="Global deployment regions">
-            <a class="region-badge model-region-chip" href="../by-region/?region=Australia%20East">Australia East</a> <a class="region-badge model-region-chip" href="../by-region/?region=Brazil%20South">Brazil South</a> <a class="region-badge model-region-chip" href="../by-region/?region=Canada%20East">Canada East</a> <a class="region-badge model-region-chip" href="../by-region/?region=Central%20US">Central US</a> <a class="region-badge model-region-chip" href="../by-region/?region=East%20US">East US</a> <a class="region-badge model-region-chip" href="../by-region/?region=East%20US%202">East US 2</a> <a class="region-badge model-region-chip" href="../by-region/?region=France%20Central">France Central</a> <a class="region-badge model-region-chip" href="../by-region/?region=Germany%20West%20Central">Germany West Central</a> <a class="region-badge model-region-chip" href="../by-region/?region=Italy%20North">Italy North</a> <a class="region-badge model-region-chip" href="../by-region/?region=Japan%20East">Japan East</a> <a class="region-badge model-region-chip" href="../by-region/?region=Korea%20Central">Korea Central</a> <a class="region-badge model-region-chip" href="../by-region/?region=North%20Central%20US">North Central US</a> <a class="region-badge model-region-chip" href="../by-region/?region=Norway%20East">Norway East</a> <a class="region-badge model-region-chip" href="../by-region/?region=Poland%20Central">Poland Central</a> <a class="region-badge model-region-chip" href="../by-region/?region=South%20Africa%20North">South Africa North</a> <a class="region-badge model-region-chip" href="../by-region/?region=South%20Central%20US">South Central US</a> <a class="region-badge model-region-chip" href="../by-region/?region=South%20India">South India</a> <a class="region-badge model-region-chip" href="../by-region/?region=Southeast%20Asia">Southeast Asia</a> <span class="model-region-more">+8 more in matrix</span>
+            <a class="region-badge model-region-chip" href="../../by-region/?region=Australia%20East">Australia East</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Brazil%20South">Brazil South</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Canada%20East">Canada East</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Central%20US">Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=East%20US">East US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=East%20US%202">East US 2</a> <a class="region-badge model-region-chip" href="../../by-region/?region=France%20Central">France Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Germany%20West%20Central">Germany West Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Italy%20North">Italy North</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Japan%20East">Japan East</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Korea%20Central">Korea Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=North%20Central%20US">North Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Norway%20East">Norway East</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Poland%20Central">Poland Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=South%20Africa%20North">South Africa North</a> <a class="region-badge model-region-chip" href="../../by-region/?region=South%20Central%20US">South Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=South%20India">South India</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Southeast%20Asia">Southeast Asia</a> <span class="model-region-more">+8 more in matrix</span>
         </div>
         <p class="deployment-lane__compliance">⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements</p>
     </div>
@@ -98,14 +98,14 @@
         <div class="deployment-sku-list">
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
-                <a class="deployment-sku-row__name" href="../by-sku/?sku=Datazone%20standard">Datazone standard</a>
+                <a class="deployment-sku-row__name" href="../../by-sku/?sku=Datazone%20standard">Datazone standard</a>
                 <span>14 regions · 44% coverage</span>
             </div>
             <div class="availability-meter" aria-hidden="true"><span style="width: 44%;"></span></div>
         </div>
         </div>
         <div class="deployment-lane__regions" aria-label="Datazone deployment regions">
-            <a class="region-badge model-region-chip" href="../by-region/?region=Central%20US">Central US</a> <a class="region-badge model-region-chip" href="../by-region/?region=East%20US">East US</a> <a class="region-badge model-region-chip" href="../by-region/?region=East%20US%202">East US 2</a> <a class="region-badge model-region-chip" href="../by-region/?region=France%20Central">France Central</a> <a class="region-badge model-region-chip" href="../by-region/?region=Germany%20West%20Central">Germany West Central</a> <a class="region-badge model-region-chip" href="../by-region/?region=Italy%20North">Italy North</a> <a class="region-badge model-region-chip" href="../by-region/?region=North%20Central%20US">North Central US</a> <a class="region-badge model-region-chip" href="../by-region/?region=Poland%20Central">Poland Central</a> <a class="region-badge model-region-chip" href="../by-region/?region=South%20Central%20US">South Central US</a> <a class="region-badge model-region-chip" href="../by-region/?region=Spain%20Central">Spain Central</a> <a class="region-badge model-region-chip" href="../by-region/?region=Sweden%20Central">Sweden Central</a> <a class="region-badge model-region-chip" href="../by-region/?region=West%20Europe">West Europe</a> <a class="region-badge model-region-chip" href="../by-region/?region=West%20US">West US</a> <a class="region-badge model-region-chip" href="../by-region/?region=West%20US%203">West US 3</a>
+            <a class="region-badge model-region-chip" href="../../by-region/?region=Central%20US">Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=East%20US">East US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=East%20US%202">East US 2</a> <a class="region-badge model-region-chip" href="../../by-region/?region=France%20Central">France Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Germany%20West%20Central">Germany West Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Italy%20North">Italy North</a> <a class="region-badge model-region-chip" href="../../by-region/?region=North%20Central%20US">North Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Poland%20Central">Poland Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=South%20Central%20US">South Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Spain%20Central">Spain Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Sweden%20Central">Sweden Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=West%20Europe">West Europe</a> <a class="region-badge model-region-chip" href="../../by-region/?region=West%20US">West US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=West%20US%203">West US 3</a>
         </div>
         <p class="deployment-lane__compliance">✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies</p>
     </div>
@@ -123,21 +123,21 @@
         <div class="deployment-sku-list">
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
-                <a class="deployment-sku-row__name" href="../by-sku/?sku=Deployments%20Standard">Deployments Standard</a>
+                <a class="deployment-sku-row__name" href="../../by-sku/?sku=Deployments%20Standard">Deployments Standard</a>
                 <span>26 regions · 81% coverage</span>
             </div>
             <div class="availability-meter" aria-hidden="true"><span style="width: 81%;"></span></div>
         </div>
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
-                <a class="deployment-sku-row__name" href="../by-sku/?sku=Standard%20Global%20By%20Capability">Standard Global By Capability</a>
+                <a class="deployment-sku-row__name" href="../../by-sku/?sku=Standard%20Global%20By%20Capability">Standard Global By Capability</a>
                 <span>26 regions · 81% coverage</span>
             </div>
             <div class="availability-meter" aria-hidden="true"><span style="width: 81%;"></span></div>
         </div>
         </div>
         <div class="deployment-lane__regions" aria-label="Other deployment regions">
-            <a class="region-badge model-region-chip" href="../by-region/?region=Australia%20East">Australia East</a> <a class="region-badge model-region-chip" href="../by-region/?region=Brazil%20South">Brazil South</a> <a class="region-badge model-region-chip" href="../by-region/?region=Canada%20East">Canada East</a> <a class="region-badge model-region-chip" href="../by-region/?region=Central%20US">Central US</a> <a class="region-badge model-region-chip" href="../by-region/?region=East%20US">East US</a> <a class="region-badge model-region-chip" href="../by-region/?region=East%20US%202">East US 2</a> <a class="region-badge model-region-chip" href="../by-region/?region=France%20Central">France Central</a> <a class="region-badge model-region-chip" href="../by-region/?region=Germany%20West%20Central">Germany West Central</a> <a class="region-badge model-region-chip" href="../by-region/?region=Italy%20North">Italy North</a> <a class="region-badge model-region-chip" href="../by-region/?region=Japan%20East">Japan East</a> <a class="region-badge model-region-chip" href="../by-region/?region=Korea%20Central">Korea Central</a> <a class="region-badge model-region-chip" href="../by-region/?region=North%20Central%20US">North Central US</a> <a class="region-badge model-region-chip" href="../by-region/?region=Norway%20East">Norway East</a> <a class="region-badge model-region-chip" href="../by-region/?region=Poland%20Central">Poland Central</a> <a class="region-badge model-region-chip" href="../by-region/?region=South%20Africa%20North">South Africa North</a> <a class="region-badge model-region-chip" href="../by-region/?region=South%20Central%20US">South Central US</a> <a class="region-badge model-region-chip" href="../by-region/?region=South%20India">South India</a> <a class="region-badge model-region-chip" href="../by-region/?region=Southeast%20Asia">Southeast Asia</a> <span class="model-region-more">+8 more in matrix</span>
+            <a class="region-badge model-region-chip" href="../../by-region/?region=Australia%20East">Australia East</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Brazil%20South">Brazil South</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Canada%20East">Canada East</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Central%20US">Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=East%20US">East US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=East%20US%202">East US 2</a> <a class="region-badge model-region-chip" href="../../by-region/?region=France%20Central">France Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Germany%20West%20Central">Germany West Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Italy%20North">Italy North</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Japan%20East">Japan East</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Korea%20Central">Korea Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=North%20Central%20US">North Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Norway%20East">Norway East</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Poland%20Central">Poland Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=South%20Africa%20North">South Africa North</a> <a class="region-badge model-region-chip" href="../../by-region/?region=South%20Central%20US">South Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=South%20India">South India</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Southeast%20Asia">Southeast Asia</a> <span class="model-region-more">+8 more in matrix</span>
         </div>
         
     </div>

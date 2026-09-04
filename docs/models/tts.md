@@ -33,7 +33,7 @@
 </div>
     <div class="model-profile__insight">
         <span>Widest SKU footprint</span>
-        <strong><a href="../by-sku/?sku=Standard">Standard</a></strong>
+        <strong><a href="../../by-sku/?sku=Standard">Standard</a></strong>
         <small>3 regions · 9% coverage · Standard</small>
     </div>
 </div>
@@ -66,14 +66,14 @@
         <div class="deployment-sku-list">
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
-                <a class="deployment-sku-row__name" href="../by-sku/?sku=Global%20coverage">Global coverage</a>
+                <a class="deployment-sku-row__name" href="../../by-sku/?sku=Global%20coverage">Global coverage</a>
                 <span>3 regions · 9% coverage</span>
             </div>
             <div class="availability-meter" aria-hidden="true"><span style="width: 9%;"></span></div>
         </div>
         </div>
         <div class="deployment-lane__regions" aria-label="Global deployment regions">
-            <a class="region-badge model-region-chip" href="../by-region/?region=North%20Central%20US">North Central US</a> <a class="region-badge model-region-chip" href="../by-region/?region=Sweden%20Central">Sweden Central</a> <a class="region-badge model-region-chip" href="../by-region/?region=West%20US%203">West US 3</a>
+            <a class="region-badge model-region-chip" href="../../by-region/?region=North%20Central%20US">North Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Sweden%20Central">Sweden Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=West%20US%203">West US 3</a>
         </div>
         <p class="deployment-lane__compliance">⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements</p>
     </div>
@@ -91,14 +91,14 @@
         <div class="deployment-sku-list">
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
-                <a class="deployment-sku-row__name" href="../by-sku/?sku=Standard">Standard</a>
+                <a class="deployment-sku-row__name" href="../../by-sku/?sku=Standard">Standard</a>
                 <span>3 regions · 9% coverage</span>
             </div>
             <div class="availability-meter" aria-hidden="true"><span style="width: 9%;"></span></div>
         </div>
         </div>
         <div class="deployment-lane__regions" aria-label="Standard deployment regions">
-            <a class="region-badge model-region-chip" href="../by-region/?region=North%20Central%20US">North Central US</a> <a class="region-badge model-region-chip" href="../by-region/?region=Sweden%20Central">Sweden Central</a> <a class="region-badge model-region-chip" href="../by-region/?region=West%20US%203">West US 3</a>
+            <a class="region-badge model-region-chip" href="../../by-region/?region=North%20Central%20US">North Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Sweden%20Central">Sweden Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=West%20US%203">West US 3</a>
         </div>
         <p class="deployment-lane__compliance">✓ Single-region deployment — HIPAA-eligible in supported regions with a BAA from Microsoft</p>
     </div>
@@ -116,14 +116,14 @@
         <div class="deployment-sku-list">
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
-                <a class="deployment-sku-row__name" href="../by-sku/?sku=Deployments%20Standard">Deployments Standard</a>
+                <a class="deployment-sku-row__name" href="../../by-sku/?sku=Deployments%20Standard">Deployments Standard</a>
                 <span>3 regions · 9% coverage</span>
             </div>
             <div class="availability-meter" aria-hidden="true"><span style="width: 9%;"></span></div>
         </div>
         </div>
         <div class="deployment-lane__regions" aria-label="Other deployment regions">
-            <a class="region-badge model-region-chip" href="../by-region/?region=North%20Central%20US">North Central US</a> <a class="region-badge model-region-chip" href="../by-region/?region=Sweden%20Central">Sweden Central</a> <a class="region-badge model-region-chip" href="../by-region/?region=West%20US%203">West US 3</a>
+            <a class="region-badge model-region-chip" href="../../by-region/?region=North%20Central%20US">North Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Sweden%20Central">Sweden Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=West%20US%203">West US 3</a>
         </div>
         
     </div>
