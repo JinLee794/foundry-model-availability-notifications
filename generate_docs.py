@@ -245,6 +245,11 @@ def pick_bucket(count: int) -> Tuple[str, str, str]:
     return BUCKETS[-1][1], BUCKETS[-1][2], BUCKETS[-1][3]
 
 
+# Slugs of generated model detail pages; populated in main() so links to models
+# without a detail page render as plain text instead of 404s.
+MODEL_PAGE_SLUGS: Set[str] = set()
+
+
 def slugify(name: str) -> str:
     """Convert model name to URL-safe slug."""
     return name.lower().replace(" ", "-").replace(".", "-")
@@ -273,9 +278,12 @@ def query_url(base: str, params: Dict[str, str]) -> str:
 
 
 def model_link(model: str, prefix: str = "models/", class_name: str = "") -> str:
-    """Return a model detail link."""
+    """Return a model detail link, or plain text when no detail page exists."""
+    slug = slugify(model)
+    if MODEL_PAGE_SLUGS and slug not in MODEL_PAGE_SLUGS:
+        return html_escape(model)
     class_attr = f' class="{class_name}"' if class_name else ""
-    return f'<a{class_attr} href="{prefix}{slugify(model)}/">{html_escape(model)}</a>'
+    return f'<a{class_attr} href="{prefix}{slug}/">{html_escape(model)}</a>'
 
 
 def region_link(region: str, prefix: str = "by-region/", class_name: str = "region-badge") -> str:
@@ -1362,7 +1370,7 @@ def generate_model_detail_page(
     if sku_regions:
         top_sku, top_sku_regions = max(sku_regions.items(), key=lambda item: (len(item[1]), item[0]))
         top_sku_pct = round(len(top_sku_regions) / total_region_count * 100)
-        top_sku_href = query_url("../by-sku/", {"sku": top_sku})
+        top_sku_href = query_url("../../by-sku/", {"sku": top_sku})
         top_sku_html = f'<a href="{top_sku_href}">{html_escape(top_sku)}</a>'
         top_sku_category = get_sku_category(top_sku)
     else:
@@ -1377,7 +1385,7 @@ def generate_model_detail_page(
         if not sorted_values:
             return '<span class="model-region-empty">No regions listed</span>'
         chips = [
-            region_link(region, prefix="../by-region/", class_name="region-badge model-region-chip")
+            region_link(region, prefix="../../by-region/", class_name="region-badge model-region-chip")
             for region in sorted_values[:max_visible]
         ]
         remaining = len(sorted_values) - len(chips)
@@ -1442,7 +1450,7 @@ def generate_model_detail_page(
             all_cat_regions.update(sku_regs)
             sku_pct = round(len(sku_regs) / total_region_count * 100)
             meter_pct = max(2, min(sku_pct, 100)) if sku_regs else 0
-            sku_href = query_url("../by-sku/", {"sku": sku})
+            sku_href = query_url("../../by-sku/", {"sku": sku})
             sku_rows.append(f"""        <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
                 <a class="deployment-sku-row__name" href="{sku_href}">{html_escape(sku)}</a>
@@ -2106,6 +2114,7 @@ def main():
     # Load data
     data = load_snapshot(SNAPSHOT_PATH)
     model_regions, model_region_skus, model_sku_regions, all_labels, all_regions = build_model_index(data)
+    MODEL_PAGE_SLUGS.update(slugify(model) for model in model_regions)
     history = load_history(HISTORY_DIR)
     
     # Load retirement data

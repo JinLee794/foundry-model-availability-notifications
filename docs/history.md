@@ -40817,217 +40817,217 @@ Filter and search through all recent availability changes.
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td>(entire model)</td>
             <td>-</td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=Australia%20East">Australia East</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=Brazil%20South">Brazil South</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=Canada%20Central">Canada Central</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=Canada%20East">Canada East</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=Central%20US">Central US</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=East%20US">East US</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=East%20US%202">East US 2</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=France%20Central">France Central</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=Germany%20West%20Central">Germany West Central</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=Italy%20North">Italy North</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=Japan%20East">Japan East</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=Japan%20West">Japan West</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=Korea%20Central">Korea Central</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=North%20Central%20US">North Central US</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=Norway%20East">Norway East</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=Poland%20Central">Poland Central</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=South%20Africa%20North">South Africa North</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=South%20Central%20US">South Central US</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=South%20India">South India</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=Spain%20Central">Spain Central</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=Sweden%20Central">Sweden Central</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=Switzerland%20North">Switzerland North</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=Switzerland%20West">Switzerland West</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=UAE%20North">UAE North</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=UK%20South">UK South</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=West%20Central%20US">West Central US</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=West%20Europe">West Europe</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=West%20US">West US</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=West%20US%202">West US 2</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/kimi-k2-thinking/">Kimi-K2-Thinking</a></td>
+            <td>Kimi-K2-Thinking</td>
             <td><a class="region-badge" href="../by-region/?region=West%20US%203">West US 3</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
@@ -41251,217 +41251,217 @@ Filter and search through all recent availability changes.
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td>(entire model)</td>
             <td>-</td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=Australia%20East">Australia East</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=Brazil%20South">Brazil South</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=Canada%20Central">Canada Central</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=Canada%20East">Canada East</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=Central%20US">Central US</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=East%20US">East US</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=East%20US%202">East US 2</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=France%20Central">France Central</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=Germany%20West%20Central">Germany West Central</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=Italy%20North">Italy North</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=Japan%20East">Japan East</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=Japan%20West">Japan West</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=Korea%20Central">Korea Central</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=North%20Central%20US">North Central US</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=Norway%20East">Norway East</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=Poland%20Central">Poland Central</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=South%20Africa%20North">South Africa North</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=South%20Central%20US">South Central US</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=South%20India">South India</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=Spain%20Central">Spain Central</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=Sweden%20Central">Sweden Central</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=Switzerland%20North">Switzerland North</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=Switzerland%20West">Switzerland West</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=UAE%20North">UAE North</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=UK%20South">UK South</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=West%20Central%20US">West Central US</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=West%20Europe">West Europe</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=West%20US">West US</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=West%20US%202">West US 2</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
     <tr>
             <td data-order="20260403080241">2026-04-03</td>
             <td><span class="badge-removed">Removed</span></td>
-            <td><a href="../models/meta-llama-3-70b-instruct/">Meta-Llama-3-70B-Instruct</a></td>
+            <td>Meta-Llama-3-70B-Instruct</td>
             <td><a class="region-badge" href="../by-region/?region=West%20US%203">West US 3</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../by-sku/?sku=Global%20Standard">Global Standard</a></td>
     </tr>
