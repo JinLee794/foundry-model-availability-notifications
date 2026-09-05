@@ -1,6 +1,201 @@
 {
-  "timestamp": "2026-09-04T11:59:45.495681+00:00",
-  "changes": {},
+  "timestamp": "2026-09-05T11:09:29.686246+00:00",
+  "changes": {
+    "gpt-6-astra": {
+      "all": {
+        "added": [
+          "Australia East",
+          "Brazil South",
+          "Canada Central",
+          "Canada East",
+          "Central US",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Korea Central",
+          "North Central US",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Southeast Asia",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "West Europe",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "label": "Deployments Provisioned",
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "removed": []
+        },
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "MAI-Image-2.6": {
+      "all": {
+        "added": [
+          "East US",
+          "South India",
+          "Sweden Central",
+          "UAE North",
+          "West Central US",
+          "West Europe",
+          "West US"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "East US",
+            "South India",
+            "Sweden Central",
+            "UAE North",
+            "West Central US",
+            "West Europe",
+            "West US"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "MAI-Image-2.6-Flash": {
+      "all": {
+        "added": [
+          "East US",
+          "South India",
+          "Sweden Central",
+          "UAE North",
+          "West Central US",
+          "West Europe",
+          "West US"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "East US",
+            "South India",
+            "Sweden Central",
+            "UAE North",
+            "West Central US",
+            "West Europe",
+            "West US"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "MAI-Image-2e": {
+      "all": {
+        "added": [],
+        "removed": [
+          "East US",
+          "South India",
+          "Sweden Central",
+          "UAE North",
+          "West Central US",
+          "West Europe",
+          "West US"
+        ]
+      },
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [],
+          "removed": [
+            "East US",
+            "South India",
+            "Sweden Central",
+            "UAE North",
+            "West Central US",
+            "West Europe",
+            "West US"
+          ],
+          "sku_removed": true
+        }
+      },
+      "model_removed": true
+    }
+  },
   "current": {
     "claude-fable-5": {
       "all": [
@@ -7924,6 +8119,106 @@
         }
       }
     },
+    "gpt-6-astra": {
+      "all": [
+        "Australia East",
+        "Brazil South",
+        "Canada Central",
+        "Canada East",
+        "Central US",
+        "East US",
+        "East US 2",
+        "France Central",
+        "Germany West Central",
+        "Italy North",
+        "Japan East",
+        "Korea Central",
+        "North Central US",
+        "Norway East",
+        "Poland Central",
+        "South Africa North",
+        "South Central US",
+        "South India",
+        "Southeast Asia",
+        "Spain Central",
+        "Sweden Central",
+        "Switzerland North",
+        "Switzerland West",
+        "UAE North",
+        "UK South",
+        "West Europe",
+        "West US",
+        "West US 3"
+      ],
+      "skus": {
+        "deployments-provisioned": {
+          "label": "Deployments Provisioned",
+          "regions": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ]
+        },
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "regions": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ]
+        }
+      }
+    },
     "gpt-audio": {
       "all": [
         "Central US",
@@ -9808,7 +10103,32 @@
         }
       }
     },
-    "MAI-Image-2e": {
+    "MAI-Image-2.6": {
+      "all": [
+        "East US",
+        "South India",
+        "Sweden Central",
+        "UAE North",
+        "West Central US",
+        "West Europe",
+        "West US"
+      ],
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "regions": [
+            "East US",
+            "South India",
+            "Sweden Central",
+            "UAE North",
+            "West Central US",
+            "West Europe",
+            "West US"
+          ]
+        }
+      }
+    },
+    "MAI-Image-2.6-Flash": {
       "all": [
         "East US",
         "South India",
