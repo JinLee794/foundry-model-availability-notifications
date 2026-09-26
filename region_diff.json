@@ -1,6 +1,505 @@
 {
-  "timestamp": "2026-09-25T12:36:18.913129+00:00",
-  "changes": {},
+  "timestamp": "2026-09-26T12:05:16.257349+00:00",
+  "changes": {
+    "gpt-4.1": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "label": "Deployments Provisioned",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-4.1-mini": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "label": "Deployments Provisioned",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-4.1-nano": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "label": "Deployments Provisioned",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-4o": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "label": "Deployments Provisioned",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-4o-mini": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "label": "Deployments Provisioned",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-5": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "label": "Deployments Provisioned",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-5-mini": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "label": "Deployments Provisioned",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.1": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "label": "Deployments Provisioned",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.1-codex": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "label": "Deployments Provisioned",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.2": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "label": "Deployments Provisioned",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.2-codex": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "label": "Deployments Provisioned",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        },
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.3-codex": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "label": "Deployments Provisioned",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        },
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.4": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "label": "Deployments Provisioned",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        },
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        },
+        "standard-global-priority-processing": {
+          "label": "Standard Global Priority Processing",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.4-mini": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "label": "Deployments Provisioned",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        },
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        },
+        "standard-global-priority-processing": {
+          "label": "Standard Global Priority Processing",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.4-nano": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.4-pro": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-5.5": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "label": "Deployments Provisioned",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        },
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        },
+        "standard-global-priority-processing": {
+          "label": "Standard Global Priority Processing",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-audio-1.5": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-chat-latest": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "model-router": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "o1": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "label": "Deployments Provisioned",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "o3": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "label": "Deployments Provisioned",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "o3-mini": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "label": "Deployments Provisioned",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "o4-mini": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "label": "Deployments Provisioned",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "text-embedding-3-large": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "text-embedding-3-small": {
+      "all": {
+        "added": [
+          "North Europe"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
+            "North Europe"
+          ],
+          "removed": []
+        }
+      }
+    }
+  },
   "current": {
     "claude-fable-5": {
       "all": [
@@ -1644,6 +2143,7 @@
         "Japan East",
         "Korea Central",
         "North Central US",
+        "North Europe",
         "Norway East",
         "Poland Central",
         "South Africa North",
@@ -1762,6 +2262,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -2040,6 +2541,7 @@
         "Japan East",
         "Korea Central",
         "North Central US",
+        "North Europe",
         "Norway East",
         "Poland Central",
         "South Africa North",
@@ -2151,6 +2653,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -2399,6 +2902,7 @@
         "Japan East",
         "Korea Central",
         "North Central US",
+        "North Europe",
         "Norway East",
         "Poland Central",
         "South Africa North",
@@ -2496,6 +3000,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -2711,6 +3216,7 @@
         "Japan East",
         "Korea Central",
         "North Central US",
+        "North Europe",
         "Norway East",
         "Poland Central",
         "South Africa North",
@@ -2822,6 +3328,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -3087,6 +3594,7 @@
         "Japan East",
         "Korea Central",
         "North Central US",
+        "North Europe",
         "Norway East",
         "Poland Central",
         "South Africa North",
@@ -3183,6 +3691,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -3581,6 +4090,7 @@
         "Japan East",
         "Korea Central",
         "North Central US",
+        "North Europe",
         "Norway East",
         "Poland Central",
         "South Africa North",
@@ -3678,6 +4188,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -4122,6 +4633,7 @@
         "Japan East",
         "Korea Central",
         "North Central US",
+        "North Europe",
         "Norway East",
         "Poland Central",
         "South Africa North",
@@ -4192,6 +4704,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -4639,6 +5152,7 @@
         "Japan East",
         "Korea Central",
         "North Central US",
+        "North Europe",
         "Norway East",
         "Poland Central",
         "South Africa North",
@@ -4752,6 +5266,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -5114,6 +5629,7 @@
         "Japan East",
         "Korea Central",
         "North Central US",
+        "North Europe",
         "Norway East",
         "Poland Central",
         "South Africa North",
@@ -5165,6 +5681,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -5544,6 +6061,7 @@
         "Japan East",
         "Korea Central",
         "North Central US",
+        "North Europe",
         "Norway East",
         "Poland Central",
         "South Africa North",
@@ -5624,6 +6142,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -5934,6 +6453,7 @@
         "Japan East",
         "Korea Central",
         "North Central US",
+        "North Europe",
         "Norway East",
         "Poland Central",
         "South Africa North",
@@ -5967,6 +6487,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -6000,6 +6521,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -6232,6 +6754,7 @@
         "Japan East",
         "Korea Central",
         "North Central US",
+        "North Europe",
         "Norway East",
         "Poland Central",
         "South Africa North",
@@ -6282,6 +6805,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -6315,6 +6839,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -6447,6 +6972,7 @@
         "Japan East",
         "Korea Central",
         "North Central US",
+        "North Europe",
         "Norway East",
         "Poland Central",
         "South Africa North",
@@ -6563,6 +7089,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -6596,6 +7123,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -6773,6 +7301,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -6807,6 +7336,7 @@
         "Japan East",
         "Korea Central",
         "North Central US",
+        "North Europe",
         "Norway East",
         "Poland Central",
         "South Africa North",
@@ -6896,6 +7426,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -6929,6 +7460,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -7067,6 +7599,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -7101,6 +7634,7 @@
         "Japan East",
         "Korea Central",
         "North Central US",
+        "North Europe",
         "Norway East",
         "Poland Central",
         "South Africa North",
@@ -7146,6 +7680,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -7246,6 +7781,7 @@
         "Japan East",
         "Korea Central",
         "North Central US",
+        "North Europe",
         "Norway East",
         "Poland Central",
         "South Africa North",
@@ -7279,6 +7815,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -7331,6 +7868,7 @@
         "Japan East",
         "Korea Central",
         "North Central US",
+        "North Europe",
         "Norway East",
         "Poland Central",
         "South Africa North",
@@ -7409,6 +7947,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -7442,6 +7981,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -7530,6 +8070,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -8302,6 +8843,7 @@
       "all": [
         "Central US",
         "East US 2",
+        "North Europe",
         "Sweden Central"
       ],
       "skus": {
@@ -8310,6 +8852,7 @@
           "regions": [
             "Central US",
             "East US 2",
+            "North Europe",
             "Sweden Central"
           ]
         },
@@ -8379,6 +8922,7 @@
         "Japan East",
         "Korea Central",
         "North Central US",
+        "North Europe",
         "Norway East",
         "Poland Central",
         "South Africa North",
@@ -8412,6 +8956,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -10925,6 +11470,7 @@
       "all": [
         "Australia East",
         "East US 2",
+        "North Europe",
         "South India",
         "Sweden Central",
         "West US 3"
@@ -10945,6 +11491,7 @@
           "regions": [
             "Australia East",
             "East US 2",
+            "North Europe",
             "South India",
             "Sweden Central",
             "West US 3"
@@ -10987,6 +11534,7 @@
         "Japan East",
         "Korea Central",
         "North Central US",
+        "North Europe",
         "Norway East",
         "Poland Central",
         "South Africa North",
@@ -11056,6 +11604,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -11232,6 +11781,7 @@
         "Japan East",
         "Korea Central",
         "North Central US",
+        "North Europe",
         "Norway East",
         "Poland Central",
         "South Africa North",
@@ -11329,6 +11879,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -11574,6 +12125,7 @@
         "Japan East",
         "Korea Central",
         "North Central US",
+        "North Europe",
         "Norway East",
         "Poland Central",
         "South Africa North",
@@ -11685,6 +12237,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -11928,6 +12481,7 @@
         "Japan East",
         "Korea Central",
         "North Central US",
+        "North Europe",
         "Norway East",
         "Poland Central",
         "South Africa North",
@@ -12025,6 +12579,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -12775,6 +13330,7 @@
         "Japan East",
         "Korea Central",
         "North Central US",
+        "North Europe",
         "Norway East",
         "Poland Central",
         "South Africa North",
@@ -12836,6 +13392,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
@@ -12960,6 +13517,7 @@
         "Japan East",
         "Korea Central",
         "North Central US",
+        "North Europe",
         "Norway East",
         "Poland Central",
         "South Africa North",
@@ -13021,6 +13579,7 @@
             "Japan East",
             "Korea Central",
             "North Central US",
+            "North Europe",
             "Norway East",
             "Poland Central",
             "South Africa North",
