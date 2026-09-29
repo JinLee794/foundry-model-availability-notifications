@@ -1,6 +1,40 @@
 {
-  "timestamp": "2026-09-28T15:00:54.777694+00:00",
-  "changes": {},
+  "timestamp": "2026-09-29T13:48:46.975348+00:00",
+  "changes": {
+    "claude-sonnet-5-5": {
+      "all": {
+        "added": [
+          "Central US",
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West Central US",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "marketplace-deployments-standard": {
+          "label": "Marketplace Deployments Standard",
+          "added": [
+            "Central US",
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West Central US",
+            "West US",
+            "West US 3"
+          ],
+          "removed": []
+        }
+      }
+    }
+  },
   "current": {
     "claude-fable-5": {
       "all": [
@@ -294,6 +328,35 @@
       }
     },
     "claude-sonnet-5": {
+      "all": [
+        "Central US",
+        "East US",
+        "East US 2",
+        "North Central US",
+        "South Central US",
+        "Sweden Central",
+        "West Central US",
+        "West US",
+        "West US 3"
+      ],
+      "skus": {
+        "marketplace-deployments-standard": {
+          "label": "Marketplace Deployments Standard",
+          "regions": [
+            "Central US",
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West Central US",
+            "West US",
+            "West US 3"
+          ]
+        }
+      }
+    },
+    "claude-sonnet-5-5": {
       "all": [
         "Central US",
         "East US",

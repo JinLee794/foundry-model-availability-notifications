@@ -1,0 +1,38 @@
+{
+  "changes": {
+    "claude-sonnet-5-5": {
+      "all": {
+        "added": [
+          "Central US",
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West Central US",
+          "West US",
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "marketplace-deployments-standard": {
+          "added": [
+            "Central US",
+            "East US",
+            "East US 2",
+            "North Central US",
+            "South Central US",
+            "Sweden Central",
+            "West Central US",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Marketplace Deployments Standard",
+          "removed": []
+        }
+      }
+    }
+  },
+  "timestamp": "2026-09-29T13:48:46.975348+00:00"
+}
