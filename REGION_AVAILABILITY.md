@@ -1,6 +1,6 @@
 # AI Foundry Model Availability by Region
 
-_Last updated: 2026-09-30 13:22 UTC_
+_Last updated: 2026-10-01 14:16 UTC_
 
 - Models tracked: **154**
 - Regions in snapshot: **35**
@@ -115,7 +115,7 @@ SKU labels observed:
 | gpt-6-astra | 🟢 Broad | 28 | 3 (Deployments Provisioned, Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-6-luna | 🟢 Broad | 28 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-6-sol | 🟢 Broad | 28 | 5 (Datazone Standard Priority Processing, Deployments Provisioned, Deployments Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-6.1-sol | 🟢 Broad | 28 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-6.1-sol | 🟢 Broad | 28 | 3 (Deployments Provisioned, Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-image-2.5-flare | 🟢 Broad | 28 | 2 (Global coverage, Standard Global By Capability) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-image-2.5-sunburst | 🟢 Broad | 28 | 2 (Global coverage, Standard Global By Capability) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5-chat | 🟢 Broad | 27 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
@@ -2864,36 +2864,36 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>gpt-6.1-sol — 28 regions across 2 SKU labels</summary>
+<summary>gpt-6.1-sol — 28 regions across 3 SKU labels</summary>
 
-- `Australia East` — Deployments Standard, Global coverage
-- `Brazil South` — Deployments Standard, Global coverage
-- `Canada Central` — Deployments Standard, Global coverage
-- `Canada East` — Deployments Standard, Global coverage
-- `Central US` — Deployments Standard, Global coverage
-- `East US` — Deployments Standard, Global coverage
-- `East US 2` — Deployments Standard, Global coverage
-- `France Central` — Deployments Standard, Global coverage
-- `Germany West Central` — Deployments Standard, Global coverage
-- `Italy North` — Deployments Standard, Global coverage
-- `Japan East` — Deployments Standard, Global coverage
-- `Korea Central` — Deployments Standard, Global coverage
-- `North Central US` — Deployments Standard, Global coverage
-- `Norway East` — Deployments Standard, Global coverage
-- `Poland Central` — Deployments Standard, Global coverage
-- `South Africa North` — Deployments Standard, Global coverage
-- `South Central US` — Deployments Standard, Global coverage
-- `South India` — Deployments Standard, Global coverage
-- `Southeast Asia` — Deployments Standard, Global coverage
-- `Spain Central` — Deployments Standard, Global coverage
-- `Sweden Central` — Deployments Standard, Global coverage
-- `Switzerland North` — Deployments Standard, Global coverage
-- `Switzerland West` — Deployments Standard, Global coverage
-- `UAE North` — Deployments Standard, Global coverage
-- `UK South` — Deployments Standard, Global coverage
-- `West Europe` — Deployments Standard, Global coverage
-- `West US` — Deployments Standard, Global coverage
-- `West US 3` — Deployments Standard, Global coverage
+- `Australia East` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Brazil South` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Canada Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Canada East` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Central US` — Deployments Provisioned, Deployments Standard, Global coverage
+- `East US` — Deployments Provisioned, Deployments Standard, Global coverage
+- `East US 2` — Deployments Provisioned, Deployments Standard, Global coverage
+- `France Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Germany West Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Italy North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Japan East` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Korea Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `North Central US` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Norway East` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Poland Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `South Africa North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `South Central US` — Deployments Provisioned, Deployments Standard, Global coverage
+- `South India` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Southeast Asia` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Spain Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Sweden Central` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Switzerland North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `Switzerland West` — Deployments Provisioned, Deployments Standard, Global coverage
+- `UAE North` — Deployments Provisioned, Deployments Standard, Global coverage
+- `UK South` — Deployments Provisioned, Deployments Standard, Global coverage
+- `West Europe` — Deployments Provisioned, Deployments Standard, Global coverage
+- `West US` — Deployments Provisioned, Deployments Standard, Global coverage
+- `West US 3` — Deployments Provisioned, Deployments Standard, Global coverage
 
 </details>
 <details>
@@ -3837,6 +3837,7 @@ SKU labels observed:
 
 ## Recent changes
 
+- **2026-10-01 14:16 UTC** — gpt-6.1-sol: Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3
 - **2026-09-30 13:22 UTC** — gpt-6.1-sol: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3
 - **2026-09-29 13:48 UTC** — claude-sonnet-5-5: Global coverage added Central US, East US, East US 2, North Central US, South Central US, Sweden Central, West Central US, West US, and West US 3; Marketplace Deployments Standard added Central US, East US, East US 2, North Central US, South Central US, Sweden Central, West Central US, West US, and West US 3
 - **2026-09-26 12:05 UTC** — gpt-4.1: Global coverage added North Europe; Deployments Provisioned added North Europe | gpt-4.1-mini: Global coverage added North Europe; Deployments Provisioned added North Europe | gpt-4.1-nano: Global coverage added North Europe; Deployments Provisioned added North Europe | gpt-4o: Global coverage added North Europe; Deployments Provisioned added North Europe | gpt-4o-mini: Global coverage added North Europe; Deployments Provisioned added North Europe | gpt-5: Global coverage added North Europe; Deployments Provisioned added North Europe | gpt-5-mini: Global coverage added North Europe; Deployments Provisioned added North Europe | gpt-5.1: Global coverage added North Europe; Deployments Provisioned added North Europe | gpt-5.1-codex: Global coverage added North Europe; Deployments Provisioned added North Europe | gpt-5.2: Global coverage added North Europe; Deployments Provisioned added North Europe | gpt-5.2-codex: Global coverage added North Europe; Deployments Provisioned added North Europe; Deployments Standard added North Europe | gpt-5.3-codex: Global coverage added North Europe; Deployments Provisioned added North Europe; Deployments Standard added North Europe | gpt-5.4: Global coverage added North Europe; Deployments Provisioned added North Europe; Deployments Standard added North Europe; Standard Global Priority Processing added North Europe | gpt-5.4-mini: Global coverage added North Europe; Deployments Provisioned added North Europe; Deployments Standard added North Europe; Standard Global Priority Processing added North Europe | gpt-5.4-nano: Global coverage added North Europe; Deployments Standard added North Europe | gpt-5.4-pro: Global coverage added North Europe; Deployments Standard added North Europe | gpt-5.5: Global coverage added North Europe; Deployments Provisioned added North Europe; Deployments Standard added North Europe; Standard Global Priority Processing added North Europe | gpt-audio-1.5: Global coverage added North Europe; Deployments Standard added North Europe | gpt-chat-latest: Global coverage added North Europe; Deployments Standard added North Europe | model-router: Global coverage added North Europe; Deployments Standard added North Europe | o1: Global coverage added North Europe; Deployments Provisioned added North Europe | o3: Global coverage added North Europe; Deployments Provisioned added North Europe | o3-mini: Global coverage added North Europe; Deployments Provisioned added North Europe | o4-mini: Global coverage added North Europe; Deployments Provisioned added North Europe | text-embedding-3-large: Global coverage added North Europe; Deployments Standard added North Europe | text-embedding-3-small: Global coverage added North Europe; Deployments Standard added North Europe
