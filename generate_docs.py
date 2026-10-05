@@ -5,7 +5,7 @@ from __future__ import annotations
 
 import json
 from collections import defaultdict
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from html import escape as html_escape
 from pathlib import Path
 from typing import Dict, List, Set, Tuple
@@ -417,109 +417,6 @@ def format_region_links(regions: Set[str], max_visible: int = 3) -> str:
     return " ".join(parts)
 
 
-def build_recent_changes_block(history: List[Dict], all_regions: Set[str], known_models: Set[str]) -> str:
-    """Build the grouped recent availability digest for the home page."""
-    rows = flatten_history_changes(history, all_regions, known_models, limit=10)
-    if not rows:
-        return f"""<div class="changes-digest" aria-label="Recent availability changes">
-    <div class="changes-digest__header">
-        <div>
-            <span class="changes-digest__eyebrow">Recent availability changes</span>
-            <h2 class="changes-digest__title">Latest Availability Digest</h2>
-            <p>No recent changes detected.</p>
-        </div>
-        <a class="md-button" href="history/">View full history</a>
-    </div>
-</div>"""
-
-    latest_timestamp = rows[0]["timestamp"]
-    latest_date = f"{latest_timestamp:%Y-%m-%d}"
-    latest_rows = [row for row in rows if row["timestamp"] == latest_timestamp]
-    latest_additions = sum(1 for row in latest_rows if row["change"] == "added")
-    latest_removals = sum(1 for row in latest_rows if row["change"] == "removed")
-    latest_models = len({row["model"] for row in latest_rows})
-    latest_regions = len({row["region"] for row in latest_rows if not row["region"].startswith("(")})
-
-    grouped: Dict[Tuple[datetime, str, str, str], Dict] = {}
-    for row in rows:
-        key = (row["timestamp"], row["change"], row["model"], row["sku"])
-        if key not in grouped:
-            grouped[key] = {
-                "timestamp": row["timestamp"],
-                "change": row["change"],
-                "model": row["model"],
-                "sku": row["sku"],
-                "regions": set(),
-            }
-        grouped[key]["regions"].add(row["region"])
-
-    digest_rows = []
-    groups = list(grouped.values())
-    for group in groups[:16]:
-        change_type = group["change"]
-        badge = '<span class="badge-added">Added</span>' if change_type == "added" else '<span class="badge-removed">Removed</span>'
-        row_class = "change-row--added" if change_type == "added" else "change-row--removed"
-        regions = group["regions"]
-        region_count = len([region for region in regions if not region.startswith("(")])
-        region_phrase = pluralize(region_count, "region") if region_count else "Catalog"
-        sku = group["sku"]
-        sku_html = sku_link(sku, class_name="change-link-pill change-link-pill--sku") if sku != "-" else "Model availability"
-        digest_rows.append(f"""        <div class="change-row {row_class}" role="row">
-            <div class="change-row__date" role="cell"><time datetime="{group['timestamp']:%Y-%m-%d}">{group['timestamp']:%b} {group['timestamp'].day}</time></div>
-            <div class="change-row__change" role="cell">{badge}</div>
-            <div class="change-row__model" role="cell">{model_link(group['model'])}</div>
-            <div class="change-row__sku" role="cell">{sku_html}</div>
-            <div class="change-row__scope" role="cell">{region_phrase}</div>
-            <div class="change-row__regions" role="cell">{format_region_links(regions)}</div>
-        </div>""")
-
-    remaining_groups = len(groups) - len(digest_rows)
-    more_note = ""
-    if remaining_groups > 0:
-        more_note = f"""
-    <p class="changes-digest__more">{pluralize(remaining_groups, "more grouped change")} available in <a href="history/">full change history</a>.</p>"""
-
-    return f"""<div class="changes-digest" aria-label="Recent availability changes">
-    <div class="changes-digest__header">
-        <div>
-            <span class="changes-digest__eyebrow">Recent availability changes</span>
-            <h2 class="changes-digest__title">Latest Availability Digest</h2>
-            <p>Latest run: {format_digest_date(latest_timestamp)}. Changes are grouped by model, deployment SKU, and affected regions.</p>
-        </div>
-        <a class="md-button" href="history/">View full history</a>
-    </div>
-    <div class="changes-summary" aria-label="Latest change summary">
-        <a class="changes-summary__item changes-summary__item--added" href="{history_link(date=latest_date, type='Added')}">
-            <strong>{latest_additions}</strong>
-            <span>Additions</span>
-        </a>
-        <a class="changes-summary__item changes-summary__item--removed" href="{history_link(date=latest_date, type='Removed')}">
-            <strong>{latest_removals}</strong>
-            <span>Removals</span>
-        </a>
-        <a class="changes-summary__item" href="{history_link(date=latest_date)}">
-            <strong>{latest_models}</strong>
-            <span>Models affected</span>
-        </a>
-        <a class="changes-summary__item" href="{history_link(date=latest_date)}">
-            <strong>{latest_regions}</strong>
-            <span>Regions affected</span>
-        </a>
-    </div>
-    <div class="changes-table" role="table" aria-label="Grouped availability updates">
-        <div class="change-row change-row--head" role="row">
-            <div role="columnheader">Date</div>
-            <div role="columnheader">Change</div>
-            <div role="columnheader">Model</div>
-            <div role="columnheader">SKU type</div>
-            <div role="columnheader">Scope</div>
-            <div role="columnheader">Regions</div>
-        </div>
-{chr(10).join(digest_rows)}
-    </div>{more_note}
-</div>"""
-
-
 def get_retirement_status(retirement_date: str, today: datetime = None) -> Tuple[str, str]:
     """Determine retirement status and return (status_text, css_class)."""
     if today is None:
@@ -548,96 +445,103 @@ def get_retirement_status(retirement_date: str, today: datetime = None) -> Tuple
         return "Planned", "badge-planned"
 
 
-def generate_retirement_section(
-    model: str,
+def generate_lifecycle_section(
     retirement_entries: List[Dict],
     model_regions_lookup: Dict[str, Set[str]],
+    today: datetime = None,
 ) -> str:
-    """Generate the retirement notice section for a model page."""
+    """Render per-version lifecycle tracks (released -> deprecated -> retired) for a model page."""
+    today = today or datetime.utcnow()
     if not retirement_entries:
-        return ""
-    
-    # Build retirement info table
-    rows = []
-    replacement_info = []
-    
-    for entry in retirement_entries:
-        version = entry.get("version", "-")
-        status = entry.get("status", "Unknown")
-        deprecation = entry.get("deprecation_date") or "-"
-        retirement = entry.get("retirement_date") or "-"
+        return """## :material-clock-alert: Lifecycle
+
+<div class="lc-empty">No deprecation or retirement date has been announced for this model in Microsoft's retirement table. See the <a href="../../lifecycle/">lifecycle guide</a> for how dates are set.</div>
+"""
+
+    def version_key(entry: Dict) -> str:
+        return str(entry.get("version") or "")
+
+    tracks = []
+    notes: List[str] = []
+    for entry in sorted(retirement_entries, key=version_key, reverse=True):
+        stage = entry_stage(entry, today)
+        label, tone, _ = LIFECYCLE_STAGES[stage]
+        released, _ = parse_lifecycle_date(entry.get("version"))
+        deprecated, dep_est = parse_lifecycle_date(entry.get("deprecation_date"))
+        retires, ret_est = parse_lifecycle_date(entry.get("retirement_date"))
+
+        start = released or (deprecated - timedelta(days=365) if deprecated else None) or (retires - timedelta(days=548) if retires else None) or today - timedelta(days=180)
+        end = retires or (deprecated + timedelta(days=180) if deprecated else None) or today + timedelta(days=180)
+        span_end = max(end, today)
+        span = max((span_end - start).days, 1)
+
+        def pct(value: datetime) -> float:
+            return min(max((value - start).days / span * 100, 0), 100)
+
+        first_phase = "preview" if (entry.get("status") or "").lower() == "preview" else "ga"
+        segments = []
+        ga_end = deprecated or end
+        segments.append(f'<span class="lc-seg lc-seg--{first_phase}" style="left:0;width:{pct(ga_end):.2f}%"></span>')
+        if deprecated and deprecated < end:
+            segments.append(f'<span class="lc-seg lc-seg--deprecated{" lc-seg--estimate" if dep_est else ""}" style="left:{pct(deprecated):.2f}%;width:{pct(end) - pct(deprecated):.2f}%"></span>')
+        if retires and today > retires:
+            segments.append(f'<span class="lc-seg lc-seg--retired" style="left:{pct(retires):.2f}%;width:{100 - pct(retires):.2f}%"></span>')
+        if not retires:
+            segments.append('<span class="lc-seg lc-seg--open" style="left:calc(100% - 2rem);width:2rem"></span>')
+        today_pct = pct(today)
+        today_class = " lc-today--end" if today_pct > 88 else " lc-today--start" if today_pct < 12 else ""
+        segments.append(f'<span class="lc-today{today_class}" style="left:{today_pct:.2f}%"><em>Today</em></span>')
+
+        date_bits = []
+        if released:
+            date_bits.append(f"<span><b>Released</b> {format_short_date(released)}</span>")
+        if deprecated:
+            date_bits.append(f"<span><b>{'Deprecates' if deprecated > today else 'Deprecated'}</b> {'≥ ' if dep_est else ''}{format_short_date(deprecated)}</span>")
+        if retires:
+            verb = "Retired" if retires < today and not ret_est else "Retires"
+            date_bits.append(f"<span><b>{verb}</b> {'≥ ' if ret_est else ''}{format_short_date(retires)}</span>")
+        else:
+            date_bits.append("<span><b>Retires</b> not announced</span>")
+
+        countdown = ""
+        if retires:
+            days = (retires - today).days
+            countdown = f'<span class="lc-version__countdown lc-version__countdown--{tone}">{"No earlier than " if ret_est else ""}{format_countdown(days)}</span>' if days >= 0 or not ret_est else '<span class="lc-version__countdown lc-version__countdown--warning">Date passed · may retire any time</span>'
+
+        replacement_html = ""
         replacement = entry.get("replacement")
-        
-        retire_status, retire_class = get_retirement_status(retirement)
-        status_badge = f'<span class="badge {retire_class}">{retire_status}</span>'
-        
-        replacement_cell = "-"
         if replacement:
             replacement_slug = slugify(replacement)
             if replacement_slug in model_regions_lookup:
-                replacement_cell = f"[{replacement}](../{replacement_slug}/)"
-                replacement_info.append({
-                    "model": replacement,
-                    "slug": replacement_slug,
-                    "regions": len(model_regions_lookup[replacement_slug])
-                })
+                replacement_html = f'<div class="lc-version__replacement">Replacement <a href="../{replacement_slug}/">{html_escape(replacement)}</a> <span>{len(model_regions_lookup[replacement_slug])} regions</span></div>'
             else:
-                replacement_cell = f"`{replacement}` (not yet available)"
-        
-        rows.append(f"| {version} | {status} | {deprecation} | {retirement} | {status_badge} | {replacement_cell} |")
-    
-    # Collect any retirement notes to display
-    retirement_notes = []
-    seen_notes: set = set()
-    for entry in retirement_entries:
+                replacement_html = f'<div class="lc-version__replacement">Replacement <code>{html_escape(replacement)}</code> <span>not yet tracked</span></div>'
+
         note = entry.get("retirement_note")
-        if note and note not in seen_notes:
-            seen_notes.add(note)
-            retirement_notes.append(note)
+        if note and note not in notes:
+            notes.append(note)
 
-    # Build retirement notes admonition blocks
-    notes_section = ""
-    if retirement_notes:
-        note_blocks = []
-        for note in retirement_notes:
-            note_blocks.append(
-                f'!!! note "Retirement Date Update"\n'
-                f'    {note}\n'
-                f'\n'
-                f'    For more details, see the [Azure AI Foundry model retirements documentation]'
-                f'(https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirements'
-                f'?view=foundry-classic&tabs=text).\n'
-            )
-        notes_section = "\n" + "\n".join(note_blocks)
+        tracks.append(f"""<div class="lc-version lc-version--{tone}">
+    <div class="lc-version__head">
+        <code>{html_escape(version_key(entry) or '-')}</code>
+        <span class="lc-badge lc-badge--{tone}">{html_escape(label)}</span>
+        {countdown}
+    </div>
+    <div class="lc-bar" aria-hidden="true">{''.join(segments)}</div>
+    <div class="lc-version__dates">{''.join(date_bits)}</div>
+    {replacement_html}
+</div>""")
 
-    # Build replacement availability section
-    replacement_section = ""
-    if replacement_info:
-        unique_replacements = {r["model"]: r for r in replacement_info}.values()
-        replacement_rows = []
-        for r in unique_replacements:
-            replacement_rows.append(f"| [{r['model']}](../{r['slug']}/) | {r['regions']} regions | [View Details](../{r['slug']}/) |")
-        
-        replacement_section = f"""
+    notes_html = "".join(
+        f'\n!!! note "Retirement date update"\n    {note}\n'
+        for note in notes
+    )
+    return f"""## :material-clock-alert: Lifecycle
 
-### Replacement Model Availability
-
-| Model | Coverage | Details |
-|-------|----------|---------|
-{chr(10).join(replacement_rows)}
-"""
-    
-    return f"""
-
-!!! warning "Retirement Notice"
-    This model has scheduled retirement dates. Plan your migration to the replacement model.
-
-## :material-clock-alert: Retirement Schedule
-
-| Version | Status | Deprecation Date | Retirement Date | Timeline | Replacement |
-|---------|--------|------------------|-----------------|----------|-------------|
-{chr(10).join(rows)}
-{notes_section}{replacement_section}
+<div class="lc-versions">
+{chr(10).join(tracks)}
+</div>
+{notes_html}
 """
 
 
@@ -855,6 +759,374 @@ _Last updated: {datetime.utcnow():%Y-%m-%d %H:%M UTC}_
 """
 
 
+MODEL_FAMILY_RULES: List[Tuple[Tuple[str, ...], str]] = [
+    (("claude",), "Anthropic"),
+    (("cohere", "embed-v"), "Cohere"),
+    (("deepseek",), "DeepSeek"),
+    (("flux",), "Black Forest Labs"),
+    (("grok",), "xAI"),
+    (("llama",), "Meta"),
+    (("phi-", "mai-"), "Microsoft"),
+    (("mistral", "ministral", "codestral"), "Mistral AI"),
+    (("stable",), "Stability AI"),
+    (("kimi",), "Moonshot AI"),
+    (("gpt", "o1", "o3", "o4", "codex", "dall-e", "sora", "whisper", "tts",
+      "text-embedding", "computer-use", "model-router"), "OpenAI"),
+]
+
+LIFECYCLE_STAGES: Dict[str, Tuple[str, str, int]] = {
+    # key: (label, css tone, urgency rank - lower is more urgent)
+    "soon": ("Retiring ≤30d", "danger", 0),
+    "retiring": ("Retiring ≤90d", "warning", 1),
+    "pending": ("Retirement due", "warning", 2),
+    "deprecated": ("Deprecated", "caution", 3),
+    "preview": ("Preview", "info", 4),
+    "ga": ("Generally available", "success", 5),
+    "retired": ("Retired", "muted", 6),
+    "untracked": ("No date announced", "neutral", 7),
+}
+
+
+def model_family(name: str) -> str:
+    """Return the provider family for a model name."""
+    lowered = name.lower()
+    for prefixes, family in MODEL_FAMILY_RULES:
+        if lowered.startswith(prefixes):
+            return family
+    return "Partner"
+
+
+def parse_lifecycle_date(value: str) -> Tuple[datetime, bool]:
+    """Parse a lifecycle date. Returns (date or None, is_not_earlier_than)."""
+    if not value:
+        return None, False
+    text = str(value).strip()
+    estimate = False
+    if text.lower().startswith("no earlier than"):
+        text = text[len("no earlier than"):].strip()
+        estimate = True
+    try:
+        return datetime.strptime(text, "%Y-%m-%d"), estimate
+    except ValueError:
+        return None, estimate
+
+
+def format_short_date(value: datetime) -> str:
+    return f"{value:%b} {value.day}, {value:%Y}"
+
+
+def format_countdown(days: int) -> str:
+    if days < 0:
+        return f"{pluralize(-days, 'day')} ago"
+    if days == 0:
+        return "today"
+    if days < 60:
+        return f"in {pluralize(days, 'day')}"
+    return f"in {round(days / 30.4)} months"
+
+
+def entry_stage(entry: Dict, today: datetime) -> str:
+    """Classify a single retirement-data entry into a lifecycle stage key."""
+    retire_dt, retire_est = parse_lifecycle_date(entry.get("retirement_date"))
+    deprecate_dt, deprecate_est = parse_lifecycle_date(entry.get("deprecation_date"))
+    if retire_dt:
+        days = (retire_dt - today).days
+        if days < 0:
+            return "pending" if retire_est else "retired"
+        if days <= 30:
+            return "soon"
+        if days <= 90:
+            return "retiring"
+    if deprecate_dt and not deprecate_est and deprecate_dt <= today:
+        return "deprecated"
+    if (entry.get("status") or "").lower() == "preview":
+        return "preview"
+    return "ga"
+
+
+def summarize_model_lifecycle(entries: List[Dict], today: datetime) -> Dict:
+    """Return the headline lifecycle state for a model across all its versions."""
+    if not entries:
+        label, tone, _ = LIFECYCLE_STAGES["untracked"]
+        return {"key": "untracked", "label": label, "tone": tone}
+
+    staged = [(entry_stage(entry, today), entry) for entry in entries]
+    active = [(stage, entry) for stage, entry in staged if stage != "retired"]
+    pool = active or staged
+    stage, entry = min(pool, key=lambda item: LIFECYCLE_STAGES[item[0]][2])
+    label, tone, _ = LIFECYCLE_STAGES[stage]
+    summary = {"key": stage, "label": label, "tone": tone, "version": entry.get("version", "")}
+
+    upcoming = []
+    for _, item in active:
+        retire_dt, estimate = parse_lifecycle_date(item.get("retirement_date"))
+        if retire_dt and retire_dt >= today:
+            upcoming.append((retire_dt, estimate, item))
+    if upcoming:
+        retire_dt, estimate, item = min(upcoming, key=lambda value: value[0])
+        summary.update({
+            "next_date": f"{retire_dt:%Y-%m-%d}",
+            "next_label": ("No earlier than " if estimate else "") + format_short_date(retire_dt),
+            "days": (retire_dt - today).days,
+            "estimate": estimate,
+            "replacement": item.get("replacement") or "",
+        })
+    else:
+        replacements = [item.get("replacement") for _, item in staged if item.get("replacement")]
+        if replacements:
+            summary["replacement"] = replacements[0]
+    return summary
+
+
+def lifecycle_badge(summary: Dict) -> str:
+    return f'<span class="lc-badge lc-badge--{summary["tone"]}">{html_escape(summary["label"])}</span>'
+
+
+def build_model_lifecycles(model_regions: Dict[str, Set[str]], retirement_index: Dict[str, List[Dict]], today: datetime) -> Dict[str, Dict]:
+    return {
+        model: summarize_model_lifecycle(retirement_index.get(slugify(model), []), today)
+        for model in model_regions
+    }
+
+
+def build_model_finder_data(
+    model_regions: Dict[str, Set[str]],
+    model_sku_regions: Dict[str, Dict[str, Set[str]]],
+    lifecycles: Dict[str, Dict],
+) -> List[Dict]:
+    """Compact per-model records for the client-side model finder."""
+    records = []
+    for model in sorted(model_regions, key=str.lower):
+        categories = sorted({get_sku_category(sku) for sku in model_sku_regions[model]} - {"Other"})
+        lifecycle = lifecycles.get(model, {})
+        record = {
+            "n": model,
+            "s": slugify(model),
+            "f": model_family(model),
+            "r": len(model_regions[model]),
+            "c": categories,
+            "lk": lifecycle.get("key", "untracked"),
+            "ll": lifecycle.get("label", ""),
+            "lt": lifecycle.get("tone", "neutral"),
+        }
+        if lifecycle.get("next_label"):
+            record["nd"] = lifecycle["next_label"]
+            record["dd"] = lifecycle["days"]
+        if lifecycle.get("replacement"):
+            record["rp"] = lifecycle["replacement"]
+            record["rs"] = slugify(lifecycle["replacement"]) if slugify(lifecycle["replacement"]) in MODEL_PAGE_SLUGS else ""
+        records.append(record)
+    return records
+
+
+def model_finder_widget(data_src: str, root: str, placeholder: str = "Search models — e.g. gpt-5, o4-mini, claude, embedding") -> str:
+    return f"""<div class="model-finder" data-model-finder data-src="{data_src}" data-root="{root}">
+    <div class="model-finder__field">
+        <svg class="model-finder__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 3a6.5 6.5 0 0 1 5.25 10.33l5.46 5.46-1.42 1.42-5.46-5.46A6.5 6.5 0 1 1 9.5 3m0 2a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9"/></svg>
+        <input type="search" class="model-finder__input" placeholder="{placeholder}" autocomplete="off" spellcheck="false" aria-label="Find a model" aria-controls="model-finder-results">
+        <kbd class="model-finder__kbd">Ctrl K</kbd>
+    </div>
+    <div class="model-finder__chips" role="group" aria-label="Quick filters">
+        <button type="button" class="finder-chip is-active" data-filter="all">All</button>
+        <button type="button" class="finder-chip" data-filter="risk">Retiring soon</button>
+        <button type="button" class="finder-chip" data-filter="preview">Preview</button>
+        <button type="button" class="finder-chip" data-filter="Provisioned">Provisioned (PTU)</button>
+        <button type="button" class="finder-chip" data-filter="Datazone">Data Zone</button>
+        <span class="model-finder__families" data-family-chips></span>
+    </div>
+    <div class="model-finder__results" id="model-finder-results" role="listbox" aria-live="polite" hidden></div>
+</div>"""
+
+
+def render_ga_timeline_diagram(compact: bool = False) -> str:
+    """Proportional diagram of the GA model lifecycle with a zoom on the final 90 days."""
+    ticks = "".join(f'<span style="--x:{month / 18 * 100:.2f}%">{month}</span>' for month in range(0, 19, 3))
+    zoom = f"""
+    <div class="lc-zoom" aria-label="Final 90 days before retirement">
+        <div class="lc-zoom__title">Final 90 days</div>
+        <div class="lc-track lc-track--zoom">
+            <div class="lc-phase lc-phase--eval" style="--w:33.33%"><span>Evaluate replacement</span></div>
+            <div class="lc-phase lc-phase--notice" style="--w:33.33%"><span>Notifications</span></div>
+            <div class="lc-phase lc-phase--ptu" style="--w:33.34%"><span>PTU migration</span></div>
+        </div>
+        <ol class="lc-marks">
+            <li class="lc-mark lc-mark--start" style="--x:0%"><b>−90 d</b><span>Replacement named</span></li>
+            <li class="lc-mark" style="--x:33.33%"><b>−60 d</b><span>Active notice</span></li>
+            <li class="lc-mark" style="--x:66.67%"><b>−30 d</b><span>PTU migration window</span></li>
+            <li class="lc-mark lc-mark--end lc-mark--danger" style="--x:100%"><b>Retire</b><span>Requests fail</span></li>
+        </ol>
+    </div>"""
+    return f"""<figure class="lc-diagram{' lc-diagram--compact' if compact else ''}">
+    <figcaption><strong>GA model</strong> · about 18 months from launch to retirement</figcaption>
+    <div class="lc-track">
+        <div class="lc-phase lc-phase--ga" style="--w:66.67%"><span>Generally available · all customers</span></div>
+        <div class="lc-phase lc-phase--deprecated" style="--w:33.33%"><span>Deprecated · existing customers</span></div>
+        <div class="lc-zoom-bracket" style="--x:83.33%; --w:16.67%"></div>
+    </div>
+    <div class="lc-scale" aria-hidden="true">{ticks}<em>months</em></div>
+    <ol class="lc-marks">
+        <li class="lc-mark lc-mark--start" style="--x:0%"><b>Launch</b><span>Retirement date published</span></li>
+        <li class="lc-mark" style="--x:66.67%"><b>12 mo · Deprecated</b><span>New customers blocked</span></li>
+        <li class="lc-mark lc-mark--end lc-mark--danger" style="--x:100%"><b>18 mo · Retired</b><span>410 / errors</span></li>
+    </ol>{zoom}
+</figure>"""
+
+
+def render_preview_timeline_diagram() -> str:
+    return """<figure class="lc-diagram">
+    <figcaption><strong>Preview model</strong> · not-sooner-than date, often ~90 days out</figcaption>
+    <div class="lc-track">
+        <div class="lc-phase lc-phase--preview" style="--w:66.67%"><span>Preview · evaluation only</span></div>
+        <div class="lc-phase lc-phase--notice" style="--w:33.33%"><span>≥30 d notice</span></div>
+    </div>
+    <ol class="lc-marks">
+        <li class="lc-mark lc-mark--start" style="--x:0%"><b>Launch</b><span>Not-sooner-than date set</span></li>
+        <li class="lc-mark" style="--x:66.67%"><b>Notice</b><span>≥30 days warning</span></li>
+        <li class="lc-mark lc-mark--end lc-mark--danger" style="--x:100%"><b>Upgrade or retire</b><span>Newer version or ends</span></li>
+    </ol>
+</figure>"""
+
+
+def render_stage_flow(stage_counts: Dict[str, int] = None) -> str:
+    stage_counts = stage_counts or {}
+    stages = [
+        ("preview", "Preview", "Evaluation only", "No SLA · can change or be force-upgraded"),
+        ("ga", "Generally available", "All customers", "Production-ready · retirement date set at launch"),
+        ("legacy", "Legacy", "All customers", "Newer model exists · start evaluating"),
+        ("deprecated", "Deprecated", "Existing customers", "No new customers · migrate now"),
+        ("retired", "Retired", "Nobody", "Removed · inference returns errors"),
+    ]
+    nodes = []
+    for key, title, access, detail in stages:
+        count = stage_counts.get(key)
+        count_html = f'<span class="stage-node__count" title="Models tracked in this stage">{count}</span>' if count else ""
+        nodes.append(f"""<li class="stage-node stage-node--{key}">
+        <span class="stage-node__dot" aria-hidden="true"></span>
+        <strong>{title}</strong>{count_html}
+        <span class="stage-node__access">{access}</span>
+        <small>{detail}</small>
+    </li>""")
+    return f"""<ol class="stage-flow" aria-label="Model lifecycle stages">
+    {chr(10).join(nodes)}
+</ol>"""
+
+
+def lifecycle_stage_counts(lifecycles: Dict[str, Dict]) -> Dict[str, int]:
+    counts: Dict[str, int] = defaultdict(int)
+    for summary in lifecycles.values():
+        key = summary["key"]
+        if key in ("soon", "retiring", "pending", "deprecated"):
+            counts["deprecated"] += 1
+        elif key in ("preview", "ga", "retired"):
+            counts[key] += 1
+    return counts
+
+
+def build_changes_panel(history: List[Dict], all_regions: Set[str], known_models: Set[str], max_rows: int = 8) -> Tuple[str, Dict]:
+    """Compact feed of the latest grouped availability changes."""
+    rows = flatten_history_changes(history, all_regions, known_models, limit=10)
+    stats = {"added": 0, "removed": 0, "models": 0, "date": "", "label": ""}
+    if not rows:
+        return '<p class="dash-empty">No availability changes recorded yet.</p>', stats
+
+    latest_timestamp = rows[0]["timestamp"]
+    latest_rows = [row for row in rows if row["timestamp"] == latest_timestamp]
+    stats.update({
+        "added": sum(1 for row in latest_rows if row["change"] == "added"),
+        "removed": sum(1 for row in latest_rows if row["change"] == "removed"),
+        "models": len({row["model"] for row in latest_rows}),
+        "date": f"{latest_timestamp:%Y-%m-%d}",
+        "label": format_digest_date(latest_timestamp),
+    })
+
+    grouped: Dict[Tuple, Dict] = {}
+    for row in rows:
+        key = (row["timestamp"], row["change"], row["model"], row["sku"])
+        group = grouped.setdefault(key, {**row, "regions": set()})
+        group["regions"].add(row["region"])
+
+    items = []
+    groups = list(grouped.values())
+    for group in groups[:max_rows]:
+        added = group["change"] == "added"
+        regions = sorted(region for region in group["regions"] if not region.startswith("("))
+        if regions:
+            scope = region_link(regions[0], class_name="feed-region")
+            if len(regions) > 1:
+                scope += f' <span class="feed-more">+{len(regions) - 1}</span>'
+        else:
+            scope = '<span class="feed-more">entire model</span>'
+        sku = group["sku"]
+        sku_html = sku_link(sku, class_name="feed-sku") if sku != "-" else ""
+        items.append(f"""<li class="feed-item feed-item--{'added' if added else 'removed'}">
+        <span class="feed-item__icon" aria-label="{'Added' if added else 'Removed'}">{'+' if added else '−'}</span>
+        <div class="feed-item__body">
+            <div class="feed-item__title">{model_link(group['model'])} {sku_html}</div>
+            <div class="feed-item__meta"><time datetime="{group['timestamp']:%Y-%m-%d}">{group['timestamp']:%b} {group['timestamp'].day}</time> · {scope}</div>
+        </div>
+    </li>""")
+
+    more = len(groups) - len(items)
+    more_html = f'<a class="dash-panel__more" href="history/">{pluralize(more, "more change")} in history →</a>' if more > 0 else ""
+    return f'<ul class="feed">{chr(10).join(items)}</ul>{more_html}', stats
+
+
+def build_watchlist(retirement_data: Dict, available_slugs: Set[str], today: datetime, limit: int = 8) -> Tuple[str, Dict]:
+    """Upcoming retirements, soonest first, with countdown and progress."""
+    upcoming = []
+    counts = {"soon": 0, "retiring": 0, "retired": 0}
+    for category, entries in retirement_data.get("models", {}).items():
+        if category == "fine_tuned":
+            continue
+        for entry in entries:
+            retire_dt, estimate = parse_lifecycle_date(entry.get("retirement_date"))
+            if not retire_dt:
+                continue
+            days = (retire_dt - today).days
+            if days < 0:
+                if not estimate:
+                    counts["retired"] += 1
+                continue
+            if days <= 30:
+                counts["soon"] += 1
+            elif days <= 90:
+                counts["retiring"] += 1
+            upcoming.append((retire_dt, estimate, days, entry))
+
+    upcoming.sort(key=lambda item: (item[0], item[3].get("model", "")))
+    rows = []
+    for retire_dt, estimate, days, entry in upcoming[:limit]:
+        model = entry.get("model", "")
+        slug = slugify(model)
+        model_html = f'<a href="models/{slug}/">{html_escape(model)}</a>' if slug in available_slugs else html_escape(model)
+        tone = "danger" if days <= 30 else "warning" if days <= 90 else "neutral"
+        start_dt, _ = parse_lifecycle_date(entry.get("deprecation_date"))
+        if not start_dt or start_dt >= retire_dt:
+            start_dt = retire_dt - timedelta(days=180)
+        span = max((retire_dt - start_dt).days, 1)
+        progress = min(max((today - start_dt).days / span * 100, 0), 100)
+        replacement = entry.get("replacement")
+        replacement_html = ""
+        if replacement:
+            replacement_slug = slugify(replacement)
+            target = f'<a href="models/{replacement_slug}/">{html_escape(replacement)}</a>' if replacement_slug in available_slugs else html_escape(replacement)
+            replacement_html = f'<span class="watch-item__replacement">→ {target}</span>'
+        rows.append(f"""<li class="watch-item watch-item--{tone}">
+        <div class="watch-item__main">
+            <div class="watch-item__title">{model_html} <code>{html_escape(str(entry.get('version', '')))}</code></div>
+            <div class="watch-item__meta">{'≥ ' if estimate else ''}{format_short_date(retire_dt)} {replacement_html}</div>
+            <div class="watch-item__meter" aria-hidden="true"><span style="width:{progress:.0f}%"></span></div>
+        </div>
+        <span class="watch-item__countdown">{'≥ ' if estimate else ''}{days}<small>days</small></span>
+    </li>""")
+
+    if not rows:
+        return '<p class="dash-empty">No upcoming retirements announced.</p>', counts
+    more = len(upcoming) - len(rows)
+    more_html = f'<a class="dash-panel__more" href="retirements/">{pluralize(more, "more scheduled retirement")} →</a>' if more > 0 else ""
+    return f'<ul class="watchlist">{chr(10).join(rows)}</ul>{more_html}', counts
+
+
 def generate_index_page(
     model_regions: Dict[str, Set[str]],
     model_sku_regions: Dict[str, Dict[str, Set[str]]],
@@ -862,307 +1134,160 @@ def generate_index_page(
     all_regions: Set[str],
     retirement_data: Dict = None,
     history: List[Dict] = None,
+    lifecycles: Dict[str, Dict] = None,
 ) -> str:
-    """Generate the index/home page with actionable insights."""
-    total_models = len(model_regions)
-    total_regions = len(all_regions)
-
+    """Generate the dashboard home page."""
     today = datetime.utcnow()
     retirement_data = retirement_data or {"models": {}}
+    lifecycles = lifecycles or {}
+    available_slugs = {slugify(model) for model in model_regions}
 
-    # Categorize retirements
-    retiring_soon: List[Dict] = []  # <=30 days
-    upcoming: List[Dict] = []       # 31-90 days
-    scheduled: List[Dict] = []      # 91+ days
-    already_retired: List[Dict] = []
+    watchlist_html, watch_counts = build_watchlist(retirement_data, available_slugs, today)
+    changes_html, change_stats = build_changes_panel(history or [], all_regions, set(model_regions))
+    families = {model_family(model) for model in model_regions}
+    due_90 = watch_counts["soon"] + watch_counts["retiring"]
+    retire_tone = "danger" if watch_counts["soon"] else "warning" if due_90 else "success"
 
-    for category, entries in retirement_data.get("models", {}).items():
-        if category == "fine_tuned":
-            continue
-        for entry in entries:
-            entry_with_cat = {**entry, "category": category}
-            retirement_date = entry.get("retirement_date", "")
-            status_text, status_class = get_retirement_status(retirement_date, today)
-            entry_with_cat["_status_text"] = status_text
-            entry_with_cat["_status_class"] = status_class
+    widest = sorted(model_regions, key=lambda model: (-len(model_regions[model]), model.lower()))[:6]
+    quick_picks = " ".join(
+        f'<a class="quick-pick" href="models/{slugify(model)}/">{html_escape(model)} <small>{len(model_regions[model])}</small></a>'
+        for model in widest
+    )
+    changes_href = history_link(date=change_stats["date"]) if change_stats["date"] else "history/"
+    retirement_source_date = retirement_data.get("last_updated", "")
+    source_note = f" · retirement data as of {retirement_source_date}" if retirement_source_date else ""
 
-            if status_text == "Retired":
-                already_retired.append(entry_with_cat)
-            elif status_text == "Retiring Soon":
-                retiring_soon.append(entry_with_cat)
-            elif status_text == "Retiring":
-                upcoming.append(entry_with_cat)
-            elif status_text in ("Scheduled", "Planned"):
-                scheduled.append(entry_with_cat)
+    return f"""---
+hide:
+  - navigation
+  - toc
+---
 
-    # Sort by retirement date
-    def _sort_key(e: Dict) -> str:
-        rd = e.get("retirement_date") or ""
-        if rd.startswith("No earlier than"):
-            return rd.replace("No earlier than ", "")
-        return rd
-
-    retiring_soon.sort(key=_sort_key)
-    upcoming.sort(key=_sort_key)
-
-    # Build retirement table rows helper
-    available_model_slugs = {slugify(model) for model in model_regions}
-
-    def _retirement_rows(entries: List[Dict]) -> str:
-        rows = []
-        for e in entries:
-            model = e.get("model", "")
-            version = e.get("version", "-")
-            cat_label = e.get("category", "").replace("_", " ").title()
-            retirement = e.get("retirement_date") or "-"
-            replacement = e.get("replacement")
-            status_badge = f'<span class="badge {e["_status_class"]}">{e["_status_text"]}</span>'
-            model_slug = slugify(model)
-            model_cell = f"[{model}](models/{model_slug}.md)" if model_slug in available_model_slugs else f"`{model}`"
-
-            replacement_cell = "-"
-            if replacement:
-                replacement_slug = slugify(replacement)
-                if replacement_slug in available_model_slugs:
-                    replacement_cell = f"[{replacement}](models/{replacement_slug}.md)"
-                else:
-                    replacement_cell = f"`{replacement}` (not yet available)"
-
-            rows.append(
-                f"    | {model_cell} | {version} | {cat_label} | {retirement} | {status_badge} | {replacement_cell} |"
-            )
-        return chr(10).join(rows)
-
-    # Build the urgent warnings section
-    retirement_section_parts: List[str] = []
-
-    if retiring_soon:
-        retirement_section_parts.append(f"""!!! danger "Retiring Within 30 Days — {len(retiring_soon)} model version{'s' if len(retiring_soon) != 1 else ''}"
-    These models require **immediate migration**. After the retirement date, API calls will return errors.
-
-    | Model | Version | Category | Retirement Date | Status | Replacement |
-    |-------|---------|----------|-----------------|--------|-------------|
-{_retirement_rows(retiring_soon)}
-""")
-
-    if upcoming:
-        retirement_section_parts.append(f"""!!! warning "Upcoming Retirements (31-90 Days) — {len(upcoming)} model version{'s' if len(upcoming) != 1 else ''}"
-    Plan and test your migration to the replacement model.
-
-    | Model | Version | Category | Retirement Date | Status | Replacement |
-    |-------|---------|----------|-----------------|--------|-------------|
-{_retirement_rows(upcoming)}
-""")
-
-    if already_retired:
-        retirement_section_parts.append(f"""!!! failure "Already Retired — {len(already_retired)} model version{'s' if len(already_retired) != 1 else ''}"
-    These models are no longer available. Migrate to the listed replacement.
-
-    | Model | Version | Category | Retirement Date | Status | Replacement |
-    |-------|---------|----------|-----------------|--------|-------------|
-{_retirement_rows(already_retired)}
-""")
-
-    if not retiring_soon and not upcoming and not already_retired:
-        retirement_section_parts.append('!!! success "No Urgent Retirements"\n    All models are currently within their supported lifecycle.\n')
-
-    retirement_blocks = chr(10).join(retirement_section_parts)
-
-    # Scheduled count for the stat card
-    total_action_needed = len(retiring_soon) + len(upcoming) + len(already_retired)
-
-    history = history or []
-    recent_changes_block = build_recent_changes_block(history, all_regions, set(model_regions.keys()))
-
-    lifecycle_guide = """<div class="lifecycle-guide" aria-label="Model lifecycle guidance">
-    <div class="lifecycle-guide__header">
-        <span class="lifecycle-guide__eyebrow">Lifecycle signals</span>
-        <p>Microsoft Foundry models move through predictable stages so teams can test replacements before old versions stop serving traffic. Use this dashboard for dates and model-level risk, then validate active deployments with the Models API and Azure Service Health.</p>
+<section class="dash-hero">
+    <div class="dash-hero__head">
+        <div>
+            <p class="dash-eyebrow">Azure AI Foundry · model tracker</p>
+            <h1 class="dash-title">Foundry Model Availability</h1>
+            <p class="dash-lede">Where every model runs, how you can deploy it, and when it retires.</p>
+        </div>
+        <span class="dash-freshness"><span class="dash-freshness__dot"></span>Updated {today:%b} {today.day}, {today:%Y}</span>
     </div>
+    {model_finder_widget("assets/model-index.json", "")}
+    <div class="quick-picks"><span>Widest availability</span>{quick_picks}</div>
+</section>
 
-    <div class="lifecycle-rail" aria-label="Lifecycle stages">
-        <div class="lifecycle-stage lifecycle-stage--preview">
-            <span class="lifecycle-stage__number">1</span>
-            <strong>Preview</strong>
-            <span>Experimental. Suitable for evaluation, not production.</span>
-        </div>
-        <div class="lifecycle-stage lifecycle-stage--ga">
-            <span class="lifecycle-stage__number">2</span>
-            <strong>Generally available</strong>
-            <span>Production-ready. Retirement date is set at launch.</span>
-        </div>
-        <div class="lifecycle-stage lifecycle-stage--legacy">
-            <span class="lifecycle-stage__number">3</span>
-            <strong>Legacy</strong>
-            <span>Newer models exist. Begin replacement evaluation.</span>
-        </div>
-        <div class="lifecycle-stage lifecycle-stage--deprecated">
-            <span class="lifecycle-stage__number">4</span>
-            <strong>Deprecated</strong>
-            <span>Existing customers can continue. New customers are blocked.</span>
-        </div>
-        <div class="lifecycle-stage lifecycle-stage--retired">
-            <span class="lifecycle-stage__number">5</span>
-            <strong>Retired</strong>
-            <span>Removed from service. Inference returns 410 Gone.</span>
-        </div>
-    </div>
-
-    <div class="lifecycle-timelines">
-        <section class="lifecycle-timeline lifecycle-timeline--ga" aria-labelledby="ga-lifecycle-title">
-            <div class="lifecycle-timeline__title" id="ga-lifecycle-title">GA model retirement path</div>
-            <ol class="lifecycle-steps">
-                <li>
-                    <span class="lifecycle-step__marker">Launch</span>
-                    <strong>GA starts</strong>
-                    <span>Retirement date is set about 18 months out and exposed by the Models API.</span>
-                </li>
-                <li>
-                    <span class="lifecycle-step__marker">12 mo</span>
-                    <strong>Deprecated</strong>
-                    <span>Existing subscriptions can continue; new customers cannot access that version.</span>
-                </li>
-                <li>
-                    <span class="lifecycle-step__marker">90 d</span>
-                    <strong>Replacement named</strong>
-                    <span>Replacement is typically available in Global Standard for evaluation.</span>
-                </li>
-                <li>
-                    <span class="lifecycle-step__marker">30 d</span>
-                    <strong>Provisioned window</strong>
-                    <span>Provisioned regions get a short manual migration window.</span>
-                </li>
-                <li>
-                    <span class="lifecycle-step__marker">Retire</span>
-                    <strong>Traffic stops</strong>
-                    <span>Requests to the retired version fail. Retirement dates are not extended.</span>
-                </li>
-            </ol>
-        </section>
-
-        <section class="lifecycle-timeline lifecycle-timeline--preview" aria-labelledby="preview-lifecycle-title">
-            <div class="lifecycle-timeline__title" id="preview-lifecycle-title">Preview model retirement path</div>
-            <ol class="lifecycle-steps lifecycle-steps--compact">
-                <li>
-                    <span class="lifecycle-step__marker">Preview</span>
-                    <strong>Not for production</strong>
-                    <span>Launches with a not-sooner-than retirement date, often around 90 days out.</span>
-                </li>
-                <li>
-                    <span class="lifecycle-step__marker">30 d</span>
-                    <strong>Notice period</strong>
-                    <span>Customers receive at least 30 days notice before upgrade or retirement.</span>
-                </li>
-                <li>
-                    <span class="lifecycle-step__marker">Upgrade</span>
-                    <strong>Force-upgrade or end</strong>
-                    <span>Preview deployments move to a newer preview or GA model, or retire if no replacement exists.</span>
-                </li>
-            </ol>
-        </section>
-    </div>
-
-    <div class="attention-grid" aria-label="When to pay attention">
-        <div class="attention-item attention-item--watch">
-            <strong>Start watching</strong>
-            <span>A model enters Legacy or Deprecated, or appears as Scheduled in this dashboard.</span>
-        </div>
-        <div class="attention-item attention-item--test">
-            <strong>Start testing</strong>
-            <span>The replacement is declared, usually 90-120 days before retirement.</span>
-        </div>
-        <div class="attention-item attention-item--notify">
-            <strong>Expect notifications</strong>
-            <span>GA retirements get at least 60 days active notice; preview models get at least 30 days.</span>
-        </div>
-        <div class="attention-item attention-item--manual">
-            <strong>Check deployment type</strong>
-            <span>Global Standard, Data Zone Standard, and Standard can auto-upgrade. Provisioned deployments must be migrated manually.</span>
-        </div>
-        <div class="attention-item attention-item--api">
-            <strong>Read API status carefully</strong>
-            <span>In the Models API, <code>Deprecating</code> means deprecated; <code>Deprecated</code> means retired.</span>
-        </div>
-    </div>
-
-    <p class="lifecycle-guide__source">Adapted from <a href="https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirements">Microsoft Foundry Models lifecycle and support policy</a>. See <a href="retirements/">full retirement details</a> for model-specific dates.</p>
+<div class="kpi-grid">
+    <a class="kpi kpi--accent" href="models/">
+        <span class="kpi__label">Models tracked</span>
+        <strong class="kpi__value">{len(model_regions)}</strong>
+        <span class="kpi__hint">from {len(families)} providers</span>
+    </a>
+    <a class="kpi kpi--info" href="by-region/">
+        <span class="kpi__label">Azure regions</span>
+        <strong class="kpi__value">{len(all_regions)}</strong>
+        <span class="kpi__hint">with at least one model</span>
+    </a>
+    <a class="kpi kpi--{retire_tone}" href="retirements/">
+        <span class="kpi__label">Retiring in 90 days</span>
+        <strong class="kpi__value">{due_90}</strong>
+        <span class="kpi__hint">{watch_counts['soon']} within 30 days</span>
+    </a>
+    <a class="kpi kpi--success" href="{changes_href}">
+        <span class="kpi__label">Latest change run</span>
+        <strong class="kpi__value"><span class="kpi__plus">+{change_stats['added']}</span> <span class="kpi__minus">−{change_stats['removed']}</span></strong>
+        <span class="kpi__hint">{change_stats['label'] or 'no runs yet'} · {pluralize(change_stats['models'], 'model')}</span>
+    </a>
 </div>
+
+<div class="dash-grid">
+    <section class="dash-panel" aria-labelledby="watchlist-title">
+        <header class="dash-panel__head">
+            <h2 id="watchlist-title">Retirement watchlist</h2>
+            <a href="retirements/">All retirements</a>
+        </header>
+        <p class="dash-panel__sub">Next scheduled retirements by version. {watch_counts['retired']} versions already retired.</p>
+        {watchlist_html}
+    </section>
+    <section class="dash-panel" aria-labelledby="changes-title">
+        <header class="dash-panel__head">
+            <h2 id="changes-title">Latest availability changes</h2>
+            <a href="history/">Full history</a>
+        </header>
+        <p class="dash-panel__sub">Regional SKU additions and removals detected by the watcher.</p>
+        {changes_html}
+    </section>
+</div>
+
+<section class="dash-panel dash-panel--wide" aria-labelledby="lifecycle-title">
+    <header class="dash-panel__head">
+        <h2 id="lifecycle-title">How model lifecycles work</h2>
+        <a href="lifecycle/">Lifecycle guide</a>
+    </header>
+    {render_stage_flow(lifecycle_stage_counts(lifecycles))}
+    {render_ga_timeline_diagram(compact=True)}
+</section>
+
+<nav class="explore-row" aria-label="Explore">
+    <a href="models/"><strong>All models</strong><span>Filterable catalog</span></a>
+    <a href="by-region/"><strong>By region</strong><span>What runs where</span></a>
+    <a href="by-sku/"><strong>By deployment type</strong><span>Global, Data Zone, PTU</span></a>
+    <a href="lifecycle/"><strong>Lifecycle guide</strong><span>Dates &amp; what to do</span></a>
+</nav>
+
+<p class="dash-footnote">Snapshot generated {today:%Y-%m-%d %H:%M} UTC{source_note}. Validate active deployments with the Models API and Azure Service Health.</p>
 """
 
-    return f"""# AI Foundry Model Availability
 
-<div class="dashboard-hero">
-    <div class="dashboard-hero__copy">
-        <p class="dashboard-hero__eyebrow">Azure AI Foundry operations</p>
-        <p class="dashboard-hero__lede">Track model availability, regional coverage, deployment SKUs, and retirement risk from one searchable dashboard.</p>
-    </div>
-    <div class="dashboard-hero__actions">
-        <a class="md-button md-button--primary" href="models/">Browse models</a>
-        <a class="md-button" href="retirements/">Review retirements</a>
-    </div>
+def generate_lifecycle_page(lifecycles: Dict[str, Dict]) -> str:
+    """Standalone guide explaining how Foundry model lifecycles work."""
+    counts = lifecycle_stage_counts(lifecycles)
+    return f"""# Model Lifecycle
+
+<p class="page-lede">Every Foundry model version moves through the same stages. Knowing where a model sits tells you whether to build on it, plan a migration, or move now.</p>
+
+## Stages
+
+{render_stage_flow(counts)}
+
+<p class="diagram-note">Counts group tracked models by their most urgent active version; Deprecated also includes versions with a retirement due. Legacy has no published date, so it is not counted.</p>
+
+## Retirement timelines
+
+{render_ga_timeline_diagram()}
+
+{render_preview_timeline_diagram()}
+
+## When to act
+
+<div class="act-grid">
+    <div class="act-card act-card--watch"><span>1</span><strong>Start watching</strong><p>The model shows as Deprecated, Legacy, or has a scheduled retirement on its model page.</p></div>
+    <div class="act-card act-card--test"><span>2</span><strong>Start testing</strong><p>A replacement is named — usually 90–120 days before retirement. Evaluate it in Global Standard.</p></div>
+    <div class="act-card act-card--notify"><span>3</span><strong>Expect notices</strong><p>GA retirements get at least 60 days active notice; preview models at least 30 days.</p></div>
+    <div class="act-card act-card--manual"><span>4</span><strong>Migrate PTU yourself</strong><p>Provisioned deployments never auto-upgrade. Plan capacity in the replacement before the 30-day window.</p></div>
 </div>
 
-<div class="stats-grid">
-  <div class="stat-card">
-    <div class="stat-value">{total_models}</div>
-    <div class="stat-label">Models Tracked</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-value">{total_regions}</div>
-    <div class="stat-label">Azure Regions</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-value">{total_action_needed}</div>
-    <div class="stat-label">Action Needed</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-value">{len(scheduled)}</div>
-    <div class="stat-label">Scheduled Retirements</div>
-  </div>
-</div>
+## Upgrade behavior by deployment type
 
----
+| Deployment type | At retirement | What you should do |
+|---|---|---|
+| <span class="sku-badge sku-global">Global</span> Global Standard / Batch | Auto-upgraded to the replacement when an upgrade policy allows it | Pin a version and test the replacement before the date |
+| <span class="sku-badge sku-datazone">Datazone</span> Data Zone Standard | Auto-upgraded within the data zone | Confirm the replacement is available in your data zone |
+| <span class="sku-badge sku-standard">Standard</span> Regional Standard | Auto-upgraded when available in the region | Check regional availability of the replacement |
+| <span class="sku-badge sku-provisioned">Provisioned</span> Provisioned (PTU) | **Not upgraded** — requests fail after retirement | Create a new PTU deployment on the replacement and move traffic |
 
-{recent_changes_block}
+## Reading the Models API
 
----
+| API `lifecycleStatus` | Means | Dashboard label |
+|---|---|---|
+| `Preview` | Preview, not for production | <span class="lc-badge lc-badge--info">Preview</span> |
+| `GenerallyAvailable` | GA and open to new customers | <span class="lc-badge lc-badge--success">Generally available</span> |
+| `Deprecating` | Deprecated — existing customers only | <span class="lc-badge lc-badge--caution">Deprecated</span> |
+| `Deprecated` | Retired — no longer served | <span class="lc-badge lc-badge--muted">Retired</span> |
 
-## :material-alert-circle: Deprecation & Retirement Notices
+!!! tip "Dashboard labels"
+    <span class="lc-badge lc-badge--danger">Retiring ≤30d</span> and <span class="lc-badge lc-badge--warning">Retiring ≤90d</span> flag versions with a firm retirement date inside that window. <span class="lc-badge lc-badge--warning">Retirement due</span> means a *no-earlier-than* date has passed and retirement can happen at any time.
 
-{retirement_blocks}
-
-{lifecycle_guide}
-
----
-
-## :material-book-open-variant: Browse By
-
-<div class="browse-grid">
-    <a class="browse-card" href="models/">
-        <span class="browse-card__label">Catalog</span>
-        <strong>All Models</strong>
-        <span>Complete model catalog with SKU and region coverage details.</span>
-    </a>
-    <a class="browse-card" href="by-region/">
-        <span class="browse-card__label">Regions</span>
-        <strong>By Region</strong>
-        <span>Find what is available in each Azure region.</span>
-    </a>
-    <a class="browse-card" href="by-sku/">
-        <span class="browse-card__label">Deployment</span>
-        <strong>By SKU Type</strong>
-        <span>Compare Global, Datazone, Standard, and Provisioned options.</span>
-    </a>
-    <a class="browse-card" href="history/">
-        <span class="browse-card__label">Changes</span>
-        <strong>Change History</strong>
-        <span>Review recent availability additions and removals.</span>
-    </a>
-</div>
-
----
-
-_Last updated: {datetime.utcnow():%Y-%m-%d %H:%M UTC}_
+Adapted from [Foundry Models lifecycle and support policy](https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirements). See [Retirements](../retirements/) for every model-specific date.
 """
 
 
@@ -1170,8 +1295,11 @@ def generate_model_index_page(
     model_regions: Dict[str, Set[str]],
     model_sku_regions: Dict[str, Dict[str, Set[str]]],
     all_regions: Set[str],
+    lifecycles: Dict[str, Dict] = None,
 ) -> str:
     """Generate the models index page with filterable table."""
+    lifecycles = lifecycles or {}
+    untracked = {"key": "untracked", "label": LIFECYCLE_STAGES["untracked"][0], "tone": LIFECYCLE_STAGES["untracked"][1]}
     
     def format_region_badge(region: str) -> str:
         """Create a clickable region badge."""
@@ -1247,6 +1375,7 @@ def generate_model_index_page(
 
         rows.append(f"""    <tr>
       <td><a href="{slugify(model)}/"><strong>{model}</strong></a></td>
+      <td data-search="{html_escape(lifecycles.get(model, untracked)['label'])}">{lifecycle_badge(lifecycles.get(model, untracked))}</td>
       <td><span class="badge {bucket_class}">{bucket_label}</span></td>
       <td>{sku_badges_html}</td>
       <td>{global_cell}</td>
@@ -1258,11 +1387,31 @@ def generate_model_index_page(
       <td class="hidden-col">{regions_str}</td>
     </tr>""")
     
-    return f"""# All Models
+    lifecycle_options = "\n".join(
+        f'      <option value="{html_escape(label)}">{html_escape(label)}</option>'
+        for label in dict.fromkeys(LIFECYCLE_STAGES[key][0] for key in LIFECYCLE_STAGES)
+        if any(item["label"] == label for item in lifecycles.values())
+    )
 
-Complete catalog of AI Foundry models with availability details. Each SKU column shows the regions where that deployment type is available.
+    return f"""---
+hide:
+  - toc
+---
+
+# All Models
+
+<p class="page-lede">Jump straight to a model, or use the table below to compare deployment coverage across the full catalog.</p>
+
+{model_finder_widget("../assets/model-index.json", "../")}
 
 <div class="filter-controls">
+  <div class="filter-group">
+    <label for="lifecycle-filter">Lifecycle</label>
+    <select id="lifecycle-filter" onchange="filterModelsTable()">
+      <option value="">All Stages</option>
+{lifecycle_options}
+    </select>
+  </div>
   <div class="filter-group">
     <label for="coverage-filter">Coverage Level</label>
     <select id="coverage-filter" onchange="filterModelsTable()">
@@ -1301,6 +1450,7 @@ Complete catalog of AI Foundry models with availability details. Each SKU column
   <thead>
     <tr>
       <th>Model</th>
+      <th>Lifecycle</th>
       <th>Coverage</th>
       <th>SKU Types</th>
       <th>Global Regions</th>
@@ -1344,8 +1494,12 @@ def generate_model_detail_page(
     all_regions: Set[str],
     retirement_info: List[Dict] = None,
     model_regions_lookup: Dict[str, Set[str]] = None,
+    lifecycle: Dict = None,
+    today: datetime = None,
 ) -> str:
     """Generate detailed page for a single model."""
+    today = today or datetime.utcnow()
+    lifecycle = lifecycle or summarize_model_lifecycle(retirement_info or [], today)
 
     count = len(regions)
     total_region_count = max(len(all_regions), 1)
@@ -1358,10 +1512,7 @@ def generate_model_detail_page(
         cat = get_sku_category(sku)
         sku_by_category[cat].append((sku, sku_regs))
 
-    # Build retirement section if applicable
-    retirement_section = ""
-    if retirement_info:
-        retirement_section = generate_retirement_section(model, retirement_info, model_regions_lookup or {})
+    retirement_section = generate_lifecycle_section(retirement_info or [], model_regions_lookup or {}, today)
 
     categories = sorted(sku_by_category.keys())
     category_summary = ", ".join(categories) if categories else "No SKU categories"
@@ -1406,9 +1557,9 @@ def generate_model_detail_page(
         <span>SKU types</span>
         <strong>{len(sku_regions)}</strong>
     </div>
-    <div class="model-metric">
-        <span>Categories</span>
-        <strong>{len(categories)}</strong>
+    <div class="model-metric model-metric--{lifecycle["tone"]}">
+        <span>Next retirement</span>
+        <strong>{html_escape(format_countdown(lifecycle["days"]) if "days" in lifecycle else "None set")}</strong>
     </div>
 </div>"""
 
@@ -1416,12 +1567,15 @@ def generate_model_detail_page(
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge {bucket_class}">{bucket_label}</span>
+            {lifecycle_badge(lifecycle)}
+            <span class="model-profile__family">{html_escape(model_family(model))}</span>
             <span class="model-profile__coverage-note">{bucket_description} tracked</span>
         </div>
         <p class="model-profile__lead">Available in <strong>{count}</strong> of <strong>{len(all_regions)}</strong> tracked regions with <strong>{len(sku_regions)}</strong> deployment SKU types.</p>
         <div class="model-profile__chips" aria-label="Deployment categories">{category_chips}</div>
         <div class="model-profile__actions">
             <a class="md-button md-button--primary" href="#deployment-options">Deployment options</a>
+            <a class="md-button" href="#lifecycle">Lifecycle</a>
             <a class="md-button" href="#full-availability-matrix">Availability matrix</a>
         </div>
     </div>
@@ -1498,9 +1652,13 @@ def generate_model_detail_page(
                 cells.append('<td class="matrix-yes">&#10003;</td>')
             else:
                 cells.append('<td class="matrix-no">&mdash;</td>')
-        html_rows.append(f"<tr><td><strong>{html_escape(region)}</strong></td>{''.join(cells)}</tr>")
+        html_rows.append(f"<tr data-region=\"{html_escape(region)}\"><td><strong>{html_escape(region)}</strong></td>{''.join(cells)}</tr>")
 
-    matrix_html = f"""<div class="table-responsive">
+    matrix_html = f"""<div class="matrix-tools">
+    <input type="search" class="matrix-filter" data-matrix-filter placeholder="Filter {count} regions…" aria-label="Filter regions">
+    <span class="matrix-count" data-matrix-count>{count} regions</span>
+</div>
+<div class="table-responsive">
 <table class="matrix-table">
 <thead>
 <tr><th>Region</th>{header_cells}</tr>
@@ -1523,11 +1681,6 @@ def generate_model_detail_page(
 </div>
 
 ## :material-clipboard-list: Full Availability Matrix
-
-<div class="matrix-intro">
-    <strong>Exact region-by-SKU map</strong>
-    <span>Use this matrix when you need to verify a specific deployment type in a specific region. Summary chips above intentionally show a compact region preview.</span>
-</div>
 
 {matrix_html}
 
@@ -2126,10 +2279,14 @@ def main():
         slugify(model): regions for model, regions in model_regions.items()
     }
     
+    today = datetime.utcnow()
+    lifecycles = build_model_lifecycles(model_regions, retirement_index, today)
+
     # Generate main pages
     pages = {
-        "index.md": generate_index_page(model_regions, model_sku_regions, all_labels, all_regions, retirement_data, history),
-        "models/index.md": generate_model_index_page(model_regions, model_sku_regions, all_regions),
+        "index.md": generate_index_page(model_regions, model_sku_regions, all_labels, all_regions, retirement_data, history, lifecycles),
+        "lifecycle.md": generate_lifecycle_page(lifecycles),
+        "models/index.md": generate_model_index_page(model_regions, model_sku_regions, all_regions, lifecycles),
         "by-region.md": generate_by_region_page(model_regions, model_region_skus, all_regions),
         "by-sku.md": generate_by_sku_page(model_regions, model_sku_regions, all_labels, all_regions),
         "history.md": generate_history_page(history, all_regions, set(model_regions.keys())),
@@ -2141,6 +2298,15 @@ def main():
         path.parent.mkdir(exist_ok=True)
         path.write_text(content, encoding="utf-8")
         print(f"Generated: {path}")
+
+    assets_dir = DOCS_DIR / "assets"
+    assets_dir.mkdir(exist_ok=True)
+    finder_path = assets_dir / "model-index.json"
+    finder_path.write_text(
+        json.dumps(build_model_finder_data(model_regions, model_sku_regions, lifecycles), separators=(",", ":"), ensure_ascii=False),
+        encoding="utf-8",
+    )
+    print(f"Generated: {finder_path}")
     
     # Generate individual model pages
     for model in model_regions.keys():
@@ -2156,6 +2322,8 @@ def main():
             all_regions=all_regions,
             retirement_info=retirement_info,
             model_regions_lookup=model_regions_normalized,
+            lifecycle=lifecycles.get(model),
+            today=today,
         )
         path = DOCS_DIR / "models" / f"{slugify(model)}.md"
         path.write_text(content, encoding="utf-8")

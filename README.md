@@ -107,12 +107,16 @@ cat region_diff.json
 
 ### Website Pages
 
-- **Home** - Overview and quick stats
-- **All Models** - Searchable table of all models
+- **Dashboard** - Instant model finder (press `Ctrl+K` / `Cmd+K`), KPI cards, retirement watchlist, and latest availability changes
+- **Models** - Searchable table with lifecycle status and filters
+- **Lifecycle** - Diagrams of the GA and preview model lifecycle, plus where every tracked version sits today
+- **Retirements** - Upcoming deprecation and retirement dates
 - **By Region** - Filter by Azure region
 - **By SKU Type** - Filter by deployment type (Standard, Provisioned, etc.)
 - **Change History** - Timeline of all availability changes
-- **Individual Model Pages** - Detailed view for each model
+- **Individual Model Pages** - Per-version lifecycle tracks, next retirement, and a filterable region × SKU matrix
+
+The finder is backed by `docs/assets/model-index.json`, which `generate_docs.py` writes on every run.
 
 ### Notifications
 

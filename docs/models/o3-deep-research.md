@@ -4,12 +4,15 @@
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-emerging">Emerging</span>
+            <span class="lc-badge lc-badge--warning">Retiring ≤90d</span>
+            <span class="model-profile__family">OpenAI</span>
             <span class="model-profile__coverage-note">Under 15 regions tracked</span>
         </div>
-        <p class="model-profile__lead">Available in <strong>2</strong> of <strong>32</strong> tracked regions with <strong>4</strong> deployment SKU types.</p>
+        <p class="model-profile__lead">Available in <strong>2</strong> of <strong>35</strong> tracked regions with <strong>4</strong> deployment SKU types.</p>
         <div class="model-profile__chips" aria-label="Deployment categories"><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-other">Other</span></div>
         <div class="model-profile__actions">
             <a class="md-button md-button--primary" href="#deployment-options">Deployment options</a>
+            <a class="md-button" href="#lifecycle">Lifecycle</a>
             <a class="md-button" href="#full-availability-matrix">Availability matrix</a>
         </div>
     </div>
@@ -26,9 +29,9 @@
         <span>SKU types</span>
         <strong>4</strong>
     </div>
-    <div class="model-metric">
-        <span>Categories</span>
-        <strong>2</strong>
+    <div class="model-metric model-metric--warning">
+        <span>Next retirement</span>
+        <strong>in 3 months</strong>
     </div>
 </div>
     <div class="model-profile__insight">
@@ -37,16 +40,20 @@
         <small>2 regions · 6% coverage · Other</small>
     </div>
 </div>
+## :material-clock-alert: Lifecycle
 
-
-!!! warning "Retirement Notice"
-    This model has scheduled retirement dates. Plan your migration to the replacement model.
-
-## :material-clock-alert: Retirement Schedule
-
-| Version | Status | Deprecation Date | Retirement Date | Timeline | Replacement |
-|---------|--------|------------------|-----------------|----------|-------------|
-| 2025-06-26 | Generally Available | 2026-06-26 | 2026-12-26 | <span class="badge badge-scheduled">Scheduled</span> | - |
+<div class="lc-versions">
+<div class="lc-version lc-version--warning">
+    <div class="lc-version__head">
+        <code>2025-06-26</code>
+        <span class="lc-badge lc-badge--warning">Retiring ≤90d</span>
+        <span class="lc-version__countdown lc-version__countdown--warning">in 3 months</span>
+    </div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:66.61%"></span><span class="lc-seg lc-seg--deprecated" style="left:66.61%;width:33.39%"></span><span class="lc-today" style="left:85.04%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Released</b> Jun 26, 2025</span><span><b>Deprecated</b> Jun 26, 2026</span><span><b>Retires</b> Dec 26, 2026</span></div>
+    
+</div>
+</div>
 
 
 
@@ -121,23 +128,22 @@
 
 ## :material-clipboard-list: Full Availability Matrix
 
-<div class="matrix-intro">
-    <strong>Exact region-by-SKU map</strong>
-    <span>Use this matrix when you need to verify a specific deployment type in a specific region. Summary chips above intentionally show a compact region preview.</span>
+<div class="matrix-tools">
+    <input type="search" class="matrix-filter" data-matrix-filter placeholder="Filter 2 regions…" aria-label="Filter regions">
+    <span class="matrix-count" data-matrix-count>2 regions</span>
 </div>
-
 <div class="table-responsive">
 <table class="matrix-table">
 <thead>
 <tr><th>Region</th><th>Deployments Standard</th><th>Global Standard</th><th>Global coverage</th><th>Standard Global By Capability</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Norway East</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>West US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="Norway East"><td><strong>Norway East</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="West US"><td><strong>West US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
 </tbody>
 </table>
 </div>
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-07-06 16:37 UTC_
+_Last updated: 2026-10-05 15:23 UTC_

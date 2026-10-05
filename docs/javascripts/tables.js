@@ -226,23 +226,29 @@ window.filterModelsTable = function() {
   const coverageVal = $('#coverage-filter').val() || '';
   const categoryVal = $('#category-filter').val() || '';
   const regionVal = $('#region-filter').val() || '';
+  const lifecycleVal = $('#lifecycle-filter').val() || '';
 
   // Clear existing searches
   table.columns().search('');
 
-  // Apply coverage filter (column 1 - Coverage)
+  // Apply lifecycle filter (column 1 - Lifecycle)
+  if (lifecycleVal) {
+    table.column(1).search('^' + lifecycleVal.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$', true, false);
+  }
+
+  // Apply coverage filter (column 2 - Coverage)
   if (coverageVal) {
-    table.column(1).search(coverageVal);
+    table.column(2).search(coverageVal);
   }
 
-  // Apply category filter (column 8 - hidden Categories)
+  // Apply category filter (column 9 - hidden Categories)
   if (categoryVal) {
-    table.column(8).search(categoryVal);
+    table.column(9).search(categoryVal);
   }
 
-  // Apply region filter (column 9 - hidden Region List)
+  // Apply region filter (column 10 - hidden Region List)
   if (regionVal) {
-    table.column(9).search(commaSeparatedExactSearch(regionVal), true, false);
+    table.column(10).search(commaSeparatedExactSearch(regionVal), true, false);
   }
 
   table.draw();
@@ -259,6 +265,7 @@ window.resetModelsFilters = function() {
   $('#coverage-filter').val('');
   $('#category-filter').val('');
   $('#region-filter').val('');
+  $('#lifecycle-filter').val('');
 };
 
 // Filter function for region table (By Region page)

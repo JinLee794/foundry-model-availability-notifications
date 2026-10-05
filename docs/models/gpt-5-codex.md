@@ -4,49 +4,56 @@
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-broad">Broad</span>
+            <span class="lc-badge lc-badge--caution">Deprecated</span>
+            <span class="model-profile__family">OpenAI</span>
             <span class="model-profile__coverage-note">25+ regions tracked</span>
         </div>
-        <p class="model-profile__lead">Available in <strong>27</strong> of <strong>32</strong> tracked regions with <strong>4</strong> deployment SKU types.</p>
+        <p class="model-profile__lead">Available in <strong>28</strong> of <strong>35</strong> tracked regions with <strong>4</strong> deployment SKU types.</p>
         <div class="model-profile__chips" aria-label="Deployment categories"><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-other">Other</span></div>
         <div class="model-profile__actions">
             <a class="md-button md-button--primary" href="#deployment-options">Deployment options</a>
+            <a class="md-button" href="#lifecycle">Lifecycle</a>
             <a class="md-button" href="#full-availability-matrix">Availability matrix</a>
         </div>
     </div>
     <div class="model-profile__metrics" aria-label="Model availability metrics">
     <div class="model-metric">
         <span>Total regions</span>
-        <strong>27</strong>
+        <strong>28</strong>
     </div>
     <div class="model-metric">
         <span>Coverage</span>
-        <strong>84%</strong>
+        <strong>80%</strong>
     </div>
     <div class="model-metric">
         <span>SKU types</span>
         <strong>4</strong>
     </div>
-    <div class="model-metric">
-        <span>Categories</span>
-        <strong>2</strong>
+    <div class="model-metric model-metric--caution">
+        <span>Next retirement</span>
+        <strong>in 5 months</strong>
     </div>
 </div>
     <div class="model-profile__insight">
         <span>Widest SKU footprint</span>
-        <strong><a href="../../by-sku/?sku=Standard%20Global%20By%20Capability">Standard Global By Capability</a></strong>
-        <small>27 regions · 84% coverage · Other</small>
+        <strong><a href="../../by-sku/?sku=Global%20coverage">Global coverage</a></strong>
+        <small>28 regions · 80% coverage · Global</small>
     </div>
 </div>
+## :material-clock-alert: Lifecycle
 
-
-!!! warning "Retirement Notice"
-    This model has scheduled retirement dates. Plan your migration to the replacement model.
-
-## :material-clock-alert: Retirement Schedule
-
-| Version | Status | Deprecation Date | Retirement Date | Timeline | Replacement |
-|---------|--------|------------------|-----------------|----------|-------------|
-| 2025-09-15 | Generally Available | 2026-09-15 | 2027-03-17 | <span class="badge badge-scheduled">Scheduled</span> | - |
+<div class="lc-versions">
+<div class="lc-version lc-version--caution">
+    <div class="lc-version__head">
+        <code>2025-09-15</code>
+        <span class="lc-badge lc-badge--caution">Deprecated</span>
+        <span class="lc-version__countdown lc-version__countdown--caution">in 5 months</span>
+    </div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:66.61%"></span><span class="lc-seg lc-seg--deprecated" style="left:66.61%;width:33.39%"></span><span class="lc-today" style="left:70.26%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Released</b> Sep 15, 2025</span><span><b>Deprecated</b> Sep 15, 2026</span><span><b>Retires</b> Mar 17, 2027</span></div>
+    
+</div>
+</div>
 
 
 
@@ -67,20 +74,20 @@
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
                 <a class="deployment-sku-row__name" href="../../by-sku/?sku=Global%20Standard">Global Standard</a>
-                <span>27 regions · 84% coverage</span>
+                <span>27 regions · 77% coverage</span>
             </div>
-            <div class="availability-meter" aria-hidden="true"><span style="width: 84%;"></span></div>
+            <div class="availability-meter" aria-hidden="true"><span style="width: 77%;"></span></div>
         </div>
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
                 <a class="deployment-sku-row__name" href="../../by-sku/?sku=Global%20coverage">Global coverage</a>
-                <span>27 regions · 84% coverage</span>
+                <span>28 regions · 80% coverage</span>
             </div>
-            <div class="availability-meter" aria-hidden="true"><span style="width: 84%;"></span></div>
+            <div class="availability-meter" aria-hidden="true"><span style="width: 80%;"></span></div>
         </div>
         </div>
         <div class="deployment-lane__regions" aria-label="Global deployment regions">
-            <a class="region-badge model-region-chip" href="../../by-region/?region=Australia%20East">Australia East</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Brazil%20South">Brazil South</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Canada%20East">Canada East</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Central%20US">Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=East%20US">East US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=East%20US%202">East US 2</a> <a class="region-badge model-region-chip" href="../../by-region/?region=France%20Central">France Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Germany%20West%20Central">Germany West Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Italy%20North">Italy North</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Japan%20East">Japan East</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Korea%20Central">Korea Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=North%20Central%20US">North Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Norway%20East">Norway East</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Poland%20Central">Poland Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=South%20Africa%20North">South Africa North</a> <a class="region-badge model-region-chip" href="../../by-region/?region=South%20Central%20US">South Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=South%20India">South India</a> <span class="model-region-more">+9 more in matrix</span>
+            <a class="region-badge model-region-chip" href="../../by-region/?region=Australia%20East">Australia East</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Brazil%20South">Brazil South</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Canada%20East">Canada East</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Central%20US">Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=East%20US">East US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=East%20US%202">East US 2</a> <a class="region-badge model-region-chip" href="../../by-region/?region=France%20Central">France Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Germany%20West%20Central">Germany West Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Italy%20North">Italy North</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Japan%20East">Japan East</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Korea%20Central">Korea Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=North%20Central%20US">North Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Norway%20East">Norway East</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Poland%20Central">Poland Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=South%20Africa%20North">South Africa North</a> <a class="region-badge model-region-chip" href="../../by-region/?region=South%20Central%20US">South Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=South%20India">South India</a> <span class="model-region-more">+10 more in matrix</span>
         </div>
         <p class="deployment-lane__compliance">⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements</p>
     </div>
@@ -99,20 +106,20 @@
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
                 <a class="deployment-sku-row__name" href="../../by-sku/?sku=Deployments%20Standard">Deployments Standard</a>
-                <span>27 regions · 84% coverage</span>
+                <span>28 regions · 80% coverage</span>
             </div>
-            <div class="availability-meter" aria-hidden="true"><span style="width: 84%;"></span></div>
+            <div class="availability-meter" aria-hidden="true"><span style="width: 80%;"></span></div>
         </div>
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
                 <a class="deployment-sku-row__name" href="../../by-sku/?sku=Standard%20Global%20By%20Capability">Standard Global By Capability</a>
-                <span>27 regions · 84% coverage</span>
+                <span>27 regions · 77% coverage</span>
             </div>
-            <div class="availability-meter" aria-hidden="true"><span style="width: 84%;"></span></div>
+            <div class="availability-meter" aria-hidden="true"><span style="width: 77%;"></span></div>
         </div>
         </div>
         <div class="deployment-lane__regions" aria-label="Other deployment regions">
-            <a class="region-badge model-region-chip" href="../../by-region/?region=Australia%20East">Australia East</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Brazil%20South">Brazil South</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Canada%20East">Canada East</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Central%20US">Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=East%20US">East US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=East%20US%202">East US 2</a> <a class="region-badge model-region-chip" href="../../by-region/?region=France%20Central">France Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Germany%20West%20Central">Germany West Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Italy%20North">Italy North</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Japan%20East">Japan East</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Korea%20Central">Korea Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=North%20Central%20US">North Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Norway%20East">Norway East</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Poland%20Central">Poland Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=South%20Africa%20North">South Africa North</a> <a class="region-badge model-region-chip" href="../../by-region/?region=South%20Central%20US">South Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=South%20India">South India</a> <span class="model-region-more">+9 more in matrix</span>
+            <a class="region-badge model-region-chip" href="../../by-region/?region=Australia%20East">Australia East</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Brazil%20South">Brazil South</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Canada%20Central">Canada Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Canada%20East">Canada East</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Central%20US">Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=East%20US">East US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=East%20US%202">East US 2</a> <a class="region-badge model-region-chip" href="../../by-region/?region=France%20Central">France Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Germany%20West%20Central">Germany West Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Italy%20North">Italy North</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Japan%20East">Japan East</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Korea%20Central">Korea Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=North%20Central%20US">North Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Norway%20East">Norway East</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Poland%20Central">Poland Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=South%20Africa%20North">South Africa North</a> <a class="region-badge model-region-chip" href="../../by-region/?region=South%20Central%20US">South Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=South%20India">South India</a> <span class="model-region-more">+10 more in matrix</span>
         </div>
         
     </div>
@@ -121,48 +128,48 @@
 
 ## :material-clipboard-list: Full Availability Matrix
 
-<div class="matrix-intro">
-    <strong>Exact region-by-SKU map</strong>
-    <span>Use this matrix when you need to verify a specific deployment type in a specific region. Summary chips above intentionally show a compact region preview.</span>
+<div class="matrix-tools">
+    <input type="search" class="matrix-filter" data-matrix-filter placeholder="Filter 28 regions…" aria-label="Filter regions">
+    <span class="matrix-count" data-matrix-count>28 regions</span>
 </div>
-
 <div class="table-responsive">
 <table class="matrix-table">
 <thead>
 <tr><th>Region</th><th>Deployments Standard</th><th>Global Standard</th><th>Global coverage</th><th>Standard Global By Capability</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Australia East</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Brazil South</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Canada Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Canada East</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Central US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>East US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>East US 2</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>France Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Germany West Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Italy North</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Japan East</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Korea Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>North Central US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Norway East</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Poland Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>South Africa North</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>South Central US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>South India</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Southeast Asia</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Spain Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Sweden Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Switzerland North</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Switzerland West</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>UAE North</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>UK South</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>West Europe</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>West US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="Australia East"><td><strong>Australia East</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="Brazil South"><td><strong>Brazil South</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="Canada Central"><td><strong>Canada Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="Canada East"><td><strong>Canada East</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="Central US"><td><strong>Central US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="East US"><td><strong>East US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="East US 2"><td><strong>East US 2</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="France Central"><td><strong>France Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="Germany West Central"><td><strong>Germany West Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="Italy North"><td><strong>Italy North</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="Japan East"><td><strong>Japan East</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="Korea Central"><td><strong>Korea Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="North Central US"><td><strong>North Central US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="Norway East"><td><strong>Norway East</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="Poland Central"><td><strong>Poland Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="South Africa North"><td><strong>South Africa North</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="South Central US"><td><strong>South Central US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="South India"><td><strong>South India</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="Southeast Asia"><td><strong>Southeast Asia</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="Spain Central"><td><strong>Spain Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="Sweden Central"><td><strong>Sweden Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="Switzerland North"><td><strong>Switzerland North</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="Switzerland West"><td><strong>Switzerland West</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="UAE North"><td><strong>UAE North</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="UK South"><td><strong>UK South</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="West Europe"><td><strong>West Europe</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="West US"><td><strong>West US</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="West US 3"><td><strong>West US 3</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td><td class="matrix-yes">&#10003;</td><td class="matrix-no">&mdash;</td></tr>
 </tbody>
 </table>
 </div>
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-07-06 16:37 UTC_
+_Last updated: 2026-10-05 15:23 UTC_

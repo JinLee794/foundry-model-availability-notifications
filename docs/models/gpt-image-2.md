@@ -4,12 +4,15 @@
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-emerging">Emerging</span>
+            <span class="lc-badge lc-badge--neutral">No date announced</span>
+            <span class="model-profile__family">OpenAI</span>
             <span class="model-profile__coverage-note">Under 15 regions tracked</span>
         </div>
-        <p class="model-profile__lead">Available in <strong>5</strong> of <strong>32</strong> tracked regions with <strong>4</strong> deployment SKU types.</p>
+        <p class="model-profile__lead">Available in <strong>5</strong> of <strong>35</strong> tracked regions with <strong>4</strong> deployment SKU types.</p>
         <div class="model-profile__chips" aria-label="Deployment categories"><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-other">Other</span></div>
         <div class="model-profile__actions">
             <a class="md-button md-button--primary" href="#deployment-options">Deployment options</a>
+            <a class="md-button" href="#lifecycle">Lifecycle</a>
             <a class="md-button" href="#full-availability-matrix">Availability matrix</a>
         </div>
     </div>
@@ -20,23 +23,26 @@
     </div>
     <div class="model-metric">
         <span>Coverage</span>
-        <strong>16%</strong>
+        <strong>14%</strong>
     </div>
     <div class="model-metric">
         <span>SKU types</span>
         <strong>4</strong>
     </div>
-    <div class="model-metric">
-        <span>Categories</span>
-        <strong>2</strong>
+    <div class="model-metric model-metric--neutral">
+        <span>Next retirement</span>
+        <strong>None set</strong>
     </div>
 </div>
     <div class="model-profile__insight">
         <span>Widest SKU footprint</span>
         <strong><a href="../../by-sku/?sku=Standard%20Global%20By%20Capability">Standard Global By Capability</a></strong>
-        <small>5 regions · 16% coverage · Other</small>
+        <small>5 regions · 14% coverage · Other</small>
     </div>
 </div>
+## :material-clock-alert: Lifecycle
+
+<div class="lc-empty">No deprecation or retirement date has been announced for this model in Microsoft's retirement table. See the <a href="../../lifecycle/">lifecycle guide</a> for how dates are set.</div>
 
 
 ## :material-target: Deployment Options
@@ -56,16 +62,16 @@
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
                 <a class="deployment-sku-row__name" href="../../by-sku/?sku=Global%20Standard">Global Standard</a>
-                <span>5 regions · 16% coverage</span>
+                <span>5 regions · 14% coverage</span>
             </div>
-            <div class="availability-meter" aria-hidden="true"><span style="width: 16%;"></span></div>
+            <div class="availability-meter" aria-hidden="true"><span style="width: 14%;"></span></div>
         </div>
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
                 <a class="deployment-sku-row__name" href="../../by-sku/?sku=Global%20coverage">Global coverage</a>
-                <span>5 regions · 16% coverage</span>
+                <span>5 regions · 14% coverage</span>
             </div>
-            <div class="availability-meter" aria-hidden="true"><span style="width: 16%;"></span></div>
+            <div class="availability-meter" aria-hidden="true"><span style="width: 14%;"></span></div>
         </div>
         </div>
         <div class="deployment-lane__regions" aria-label="Global deployment regions">
@@ -88,16 +94,16 @@
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
                 <a class="deployment-sku-row__name" href="../../by-sku/?sku=Deployments%20Standard">Deployments Standard</a>
-                <span>5 regions · 16% coverage</span>
+                <span>5 regions · 14% coverage</span>
             </div>
-            <div class="availability-meter" aria-hidden="true"><span style="width: 16%;"></span></div>
+            <div class="availability-meter" aria-hidden="true"><span style="width: 14%;"></span></div>
         </div>
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
                 <a class="deployment-sku-row__name" href="../../by-sku/?sku=Standard%20Global%20By%20Capability">Standard Global By Capability</a>
-                <span>5 regions · 16% coverage</span>
+                <span>5 regions · 14% coverage</span>
             </div>
-            <div class="availability-meter" aria-hidden="true"><span style="width: 16%;"></span></div>
+            <div class="availability-meter" aria-hidden="true"><span style="width: 14%;"></span></div>
         </div>
         </div>
         <div class="deployment-lane__regions" aria-label="Other deployment regions">
@@ -110,26 +116,25 @@
 
 ## :material-clipboard-list: Full Availability Matrix
 
-<div class="matrix-intro">
-    <strong>Exact region-by-SKU map</strong>
-    <span>Use this matrix when you need to verify a specific deployment type in a specific region. Summary chips above intentionally show a compact region preview.</span>
+<div class="matrix-tools">
+    <input type="search" class="matrix-filter" data-matrix-filter placeholder="Filter 5 regions…" aria-label="Filter regions">
+    <span class="matrix-count" data-matrix-count>5 regions</span>
 </div>
-
 <div class="table-responsive">
 <table class="matrix-table">
 <thead>
 <tr><th>Region</th><th>Deployments Standard</th><th>Global Standard</th><th>Global coverage</th><th>Standard Global By Capability</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>East US 2</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Poland Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>Sweden Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>UAE North</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
-<tr><td><strong>West US 3</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="East US 2"><td><strong>East US 2</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="Poland Central"><td><strong>Poland Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="Sweden Central"><td><strong>Sweden Central</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="UAE North"><td><strong>UAE North</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
+<tr data-region="West US 3"><td><strong>West US 3</strong></td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td><td class="matrix-yes">&#10003;</td></tr>
 </tbody>
 </table>
 </div>
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-07-06 16:37 UTC_
+_Last updated: 2026-10-05 15:23 UTC_
