@@ -1267,7 +1267,32 @@ def render_region_heatmap(model_regions: Dict[str, Set[str]], all_regions: Set[s
     return f'<div class="heatmap">{"".join(groups)}</div>'
 
 
-def build_insights_section(
+ICONS = {
+    "cube": "M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44a1 1 0 0 1-1.14 0l-7.9-4.44A1 1 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44a1 1 0 0 1 1.14 0l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35zM5 15.91l6 3.38v-6.71L5 9.21zm14 0v-6.7l-6 3.37v6.71z",
+    "globe": "M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m6.93 6h-2.95a15.7 15.7 0 0 0-1.38-3.56A8 8 0 0 1 18.93 8M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14a8 8 0 0 1 0-4h3.38a16 16 0 0 0 0 4zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A8 8 0 0 1 5.08 16m2.95-8H5.08a8 8 0 0 1 4.33-3.56A15.7 15.7 0 0 0 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66a14 14 0 0 1 0-4h4.68a14 14 0 0 1 0 4m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8 8 0 0 1-4.33 3.56M16.36 14a16 16 0 0 0 0-4h3.38a8 8 0 0 1 0 4z",
+    "clock": "M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16m.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z",
+    "pulse": "M3 13h3.28l2.5-6.24 4.04 12.12L16.2 11H21V9h-6.2l-1.96 4.6L8.86 1.62 4.92 11H3z",
+    "grid": "M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm8-2h8v8h-8zm2 2v4h4v-4z",
+    "gauge": "M12 4a10 10 0 0 0-8.66 15h17.32A10 10 0 0 0 12 4m0 2a8 8 0 0 1 7.42 11H4.58A8 8 0 0 1 12 6m4.24 2.34-5.66 4.24a1.5 1.5 0 1 0 1.84 1.84z",
+    "timeline": "M4 6h2v12H4zm4 3h12v2H8zm0 4h8v2H8zM8 5h10v2H8z",
+    "table": "M3 4h18v16H3zm2 2v3h14V6zm0 5v3h6v-3zm8 0v3h6v-3zm-8 5v2h6v-2zm8 0v2h6v-2z",
+    "arrow": "M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z",
+}
+
+
+def icon(name: str, cls: str = "fm-icon") -> str:
+    return f'<svg class="{cls}" viewBox="0 0 24 24" aria-hidden="true"><path d="{ICONS[name]}"/></svg>'
+
+
+def chart_card(title: str, sub: str, body: str, span: str = "", link: Tuple[str, str] = None) -> str:
+    link_html = f'<a class="bento__link" href="{link[0]}">{link[1]} {icon("arrow")}</a>' if link else ""
+    return f"""<section class="bento__card chart-card{(' ' + span) if span else ''}">
+        <header class="bento__head"><div><h3>{title}</h3><p>{sub}</p></div>{link_html}</header>
+        {body}
+    </section>"""
+
+
+def build_dashboard_cards(
     model_regions: Dict[str, Set[str]],
     all_regions: Set[str],
     lifecycles: Dict[str, Dict],
@@ -1275,40 +1300,14 @@ def build_insights_section(
     retirement_data: Dict,
     today: datetime,
     href_prefix: str = "explorer/",
-) -> str:
-    return f"""<section class="insights" aria-labelledby="insights-title">
-    <header class="insights__head">
-        <h2 id="insights-title">At a glance</h2>
-        <a class="md-button md-button--primary insights__cta" href="{href_prefix}">Open the availability explorer →</a>
-    </header>
-    <div class="chart-grid">
-        <div class="chart-card">
-            <h3>Lifecycle mix</h3>
-            <p>Most urgent stage of each model. Click to filter.</p>
-            {render_donut_chart(lifecycles, href_prefix)}
-        </div>
-        <div class="chart-card">
-            <h3>Deployment options</h3>
-            <p>Models offering each deployment type somewhere.</p>
-            {render_deployment_type_chart(availability_bits, href_prefix)}
-        </div>
-        <div class="chart-card">
-            <h3>Providers</h3>
-            <p>Models tracked per provider.</p>
-            {render_provider_chart(model_regions, href_prefix)}
-        </div>
-        <div class="chart-card chart-card--wide">
-            <h3>Retirements ahead</h3>
-            <p>Model versions retiring per month over the next 12 months.</p>
-            {render_retirement_months_chart(retirement_data, today)}
-        </div>
-        <div class="chart-card chart-card--full">
-            <h3>Where models run</h3>
-            <p>Models available per region, grouped by geography. Darker means more models.</p>
-            {render_region_heatmap(model_regions, all_regions, href_prefix)}
-        </div>
-    </div>
-</section>"""
+) -> Dict[str, str]:
+    return {
+        "lifecycle": chart_card("Lifecycle mix", "Most urgent stage per model", render_donut_chart(lifecycles, href_prefix), "bento--5", (f"{href_prefix}#lc=risk", "At risk")),
+        "retirements": chart_card("Retirements ahead", "Model versions retiring per month, next 12 months", render_retirement_months_chart(retirement_data, today), "bento--7", ("retirements/", "Schedule")),
+        "deployment": chart_card("Deployment options", "Models offering each type in at least one region", render_deployment_type_chart(availability_bits, href_prefix), "bento--4", ("ptu/", "PTU guide")),
+        "providers": chart_card("Providers", "Models tracked per provider", render_provider_chart(model_regions, href_prefix), "bento--4", ("models/", "Catalog")),
+        "regions": chart_card("Where models run", "Models per region — darker means more", render_region_heatmap(model_regions, all_regions, href_prefix), "bento--12", (href_prefix, "Explorer")),
+    }
 
 
 def generate_explorer_page(all_regions: Set[str], model_count: int) -> str:
@@ -1581,7 +1580,7 @@ hide:
 """
 
 
-def model_finder_widget(data_src: str, root: str, placeholder: str = "Search models — e.g. gpt-5, o4-mini, claude, embedding") -> str:
+def model_finder_widget(data_src: str, root: str, placeholder: str = "Search models — e.g. gpt-5, o4-mini, claude, embedding", families: bool = True) -> str:
     return f"""<div class="model-finder" data-model-finder data-src="{data_src}" data-root="{root}">
     <div class="model-finder__field">
         <svg class="model-finder__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 3a6.5 6.5 0 0 1 5.25 10.33l5.46 5.46-1.42 1.42-5.46-5.46A6.5 6.5 0 1 1 9.5 3m0 2a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9"/></svg>
@@ -1594,7 +1593,7 @@ def model_finder_widget(data_src: str, root: str, placeholder: str = "Search mod
         <button type="button" class="finder-chip" data-filter="preview">Preview</button>
         <button type="button" class="finder-chip" data-filter="Provisioned">Provisioned (PTU)</button>
         <button type="button" class="finder-chip" data-filter="Datazone">Data Zone</button>
-        <span class="model-finder__families" data-family-chips></span>
+        {'<span class="model-finder__families" data-family-chips></span>' if families else ''}
     </div>
     <div class="model-finder__results" id="model-finder-results" role="listbox" aria-live="polite" hidden></div>
 </div>"""
@@ -1811,14 +1810,11 @@ def generate_index_page(
     due_90 = watch_counts["soon"] + watch_counts["retiring"]
     retire_tone = "danger" if watch_counts["soon"] else "warning" if due_90 else "success"
 
-    widest = sorted(model_regions, key=lambda model: (-len(model_regions[model]), model.lower()))[:6]
-    quick_picks = " ".join(
-        f'<a class="quick-pick" href="models/{slugify(model)}/">{html_escape(model)} <small>{len(model_regions[model])}</small></a>'
-        for model in widest
-    )
     changes_href = history_link(date=change_stats["date"]) if change_stats["date"] else "history/"
     retirement_source_date = retirement_data.get("last_updated", "")
     source_note = f" · retirement data as of {retirement_source_date}" if retirement_source_date else ""
+    cards = build_dashboard_cards(model_regions, all_regions, lifecycles, availability_bits or {}, retirement_data, today)
+    ga_count = sum(1 for summary in lifecycles.values() if summary["key"] == "ga")
 
     return f"""---
 hide:
@@ -1829,66 +1825,64 @@ hide:
 <section class="dash-hero">
     <div class="dash-hero__head">
         <div>
-            <p class="dash-eyebrow">Azure AI Foundry · model tracker</p>
+            <p class="dash-eyebrow"><span class="dash-freshness__dot"></span>Live · updated {today:%b} {today.day}, {today:%Y}</p>
             <h1 class="dash-title">Foundry Model Availability</h1>
             <p class="dash-lede">Where every model runs, how you can deploy it, and when it retires.</p>
         </div>
-        <span class="dash-freshness"><span class="dash-freshness__dot"></span>Updated {today:%b} {today.day}, {today:%Y}</span>
+        <a class="dash-hero__cta" href="explorer/">{icon("grid")}<span>Open explorer</span></a>
     </div>
-    {model_finder_widget("assets/model-index.json", "")}
-    <div class="quick-picks"><span>Widest availability</span>{quick_picks}</div>
+    {model_finder_widget("assets/model-index.json", "", families=False)}
 </section>
 
 <div class="kpi-grid">
     <a class="kpi kpi--accent" href="models/">
+        <span class="kpi__icon">{icon("cube")}</span>
         <span class="kpi__label">Models tracked</span>
         <strong class="kpi__value">{len(model_regions)}</strong>
-        <span class="kpi__hint">from {len(families)} providers</span>
+        <span class="kpi__hint">{len(families)} providers · {ga_count} GA</span>
     </a>
     <a class="kpi kpi--info" href="by-region/">
+        <span class="kpi__icon">{icon("globe")}</span>
         <span class="kpi__label">Azure regions</span>
         <strong class="kpi__value">{len(all_regions)}</strong>
         <span class="kpi__hint">with at least one model</span>
     </a>
-    <a class="kpi kpi--{retire_tone}" href="retirements/">
-        <span class="kpi__label">Retiring in 90 days</span>
+    <a class="kpi kpi--{retire_tone} kpi--alert" href="retirements/">
+        <span class="kpi__icon">{icon("clock")}</span>
+        <span class="kpi__label">Retiring ≤ 90 days</span>
         <strong class="kpi__value">{due_90}</strong>
-        <span class="kpi__hint">{watch_counts['soon']} within 30 days</span>
+        <span class="kpi__hint"><b>{watch_counts['soon']}</b> within 30 days</span>
     </a>
     <a class="kpi kpi--success" href="{changes_href}">
+        <span class="kpi__icon">{icon("pulse")}</span>
         <span class="kpi__label">Latest change run</span>
         <strong class="kpi__value"><span class="kpi__plus">+{change_stats['added']}</span> <span class="kpi__minus">−{change_stats['removed']}</span></strong>
         <span class="kpi__hint">{change_stats['label'] or 'no runs yet'} · {pluralize(change_stats['models'], 'model')}</span>
     </a>
 </div>
 
-{build_insights_section(model_regions, all_regions, lifecycles, availability_bits or {}, retirement_data, today)}
-
-<div class="dash-grid">
-    <section class="dash-panel" aria-labelledby="watchlist-title">
-        <header class="dash-panel__head">
-            <h2 id="watchlist-title">Retirement watchlist</h2>
-            <a href="retirements/">All retirements</a>
-        </header>
-        <p class="dash-panel__sub">Next scheduled retirements by version. {watch_counts['retired']} versions already retired.</p>
+<div class="bento">
+    {cards['lifecycle']}
+    {cards['retirements']}
+    <section class="bento__card bento--6" aria-labelledby="watchlist-title">
+        <header class="bento__head"><div><h3 id="watchlist-title">Retirement watchlist</h3><p>Soonest first · {watch_counts['retired']} versions already retired</p></div><a class="bento__link" href="retirements/">All {icon("arrow")}</a></header>
         {watchlist_html}
     </section>
-    <section class="dash-panel" aria-labelledby="changes-title">
-        <header class="dash-panel__head">
-            <h2 id="changes-title">Latest availability changes</h2>
-            <a href="history/">Full history</a>
-        </header>
-        <p class="dash-panel__sub">Regional SKU additions and removals detected by the watcher.</p>
+    <section class="bento__card bento--6" aria-labelledby="changes-title">
+        <header class="bento__head"><div><h3 id="changes-title">Latest availability changes</h3><p>Regional SKU additions and removals</p></div><a class="bento__link" href="history/">History {icon("arrow")}</a></header>
         {changes_html}
     </section>
+    {cards['deployment']}
+    {cards['providers']}
+    <nav class="bento__card bento--4 bento-links" aria-label="Guides">
+        <header class="bento__head"><div><h3>Guides</h3><p>Go deeper</p></div></header>
+        <a href="explorer/">{icon("grid", "fm-icon bento-links__icon")}<span><strong>Availability explorer</strong><small>Every model × region in one grid</small></span></a>
+        <a href="ptu/">{icon("gauge", "fm-icon bento-links__icon")}<span><strong>PTU guide</strong><small>Size and buy provisioned throughput</small></span></a>
+        <a href="lifecycle/">{icon("timeline", "fm-icon bento-links__icon")}<span><strong>Lifecycle guide</strong><small>What each badge means</small></span></a>
+        <a href="models/">{icon("table", "fm-icon bento-links__icon")}<span><strong>Model catalog</strong><small>Sortable table of all models</small></span></a>
+    </nav>
+    {cards['regions']}
 </div>
-
-<nav class="explore-row" aria-label="Explore">
-    <a href="explorer/"><strong>Availability explorer</strong><span>Every model × region in one grid</span></a>
-    <a href="ptu/"><strong>PTU guide</strong><span>Is provisioned right for you?</span></a>
-    <a href="lifecycle/"><strong>Lifecycle guide</strong><span>What each badge means</span></a>
-    <a href="models/"><strong>All models</strong><span>Sortable catalog table</span></a>
-</nav>
 
 <p class="dash-footnote">Snapshot generated {today:%Y-%m-%d %H:%M} UTC{source_note}. Validate active deployments with the Models API and Azure Service Health.</p>
 """
