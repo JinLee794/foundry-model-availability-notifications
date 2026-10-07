@@ -107,7 +107,7 @@ cat region_diff.json
 
 ### Website Pages
 
-- **Dashboard** - Instant model finder (press `Ctrl+K` / `Cmd+K`), KPI cards, clickable charts (lifecycle mix, deployment options, providers, retirements per month, region heatmap), retirement watchlist, and latest availability changes
+- **Dashboard** - Instant model finder (press `Ctrl+K` / `Cmd+K`), KPI cards, interactive visuals (retirement runway timeline, lifecycle waffle, world availability map with top regions, provider × deployment-type matrix, monthly availability momentum), retirement watchlist, and latest availability changes
 - **Explorer** - Single-pane grid of every model × region × deployment type with live filters, required-region selection, shareable URLs and CSV export
 - **Models** - Searchable table with lifecycle status and filters
 - **PTU Guide** - Plain-language provisioned throughput guide based on Microsoft Learn, with a quick PTU estimator and links to the Foundry capacity calculator

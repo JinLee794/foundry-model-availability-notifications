@@ -334,6 +334,20 @@
     }
   }, true);
 
+  function setHotRegion(target, on) {
+    const el = target && target.closest ? target.closest('[data-wmap] [data-region]') : null;
+    if (!el) return;
+    const wrap = el.closest('[data-wmap]');
+    const key = el.getAttribute('data-region');
+    wrap.querySelectorAll('[data-region]').forEach(function (node) {
+      node.classList.toggle('is-hot', on && node.getAttribute('data-region') === key);
+    });
+  }
+  document.addEventListener('mouseover', function (e) { setHotRegion(e.target, true); });
+  document.addEventListener('mouseout', function (e) { setHotRegion(e.target, false); });
+  document.addEventListener('focusin', function (e) { setHotRegion(e.target, true); });
+  document.addEventListener('focusout', function (e) { setHotRegion(e.target, false); });
+
   if (typeof window.document$ !== 'undefined' && window.document$.subscribe) {
     window.document$.subscribe(mountAll);
   } else if (document.readyState === 'loading') {

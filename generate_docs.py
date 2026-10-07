@@ -1140,82 +1140,95 @@ CHART_STAGE_GROUPS: List[Tuple[str, str, Tuple[str, ...], str]] = [
 ]
 
 
-def render_donut_chart(lifecycles: Dict[str, Dict], href_prefix: str) -> str:
+GEO_TONES = {
+    "Americas": "americas",
+    "Europe": "europe",
+    "Asia Pacific": "apac",
+    "Middle East & Africa": "mea",
+    "US Government": "gov",
+}
+
+# Land mask for the dotted world map: Natural Earth 1:110m land (public domain),
+# rasterized to a 2.5° grid starting at 80°N / 180°W. Rows are ';'-separated,
+# each a list of "startColumn+runLength" land runs.
+WORLD_GRID_COLS, WORLD_GRID_STEP, WORLD_GRID_TOP = 144, 2.5, 80.0
+WORLD_LAND_RLE = "33+11,45+20,78+5,109+3;24+2,37+4,44+20,78+1,113+1;27+2,32+8,49+15,94+2,107+10,127+3,131+1;22+2,25+3,29+1,31+2,34+1,36+4,50+13,93+1,100+1,104+20,128+2;7+8,25+7,34+1,38+2,41+4,50+13,80+4,99+2,102+34,140+1;0+2,6+22,29+10,41+1,43+3,51+8,78+10,91+10,102+42;2+1,5+32,38+1,41+4,51+5,63+3,76+4,82+4,88+56;6+29,38+1,44+1,52+3,74+5,80+57,138+6;5+8,15+19,41+3,74+5,81+1,84+50,137+2;9+2,19+16,41+6,70+1,77+2,82+46,135+2;6+1,20+19,41+8,70+1,75+1,80+46,134+3;21+18,41+9,68+1,70+3,74+55,134+1;21+24,49+1,72+56,129+1;22+24,50+1,71+57;22+23,46+1,71+6,78+6,85+1,87+40;22+22,68+5,75+3,79+4,89+35,128+1;22+20,68+4,75+1,78+1,80+2,83+37,121+2,128+1;23+18,68+4,77+1,83+38,123+1,127+1;24+18,69+7,85+35,125+3;25+15,68+10,80+1,86+34,124+1;27+9,38+1,68+23,92+29;26+1,28+5,39+1,67+18,86+6,93+27;27+1,29+4,66+20,87+6,94+1,99+22;30+3,38+2,65+22,88+8,100+8,109+9;30+3,36+1,41+1,65+22,88+7,101+5,109+5;31+6,66+21,89+5,101+4,110+5,120+1;35+4,65+23,89+3,102+2,111+5,120+1;37+2,65+24,102+2,111+1,113+3,120+1;38+1,42+1,44+3,66+26,102+2,111+1,114+1,119+1;41+8,67+25,104+1,122+1;41+10,68+2,71+1,74+17,110+1,112+1,118+2;41+11,76+14,111+1,113+1,117+2;40+12,76+13,112+2,116+3;40+15,76+12,112+2,116+3,120+1,125+3;39+18,77+11,127+3;40+18,77+11,115+2,127+4;41+17,77+11,121+1,131+1;41+16,77+11,124+3;42+14,77+11,91+1,122+4,129+1;43+13,77+10,90+2,121+9;44+12,77+9,90+1,120+11;44+11,78+8,89+2,117+15;44+9,78+8,90+1,117+16;44+9,78+7,118+15;43+9,79+5,118+15;43+8,79+4,118+4,126+7;43+6,127+5;43+6,128+4;43+4,142+1;42+5,130+1,140+1;42+4,139+1;42+4;42+3;42+2;44+2"
+
+# Approximate datacenter locations (lat, lon) for Azure regions.
+REGION_COORDS: Dict[str, Tuple[float, float]] = {
+    "Brazil South": (-23.55, -46.63), "Brazil Southeast": (-22.9, -43.2),
+    "Canada Central": (43.65, -79.38), "Canada East": (46.81, -71.21),
+    "Central US": (41.59, -93.6), "East US": (37.37, -79.82), "East US 2": (36.67, -78.39),
+    "North Central US": (41.88, -87.63), "South Central US": (29.42, -98.49),
+    "West Central US": (41.14, -104.82), "West US": (37.78, -122.42),
+    "West US 2": (47.23, -119.85), "West US 3": (33.45, -112.07),
+    "Mexico Central": (20.59, -100.39), "Chile Central": (-33.45, -70.67),
+    "France Central": (46.37, 2.37), "France South": (43.83, 2.21),
+    "Germany West Central": (50.11, 8.68), "Germany North": (53.07, 8.81),
+    "Italy North": (45.46, 9.19), "North Europe": (53.35, -6.26), "West Europe": (52.37, 4.9),
+    "Norway East": (59.91, 10.75), "Norway West": (58.97, 5.73), "Poland Central": (52.23, 21.01),
+    "Spain Central": (40.42, -3.7), "Sweden Central": (60.67, 17.14), "Sweden South": (55.6, 13.0),
+    "Switzerland North": (47.45, 8.56), "Switzerland West": (46.2, 6.14),
+    "UK South": (51.51, -0.13), "UK West": (51.48, -3.18), "Austria East": (48.21, 16.37),
+    "Belgium Central": (50.85, 4.35), "Denmark East": (55.68, 12.57),
+    "Australia East": (-33.86, 151.21), "Australia Southeast": (-37.81, 144.96),
+    "Australia Central": (-35.28, 149.13), "Japan East": (35.68, 139.77), "Japan West": (34.69, 135.5),
+    "Korea Central": (37.57, 126.98), "Korea South": (35.18, 129.08),
+    "South India": (12.98, 80.16), "Central India": (18.52, 73.86), "West India": (19.08, 72.88),
+    "Southeast Asia": (1.28, 103.83), "East Asia": (22.27, 114.19),
+    "Indonesia Central": (-6.2, 106.85), "Malaysia West": (3.14, 101.69),
+    "New Zealand North": (-36.85, 174.76), "Taiwan North": (25.03, 121.57),
+    "South Africa North": (-25.73, 28.22), "South Africa West": (-34.08, 18.42),
+    "UAE North": (25.27, 55.3), "UAE Central": (24.47, 54.37), "Qatar Central": (25.29, 51.53),
+    "Israel Central": (31.77, 35.21), "Saudi Arabia East": (26.4, 50.1),
+    "usgovarizona": (33.45, -112.07), "usgovvirginia": (37.37, -79.82), "usgovtexas": (29.42, -98.49),
+}
+
+
+def _fmt_num(value: int) -> str:
+    return f"{value:,}"
+
+
+def render_lifecycle_waffle(lifecycles: Dict[str, Dict], href_prefix: str, model_prefix: str = "models/") -> str:
+    """One square per model, ordered most-urgent first."""
+    order = {stage: index for index, (_, _, stages, _) in enumerate(CHART_STAGE_GROUPS) for stage in stages}
+    tone_of = {stage: tone for _, _, stages, tone in CHART_STAGE_GROUPS for stage in stages}
+    ranked = sorted(
+        lifecycles.items(),
+        key=lambda item: (order.get(item[1]["key"], 99), item[1].get("days", 10**6), item[0].lower()),
+    )
+    cells = []
+    for model, summary in ranked:
+        tone = tone_of.get(summary["key"], "neutral")
+        detail = summary.get("label", "")
+        if summary.get("next_label"):
+            detail += f" · retires {summary['next_label']}"
+            if summary.get("days") is not None:
+                detail += f" ({pluralize(summary['days'], 'day')})"
+        if summary.get("replacement"):
+            detail += f" · move to {summary['replacement']}"
+        cells.append(
+            f'<a class="waffle__cell waffle__cell--{tone}" href="{model_prefix}{slugify(model)}/"'
+            f'{tip_attrs(model, detail)} aria-label="{html_escape(model)}: {html_escape(summary.get("label", ""))}"></a>'
+        )
+    legend = []
     total = len(lifecycles) or 1
-    segments, legend = [], []
-    offset = 0.0
     for key, label, stages, tone in CHART_STAGE_GROUPS:
         count = sum(1 for summary in lifecycles.values() if summary["key"] in stages)
-        if not count:
-            continue
-        share = count / total * 100
-        segments.append(
-            f'<circle class="donut__seg donut__seg--{tone}" r="15.9155" cx="21" cy="21" '
-            f'stroke-dasharray="{share:.3f} {100 - share:.3f}" stroke-dashoffset="{25 - offset:.3f}">'
-            f'<title>{label}: {count}</title></circle>'
-        )
-        offset += share
-        legend.append(
-            f'<li><a href="{href_prefix}#lc={key}"><span class="chart-swatch chart-swatch--{tone}"></span>'
-            f'{label}<b>{count}</b></a></li>'
-        )
-    return f"""<div class="donut">
-        <svg viewBox="0 0 42 42" role="img" aria-label="Models by lifecycle stage">
-            <circle class="donut__ring" r="15.9155" cx="21" cy="21"></circle>
-            {''.join(segments)}
-            <text x="21" y="20.5" class="donut__value">{len(lifecycles)}</text>
-            <text x="21" y="26" class="donut__label">models</text>
-        </svg>
-        <ul class="chart-legend">{''.join(legend)}</ul>
-    </div>"""
-
-
-def render_bar_rows(rows: List[Tuple[str, int, str, str]], total: int, unit: str = "models") -> str:
-    """rows: (label, value, href, tone/class)."""
-    peak = max((value for _, value, _, _ in rows), default=1) or 1
-    items = []
-    for label, value, href, tone in rows:
-        items.append(
-            f'<li><a class="hbar" href="{href}" title="{value} of {total} {unit}">'
-            f'<span class="hbar__label">{label}</span>'
-            f'<span class="hbar__track"><span class="hbar__fill hbar__fill--{tone}" style="width:{value / peak * 100:.1f}%"></span></span>'
-            f'<span class="hbar__value">{value}</span></a></li>'
-        )
-    return f'<ul class="hbars">{"".join(items)}</ul>'
-
-
-def render_deployment_type_chart(availability_bits: Dict[str, Dict[str, int]], href_prefix: str) -> str:
-    rows = []
-    for item in DEPLOYMENT_TYPES:
-        if item["k"] == "av":
-            continue
-        count = sum(1 for regions in availability_bits.values() if any(bits & item["bit"] for bits in regions.values()))
         if count:
-            rows.append((item["short"], count, f"{href_prefix}#t={item['k']}", item["group"]))
-    return render_bar_rows(rows, len(availability_bits))
+            legend.append(
+                f'<li><a href="{href_prefix}#lc={key}"><span class="chart-swatch chart-swatch--{tone}"></span>'
+                f'{label}<b>{count}</b><small>{count / total * 100:.0f}%</small></a></li>'
+            )
+    return f"""<div class="waffle" role="img" aria-label="{len(lifecycles)} models by lifecycle stage">{''.join(cells)}</div>
+    <ul class="chart-legend waffle-legend">{''.join(legend)}</ul>"""
 
 
-def render_provider_chart(model_regions: Dict[str, Set[str]], href_prefix: str) -> str:
-    counts: Dict[str, int] = defaultdict(int)
-    for model in model_regions:
-        counts[model_family(model)] += 1
-    ranked = sorted(counts.items(), key=lambda item: (-item[1], item[0]))
-    rows = [(html_escape(family), count, f"{href_prefix}#p={quote(family)}", "accent") for family, count in ranked[:8]]
-    others = sum(count for _, count in ranked[8:])
-    if others:
-        rows.append(("Other providers", others, href_prefix, "muted"))
-    return render_bar_rows(rows, len(model_regions))
-
-
-def render_retirement_months_chart(retirement_data: Dict, today: datetime, months: int = 12) -> str:
-    buckets = []
-    year, month = today.year, today.month
-    for _ in range(months):
-        buckets.append({"year": year, "month": month, "count": 0, "estimate": 0, "names": []})
-        month += 1
-        if month > 12:
-            year, month = year + 1, 1
-    index = {(b["year"], b["month"]): b for b in buckets}
+def render_retirement_runway(retirement_data: Dict, today: datetime, available_slugs: Set[str], days: int = 364) -> Tuple[str, str]:
+    """Beeswarm timeline of version retirements over the next year. Returns (html, subtitle)."""
+    bins: Dict[int, List[Tuple]] = defaultdict(list)
+    later = 0
+    items = []
     for category, entries in retirement_data.get("models", {}).items():
         if category == "fine_tuned":
             continue
@@ -1223,48 +1236,214 @@ def render_retirement_months_chart(retirement_data: Dict, today: datetime, month
             retire_dt, estimate = parse_lifecycle_date(entry.get("retirement_date"))
             if not retire_dt or retire_dt < today:
                 continue
-            bucket = index.get((retire_dt.year, retire_dt.month))
-            if not bucket:
+            offset = (retire_dt - today).days
+            if offset > days:
+                later += 1
                 continue
-            bucket["count"] += 1
-            bucket["estimate"] += 1 if estimate else 0
-            bucket["names"].append(f"{entry.get('model', '')} {entry.get('version', '')}".strip())
-    peak = max((b["count"] for b in buckets), default=0) or 1
-    cols = []
-    for b in buckets:
-        label = datetime(b["year"], b["month"], 1)
-        firm = b["count"] - b["estimate"]
-        names = ", ".join(b["names"][:8]) + (f" +{len(b['names']) - 8} more" if len(b["names"]) > 8 else "")
-        tip = f"{label:%B %Y}: {pluralize(b['count'], 'version')} retiring" + (f" ({b['estimate']} no-earlier-than)" if b["estimate"] else "")
-        cols.append(
-            f'<li class="vcol{"" if b["count"] else " vcol--empty"}"{tip_attrs(tip, names or "Nothing scheduled.")}>'
-            f'<span class="vcol__bar" style="--h:{b["count"] / peak * 100:.1f}%">'
-            f'<span class="vcol__firm" style="--h:{(firm / b["count"] * 100) if b["count"] else 0:.1f}%"></span></span>'
-            f'<b>{b["count"] or ""}</b><small>{label:%b}</small></li>'
-        )
-    return f"""<ol class="vcols" aria-label="Retirements per month">{''.join(cols)}</ol>
-    <p class="chart-note"><span class="chart-swatch chart-swatch--danger"></span>Firm date <span class="chart-swatch chart-swatch--warning"></span>No-earlier-than date</p>"""
+            items.append((offset, retire_dt, estimate, entry))
+    items.sort(key=lambda item: (item[0], item[3].get("model", "")))
+    for item in items:
+        bins[item[0] // 7].append(item)
+
+    dots = []
+    for week, members in bins.items():
+        x = (week * 7 + 3.5) / days * 100
+        for stack, (offset, retire_dt, estimate, entry) in enumerate(members):
+            model = entry.get("model", "")
+            version = entry.get("version", "")
+            tone = "danger" if offset <= 30 else "warning" if offset <= 90 else "info"
+            slug = slugify(model)
+            href = f"models/{slug}/" if slug in available_slugs else "retirements/"
+            body = f"{'No earlier than ' if estimate else 'Retires '}{format_short_date(retire_dt)} · in {pluralize(offset, 'day')}"
+            if entry.get("replacement"):
+                body += f" · replacement: {entry['replacement']}"
+            dots.append(
+                f'<a class="rw-dot rw-dot--{tone}{" rw-dot--est" if estimate else ""}" href="{href}" '
+                f'style="--x:{x:.2f}%;--y:{stack}"{tip_attrs(f"{model} {version}".strip(), body)}></a>'
+            )
+    rows = max((len(members) for members in bins.values()), default=1)
+
+    ticks = []
+    cursor = datetime(today.year, today.month, 1)
+    while True:
+        month = cursor.month + 1
+        cursor = datetime(cursor.year + (month > 12), (month - 1) % 12 + 1, 1)
+        offset = (cursor - today).days
+        if offset > days:
+            break
+        label = f"{cursor:%b}" + (f" ’{cursor:%y}" if cursor.month == 1 else "")
+        ticks.append(f'<span class="rw-tick" style="--x:{offset / days * 100:.2f}%">{label}</span>')
+
+    band30, band90 = 30 / days * 100, 90 / days * 100
+    soon = sum(1 for item in items if item[0] <= 30)
+    nxt = items[0] if items else None
+    subtitle = f"{pluralize(len(items), 'version')} retire in the next 12 months"
+    if nxt:
+        subtitle += f" · next in {pluralize(nxt[0], 'day')}"
+    later_html = f'<span class="rw-later">+{later} later</span>' if later else ""
+    html = f"""<div class="runway" style="--rows:{rows}">
+        <div class="rw-plot">
+            <span class="rw-band rw-band--danger" style="--x0:0%;--x1:{band30:.2f}%"><em>≤ 30 days · {soon}</em></span>
+            <span class="rw-band rw-band--warning" style="--x0:{band30:.2f}%;--x1:{band90:.2f}%"><em>≤ 90 days</em></span>
+            <span class="rw-today"><em>Today</em></span>
+            {''.join(dots)}
+        </div>
+        <div class="rw-axis">{''.join(ticks)}{later_html}</div>
+    </div>
+    <p class="chart-note"><span class="rw-key rw-key--firm"></span>Firm date <span class="rw-key rw-key--est"></span>No-earlier-than date · one dot per model version, hover for details</p>"""
+    return html, subtitle
 
 
-def render_region_heatmap(model_regions: Dict[str, Set[str]], all_regions: Set[str], href_prefix: str) -> str:
+def world_land_path() -> str:
+    parts = []
+    for row, runs in enumerate(WORLD_LAND_RLE.split(";")):
+        for run in filter(None, runs.split(",")):
+            start, length = run.split("+")
+            parts.append(f"M{start} {row}h{length}v1h-{length}z")
+    return "".join(parts)
+
+
+def project_lat_lon(lat: float, lon: float) -> Tuple[float, float]:
+    return (lon + 180) / WORLD_GRID_STEP, (WORLD_GRID_TOP - lat) / WORLD_GRID_STEP + 0.5
+
+
+def render_world_map(model_regions: Dict[str, Set[str]], all_regions: Set[str], href_prefix: str, top: int = 10) -> str:
     counts: Dict[str, int] = defaultdict(int)
     for regions in model_regions.values():
         for region in regions:
             counts[region] += 1
     peak = max(counts.values(), default=1) or 1
-    groups = []
-    for geo in REGION_GEOS:
-        regions = sorted((r for r in all_regions if region_geo(r) == geo), key=lambda r: (-counts[r], r))
-        if not regions:
+    total = len(model_regions)
+    rows = int(WORLD_LAND_RLE.count(";")) + 1
+    bubbles = []
+    for region in sorted(all_regions, key=lambda r: -counts[r]):
+        coords = REGION_COORDS.get(region)
+        if not coords:
             continue
-        tiles = "".join(
-            f'<a class="heat-tile" href="{href_prefix}#rg={quote(region)}" style="--i:{counts[region] / peak:.2f}"'
-            f'{tip_attrs(region, f"{counts[region]} of {len(model_regions)} models available here. Click to see which.")}>'
-            f'<span>{html_escape(region)}</span><b>{counts[region]}</b></a>'
-            for region in regions
+        x, y = project_lat_lon(*coords)
+        radius = 0.55 + 1.85 * (counts[region] / peak) ** 0.5
+        tone = GEO_TONES.get(region_geo(region), "europe")
+        bubbles.append(
+            f'<a href="{href_prefix}#rg={quote(region)}" data-region="{html_escape(region)}"'
+            f'{tip_attrs(region, f"{counts[region]} of {total} models available here · {region_geo(region)}. Click to see which.")}>'
+            f'<circle class="wmap__bubble wmap__bubble--{tone}" cx="{x:.2f}" cy="{y:.2f}" r="{radius:.2f}"/></a>'
         )
-        groups.append(f'<div class="heat-group"><h4>{geo}</h4><div class="heat-tiles">{tiles}</div></div>')
-    return f'<div class="heatmap">{"".join(groups)}</div>'
+    ranked = sorted(all_regions, key=lambda r: (-counts[r], r))
+    list_items = "".join(
+        f'<li><a href="{href_prefix}#rg={quote(region)}" data-region="{html_escape(region)}">'
+        f'<span class="wmap-rank__dot wmap-rank__dot--{GEO_TONES.get(region_geo(region), "europe")}"></span>'
+        f'<span class="wmap-rank__name">{html_escape(region)}</span>'
+        f'<span class="wmap-rank__bar"><span style="width:{counts[region] / peak * 100:.1f}%"></span></span>'
+        f'<b>{counts[region]}</b></a></li>'
+        for region in ranked[:top]
+    )
+    geo_counts = defaultdict(int)
+    for region in all_regions:
+        geo_counts[region_geo(region)] += 1
+    geo_legend = "".join(
+        f'<li><span class="wmap-rank__dot wmap-rank__dot--{GEO_TONES[geo]}"></span>{geo} <b>{geo_counts[geo]}</b></li>'
+        for geo in REGION_GEOS if geo_counts.get(geo)
+    )
+    return f"""<div class="wmap-wrap" data-wmap>
+        <figure class="wmap-figure">
+            <svg class="wmap" viewBox="0 -0.5 {WORLD_GRID_COLS} {rows + 0.5}" role="img" aria-label="Azure regions sized by number of available models">
+                <defs><pattern id="wmap-dot" width="1" height="1" patternUnits="userSpaceOnUse"><circle cx="0.5" cy="0.5" r="0.3"/></pattern></defs>
+                <path class="wmap__land" d="{world_land_path()}" fill="url(#wmap-dot)"/>
+                <g class="wmap__bubbles">{''.join(bubbles)}</g>
+            </svg>
+            <ul class="wmap-legend">{geo_legend}<li class="wmap-legend__size"><i></i><i></i><i></i>more models</li></ul>
+        </figure>
+        <div class="wmap-rank">
+            <h4>Top regions</h4>
+            <ol>{list_items}</ol>
+            <a class="wmap-rank__more" href="by-region/">All {len(all_regions)} regions {icon("arrow")}</a>
+        </div>
+    </div>"""
+
+
+def render_provider_matrix(model_regions: Dict[str, Set[str]], availability_bits: Dict[str, Dict[str, int]], href_prefix: str, top: int = 8) -> str:
+    """Provider × deployment type: how many of each provider's models offer each type."""
+    types = [item for item in DEPLOYMENT_TYPES if item["k"] != "av"]
+    providers: Dict[str, List[str]] = defaultdict(list)
+    for model in model_regions:
+        providers[model_family(model)].append(model)
+    ranked = sorted(providers.items(), key=lambda item: (-len(item[1]), item[0]))
+    rows_data = [(name, models) for name, models in ranked[:top]]
+    rest = [model for _, models in ranked[top:] for model in models]
+    if rest:
+        rows_data.append(("Other", rest))
+
+    def offers(model: str, bit: int) -> bool:
+        return any(bits & bit for bits in availability_bits.get(model, {}).values())
+
+    groups = []
+    for item in types:
+        if groups and groups[-1][0] == item["group"]:
+            groups[-1][1] += 1
+        else:
+            groups.append([item["group"], 1])
+    group_labels = {"paygo": "Pay-as-you-go", "ptu": "Provisioned", "batch": "Batch", "partner": "Partner"}
+    head_groups = "".join(f'<th colspan="{span}" class="pmx__group pmx__group--{group}">{group_labels.get(group, group)}</th>' for group, span in groups)
+    head_types = "".join(f'<th{tip_attrs(item["label"], item["tip"])}>{item["short"]}</th>' for item in types)
+
+    def row(name: str, models: List[str], is_total: bool = False) -> str:
+        cells = []
+        for item in types:
+            count = sum(1 for model in models if offers(model, item["bit"]))
+            share = count / len(models) if models else 0
+            hash_parts = [f"t={item['k']}"] + ([] if is_total or name == "Other" else [f"p={quote(name)}"])
+            tip_body = f"{count} of {len(models)} {name if not is_total else ''} models ({share * 100:.0f}%) can deploy as {item['label']} in at least one region."
+            cells.append(
+                f'<td class="pmx__cell pmx__cell--{item["group"]}" style="--s:{share:.2f}">'
+                + (f'<a href="{href_prefix}#{"&".join(hash_parts)}"{tip_attrs(f"{name} · {item["short"]}", " ".join(tip_body.split()))}>{count}</a>' if count else '<span class="pmx__zero">·</span>')
+                + "</td>"
+            )
+        label = html_escape(name)
+        name_html = label if is_total or name == "Other" else f'<a href="{href_prefix}#p={quote(name)}">{label}</a>'
+        return f'<tr class="{"pmx__total" if is_total else ""}"><th scope="row">{name_html}</th><td class="pmx__n">{len(models)}</td>{"".join(cells)}</tr>'
+
+    body = row("All models", list(model_regions), True) + "".join(row(name, models) for name, models in rows_data)
+    return f"""<div class="pmx-scroll"><table class="pmx">
+        <thead><tr><th rowspan="2" class="pmx__corner">Provider</th><th rowspan="2" class="pmx__n">Models</th>{head_groups}</tr><tr>{head_types}</tr></thead>
+        <tbody>{body}</tbody>
+    </table></div>
+    <p class="chart-note">Cell = models from that provider offering the deployment type somewhere · darker = larger share of the provider's lineup</p>"""
+
+
+def render_momentum_chart(history: List[Dict], all_regions: Set[str], known_models: Set[str], today: datetime, months: int = 12) -> Tuple[str, str]:
+    rows = flatten_history_changes(history, all_regions, known_models)
+    keys = []
+    year, month = today.year, today.month
+    for _ in range(months):
+        keys.append((year, month))
+        month -= 1
+        if month == 0:
+            year, month = year - 1, 12
+    keys.reverse()
+    added = {key: 0 for key in keys}
+    removed = {key: 0 for key in keys}
+    for row in rows:
+        key = (row["timestamp"].year, row["timestamp"].month)
+        if key in added:
+            (added if row["change"] == "added" else removed)[key] += 1
+    peak = max(list(added.values()) + list(removed.values()) + [1])
+    cols = []
+    for key in keys:
+        label = datetime(key[0], key[1], 1)
+        a, r = added[key], removed[key]
+        net = a - r
+        tip = f"+{_fmt_num(a)} added · −{_fmt_num(r)} removed · net {'+' if net >= 0 else '−'}{_fmt_num(abs(net))}"
+        cols.append(
+            f'<li class="mo-col"{tip_attrs(f"{label:%B %Y}", tip + " regional SKU offers.")}>'
+            f'<span class="mo-up"><span style="--h:{a / peak * 100:.1f}%"></span></span>'
+            f'<span class="mo-down"><span style="--h:{r / peak * 100:.1f}%"></span></span>'
+            f'<small>{label:%b}</small></li>'
+        )
+    total_added, total_removed = sum(added.values()), sum(removed.values())
+    subtitle = f"+{_fmt_num(total_added)} / −{_fmt_num(total_removed)} regional SKU offers over 12 months"
+    html = f"""<ol class="momentum" aria-label="Availability changes per month">{''.join(cols)}</ol>
+    <p class="chart-note"><span class="chart-swatch chart-swatch--success"></span>Added <span class="chart-swatch chart-swatch--danger"></span>Removed</p>"""
+    return html, subtitle
 
 
 ICONS = {
@@ -1298,15 +1477,20 @@ def build_dashboard_cards(
     lifecycles: Dict[str, Dict],
     availability_bits: Dict[str, Dict[str, int]],
     retirement_data: Dict,
+    history: List[Dict],
     today: datetime,
     href_prefix: str = "explorer/",
 ) -> Dict[str, str]:
+    available_slugs = {slugify(model) for model in model_regions}
+    runway_html, runway_sub = render_retirement_runway(retirement_data, today, available_slugs)
+    momentum_html, momentum_sub = render_momentum_chart(history, all_regions, set(model_regions), today)
+    at_risk = sum(1 for summary in lifecycles.values() if summary["key"] in ("soon", "retiring", "pending"))
     return {
-        "lifecycle": chart_card("Lifecycle mix", "Most urgent stage per model", render_donut_chart(lifecycles, href_prefix), "bento--5", (f"{href_prefix}#lc=risk", "At risk")),
-        "retirements": chart_card("Retirements ahead", "Model versions retiring per month, next 12 months", render_retirement_months_chart(retirement_data, today), "bento--7", ("retirements/", "Schedule")),
-        "deployment": chart_card("Deployment options", "Models offering each type in at least one region", render_deployment_type_chart(availability_bits, href_prefix), "bento--4", ("ptu/", "PTU guide")),
-        "providers": chart_card("Providers", "Models tracked per provider", render_provider_chart(model_regions, href_prefix), "bento--4", ("models/", "Catalog")),
-        "regions": chart_card("Where models run", "Models per region — darker means more", render_region_heatmap(model_regions, all_regions, href_prefix), "bento--12", (href_prefix, "Explorer")),
+        "runway": chart_card("Retirement runway", runway_sub, runway_html, "bento--8", ("retirements/", "Schedule")),
+        "lifecycle": chart_card("Lifecycle at a glance", f"One square per model · {at_risk} at risk", render_lifecycle_waffle(lifecycles, href_prefix), "bento--4", (f"{href_prefix}#lc=risk", "At risk")),
+        "map": chart_card("Where models run", f"{len(all_regions)} regions · bubble size = models available", render_world_map(model_regions, all_regions, href_prefix), "bento--12", (href_prefix, "Explorer")),
+        "matrix": chart_card("Provider × deployment type", "How each provider's models can be deployed", render_provider_matrix(model_regions, availability_bits, href_prefix), "bento--8", ("ptu/", "PTU guide")),
+        "momentum": chart_card("Availability momentum", momentum_sub, momentum_html, "bento--4", ("history/", "History")),
     }
 
 
@@ -1813,7 +1997,7 @@ def generate_index_page(
     changes_href = history_link(date=change_stats["date"]) if change_stats["date"] else "history/"
     retirement_source_date = retirement_data.get("last_updated", "")
     source_note = f" · retirement data as of {retirement_source_date}" if retirement_source_date else ""
-    cards = build_dashboard_cards(model_regions, all_regions, lifecycles, availability_bits or {}, retirement_data, today)
+    cards = build_dashboard_cards(model_regions, all_regions, lifecycles, availability_bits or {}, retirement_data, history or [], today)
     ga_count = sum(1 for summary in lifecycles.values() if summary["key"] == "ga")
 
     return f"""---
@@ -1862,8 +2046,8 @@ hide:
 </div>
 
 <div class="bento">
+    {cards['runway']}
     {cards['lifecycle']}
-    {cards['retirements']}
     <section class="bento__card bento--6" aria-labelledby="watchlist-title">
         <header class="bento__head"><div><h3 id="watchlist-title">Retirement watchlist</h3><p>Soonest first · {watch_counts['retired']} versions already retired</p></div><a class="bento__link" href="retirements/">All {icon("arrow")}</a></header>
         {watchlist_html}
@@ -1872,16 +2056,15 @@ hide:
         <header class="bento__head"><div><h3 id="changes-title">Latest availability changes</h3><p>Regional SKU additions and removals</p></div><a class="bento__link" href="history/">History {icon("arrow")}</a></header>
         {changes_html}
     </section>
-    {cards['deployment']}
-    {cards['providers']}
-    <nav class="bento__card bento--4 bento-links" aria-label="Guides">
-        <header class="bento__head"><div><h3>Guides</h3><p>Go deeper</p></div></header>
+    {cards['map']}
+    {cards['matrix']}
+    {cards['momentum']}
+    <nav class="bento__card bento--12 bento-links bento-links--row" aria-label="Guides">
         <a href="explorer/">{icon("grid", "fm-icon bento-links__icon")}<span><strong>Availability explorer</strong><small>Every model × region in one grid</small></span></a>
         <a href="ptu/">{icon("gauge", "fm-icon bento-links__icon")}<span><strong>PTU guide</strong><small>Size and buy provisioned throughput</small></span></a>
         <a href="lifecycle/">{icon("timeline", "fm-icon bento-links__icon")}<span><strong>Lifecycle guide</strong><small>What each badge means</small></span></a>
         <a href="models/">{icon("table", "fm-icon bento-links__icon")}<span><strong>Model catalog</strong><small>Sortable table of all models</small></span></a>
     </nav>
-    {cards['regions']}
 </div>
 
 <p class="dash-footnote">Snapshot generated {today:%Y-%m-%d %H:%M} UTC{source_note}. Validate active deployments with the Models API and Azure Service Health.</p>
