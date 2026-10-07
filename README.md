@@ -107,16 +107,18 @@ cat region_diff.json
 
 ### Website Pages
 
-- **Dashboard** - Instant model finder (press `Ctrl+K` / `Cmd+K`), KPI cards, retirement watchlist, and latest availability changes
+- **Dashboard** - Instant model finder (press `Ctrl+K` / `Cmd+K`), KPI cards, clickable charts (lifecycle mix, deployment options, providers, retirements per month, region heatmap), retirement watchlist, and latest availability changes
+- **Explorer** - Single-pane grid of every model × region × deployment type with live filters, required-region selection, shareable URLs and CSV export
 - **Models** - Searchable table with lifecycle status and filters
-- **Lifecycle** - Diagrams of the GA and preview model lifecycle, plus where every tracked version sits today
+- **PTU Guide** - Plain-language provisioned throughput guide based on Microsoft Learn, with a quick PTU estimator and links to the Foundry capacity calculator
+- **Lifecycle** - Diagrams of the GA and preview model lifecycle, what each badge means, and where every tracked version sits today
 - **Retirements** - Upcoming deprecation and retirement dates
 - **By Region** - Filter by Azure region
 - **By SKU Type** - Filter by deployment type (Standard, Provisioned, etc.)
 - **Change History** - Timeline of all availability changes
 - **Individual Model Pages** - Per-version lifecycle tracks, next retirement, and a filterable region × SKU matrix
 
-The finder is backed by `docs/assets/model-index.json`, which `generate_docs.py` writes on every run.
+The finder and explorer are backed by `docs/assets/model-index.json`, which `generate_docs.py` writes on every run. Lifecycle badges show a plain-language explanation on hover or focus.
 
 ### Notifications
 

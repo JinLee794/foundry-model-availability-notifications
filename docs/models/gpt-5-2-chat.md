@@ -4,7 +4,7 @@
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-broad">Broad</span>
-            <span class="lc-badge lc-badge--warning">Retirement due</span>
+            <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retirement imminent" data-tip="Microsoft said this version retires no earlier than a date that has now passed, so it can be switched off at any time once notice is given. Treat it as retiring now — migrate.">Retirement imminent</span>
             <span class="model-profile__family">OpenAI</span>
             <span class="model-profile__coverage-note">25+ regions tracked</span>
         </div>
@@ -46,10 +46,10 @@
 <div class="lc-version lc-version--warning">
     <div class="lc-version__head">
         <code>2025-12-11</code>
-        <span class="lc-badge lc-badge--warning">Retirement due</span>
+        <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retirement imminent" data-tip="Microsoft said this version retires no earlier than a date that has now passed, so it can be switched off at any time once notice is given. Treat it as retiring now — migrate.">Retirement imminent</span>
         <span class="lc-version__countdown lc-version__countdown--warning">Date passed · may retire any time</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:37.25%"></span><span class="lc-seg lc-seg--retired" style="left:37.25%;width:62.75%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:37.00%"></span><span class="lc-seg lc-seg--retired" style="left:37.00%;width:63.00%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
     <div class="lc-version__dates"><span><b>Released</b> Dec 11, 2025</span><span><b>Retires</b> ≥ Apr 1, 2026</span></div>
     
 </div>
@@ -165,4 +165,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-05 15:23 UTC_
+_Last updated: 2026-10-07 14:13 UTC_

@@ -29,13 +29,13 @@ hide:
     <label for="lifecycle-filter">Lifecycle</label>
     <select id="lifecycle-filter" onchange="filterModelsTable()">
       <option value="">All Stages</option>
-      <option value="Retiring ≤30d">Retiring ≤30d</option>
-      <option value="Retiring ≤90d">Retiring ≤90d</option>
-      <option value="Retirement due">Retirement due</option>
+      <option value="Retiring within 30 days">Retiring within 30 days</option>
+      <option value="Retiring within 90 days">Retiring within 90 days</option>
+      <option value="Retirement imminent">Retirement imminent</option>
       <option value="Deprecated">Deprecated</option>
       <option value="Generally available">Generally available</option>
       <option value="Retired">Retired</option>
-      <option value="No date announced">No date announced</option>
+      <option value="No retirement date">No retirement date</option>
     </select>
   </div>
   <div class="filter-group">
@@ -125,7 +125,7 @@ hide:
   <tbody>
     <tr>
       <td><a href="codestral-2501/"><strong>Codestral-2501</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -138,7 +138,7 @@ hide:
     </tr>
     <tr>
       <td><a href="cohere-command-r-08-2024/"><strong>Cohere Command R 08-2024</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,Sweden Central,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
@@ -151,7 +151,7 @@ hide:
     </tr>
     <tr>
       <td><a href="cohere-command-r+-08-2024/"><strong>Cohere Command R+ 08-2024</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,Sweden Central,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
@@ -164,7 +164,7 @@ hide:
     </tr>
     <tr>
       <td><a href="cohere-embed-v3---english/"><strong>Cohere Embed v3 - English</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,Sweden Central,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
@@ -177,7 +177,7 @@ hide:
     </tr>
     <tr>
       <td><a href="cohere-embed-v3---multilingual/"><strong>Cohere Embed v3 - Multilingual</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,Sweden Central,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
@@ -190,7 +190,7 @@ hide:
     </tr>
     <tr>
       <td><a href="cohere-rerank-v3-5/"><strong>Cohere Rerank v3.5</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,Sweden Central,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
@@ -203,7 +203,7 @@ hide:
     </tr>
     <tr>
       <td><a href="cohere-command-a-plus-05-2026/"><strong>Cohere-command-a-plus-05-2026</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -216,7 +216,7 @@ hide:
     </tr>
     <tr>
       <td><a href="cohere-rerank-v4-0-fast/"><strong>Cohere-rerank-v4.0-fast</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -229,7 +229,7 @@ hide:
     </tr>
     <tr>
       <td><a href="cohere-rerank-v4-0-pro/"><strong>Cohere-rerank-v4.0-pro</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -242,7 +242,7 @@ hide:
     </tr>
     <tr>
       <td><a href="deepseek-r1/"><strong>DeepSeek-R1</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+3 more</button></span></td>
@@ -255,7 +255,7 @@ hide:
     </tr>
     <tr>
       <td><a href="deepseek-v3-0324/"><strong>DeepSeek-V3-0324</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+3 more</button></span></td>
@@ -268,7 +268,7 @@ hide:
     </tr>
     <tr>
       <td><a href="deepseek-v3-2/"><strong>DeepSeek-V3.2</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -281,7 +281,7 @@ hide:
     </tr>
     <tr>
       <td><a href="deepseek-v3-2-speciale/"><strong>DeepSeek-V3.2-Speciale</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -294,7 +294,7 @@ hide:
     </tr>
     <tr>
       <td><a href="deepseek-v4-flash/"><strong>DeepSeek-V4-Flash</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -307,7 +307,7 @@ hide:
     </tr>
     <tr>
       <td><a href="deepseek-v4-flash-0731/"><strong>DeepSeek-V4-Flash-0731</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -320,7 +320,7 @@ hide:
     </tr>
     <tr>
       <td><a href="deepseek-v4-pro/"><strong>DeepSeek-V4-Pro</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -333,7 +333,7 @@ hide:
     </tr>
     <tr>
       <td><a href="flux-1-1-pro/"><strong>FLUX-1.1-pro</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -346,7 +346,7 @@ hide:
     </tr>
     <tr>
       <td><a href="flux-1-kontext-pro/"><strong>FLUX.1-Kontext-pro</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -359,7 +359,7 @@ hide:
     </tr>
     <tr>
       <td><a href="flux-2-flex/"><strong>FLUX.2-flex</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -372,7 +372,7 @@ hide:
     </tr>
     <tr>
       <td><a href="flux-2-pro/"><strong>FLUX.2-pro</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -385,7 +385,7 @@ hide:
     </tr>
     <tr>
       <td><a href="kimi-k2-5/"><strong>Kimi-K2.5</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -398,7 +398,7 @@ hide:
     </tr>
     <tr>
       <td><a href="kimi-k2-6/"><strong>Kimi-K2.6</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -411,7 +411,7 @@ hide:
     </tr>
     <tr>
       <td><a href="kimi-k2-7-code/"><strong>Kimi-K2.7-Code</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -424,7 +424,7 @@ hide:
     </tr>
     <tr>
       <td><a href="llama-3-1-405b-instruct/"><strong>Llama 3.1 405B Instruct</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+3 more</button></span></td>
@@ -437,7 +437,7 @@ hide:
     </tr>
     <tr>
       <td><a href="llama-3-1-8b-instruct/"><strong>Llama 3.1 8B Instruct</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,Sweden Central,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
@@ -450,7 +450,7 @@ hide:
     </tr>
     <tr>
       <td><a href="llama-3-3-70b-instruct/"><strong>Llama 3.3 70B Instruct</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,Sweden Central,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
@@ -463,7 +463,7 @@ hide:
     </tr>
     <tr>
       <td><a href="llama-3-2-11b-vision-instruct/"><strong>Llama-3.2-11B-Vision-Instruct</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,Sweden Central,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
@@ -476,7 +476,7 @@ hide:
     </tr>
     <tr>
       <td><a href="llama-3-2-1b/"><strong>Llama-3.2-1B</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,Sweden Central,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
@@ -489,7 +489,7 @@ hide:
     </tr>
     <tr>
       <td><a href="llama-3-2-1b-instruct/"><strong>Llama-3.2-1B-Instruct</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,Sweden Central,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
@@ -502,7 +502,7 @@ hide:
     </tr>
     <tr>
       <td><a href="llama-3-2-3b/"><strong>Llama-3.2-3B</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,Sweden Central,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
@@ -515,7 +515,7 @@ hide:
     </tr>
     <tr>
       <td><a href="llama-3-2-3b-instruct/"><strong>Llama-3.2-3B-Instruct</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,Sweden Central,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
@@ -528,7 +528,7 @@ hide:
     </tr>
     <tr>
       <td><a href="llama-3-2-90b-vision-instruct/"><strong>Llama-3.2-90B-Vision-Instruct</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,Sweden Central,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
@@ -541,7 +541,7 @@ hide:
     </tr>
     <tr>
       <td><a href="llama-3-3-70b-instruct/"><strong>Llama-3.3-70B-Instruct</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -554,7 +554,7 @@ hide:
     </tr>
     <tr>
       <td><a href="llama-4-maverick-17b-128e-instruct-fp8/"><strong>Llama-4-Maverick-17B-128E-Instruct-FP8</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -567,7 +567,7 @@ hide:
     </tr>
     <tr>
       <td><a href="llama-4-scout-17b-16e-instruct/"><strong>Llama-4-Scout-17B-16E-Instruct</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -580,7 +580,7 @@ hide:
     </tr>
     <tr>
       <td><a href="llama-guard-3-11b-vision/"><strong>Llama-Guard-3-11B-Vision</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,Sweden Central,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
@@ -593,7 +593,7 @@ hide:
     </tr>
     <tr>
       <td><a href="llama-guard-3-1b/"><strong>Llama-Guard-3-1B</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,Sweden Central,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
@@ -606,7 +606,7 @@ hide:
     </tr>
     <tr>
       <td><a href="mai-ds-r1/"><strong>MAI-DS-R1</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+3 more</button></span></td>
@@ -619,7 +619,7 @@ hide:
     </tr>
     <tr>
       <td><a href="mai-image-2-5/"><strong>MAI-Image-2.5</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,South India,Sweden Central" data-all-regions="East US,South India,Sweden Central,UAE North,West Central US,West Europe,West US"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('South India')">South India</span> <span class="region-badge" onclick="filterByRegion('Sweden Central')">Sweden Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
@@ -632,7 +632,7 @@ hide:
     </tr>
     <tr>
       <td><a href="mai-image-2-5-flash/"><strong>MAI-Image-2.5-Flash</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,South India,Sweden Central" data-all-regions="East US,South India,Sweden Central,UAE North,West Central US,West Europe,West US"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('South India')">South India</span> <span class="region-badge" onclick="filterByRegion('Sweden Central')">Sweden Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
@@ -645,7 +645,7 @@ hide:
     </tr>
     <tr>
       <td><a href="mai-image-2-5-pro/"><strong>MAI-Image-2.5-Pro</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,South India,Sweden Central" data-all-regions="East US,South India,Sweden Central,UAE North,West Central US,West Europe,West US"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('South India')">South India</span> <span class="region-badge" onclick="filterByRegion('Sweden Central')">Sweden Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
@@ -658,7 +658,7 @@ hide:
     </tr>
     <tr>
       <td><a href="mai-image-2-6/"><strong>MAI-Image-2.6</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,South India,Sweden Central" data-all-regions="East US,South India,Sweden Central,UAE North,West Central US,West Europe,West US"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('South India')">South India</span> <span class="region-badge" onclick="filterByRegion('Sweden Central')">Sweden Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
@@ -671,7 +671,7 @@ hide:
     </tr>
     <tr>
       <td><a href="mai-image-2-6-flash/"><strong>MAI-Image-2.6-Flash</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,South India,Sweden Central" data-all-regions="East US,South India,Sweden Central,UAE North,West Central US,West Europe,West US"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('South India')">South India</span> <span class="region-badge" onclick="filterByRegion('Sweden Central')">Sweden Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
@@ -684,7 +684,7 @@ hide:
     </tr>
     <tr>
       <td><a href="mai-thinking-1/"><strong>MAI-Thinking-1</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -697,7 +697,7 @@ hide:
     </tr>
     <tr>
       <td><a href="ministral-3b/"><strong>Ministral-3B</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -710,7 +710,7 @@ hide:
     </tr>
     <tr>
       <td><a href="mistral-medium-3-(25-05)/"><strong>Mistral Medium 3 (25.05)</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,Sweden Central,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
@@ -723,7 +723,7 @@ hide:
     </tr>
     <tr>
       <td><a href="mistral-small-25-03/"><strong>Mistral Small 25.03</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,Sweden Central,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
@@ -736,7 +736,7 @@ hide:
     </tr>
     <tr>
       <td><a href="mistral-large-3/"><strong>Mistral-Large-3</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -749,7 +749,7 @@ hide:
     </tr>
     <tr>
       <td><a href="mistral-large/"><strong>Mistral-large</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -762,7 +762,7 @@ hide:
     </tr>
     <tr>
       <td><a href="phi-4/"><strong>Phi-4</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -775,7 +775,7 @@ hide:
     </tr>
     <tr>
       <td><a href="phi-4-mini-instruct/"><strong>Phi-4-mini-instruct</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -788,7 +788,7 @@ hide:
     </tr>
     <tr>
       <td><a href="phi-4-mini-reasoning/"><strong>Phi-4-mini-reasoning</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -801,7 +801,7 @@ hide:
     </tr>
     <tr>
       <td><a href="phi-4-multimodal-instruct/"><strong>Phi-4-multimodal-instruct</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -814,7 +814,7 @@ hide:
     </tr>
     <tr>
       <td><a href="phi-4-reasoning/"><strong>Phi-4-reasoning</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -827,7 +827,7 @@ hide:
     </tr>
     <tr>
       <td><a href="stable-diffusion-3-5-large/"><strong>Stable Diffusion 3.5 Large</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+3 more</button></span></td>
@@ -840,7 +840,7 @@ hide:
     </tr>
     <tr>
       <td><a href="stable-image-core/"><strong>Stable Image Core</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+3 more</button></span></td>
@@ -853,7 +853,7 @@ hide:
     </tr>
     <tr>
       <td><a href="stable-image-ultra/"><strong>Stable Image Ultra</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+3 more</button></span></td>
@@ -866,7 +866,7 @@ hide:
     </tr>
     <tr>
       <td><a href="timegen-1/"><strong>TimeGEN-1</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,Sweden Central,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+4 more</button></span></td>
@@ -879,7 +879,7 @@ hide:
     </tr>
     <tr>
       <td><a href="claude-fable-5/"><strong>claude-fable-5</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list"><span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('Sweden Central')">Sweden Central</span></span></td>
@@ -892,7 +892,7 @@ hide:
     </tr>
     <tr>
       <td><a href="claude-fable-5-1/"><strong>claude-fable-5-1</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list"><span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('Sweden Central')">Sweden Central</span></span></td>
@@ -905,7 +905,7 @@ hide:
     </tr>
     <tr>
       <td><a href="claude-haiku-4-5/"><strong>claude-haiku-4-5</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Central US,East US,East US 2" data-all-regions="Central US,East US,East US 2,North Central US,South Central US,Sweden Central,West Central US,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+6 more</button></span></td>
@@ -918,7 +918,7 @@ hide:
     </tr>
     <tr>
       <td><a href="claude-opus-4-5/"><strong>claude-opus-4-5</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Central US,East US,East US 2" data-all-regions="Central US,East US,East US 2,North Central US,South Central US,Sweden Central,West Central US,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+6 more</button></span></td>
@@ -931,7 +931,7 @@ hide:
     </tr>
     <tr>
       <td><a href="claude-opus-4-6/"><strong>claude-opus-4-6</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Central US,East US,East US 2" data-all-regions="Central US,East US,East US 2,North Central US,South Central US,Sweden Central,West Central US,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+6 more</button></span></td>
@@ -944,7 +944,7 @@ hide:
     </tr>
     <tr>
       <td><a href="claude-opus-4-7/"><strong>claude-opus-4-7</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Central US,East US,East US 2" data-all-regions="Central US,East US,East US 2,North Central US,South Central US,Sweden Central,West Central US,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+6 more</button></span></td>
@@ -957,7 +957,7 @@ hide:
     </tr>
     <tr>
       <td><a href="claude-opus-4-8/"><strong>claude-opus-4-8</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Central US,East US,East US 2" data-all-regions="Central US,East US,East US 2,North Central US,South Central US,Sweden Central,West Central US,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+6 more</button></span></td>
@@ -970,7 +970,7 @@ hide:
     </tr>
     <tr>
       <td><a href="claude-opus-5/"><strong>claude-opus-5</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Central US,East US,East US 2" data-all-regions="Central US,East US,East US 2,North Central US,South Central US,Sweden Central,West Central US,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+6 more</button></span></td>
@@ -983,7 +983,7 @@ hide:
     </tr>
     <tr>
       <td><a href="claude-opus-5-5/"><strong>claude-opus-5-5</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Central US,East US,East US 2" data-all-regions="Central US,East US,East US 2,North Central US,South Central US,Sweden Central,West Central US,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+6 more</button></span></td>
@@ -996,7 +996,7 @@ hide:
     </tr>
     <tr>
       <td><a href="claude-sonnet-4-5/"><strong>claude-sonnet-4-5</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Central US,East US,East US 2" data-all-regions="Central US,East US,East US 2,North Central US,South Central US,Sweden Central,West Central US,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+6 more</button></span></td>
@@ -1009,7 +1009,7 @@ hide:
     </tr>
     <tr>
       <td><a href="claude-sonnet-4-6/"><strong>claude-sonnet-4-6</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Central US,East US,East US 2" data-all-regions="Central US,East US,East US 2,North Central US,South Central US,Sweden Central,West Central US,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+6 more</button></span></td>
@@ -1022,7 +1022,7 @@ hide:
     </tr>
     <tr>
       <td><a href="claude-sonnet-5/"><strong>claude-sonnet-5</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Central US,East US,East US 2" data-all-regions="Central US,East US,East US 2,North Central US,South Central US,Sweden Central,West Central US,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+6 more</button></span></td>
@@ -1035,7 +1035,7 @@ hide:
     </tr>
     <tr>
       <td><a href="claude-sonnet-5-5/"><strong>claude-sonnet-5-5</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Central US,East US,East US 2" data-all-regions="Central US,East US,East US 2,North Central US,South Central US,Sweden Central,West Central US,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+6 more</button></span></td>
@@ -1048,7 +1048,7 @@ hide:
     </tr>
     <tr>
       <td><a href="codex-mini/"><strong>codex-mini</strong></a></td>
-      <td data-search="Retiring ≤90d"><span class="lc-badge lc-badge--warning">Retiring ≤90d</span></td>
+      <td data-search="Retiring within 90 days"><span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Next retirement: Nov 15, 2026 (version 2025-05-16). Test the replacement and plan the cut-over.">Retires in 38 days</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list"><span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('Sweden Central')">Sweden Central</span></span></td>
@@ -1061,7 +1061,7 @@ hide:
     </tr>
     <tr>
       <td><a href="cohere-command-a/"><strong>cohere-command-a</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -1074,7 +1074,7 @@ hide:
     </tr>
     <tr>
       <td><a href="computer-use-preview/"><strong>computer-use-preview</strong></a></td>
-      <td data-search="Retirement due"><span class="lc-badge lc-badge--warning">Retirement due</span></td>
+      <td data-search="Retirement imminent"><span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retirement imminent" data-tip="Microsoft said this version retires no earlier than a date that has now passed, so it can be switched off at any time once notice is given. Treat it as retiring now — migrate.">Retirement imminent</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list"><span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('South India')">South India</span> <span class="region-badge" onclick="filterByRegion('Sweden Central')">Sweden Central</span></span></td>
@@ -1087,7 +1087,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-4-1/"><strong>gpt-4.1</strong></a></td>
-      <td data-search="Retiring ≤30d"><span class="lc-badge lc-badge--danger">Retiring ≤30d</span></td>
+      <td data-search="Retiring within 30 days"><span class="lc-badge lc-badge--danger" tabindex="0" data-tip-title="Retiring within 30 days" data-tip="This version is switched off on its retirement date; after that every request returns 410 Gone. Standard deployments may be auto-upgraded to the replacement — provisioned (PTU) deployments are not. Next retirement: Oct 14, 2026 (version 2025-04-14). Replacement: gpt-5. Move traffic to the replacement now.">Retires in 6 days</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span> <span class="sku-badge sku-standard" data-tooltip="Pay-as-you-go regional deployments | Best for variable workloads and cost-sensitive applications | ✓ Single-region deployment — HIPAA-eligible in supported regions with a BAA from Microsoft">Standard</span> <span class="sku-badge sku-provisioned" title="18 regions">Prov.PTU</span> <span class="sku-badge sku-provisioned-global" title="27 regions">Prov.Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,North Europe,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3,usgovarizona,usgovvirginia"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -1100,7 +1100,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-4-1-mini/"><strong>gpt-4.1-mini</strong></a></td>
-      <td data-search="Retiring ≤30d"><span class="lc-badge lc-badge--danger">Retiring ≤30d</span></td>
+      <td data-search="Retiring within 30 days"><span class="lc-badge lc-badge--danger" tabindex="0" data-tip-title="Retiring within 30 days" data-tip="This version is switched off on its retirement date; after that every request returns 410 Gone. Standard deployments may be auto-upgraded to the replacement — provisioned (PTU) deployments are not. Next retirement: Oct 14, 2026 (version 2025-04-14). Replacement: gpt-5-mini. Move traffic to the replacement now.">Retires in 6 days</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span> <span class="sku-badge sku-standard" data-tooltip="Pay-as-you-go regional deployments | Best for variable workloads and cost-sensitive applications | ✓ Single-region deployment — HIPAA-eligible in supported regions with a BAA from Microsoft">Standard</span> <span class="sku-badge sku-provisioned" title="14 regions">Prov.PTU</span> <span class="sku-badge sku-provisioned-global" title="27 regions">Prov.Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,North Europe,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3,usgovarizona,usgovvirginia"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -1113,7 +1113,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-4-1-nano/"><strong>gpt-4.1-nano</strong></a></td>
-      <td data-search="Retiring ≤30d"><span class="lc-badge lc-badge--danger">Retiring ≤30d</span></td>
+      <td data-search="Retiring within 30 days"><span class="lc-badge lc-badge--danger" tabindex="0" data-tip-title="Retiring within 30 days" data-tip="This version is switched off on its retirement date; after that every request returns 410 Gone. Standard deployments may be auto-upgraded to the replacement — provisioned (PTU) deployments are not. Next retirement: Oct 14, 2026 (version 2025-04-14). Replacement: gpt-5-nano. Move traffic to the replacement now.">Retires in 6 days</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span> <span class="sku-badge sku-provisioned" title="7 regions">Prov.PTU</span> <span class="sku-badge sku-provisioned-global" title="27 regions">Prov.Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,North Europe,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+26 more</button></span></td>
@@ -1126,7 +1126,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-4o/"><strong>gpt-4o</strong></a></td>
-      <td data-search="Retired"><span class="lc-badge lc-badge--muted">Retired</span></td>
+      <td data-search="Retired"><span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Replacement: gpt-5.1. Use the replacement model.">Retired</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span> <span class="sku-badge sku-standard" data-tooltip="Pay-as-you-go regional deployments | Best for variable workloads and cost-sensitive applications | ✓ Single-region deployment — HIPAA-eligible in supported regions with a BAA from Microsoft">Standard</span> <span class="sku-badge sku-provisioned" title="27 regions">Prov.PTU</span> <span class="sku-badge sku-provisioned-global" title="27 regions">Prov.Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,North Europe,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3,usgovarizona,usgovvirginia"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -1139,7 +1139,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-4o-mini/"><strong>gpt-4o-mini</strong></a></td>
-      <td data-search="Retired"><span class="lc-badge lc-badge--muted">Retired</span></td>
+      <td data-search="Retired"><span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Replacement: gpt-4.1-mini. Use the replacement model.">Retired</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span> <span class="sku-badge sku-standard" data-tooltip="Pay-as-you-go regional deployments | Best for variable workloads and cost-sensitive applications | ✓ Single-region deployment — HIPAA-eligible in supported regions with a BAA from Microsoft">Standard</span> <span class="sku-badge sku-provisioned" title="21 regions">Prov.PTU</span> <span class="sku-badge sku-provisioned-global" title="27 regions">Prov.Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,North Europe,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+26 more</button></span></td>
@@ -1152,7 +1152,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-4o-mini-transcribe/"><strong>gpt-4o-mini-transcribe</strong></a></td>
-      <td data-search="Retiring ≤90d"><span class="lc-badge lc-badge--warning">Retiring ≤90d</span></td>
+      <td data-search="Retiring within 90 days"><span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Next retirement: No earlier than Dec 15, 2026 (version 2025-12-15). Test the replacement and plan the cut-over.">Retires in 68 days</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Canada Central,Central US,East US 2" data-all-regions="Canada Central,Central US,East US 2,France Central,South India,Sweden Central"><span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+3 more</button></span></td>
@@ -1165,7 +1165,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-4o-mini-tts/"><strong>gpt-4o-mini-tts</strong></a></td>
-      <td data-search="Retiring ≤90d"><span class="lc-badge lc-badge--warning">Retiring ≤90d</span></td>
+      <td data-search="Retiring within 90 days"><span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Next retirement: No earlier than Dec 15, 2026 (version 2025-12-15). Test the replacement and plan the cut-over.">Retires in 68 days</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list"><span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span></span></td>
@@ -1178,7 +1178,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-4o-transcribe/"><strong>gpt-4o-transcribe</strong></a></td>
-      <td data-search="Retirement due"><span class="lc-badge lc-badge--warning">Retirement due</span></td>
+      <td data-search="Retirement imminent"><span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retirement imminent" data-tip="Microsoft said this version retires no earlier than a date that has now passed, so it can be switched off at any time once notice is given. Treat it as retiring now — migrate.">Retirement imminent</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Canada Central,Central US,East US 2" data-all-regions="Canada Central,Central US,East US 2,France Central,South India,Sweden Central"><span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+3 more</button></span></td>
@@ -1191,7 +1191,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-4o-transcribe-diarize/"><strong>gpt-4o-transcribe-diarize</strong></a></td>
-      <td data-search="Generally available"><span class="lc-badge lc-badge--success">Generally available</span></td>
+      <td data-search="Generally available"><span class="lc-badge lc-badge--success" tabindex="0" data-tip-title="Generally available" data-tip="Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models). Next retirement: Apr 16, 2027 (version 2025-10-15). Safe to build on — note the retirement date in your roadmap.">GA · until Apr 2027</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Canada Central,Central US,East US 2" data-all-regions="Canada Central,Central US,East US 2,France Central,South India,Sweden Central"><span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+3 more</button></span></td>
@@ -1204,7 +1204,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-5/"><strong>gpt-5</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span> <span class="sku-badge sku-provisioned" title="13 regions">Prov.PTU</span> <span class="sku-badge sku-provisioned-global" title="27 regions">Prov.Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,North Europe,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+26 more</button></span></td>
@@ -1217,7 +1217,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-5-chat/"><strong>gpt-5-chat</strong></a></td>
-      <td data-search="Retired"><span class="lc-badge lc-badge--muted">Retired</span></td>
+      <td data-search="Retired"><span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Replacement: gpt-5.2-chat. Use the replacement model.">Retired</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+24 more</button></span></td>
@@ -1230,7 +1230,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-5-codex/"><strong>gpt-5-codex</strong></a></td>
-      <td data-search="Deprecated"><span class="lc-badge lc-badge--caution">Deprecated</span></td>
+      <td data-search="Deprecated"><span class="lc-badge lc-badge--caution" tabindex="0" data-tip-title="Deprecated" data-tip="No longer available to new customers. Subscriptions that already deployed this version can keep creating and managing deployments until it retires. Next retirement: Mar 17, 2027 (version 2025-09-15). Don&#x27;t start new work on it; schedule a migration before retirement.">Deprecated</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+25 more</button></span></td>
@@ -1243,7 +1243,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-5-mini/"><strong>gpt-5-mini</strong></a></td>
-      <td data-search="Deprecated"><span class="lc-badge lc-badge--caution">Deprecated</span></td>
+      <td data-search="Deprecated"><span class="lc-badge lc-badge--caution" tabindex="0" data-tip-title="Deprecated" data-tip="No longer available to new customers. Subscriptions that already deployed this version can keep creating and managing deployments until it retires. Next retirement: Feb 6, 2027 (version 2025-08-07). Don&#x27;t start new work on it; schedule a migration before retirement.">Deprecated</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span> <span class="sku-badge sku-provisioned" title="8 regions">Prov.PTU</span> <span class="sku-badge sku-provisioned-global" title="27 regions">Prov.Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,North Europe,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+26 more</button></span></td>
@@ -1256,7 +1256,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-5-nano/"><strong>gpt-5-nano</strong></a></td>
-      <td data-search="Deprecated"><span class="lc-badge lc-badge--caution">Deprecated</span></td>
+      <td data-search="Deprecated"><span class="lc-badge lc-badge--caution" tabindex="0" data-tip-title="Deprecated" data-tip="No longer available to new customers. Subscriptions that already deployed this version can keep creating and managing deployments until it retires. Next retirement: Feb 6, 2027 (version 2025-08-07). Don&#x27;t start new work on it; schedule a migration before retirement.">Deprecated</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada East" data-all-regions="Australia East,Brazil South,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada East')">Canada East</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+23 more</button></span></td>
@@ -1269,7 +1269,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-5-pro/"><strong>gpt-5-pro</strong></a></td>
-      <td data-search="Generally available"><span class="lc-badge lc-badge--success">Generally available</span></td>
+      <td data-search="Deprecated"><span class="lc-badge lc-badge--caution" tabindex="0" data-tip-title="Deprecated" data-tip="No longer available to new customers. Subscriptions that already deployed this version can keep creating and managing deployments until it retires. Next retirement: Apr 7, 2027 (version 2025-10-06). Don&#x27;t start new work on it; schedule a migration before retirement.">Deprecated</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+25 more</button></span></td>
@@ -1282,7 +1282,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-5-1/"><strong>gpt-5.1</strong></a></td>
-      <td data-search="Generally available"><span class="lc-badge lc-badge--success">Generally available</span></td>
+      <td data-search="Generally available"><span class="lc-badge lc-badge--success" tabindex="0" data-tip-title="Generally available" data-tip="Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models). Next retirement: May 15, 2027 (version 2025-11-13). Safe to build on — note the retirement date in your roadmap.">GA · until May 2027</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span> <span class="sku-badge sku-standard" data-tooltip="Pay-as-you-go regional deployments | Best for variable workloads and cost-sensitive applications | ✓ Single-region deployment — HIPAA-eligible in supported regions with a BAA from Microsoft">Standard</span> <span class="sku-badge sku-provisioned" title="7 regions">Prov.PTU</span> <span class="sku-badge sku-provisioned-global" title="27 regions">Prov.Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,North Europe,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3,usgovarizona,usgovvirginia"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -1295,7 +1295,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-5-1-chat/"><strong>gpt-5.1-chat</strong></a></td>
-      <td data-search="Retirement due"><span class="lc-badge lc-badge--warning">Retirement due</span></td>
+      <td data-search="Retirement imminent"><span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retirement imminent" data-tip="Microsoft said this version retires no earlier than a date that has now passed, so it can be switched off at any time once notice is given. Treat it as retiring now — migrate.">Retirement imminent</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+25 more</button></span></td>
@@ -1308,7 +1308,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-5-1-codex/"><strong>gpt-5.1-codex</strong></a></td>
-      <td data-search="Generally available"><span class="lc-badge lc-badge--success">Generally available</span></td>
+      <td data-search="Generally available"><span class="lc-badge lc-badge--success" tabindex="0" data-tip-title="Generally available" data-tip="Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models). Next retirement: May 15, 2027 (version 2025-11-13). Safe to build on — note the retirement date in your roadmap.">GA · until May 2027</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span> <span class="sku-badge sku-provisioned-global" title="27 regions">Prov.Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,North Europe,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+26 more</button></span></td>
@@ -1321,7 +1321,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-5-1-codex-max/"><strong>gpt-5.1-codex-max</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+25 more</button></span></td>
@@ -1334,7 +1334,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-5-1-codex-mini/"><strong>gpt-5.1-codex-mini</strong></a></td>
-      <td data-search="Generally available"><span class="lc-badge lc-badge--success">Generally available</span></td>
+      <td data-search="Generally available"><span class="lc-badge lc-badge--success" tabindex="0" data-tip-title="Generally available" data-tip="Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models). Next retirement: May 15, 2027 (version 2025-11-13). Safe to build on — note the retirement date in your roadmap.">GA · until May 2027</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+25 more</button></span></td>
@@ -1347,7 +1347,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-5-2/"><strong>gpt-5.2</strong></a></td>
-      <td data-search="Generally available"><span class="lc-badge lc-badge--success">Generally available</span></td>
+      <td data-search="Generally available"><span class="lc-badge lc-badge--success" tabindex="0" data-tip-title="Generally available" data-tip="Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models). Next retirement: No earlier than May 12, 2027 (version 2025-12-11). Safe to build on — note the retirement date in your roadmap.">GA · until ≥ May 2027</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span> <span class="sku-badge sku-provisioned" title="7 regions">Prov.PTU</span> <span class="sku-badge sku-provisioned-global" title="27 regions">Prov.Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,North Europe,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+26 more</button></span></td>
@@ -1360,7 +1360,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-5-2-chat/"><strong>gpt-5.2-chat</strong></a></td>
-      <td data-search="Retirement due"><span class="lc-badge lc-badge--warning">Retirement due</span></td>
+      <td data-search="Retirement imminent"><span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retirement imminent" data-tip="Microsoft said this version retires no earlier than a date that has now passed, so it can be switched off at any time once notice is given. Treat it as retiring now — migrate.">Retirement imminent</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+25 more</button></span></td>
@@ -1373,7 +1373,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-5-2-codex/"><strong>gpt-5.2-codex</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-provisioned-global" title="27 regions">Prov.Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,North Europe,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+26 more</button></span></td>
@@ -1386,7 +1386,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-5-3-chat/"><strong>gpt-5.3-chat</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+25 more</button></span></td>
@@ -1399,7 +1399,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-5-3-codex/"><strong>gpt-5.3-codex</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span> <span class="sku-badge sku-provisioned-global" title="27 regions">Prov.Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,North Europe,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+26 more</button></span></td>
@@ -1412,7 +1412,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-5-4/"><strong>gpt-5.4</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span> <span class="sku-badge sku-provisioned" title="2 regions">Prov.PTU</span> <span class="sku-badge sku-provisioned-global" title="27 regions">Prov.Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,North Europe,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+26 more</button></span></td>
@@ -1425,7 +1425,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-5-4-mini/"><strong>gpt-5.4-mini</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,North Europe,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+26 more</button></span></td>
@@ -1438,7 +1438,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-5-4-nano/"><strong>gpt-5.4-nano</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,North Europe,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+26 more</button></span></td>
@@ -1451,7 +1451,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-5-4-pro/"><strong>gpt-5.4-pro</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,North Europe,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+26 more</button></span></td>
@@ -1464,7 +1464,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-5-5/"><strong>gpt-5.5</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span> <span class="sku-badge sku-provisioned" title="1 regions">Prov.PTU</span> <span class="sku-badge sku-provisioned-global" title="2 regions">Prov.Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,North Europe,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+26 more</button></span></td>
@@ -1477,7 +1477,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-5-6-luna/"><strong>gpt-5.6-luna</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3,usgovarizona,usgovvirginia"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+27 more</button></span></td>
@@ -1490,7 +1490,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-5-6-sol/"><strong>gpt-5.6-sol</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3,usgovarizona,usgovvirginia"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+27 more</button></span></td>
@@ -1503,7 +1503,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-5-6-terra/"><strong>gpt-5.6-terra</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3,usgovarizona,usgovvirginia"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+27 more</button></span></td>
@@ -1516,7 +1516,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-6-astra/"><strong>gpt-6-astra</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+25 more</button></span></td>
@@ -1529,7 +1529,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-6-luna/"><strong>gpt-6-luna</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+25 more</button></span></td>
@@ -1542,7 +1542,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-6-sol/"><strong>gpt-6-sol</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+25 more</button></span></td>
@@ -1555,7 +1555,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-6-1-sol/"><strong>gpt-6.1-sol</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+25 more</button></span></td>
@@ -1568,7 +1568,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-audio/"><strong>gpt-audio</strong></a></td>
-      <td data-search="Deprecated"><span class="lc-badge lc-badge--caution">Deprecated</span></td>
+      <td data-search="Deprecated"><span class="lc-badge lc-badge--caution" tabindex="0" data-tip-title="Deprecated" data-tip="No longer available to new customers. Subscriptions that already deployed this version can keep creating and managing deployments until it retires. Next retirement: Feb 28, 2027 (version 2025-08-28). Don&#x27;t start new work on it; schedule a migration before retirement.">Deprecated</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list"><span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('Sweden Central')">Sweden Central</span></span></td>
@@ -1581,7 +1581,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-audio-1-5/"><strong>gpt-audio-1.5</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Central US,East US 2,North Europe" data-all-regions="Central US,East US 2,North Europe,Sweden Central"><span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Europe')">North Europe</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+1 more</button></span></td>
@@ -1594,7 +1594,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-audio-mini/"><strong>gpt-audio-mini</strong></a></td>
-      <td data-search="Generally available"><span class="lc-badge lc-badge--success">Generally available</span></td>
+      <td data-search="Deprecated"><span class="lc-badge lc-badge--caution" tabindex="0" data-tip-title="Deprecated" data-tip="No longer available to new customers. Subscriptions that already deployed this version can keep creating and managing deployments until it retires. Next retirement: Apr 7, 2027 (version 2025-10-06). Don&#x27;t start new work on it; schedule a migration before retirement.">Deprecated</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list"><span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('Sweden Central')">Sweden Central</span></span></td>
@@ -1607,7 +1607,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-chat-latest/"><strong>gpt-chat-latest</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,North Europe,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+26 more</button></span></td>
@@ -1620,7 +1620,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-image-1/"><strong>gpt-image-1</strong></a></td>
-      <td data-search="Retirement due"><span class="lc-badge lc-badge--warning">Retirement due</span></td>
+      <td data-search="Retirement imminent"><span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retirement imminent" data-tip="Microsoft said this version retires no earlier than a date that has now passed, so it can be switched off at any time once notice is given. Replacement: gpt-image-1-mini. Treat it as retiring now — migrate.">Retirement imminent</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US 2,Poland Central,Sweden Central" data-all-regions="East US 2,Poland Central,Sweden Central,UAE North,West US 3"><span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('Poland Central')">Poland Central</span> <span class="region-badge" onclick="filterByRegion('Sweden Central')">Sweden Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+2 more</button></span></td>
@@ -1633,7 +1633,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-image-1-mini/"><strong>gpt-image-1-mini</strong></a></td>
-      <td data-search="Generally available"><span class="lc-badge lc-badge--success">Generally available</span></td>
+      <td data-search="Deprecated"><span class="lc-badge lc-badge--caution" tabindex="0" data-tip-title="Deprecated" data-tip="No longer available to new customers. Subscriptions that already deployed this version can keep creating and managing deployments until it retires. Next retirement: Apr 7, 2027 (version 2025-10-06). Don&#x27;t start new work on it; schedule a migration before retirement.">Deprecated</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US 2,Poland Central,Sweden Central" data-all-regions="East US 2,Poland Central,Sweden Central,UAE North,West US 3"><span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('Poland Central')">Poland Central</span> <span class="region-badge" onclick="filterByRegion('Sweden Central')">Sweden Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+2 more</button></span></td>
@@ -1646,7 +1646,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-image-1-5/"><strong>gpt-image-1.5</strong></a></td>
-      <td data-search="Retiring ≤90d"><span class="lc-badge lc-badge--warning">Retiring ≤90d</span></td>
+      <td data-search="Retiring within 90 days"><span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Next retirement: No earlier than Dec 16, 2026 (version 2025-12-16). Test the replacement and plan the cut-over.">Retires in 69 days</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span></td>
       <td><span class="region-list" data-preview-regions="East US 2,Poland Central,Sweden Central" data-all-regions="East US 2,Poland Central,Sweden Central,UAE North,West US 3"><span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('Poland Central')">Poland Central</span> <span class="region-badge" onclick="filterByRegion('Sweden Central')">Sweden Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+2 more</button></span></td>
@@ -1659,7 +1659,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-image-2/"><strong>gpt-image-2</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US 2,Poland Central,Sweden Central" data-all-regions="East US 2,Poland Central,Sweden Central,UAE North,West US 3"><span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('Poland Central')">Poland Central</span> <span class="region-badge" onclick="filterByRegion('Sweden Central')">Sweden Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+2 more</button></span></td>
@@ -1672,7 +1672,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-image-2-5-flare/"><strong>gpt-image-2.5-flare</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+25 more</button></span></td>
@@ -1685,7 +1685,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-image-2-5-sunburst/"><strong>gpt-image-2.5-sunburst</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+25 more</button></span></td>
@@ -1698,7 +1698,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-realtime/"><strong>gpt-realtime</strong></a></td>
-      <td data-search="Deprecated"><span class="lc-badge lc-badge--caution">Deprecated</span></td>
+      <td data-search="Deprecated"><span class="lc-badge lc-badge--caution" tabindex="0" data-tip-title="Deprecated" data-tip="No longer available to new customers. Subscriptions that already deployed this version can keep creating and managing deployments until it retires. Next retirement: Feb 28, 2027 (version 2025-08-28). Don&#x27;t start new work on it; schedule a migration before retirement.">Deprecated</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Canada Central,Central US,East US 2" data-all-regions="Canada Central,Central US,East US 2,France Central,South India,Sweden Central"><span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+3 more</button></span></td>
@@ -1711,7 +1711,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-realtime-1-5/"><strong>gpt-realtime-1.5</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Canada Central,Central US,East US 2" data-all-regions="Canada Central,Central US,East US 2,France Central,South India,Sweden Central"><span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+3 more</button></span></td>
@@ -1724,7 +1724,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-realtime-2/"><strong>gpt-realtime-2</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Canada Central,Central US,East US 2" data-all-regions="Canada Central,Central US,East US 2,France Central,South India,Sweden Central"><span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+3 more</button></span></td>
@@ -1737,7 +1737,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-realtime-2-1/"><strong>gpt-realtime-2.1</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Canada Central,Central US,East US 2" data-all-regions="Canada Central,Central US,East US 2,France Central,South India,Sweden Central"><span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+3 more</button></span></td>
@@ -1750,7 +1750,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-realtime-2-1-mini/"><strong>gpt-realtime-2.1-mini</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Canada Central,Central US,East US 2" data-all-regions="Canada Central,Central US,East US 2,France Central,South India,Sweden Central"><span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+3 more</button></span></td>
@@ -1763,7 +1763,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-realtime-mini/"><strong>gpt-realtime-mini</strong></a></td>
-      <td data-search="Retiring ≤90d"><span class="lc-badge lc-badge--warning">Retiring ≤90d</span></td>
+      <td data-search="Retiring within 90 days"><span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Next retirement: No earlier than Dec 15, 2026 (version 2025-12-15). Test the replacement and plan the cut-over.">Retires in 68 days</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Canada Central,Central US,East US 2" data-all-regions="Canada Central,Central US,East US 2,France Central,South India,Sweden Central"><span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+3 more</button></span></td>
@@ -1776,7 +1776,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-realtime-translate/"><strong>gpt-realtime-translate</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Canada Central,Central US,East US 2" data-all-regions="Canada Central,Central US,East US 2,France Central,South India,Sweden Central"><span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+3 more</button></span></td>
@@ -1789,7 +1789,7 @@ hide:
     </tr>
     <tr>
       <td><a href="gpt-realtime-whisper/"><strong>gpt-realtime-whisper</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Canada Central,Central US,East US 2" data-all-regions="Canada Central,Central US,East US 2,France Central,South India,Sweden Central"><span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+3 more</button></span></td>
@@ -1802,7 +1802,7 @@ hide:
     </tr>
     <tr>
       <td><a href="grok-4-1-fast-non-reasoning/"><strong>grok-4-1-fast-non-reasoning</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -1815,7 +1815,7 @@ hide:
     </tr>
     <tr>
       <td><a href="grok-4-1-fast-reasoning/"><strong>grok-4-1-fast-reasoning</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -1828,7 +1828,7 @@ hide:
     </tr>
     <tr>
       <td><a href="grok-4-20-non-reasoning/"><strong>grok-4-20-non-reasoning</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -1841,7 +1841,7 @@ hide:
     </tr>
     <tr>
       <td><a href="grok-4-20-reasoning/"><strong>grok-4-20-reasoning</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -1854,7 +1854,7 @@ hide:
     </tr>
     <tr>
       <td><a href="grok-4-3/"><strong>grok-4.3</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -1867,7 +1867,7 @@ hide:
     </tr>
     <tr>
       <td><a href="grok-4-6/"><strong>grok-4.6</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -1880,7 +1880,7 @@ hide:
     </tr>
     <tr>
       <td><a href="mistral-document-ai-2505/"><strong>mistral-document-ai-2505</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list"><span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('Sweden Central')">Sweden Central</span></span></td>
@@ -1893,7 +1893,7 @@ hide:
     </tr>
     <tr>
       <td><a href="mistral-medium-2505/"><strong>mistral-medium-2505</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -1906,7 +1906,7 @@ hide:
     </tr>
     <tr>
       <td><a href="mistral-medium-3-5/"><strong>mistral-medium-3-5</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -1919,7 +1919,7 @@ hide:
     </tr>
     <tr>
       <td><a href="mistral-small-2503/"><strong>mistral-small-2503</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Japan West,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,UK West,West Central US,West Europe,West US,West US 2,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -1932,7 +1932,7 @@ hide:
     </tr>
     <tr>
       <td><a href="model-router/"><strong>model-router</strong></a></td>
-      <td data-search="Generally available"><span class="lc-badge lc-badge--success">Generally available</span></td>
+      <td data-search="Generally available"><span class="lc-badge lc-badge--success" tabindex="0" data-tip-title="Generally available" data-tip="Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models). Next retirement: May 20, 2027 (version 2025-11-18). Safe to build on — note the retirement date in your roadmap.">GA · until May 2027</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,East US 2,North Europe" data-all-regions="Australia East,East US 2,North Europe,South India,Sweden Central,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Europe')">North Europe</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+3 more</button></span></td>
@@ -1945,7 +1945,7 @@ hide:
     </tr>
     <tr>
       <td><a href="o1/"><strong>o1</strong></a></td>
-      <td data-search="Retired"><span class="lc-badge lc-badge--muted">Retired</span></td>
+      <td data-search="Retired"><span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Replacement: o3. Use the replacement model.">Retired</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span> <span class="sku-badge sku-standard" data-tooltip="Pay-as-you-go regional deployments | Best for variable workloads and cost-sensitive applications | ✓ Single-region deployment — HIPAA-eligible in supported regions with a BAA from Microsoft">Standard</span> <span class="sku-badge sku-provisioned" title="3 regions">Prov.PTU</span> <span class="sku-badge sku-provisioned-global" title="27 regions">Prov.Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,North Europe,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+26 more</button></span></td>
@@ -1958,7 +1958,7 @@ hide:
     </tr>
     <tr>
       <td><a href="o3/"><strong>o3</strong></a></td>
-      <td data-search="Retiring ≤30d"><span class="lc-badge lc-badge--danger">Retiring ≤30d</span></td>
+      <td data-search="Retiring within 30 days"><span class="lc-badge lc-badge--danger" tabindex="0" data-tip-title="Retiring within 30 days" data-tip="This version is switched off on its retirement date; after that every request returns 410 Gone. Standard deployments may be auto-upgraded to the replacement — provisioned (PTU) deployments are not. Next retirement: Oct 16, 2026 (version 2025-04-16). Move traffic to the replacement now.">Retires in 8 days</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span> <span class="sku-badge sku-provisioned" title="8 regions">Prov.PTU</span> <span class="sku-badge sku-provisioned-global" title="27 regions">Prov.Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,North Europe,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+26 more</button></span></td>
@@ -1971,7 +1971,7 @@ hide:
     </tr>
     <tr>
       <td><a href="o3-deep-research/"><strong>o3-deep-research</strong></a></td>
-      <td data-search="Retiring ≤90d"><span class="lc-badge lc-badge--warning">Retiring ≤90d</span></td>
+      <td data-search="Retiring within 90 days"><span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Next retirement: Dec 26, 2026 (version 2025-06-26). Test the replacement and plan the cut-over.">Retires in 79 days</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list"><span class="region-badge" onclick="filterByRegion('Norway East')">Norway East</span> <span class="region-badge" onclick="filterByRegion('West US')">West US</span></span></td>
@@ -1984,7 +1984,7 @@ hide:
     </tr>
     <tr>
       <td><a href="o3-mini/"><strong>o3-mini</strong></a></td>
-      <td data-search="Retired"><span class="lc-badge lc-badge--muted">Retired</span></td>
+      <td data-search="Retired"><span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Replacement: o4-mini. Use the replacement model.">Retired</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span> <span class="sku-badge sku-provisioned" title="10 regions">Prov.PTU</span> <span class="sku-badge sku-provisioned-global" title="27 regions">Prov.Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,North Europe,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3,usgovarizona,usgovvirginia"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -1997,7 +1997,7 @@ hide:
     </tr>
     <tr>
       <td><a href="o3-pro/"><strong>o3-pro</strong></a></td>
-      <td data-search="Retiring ≤90d"><span class="lc-badge lc-badge--warning">Retiring ≤90d</span></td>
+      <td data-search="Retiring within 90 days"><span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Next retirement: Dec 10, 2026 (version 2025-06-10). Test the replacement and plan the cut-over.">Retires in 63 days</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list"><span class="region-badge" onclick="filterByRegion('Central US')">Central US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('Sweden Central')">Sweden Central</span></span></td>
@@ -2010,7 +2010,7 @@ hide:
     </tr>
     <tr>
       <td><a href="o4-mini/"><strong>o4-mini</strong></a></td>
-      <td data-search="Retiring ≤30d"><span class="lc-badge lc-badge--danger">Retiring ≤30d</span></td>
+      <td data-search="Retiring within 30 days"><span class="lc-badge lc-badge--danger" tabindex="0" data-tip-title="Retiring within 30 days" data-tip="This version is switched off on its retirement date; after that every request returns 410 Gone. Standard deployments may be auto-upgraded to the replacement — provisioned (PTU) deployments are not. Next retirement: Oct 16, 2026 (version 2025-04-16). Move traffic to the replacement now.">Retires in 8 days</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span> <span class="sku-badge sku-standard" data-tooltip="Pay-as-you-go regional deployments | Best for variable workloads and cost-sensitive applications | ✓ Single-region deployment — HIPAA-eligible in supported regions with a BAA from Microsoft">Standard</span> <span class="sku-badge sku-provisioned" title="9 regions">Prov.PTU</span> <span class="sku-badge sku-provisioned-global" title="27 regions">Prov.Global</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,North Europe,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+26 more</button></span></td>
@@ -2023,7 +2023,7 @@ hide:
     </tr>
     <tr>
       <td><a href="sora-2/"><strong>sora-2</strong></a></td>
-      <td data-search="Retirement due"><span class="lc-badge lc-badge--warning">Retirement due</span></td>
+      <td data-search="Retirement imminent"><span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retirement imminent" data-tip="Microsoft said this version retires no earlier than a date that has now passed, so it can be switched off at any time once notice is given. Treat it as retiring now — migrate.">Retirement imminent</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list"><span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('Sweden Central')">Sweden Central</span></span></td>
@@ -2036,7 +2036,7 @@ hide:
     </tr>
     <tr>
       <td><a href="text-embedding-3-large/"><strong>text-embedding-3-large</strong></a></td>
-      <td data-search="Retiring ≤30d"><span class="lc-badge lc-badge--danger">Retiring ≤30d</span></td>
+      <td data-search="Retiring within 30 days"><span class="lc-badge lc-badge--danger" tabindex="0" data-tip-title="Retiring within 30 days" data-tip="This version is switched off on its retirement date; after that every request returns 410 Gone. Standard deployments may be auto-upgraded to the replacement — provisioned (PTU) deployments are not. Next retirement: No earlier than Oct 30, 2026 (version 1). Move traffic to the replacement now.">Retires in 22 days</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span> <span class="sku-badge sku-standard" data-tooltip="Pay-as-you-go regional deployments | Best for variable workloads and cost-sensitive applications | ✓ Single-region deployment — HIPAA-eligible in supported regions with a BAA from Microsoft">Standard</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,North Europe,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3,usgovarizona,usgovvirginia"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -2049,7 +2049,7 @@ hide:
     </tr>
     <tr>
       <td><a href="text-embedding-3-small/"><strong>text-embedding-3-small</strong></a></td>
-      <td data-search="Retiring ≤30d"><span class="lc-badge lc-badge--danger">Retiring ≤30d</span></td>
+      <td data-search="Retiring within 30 days"><span class="lc-badge lc-badge--danger" tabindex="0" data-tip-title="Retiring within 30 days" data-tip="This version is switched off on its retirement date; after that every request returns 410 Gone. Standard deployments may be auto-upgraded to the replacement — provisioned (PTU) deployments are not. Next retirement: No earlier than Oct 30, 2026 (version 1). Move traffic to the replacement now.">Retires in 22 days</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span> <span class="sku-badge sku-standard" data-tooltip="Pay-as-you-go regional deployments | Best for variable workloads and cost-sensitive applications | ✓ Single-region deployment — HIPAA-eligible in supported regions with a BAA from Microsoft">Standard</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,North Europe,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3,usgovarizona,usgovvirginia"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+28 more</button></span></td>
@@ -2062,7 +2062,7 @@ hide:
     </tr>
     <tr>
       <td><a href="text-embedding-ada-002/"><strong>text-embedding-ada-002</strong></a></td>
-      <td data-search="Retiring ≤30d"><span class="lc-badge lc-badge--danger">Retiring ≤30d</span></td>
+      <td data-search="Retiring within 30 days"><span class="lc-badge lc-badge--danger" tabindex="0" data-tip-title="Retiring within 30 days" data-tip="This version is switched off on its retirement date; after that every request returns 410 Gone. Standard deployments may be auto-upgraded to the replacement — provisioned (PTU) deployments are not. Next retirement: No earlier than Oct 30, 2026 (version 2). Move traffic to the replacement now.">Retires in 22 days</span></td>
       <td><span class="badge badge-broad">Broad</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-datazone" data-tooltip="Data residency compliance deployments | Required for data sovereignty and compliance requirements (GDPR, etc.) | ✓ Data stays within the specified geographic zone — supports GDPR and regional data-residency policies">Datazone</span> <span class="sku-badge sku-standard" data-tooltip="Pay-as-you-go regional deployments | Best for variable workloads and cost-sensitive applications | ✓ Single-region deployment — HIPAA-eligible in supported regions with a BAA from Microsoft">Standard</span></td>
       <td><span class="region-list" data-preview-regions="Australia East,Brazil South,Canada Central" data-all-regions="Australia East,Brazil South,Canada Central,Canada East,Central US,East US,East US 2,France Central,Germany West Central,Italy North,Japan East,Korea Central,North Central US,Norway East,Poland Central,South Africa North,South Central US,South India,Southeast Asia,Spain Central,Sweden Central,Switzerland North,Switzerland West,UAE North,UK South,West Europe,West US,West US 3,usgovarizona"><span class="region-badge" onclick="filterByRegion('Australia East')">Australia East</span> <span class="region-badge" onclick="filterByRegion('Brazil South')">Brazil South</span> <span class="region-badge" onclick="filterByRegion('Canada Central')">Canada Central</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+26 more</button></span></td>
@@ -2075,7 +2075,7 @@ hide:
     </tr>
     <tr>
       <td><a href="tsuzumi-7b/"><strong>tsuzumi-7b</strong></a></td>
-      <td data-search="No date announced"><span class="lc-badge lc-badge--neutral">No date announced</span></td>
+      <td data-search="No retirement date"><span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span></td>
       <td><span class="region-list" data-preview-regions="East US,East US 2,North Central US" data-all-regions="East US,East US 2,North Central US,South Central US,West US,West US 3"><span class="region-badge" onclick="filterByRegion('East US')">East US</span> <span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+3 more</button></span></td>
@@ -2088,7 +2088,7 @@ hide:
     </tr>
     <tr>
       <td><a href="tts/"><strong>tts</strong></a></td>
-      <td data-search="Generally available"><span class="lc-badge lc-badge--success">Generally available</span></td>
+      <td data-search="Generally available"><span class="lc-badge lc-badge--success" tabindex="0" data-tip-title="Generally available" data-tip="Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models). Safe to build on — note the retirement date in your roadmap.">Generally available</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-standard" data-tooltip="Pay-as-you-go regional deployments | Best for variable workloads and cost-sensitive applications | ✓ Single-region deployment — HIPAA-eligible in supported regions with a BAA from Microsoft">Standard</span></td>
       <td><span class="region-list"><span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <span class="region-badge" onclick="filterByRegion('Sweden Central')">Sweden Central</span> <span class="region-badge" onclick="filterByRegion('West US 3')">West US 3</span></span></td>
@@ -2101,7 +2101,7 @@ hide:
     </tr>
     <tr>
       <td><a href="tts-hd/"><strong>tts-hd</strong></a></td>
-      <td data-search="Generally available"><span class="lc-badge lc-badge--success">Generally available</span></td>
+      <td data-search="Generally available"><span class="lc-badge lc-badge--success" tabindex="0" data-tip-title="Generally available" data-tip="Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models). Safe to build on — note the retirement date in your roadmap.">Generally available</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-standard" data-tooltip="Pay-as-you-go regional deployments | Best for variable workloads and cost-sensitive applications | ✓ Single-region deployment — HIPAA-eligible in supported regions with a BAA from Microsoft">Standard</span></td>
       <td><span class="region-list"><span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <span class="region-badge" onclick="filterByRegion('Sweden Central')">Sweden Central</span> <span class="region-badge" onclick="filterByRegion('West US 3')">West US 3</span></span></td>
@@ -2114,7 +2114,7 @@ hide:
     </tr>
     <tr>
       <td><a href="whisper/"><strong>whisper</strong></a></td>
-      <td data-search="Generally available"><span class="lc-badge lc-badge--success">Generally available</span></td>
+      <td data-search="Generally available"><span class="lc-badge lc-badge--success" tabindex="0" data-tip-title="Generally available" data-tip="Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models). Safe to build on — note the retirement date in your roadmap.">Generally available</span></td>
       <td><span class="badge badge-emerging">Emerging</span></td>
       <td><span class="sku-badge sku-global" data-tooltip="Worldwide availability with intelligent routing | Best for applications needing global reach with automatic failover | ⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements">Global</span> <span class="sku-badge sku-standard" data-tooltip="Pay-as-you-go regional deployments | Best for variable workloads and cost-sensitive applications | ✓ Single-region deployment — HIPAA-eligible in supported regions with a BAA from Microsoft">Standard</span></td>
       <td><span class="region-list" data-preview-regions="East US 2,North Central US,Norway East" data-all-regions="East US 2,North Central US,Norway East,South India,Sweden Central,Switzerland North,UAE North,West Europe"><span class="region-badge" onclick="filterByRegion('East US 2')">East US 2</span> <span class="region-badge" onclick="filterByRegion('North Central US')">North Central US</span> <span class="region-badge" onclick="filterByRegion('Norway East')">Norway East</span> <button class="expand-btn" onclick="toggleRegionBadges(this)">+5 more</button></span></td>
@@ -2143,4 +2143,4 @@ hide:
 
 ---
 
-_Last updated: 2026-10-05 15:23 UTC_
+_Last updated: 2026-10-07 14:13 UTC_

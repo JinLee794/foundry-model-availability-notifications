@@ -4,7 +4,7 @@
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-emerging">Emerging</span>
-            <span class="lc-badge lc-badge--success">Generally available</span>
+            <span class="lc-badge lc-badge--caution" tabindex="0" data-tip-title="Deprecated" data-tip="No longer available to new customers. Subscriptions that already deployed this version can keep creating and managing deployments until it retires. Next retirement: Apr 7, 2027 (version 2025-10-06). Don&#x27;t start new work on it; schedule a migration before retirement.">Deprecated</span>
             <span class="model-profile__family">OpenAI</span>
             <span class="model-profile__coverage-note">Under 15 regions tracked</span>
         </div>
@@ -29,7 +29,7 @@
         <span>SKU types</span>
         <strong>4</strong>
     </div>
-    <div class="model-metric model-metric--success">
+    <div class="model-metric model-metric--caution">
         <span>Next retirement</span>
         <strong>in 6 months</strong>
     </div>
@@ -43,14 +43,14 @@
 ## :material-clock-alert: Lifecycle
 
 <div class="lc-versions">
-<div class="lc-version lc-version--success">
+<div class="lc-version lc-version--caution">
     <div class="lc-version__head">
         <code>2025-10-06</code>
-        <span class="lc-badge lc-badge--success">Generally available</span>
-        <span class="lc-version__countdown lc-version__countdown--success">in 6 months</span>
+        <span class="lc-badge lc-badge--caution" tabindex="0" data-tip-title="Deprecated" data-tip="No longer available to new customers. Subscriptions that already deployed this version can keep creating and managing deployments until it retires. Don&#x27;t start new work on it; schedule a migration before retirement.">Deprecated</span>
+        <span class="lc-version__countdown lc-version__countdown--caution">in 6 months</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:66.61%"></span><span class="lc-seg lc-seg--deprecated" style="left:66.61%;width:33.39%"></span><span class="lc-today" style="left:66.42%"><em>Today</em></span></div>
-    <div class="lc-version__dates"><span><b>Released</b> Oct 6, 2025</span><span><b>Deprecates</b> Oct 6, 2026</span><span><b>Retires</b> Apr 7, 2027</span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:66.61%"></span><span class="lc-seg lc-seg--deprecated" style="left:66.61%;width:33.39%"></span><span class="lc-today" style="left:66.79%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Released</b> Oct 6, 2025</span><span><b>Deprecated</b> Oct 6, 2026</span><span><b>Retires</b> Apr 7, 2027</span></div>
     
 </div>
 </div>
@@ -149,4 +149,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-05 15:23 UTC_
+_Last updated: 2026-10-07 14:13 UTC_

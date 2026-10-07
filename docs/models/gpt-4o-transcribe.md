@@ -4,7 +4,7 @@
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-emerging">Emerging</span>
-            <span class="lc-badge lc-badge--warning">Retirement due</span>
+            <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retirement imminent" data-tip="Microsoft said this version retires no earlier than a date that has now passed, so it can be switched off at any time once notice is given. Treat it as retiring now — migrate.">Retirement imminent</span>
             <span class="model-profile__family">OpenAI</span>
             <span class="model-profile__coverage-note">Under 15 regions tracked</span>
         </div>
@@ -46,10 +46,10 @@
 <div class="lc-version lc-version--warning">
     <div class="lc-version__head">
         <code>2025-03-20</code>
-        <span class="lc-badge lc-badge--warning">Retirement due</span>
+        <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retirement imminent" data-tip="Microsoft said this version retires no earlier than a date that has now passed, so it can be switched off at any time once notice is given. Treat it as retiring now — migrate.">Retirement imminent</span>
         <span class="lc-version__countdown lc-version__countdown--warning">Date passed · may retire any time</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:61.17%"></span><span class="lc-seg lc-seg--retired" style="left:61.17%;width:38.83%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:60.95%"></span><span class="lc-seg lc-seg--retired" style="left:60.95%;width:39.05%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
     <div class="lc-version__dates"><span><b>Released</b> Mar 20, 2025</span><span><b>Retires</b> ≥ Feb 28, 2026</span></div>
     
 </div>
@@ -150,4 +150,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-05 15:23 UTC_
+_Last updated: 2026-10-07 14:13 UTC_

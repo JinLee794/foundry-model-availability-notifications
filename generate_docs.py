@@ -524,7 +524,7 @@ def generate_lifecycle_section(
         tracks.append(f"""<div class="lc-version lc-version--{tone}">
     <div class="lc-version__head">
         <code>{html_escape(version_key(entry) or '-')}</code>
-        <span class="lc-badge lc-badge--{tone}">{html_escape(label)}</span>
+        <span class="lc-badge lc-badge--{tone}"{tip_attrs(LIFECYCLE_EXPLAINERS[stage]['title'], LIFECYCLE_EXPLAINERS[stage]['body'] + ' ' + LIFECYCLE_EXPLAINERS[stage]['action'])}>{html_escape(label)}</span>
         {countdown}
     </div>
     <div class="lc-bar" aria-hidden="true">{''.join(segments)}</div>
@@ -776,14 +776,14 @@ MODEL_FAMILY_RULES: List[Tuple[Tuple[str, ...], str]] = [
 
 LIFECYCLE_STAGES: Dict[str, Tuple[str, str, int]] = {
     # key: (label, css tone, urgency rank - lower is more urgent)
-    "soon": ("Retiring ≤30d", "danger", 0),
-    "retiring": ("Retiring ≤90d", "warning", 1),
-    "pending": ("Retirement due", "warning", 2),
+    "soon": ("Retiring within 30 days", "danger", 0),
+    "retiring": ("Retiring within 90 days", "warning", 1),
+    "pending": ("Retirement imminent", "warning", 2),
     "deprecated": ("Deprecated", "caution", 3),
     "preview": ("Preview", "info", 4),
     "ga": ("Generally available", "success", 5),
     "retired": ("Retired", "muted", 6),
-    "untracked": ("No date announced", "neutral", 7),
+    "untracked": ("No retirement date", "neutral", 7),
 }
 
 
@@ -879,7 +879,8 @@ def summarize_model_lifecycle(entries: List[Dict], today: datetime) -> Dict:
 
 
 def lifecycle_badge(summary: Dict) -> str:
-    return f'<span class="lc-badge lc-badge--{summary["tone"]}">{html_escape(summary["label"])}</span>'
+    title, body = lifecycle_tip_text(summary)
+    return f'<span class="lc-badge lc-badge--{summary["tone"]}"{tip_attrs(title, body)}>{html_escape(lifecycle_badge_text(summary))}</span>'
 
 
 def build_model_lifecycles(model_regions: Dict[str, Set[str]], retirement_index: Dict[str, List[Dict]], today: datetime) -> Dict[str, Dict]:
@@ -917,6 +918,667 @@ def build_model_finder_data(
             record["rs"] = slugify(lifecycle["replacement"]) if slugify(lifecycle["replacement"]) in MODEL_PAGE_SLUGS else ""
         records.append(record)
     return records
+
+
+# ---------------------------------------------------------------------------
+# Availability explorer, plain-language glossaries and dashboard charts
+# ---------------------------------------------------------------------------
+
+# Deployment types shown in the explorer. Each raw snapshot SKU key maps to one bit.
+DEPLOYMENT_TYPES: List[Dict] = [
+    {"k": "gs", "bit": 1, "group": "paygo", "label": "Global Standard", "short": "Global",
+     "tip": "Pay per token. Requests can be processed in any Azure region worldwide. Highest default quota — the best place to start."},
+    {"k": "dz", "bit": 2, "group": "paygo", "label": "Data Zone Standard", "short": "Data Zone",
+     "tip": "Pay per token. Processing stays inside the Microsoft-defined data zone (US or EU)."},
+    {"k": "rs", "bit": 4, "group": "paygo", "label": "Regional Standard", "short": "Regional",
+     "tip": "Pay per token. Processing stays in the region you deploy to."},
+    {"k": "gp", "bit": 8, "group": "ptu", "label": "Global Provisioned (PTU)", "short": "Global PTU",
+     "tip": "Reserved throughput (PTUs) billed hourly or via reservation. Processing can happen in any Azure region."},
+    {"k": "dp", "bit": 16, "group": "ptu", "label": "Data Zone Provisioned (PTU)", "short": "Data Zone PTU",
+     "tip": "Reserved throughput (PTUs) with processing kept inside the data zone (US or EU)."},
+    {"k": "rp", "bit": 32, "group": "ptu", "label": "Regional Provisioned (PTU)", "short": "Regional PTU",
+     "tip": "Reserved throughput (PTUs) with processing kept in the deployment region."},
+    {"k": "bt", "bit": 64, "group": "batch", "label": "Batch", "short": "Batch",
+     "tip": "Asynchronous jobs with a 24-hour target turnaround at a lower price than Standard."},
+    {"k": "mp", "bit": 128, "group": "partner", "label": "Partner / Marketplace", "short": "Partner",
+     "tip": "Partner model deployed as a serverless API, typically billed through Azure Marketplace."},
+    {"k": "av", "bit": 256, "group": "other", "label": "Listed (type not published)", "short": "Listed",
+     "tip": "Microsoft lists the model in this region but the deployment type is not broken out."},
+]
+DEPLOYMENT_TYPE_BY_KEY = {item["k"]: item for item in DEPLOYMENT_TYPES}
+
+SKU_KEY_TO_TYPE: Dict[str, str] = {
+    "standard-global": "gs",
+    "standard-global-by-capability": "gs",
+    "standard-global-priority-processing": "gs",
+    "datazone-standard": "dz",
+    "datazone-standard-gov": "dz",
+    "datazone-standard-priority-processing": "dz",
+    "deployments-standard": "rs",
+    "standard-models": "rs",
+    "standard-models-gov": "rs",
+    "provisioned-global": "gp",
+    "datazone-provisioned-managed": "dp",
+    "datazone-provisioned-managed-gov": "dp",
+    "provisioned-models": "rp",
+    "provisioned-models-gov": "rp",
+    "deployments-provisioned": "rp",
+    "global-batch": "bt",
+    "global-batch-datazone": "bt",
+    "deployments-batch": "bt",
+    "marketplace-deployments-standard": "mp",
+    "region-availability-maas": "mp",
+}
+
+REGION_GEOS: List[str] = ["Americas", "Europe", "Asia Pacific", "Middle East & Africa", "US Government"]
+
+
+def sku_type_key(sku_key: str, label: str = "") -> str:
+    """Map a raw snapshot SKU key to an explorer deployment type key."""
+    if sku_key in SKU_KEY_TO_TYPE:
+        return SKU_KEY_TO_TYPE[sku_key]
+    text = f"{sku_key} {label}".lower()
+    if "batch" in text:
+        return "bt"
+    if "provisioned" in text or "ptu" in text:
+        if "global" in text:
+            return "gp"
+        return "dp" if "datazone" in text or "data zone" in text else "rp"
+    if "marketplace" in text or "maas" in text:
+        return "mp"
+    if "datazone" in text or "data zone" in text:
+        return "dz"
+    if "global" in text:
+        return "gs"
+    if "standard" in text:
+        return "rs"
+    return "av"
+
+
+def region_geo(region: str) -> str:
+    lowered = region.lower()
+    if lowered.startswith("usgov") or "gov" in lowered:
+        return "US Government"
+    if "us" in lowered.split() or any(token in lowered for token in ("canada", "brazil", "mexico", "chile")):
+        return "Americas"
+    if any(token in lowered for token in ("uae", "qatar", "saudi", "israel", "africa")):
+        return "Middle East & Africa"
+    if any(token in lowered for token in ("asia", "japan", "korea", "australia", "india", "indonesia", "malaysia", "new zealand", "taiwan")):
+        return "Asia Pacific"
+    return "Europe"
+
+
+def build_availability_bits(data: Dict[str, dict]) -> Dict[str, Dict[str, int]]:
+    """Return model -> region -> bitmask of explorer deployment types."""
+    bits: Dict[str, Dict[str, int]] = defaultdict(lambda: defaultdict(int))
+    for model, payload in data.items():
+        for sku_key, sku in payload.get("skus", {}).items():
+            type_bit = DEPLOYMENT_TYPE_BY_KEY[sku_type_key(sku_key, sku.get("label", ""))]["bit"]
+            for region in sku.get("regions", []):
+                bits[model][region] |= type_bit
+        for region in payload.get("all", []):
+            if not bits[model][region]:
+                bits[model][region] = DEPLOYMENT_TYPE_BY_KEY["av"]["bit"]
+    return bits
+
+
+# Plain-language explanations for every lifecycle badge.
+LIFECYCLE_EXPLAINERS: Dict[str, Dict[str, str]] = {
+    "soon": {
+        "title": "Retiring within 30 days",
+        "body": "This version is switched off on its retirement date; after that every request returns 410 Gone. Standard deployments may be auto-upgraded to the replacement — provisioned (PTU) deployments are not.",
+        "action": "Move traffic to the replacement now.",
+    },
+    "retiring": {
+        "title": "Retiring within 90 days",
+        "body": "A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand.",
+        "action": "Test the replacement and plan the cut-over.",
+    },
+    "pending": {
+        "title": "Retirement imminent",
+        "body": "Microsoft said this version retires no earlier than a date that has now passed, so it can be switched off at any time once notice is given.",
+        "action": "Treat it as retiring now — migrate.",
+    },
+    "deprecated": {
+        "title": "Deprecated",
+        "body": "No longer available to new customers. Subscriptions that already deployed this version can keep creating and managing deployments until it retires.",
+        "action": "Don't start new work on it; schedule a migration before retirement.",
+    },
+    "preview": {
+        "title": "Preview",
+        "body": "Experimental: weights, runtime and API might change and it is not guaranteed to reach GA. When it retires it is force-upgraded or removed with at least 30 days notice.",
+        "action": "Great for evaluation — avoid for critical production.",
+    },
+    "ga": {
+        "title": "Generally available",
+        "body": "Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models).",
+        "action": "Safe to build on — note the retirement date in your roadmap.",
+    },
+    "retired": {
+        "title": "Retired",
+        "body": "Removed from service. All inference requests return 410 Gone.",
+        "action": "Use the replacement model.",
+    },
+    "untracked": {
+        "title": "No retirement date published",
+        "body": "Microsoft's retirement tables don't list a date for this model yet (common for new and partner models).",
+        "action": "Check the model card in Foundry before committing long-term.",
+    },
+}
+
+
+def lifecycle_tip_text(summary: Dict) -> Tuple[str, str]:
+    """Return (title, body) for a lifecycle badge tooltip."""
+    key = summary.get("key", "untracked")
+    info = LIFECYCLE_EXPLAINERS.get(key, LIFECYCLE_EXPLAINERS["untracked"])
+    parts = [info["body"]]
+    if summary.get("next_label"):
+        version = summary.get("version")
+        parts.append(f"Next retirement: {summary['next_label']}" + (f" (version {version})" if version else "") + ".")
+    if summary.get("replacement"):
+        parts.append(f"Replacement: {summary['replacement']}.")
+    parts.append(info["action"])
+    return info["title"], " ".join(parts)
+
+
+def lifecycle_badge_text(summary: Dict) -> str:
+    key = summary.get("key")
+    days = summary.get("days")
+    if key in ("soon", "retiring") and days is not None:
+        return f"Retires in {pluralize(days, 'day')}"
+    if key == "ga" and summary.get("next_date"):
+        retire_dt = datetime.strptime(summary["next_date"], "%Y-%m-%d")
+        return f"GA · until {'≥ ' if summary.get('estimate') else ''}{retire_dt:%b %Y}"
+    return summary.get("label", "")
+
+
+def tip_attrs(title: str, body: str) -> str:
+    return f' tabindex="0" data-tip-title="{html_escape(title)}" data-tip="{html_escape(body)}"'
+
+
+def build_explorer_data(
+    model_regions: Dict[str, Set[str]],
+    model_sku_regions: Dict[str, Dict[str, Set[str]]],
+    lifecycles: Dict[str, Dict],
+    availability_bits: Dict[str, Dict[str, int]],
+    all_regions: Set[str],
+    today: datetime,
+) -> Dict:
+    """Single JSON payload behind the model finder and the availability explorer."""
+    regions = sorted(all_regions, key=lambda region: (REGION_GEOS.index(region_geo(region)), region.lower()))
+    models = build_model_finder_data(model_regions, model_sku_regions, lifecycles)
+    for record in models:
+        model_bits = availability_bits.get(record["n"], {})
+        record["a"] = [model_bits.get(region, 0) for region in regions]
+        if record.get("lk") in LIFECYCLE_EXPLAINERS:
+            title, body = lifecycle_tip_text(lifecycles.get(record["n"], {"key": record["lk"]}))
+            record["lb"] = lifecycle_badge_text(lifecycles.get(record["n"], {"key": record["lk"], "label": record["ll"]}))
+            record["tip"] = body
+    return {
+        "generated": f"{today:%Y-%m-%d}",
+        "regions": [{"n": region, "g": region_geo(region)} for region in regions],
+        "geos": REGION_GEOS,
+        "types": [{key: item[key] for key in ("k", "bit", "group", "label", "short", "tip")} for item in DEPLOYMENT_TYPES],
+        "stages": {
+            key: {"label": LIFECYCLE_STAGES[key][0], "tone": LIFECYCLE_STAGES[key][1], **LIFECYCLE_EXPLAINERS[key]}
+            for key in LIFECYCLE_STAGES
+        },
+        "models": models,
+    }
+
+
+# ----------------------------- charts ------------------------------------
+
+CHART_STAGE_GROUPS: List[Tuple[str, str, Tuple[str, ...], str]] = [
+    # (filter key, label, stage keys, tone)
+    ("risk", "Retiring ≤ 90 days", ("soon", "retiring", "pending"), "danger"),
+    ("deprecated", "Deprecated", ("deprecated",), "caution"),
+    ("preview", "Preview", ("preview",), "info"),
+    ("ga", "Generally available", ("ga",), "success"),
+    ("untracked", "No date published", ("untracked",), "neutral"),
+    ("retired", "Retired", ("retired",), "muted"),
+]
+
+
+def render_donut_chart(lifecycles: Dict[str, Dict], href_prefix: str) -> str:
+    total = len(lifecycles) or 1
+    segments, legend = [], []
+    offset = 0.0
+    for key, label, stages, tone in CHART_STAGE_GROUPS:
+        count = sum(1 for summary in lifecycles.values() if summary["key"] in stages)
+        if not count:
+            continue
+        share = count / total * 100
+        segments.append(
+            f'<circle class="donut__seg donut__seg--{tone}" r="15.9155" cx="21" cy="21" '
+            f'stroke-dasharray="{share:.3f} {100 - share:.3f}" stroke-dashoffset="{25 - offset:.3f}">'
+            f'<title>{label}: {count}</title></circle>'
+        )
+        offset += share
+        legend.append(
+            f'<li><a href="{href_prefix}#lc={key}"><span class="chart-swatch chart-swatch--{tone}"></span>'
+            f'{label}<b>{count}</b></a></li>'
+        )
+    return f"""<div class="donut">
+        <svg viewBox="0 0 42 42" role="img" aria-label="Models by lifecycle stage">
+            <circle class="donut__ring" r="15.9155" cx="21" cy="21"></circle>
+            {''.join(segments)}
+            <text x="21" y="20.5" class="donut__value">{len(lifecycles)}</text>
+            <text x="21" y="26" class="donut__label">models</text>
+        </svg>
+        <ul class="chart-legend">{''.join(legend)}</ul>
+    </div>"""
+
+
+def render_bar_rows(rows: List[Tuple[str, int, str, str]], total: int, unit: str = "models") -> str:
+    """rows: (label, value, href, tone/class)."""
+    peak = max((value for _, value, _, _ in rows), default=1) or 1
+    items = []
+    for label, value, href, tone in rows:
+        items.append(
+            f'<li><a class="hbar" href="{href}" title="{value} of {total} {unit}">'
+            f'<span class="hbar__label">{label}</span>'
+            f'<span class="hbar__track"><span class="hbar__fill hbar__fill--{tone}" style="width:{value / peak * 100:.1f}%"></span></span>'
+            f'<span class="hbar__value">{value}</span></a></li>'
+        )
+    return f'<ul class="hbars">{"".join(items)}</ul>'
+
+
+def render_deployment_type_chart(availability_bits: Dict[str, Dict[str, int]], href_prefix: str) -> str:
+    rows = []
+    for item in DEPLOYMENT_TYPES:
+        if item["k"] == "av":
+            continue
+        count = sum(1 for regions in availability_bits.values() if any(bits & item["bit"] for bits in regions.values()))
+        if count:
+            rows.append((item["short"], count, f"{href_prefix}#t={item['k']}", item["group"]))
+    return render_bar_rows(rows, len(availability_bits))
+
+
+def render_provider_chart(model_regions: Dict[str, Set[str]], href_prefix: str) -> str:
+    counts: Dict[str, int] = defaultdict(int)
+    for model in model_regions:
+        counts[model_family(model)] += 1
+    ranked = sorted(counts.items(), key=lambda item: (-item[1], item[0]))
+    rows = [(html_escape(family), count, f"{href_prefix}#p={quote(family)}", "accent") for family, count in ranked[:8]]
+    others = sum(count for _, count in ranked[8:])
+    if others:
+        rows.append(("Other providers", others, href_prefix, "muted"))
+    return render_bar_rows(rows, len(model_regions))
+
+
+def render_retirement_months_chart(retirement_data: Dict, today: datetime, months: int = 12) -> str:
+    buckets = []
+    year, month = today.year, today.month
+    for _ in range(months):
+        buckets.append({"year": year, "month": month, "count": 0, "estimate": 0, "names": []})
+        month += 1
+        if month > 12:
+            year, month = year + 1, 1
+    index = {(b["year"], b["month"]): b for b in buckets}
+    for category, entries in retirement_data.get("models", {}).items():
+        if category == "fine_tuned":
+            continue
+        for entry in entries:
+            retire_dt, estimate = parse_lifecycle_date(entry.get("retirement_date"))
+            if not retire_dt or retire_dt < today:
+                continue
+            bucket = index.get((retire_dt.year, retire_dt.month))
+            if not bucket:
+                continue
+            bucket["count"] += 1
+            bucket["estimate"] += 1 if estimate else 0
+            bucket["names"].append(f"{entry.get('model', '')} {entry.get('version', '')}".strip())
+    peak = max((b["count"] for b in buckets), default=0) or 1
+    cols = []
+    for b in buckets:
+        label = datetime(b["year"], b["month"], 1)
+        firm = b["count"] - b["estimate"]
+        names = ", ".join(b["names"][:8]) + (f" +{len(b['names']) - 8} more" if len(b["names"]) > 8 else "")
+        tip = f"{label:%B %Y}: {pluralize(b['count'], 'version')} retiring" + (f" ({b['estimate']} no-earlier-than)" if b["estimate"] else "")
+        cols.append(
+            f'<li class="vcol{"" if b["count"] else " vcol--empty"}"{tip_attrs(tip, names or "Nothing scheduled.")}>'
+            f'<span class="vcol__bar" style="--h:{b["count"] / peak * 100:.1f}%">'
+            f'<span class="vcol__firm" style="--h:{(firm / b["count"] * 100) if b["count"] else 0:.1f}%"></span></span>'
+            f'<b>{b["count"] or ""}</b><small>{label:%b}</small></li>'
+        )
+    return f"""<ol class="vcols" aria-label="Retirements per month">{''.join(cols)}</ol>
+    <p class="chart-note"><span class="chart-swatch chart-swatch--danger"></span>Firm date <span class="chart-swatch chart-swatch--warning"></span>No-earlier-than date</p>"""
+
+
+def render_region_heatmap(model_regions: Dict[str, Set[str]], all_regions: Set[str], href_prefix: str) -> str:
+    counts: Dict[str, int] = defaultdict(int)
+    for regions in model_regions.values():
+        for region in regions:
+            counts[region] += 1
+    peak = max(counts.values(), default=1) or 1
+    groups = []
+    for geo in REGION_GEOS:
+        regions = sorted((r for r in all_regions if region_geo(r) == geo), key=lambda r: (-counts[r], r))
+        if not regions:
+            continue
+        tiles = "".join(
+            f'<a class="heat-tile" href="{href_prefix}#rg={quote(region)}" style="--i:{counts[region] / peak:.2f}"'
+            f'{tip_attrs(region, f"{counts[region]} of {len(model_regions)} models available here. Click to see which.")}>'
+            f'<span>{html_escape(region)}</span><b>{counts[region]}</b></a>'
+            for region in regions
+        )
+        groups.append(f'<div class="heat-group"><h4>{geo}</h4><div class="heat-tiles">{tiles}</div></div>')
+    return f'<div class="heatmap">{"".join(groups)}</div>'
+
+
+def build_insights_section(
+    model_regions: Dict[str, Set[str]],
+    all_regions: Set[str],
+    lifecycles: Dict[str, Dict],
+    availability_bits: Dict[str, Dict[str, int]],
+    retirement_data: Dict,
+    today: datetime,
+    href_prefix: str = "explorer/",
+) -> str:
+    return f"""<section class="insights" aria-labelledby="insights-title">
+    <header class="insights__head">
+        <h2 id="insights-title">At a glance</h2>
+        <a class="md-button md-button--primary insights__cta" href="{href_prefix}">Open the availability explorer →</a>
+    </header>
+    <div class="chart-grid">
+        <div class="chart-card">
+            <h3>Lifecycle mix</h3>
+            <p>Most urgent stage of each model. Click to filter.</p>
+            {render_donut_chart(lifecycles, href_prefix)}
+        </div>
+        <div class="chart-card">
+            <h3>Deployment options</h3>
+            <p>Models offering each deployment type somewhere.</p>
+            {render_deployment_type_chart(availability_bits, href_prefix)}
+        </div>
+        <div class="chart-card">
+            <h3>Providers</h3>
+            <p>Models tracked per provider.</p>
+            {render_provider_chart(model_regions, href_prefix)}
+        </div>
+        <div class="chart-card chart-card--wide">
+            <h3>Retirements ahead</h3>
+            <p>Model versions retiring per month over the next 12 months.</p>
+            {render_retirement_months_chart(retirement_data, today)}
+        </div>
+        <div class="chart-card chart-card--full">
+            <h3>Where models run</h3>
+            <p>Models available per region, grouped by geography. Darker means more models.</p>
+            {render_region_heatmap(model_regions, all_regions, href_prefix)}
+        </div>
+    </div>
+</section>"""
+
+
+def generate_explorer_page(all_regions: Set[str], model_count: int) -> str:
+    type_chips = "".join(
+        f'<button type="button" class="ax-chip ax-chip--{item["group"]}" data-type="{item["k"]}"{tip_attrs(item["label"], item["tip"])}>'
+        f'<i class="ax-dot ax-dot--{item["group"]}"></i>{item["short"]}</button>'
+        for item in DEPLOYMENT_TYPES if item["k"] != "av"
+    )
+    geo_options = "".join(f'<option value="{html_escape(geo)}">{html_escape(geo)}</option>' for geo in REGION_GEOS)
+    stage_options = "".join(
+        f'<option value="{key}">{label}</option>' for key, label, _, _ in CHART_STAGE_GROUPS
+    )
+    legend = "".join(
+        f'<span{tip_attrs(title, body)}><i class="ax-dot ax-dot--{group}"></i>{title}</span>'
+        for group, title, body in [
+            ("paygo", "Pay-as-you-go", "Global, Data Zone or Regional Standard — billed per token."),
+            ("ptu", "Provisioned (PTU)", "Reserved throughput. See the PTU guide for sizing and pricing."),
+            ("batch", "Batch", "Asynchronous 24-hour jobs at a discount."),
+            ("partner", "Partner", "Partner model via serverless API / Marketplace."),
+            ("other", "Listed", "Available in the region; deployment type not published."),
+        ]
+    )
+    return f"""---
+hide:
+  - navigation
+  - toc
+---
+
+# Availability Explorer
+
+<p class="page-lede">Every model, every region, every deployment type — in one view. Filters update the grid instantly; the URL updates too, so you can share exactly what you see.</p>
+
+<div class="ax" data-explorer data-src="../assets/model-index.json" data-root="../">
+    <div class="ax-toolbar">
+        <div class="ax-search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 3a6.5 6.5 0 0 1 5.25 10.33l5.46 5.46-1.42 1.42-5.46-5.46A6.5 6.5 0 1 1 9.5 3m0 2a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9"/></svg>
+            <input type="search" data-ax="q" placeholder="Filter {model_count} models — e.g. gpt-5, claude, embedding" aria-label="Filter models" autocomplete="off" spellcheck="false">
+        </div>
+        <label class="ax-select"><span>Provider</span><select data-ax="p"><option value="">All providers</option></select></label>
+        <label class="ax-select"><span>Lifecycle</span><select data-ax="lc"><option value="">Any stage</option>{stage_options}</select></label>
+        <label class="ax-select"><span>Geography</span><select data-ax="g"><option value="">All geographies</option>{geo_options}</select></label>
+        <label class="ax-select"><span>Sort</span><select data-ax="s">
+            <option value="name">Name</option>
+            <option value="coverage">Most regions</option>
+            <option value="retire">Retiring soonest</option>
+        </select></label>
+    </div>
+    <div class="ax-types" role="group" aria-label="Deployment type">
+        <span class="ax-types__label">Deployment type</span>
+        <button type="button" class="ax-chip is-active" data-type="">Any</button>
+        {type_chips}
+    </div>
+    <div class="ax-status">
+        <p class="ax-summary" data-ax-summary aria-live="polite">Loading…</p>
+        <div class="ax-required" data-ax-required hidden></div>
+        <div class="ax-actions">
+            <label class="ax-toggle"><input type="checkbox" data-ax="he" checked> Hide empty regions</label>
+            <button type="button" class="ax-btn" data-ax-action="reset">Reset</button>
+            <button type="button" class="ax-btn" data-ax-action="csv">Download CSV</button>
+        </div>
+    </div>
+    <div class="ax-legend">{legend}<em>Click a region header to require it.</em></div>
+    <div class="ax-scroll" data-ax-scroll>
+        <table class="ax-grid" data-ax-grid></table>
+    </div>
+</div>
+
+<noscript>The explorer needs JavaScript. Browse the <a href="../models/">model table</a> instead.</noscript>
+"""
+
+
+# ----------------------------- PTU guide ---------------------------------
+
+PTU_SOURCES = {
+    "overview": "https://learn.microsoft.com/azure/foundry/openai/concepts/provisioned-throughput",
+    "sizing": "https://learn.microsoft.com/azure/foundry/openai/how-to/provisioned-throughput-sizing",
+    "billing": "https://learn.microsoft.com/azure/foundry/openai/concepts/provisioned-throughput-billing",
+    "start": "https://learn.microsoft.com/azure/foundry/openai/how-to/provisioned-get-started",
+    "spillover": "https://learn.microsoft.com/azure/foundry/openai/how-to/spillover-traffic-management",
+    "calculator": "https://ai.azure.com/nextgen/goto/build/models/ptu-calculator",
+    "quota_form": "https://aka.ms/oai/stuquotarequest",
+    "benchmark": "https://github.com/Azure/azure-openai-benchmark",
+}
+
+# Source: provisioned-throughput-sizing "deployment parameters and throughput values by model" (retrieved 2026-10-07).
+# (model, global/data zone min, global/data zone increment, regional min, regional increment, input TPM per PTU, output:input ratio)
+PTU_SIZING: List[Tuple[str, int, int, int, int, int, int]] = [
+    ("gpt-5.6-luna", 15, 5, 50, 50, 30000, 6),
+    ("gpt-5.6-terra", 15, 5, 50, 50, 3000, 6),
+    ("gpt-5.6-sol", 15, 5, 50, 50, 1200, 6),
+    ("gpt-5.5", 15, 5, 50, 50, 1200, 6),
+    ("gpt-5.4", 15, 5, 50, 50, 2400, 6),
+    ("gpt-5.4-mini", 15, 5, 25, 25, 7900, 6),
+    ("gpt-5.3-codex", 15, 5, 50, 50, 3400, 8),
+    ("gpt-5.2", 15, 5, 50, 50, 3400, 8),
+    ("gpt-5.2-codex", 15, 5, 50, 50, 3400, 8),
+    ("gpt-5.1", 15, 5, 50, 50, 4750, 8),
+    ("gpt-5.1-codex", 15, 5, 50, 50, 4750, 8),
+    ("gpt-5", 15, 5, 50, 50, 4750, 8),
+    ("gpt-5-mini", 15, 5, 50, 50, 4750, 8),
+    ("gpt-4.1", 15, 5, 25, 25, 23750, 4),
+    ("gpt-4.1-mini", 15, 5, 50, 50, 3000, 4),
+    ("gpt-4.1-nano", 15, 5, 25, 25, 14900, 4),
+    ("o3", 15, 5, 50, 50, 3000, 4),
+    ("o4-mini", 15, 5, 25, 25, 5400, 4),
+]
+
+
+def generate_ptu_page(availability_bits: Dict[str, Dict[str, int]]) -> str:
+    """Plain-language, step-by-step guide to provisioned throughput."""
+
+    def models_with(type_key: str) -> int:
+        bit = DEPLOYMENT_TYPE_BY_KEY[type_key]["bit"]
+        return sum(1 for regions in availability_bits.values() if any(bits & bit for bits in regions.values()))
+
+    def regions_with(type_key: str) -> int:
+        bit = DEPLOYMENT_TYPE_BY_KEY[type_key]["bit"]
+        return len({region for regions in availability_bits.values() for region, bits in regions.items() if bits & bit})
+
+    type_cards = []
+    for key, sku, routing, best, minimum in [
+        ("gp", "GlobalProvisionedManaged", "Routed across Azure regions worldwide", "Highest availability and the most capacity", "15 PTU min · +5"),
+        ("dp", "DataZoneProvisionedManaged", "Stays inside a data zone (US or EU)", "Zone-level data residency with better availability than regional", "15 PTU min · +5"),
+        ("rp", "ProvisionedManaged", "Stays in the region you deploy to", "Strict single-region data residency", "25–50 PTU min · +25/50"),
+    ]:
+        item = DEPLOYMENT_TYPE_BY_KEY[key]
+        type_cards.append(f"""<div class="ptu-type ptu-type--{key}">
+        <h3>{item['label'].replace(' (PTU)', '')}</h3>
+        <code>{sku}</code>
+        <dl>
+            <dt>Data processing</dt><dd>{routing}</dd>
+            <dt>Best for</dt><dd>{best}</dd>
+            <dt>Typical size</dt><dd>{minimum}</dd>
+        </dl>
+        <a class="ptu-type__link" href="../explorer/#t={key}">{models_with(key)} models · {regions_with(key)} regions →</a>
+    </div>""")
+
+    sizing_rows = "\n".join(
+        f"| `{model}` | {gmin} (+{ginc}) | {rmin} (+{rinc}) | {tpm:,} | {ratio} |"
+        for model, gmin, ginc, rmin, rinc, tpm, ratio in PTU_SIZING
+    )
+    calc_data = html_escape(json.dumps([
+        {"m": model, "gmin": gmin, "ginc": ginc, "rmin": rmin, "rinc": rinc, "tpm": tpm, "ratio": ratio}
+        for model, gmin, ginc, rmin, rinc, tpm, ratio in PTU_SIZING
+    ], separators=(",", ":")))
+    model_options = "".join(
+        f'<option value="{model}"{" selected" if model == "gpt-4.1" else ""}>{model}</option>' for model, *_ in PTU_SIZING
+    )
+
+    return f"""---
+hide:
+  - toc
+---
+
+# Provisioned Throughput (PTU) Guide
+
+<div class="ptu-hero">
+    <p class="ptu-hero__lede"><strong>A PTU (provisioned throughput unit) is a slice of model capacity reserved only for you.</strong> You pay for it by the hour whether or not you send traffic. In return you get predictable latency, and when you hit 100% the service answers <code>429</code> immediately instead of slowing down.</p>
+    <div class="ptu-hero__facts">
+        <span{tip_attrs("Model-independent quota", "PTU quota is not tied to one model: the same quota can deploy any supported model.")}><b>Model-independent</b> quota</span>
+        <span{tip_attrs("Region-specific", "Quota is granted per subscription, per region and per deployment type.")}><b>Per region</b> &amp; type</span>
+        <span{tip_attrs("Throughput varies by model", "Each model gets a different number of tokens per minute from one PTU — see the sizing table.")}><b>Tokens/PTU</b> vary by model</span>
+        <span{tip_attrs("Quota ≠ capacity", "Having PTU quota does not guarantee the capacity is free when you deploy.")}><b>Quota ≠</b> capacity</span>
+    </div>
+</div>
+
+## 1 · Is PTU right for you?
+
+<div class="ptu-fit">
+    <div class="ptu-fit__col ptu-fit__col--yes">
+        <h3>Choose PTU when…</h3>
+        <ul>
+            <li>Traffic is <strong>steady and predictable</strong></li>
+            <li>You need <strong>consistent, low latency</strong> (real-time, interactive)</li>
+            <li>Volume is <strong>production-scale</strong> and per-token bills are climbing</li>
+        </ul>
+    </div>
+    <div class="ptu-fit__col ptu-fit__col--no">
+        <h3>Stay on Standard when…</h3>
+        <ul>
+            <li>You're <strong>developing or testing</strong></li>
+            <li>Usage is <strong>low</strong> or <strong>highly variable</strong></li>
+            <li>You can't yet predict peak load well enough to size it</li>
+        </ul>
+    </div>
+</div>
+
+## 2 · Pick a provisioned deployment type
+
+<div class="ptu-types">
+{chr(10).join(type_cards)}
+</div>
+
+<p class="diagram-note">Reservations are bought per deployment type and are not interchangeable — decide this before you buy.</p>
+
+## 3 · Size it
+
+<ol class="ptu-steps">
+    <li><strong>Measure your peak.</strong> Peak requests per minute, average prompt tokens, average response tokens and expected cache-hit rate.</li>
+    <li><strong>Run the Foundry capacity calculator.</strong> In the Foundry portal open <em>Quota → Provisioned throughput</em>, or go straight to the <a href="{PTU_SOURCES['calculator']}">capacity calculator</a>. It rounds to the model's minimum and scale increment.</li>
+    <li><strong>Benchmark it.</strong> Deploy the estimate and replay your traffic shape for 10+ minutes with the <a href="{PTU_SOURCES['benchmark']}">Azure OpenAI benchmark tool</a>, then with your real client.</li>
+    <li><strong>Adjust.</strong> Watch utilization and 429 rates in Azure Monitor and resize.</li>
+</ol>
+
+<div class="ptu-calc" data-ptu-calc data-models="{calc_data}">
+    <div class="ptu-calc__head">
+        <h3>Quick estimate</h3>
+        <p>Same formula as Microsoft's sizing guide. Always confirm in the <a href="{PTU_SOURCES['calculator']}">Foundry capacity calculator</a>.</p>
+    </div>
+    <div class="ptu-calc__form">
+        <label>Model<select data-calc="model">{model_options}</select></label>
+        <label>Deployment type<select data-calc="type"><option value="g">Global / Data Zone</option><option value="r">Regional</option></select></label>
+        <label>Peak requests / min<input type="number" min="0" step="1" value="1000" data-calc="rpm"></label>
+        <label>Prompt tokens / call<input type="number" min="0" step="1" value="200" data-calc="prompt"></label>
+        <label>Response tokens / call<input type="number" min="0" step="1" value="20" data-calc="response"></label>
+        <label>Cache-hit rate %<input type="number" min="0" max="100" step="1" value="0" data-calc="cache"></label>
+    </div>
+    <div class="ptu-calc__result" aria-live="polite">
+        <div class="ptu-calc__big"><strong data-calc-out="ptu">–</strong><span>PTUs to deploy</span></div>
+        <div class="ptu-calc__detail" data-calc-out="detail"></div>
+    </div>
+</div>
+
+??? info "The formula and per-model numbers"
+    - Input TPM = peak RPM × prompt tokens
+    - Output TPM = peak RPM × response tokens
+    - **Normalized TPM** = Input TPM × (1 − cache rate) + output-to-input ratio × Output TPM
+    - **PTUs** = Normalized TPM ÷ input TPM per PTU, rounded up to the minimum / increment
+
+    Worked example from Microsoft (gpt-5.2, Data Zone): 1,000 RPM × 200 prompt + 20 response tokens → 360,000 normalized TPM → 105.9 → **110 PTUs**. With a 50% cache rate → **80 PTUs**.
+
+    | Model | Global / Data Zone min (step) | Regional min (step) | Input TPM per PTU | Output : input ratio |
+    |---|---|---|---|---|
+    {sizing_rows.replace(chr(10), chr(10) + '    ')}
+
+    GPT-6 family and image models use normalized token accounting — use the capacity calculator for those. Source: [PTU sizing]({PTU_SOURCES['sizing']}).
+
+## 4 · Get capacity, then reserve
+
+<ol class="ptu-flow">
+    <li class="ptu-flow__step"><span>1</span><strong>Check quota</strong><small>Foundry → Manage → Quota → Provisioned throughput unit. <a href="{PTU_SOURCES['quota_form']}">Request more</a> if needed.</small></li>
+    <li class="ptu-flow__step"><span>2</span><strong>Deploy</strong><small>Creating the deployment is what actually claims capacity. The portal suggests other regions if yours is full.</small></li>
+    <li class="ptu-flow__step"><span>3</span><strong>Reserve</strong><small>Only now buy a matching Azure Reservation (1 month or 1 year) to get the discounted rate.</small></li>
+    <li class="ptu-flow__step"><span>4</span><strong>Go live</strong><small>Same API as Standard — call it with the deployment name.</small></li>
+</ol>
+
+!!! warning "Reservations don't guarantee capacity"
+    Quota is just a limit, and a reservation is just a discount. Capacity is only held once a deployment exists. **Deploy first, then buy the reservation** — matching deployment type, region (Data Zone and Regional) and scope.
+
+| | Hourly (no commitment) | Azure Reservation |
+|---|---|---|
+| Price | Full $/PTU/hour, prorated to the minute | Discounted $/PTU/hour |
+| Term | None — stops only when you **delete** the deployment | 1 month or 1 year |
+| Good for | Benchmarks, short events | Steady production |
+| Watch out | Can't be paused; scaling down and back up risks losing capacity | Bought per deployment type; extra PTUs above the reservation bill hourly |
+
+## 5 · Run it in production
+
+<div class="ptu-ops">
+    <div><h3>Monitor</h3><p>Azure Monitor metric <strong>Provisioned-managed utilization V2</strong> on the Foundry resource. Requests are rejected at 100%.</p></div>
+    <div><h3>Handle 429s</h3><p>A 429 is a traffic signal, not an outage. Retry using the <code>retry-after-ms</code> header — SDK retries do this for you.</p></div>
+    <div><h3>Spill over</h3><p>Send overflow to a Standard deployment in the same resource automatically with <a href="{PTU_SOURCES['spillover']}">spillover</a> (not yet for DeepSeek or Llama).</p></div>
+    <div><h3>Plan retirements</h3><p>Provisioned deployments are <strong>never auto-upgraded</strong>. Watch the <a href="../retirements/">retirement dates</a> and migrate yourself.</p></div>
+</div>
+
+!!! tip "Cleaning up"
+    Delete the deployment before deleting the resource — billing continues until the resource is purged. Cancel or exchange the reservation separately.
+
+<p class="dash-footnote">Summarised from Microsoft Learn: <a href="{PTU_SOURCES['overview']}">What is provisioned throughput</a> · <a href="{PTU_SOURCES['sizing']}">PTU sizing</a> · <a href="{PTU_SOURCES['billing']}">Billing &amp; reservations</a> · <a href="{PTU_SOURCES['start']}">Operate in production</a>. Retrieved Oct 2026 — check the source pages for the latest numbers.</p>
+"""
 
 
 def model_finder_widget(data_src: str, root: str, placeholder: str = "Search models — e.g. gpt-5, o4-mini, claude, embedding") -> str:
@@ -1135,6 +1797,7 @@ def generate_index_page(
     retirement_data: Dict = None,
     history: List[Dict] = None,
     lifecycles: Dict[str, Dict] = None,
+    availability_bits: Dict[str, Dict[str, int]] = None,
 ) -> str:
     """Generate the dashboard home page."""
     today = datetime.utcnow()
@@ -1199,6 +1862,8 @@ hide:
     </a>
 </div>
 
+{build_insights_section(model_regions, all_regions, lifecycles, availability_bits or {}, retirement_data, today)}
+
 <div class="dash-grid">
     <section class="dash-panel" aria-labelledby="watchlist-title">
         <header class="dash-panel__head">
@@ -1218,20 +1883,11 @@ hide:
     </section>
 </div>
 
-<section class="dash-panel dash-panel--wide" aria-labelledby="lifecycle-title">
-    <header class="dash-panel__head">
-        <h2 id="lifecycle-title">How model lifecycles work</h2>
-        <a href="lifecycle/">Lifecycle guide</a>
-    </header>
-    {render_stage_flow(lifecycle_stage_counts(lifecycles))}
-    {render_ga_timeline_diagram(compact=True)}
-</section>
-
 <nav class="explore-row" aria-label="Explore">
-    <a href="models/"><strong>All models</strong><span>Filterable catalog</span></a>
-    <a href="by-region/"><strong>By region</strong><span>What runs where</span></a>
-    <a href="by-sku/"><strong>By deployment type</strong><span>Global, Data Zone, PTU</span></a>
-    <a href="lifecycle/"><strong>Lifecycle guide</strong><span>Dates &amp; what to do</span></a>
+    <a href="explorer/"><strong>Availability explorer</strong><span>Every model × region in one grid</span></a>
+    <a href="ptu/"><strong>PTU guide</strong><span>Is provisioned right for you?</span></a>
+    <a href="lifecycle/"><strong>Lifecycle guide</strong><span>What each badge means</span></a>
+    <a href="models/"><strong>All models</strong><span>Sortable catalog table</span></a>
 </nav>
 
 <p class="dash-footnote">Snapshot generated {today:%Y-%m-%d %H:%M} UTC{source_note}. Validate active deployments with the Models API and Azure Service Health.</p>
@@ -1275,17 +1931,43 @@ def generate_lifecycle_page(lifecycles: Dict[str, Dict]) -> str:
 | <span class="sku-badge sku-standard">Standard</span> Regional Standard | Auto-upgraded when available in the region | Check regional availability of the replacement |
 | <span class="sku-badge sku-provisioned">Provisioned</span> Provisioned (PTU) | **Not upgraded** — requests fail after retirement | Create a new PTU deployment on the replacement and move traffic |
 
+## What each stage lets you do
+
+| Stage | Meaning | New deployments | Existing deployments |
+|---|---|---|---|
+| <span class="lc-badge lc-badge--info">Preview</span> | Experimental — weights, runtime and API might change; not guaranteed to reach GA | Yes | Yes |
+| <span class="lc-badge lc-badge--success">Generally available</span> | Production-ready — weights and APIs are fixed | Yes | Yes |
+| Legacy | Newer, more capable models exist (optional stage) | Yes, until deprecated | Yes |
+| <span class="lc-badge lc-badge--caution">Deprecated</span> | No longer available to new customers | Only subscriptions that already used this version | Yes |
+| <span class="lc-badge lc-badge--muted">Retired</span> | Removed from service — every request returns `410 Gone` | No | No |
+
+!!! info "Key timings"
+    - GA models get **about 18 months** from launch to retirement and become Deprecated at **12 months**. GA models from Anthropic, DeepSeek, Fireworks and Mistral AI follow a **12-month** lifecycle.
+    - A replacement is named **90–120 days** before retirement — in Global Standard about 90 days out, and in provisioned regions about 30 days out.
+    - Preview models launch with a *not-sooner-than* date (typically ~90 days) and are force-upgraded or removed with **at least 30 days** notice.
+    - Standard deployment types can be auto-upgraded. **Provisioned (PTU) deployments are never auto-upgraded** — you must migrate them yourself.
+
+## How this site labels models
+
+Hover or tap any lifecycle badge on this site for a plain-language explanation of what it means for you.
+
+| Badge | What it means | What to do |
+|---|---|---|
+| <span class="lc-badge lc-badge--danger">Retires in 12 days</span> | Firm retirement date within 30 days | Move traffic to the replacement now |
+| <span class="lc-badge lc-badge--warning">Retires in 60 days</span> | Firm retirement date within 90 days | Test the replacement and plan the cut-over |
+| <span class="lc-badge lc-badge--warning">Retirement imminent</span> | A *no-earlier-than* date has passed — it can retire any time after notice | Treat as retiring now |
+| <span class="lc-badge lc-badge--caution">Deprecated</span> | Closed to new customers | Don't start new work on it |
+| <span class="lc-badge lc-badge--success">GA · until Jun 2027</span> | Generally available, with its next retirement month | Safe to build on |
+| <span class="lc-badge lc-badge--neutral">No retirement date</span> | Not in Microsoft's retirement tables yet (common for new and partner models) | Check the model card in Foundry |
+
 ## Reading the Models API
 
-| API `lifecycleStatus` | Means | Dashboard label |
+| API `lifecycleStatus` | Means | Badge on this site |
 |---|---|---|
 | `Preview` | Preview, not for production | <span class="lc-badge lc-badge--info">Preview</span> |
 | `GenerallyAvailable` | GA and open to new customers | <span class="lc-badge lc-badge--success">Generally available</span> |
 | `Deprecating` | Deprecated — existing customers only | <span class="lc-badge lc-badge--caution">Deprecated</span> |
 | `Deprecated` | Retired — no longer served | <span class="lc-badge lc-badge--muted">Retired</span> |
-
-!!! tip "Dashboard labels"
-    <span class="lc-badge lc-badge--danger">Retiring ≤30d</span> and <span class="lc-badge lc-badge--warning">Retiring ≤90d</span> flag versions with a firm retirement date inside that window. <span class="lc-badge lc-badge--warning">Retirement due</span> means a *no-earlier-than* date has passed and retirement can happen at any time.
 
 Adapted from [Foundry Models lifecycle and support policy](https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirements). See [Retirements](../retirements/) for every model-specific date.
 """
@@ -2281,10 +2963,13 @@ def main():
     
     today = datetime.utcnow()
     lifecycles = build_model_lifecycles(model_regions, retirement_index, today)
+    availability_bits = build_availability_bits(data)
 
     # Generate main pages
     pages = {
-        "index.md": generate_index_page(model_regions, model_sku_regions, all_labels, all_regions, retirement_data, history, lifecycles),
+        "index.md": generate_index_page(model_regions, model_sku_regions, all_labels, all_regions, retirement_data, history, lifecycles, availability_bits),
+        "explorer.md": generate_explorer_page(all_regions, len(model_regions)),
+        "ptu.md": generate_ptu_page(availability_bits),
         "lifecycle.md": generate_lifecycle_page(lifecycles),
         "models/index.md": generate_model_index_page(model_regions, model_sku_regions, all_regions, lifecycles),
         "by-region.md": generate_by_region_page(model_regions, model_region_skus, all_regions),
@@ -2303,7 +2988,7 @@ def main():
     assets_dir.mkdir(exist_ok=True)
     finder_path = assets_dir / "model-index.json"
     finder_path.write_text(
-        json.dumps(build_model_finder_data(model_regions, model_sku_regions, lifecycles), separators=(",", ":"), ensure_ascii=False),
+        json.dumps(build_explorer_data(model_regions, model_sku_regions, lifecycles, availability_bits, all_regions, today), separators=(",", ":"), ensure_ascii=False),
         encoding="utf-8",
     )
     print(f"Generated: {finder_path}")

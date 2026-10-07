@@ -4,7 +4,7 @@
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-emerging">Emerging</span>
-            <span class="lc-badge lc-badge--warning">Retiring ≤90d</span>
+            <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Next retirement: Dec 26, 2026 (version 2025-06-26). Test the replacement and plan the cut-over.">Retires in 79 days</span>
             <span class="model-profile__family">OpenAI</span>
             <span class="model-profile__coverage-note">Under 15 regions tracked</span>
         </div>
@@ -46,10 +46,10 @@
 <div class="lc-version lc-version--warning">
     <div class="lc-version__head">
         <code>2025-06-26</code>
-        <span class="lc-badge lc-badge--warning">Retiring ≤90d</span>
+        <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Test the replacement and plan the cut-over.">Retiring within 90 days</span>
         <span class="lc-version__countdown lc-version__countdown--warning">in 3 months</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:66.61%"></span><span class="lc-seg lc-seg--deprecated" style="left:66.61%;width:33.39%"></span><span class="lc-today" style="left:85.04%"><em>Today</em></span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:66.61%"></span><span class="lc-seg lc-seg--deprecated" style="left:66.61%;width:33.39%"></span><span class="lc-today" style="left:85.40%"><em>Today</em></span></div>
     <div class="lc-version__dates"><span><b>Released</b> Jun 26, 2025</span><span><b>Deprecated</b> Jun 26, 2026</span><span><b>Retires</b> Dec 26, 2026</span></div>
     
 </div>
@@ -146,4 +146,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-05 15:23 UTC_
+_Last updated: 2026-10-07 14:13 UTC_

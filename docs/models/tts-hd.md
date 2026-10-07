@@ -4,7 +4,7 @@
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-emerging">Emerging</span>
-            <span class="lc-badge lc-badge--success">Generally available</span>
+            <span class="lc-badge lc-badge--success" tabindex="0" data-tip-title="Generally available" data-tip="Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models). Safe to build on — note the retirement date in your roadmap.">Generally available</span>
             <span class="model-profile__family">OpenAI</span>
             <span class="model-profile__coverage-note">Under 15 regions tracked</span>
         </div>
@@ -46,10 +46,10 @@
 <div class="lc-version lc-version--success">
     <div class="lc-version__head">
         <code>001</code>
-        <span class="lc-badge lc-badge--success">Generally available</span>
+        <span class="lc-badge lc-badge--success" tabindex="0" data-tip-title="Generally available" data-tip="Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models). Safe to build on — note the retirement date in your roadmap.">Generally available</span>
         
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:62.50%"></span><span class="lc-seg lc-seg--deprecated lc-seg--estimate" style="left:62.50%;width:30.82%"></span><span class="lc-seg lc-seg--open" style="left:calc(100% - 2rem);width:2rem"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:62.29%"></span><span class="lc-seg lc-seg--deprecated lc-seg--estimate" style="left:62.29%;width:30.72%"></span><span class="lc-seg lc-seg--open" style="left:calc(100% - 2rem);width:2rem"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
     <div class="lc-version__dates"><span><b>Deprecated</b> ≥ Feb 28, 2026</span><span><b>Retires</b> not announced</span></div>
     
 </div>
@@ -158,4 +158,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-05 15:23 UTC_
+_Last updated: 2026-10-07 14:13 UTC_

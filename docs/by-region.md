@@ -17312,4 +17312,4 @@ Find which AI models are available in your Azure region, including their deploym
 
 ---
 
-_Last updated: 2026-10-05 15:23 UTC_
+_Last updated: 2026-10-07 14:13 UTC_

@@ -4,7 +4,7 @@
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-broad">Broad</span>
-            <span class="lc-badge lc-badge--danger">Retiring ≤30d</span>
+            <span class="lc-badge lc-badge--danger" tabindex="0" data-tip-title="Retiring within 30 days" data-tip="This version is switched off on its retirement date; after that every request returns 410 Gone. Standard deployments may be auto-upgraded to the replacement — provisioned (PTU) deployments are not. Next retirement: No earlier than Oct 30, 2026 (version 1). Move traffic to the replacement now.">Retires in 22 days</span>
             <span class="model-profile__family">OpenAI</span>
             <span class="model-profile__coverage-note">25+ regions tracked</span>
         </div>
@@ -31,7 +31,7 @@
     </div>
     <div class="model-metric model-metric--danger">
         <span>Next retirement</span>
-        <strong>in 24 days</strong>
+        <strong>in 22 days</strong>
     </div>
 </div>
     <div class="model-profile__insight">
@@ -46,10 +46,10 @@
 <div class="lc-version lc-version--danger">
     <div class="lc-version__head">
         <code>1</code>
-        <span class="lc-badge lc-badge--danger">Retiring ≤30d</span>
-        <span class="lc-version__countdown lc-version__countdown--danger">No earlier than in 24 days</span>
+        <span class="lc-badge lc-badge--danger" tabindex="0" data-tip-title="Retiring within 30 days" data-tip="This version is switched off on its retirement date; after that every request returns 410 Gone. Standard deployments may be auto-upgraded to the replacement — provisioned (PTU) deployments are not. Move traffic to the replacement now.">Retiring within 30 days</span>
+        <span class="lc-version__countdown lc-version__countdown--danger">No earlier than in 22 days</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:100.00%"></span><span class="lc-today lc-today--end" style="left:95.44%"><em>Today</em></span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:100.00%"></span><span class="lc-today lc-today--end" style="left:95.80%"><em>Today</em></span></div>
     <div class="lc-version__dates"><span><b>Retires</b> ≥ Oct 30, 2026</span></div>
     
 </div>
@@ -239,4 +239,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-05 15:23 UTC_
+_Last updated: 2026-10-07 14:13 UTC_

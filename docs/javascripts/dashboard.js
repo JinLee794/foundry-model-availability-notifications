@@ -46,9 +46,11 @@
           if (!response.ok) throw new Error('HTTP ' + response.status);
           return response.json();
         })
-        .then(function (records) {
+        .then(function (payload) {
+          const records = Array.isArray(payload) ? payload : payload.models || [];
           records.forEach(function (record) { record._key = normalize(record.n); });
-          return records;
+          if (!Array.isArray(payload)) payload.models = records;
+          return Array.isArray(payload) ? { models: records } : payload;
         });
     }
     return dataCache[src];
@@ -72,7 +74,8 @@
     if (record.nd) meta += '<span>Retires ' + escapeHtml(record.nd) + '</span>';
     if (record.rp) meta += '<span>→ ' + escapeHtml(record.rp) + '</span>';
     const badge = record.ll
-      ? '<span class="lc-badge lc-badge--' + escapeHtml(record.lt) + '">' + escapeHtml(record.ll) + '</span>'
+      ? '<span class="lc-badge lc-badge--' + escapeHtml(record.lt) + '" data-tip-title="' + escapeHtml(record.ll) +
+        '" data-tip="' + escapeHtml(record.tip || '') + '">' + escapeHtml(record.lb || record.ll) + '</span>'
       : '';
     return (
       '<a class="finder-result' + (active ? ' is-active' : '') + '" role="option" href="' +
@@ -172,7 +175,8 @@
     });
 
     loadData(el.dataset.src)
-      .then(function (data) {
+      .then(function (payload) {
+        const data = payload.models;
         records = data;
         const families = {};
         data.forEach(function (record) { families[record.f] = (families[record.f] || 0) + 1; });
@@ -215,10 +219,108 @@
     });
   }
 
+  /* Floating tooltip for any element with data-tip / data-tip-title. */
+  const tip = (function () {
+    let el = null;
+    let owner = null;
+    function ensure() {
+      if (!el) {
+        el = document.createElement('div');
+        el.className = 'fm-tip';
+        el.setAttribute('role', 'tooltip');
+        el.hidden = true;
+        document.body.appendChild(el);
+      }
+      return el;
+    }
+    function show(target, title, body) {
+      const node = ensure();
+      owner = target;
+      node.innerHTML = (title ? '<strong>' + escapeHtml(title) + '</strong>' : '') +
+        (body ? '<span>' + escapeHtml(body) + '</span>' : '');
+      node.hidden = false;
+      const rect = target.getBoundingClientRect();
+      const box = node.getBoundingClientRect();
+      const margin = 8;
+      let left = rect.left + rect.width / 2 - box.width / 2;
+      left = Math.max(margin, Math.min(left, window.innerWidth - box.width - margin));
+      let top = rect.top - box.height - margin;
+      node.classList.toggle('fm-tip--below', top < margin);
+      if (top < margin) top = rect.bottom + margin;
+      node.style.left = left + 'px';
+      node.style.top = top + 'px';
+    }
+    function hide(target) {
+      if (!el || (target && target !== owner)) return;
+      el.hidden = true;
+      owner = null;
+    }
+    function fromEvent(event) {
+      const target = event.target.closest && event.target.closest('[data-tip], [data-tip-title]');
+      if (target) show(target, target.getAttribute('data-tip-title'), target.getAttribute('data-tip'));
+      return target;
+    }
+    document.addEventListener('pointerover', function (event) {
+      if (event.pointerType === 'touch') return;
+      fromEvent(event);
+    });
+    document.addEventListener('pointerout', function (event) {
+      const target = event.target.closest && event.target.closest('[data-tip], [data-tip-title]');
+      if (target && !target.contains(event.relatedTarget)) hide(target);
+    });
+    document.addEventListener('focusin', fromEvent);
+    document.addEventListener('focusout', function (event) { hide(event.target); });
+    document.addEventListener('click', function (event) {
+      if (!fromEvent(event)) hide();
+    });
+    window.addEventListener('scroll', function () { hide(); }, true);
+    return { show: show, hide: hide };
+  })();
+  window.FMTip = tip;
+
+  /* PTU quick estimate (same formula as Microsoft's PTU sizing guide). */
+  function mountPtuCalc(el) {
+    if (el.dataset.mounted) return;
+    el.dataset.mounted = 'true';
+    let models = [];
+    try { models = JSON.parse(el.dataset.models || '[]'); } catch (e) { return; }
+    const field = function (name) { return el.querySelector('[data-calc="' + name + '"]'); };
+    const out = function (name) { return el.querySelector('[data-calc-out="' + name + '"]'); };
+    const fmt = function (n) { return Math.round(n).toLocaleString(); };
+    function update() {
+      const model = models.filter(function (m) { return m.m === field('model').value; })[0];
+      if (!model) return;
+      const regional = field('type').value === 'r';
+      const min = regional ? model.rmin : model.gmin;
+      const inc = regional ? model.rinc : model.ginc;
+      const rpm = Math.max(+field('rpm').value || 0, 0);
+      const prompt = Math.max(+field('prompt').value || 0, 0);
+      const response = Math.max(+field('response').value || 0, 0);
+      const cache = Math.min(Math.max(+field('cache').value || 0, 0), 100) / 100;
+      const inputTpm = rpm * prompt;
+      const outputTpm = rpm * response;
+      const normalized = inputTpm * (1 - cache) + model.ratio * outputTpm;
+      const raw = normalized / model.tpm;
+      const ptu = raw <= 0 ? 0 : Math.max(min, Math.ceil(raw / inc) * inc);
+      out('ptu').textContent = ptu ? fmt(ptu) : '0';
+      out('detail').innerHTML =
+        '<span>Normalized TPM <b>' + fmt(normalized) + '</b></span>' +
+        '<span>Raw estimate <b>' + raw.toFixed(1) + ' PTU</b></span>' +
+        '<span>Minimum <b>' + min + '</b> · step <b>' + inc + '</b></span>' +
+        '<span>' + fmt(model.tpm) + ' input TPM per PTU · output counts ×' + model.ratio + '</span>';
+    }
+    el.addEventListener('input', update);
+    el.addEventListener('change', update);
+    update();
+  }
+
   function mountAll() {
     document.querySelectorAll('[data-model-finder]').forEach(mountFinder);
     document.querySelectorAll('[data-matrix-filter]').forEach(mountMatrixFilter);
+    document.querySelectorAll('[data-ptu-calc]').forEach(mountPtuCalc);
+    tip.hide();
   }
+  window.FMLoadData = loadData;
 
   document.addEventListener('keydown', function (event) {
     if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') {

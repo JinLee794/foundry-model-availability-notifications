@@ -69,10 +69,13 @@ extra_javascript:
   - https://cdn.datatables.net/buttons/2.4.2/js/buttons.colVis.min.js
   - javascripts/tables.js
   - javascripts/dashboard.js
+  - javascripts/explorer.js
 
 nav:
   - Dashboard: index.md
+  - Explorer: explorer.md
   - Models: models/index.md
+  - PTU Guide: ptu.md
   - Lifecycle: lifecycle.md
   - Retirements: retirements.md
   - By Region: by-region.md

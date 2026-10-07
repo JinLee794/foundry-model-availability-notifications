@@ -4,7 +4,7 @@
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-broad">Broad</span>
-            <span class="lc-badge lc-badge--muted">Retired</span>
+            <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Replacement: o4-mini. Use the replacement model.">Retired</span>
             <span class="model-profile__family">OpenAI</span>
             <span class="model-profile__coverage-note">25+ regions tracked</span>
         </div>
@@ -46,10 +46,10 @@
 <div class="lc-version lc-version--muted">
     <div class="lc-version__head">
         <code>2025-01-31</code>
-        <span class="lc-badge lc-badge--muted">Retired</span>
-        <span class="lc-version__countdown lc-version__countdown--muted">65 days ago</span>
+        <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Use the replacement model.">Retired</span>
+        <span class="lc-version__countdown lc-version__countdown--muted">67 days ago</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:59.64%"></span><span class="lc-seg lc-seg--deprecated" style="left:59.64%;width:29.90%"></span><span class="lc-seg lc-seg--retired" style="left:89.54%;width:10.46%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:59.45%"></span><span class="lc-seg lc-seg--deprecated" style="left:59.45%;width:29.80%"></span><span class="lc-seg lc-seg--retired" style="left:89.25%;width:10.75%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
     <div class="lc-version__dates"><span><b>Released</b> Jan 31, 2025</span><span><b>Deprecated</b> Jan 31, 2026</span><span><b>Retired</b> Aug 2, 2026</span></div>
     <div class="lc-version__replacement">Replacement <a href="../o4-mini/">o4-mini</a> <span>29 regions</span></div>
 </div>
@@ -281,4 +281,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-05 15:23 UTC_
+_Last updated: 2026-10-07 14:13 UTC_

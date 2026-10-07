@@ -4,7 +4,7 @@
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-broad">Broad</span>
-            <span class="lc-badge lc-badge--caution">Deprecated</span>
+            <span class="lc-badge lc-badge--caution" tabindex="0" data-tip-title="Deprecated" data-tip="No longer available to new customers. Subscriptions that already deployed this version can keep creating and managing deployments until it retires. Next retirement: Mar 17, 2027 (version 2025-09-15). Don&#x27;t start new work on it; schedule a migration before retirement.">Deprecated</span>
             <span class="model-profile__family">OpenAI</span>
             <span class="model-profile__coverage-note">25+ regions tracked</span>
         </div>
@@ -46,10 +46,10 @@
 <div class="lc-version lc-version--caution">
     <div class="lc-version__head">
         <code>2025-09-15</code>
-        <span class="lc-badge lc-badge--caution">Deprecated</span>
+        <span class="lc-badge lc-badge--caution" tabindex="0" data-tip-title="Deprecated" data-tip="No longer available to new customers. Subscriptions that already deployed this version can keep creating and managing deployments until it retires. Don&#x27;t start new work on it; schedule a migration before retirement.">Deprecated</span>
         <span class="lc-version__countdown lc-version__countdown--caution">in 5 months</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:66.61%"></span><span class="lc-seg lc-seg--deprecated" style="left:66.61%;width:33.39%"></span><span class="lc-today" style="left:70.26%"><em>Today</em></span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:66.61%"></span><span class="lc-seg lc-seg--deprecated" style="left:66.61%;width:33.39%"></span><span class="lc-today" style="left:70.62%"><em>Today</em></span></div>
     <div class="lc-version__dates"><span><b>Released</b> Sep 15, 2025</span><span><b>Deprecated</b> Sep 15, 2026</span><span><b>Retires</b> Mar 17, 2027</span></div>
     
 </div>
@@ -172,4 +172,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-05 15:23 UTC_
+_Last updated: 2026-10-07 14:13 UTC_

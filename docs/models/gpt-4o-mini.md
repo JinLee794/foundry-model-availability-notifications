@@ -4,7 +4,7 @@
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-broad">Broad</span>
-            <span class="lc-badge lc-badge--muted">Retired</span>
+            <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Replacement: gpt-4.1-mini. Use the replacement model.">Retired</span>
             <span class="model-profile__family">OpenAI</span>
             <span class="model-profile__coverage-note">25+ regions tracked</span>
         </div>
@@ -46,10 +46,10 @@
 <div class="lc-version lc-version--muted">
     <div class="lc-version__head">
         <code>2024-07-18</code>
-        <span class="lc-badge lc-badge--muted">Retired</span>
-        <span class="lc-version__countdown lc-version__countdown--muted">189 days ago</span>
+        <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Use the replacement model.">Retired</span>
+        <span class="lc-version__countdown lc-version__countdown--muted">191 days ago</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:45.12%"></span><span class="lc-seg lc-seg--deprecated" style="left:45.12%;width:31.64%"></span><span class="lc-seg lc-seg--retired" style="left:76.76%;width:23.24%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:45.01%"></span><span class="lc-seg lc-seg--deprecated" style="left:45.01%;width:31.57%"></span><span class="lc-seg lc-seg--retired" style="left:76.57%;width:23.43%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
     <div class="lc-version__dates"><span><b>Released</b> Jul 18, 2024</span><span><b>Deprecated</b> Jul 18, 2025</span><span><b>Retired</b> Mar 31, 2026</span></div>
     <div class="lc-version__replacement">Replacement <a href="../gpt-4-1-mini/">gpt-4.1-mini</a> <span>31 regions</span></div>
 </div>
@@ -293,4 +293,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-05 15:23 UTC_
+_Last updated: 2026-10-07 14:13 UTC_

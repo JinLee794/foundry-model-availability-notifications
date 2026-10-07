@@ -4,7 +4,7 @@
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-broad">Broad</span>
-            <span class="lc-badge lc-badge--neutral">No date announced</span>
+            <span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span>
             <span class="model-profile__family">OpenAI</span>
             <span class="model-profile__coverage-note">25+ regions tracked</span>
         </div>
@@ -167,4 +167,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-05 15:23 UTC_
+_Last updated: 2026-10-07 14:13 UTC_
