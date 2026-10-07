@@ -73,6 +73,7 @@ extra_javascript:
   - javascripts/tables.js
   - javascripts/dashboard.js
   - javascripts/explorer.js
+  - javascripts/planner.js
 
 nav:
   - Dashboard: index.md

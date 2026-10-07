@@ -112,7 +112,7 @@ cat region_diff.json
 - **Models** - Searchable table with lifecycle status and filters
 - **PTU Guide** - Plain-language provisioned throughput guide based on Microsoft Learn, with a quick PTU estimator and links to the Foundry capacity calculator
 - **Lifecycle** - Diagrams of the GA and preview model lifecycle, what each badge means, and where every tracked version sits today
-- **Retirements** - Upcoming deprecation and retirement dates
+- **Retirements** - Interactive retirement planner: horizon tabs (this month, next month, 3/6/12 months), a calendar with retirement chips and deprecated-window spans (or a mini-month overview for longer horizons), a Gantt-style timeline view, search and category filters, and a plain-language agenda with replacements; followed by the full schedule table
 - **By Region** - Filter by Azure region
 - **By SKU Type** - Filter by deployment type (Standard, Provisioned, etc.)
 - **Change History** - Timeline of all availability changes

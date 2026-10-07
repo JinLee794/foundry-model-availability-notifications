@@ -552,35 +552,18 @@ def generate_retirements_page(
     """Generate the retirements overview page."""
     
     today = datetime.utcnow()
-    
-    # Categorize all retirements
-    retiring_soon = []  # Within 30 days
-    upcoming = []  # 31-90 days
-    scheduled = []  # 91+ days
-    retired = []  # Already retired
-    
+
     all_entries = []
     for category, entries in retirement_data.get("models", {}).items():
         if category == "fine_tuned":
             continue  # Handle separately
         for entry in entries:
-            entry_with_cat = {**entry, "category": category}
-            all_entries.append(entry_with_cat)
-            
-            retirement_date = entry.get("retirement_date", "")
-            status_text, _ = get_retirement_status(retirement_date, today)
-            
-            if status_text == "Retired":
-                retired.append(entry_with_cat)
-            elif status_text == "Retiring Soon":
-                retiring_soon.append(entry_with_cat)
-            elif status_text == "Retiring":
-                upcoming.append(entry_with_cat)
-            elif status_text in ["Scheduled", "Planned"]:
-                scheduled.append(entry_with_cat)
-    
-    # Build summary stats
-    total_models = len(set(e["model"] for e in all_entries))
+            all_entries.append({**entry, "category": category})
+
+    planner = render_retirement_planner(
+        build_planner_data(retirement_data, set(model_regions)),
+        retirement_data.get("last_updated", ""),
+    )
 
     # Collect unique retirement notes, grouped by note text -> list of (model, version) pairs
     notes_to_models: Dict[str, List[str]] = {}
@@ -678,53 +661,26 @@ Fine-tuned models retire in two phases: training and deployment.
     - Models you've already trained remain available until deployment retirement.
 """
 
-    return f"""# Model Retirements
+    notes_section = build_retirement_notes_section()
+    notes_block = f"## :material-note-text-outline: Retirement notes\n\n{notes_section}" if notes_section else ""
 
-Track upcoming Azure AI Foundry model retirements and plan your migrations.
-
-<div class="stats-grid">
-  <div class="stat-card" style="border-left-color: #ef4444;">
-    <div class="stat-value" style="color: #ef4444;">{len(retiring_soon)}</div>
-    <div class="stat-label">Retiring in 30 Days</div>
-  </div>
-  <div class="stat-card" style="border-left-color: #f59e0b;">
-    <div class="stat-value" style="color: #f59e0b;">{len(upcoming)}</div>
-    <div class="stat-label">Retiring in 90 Days</div>
-  </div>
-  <div class="stat-card" style="border-left-color: #3b82f6;">
-    <div class="stat-value" style="color: #3b82f6;">{len(scheduled)}</div>
-    <div class="stat-label">Scheduled</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-value">{total_models}</div>
-    <div class="stat-label">Total Models</div>
-  </div>
-</div>
-
+    return f"""---
+hide:
+  - navigation
+  - toc
 ---
 
-{"## :material-alert-circle:{ .md-icon-retiring-soon } Retiring Soon (Within 30 Days)" if retiring_soon else ""}
+# Model Retirements
 
-{f'''These models require immediate migration attention.
+<p class="page-lede">See what retires or closes to new customers this month, next month and over the next year. Click any model for what the date means and what to move to.</p>
 
-| Model | Version | Category | Retirement Date | Status | Replacement |
-|-------|---------|----------|-----------------|--------|-------------|
-{build_table_rows(retiring_soon)}
-''' if retiring_soon else ""}
+{planner}
 
-{"## :material-calendar-alert:{ .md-icon-upcoming } Upcoming Retirements (31-90 Days)" if upcoming else ""}
+{notes_block}
 
-{f'''Plan your migrations for these models.
+## :material-calendar-clock: All scheduled retirements
 
-| Model | Version | Category | Retirement Date | Status | Replacement |
-|-------|---------|----------|-----------------|--------|-------------|
-{build_table_rows(upcoming)}
-''' if upcoming else ""}
-{build_retirement_notes_section()}
-
-## :material-calendar-clock: All Scheduled Retirements
-
-Complete list of model retirements with replacement recommendations.
+Every version in Microsoft's retirement table, with the suggested replacement.
 
 | Model | Version | Category | Retirement Date | Status | Replacement |
 |-------|---------|----------|-----------------|--------|-------------|
@@ -1455,6 +1411,8 @@ ICONS = {
     "gauge": "M12 4a10 10 0 0 0-8.66 15h17.32A10 10 0 0 0 12 4m0 2a8 8 0 0 1 7.42 11H4.58A8 8 0 0 1 12 6m4.24 2.34-5.66 4.24a1.5 1.5 0 1 0 1.84 1.84z",
     "timeline": "M4 6h2v12H4zm4 3h12v2H8zm0 4h8v2H8zM8 5h10v2H8z",
     "table": "M3 4h18v16H3zm2 2v3h14V6zm0 5v3h6v-3zm8 0v3h6v-3zm-8 5v2h6v-2zm8 0v2h6v-2z",
+    "calendar": "M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2zM5 22h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2M19 8v12H5V8z",
+    "search": "M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5",
     "arrow": "M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z",
 }
 
@@ -1970,6 +1928,71 @@ def build_watchlist(retirement_data: Dict, available_slugs: Set[str], today: dat
     more = len(upcoming) - len(rows)
     more_html = f'<a class="dash-panel__more" href="retirements/">{pluralize(more, "more scheduled retirement")} →</a>' if more > 0 else ""
     return f'<ul class="watchlist">{chr(10).join(rows)}</ul>{more_html}', counts
+
+
+PLANNER_CATEGORIES = {
+    "text_generation": "Text",
+    "audio": "Audio",
+    "image_and_video": "Image & video",
+    "embedding": "Embedding",
+}
+
+
+def build_planner_data(retirement_data: Dict, available_slugs: Set[str], prefix: str = "../models/") -> List[Dict]:
+    """Flatten retirement entries into the compact records the retirement planner renders client-side."""
+    rows = []
+    for category, entries in retirement_data.get("models", {}).items():
+        if category == "fine_tuned":
+            continue
+        for entry in entries:
+            dep, dep_est = parse_lifecycle_date(entry.get("deprecation_date"))
+            ret, ret_est = parse_lifecycle_date(entry.get("retirement_date"))
+            if not dep and not ret:
+                continue
+            model = entry.get("model", "")
+            slug = slugify(model)
+            replacement = entry.get("replacement") or ""
+            replacement_slug = slugify(replacement) if replacement else ""
+            rows.append({
+                "m": model,
+                "v": str(entry.get("version") or ""),
+                "c": PLANNER_CATEGORIES.get(category, category.replace("_", " ").title()),
+                "s": "Preview" if "preview" in (entry.get("status") or "").lower() else "GA",
+                "d": f"{dep:%Y-%m-%d}" if dep else "",
+                "de": int(dep_est),
+                "r": f"{ret:%Y-%m-%d}" if ret else "",
+                "re": int(ret_est),
+                "rp": replacement,
+                "rh": f"{prefix}{replacement_slug}/" if replacement_slug in available_slugs else "",
+                "h": f"{prefix}{slug}/" if slug in available_slugs else "",
+                "n": entry.get("retirement_note") or "",
+            })
+    return rows
+
+
+def render_retirement_planner(rows: List[Dict], source_updated: str) -> str:
+    """Shell for the interactive retirement planner (calendar, timeline and agenda are rendered by planner.js)."""
+    order = list(PLANNER_CATEGORIES.values())
+    cats = sorted({row["c"] for row in rows}, key=lambda c: (order.index(c) if c in order else len(order), c))
+    cat_buttons = '<button type="button" class="rp-cat is-on" data-cat="">All</button>' + "".join(
+        f'<button type="button" class="rp-cat" data-cat="{html_escape(c)}">{html_escape(c)}</button>' for c in cats
+    )
+    payload = html_escape(json.dumps(rows, separators=(",", ":"), ensure_ascii=False))
+    updated = f" (updated {html_escape(source_updated)})" if source_updated else ""
+    return f"""<div class="rp" data-retire-planner data-rp="{payload}" data-view="calendar">
+<div class="rp-top">
+<div class="rp-horizons" role="tablist" aria-label="Time horizon" data-rp-horizons></div>
+<div class="rp-tools">
+<label class="rp-search">{icon("search")}<input type="search" placeholder="Filter models" aria-label="Filter models" data-rp-q></label>
+<div class="rp-seg" role="group" aria-label="View"><button type="button" data-view="calendar" aria-pressed="true">{icon("calendar")}Calendar</button><button type="button" data-view="timeline" aria-pressed="false">{icon("timeline")}Timeline</button></div>
+</div>
+</div>
+<div class="rp-filters"><div class="rp-cats" role="group" aria-label="Category">{cat_buttons}</div><label class="rp-toggle"><input type="checkbox" data-rp-all> Show every deprecated window</label></div>
+<div class="rp-summary" data-rp-summary></div>
+<div class="rp-main"><section class="rp-visual" data-rp-visual></section><aside class="rp-agenda" data-rp-agenda aria-label="What happens and when"></aside></div>
+<p class="rp-foot">Dates come from Microsoft's model retirement table{updated}. “No earlier than” dates are the earliest possible date and may move later. Countdowns use today's date in your browser.</p>
+<noscript><p>Turn on JavaScript to use the planner. The full table is below.</p></noscript>
+</div>"""
 
 
 def generate_index_page(
