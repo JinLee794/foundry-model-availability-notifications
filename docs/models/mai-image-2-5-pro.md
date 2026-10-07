@@ -36,7 +36,7 @@
 </div>
     <div class="model-profile__insight">
         <span>Widest SKU footprint</span>
-        <strong><a href="../../by-sku/?sku=Global%20coverage">Global coverage</a></strong>
+        <strong><a href="../../explorer/#t=gs">Global coverage</a></strong>
         <small>7 regions · 20% coverage · Global</small>
     </div>
 </div>
@@ -61,14 +61,14 @@
         <div class="deployment-sku-list">
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
-                <a class="deployment-sku-row__name" href="../../by-sku/?sku=Global%20coverage">Global coverage</a>
+                <a class="deployment-sku-row__name" href="../../explorer/#t=gs">Global coverage</a>
                 <span>7 regions · 20% coverage</span>
             </div>
             <div class="availability-meter" aria-hidden="true"><span style="width: 20%;"></span></div>
         </div>
         </div>
         <div class="deployment-lane__regions" aria-label="Global deployment regions">
-            <a class="region-badge model-region-chip" href="../../by-region/?region=East%20US">East US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=South%20India">South India</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Sweden%20Central">Sweden Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=UAE%20North">UAE North</a> <a class="region-badge model-region-chip" href="../../by-region/?region=West%20Central%20US">West Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=West%20Europe">West Europe</a> <a class="region-badge model-region-chip" href="../../by-region/?region=West%20US">West US</a>
+            <a class="region-badge model-region-chip" href="../../explorer/#rg=East%20US">East US</a> <a class="region-badge model-region-chip" href="../../explorer/#rg=South%20India">South India</a> <a class="region-badge model-region-chip" href="../../explorer/#rg=Sweden%20Central">Sweden Central</a> <a class="region-badge model-region-chip" href="../../explorer/#rg=UAE%20North">UAE North</a> <a class="region-badge model-region-chip" href="../../explorer/#rg=West%20Central%20US">West Central US</a> <a class="region-badge model-region-chip" href="../../explorer/#rg=West%20Europe">West Europe</a> <a class="region-badge model-region-chip" href="../../explorer/#rg=West%20US">West US</a>
         </div>
         <p class="deployment-lane__compliance">⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements</p>
     </div>
@@ -86,14 +86,14 @@
         <div class="deployment-sku-list">
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
-                <a class="deployment-sku-row__name" href="../../by-sku/?sku=Deployments%20Standard">Deployments Standard</a>
+                <a class="deployment-sku-row__name" href="../../explorer/#t=rs">Deployments Standard</a>
                 <span>7 regions · 20% coverage</span>
             </div>
             <div class="availability-meter" aria-hidden="true"><span style="width: 20%;"></span></div>
         </div>
         </div>
         <div class="deployment-lane__regions" aria-label="Other deployment regions">
-            <a class="region-badge model-region-chip" href="../../by-region/?region=East%20US">East US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=South%20India">South India</a> <a class="region-badge model-region-chip" href="../../by-region/?region=Sweden%20Central">Sweden Central</a> <a class="region-badge model-region-chip" href="../../by-region/?region=UAE%20North">UAE North</a> <a class="region-badge model-region-chip" href="../../by-region/?region=West%20Central%20US">West Central US</a> <a class="region-badge model-region-chip" href="../../by-region/?region=West%20Europe">West Europe</a> <a class="region-badge model-region-chip" href="../../by-region/?region=West%20US">West US</a>
+            <a class="region-badge model-region-chip" href="../../explorer/#rg=East%20US">East US</a> <a class="region-badge model-region-chip" href="../../explorer/#rg=South%20India">South India</a> <a class="region-badge model-region-chip" href="../../explorer/#rg=Sweden%20Central">Sweden Central</a> <a class="region-badge model-region-chip" href="../../explorer/#rg=UAE%20North">UAE North</a> <a class="region-badge model-region-chip" href="../../explorer/#rg=West%20Central%20US">West Central US</a> <a class="region-badge model-region-chip" href="../../explorer/#rg=West%20Europe">West Europe</a> <a class="region-badge model-region-chip" href="../../explorer/#rg=West%20US">West US</a>
         </div>
         
     </div>
@@ -125,4 +125,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-07 14:13 UTC_
+_Last updated: 2026-10-07 23:10 UTC_

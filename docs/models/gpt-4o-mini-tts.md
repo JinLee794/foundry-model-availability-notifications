@@ -36,7 +36,7 @@
 </div>
     <div class="model-profile__insight">
         <span>Widest SKU footprint</span>
-        <strong><a href="../../by-sku/?sku=Standard%20Global%20By%20Capability">Standard Global By Capability</a></strong>
+        <strong><a href="../../explorer/#t=gs">Standard Global By Capability</a></strong>
         <small>1 regions · 3% coverage · Other</small>
     </div>
 </div>
@@ -83,21 +83,21 @@
         <div class="deployment-sku-list">
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
-                <a class="deployment-sku-row__name" href="../../by-sku/?sku=Global%20Standard">Global Standard</a>
+                <a class="deployment-sku-row__name" href="../../explorer/#t=gs">Global Standard</a>
                 <span>1 regions · 3% coverage</span>
             </div>
             <div class="availability-meter" aria-hidden="true"><span style="width: 3%;"></span></div>
         </div>
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
-                <a class="deployment-sku-row__name" href="../../by-sku/?sku=Global%20coverage">Global coverage</a>
+                <a class="deployment-sku-row__name" href="../../explorer/#t=gs">Global coverage</a>
                 <span>1 regions · 3% coverage</span>
             </div>
             <div class="availability-meter" aria-hidden="true"><span style="width: 3%;"></span></div>
         </div>
         </div>
         <div class="deployment-lane__regions" aria-label="Global deployment regions">
-            <a class="region-badge model-region-chip" href="../../by-region/?region=East%20US%202">East US 2</a>
+            <a class="region-badge model-region-chip" href="../../explorer/#rg=East%20US%202">East US 2</a>
         </div>
         <p class="deployment-lane__compliance">⚠ Data may be processed in any Azure region — not suitable for HIPAA, FedRAMP, or strict data-residency requirements</p>
     </div>
@@ -115,21 +115,21 @@
         <div class="deployment-sku-list">
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
-                <a class="deployment-sku-row__name" href="../../by-sku/?sku=Deployments%20Standard">Deployments Standard</a>
+                <a class="deployment-sku-row__name" href="../../explorer/#t=rs">Deployments Standard</a>
                 <span>1 regions · 3% coverage</span>
             </div>
             <div class="availability-meter" aria-hidden="true"><span style="width: 3%;"></span></div>
         </div>
         <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
-                <a class="deployment-sku-row__name" href="../../by-sku/?sku=Standard%20Global%20By%20Capability">Standard Global By Capability</a>
+                <a class="deployment-sku-row__name" href="../../explorer/#t=gs">Standard Global By Capability</a>
                 <span>1 regions · 3% coverage</span>
             </div>
             <div class="availability-meter" aria-hidden="true"><span style="width: 3%;"></span></div>
         </div>
         </div>
         <div class="deployment-lane__regions" aria-label="Other deployment regions">
-            <a class="region-badge model-region-chip" href="../../by-region/?region=East%20US%202">East US 2</a>
+            <a class="region-badge model-region-chip" href="../../explorer/#rg=East%20US%202">East US 2</a>
         </div>
         
     </div>
@@ -155,4 +155,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-07 14:13 UTC_
+_Last updated: 2026-10-07 23:10 UTC_

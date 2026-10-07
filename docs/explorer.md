@@ -44,4 +44,4 @@ hide:
     </div>
 </div>
 
-<noscript>The explorer needs JavaScript. Browse the <a href="../models/">model table</a> instead.</noscript>
+<noscript>The explorer needs JavaScript. Browse the <a href="../models/">model catalog</a> instead.</noscript>

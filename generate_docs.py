@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import re
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 from html import escape as html_escape
@@ -286,22 +287,31 @@ def model_link(model: str, prefix: str = "models/", class_name: str = "") -> str
     return f'<a{class_attr} href="{prefix}{slug}/">{html_escape(model)}</a>'
 
 
-def region_link(region: str, prefix: str = "by-region/", class_name: str = "region-badge") -> str:
-    """Return a link to the region explorer with the region filter applied."""
+def explorer_type_for_label(sku_label: str) -> str:
+    """Map a SKU display label (e.g. "Deployments Provisioned") to an explorer type key."""
+    return SKU_KEY_TO_TYPE.get(sku_label.lower().replace(" ", "-")) or sku_type_key("", sku_label)
+
+
+def explorer_sku_href(prefix: str, sku_label: str) -> str:
+    """Explorer URL filtered to the deployment type behind a SKU label."""
+    key = explorer_type_for_label(sku_label)
+    return prefix if key == "av" else f"{prefix}#t={key}"
+
+
+def region_link(region: str, prefix: str = "explorer/", class_name: str = "region-badge") -> str:
+    """Return a link to the availability explorer with the region required."""
     if region.startswith("("):
         return html_escape(region)
     class_attr = f' class="{class_name}"' if class_name else ""
-    href = query_url(prefix, {"region": region})
-    return f'<a{class_attr} href="{href}">{html_escape(region)}</a>'
+    return f'<a{class_attr} href="{prefix}#rg={quote(region, safe="")}">{html_escape(region)}</a>'
 
 
-def sku_link(sku_label: str, prefix: str = "by-sku/", class_name: str = "change-link-pill") -> str:
-    """Return a link to the SKU explorer with the SKU filter applied."""
+def sku_link(sku_label: str, prefix: str = "explorer/", class_name: str = "change-link-pill") -> str:
+    """Return a link to the availability explorer filtered to the SKU's deployment type."""
     if sku_label in ("", "-"):
         return "-"
     class_attr = f' class="{class_name}"' if class_name else ""
-    href = query_url(prefix, {"sku": sku_label})
-    return f'<a{class_attr} href="{href}">{html_escape(sku_label)}</a>'
+    return f'<a{class_attr} href="{explorer_sku_href(prefix, sku_label)}">{html_escape(sku_label)}</a>'
 
 
 def history_link(prefix: str = "history/", **params: str) -> str:
@@ -1312,7 +1322,7 @@ def render_world_map(model_regions: Dict[str, Set[str]], all_regions: Set[str], 
         <div class="wmap-rank">
             <h4>Top regions</h4>
             <ol>{list_items}</ol>
-            <a class="wmap-rank__more" href="by-region/">All {len(all_regions)} regions {icon("arrow")}</a>
+            <a class="wmap-rank__more" href="explorer/">All {len(all_regions)} regions {icon("arrow")}</a>
         </div>
     </div>"""
 
@@ -1518,7 +1528,7 @@ hide:
     </div>
 </div>
 
-<noscript>The explorer needs JavaScript. Browse the <a href="../models/">model table</a> instead.</noscript>
+<noscript>The explorer needs JavaScript. Browse the <a href="../models/">model catalog</a> instead.</noscript>
 """
 
 
@@ -1588,6 +1598,41 @@ def generate_ptu_page(availability_bits: Dict[str, Dict[str, int]]) -> str:
         <a class="ptu-type__link" href="../explorer/#t={key}">{models_with(key)} models · {regions_with(key)} regions →</a>
     </div>""")
 
+    def matrix_cell(key: str) -> str:
+        item = DEPLOYMENT_TYPE_BY_KEY[key]
+        return (
+            f'<a class="dmx__cell dmx__cell--{item["group"]}" href="../explorer/#t={key}"{tip_attrs(item["label"], item["tip"])}>'
+            f'<strong>{item["label"].replace(" (PTU)", "")}</strong>'
+            f'<span><b>{models_with(key)}</b> models · <b>{regions_with(key)}</b> regions</span></a>'
+        )
+
+    scopes = [
+        ("Global", "Inference can run in any Azure region. Data at rest stays in your geography. Highest quota.", "Not for strict data-residency rules."),
+        ("Data Zone", "Inference stays inside the US or EU data zone.", "Fits most GDPR / EU residency needs."),
+        ("Regional", "Inference stays in the region you deploy to.", "Strictest residency; lowest default quota."),
+    ]
+    scope_heads = "".join(
+        f'<div class="dmx__col"><b>{name}</b><small>{where}</small><em>{note}</em></div>' for name, where, note in scopes
+    )
+    extra_cards = "".join(
+        f'<a class="dmx-extra__card dmx__cell--{DEPLOYMENT_TYPE_BY_KEY[key]["group"]}" href="../explorer/#t={key}">'
+        f'<strong>{title}</strong><small>{body}</small>'
+        f'<span><b>{models_with(key)}</b> models · <b>{regions_with(key)}</b> regions</span></a>'
+        for key, title, body in [
+            ("bt", "Batch", "Send large jobs asynchronously; results within 24 hours at a lower price than Standard. Good for evaluations, enrichment and offline scoring."),
+            ("mp", "Partner / Marketplace", "Partner models (Mistral, Cohere, Meta…) deployed as a serverless API and usually billed through Azure Marketplace."),
+        ]
+    )
+    deployment_matrix = f"""<div class="dmx" role="table" aria-label="Deployment types by billing model and data-processing location">
+    <div class="dmx__corner"><span>Where inference runs →</span><span>How you pay ↓</span></div>
+    {scope_heads}
+    <div class="dmx__row dmx__row--paygo"><b>Pay-as-you-go</b><small>Standard · billed per token · no commitment</small></div>
+    {matrix_cell("gs")}{matrix_cell("dz")}{matrix_cell("rs")}
+    <div class="dmx__row dmx__row--ptu"><b>Provisioned (PTU)</b><small>Reserved throughput · hourly or with a reservation</small></div>
+    {matrix_cell("gp")}{matrix_cell("dp")}{matrix_cell("rp")}
+</div>
+<div class="dmx-extra">{extra_cards}</div>"""
+
     sizing_rows = "\n".join(
         f"| `{model}` | {gmin} (+{ginc}) | {rmin} (+{rinc}) | {tpm:,} | {ratio} |"
         for model, gmin, ginc, rmin, rinc, tpm, ratio in PTU_SIZING
@@ -1605,7 +1650,17 @@ hide:
   - toc
 ---
 
-# Provisioned Throughput (PTU) Guide
+# Deployment Types &amp; PTU Guide
+
+<p class="page-lede">Every Foundry deployment answers two questions: <strong>where is inference processed</strong>, and <strong>how do you pay</strong>? Pick a cell to see which models and regions offer it.</p>
+
+## Choose a deployment type
+
+{deployment_matrix}
+
+<p class="diagram-note">Start with <strong>Global Standard</strong>. Move to Data Zone or Regional when data-residency rules require it, and to PTU when traffic is steady and latency matters.</p>
+
+## Provisioned throughput (PTU)
 
 <div class="ptu-hero">
     <p class="ptu-hero__lede"><strong>A PTU (provisioned throughput unit) is a slice of model capacity reserved only for you.</strong> You pay for it by the hour whether or not you send traffic. In return you get predictable latency, and when you hit 100% the service answers <code>429</code> immediately instead of slowing down.</p>
@@ -1617,7 +1672,7 @@ hide:
     </div>
 </div>
 
-## 1 · Is PTU right for you?
+### 1 · Is PTU right for you?
 
 <div class="ptu-fit">
     <div class="ptu-fit__col ptu-fit__col--yes">
@@ -1638,7 +1693,7 @@ hide:
     </div>
 </div>
 
-## 2 · Pick a provisioned deployment type
+### 2 · Pick a provisioned deployment type
 
 <div class="ptu-types">
 {chr(10).join(type_cards)}
@@ -1646,7 +1701,7 @@ hide:
 
 <p class="diagram-note">Reservations are bought per deployment type and are not interchangeable — decide this before you buy.</p>
 
-## 3 · Size it
+### 3 · Size it
 
 <ol class="ptu-steps">
     <li><strong>Measure your peak.</strong> Peak requests per minute, average prompt tokens, average response tokens and expected cache-hit rate.</li>
@@ -1688,7 +1743,7 @@ hide:
 
     GPT-6 family and image models use normalized token accounting — use the capacity calculator for those. Source: [PTU sizing]({PTU_SOURCES['sizing']}).
 
-## 4 · Get capacity, then reserve
+### 4 · Get capacity, then reserve
 
 <ol class="ptu-flow">
     <li class="ptu-flow__step"><span>1</span><strong>Check quota</strong><small>Foundry → Manage → Quota → Provisioned throughput unit. <a href="{PTU_SOURCES['quota_form']}">Request more</a> if needed.</small></li>
@@ -1707,7 +1762,7 @@ hide:
 | Good for | Benchmarks, short events | Steady production |
 | Watch out | Can't be paused; scaling down and back up risks losing capacity | Bought per deployment type; extra PTUs above the reservation bill hourly |
 
-## 5 · Run it in production
+### 5 · Run it in production
 
 <div class="ptu-ops">
     <div><h3>Monitor</h3><p>Azure Monitor metric <strong>Provisioned-managed utilization V2</strong> on the Foundry resource. Requests are rejected at 100%.</p></div>
@@ -2049,7 +2104,7 @@ hide:
         <strong class="kpi__value">{len(model_regions)}</strong>
         <span class="kpi__hint">{len(families)} providers · {ga_count} GA</span>
     </a>
-    <a class="kpi kpi--info" href="by-region/">
+    <a class="kpi kpi--info" href="explorer/">
         <span class="kpi__icon">{icon("globe")}</span>
         <span class="kpi__label">Azure regions</span>
         <strong class="kpi__value">{len(all_regions)}</strong>
@@ -2174,198 +2229,86 @@ Adapted from [Foundry Models lifecycle and support policy](https://learn.microso
 """
 
 
+# Lifecycle stages worth flagging on a catalog card; GA / no-date models stay quiet.
+CATALOG_FLAG_STAGES = {"soon", "retiring", "pending", "deprecated", "preview", "retired"}
+DEPLOYMENT_GROUPS: List[Tuple[str, str]] = [
+    ("paygo", "Pay-as-you-go"),
+    ("ptu", "Provisioned (PTU)"),
+    ("batch", "Batch"),
+    ("partner", "Partner / Marketplace"),
+]
+
+
 def generate_model_index_page(
     model_regions: Dict[str, Set[str]],
-    model_sku_regions: Dict[str, Dict[str, Set[str]]],
-    all_regions: Set[str],
+    availability_bits: Dict[str, Dict[str, int]],
     lifecycles: Dict[str, Dict] = None,
 ) -> str:
-    """Generate the models index page with filterable table."""
+    """Model catalog: instant lookup plus provider-grouped cards linking to each model page."""
     lifecycles = lifecycles or {}
-    untracked = {"key": "untracked", "label": LIFECYCLE_STAGES["untracked"][0], "tone": LIFECYCLE_STAGES["untracked"][1]}
-    
-    def format_region_badge(region: str) -> str:
-        """Create a clickable region badge."""
-        return f'<span class="region-badge" onclick="filterByRegion(\'{region}\')">{region}</span>'
-    
-    def format_region_cell(regions_set: Set[str], category: str) -> str:
-        """Format a region cell with clickable badges, expandable if > 3 regions."""
-        if not regions_set:
-            return '-'
-        sorted_regions = sorted(regions_set)
-        count = len(sorted_regions)
-        badges = [format_region_badge(r) for r in sorted_regions]
-        
-        if count <= 3:
-            return f'<span class="region-list">{" ".join(badges)}</span>'
-        else:
-            # Store just the region names as comma-separated, rebuild badges in JS
-            preview_regions = ",".join(sorted_regions[:3])
-            all_regions_str = ",".join(sorted_regions)
-            preview_badges = " ".join(badges[:3])
-            return f'<span class="region-list" data-preview-regions="{preview_regions}" data-all-regions="{all_regions_str}">{preview_badges} <button class="expand-btn" onclick="toggleRegionBadges(this)">+{count - 3} more</button></span>'
-    
-    # Build region options for filter
-    sorted_regions = sorted(all_regions)
-    region_options = "\n".join([f'      <option value="{r}">{r}</option>' for r in sorted_regions])
-    
-    # Build table rows with data attributes for filtering
-    rows = []
-    for model in sorted(model_regions.keys()):
-        regions = model_regions[model]
-        count = len(regions)
-        bucket_label, bucket_class, _ = pick_bucket(count)
+    group_bits: Dict[str, int] = defaultdict(int)
+    for item in DEPLOYMENT_TYPES:
+        group_bits[item["group"]] |= item["bit"]
 
-        # Count regions per SKU category
-        cat_regions: Dict[str, Set[str]] = defaultdict(set)
-        all_skus = []
-        for sku, sku_regions_set in model_sku_regions[model].items():
-            cat = get_sku_category(sku)
-            cat_regions[cat].update(sku_regions_set)
-            all_skus.append(sku)
+    by_family: Dict[str, List[str]] = defaultdict(list)
+    for model in model_regions:
+        by_family[model_family(model)].append(model)
+    families = sorted(by_family, key=lambda family: (-len(by_family[family]), family.lower()))
 
-        # Compute granular provisioned sub-type regions
-        prov_ptu_regions: Set[str] = set()
-        prov_global_regions: Set[str] = set()
-        for sku, sku_regions_set in model_sku_regions[model].items():
-            if sku in PROVISIONED_PTU_SKUS:
-                prov_ptu_regions.update(sku_regions_set)
-            elif sku in PROVISIONED_GLOBAL_SKUS:
-                prov_global_regions.update(sku_regions_set)
+    def anchor(family: str) -> str:
+        return "provider-" + re.sub(r"[^a-z0-9]+", "-", family.lower()).strip("-")
 
-        # Create SKU category badges — tooltip for Global/Datazone/Standard; granular sub-type for Provisioned
-        sku_badges = []
-        for cat in ['Global', 'Datazone', 'Standard']:
-            if cat in cat_regions:
-                region_count = len(cat_regions[cat])
-                sku_badges.append(sku_category_badge(cat, f"{region_count} regions"))
-        if prov_ptu_regions:
-            sku_badges.append(f'<span class="sku-badge sku-provisioned" title="{len(prov_ptu_regions)} regions">Prov.PTU</span>')
-        if prov_global_regions:
-            sku_badges.append(f'<span class="sku-badge sku-provisioned-global" title="{len(prov_global_regions)} regions">Prov.Global</span>')
-        sku_badges_html = ' '.join(sku_badges) if sku_badges else '-'
+    def card(model: str) -> str:
+        summary = lifecycles.get(model) or {"key": "untracked", "tone": "neutral", "label": ""}
+        mask = 0
+        for bits in availability_bits.get(model, {}).values():
+            mask |= bits
+        dots = "".join(
+            f'<i class="ax-dot ax-dot--{group}" title="{label}"></i>'
+            for group, label in DEPLOYMENT_GROUPS if mask & group_bits[group]
+        )
+        flag = ""
+        if summary["key"] in CATALOG_FLAG_STAGES:
+            flag = f'<span class="lc-badge lc-badge--{summary["tone"]}">{html_escape(lifecycle_badge_text(summary))}</span>'
+        regions = len(model_regions[model])
+        return (
+            f'<a class="mcat-card mcat-card--{summary["tone"]}" href="{slugify(model)}/" data-name="{html_escape(model.lower())}">'
+            f'<span class="mcat-card__name">{html_escape(model)}</span>'
+            f'<span class="mcat-card__meta"><span><b>{regions}</b> {"region" if regions == 1 else "regions"}</span>'
+            f'<span class="mcat-card__dots">{dots}</span></span>'
+            f"{flag}</a>"
+        )
 
-        # Format region cells for each category/sub-category
-        global_cell = format_region_cell(cat_regions.get('Global', set()), 'Global')
-        datazone_cell = format_region_cell(cat_regions.get('Datazone', set()), 'Datazone')
-        standard_cell = format_region_cell(cat_regions.get('Standard', set()), 'Standard')
-        prov_ptu_cell = format_region_cell(prov_ptu_regions, 'Prov. PTU')
-        prov_global_cell = format_region_cell(prov_global_regions, 'Prov. Global')
-
-        # Categories string for filtering (hidden column)
-        cats_str = ", ".join(sorted(cat_regions.keys()))
-        regions_str = ", ".join(sorted(regions))  # Hidden column for filtering
-
-        rows.append(f"""    <tr>
-      <td><a href="{slugify(model)}/"><strong>{model}</strong></a></td>
-      <td data-search="{html_escape(lifecycles.get(model, untracked)['label'])}">{lifecycle_badge(lifecycles.get(model, untracked))}</td>
-      <td><span class="badge {bucket_class}">{bucket_label}</span></td>
-      <td>{sku_badges_html}</td>
-      <td>{global_cell}</td>
-      <td>{datazone_cell}</td>
-      <td>{standard_cell}</td>
-      <td>{prov_ptu_cell}</td>
-      <td>{prov_global_cell}</td>
-      <td class="hidden-col">{cats_str}</td>
-      <td class="hidden-col">{regions_str}</td>
-    </tr>""")
-    
-    lifecycle_options = "\n".join(
-        f'      <option value="{html_escape(label)}">{html_escape(label)}</option>'
-        for label in dict.fromkeys(LIFECYCLE_STAGES[key][0] for key in LIFECYCLE_STAGES)
-        if any(item["label"] == label for item in lifecycles.values())
-    )
+    sections = []
+    for family in families:
+        models = sorted(by_family[family], key=str.lower)
+        sections.append(f"""<section class="mcat-group" id="{anchor(family)}">
+    <header class="mcat-group__head">
+        <h2>{html_escape(family)} <span>{pluralize(len(models), "model")}</span></h2>
+        <a href="../explorer/#p={quote(family)}">Compare availability {icon("arrow")}</a>
+    </header>
+    <div class="mcat-grid">
+        {"".join(card(model) for model in models)}
+    </div>
+</section>""")
+    legend = "".join(f'<span><i class="ax-dot ax-dot--{group}"></i>{label}</span>' for group, label in DEPLOYMENT_GROUPS)
 
     return f"""---
 hide:
   - toc
 ---
 
-# All Models
+# Model Catalog
 
-<p class="page-lede">Jump straight to a model, or use the table below to compare deployment coverage across the full catalog.</p>
+<p class="page-lede">Find a model to open its page — regions, deployment types, versions and retirement dates. To compare many models across regions, use the <a href="../explorer/">Availability Explorer</a>.</p>
 
 {model_finder_widget("../assets/model-index.json", "../")}
 
-<div class="filter-controls">
-  <div class="filter-group">
-    <label for="lifecycle-filter">Lifecycle</label>
-    <select id="lifecycle-filter" onchange="filterModelsTable()">
-      <option value="">All Stages</option>
-{lifecycle_options}
-    </select>
-  </div>
-  <div class="filter-group">
-    <label for="coverage-filter">Coverage Level</label>
-    <select id="coverage-filter" onchange="filterModelsTable()">
-      <option value="">All Levels</option>
-      <option value="Broad">Broad (25+)</option>
-      <option value="Strong">Strong (20-24)</option>
-      <option value="Growing">Growing (15-19)</option>
-      <option value="Emerging">Emerging (&lt;15)</option>
-    </select>
-  </div>
-  <div class="filter-group">
-    <label for="category-filter">SKU Category</label>
-    <select id="category-filter" onchange="filterModelsTable()">
-      <option value="">All Categories</option>
-      <option value="Global">Global</option>
-      <option value="Datazone">Datazone</option>
-      <option value="Standard">Standard</option>
-      <option value="Provisioned">Provisioned</option>
-    </select>
-  </div>
-  <div class="filter-group">
-    <label for="region-filter">Available In Region</label>
-    <select id="region-filter" onchange="filterModelsTable()">
-      <option value="">All Regions</option>
-{region_options}
-    </select>
-  </div>
-  <div class="filter-group">
-    <label>&nbsp;</label>
-    <button onclick="resetModelsFilters()" class="md-button">Reset</button>
-  </div>
-</div>
+<div class="mcat-legend"><span class="mcat-legend__title">Deployment options</span>{legend}<span class="mcat-legend__note">Badges flag preview, deprecated and retiring models.</span></div>
 
-<div class="table-responsive">
-<table id="models-table" class="filterable display">
-  <thead>
-    <tr>
-      <th>Model</th>
-      <th>Lifecycle</th>
-      <th>Coverage</th>
-      <th>SKU Types</th>
-      <th>Global Regions</th>
-      <th>Datazone Regions</th>
-      <th>Standard Regions</th>
-      <th>Prov. PTU Regions</th>
-      <th>Prov. Global Regions</th>
-      <th class="hidden-col">Categories</th>
-      <th class="hidden-col">Region List</th>
-    </tr>
-  </thead>
-  <tbody>
-{chr(10).join(rows)}
-  </tbody>
-</table>
-</div>
+{chr(10).join(sections)}
 
----
-
-## SKU Category Reference
-
-| Category | Description | Best For |
-|----------|-------------|----------|
-| **Global** | Worldwide availability with intelligent routing | Apps needing global reach with automatic failover |
-| **Datazone** | Data residency compliance deployments | GDPR, sovereignty, compliance requirements |
-| **Standard** | Pay-as-you-go regional deployments | Variable workloads, cost-sensitive apps |
-| **Prov. PTU** | Regional reserved throughput capacity (PTU) | High-volume workloads in a specific region |
-| **Prov. Global** | Global reserved throughput capacity (PTU) | High-volume workloads with global routing |
-
----
-
-_Last updated: {datetime.utcnow():%Y-%m-%d %H:%M UTC}_
+<p class="dash-footnote">Not sure which deployment type you need? See <a href="../ptu/">Deployment types &amp; PTU</a>. Last updated {datetime.utcnow():%Y-%m-%d %H:%M UTC}.</p>
 """
 
 
@@ -2404,7 +2347,7 @@ def generate_model_detail_page(
     if sku_regions:
         top_sku, top_sku_regions = max(sku_regions.items(), key=lambda item: (len(item[1]), item[0]))
         top_sku_pct = round(len(top_sku_regions) / total_region_count * 100)
-        top_sku_href = query_url("../../by-sku/", {"sku": top_sku})
+        top_sku_href = explorer_sku_href("../../explorer/", top_sku)
         top_sku_html = f'<a href="{top_sku_href}">{html_escape(top_sku)}</a>'
         top_sku_category = get_sku_category(top_sku)
     else:
@@ -2419,7 +2362,7 @@ def generate_model_detail_page(
         if not sorted_values:
             return '<span class="model-region-empty">No regions listed</span>'
         chips = [
-            region_link(region, prefix="../../by-region/", class_name="region-badge model-region-chip")
+            region_link(region, prefix="../../explorer/", class_name="region-badge model-region-chip")
             for region in sorted_values[:max_visible]
         ]
         remaining = len(sorted_values) - len(chips)
@@ -2487,7 +2430,7 @@ def generate_model_detail_page(
             all_cat_regions.update(sku_regs)
             sku_pct = round(len(sku_regs) / total_region_count * 100)
             meter_pct = max(2, min(sku_pct, 100)) if sku_regs else 0
-            sku_href = query_url("../../by-sku/", {"sku": sku})
+            sku_href = explorer_sku_href("../../explorer/", sku)
             sku_rows.append(f"""        <div class="deployment-sku-row">
             <div class="deployment-sku-row__copy">
                 <a class="deployment-sku-row__name" href="{sku_href}">{html_escape(sku)}</a>
@@ -2573,432 +2516,32 @@ _Last updated: {datetime.utcnow():%Y-%m-%d %H:%M UTC}_
 """
 
 
-def generate_by_region_page(
-    model_regions: Dict[str, Set[str]],
-    model_region_skus: Dict[str, Dict[str, Set[str]]],
-    all_regions: Set[str],
-) -> str:
-    """Generate the by-region view page with proper SKU tables."""
-    
-    region_models: Dict[str, Set[str]] = defaultdict(set)
-    region_model_skus: Dict[str, Dict[str, Set[str]]] = defaultdict(lambda: defaultdict(set))
-    
-    for model, regions in model_regions.items():
-        for region in regions:
-            region_models[region].add(model)
-            region_model_skus[region][model] = model_region_skus[model].get(region, set())
-    
-    sorted_regions = sorted(region_models.keys())
-    
-    # Build region options for filter
-    region_options = "\n".join([f'      <option value="{r}">{r}</option>' for r in sorted_regions])
-    
-    # Build a comprehensive table with one row per model-region-sku combination
-    all_rows = []
-    for region in sorted_regions:
-        models = region_models[region]
-        for model in sorted(models):
-            skus = region_model_skus[region][model]
-            cats = sorted(set(get_sku_category(s) for s in skus))
-            sku_list = sorted(skus)
-            
-            all_rows.append(f"""    <tr>
-      <td><strong>{region}</strong></td>
-      <td><a href="../models/{slugify(model)}/">{model}</a></td>
-      <td>{', '.join(cats)}</td>
-      <td>{', '.join(sku_list)}</td>
-    </tr>""")
-    
-    # Build summary stats
-    total_entries = len(all_rows)
-    total_regions = len(sorted_regions)
-    total_models = len(model_regions)
-
-    return f"""# Models by Region
-
-Find which AI models are available in your Azure region, including their deployment SKU options.
-
+def generate_legacy_redirect_page(title: str, param: str, explorer_key: str, mapping: Dict[str, str] = None) -> str:
+    """Stub for a retired page: forwards ?region= / ?sku= links to the matching explorer filter."""
+    mapping_json = json.dumps(mapping or {}, separators=(",", ":"), ensure_ascii=False).replace("</", "<\\/")
+    return f"""---
+hide:
+  - navigation
+  - toc
+search:
+  exclude: true
 ---
 
-## Quick Stats
-
-<div class="stats-cards">
-  <div class="stat-card">
-    <div class="stat-value">{total_regions}</div>
-    <div class="stat-label">Regions</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-value">{total_models}</div>
-    <div class="stat-label">Models</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-value">{total_entries}</div>
-    <div class="stat-label">Deployments</div>
-  </div>
-</div>
-
----
-
-## Region-Model Availability
-
-<div class="filter-controls">
-  <div class="filter-group">
-    <label for="region-select">Region</label>
-    <select id="region-select" onchange="filterRegionTable()">
-      <option value="">All Regions</option>
-{region_options}
-    </select>
-  </div>
-  <div class="filter-group">
-    <label for="model-search">Model Name</label>
-    <input type="text" id="model-search" placeholder="Search model..." oninput="filterRegionTable()">
-  </div>
-  <div class="filter-group">
-    <label for="sku-category-filter">SKU Category</label>
-    <select id="sku-category-filter" onchange="filterRegionTable()">
-      <option value="">All Categories</option>
-      <option value="Global">Global</option>
-      <option value="Datazone">Datazone</option>
-      <option value="Standard">Standard</option>
-      <option value="Provisioned">Provisioned</option>
-    </select>
-  </div>
-  <div class="filter-group">
-    <label>&nbsp;</label>
-    <button onclick="resetRegionFilters()" class="md-button">Reset</button>
-  </div>
-</div>
-
-<div class="table-responsive">
-<table id="region-table" class="filterable display">
-  <thead>
-    <tr>
-      <th>Region</th>
-      <th>Model</th>
-      <th>Categories</th>
-      <th>Available SKUs</th>
-    </tr>
-  </thead>
-  <tbody>
-{chr(10).join(all_rows)}
-  </tbody>
-</table>
-</div>
-
----
-
-_Last updated: {datetime.utcnow():%Y-%m-%d %H:%M UTC}_
-"""
-
-
-def generate_by_sku_page(
-    model_regions: Dict[str, Set[str]],
-    model_sku_regions: Dict[str, Dict[str, Set[str]]],
-    all_labels: Set[str],
-    all_regions: Set[str],
-) -> str:
-    """Generate the by-SKU view page as an interactive filterable table."""
-
-    total_regions = len(all_regions)
-
-    # Collect all unique SKU labels and build category mapping
-    sku_to_category: Dict[str, str] = {}
-    for label in sorted(all_labels):
-        sku_to_category[label] = get_sku_category(label)
-
-    def _sku_region_badge(region: str) -> str:
-        return f'<span class="region-badge" onclick="filterBySkuRegion(\'{region}\')">{region}</span>'
-
-    def _sku_region_cell(regions_set: Set[str]) -> str:
-        if not regions_set:
-            return '-'
-        sorted_regs = sorted(regions_set)
-        count = len(sorted_regs)
-        badges = [_sku_region_badge(r) for r in sorted_regs]
-        if count <= 3:
-            return f'<span class="region-list">{" ".join(badges)}</span>'
-        preview_regions = ",".join(sorted_regs[:3])
-        all_regs_str = ",".join(sorted_regs)
-        preview_badges = " ".join(badges[:3])
-        return (
-            f'<span class="region-list" data-preview-regions="{preview_regions}"'
-            f' data-all-regions="{all_regs_str}">'
-            f'{preview_badges} <button class="expand-btn" onclick="toggleSkuRegionBadges(this)">'
-            f'+{count - 3} more</button></span>'
-        )
-
-    # Build flat rows: one per model × SKU combination
-    all_rows = []
-    sku_model_counts: Dict[str, int] = defaultdict(int)
-    sku_region_sets: Dict[str, Set[str]] = defaultdict(set)
-    category_model_sets: Dict[str, Set[str]] = defaultdict(set)
-
-    for model in sorted(model_sku_regions.keys()):
-        for sku_label, regions in model_sku_regions[model].items():
-            cat = sku_to_category.get(sku_label, "Other")
-            region_count = len(regions)
-            pct = round(region_count / total_regions * 100) if total_regions else 0
-            bucket_label, bucket_class, _ = pick_bucket(region_count)
-
-            sku_model_counts[sku_label] += 1
-            sku_region_sets[sku_label].update(regions)
-            category_model_sets[cat].add(model)
-
-            regions_str = ", ".join(sorted(regions))
-            regions_cell = _sku_region_cell(regions)
-
-            all_rows.append(f"""    <tr>
-      <td><a href="../models/{slugify(model)}/"><strong>{model}</strong></a></td>
-      <td>{sku_category_badge(cat)}</td>
-      <td>{sku_label}</td>
-      <td>{regions_cell}</td>
-      <td><span class="badge {bucket_class}">{bucket_label}</span></td>
-      <td>{pct}%</td>
-      <td class="hidden-col">{regions_str}</td>
-    </tr>""")
-
-    # Stats
-    total_skus = len([s for s in sku_model_counts if sku_model_counts[s] > 0])
-    total_models = len(model_sku_regions)
-    total_deployments = len(all_rows)
-
-    # Build filter options
-    sorted_sku_labels = sorted(sku_model_counts.keys())
-    sku_options = "\n".join(
-        [f'      <option value="{s}">{s}</option>' for s in sorted_sku_labels]
-    )
-    region_options = "\n".join(
-        [f'      <option value="{r}">{r}</option>' for r in sorted(all_regions)]
-    )
-
-    # Build per-category region sets for the explainer cards
-    category_region_sets: Dict[str, Set[str]] = defaultdict(set)
-    for label, label_regions in sku_region_sets.items():
-        cat = sku_to_category.get(label, "Other")
-        category_region_sets[cat].update(label_regions)
-
-    # Build SKU summary rows for the overview table
-    sku_summary_rows = []
-    for cat_name in ["Global", "Datazone", "Standard", "Provisioned", "Other"]:
-        cat_skus = [(s, sku_model_counts[s], len(sku_region_sets[s]))
-                     for s in sorted_sku_labels
-                     if sku_to_category.get(s) == cat_name and sku_model_counts[s] > 0]
-        for sku_label, model_count, region_count in cat_skus:
-            pct = round(region_count / total_regions * 100) if total_regions else 0
-            sku_summary_rows.append(
-                f'| <span class="sku-badge sku-{cat_name.lower()}">{cat_name}</span> '
-                f'| {sku_label} | {model_count} | {region_count} | {pct}% |'
-            )
-
-    # Build per-category SKU type lists for explainer cards
-    def _sku_list(cat_name: str) -> str:
-        skus = [s for s in sorted_sku_labels if sku_to_category.get(s) == cat_name and sku_model_counts[s] > 0]
-        return " · ".join(f"`{s}`" for s in skus) if skus else "-"
-
-    # Per-category stats for explainer cards
-    def _cat_stats(cat_name: str) -> tuple:
-        models = len(category_model_sets.get(cat_name, set()))
-        regions = len(category_region_sets.get(cat_name, set()))
-        pct = round(regions / total_regions * 100) if total_regions else 0
-        return models, regions, pct
-
-    g_models, g_regions, g_pct = _cat_stats("Global")
-    d_models, d_regions, d_pct = _cat_stats("Datazone")
-    s_models, s_regions, s_pct = _cat_stats("Standard")
-    p_models, p_regions, p_pct = _cat_stats("Provisioned")
-
-    global_skus = _sku_list("Global")
-    datazone_skus = _sku_list("Datazone")
-    standard_skus = _sku_list("Standard")
-    provisioned_skus = _sku_list("Provisioned")
-
-    return f"""# Models by SKU Type
-
-Explore every deployment SKU and discover which models and regions support it.
-
-<div class="stats-grid">
-  <div class="stat-card">
-    <div class="stat-value">{total_skus}</div>
-    <div class="stat-label">SKU Types</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-value">{total_models}</div>
-    <div class="stat-label">Models</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-value">{total_deployments}</div>
-    <div class="stat-label">Model × SKU Combinations</div>
-  </div>
-</div>
-
----
-
-## :material-layers-outline: SKU Deployment Types Explained
-
-??? example ":material-earth: Global — Worldwide availability with intelligent routing"
-
-    Routes requests intelligently across Azure regions for maximum availability and throughput.
-    Data may be processed in any region within the Azure geography.
-
-    | | |
-    |---|---|
-    | :material-cube-outline: Models | **{g_models}** |
-    | :material-map-marker-outline: Regions | **{g_regions}** ({g_pct}% coverage) |
-
-    **SKU types:** {global_skus}
-
-    **:material-check-circle-outline: Best for:** Applications needing worldwide reach, automatic
-    failover, and maximum uptime across Azure's global network.
-
-    **:material-alert-outline: Compliance:** Data may cross region boundaries — not suitable for
-    HIPAA, FedRAMP, or strict data-residency requirements.
-
-??? example ":material-shield-lock-outline: Datazone — Data residency compliance deployments"
-
-    Keeps data within a specified geographic zone to satisfy compliance and residency policies.
-    Choose the zone; Azure handles routing within that boundary.
-
-    | | |
-    |---|---|
-    | :material-cube-outline: Models | **{d_models}** |
-    | :material-map-marker-outline: Regions | **{d_regions}** ({d_pct}% coverage) |
-
-    **SKU types:** {datazone_skus}
-
-    **:material-check-circle-outline: Best for:** GDPR compliance, data sovereignty requirements,
-    regulated industries (finance, healthcare, government).
-
-    **:material-shield-check-outline: Compliance:** Data stays within the specified geographic zone —
-    supports GDPR and regional data-residency policies.
-
-??? example ":material-cash-multiple: Standard — Pay-as-you-go regional deployments"
-
-    Pay-as-you-go deployments in a single Azure region with flexible, on-demand scaling.
-    No capacity reservation required — you pay only for what you use.
-
-    | | |
-    |---|---|
-    | :material-cube-outline: Models | **{s_models}** |
-    | :material-map-marker-outline: Regions | **{s_regions}** ({s_pct}% coverage) |
-
-    **SKU types:** {standard_skus}
-
-    **:material-check-circle-outline: Best for:** Variable workloads, development and testing,
-    cost-sensitive applications, or when you don't need guaranteed throughput.
-
-    **:material-shield-check-outline: Compliance:** Single-region deployment — HIPAA-eligible in
-    supported regions with a BAA from Microsoft.
-
-??? example ":material-speedometer: Provisioned (PTU) — Reserved throughput capacity"
-
-    Reserved throughput units (PTUs) guarantee consistent, high-performance inference at scale.
-    Capacity is pre-allocated, so latency and throughput are predictable regardless of platform load.
-
-    | | |
-    |---|---|
-    | :material-cube-outline: Models | **{p_models}** |
-    | :material-map-marker-outline: Regions | **{p_regions}** ({p_pct}% coverage) |
-
-    **SKU types:** {provisioned_skus}
-
-    **:material-check-circle-outline: Best for:** High-volume production workloads, latency-sensitive
-    applications, or scenarios where consistent throughput is critical.
-
-    **:material-shield-check-outline: Compliance:** Single-region deployment — HIPAA-eligible in
-    supported regions with a BAA from Microsoft.
-
----
-
-??? tip ":material-target: SKU Selection Guide"
-
-    | Need | Recommended SKU | Why |
-    |------|-----------------|-----|
-    | Global reach with failover | **Global** | Automatic routing, high availability |
-    | Data residency compliance | **Datazone** | Data stays in specified regions |
-    | Cost-effective, variable load | **Standard** | Pay-as-you-go pricing |
-    | Predictable high throughput | **Provisioned (PTU)** | Reserved capacity, guaranteed performance |
-    | HIPAA / regulated workloads | **Standard** or **Provisioned** | Single-region; HIPAA-eligible with a Microsoft BAA |
-    | Avoid Global for compliance | ⚠ **Not Global** | Global data routing is incompatible with strict data-residency requirements |
-
-??? note ":material-format-list-bulleted-type: SKU Overview"
-
-    | Category | SKU Type | Models | Regions | Coverage |
-    |----------|----------|--------|---------|----------|
-{chr(10).join(['    ' + r for r in sku_summary_rows])}
-
----
-
-## :material-table-search: Model–SKU Explorer
-
-Filter by category, SKU type, or model to find exactly what you need.
-
-<div class="filter-controls">
-  <div class="filter-group">
-    <label for="sku-cat-filter">SKU Category</label>
-    <select id="sku-cat-filter" onchange="filterSkuTable()">
-      <option value="">All Categories</option>
-      <option value="Global">Global</option>
-      <option value="Datazone">Datazone</option>
-      <option value="Standard">Standard</option>
-      <option value="Provisioned">Provisioned</option>
-    </select>
-  </div>
-  <div class="filter-group">
-    <label for="sku-type-filter">SKU Type</label>
-    <select id="sku-type-filter" onchange="filterSkuTable()">
-      <option value="">All SKU Types</option>
-{sku_options}
-    </select>
-  </div>
-  <div class="filter-group">
-    <label for="sku-model-search">Model Name</label>
-    <input type="text" id="sku-model-search" placeholder="Search model..." oninput="filterSkuTable()">
-  </div>
-  <div class="filter-group">
-    <label for="sku-coverage-filter">Coverage Level</label>
-    <select id="sku-coverage-filter" onchange="filterSkuTable()">
-      <option value="">All Levels</option>
-      <option value="Broad">Broad (25+)</option>
-      <option value="Strong">Strong (20-24)</option>
-      <option value="Growing">Growing (15-19)</option>
-      <option value="Emerging">Emerging (&lt;15)</option>
-    </select>
-  </div>
-  <div class="filter-group">
-    <label for="sku-region-filter">Region</label>
-    <select id="sku-region-filter" onchange="filterSkuTable()">
-      <option value="">All Regions</option>
-{region_options}
-    </select>
-  </div>
-  <div class="filter-group">
-    <label>&nbsp;</label>
-    <button onclick="resetSkuFilters()" class="md-button">Reset</button>
-  </div>
-</div>
-
-<div class="table-responsive">
-<table id="sku-table" class="display">
-  <thead>
-    <tr>
-      <th>Model</th>
-      <th>Category</th>
-      <th>SKU Type</th>
-      <th>Regions</th>
-      <th>Coverage</th>
-      <th>% of Regions</th>
-      <th class="hidden-col">Region List</th>
-    </tr>
-  </thead>
-  <tbody>
-{chr(10).join(all_rows)}
-  </tbody>
-</table>
-</div>
-
----
-
-_Last updated: {datetime.utcnow():%Y-%m-%d %H:%M UTC}_
+# {title} has moved
+
+<p class="page-lede">This view is now part of the <a href="../explorer/">Availability Explorer</a>, which shows every model, region and deployment type in one grid.</p>
+
+<p><a class="md-button md-button--primary" href="../explorer/">Open the Availability Explorer</a></p>
+
+<script>
+(function () {{
+  var value = new URLSearchParams(location.search).get('{param}');
+  var map = {mapping_json};
+  var hash = '';
+  if (value) hash = {"'#rg=' + encodeURIComponent(value)" if explorer_key == "rg" else "map[value] ? '#t=' + map[value] : ''"};
+  location.replace('../explorer/' + hash);
+}})();
+</script>
 """
 
 
@@ -3040,8 +2583,8 @@ _Last updated: """ + f"{datetime.utcnow():%Y-%m-%d %H:%M UTC}_"
             <td data-order="{timestamp:%Y%m%d%H%M%S}">{date_str}</td>
             <td>{type_badge}</td>
             <td>{model_link(model, prefix="../models/")}</td>
-            <td>{region_link(region, prefix="../by-region/")}</td>
-            <td>{sku_link(sku, prefix="../by-sku/", class_name="change-link-pill change-link-pill--sku")}</td>
+            <td>{region_link(region, prefix="../explorer/")}</td>
+            <td>{sku_link(sku, prefix="../explorer/", class_name="change-link-pill change-link-pill--sku")}</td>
     </tr>''')
 
     # Calculate summary stats (per-SKU changes)
@@ -3172,9 +2715,12 @@ def main():
         "explorer.md": generate_explorer_page(all_regions, len(model_regions)),
         "ptu.md": generate_ptu_page(availability_bits),
         "lifecycle.md": generate_lifecycle_page(lifecycles),
-        "models/index.md": generate_model_index_page(model_regions, model_sku_regions, all_regions, lifecycles),
-        "by-region.md": generate_by_region_page(model_regions, model_region_skus, all_regions),
-        "by-sku.md": generate_by_sku_page(model_regions, model_sku_regions, all_labels, all_regions),
+        "models/index.md": generate_model_index_page(model_regions, availability_bits, lifecycles),
+        "by-region.md": generate_legacy_redirect_page("By Region", "region", "rg"),
+        "by-sku.md": generate_legacy_redirect_page(
+            "By SKU Type", "sku", "t",
+            {label: key for label in sorted(all_labels) if (key := explorer_type_for_label(label)) != "av"},
+        ),
         "history.md": generate_history_page(history, all_regions, set(model_regions.keys())),
         "retirements.md": generate_retirements_page(retirement_data, model_regions_normalized),
     }
@@ -3215,6 +2761,14 @@ def main():
         path.write_text(content, encoding="utf-8")
         print(f"Generated: {path}")
     
+    # Remove leftover pages that an older generator wrote for region names (e.g. models/eastus.md).
+    region_keys = {normalize_lookup_key(region) for region in set(REGION_COORDS) | all_regions}
+    expected = {f"{slugify(model)}.md" for model in model_regions} | {"index.md"}
+    for stale in sorted((DOCS_DIR / "models").glob("*.md")):
+        if stale.name not in expected and normalize_lookup_key(stale.stem) in region_keys:
+            stale.unlink()
+            print(f"Removed stale page: {stale}")
+
     print(f"\nDone! Generated {len(pages) + len(model_regions)} pages.")
 
 

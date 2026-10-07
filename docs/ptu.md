@@ -3,7 +3,25 @@ hide:
   - toc
 ---
 
-# Provisioned Throughput (PTU) Guide
+# Deployment Types &amp; PTU Guide
+
+<p class="page-lede">Every Foundry deployment answers two questions: <strong>where is inference processed</strong>, and <strong>how do you pay</strong>? Pick a cell to see which models and regions offer it.</p>
+
+## Choose a deployment type
+
+<div class="dmx" role="table" aria-label="Deployment types by billing model and data-processing location">
+    <div class="dmx__corner"><span>Where inference runs →</span><span>How you pay ↓</span></div>
+    <div class="dmx__col"><b>Global</b><small>Inference can run in any Azure region. Data at rest stays in your geography. Highest quota.</small><em>Not for strict data-residency rules.</em></div><div class="dmx__col"><b>Data Zone</b><small>Inference stays inside the US or EU data zone.</small><em>Fits most GDPR / EU residency needs.</em></div><div class="dmx__col"><b>Regional</b><small>Inference stays in the region you deploy to.</small><em>Strictest residency; lowest default quota.</em></div>
+    <div class="dmx__row dmx__row--paygo"><b>Pay-as-you-go</b><small>Standard · billed per token · no commitment</small></div>
+    <a class="dmx__cell dmx__cell--paygo" href="../explorer/#t=gs" tabindex="0" data-tip-title="Global Standard" data-tip="Pay per token. Requests can be processed in any Azure region worldwide. Highest default quota — the best place to start."><strong>Global Standard</strong><span><b>58</b> models · <b>29</b> regions</span></a><a class="dmx__cell dmx__cell--paygo" href="../explorer/#t=dz" tabindex="0" data-tip-title="Data Zone Standard" data-tip="Pay per token. Processing stays inside the Microsoft-defined data zone (US or EU)."><strong>Data Zone Standard</strong><span><b>28</b> models · <b>23</b> regions</span></a><a class="dmx__cell dmx__cell--paygo" href="../explorer/#t=rs" tabindex="0" data-tip-title="Regional Standard" data-tip="Pay per token. Processing stays in the region you deploy to."><strong>Regional Standard</strong><span><b>102</b> models · <b>34</b> regions</span></a>
+    <div class="dmx__row dmx__row--ptu"><b>Provisioned (PTU)</b><small>Reserved throughput · hourly or with a reservation</small></div>
+    <a class="dmx__cell dmx__cell--ptu" href="../explorer/#t=gp" tabindex="0" data-tip-title="Global Provisioned (PTU)" data-tip="Reserved throughput (PTUs) billed hourly or via reservation. Processing can happen in any Azure region."><strong>Global Provisioned</strong><span><b>18</b> models · <b>27</b> regions</span></a><a class="dmx__cell dmx__cell--ptu" href="../explorer/#t=dp" tabindex="0" data-tip-title="Data Zone Provisioned (PTU)" data-tip="Reserved throughput (PTUs) with processing kept inside the data zone (US or EU)."><strong>Data Zone Provisioned</strong><span><b>19</b> models · <b>14</b> regions</span></a><a class="dmx__cell dmx__cell--ptu" href="../explorer/#t=rp" tabindex="0" data-tip-title="Regional Provisioned (PTU)" data-tip="Reserved throughput (PTUs) with processing kept in the deployment region."><strong>Regional Provisioned</strong><span><b>27</b> models · <b>34</b> regions</span></a>
+</div>
+<div class="dmx-extra"><a class="dmx-extra__card dmx__cell--batch" href="../explorer/#t=bt"><strong>Batch</strong><small>Send large jobs asynchronously; results within 24 hours at a lower price than Standard. Good for evaluations, enrichment and offline scoring.</small><span><b>12</b> models · <b>22</b> regions</span></a><a class="dmx-extra__card dmx__cell--partner" href="../explorer/#t=mp"><strong>Partner / Marketplace</strong><small>Partner models (Mistral, Cohere, Meta…) deployed as a serverless API and usually billed through Azure Marketplace.</small><span><b>52</b> models · <b>31</b> regions</span></a></div>
+
+<p class="diagram-note">Start with <strong>Global Standard</strong>. Move to Data Zone or Regional when data-residency rules require it, and to PTU when traffic is steady and latency matters.</p>
+
+## Provisioned throughput (PTU)
 
 <div class="ptu-hero">
     <p class="ptu-hero__lede"><strong>A PTU (provisioned throughput unit) is a slice of model capacity reserved only for you.</strong> You pay for it by the hour whether or not you send traffic. In return you get predictable latency, and when you hit 100% the service answers <code>429</code> immediately instead of slowing down.</p>
@@ -15,7 +33,7 @@ hide:
     </div>
 </div>
 
-## 1 · Is PTU right for you?
+### 1 · Is PTU right for you?
 
 <div class="ptu-fit">
     <div class="ptu-fit__col ptu-fit__col--yes">
@@ -36,7 +54,7 @@ hide:
     </div>
 </div>
 
-## 2 · Pick a provisioned deployment type
+### 2 · Pick a provisioned deployment type
 
 <div class="ptu-types">
 <div class="ptu-type ptu-type--gp">
@@ -73,7 +91,7 @@ hide:
 
 <p class="diagram-note">Reservations are bought per deployment type and are not interchangeable — decide this before you buy.</p>
 
-## 3 · Size it
+### 3 · Size it
 
 <ol class="ptu-steps">
     <li><strong>Measure your peak.</strong> Peak requests per minute, average prompt tokens, average response tokens and expected cache-hit rate.</li>
@@ -132,7 +150,7 @@ hide:
 
     GPT-6 family and image models use normalized token accounting — use the capacity calculator for those. Source: [PTU sizing](https://learn.microsoft.com/azure/foundry/openai/how-to/provisioned-throughput-sizing).
 
-## 4 · Get capacity, then reserve
+### 4 · Get capacity, then reserve
 
 <ol class="ptu-flow">
     <li class="ptu-flow__step"><span>1</span><strong>Check quota</strong><small>Foundry → Manage → Quota → Provisioned throughput unit. <a href="https://aka.ms/oai/stuquotarequest">Request more</a> if needed.</small></li>
@@ -151,7 +169,7 @@ hide:
 | Good for | Benchmarks, short events | Steady production |
 | Watch out | Can't be paused; scaling down and back up risks losing capacity | Bought per deployment type; extra PTUs above the reservation bill hourly |
 
-## 5 · Run it in production
+### 5 · Run it in production
 
 <div class="ptu-ops">
     <div><h3>Monitor</h3><p>Azure Monitor metric <strong>Provisioned-managed utilization V2</strong> on the Foundry resource. Requests are rejected at 100%.</p></div>

@@ -79,9 +79,7 @@ nav:
   - Dashboard: index.md
   - Explorer: explorer.md
   - Models: models/index.md
-  - PTU Guide: ptu.md
+  - Deployment & PTU: ptu.md
   - Lifecycle: lifecycle.md
   - Retirements: retirements.md
-  - By Region: by-region.md
-  - By SKU Type: by-sku.md
   - Change History: history.md

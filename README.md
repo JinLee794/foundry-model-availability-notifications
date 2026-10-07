@@ -109,14 +109,14 @@ cat region_diff.json
 
 - **Dashboard** - Instant model finder (press `Ctrl+K` / `Cmd+K`), KPI cards, interactive visuals (retirement runway timeline, lifecycle waffle, world availability map with top regions, provider × deployment-type matrix, monthly availability momentum), retirement watchlist, and latest availability changes
 - **Explorer** - Single-pane grid of every model × region × deployment type with live filters, required-region selection, shareable URLs, CSV export and an "Expand table" full-window view (Esc to exit)
-- **Models** - Searchable table with lifecycle status and filters
-- **PTU Guide** - Plain-language provisioned throughput guide based on Microsoft Learn, with a quick PTU estimator and links to the Foundry capacity calculator
+- **Models** - Model catalog: instant search plus provider-grouped cards showing region count, deployment options and lifecycle flags, with a "Compare availability" link into the Explorer per provider
+- **Deployment & PTU** - Deployment-type matrix (where inference runs × how you pay, plus Batch and Partner) linking each type into the Explorer, followed by a plain-language provisioned throughput guide based on Microsoft Learn, with a quick PTU estimator and links to the Foundry capacity calculator
 - **Lifecycle** - Diagrams of the GA and preview model lifecycle, what each badge means, and where every tracked version sits today
 - **Retirements** - Interactive retirement planner: horizon tabs (this month, next month, 3/6/12 months), a calendar with retirement chips and deprecated-window spans (or a mini-month overview for longer horizons), a Gantt-style timeline view, search and category filters, and a plain-language agenda with replacements; followed by the full schedule table
-- **By Region** - Filter by Azure region
-- **By SKU Type** - Filter by deployment type (Standard, Provisioned, etc.)
 - **Change History** - Timeline of all availability changes
 - **Individual Model Pages** - Per-version lifecycle tracks, next retirement, and a filterable region × SKU matrix
+
+Region and deployment-type links across the site open the Explorer pre-filtered. The former By Region and By SKU Type pages are now redirect stubs, so old links (e.g. `by-region/?region=East%20US`) land on the matching Explorer view.
 
 The finder and explorer are backed by `docs/assets/model-index.json`, which `generate_docs.py` writes on every run. Lifecycle badges show a plain-language explanation on hover or focus.
 
