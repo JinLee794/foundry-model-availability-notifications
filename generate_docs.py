@@ -1507,6 +1507,7 @@ hide:
         <div class="ax-required" data-ax-required hidden></div>
         <div class="ax-actions">
             <label class="ax-toggle"><input type="checkbox" data-ax="he" checked> Hide empty regions</label>
+            <button type="button" class="ax-btn ax-btn--expand" data-ax-action="expand" aria-pressed="false" title="Show the grid across the whole window (Esc to exit)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v2H6v4H4zm10 0h6v6h-2V6h-4zM4 14h2v4h4v2H4zm14 0h2v6h-6v-2h4z"/></svg><span>Expand table</span></button>
             <button type="button" class="ax-btn" data-ax-action="reset">Reset</button>
             <button type="button" class="ax-btn" data-ax-action="csv">Download CSV</button>
         </div>

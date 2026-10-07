@@ -54,7 +54,7 @@
     let allMask = 0;
     let groupBits = {};
     let view = { rows: [], cols: [] };
-    const state = { q: '', p: '', lc: '', g: '', s: 'name', t: '', rg: [], he: true };
+    const state = { q: '', p: '', lc: '', g: '', s: 'name', t: '', rg: [], he: true, x: false };
 
     function applyHash() {
       const h = readHash();
@@ -68,6 +68,7 @@
         return data.regions.some(function (region) { return region.n === name; });
       });
       state.he = h.he !== '0';
+      setExpanded(h.x === '1', true);
       control('q').value = state.q;
       control('p').value = state.p;
       control('lc').value = state.lc;
@@ -84,8 +85,22 @@
       if (state.s !== 'name') parts.push('s=' + state.s);
       if (state.rg.length) parts.push('rg=' + state.rg.map(encodeURIComponent).join(','));
       if (!state.he) parts.push('he=0');
+      if (state.x) parts.push('x=1');
       const hash = parts.length ? '#' + parts.join('&') : '';
       if (hash !== location.hash) history.replaceState(null, '', location.pathname + location.search + hash);
+    }
+
+    function setExpanded(on, quiet) {
+      state.x = !!on;
+      root.classList.toggle('is-expanded', state.x);
+      document.documentElement.classList.toggle('ax-lock', state.x);
+      const btn = root.querySelector('[data-ax-action="expand"]');
+      if (btn) {
+        btn.setAttribute('aria-pressed', state.x ? 'true' : 'false');
+        btn.querySelector('span').textContent = state.x ? 'Exit full view' : 'Expand table';
+      }
+      if (window.FMTip) window.FMTip.hide();
+      if (!quiet) writeHash();
     }
 
     function typeNames(bits) {
@@ -268,6 +283,7 @@
       if (action) {
         if (action.dataset.axAction === 'reset') reset();
         if (action.dataset.axAction === 'csv') downloadCsv();
+        if (action.dataset.axAction === 'expand') setExpanded(!state.x);
         return;
       }
       const cell = event.target.closest('td.ax-c:not(.ax-c--empty)');
@@ -282,6 +298,10 @@
         event.preventDefault();
         toggleRegion(data.regions[+header.dataset.col].n);
       }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && state.x && root.isConnected) setExpanded(false);
     });
 
     // Cell tooltips are computed on demand to keep the DOM light.
@@ -329,6 +349,7 @@
   }
 
   function mountAll() {
+    if (!document.querySelector('.ax.is-expanded')) document.documentElement.classList.remove('ax-lock');
     document.querySelectorAll('[data-explorer]').forEach(mount);
   }
 
