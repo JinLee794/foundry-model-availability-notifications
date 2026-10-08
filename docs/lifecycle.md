@@ -9,13 +9,13 @@
 <ol class="stage-flow" aria-label="Model lifecycle stages">
     <li class="stage-node stage-node--preview">
         <span class="stage-node__dot" aria-hidden="true"></span>
-        <strong>Preview</strong>
+        <strong>Preview</strong><span class="stage-node__count" title="Models tracked in this stage">8</span>
         <span class="stage-node__access">Try it out</span>
         <small>May change or disappear · not for production</small>
     </li>
 <li class="stage-node stage-node--ga">
         <span class="stage-node__dot" aria-hidden="true"></span>
-        <strong>Generally available</strong><span class="stage-node__count" title="Models tracked in this stage">9</span>
+        <strong>Generally available</strong><span class="stage-node__count" title="Models tracked in this stage">69</span>
         <span class="stage-node__access">Build on it</span>
         <small>Stable · end date known from day one</small>
     </li>
@@ -27,19 +27,19 @@
     </li>
 <li class="stage-node stage-node--deprecated">
         <span class="stage-node__dot" aria-hidden="true"></span>
-        <strong>Deprecated</strong><span class="stage-node__count" title="Models tracked in this stage">29</span>
+        <strong>Deprecated</strong><span class="stage-node__count" title="Models tracked in this stage">30</span>
         <span class="stage-node__access">Existing users only</span>
         <small>Nobody new can start · plan your move</small>
     </li>
 <li class="stage-node stage-node--retired">
         <span class="stage-node__dot" aria-hidden="true"></span>
-        <strong>Retired</strong><span class="stage-node__count" title="Models tracked in this stage">5</span>
+        <strong>Retired</strong><span class="stage-node__count" title="Models tracked in this stage">18</span>
         <span class="stage-node__access">Switched off</span>
         <small>Every request fails with 410 Gone</small>
     </li>
 </ol>
 
-<p class="diagram-note">Counts group tracked models by their most urgent active version; Deprecated also includes versions with a retirement due. Legacy is optional and has no published date, so it isn't counted.</p>
+<p class="diagram-note">Counts group tracked models by their most urgent active version; Deprecated also includes versions with a retirement due. Legacy is optional, so only a few models carry it.</p>
 
 <figure class="lc-diagram">
     <figcaption><strong>A GA model's life</strong> · about 18 months from launch to switch-off</figcaption>
@@ -66,14 +66,14 @@
         <div class="lcx-frame"><span class="lcx-frame__when">Before</span>
             <div class="lcx-dep lcx-dep--ok">
         <div class="lcx-dep__top"><strong>chat-prod</strong><span class="lcx-dep__state">Running</span></div>
-        <dl><div class="lcx-dep__field"><dt>Model</dt><dd><span class="pv pv--openai pv--xs" aria-hidden="true" title="OpenAI"></span><span>gpt-4.1</span> <small>2025-04-14</small></dd></div><div class="lcx-dep__field"><dt>Type</dt><dd>Data Zone Standard</dd></div><div class="lcx-dep__field"><dt>Location</dt><dd>East US 2</dd></div><div class="lcx-dep__field"><dt>Endpoint</dt><dd><code>/deployments/chat-prod</code></dd></div></dl>
+        <dl><div class="lcx-dep__field"><dt>Model</dt><dd><span class="pv pv--openai pv--xs" aria-hidden="true" title="OpenAI"></span><span>o1</span> <small>2024-12-17</small></dd></div><div class="lcx-dep__field"><dt>Type</dt><dd>Data Zone Standard</dd></div><div class="lcx-dep__field"><dt>Location</dt><dd>East US 2</dd></div><div class="lcx-dep__field"><dt>Endpoint</dt><dd><code>/deployments/chat-prod</code></dd></div></dl>
     </div>
         </div>
         <div class="lcx-event lcx-event--auto"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v3l4-4-4-4v3a8 8 0 0 0-8 8c0 1.57.46 3.03 1.24 4.26L6.7 14.8A5.9 5.9 0 0 1 6 12a6 6 0 0 1 6-6m6.76 1.74L17.3 9.2c.44.84.7 1.8.7 2.8a6 6 0 0 1-6 6v-3l-4 4 4 4v-3a8 8 0 0 0 8-8c0-1.57-.46-3.03-1.24-4.26"/></svg><strong>Retirement day</strong><span>Microsoft swaps the model behind your deployment, region by region</span></div>
         <div class="lcx-frame"><span class="lcx-frame__when">After</span>
             <div class="lcx-dep lcx-dep--ok">
         <div class="lcx-dep__top"><strong>chat-prod</strong><span class="lcx-dep__state">Running · upgraded</span></div>
-        <dl><div class="lcx-dep__field is-changed"><dt>Model</dt><dd><span class="pv pv--openai pv--xs" aria-hidden="true" title="OpenAI"></span><span>gpt-5</span></dd></div><div class="lcx-dep__field is-same"><dt>Type</dt><dd>Data Zone Standard</dd></div><div class="lcx-dep__field is-same"><dt>Location</dt><dd>East US 2</dd></div><div class="lcx-dep__field is-same"><dt>Endpoint</dt><dd><code>/deployments/chat-prod</code></dd></div></dl>
+        <dl><div class="lcx-dep__field is-changed"><dt>Model</dt><dd><span class="pv pv--openai pv--xs" aria-hidden="true" title="OpenAI"></span><span>gpt-5.6-sol</span></dd></div><div class="lcx-dep__field is-same"><dt>Type</dt><dd>Data Zone Standard</dd></div><div class="lcx-dep__field is-same"><dt>Location</dt><dd>East US 2</dd></div><div class="lcx-dep__field is-same"><dt>Endpoint</dt><dd><code>/deployments/chat-prod</code></dd></div></dl>
     </div>
         </div>
     </div>
@@ -101,20 +101,20 @@
     <div class="lcx-policy__axis"><span style="--x:30%">New default version set</span><span style="--x:76%">Retirement date</span></div>
     <div class="lcx-policy__row">
         <div class="lcx-policy__label"><strong>Early</strong><code>OnceNewDefaultVersionAvailable</code><small>Switches within two weeks of a new default version.</small></div>
-        <div class="lcx-policy__track"><i class="lcx-seg lcx-seg--old" style="left:0%;width:38%"><span>gpt-4.1</span></i><i class="lcx-seg lcx-seg--new" style="left:38%;width:62%"><span>gpt-5</span></i></div>
+        <div class="lcx-policy__track"><i class="lcx-seg lcx-seg--old" style="left:0%;width:38%"><span>o1</span></i><i class="lcx-seg lcx-seg--new" style="left:38%;width:62%"><span>gpt-5.6-sol</span></i></div>
     </div><div class="lcx-policy__row">
         <div class="lcx-policy__label"><strong>On the date</strong><code>OnceCurrentVersionExpired</code><small>Keeps the old model until retirement day, then switches.</small></div>
-        <div class="lcx-policy__track"><i class="lcx-seg lcx-seg--old" style="left:0%;width:76%"><span>gpt-4.1</span></i><i class="lcx-seg lcx-seg--new" style="left:76%;width:24%"><span>gpt-5</span></i></div>
+        <div class="lcx-policy__track"><i class="lcx-seg lcx-seg--old" style="left:0%;width:76%"><span>o1</span></i><i class="lcx-seg lcx-seg--new" style="left:76%;width:24%"><span>gpt-5.6-sol</span></i></div>
     </div><div class="lcx-policy__row">
         <div class="lcx-policy__label"><strong>Never</strong><code>NoAutoUpgrade</code><small>Keeps the old model — and stops working on retirement day.</small></div>
-        <div class="lcx-policy__track"><i class="lcx-seg lcx-seg--old" style="left:0%;width:76%"><span>gpt-4.1</span></i><i class="lcx-seg lcx-seg--fail" style="left:76%;width:24%"><span>410 Gone</span></i></div>
+        <div class="lcx-policy__track"><i class="lcx-seg lcx-seg--old" style="left:0%;width:76%"><span>o1</span></i><i class="lcx-seg lcx-seg--fail" style="left:76%;width:24%"><span>410 Gone</span></i></div>
     </div>
 </figure>
     <p class="lcx-note">Find the setting under the deployment's details in the Foundry portal, or read <code>versionUpgradeOption</code> from the REST API, PowerShell or <code>az cognitiveservices account deployment show</code>. You can change it with REST, PowerShell or the portal — not with the Azure CLI. Priority Processing deployments follow the same rules.</p></section><section class="lcx-panel lcx-panel--ptu"><div class="lcx-story">
         <div class="lcx-frame"><span class="lcx-frame__when">Before</span>
             <div class="lcx-dep lcx-dep--ok">
         <div class="lcx-dep__top"><strong>ptu-prod</strong><span class="lcx-dep__state">Running</span></div>
-        <dl><div class="lcx-dep__field"><dt>Model</dt><dd><span class="pv pv--openai pv--xs" aria-hidden="true" title="OpenAI"></span><span>gpt-4.1</span> <small>2025-04-14</small></dd></div><div class="lcx-dep__field"><dt>Type</dt><dd>Data Zone Provisioned</dd></div><div class="lcx-dep__field"><dt>Location</dt><dd>Sweden Central</dd></div><div class="lcx-dep__field"><dt>Capacity</dt><dd>100 PTU</dd></div><div class="lcx-dep__field"><dt>Endpoint</dt><dd><code>/deployments/ptu-prod</code></dd></div></dl>
+        <dl><div class="lcx-dep__field"><dt>Model</dt><dd><span class="pv pv--openai pv--xs" aria-hidden="true" title="OpenAI"></span><span>o1</span> <small>2024-12-17</small></dd></div><div class="lcx-dep__field"><dt>Type</dt><dd>Data Zone Provisioned</dd></div><div class="lcx-dep__field"><dt>Location</dt><dd>Sweden Central</dd></div><div class="lcx-dep__field"><dt>Capacity</dt><dd>100 PTU</dd></div><div class="lcx-dep__field"><dt>Endpoint</dt><dd><code>/deployments/ptu-prod</code></dd></div></dl>
     </div>
         </div>
         <div class="lcx-event lcx-event--manual"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z"/></svg><strong>Retirement day</strong><span>Nothing is upgraded for you — provisioned deployments are never auto-upgraded</span></div>
@@ -122,13 +122,13 @@
             <div class="lcx-outcome lcx-outcome--fail"><span><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2m2.59 6L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41z"/></svg> If you didn't migrate</span>
                 <div class="lcx-dep lcx-dep--fail">
         <div class="lcx-dep__top"><strong>ptu-prod</strong><span class="lcx-dep__state">410 Gone</span></div>
-        <dl><div class="lcx-dep__field"><dt>Model</dt><dd><span class="pv pv--openai pv--xs" aria-hidden="true" title="OpenAI"></span><span>gpt-4.1</span> <small>2025-04-14</small></dd></div><div class="lcx-dep__field"><dt>Type</dt><dd>Data Zone Provisioned</dd></div><div class="lcx-dep__field"><dt>Location</dt><dd>Sweden Central</dd></div><div class="lcx-dep__field"><dt>Endpoint</dt><dd><code>/deployments/ptu-prod</code></dd></div></dl>
+        <dl><div class="lcx-dep__field"><dt>Model</dt><dd><span class="pv pv--openai pv--xs" aria-hidden="true" title="OpenAI"></span><span>o1</span> <small>2024-12-17</small></dd></div><div class="lcx-dep__field"><dt>Type</dt><dd>Data Zone Provisioned</dd></div><div class="lcx-dep__field"><dt>Location</dt><dd>Sweden Central</dd></div><div class="lcx-dep__field"><dt>Endpoint</dt><dd><code>/deployments/ptu-prod</code></dd></div></dl>
     </div>
             </div>
             <div class="lcx-outcome lcx-outcome--ok"><span><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg> If you migrated</span>
                 <div class="lcx-dep lcx-dep--ok">
         <div class="lcx-dep__top"><strong>ptu-prod</strong><span class="lcx-dep__state">Running</span></div>
-        <dl><div class="lcx-dep__field is-changed"><dt>Model</dt><dd><span class="pv pv--openai pv--xs" aria-hidden="true" title="OpenAI"></span><span>gpt-5</span></dd></div><div class="lcx-dep__field is-same"><dt>Type</dt><dd>Data Zone Provisioned</dd></div><div class="lcx-dep__field is-same"><dt>Location</dt><dd>Sweden Central</dd></div><div class="lcx-dep__field is-same"><dt>Endpoint</dt><dd><code>/deployments/ptu-prod</code></dd></div></dl>
+        <dl><div class="lcx-dep__field is-changed"><dt>Model</dt><dd><span class="pv pv--openai pv--xs" aria-hidden="true" title="OpenAI"></span><span>gpt-5.6-sol</span></dd></div><div class="lcx-dep__field is-same"><dt>Type</dt><dd>Data Zone Provisioned</dd></div><div class="lcx-dep__field is-same"><dt>Location</dt><dd>Sweden Central</dd></div><div class="lcx-dep__field is-same"><dt>Endpoint</dt><dd><code>/deployments/ptu-prod</code></dd></div></dl>
     </div>
             </div>
         </div>
@@ -144,7 +144,7 @@
         <div class="lcx-frame"><span class="lcx-frame__when">Before</span>
             <div class="lcx-dep lcx-dep--ok">
         <div class="lcx-dep__top"><strong>batch-nightly</strong><span class="lcx-dep__state">Running</span></div>
-        <dl><div class="lcx-dep__field"><dt>Model</dt><dd><span class="pv pv--openai pv--xs" aria-hidden="true" title="OpenAI"></span><span>gpt-4.1</span> <small>2025-04-14</small></dd></div><div class="lcx-dep__field"><dt>Type</dt><dd>Global Batch</dd></div><div class="lcx-dep__field"><dt>Location</dt><dd>East US</dd></div><div class="lcx-dep__field"><dt>Endpoint</dt><dd><code>/deployments/batch-nightly</code></dd></div></dl>
+        <dl><div class="lcx-dep__field"><dt>Model</dt><dd><span class="pv pv--openai pv--xs" aria-hidden="true" title="OpenAI"></span><span>o1</span> <small>2024-12-17</small></dd></div><div class="lcx-dep__field"><dt>Type</dt><dd>Global Batch</dd></div><div class="lcx-dep__field"><dt>Location</dt><dd>East US</dd></div><div class="lcx-dep__field"><dt>Endpoint</dt><dd><code>/deployments/batch-nightly</code></dd></div></dl>
     </div>
         </div>
         <div class="lcx-event lcx-event--manual"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z"/></svg><strong>Retirement day</strong><span>Batch deployments aren't upgraded — new jobs on the old model fail</span></div>
@@ -192,64 +192,59 @@
 <p class="lcx-intro">For each upcoming retirement with a named replacement: of the regions where the retiring model runs today, how many already offer the replacement with the <b>same deployment type</b>.</p>
 
 <div class="lcx-cov-grid">
-    <article class="lcx-cov lcx-cov--danger">
+    <article class="lcx-cov lcx-cov--warning">
         <header class="lcx-cov__head">
             <div class="lcx-cov__pair">
-                <a href="../models/gpt-4-1/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><span>gpt-4.1</span></a>
+                <a href="../models/o1/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><span>o1</span></a>
                 <svg class="fm-icon lcx-cov__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg>
-                <a href="../models/gpt-5/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><span>gpt-5</span></a>
+                <a href="../models/gpt-5-6-sol/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><span>gpt-5.6-sol</span></a>
             </div>
-            <span class="lc-badge lc-badge--danger">Retires in 6 days</span>
+            <span class="lc-badge lc-badge--warning">Retires in 42 days</span>
         </header>
-        <p class="lcx-cov__meta">Oct 14, 2026 · version 2025-04-14</p>
+        <p class="lcx-cov__meta">Nov 19, 2026 · version 2024-12-17</p>
         <ul class="lcx-cov__rows">
         <li class="lcx-cov__row lcx-cov__row--auto">
             <span class="lcx-cov__type">Global Standard<small>Upgraded for you</small></span>
-            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 26 of 28 regions"><i style="--p:92.9%"></i></span>
-            <span class="lcx-cov__num"><b>26</b>/28</span>
-            <span class="lcx-cov__note lcx-cov__note--auto" title="Canada Central, Switzerland West"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v3l4-4-4-4v3a8 8 0 0 0-8 8c0 1.57.46 3.03 1.24 4.26L6.7 14.8A5.9 5.9 0 0 1 6 12a6 6 0 0 1 6-6m6.76 1.74L17.3 9.2c.44.84.7 1.8.7 2.8a6 6 0 0 1-6 6v-3l-4 4 4 4v-3a8 8 0 0 0 8-8c0-1.57-.46-3.03-1.24-4.26"/></svg> Auto-upgrade adds it in Canada Central, Switzerland West</span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 25 of 25 regions"><i style="--p:100.0%"></i></span>
+            <span class="lcx-cov__num"><b>25</b>/25</span>
+            <span class="lcx-cov__note lcx-cov__note--ok"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg> Already offered in all 25 regions</span>
         </li><li class="lcx-cov__row lcx-cov__row--auto">
             <span class="lcx-cov__type">Data Zone Standard<small>Upgraded for you</small></span>
-            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 14 of 16 regions"><i style="--p:87.5%"></i></span>
-            <span class="lcx-cov__num"><b>14</b>/16</span>
-            <span class="lcx-cov__note lcx-cov__note--auto" title="US Gov Arizona, US Gov Virginia"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v3l4-4-4-4v3a8 8 0 0 0-8 8c0 1.57.46 3.03 1.24 4.26L6.7 14.8A5.9 5.9 0 0 1 6 12a6 6 0 0 1 6-6m6.76 1.74L17.3 9.2c.44.84.7 1.8.7 2.8a6 6 0 0 1-6 6v-3l-4 4 4 4v-3a8 8 0 0 0 8-8c0-1.57-.46-3.03-1.24-4.26"/></svg> Auto-upgrade adds it in US Gov Arizona, US Gov Virginia</span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 0 of 14 regions"><i style="--p:0.0%"></i></span>
+            <span class="lcx-cov__num"><b>0</b>/14</span>
+            <span class="lcx-cov__note lcx-cov__note--auto" title="Central US, East US, East US 2, France Central, Germany West Central, Italy North, North Central US, Poland Central, South Central US, Spain Central, Sweden Central, West Europe, West US, West US 3"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v3l4-4-4-4v3a8 8 0 0 0-8 8c0 1.57.46 3.03 1.24 4.26L6.7 14.8A5.9 5.9 0 0 1 6 12a6 6 0 0 1 6-6m6.76 1.74L17.3 9.2c.44.84.7 1.8.7 2.8a6 6 0 0 1-6 6v-3l-4 4 4 4v-3a8 8 0 0 0 8-8c0-1.57-.46-3.03-1.24-4.26"/></svg> Auto-upgrade adds it in Central US, East US, East US 2 +11 more</span>
         </li><li class="lcx-cov__row lcx-cov__row--auto">
             <span class="lcx-cov__type">Regional Standard<small>Upgraded for you</small></span>
-            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 26 of 27 regions"><i style="--p:96.3%"></i></span>
-            <span class="lcx-cov__num"><b>26</b>/27</span>
-            <span class="lcx-cov__note lcx-cov__note--auto" title="US Gov Arizona"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v3l4-4-4-4v3a8 8 0 0 0-8 8c0 1.57.46 3.03 1.24 4.26L6.7 14.8A5.9 5.9 0 0 1 6 12a6 6 0 0 1 6-6m6.76 1.74L17.3 9.2c.44.84.7 1.8.7 2.8a6 6 0 0 1-6 6v-3l-4 4 4 4v-3a8 8 0 0 0 8-8c0-1.57-.46-3.03-1.24-4.26"/></svg> Auto-upgrade adds it in US Gov Arizona</span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 25 of 25 regions"><i style="--p:100.0%"></i></span>
+            <span class="lcx-cov__num"><b>25</b>/25</span>
+            <span class="lcx-cov__note lcx-cov__note--ok"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg> Already offered in all 25 regions</span>
         </li><li class="lcx-cov__row lcx-cov__row--manual">
             <span class="lcx-cov__type">Global Provisioned<small>You migrate</small></span>
-            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 27 of 27 regions"><i style="--p:100.0%"></i></span>
-            <span class="lcx-cov__num"><b>27</b>/27</span>
-            <span class="lcx-cov__note lcx-cov__note--ok"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg> Already offered in all 27 regions</span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 0 of 27 regions"><i style="--p:0.0%"></i></span>
+            <span class="lcx-cov__num"><b>0</b>/27</span>
+            <span class="lcx-cov__note lcx-cov__note--manual" title="Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z"/></svg> Not offered yet in Australia East, Brazil South, Canada Central +24 more</span>
         </li><li class="lcx-cov__row lcx-cov__row--manual">
             <span class="lcx-cov__type">Data Zone Provisioned<small>You migrate</small></span>
-            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 13 of 13 regions"><i style="--p:100.0%"></i></span>
-            <span class="lcx-cov__num"><b>13</b>/13</span>
-            <span class="lcx-cov__note lcx-cov__note--ok"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg> Already offered in all 13 regions</span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 0 of 12 regions"><i style="--p:0.0%"></i></span>
+            <span class="lcx-cov__num"><b>0</b>/12</span>
+            <span class="lcx-cov__note lcx-cov__note--manual" title="East US, East US 2, France Central, Germany West Central, North Central US, Poland Central, South Central US, Spain Central, Sweden Central, West Europe, West US, West US 3"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z"/></svg> Not offered yet in East US, East US 2, France Central +9 more</span>
         </li><li class="lcx-cov__row lcx-cov__row--manual">
             <span class="lcx-cov__type">Regional Provisioned<small>You migrate</small></span>
-            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 29 of 29 regions"><i style="--p:100.0%"></i></span>
-            <span class="lcx-cov__num"><b>29</b>/29</span>
-            <span class="lcx-cov__note lcx-cov__note--ok"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg> Already offered in all 29 regions</span>
-        </li><li class="lcx-cov__row lcx-cov__row--manual">
-            <span class="lcx-cov__type">Batch<small>You migrate</small></span>
-            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 22 of 22 regions"><i style="--p:100.0%"></i></span>
-            <span class="lcx-cov__num"><b>22</b>/22</span>
-            <span class="lcx-cov__note lcx-cov__note--ok"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg> Already offered in all 22 regions</span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 21 of 29 regions"><i style="--p:72.4%"></i></span>
+            <span class="lcx-cov__num"><b>21</b>/29</span>
+            <span class="lcx-cov__note lcx-cov__note--manual" title="Brazil South, Canada Central, Japan East, Korea Central, North Europe, South Africa North, Southeast Asia, Switzerland West"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z"/></svg> Not offered yet in Brazil South, Canada Central, Japan East +5 more</span>
         </li>
         </ul>
-    </article><article class="lcx-cov lcx-cov--danger">
+    </article><article class="lcx-cov lcx-cov--warning">
         <header class="lcx-cov__head">
             <div class="lcx-cov__pair">
-                <a href="../models/gpt-4-1-mini/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><span>gpt-4.1-mini</span></a>
+                <a href="../models/o3/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><span>o3</span></a>
                 <svg class="fm-icon lcx-cov__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg>
-                <a href="../models/gpt-5-mini/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><span>gpt-5-mini</span></a>
+                <a href="../models/gpt-5-6-sol/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><span>gpt-5.6-sol</span></a>
             </div>
-            <span class="lc-badge lc-badge--danger">Retires in 6 days</span>
+            <span class="lc-badge lc-badge--warning">Retires in 42 days</span>
         </header>
-        <p class="lcx-cov__meta">Oct 14, 2026 · version 2025-04-14</p>
+        <p class="lcx-cov__meta">Nov 19, 2026 · version 2025-04-16</p>
         <ul class="lcx-cov__rows">
         <li class="lcx-cov__row lcx-cov__row--auto">
             <span class="lcx-cov__type">Global Standard<small>Upgraded for you</small></span>
@@ -258,57 +253,9 @@
             <span class="lcx-cov__note lcx-cov__note--ok"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg> Already offered in all 26 regions</span>
         </li><li class="lcx-cov__row lcx-cov__row--auto">
             <span class="lcx-cov__type">Data Zone Standard<small>Upgraded for you</small></span>
-            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 14 of 16 regions"><i style="--p:87.5%"></i></span>
-            <span class="lcx-cov__num"><b>14</b>/16</span>
-            <span class="lcx-cov__note lcx-cov__note--auto" title="US Gov Arizona, US Gov Virginia"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v3l4-4-4-4v3a8 8 0 0 0-8 8c0 1.57.46 3.03 1.24 4.26L6.7 14.8A5.9 5.9 0 0 1 6 12a6 6 0 0 1 6-6m6.76 1.74L17.3 9.2c.44.84.7 1.8.7 2.8a6 6 0 0 1-6 6v-3l-4 4 4 4v-3a8 8 0 0 0 8-8c0-1.57-.46-3.03-1.24-4.26"/></svg> Auto-upgrade adds it in US Gov Arizona, US Gov Virginia</span>
-        </li><li class="lcx-cov__row lcx-cov__row--auto">
-            <span class="lcx-cov__type">Regional Standard<small>Upgraded for you</small></span>
-            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 26 of 27 regions"><i style="--p:96.3%"></i></span>
-            <span class="lcx-cov__num"><b>26</b>/27</span>
-            <span class="lcx-cov__note lcx-cov__note--auto" title="US Gov Arizona"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v3l4-4-4-4v3a8 8 0 0 0-8 8c0 1.57.46 3.03 1.24 4.26L6.7 14.8A5.9 5.9 0 0 1 6 12a6 6 0 0 1 6-6m6.76 1.74L17.3 9.2c.44.84.7 1.8.7 2.8a6 6 0 0 1-6 6v-3l-4 4 4 4v-3a8 8 0 0 0 8-8c0-1.57-.46-3.03-1.24-4.26"/></svg> Auto-upgrade adds it in US Gov Arizona</span>
-        </li><li class="lcx-cov__row lcx-cov__row--manual">
-            <span class="lcx-cov__type">Global Provisioned<small>You migrate</small></span>
-            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 27 of 27 regions"><i style="--p:100.0%"></i></span>
-            <span class="lcx-cov__num"><b>27</b>/27</span>
-            <span class="lcx-cov__note lcx-cov__note--ok"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg> Already offered in all 27 regions</span>
-        </li><li class="lcx-cov__row lcx-cov__row--manual">
-            <span class="lcx-cov__type">Data Zone Provisioned<small>You migrate</small></span>
-            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 12 of 13 regions"><i style="--p:92.3%"></i></span>
-            <span class="lcx-cov__num"><b>12</b>/13</span>
-            <span class="lcx-cov__note lcx-cov__note--manual" title="US Gov Arizona"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z"/></svg> Not offered yet in US Gov Arizona</span>
-        </li><li class="lcx-cov__row lcx-cov__row--manual">
-            <span class="lcx-cov__type">Regional Provisioned<small>You migrate</small></span>
-            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 29 of 29 regions"><i style="--p:100.0%"></i></span>
-            <span class="lcx-cov__num"><b>29</b>/29</span>
-            <span class="lcx-cov__note lcx-cov__note--ok"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg> Already offered in all 29 regions</span>
-        </li><li class="lcx-cov__row lcx-cov__row--manual">
-            <span class="lcx-cov__type">Batch<small>You migrate</small></span>
-            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 0 of 22 regions"><i style="--p:0.0%"></i></span>
-            <span class="lcx-cov__num"><b>0</b>/22</span>
-            <span class="lcx-cov__note lcx-cov__note--manual" title="Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, West US 3"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z"/></svg> Not offered yet in Australia East, Brazil South, Canada East +19 more</span>
-        </li>
-        </ul>
-    </article><article class="lcx-cov lcx-cov--danger">
-        <header class="lcx-cov__head">
-            <div class="lcx-cov__pair">
-                <a href="../models/gpt-4-1-nano/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><span>gpt-4.1-nano</span></a>
-                <svg class="fm-icon lcx-cov__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg>
-                <a href="../models/gpt-5-nano/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><span>gpt-5-nano</span></a>
-            </div>
-            <span class="lc-badge lc-badge--danger">Retires in 6 days</span>
-        </header>
-        <p class="lcx-cov__meta">Oct 14, 2026 · version 2025-04-14</p>
-        <ul class="lcx-cov__rows">
-        <li class="lcx-cov__row lcx-cov__row--auto">
-            <span class="lcx-cov__type">Global Standard<small>Upgraded for you</small></span>
-            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 26 of 26 regions"><i style="--p:100.0%"></i></span>
-            <span class="lcx-cov__num"><b>26</b>/26</span>
-            <span class="lcx-cov__note lcx-cov__note--ok"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg> Already offered in all 26 regions</span>
-        </li><li class="lcx-cov__row lcx-cov__row--auto">
-            <span class="lcx-cov__type">Data Zone Standard<small>Upgraded for you</small></span>
-            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 14 of 14 regions"><i style="--p:100.0%"></i></span>
-            <span class="lcx-cov__num"><b>14</b>/14</span>
-            <span class="lcx-cov__note lcx-cov__note--ok"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg> Already offered in all 14 regions</span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 0 of 14 regions"><i style="--p:0.0%"></i></span>
+            <span class="lcx-cov__num"><b>0</b>/14</span>
+            <span class="lcx-cov__note lcx-cov__note--auto" title="Central US, East US, East US 2, France Central, Germany West Central, Italy North, North Central US, Poland Central, South Central US, Spain Central, Sweden Central, West Europe, West US, West US 3"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v3l4-4-4-4v3a8 8 0 0 0-8 8c0 1.57.46 3.03 1.24 4.26L6.7 14.8A5.9 5.9 0 0 1 6 12a6 6 0 0 1 6-6m6.76 1.74L17.3 9.2c.44.84.7 1.8.7 2.8a6 6 0 0 1-6 6v-3l-4 4 4 4v-3a8 8 0 0 0 8-8c0-1.57-.46-3.03-1.24-4.26"/></svg> Auto-upgrade adds it in Central US, East US, East US 2 +11 more</span>
         </li><li class="lcx-cov__row lcx-cov__row--auto">
             <span class="lcx-cov__type">Regional Standard<small>Upgraded for you</small></span>
             <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 26 of 26 regions"><i style="--p:100.0%"></i></span>
@@ -326,9 +273,9 @@
             <span class="lcx-cov__note lcx-cov__note--manual" title="East US, East US 2, France Central, Germany West Central, Italy North, North Central US, Poland Central, South Central US, Spain Central, Sweden Central, West Europe, West US, West US 3"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z"/></svg> Not offered yet in East US, East US 2, France Central +10 more</span>
         </li><li class="lcx-cov__row lcx-cov__row--manual">
             <span class="lcx-cov__type">Regional Provisioned<small>You migrate</small></span>
-            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 0 of 29 regions"><i style="--p:0.0%"></i></span>
-            <span class="lcx-cov__num"><b>0</b>/29</span>
-            <span class="lcx-cov__note lcx-cov__note--manual" title="Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, North Europe, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, West US 3"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z"/></svg> Not offered yet in Australia East, Brazil South, Canada Central +26 more</span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 21 of 29 regions"><i style="--p:72.4%"></i></span>
+            <span class="lcx-cov__num"><b>21</b>/29</span>
+            <span class="lcx-cov__note lcx-cov__note--manual" title="Brazil South, Canada Central, Japan East, Korea Central, North Europe, South Africa North, Southeast Asia, Switzerland West"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z"/></svg> Not offered yet in Brazil South, Canada Central, Japan East +5 more</span>
         </li><li class="lcx-cov__row lcx-cov__row--manual">
             <span class="lcx-cov__type">Batch<small>You migrate</small></span>
             <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 0 of 22 regions"><i style="--p:0.0%"></i></span>
@@ -336,9 +283,278 @@
             <span class="lcx-cov__note lcx-cov__note--manual" title="Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, West US 3"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z"/></svg> Not offered yet in Australia East, Brazil South, Canada East +19 more</span>
         </li>
         </ul>
+    </article><article class="lcx-cov lcx-cov--warning">
+        <header class="lcx-cov__head">
+            <div class="lcx-cov__pair">
+                <a href="../models/o3-deep-research/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><span>o3-deep-research</span></a>
+                <svg class="fm-icon lcx-cov__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg>
+                <a href="../models/gpt-5-6-sol/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><span>gpt-5.6-sol</span></a>
+            </div>
+            <span class="lc-badge lc-badge--warning">Retires in 42 days</span>
+        </header>
+        <p class="lcx-cov__meta">Nov 19, 2026 · version 2025-06-26</p>
+        <ul class="lcx-cov__rows">
+        <li class="lcx-cov__row lcx-cov__row--auto">
+            <span class="lcx-cov__type">Global Standard<small>Upgraded for you</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 2 of 2 regions"><i style="--p:100.0%"></i></span>
+            <span class="lcx-cov__num"><b>2</b>/2</span>
+            <span class="lcx-cov__note lcx-cov__note--ok"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg> Already offered in all 2 regions</span>
+        </li><li class="lcx-cov__row lcx-cov__row--auto">
+            <span class="lcx-cov__type">Regional Standard<small>Upgraded for you</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 2 of 2 regions"><i style="--p:100.0%"></i></span>
+            <span class="lcx-cov__num"><b>2</b>/2</span>
+            <span class="lcx-cov__note lcx-cov__note--ok"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg> Already offered in all 2 regions</span>
+        </li>
+        </ul>
+    </article><article class="lcx-cov lcx-cov--warning">
+        <header class="lcx-cov__head">
+            <div class="lcx-cov__pair">
+                <a href="../models/o3-mini/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><span>o3-mini</span></a>
+                <svg class="fm-icon lcx-cov__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg>
+                <a href="../models/gpt-5-6-terra/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><span>gpt-5.6-terra</span></a>
+            </div>
+            <span class="lc-badge lc-badge--warning">Retires in 42 days</span>
+        </header>
+        <p class="lcx-cov__meta">Nov 19, 2026 · version 2025-01-31</p>
+        <ul class="lcx-cov__rows">
+        <li class="lcx-cov__row lcx-cov__row--auto">
+            <span class="lcx-cov__type">Global Standard<small>Upgraded for you</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 25 of 25 regions"><i style="--p:100.0%"></i></span>
+            <span class="lcx-cov__num"><b>25</b>/25</span>
+            <span class="lcx-cov__note lcx-cov__note--ok"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg> Already offered in all 25 regions</span>
+        </li><li class="lcx-cov__row lcx-cov__row--auto">
+            <span class="lcx-cov__type">Data Zone Standard<small>Upgraded for you</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 2 of 16 regions"><i style="--p:12.5%"></i></span>
+            <span class="lcx-cov__num"><b>2</b>/16</span>
+            <span class="lcx-cov__note lcx-cov__note--auto" title="Central US, East US, East US 2, France Central, Germany West Central, Italy North, North Central US, Poland Central, South Central US, Spain Central, Sweden Central, West Europe, West US, West US 3"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v3l4-4-4-4v3a8 8 0 0 0-8 8c0 1.57.46 3.03 1.24 4.26L6.7 14.8A5.9 5.9 0 0 1 6 12a6 6 0 0 1 6-6m6.76 1.74L17.3 9.2c.44.84.7 1.8.7 2.8a6 6 0 0 1-6 6v-3l-4 4 4 4v-3a8 8 0 0 0 8-8c0-1.57-.46-3.03-1.24-4.26"/></svg> Auto-upgrade adds it in Central US, East US, East US 2 +11 more</span>
+        </li><li class="lcx-cov__row lcx-cov__row--auto">
+            <span class="lcx-cov__type">Regional Standard<small>Upgraded for you</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 25 of 25 regions"><i style="--p:100.0%"></i></span>
+            <span class="lcx-cov__num"><b>25</b>/25</span>
+            <span class="lcx-cov__note lcx-cov__note--ok"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg> Already offered in all 25 regions</span>
+        </li><li class="lcx-cov__row lcx-cov__row--manual">
+            <span class="lcx-cov__type">Global Provisioned<small>You migrate</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 0 of 27 regions"><i style="--p:0.0%"></i></span>
+            <span class="lcx-cov__num"><b>0</b>/27</span>
+            <span class="lcx-cov__note lcx-cov__note--manual" title="Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z"/></svg> Not offered yet in Australia East, Brazil South, Canada Central +24 more</span>
+        </li><li class="lcx-cov__row lcx-cov__row--manual">
+            <span class="lcx-cov__type">Data Zone Provisioned<small>You migrate</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 1 of 13 regions"><i style="--p:7.7%"></i></span>
+            <span class="lcx-cov__num"><b>1</b>/13</span>
+            <span class="lcx-cov__note lcx-cov__note--manual" title="East US, East US 2, France Central, Germany West Central, North Central US, Poland Central, South Central US, Spain Central, Sweden Central, West Europe, West US, West US 3"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z"/></svg> Not offered yet in East US, East US 2, France Central +9 more</span>
+        </li><li class="lcx-cov__row lcx-cov__row--manual">
+            <span class="lcx-cov__type">Regional Provisioned<small>You migrate</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 28 of 29 regions"><i style="--p:96.6%"></i></span>
+            <span class="lcx-cov__num"><b>28</b>/29</span>
+            <span class="lcx-cov__note lcx-cov__note--manual" title="North Europe"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z"/></svg> Not offered yet in North Europe</span>
+        </li><li class="lcx-cov__row lcx-cov__row--manual">
+            <span class="lcx-cov__type">Batch<small>You migrate</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 0 of 22 regions"><i style="--p:0.0%"></i></span>
+            <span class="lcx-cov__num"><b>0</b>/22</span>
+            <span class="lcx-cov__note lcx-cov__note--manual" title="Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, West US 3"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z"/></svg> Not offered yet in Australia East, Brazil South, Canada East +19 more</span>
+        </li>
+        </ul>
+    </article><article class="lcx-cov lcx-cov--warning">
+        <header class="lcx-cov__head">
+            <div class="lcx-cov__pair">
+                <a href="../models/o3-pro/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><span>o3-pro</span></a>
+                <svg class="fm-icon lcx-cov__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg>
+                <a href="../models/gpt-5-6-sol/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><span>gpt-5.6-sol</span></a>
+            </div>
+            <span class="lc-badge lc-badge--warning">Retires in 42 days</span>
+        </header>
+        <p class="lcx-cov__meta">Nov 19, 2026 · version 2025-06-10</p>
+        <ul class="lcx-cov__rows">
+        <li class="lcx-cov__row lcx-cov__row--auto">
+            <span class="lcx-cov__type">Global Standard<small>Upgraded for you</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 3 of 3 regions"><i style="--p:100.0%"></i></span>
+            <span class="lcx-cov__num"><b>3</b>/3</span>
+            <span class="lcx-cov__note lcx-cov__note--ok"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg> Already offered in all 3 regions</span>
+        </li><li class="lcx-cov__row lcx-cov__row--auto">
+            <span class="lcx-cov__type">Regional Standard<small>Upgraded for you</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 3 of 3 regions"><i style="--p:100.0%"></i></span>
+            <span class="lcx-cov__num"><b>3</b>/3</span>
+            <span class="lcx-cov__note lcx-cov__note--ok"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg> Already offered in all 3 regions</span>
+        </li>
+        </ul>
+    </article><article class="lcx-cov lcx-cov--warning">
+        <header class="lcx-cov__head">
+            <div class="lcx-cov__pair">
+                <a href="../models/o4-mini/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><span>o4-mini</span></a>
+                <svg class="fm-icon lcx-cov__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg>
+                <a href="../models/gpt-5-6-terra/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><span>gpt-5.6-terra</span></a>
+            </div>
+            <span class="lc-badge lc-badge--warning">Retires in 42 days</span>
+        </header>
+        <p class="lcx-cov__meta">Nov 19, 2026 · version 2025-04-16</p>
+        <ul class="lcx-cov__rows">
+        <li class="lcx-cov__row lcx-cov__row--auto">
+            <span class="lcx-cov__type">Global Standard<small>Upgraded for you</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 26 of 26 regions"><i style="--p:100.0%"></i></span>
+            <span class="lcx-cov__num"><b>26</b>/26</span>
+            <span class="lcx-cov__note lcx-cov__note--ok"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg> Already offered in all 26 regions</span>
+        </li><li class="lcx-cov__row lcx-cov__row--auto">
+            <span class="lcx-cov__type">Data Zone Standard<small>Upgraded for you</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 0 of 14 regions"><i style="--p:0.0%"></i></span>
+            <span class="lcx-cov__num"><b>0</b>/14</span>
+            <span class="lcx-cov__note lcx-cov__note--auto" title="Central US, East US, East US 2, France Central, Germany West Central, Italy North, North Central US, Poland Central, South Central US, Spain Central, Sweden Central, West Europe, West US, West US 3"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v3l4-4-4-4v3a8 8 0 0 0-8 8c0 1.57.46 3.03 1.24 4.26L6.7 14.8A5.9 5.9 0 0 1 6 12a6 6 0 0 1 6-6m6.76 1.74L17.3 9.2c.44.84.7 1.8.7 2.8a6 6 0 0 1-6 6v-3l-4 4 4 4v-3a8 8 0 0 0 8-8c0-1.57-.46-3.03-1.24-4.26"/></svg> Auto-upgrade adds it in Central US, East US, East US 2 +11 more</span>
+        </li><li class="lcx-cov__row lcx-cov__row--auto">
+            <span class="lcx-cov__type">Regional Standard<small>Upgraded for you</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 26 of 26 regions"><i style="--p:100.0%"></i></span>
+            <span class="lcx-cov__num"><b>26</b>/26</span>
+            <span class="lcx-cov__note lcx-cov__note--ok"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg> Already offered in all 26 regions</span>
+        </li><li class="lcx-cov__row lcx-cov__row--manual">
+            <span class="lcx-cov__type">Global Provisioned<small>You migrate</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 0 of 27 regions"><i style="--p:0.0%"></i></span>
+            <span class="lcx-cov__num"><b>0</b>/27</span>
+            <span class="lcx-cov__note lcx-cov__note--manual" title="Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z"/></svg> Not offered yet in Australia East, Brazil South, Canada Central +24 more</span>
+        </li><li class="lcx-cov__row lcx-cov__row--manual">
+            <span class="lcx-cov__type">Data Zone Provisioned<small>You migrate</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 0 of 13 regions"><i style="--p:0.0%"></i></span>
+            <span class="lcx-cov__num"><b>0</b>/13</span>
+            <span class="lcx-cov__note lcx-cov__note--manual" title="East US, East US 2, France Central, Germany West Central, Italy North, North Central US, Poland Central, South Central US, Spain Central, Sweden Central, West Europe, West US, West US 3"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z"/></svg> Not offered yet in East US, East US 2, France Central +10 more</span>
+        </li><li class="lcx-cov__row lcx-cov__row--manual">
+            <span class="lcx-cov__type">Regional Provisioned<small>You migrate</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 28 of 29 regions"><i style="--p:96.6%"></i></span>
+            <span class="lcx-cov__num"><b>28</b>/29</span>
+            <span class="lcx-cov__note lcx-cov__note--manual" title="North Europe"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z"/></svg> Not offered yet in North Europe</span>
+        </li><li class="lcx-cov__row lcx-cov__row--manual">
+            <span class="lcx-cov__type">Batch<small>You migrate</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 0 of 22 regions"><i style="--p:0.0%"></i></span>
+            <span class="lcx-cov__num"><b>0</b>/22</span>
+            <span class="lcx-cov__note lcx-cov__note--manual" title="Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, West US 3"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z"/></svg> Not offered yet in Australia East, Brazil South, Canada East +19 more</span>
+        </li>
+        </ul>
+    </article><article class="lcx-cov lcx-cov--warning">
+        <header class="lcx-cov__head">
+            <div class="lcx-cov__pair">
+                <a href="../models/claude-sonnet-4-5/"><span class="pv pv--anthropic pv--sm" aria-hidden="true" title="Anthropic"></span><span>claude-sonnet-4-5</span></a>
+                <svg class="fm-icon lcx-cov__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg>
+                <a href="../models/claude-sonnet-5-5/"><span class="pv pv--anthropic pv--sm" aria-hidden="true" title="Anthropic"></span><span>claude-sonnet-5-5</span></a>
+            </div>
+            <span class="lc-badge lc-badge--warning">Retires in 53 days</span>
+        </header>
+        <p class="lcx-cov__meta">Nov 30, 2026 · version 1</p>
+        <ul class="lcx-cov__rows">
+        
+        </ul>
+    </article><article class="lcx-cov lcx-cov--warning">
+        <header class="lcx-cov__head">
+            <div class="lcx-cov__pair">
+                <a href="../models/gpt-4o/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><span>gpt-4o</span></a>
+                <svg class="fm-icon lcx-cov__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg>
+                <a href="../models/gpt-5-6-sol/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><span>gpt-5.6-sol</span></a>
+            </div>
+            <span class="lc-badge lc-badge--warning">Retires in 2 months</span>
+        </header>
+        <p class="lcx-cov__meta">Dec 9, 2026 · version 2024-05-13</p>
+        <ul class="lcx-cov__rows">
+        <li class="lcx-cov__row lcx-cov__row--auto">
+            <span class="lcx-cov__type">Global Standard<small>Upgraded for you</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 25 of 25 regions"><i style="--p:100.0%"></i></span>
+            <span class="lcx-cov__num"><b>25</b>/25</span>
+            <span class="lcx-cov__note lcx-cov__note--ok"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg> Already offered in all 25 regions</span>
+        </li><li class="lcx-cov__row lcx-cov__row--auto">
+            <span class="lcx-cov__type">Data Zone Standard<small>Upgraded for you</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 2 of 16 regions"><i style="--p:12.5%"></i></span>
+            <span class="lcx-cov__num"><b>2</b>/16</span>
+            <span class="lcx-cov__note lcx-cov__note--auto" title="Central US, East US, East US 2, France Central, Germany West Central, Italy North, North Central US, Poland Central, South Central US, Spain Central, Sweden Central, West Europe, West US, West US 3"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v3l4-4-4-4v3a8 8 0 0 0-8 8c0 1.57.46 3.03 1.24 4.26L6.7 14.8A5.9 5.9 0 0 1 6 12a6 6 0 0 1 6-6m6.76 1.74L17.3 9.2c.44.84.7 1.8.7 2.8a6 6 0 0 1-6 6v-3l-4 4 4 4v-3a8 8 0 0 0 8-8c0-1.57-.46-3.03-1.24-4.26"/></svg> Auto-upgrade adds it in Central US, East US, East US 2 +11 more</span>
+        </li><li class="lcx-cov__row lcx-cov__row--auto">
+            <span class="lcx-cov__type">Regional Standard<small>Upgraded for you</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 25 of 26 regions"><i style="--p:96.2%"></i></span>
+            <span class="lcx-cov__num"><b>25</b>/26</span>
+            <span class="lcx-cov__note lcx-cov__note--auto" title="US Gov Arizona"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v3l4-4-4-4v3a8 8 0 0 0-8 8c0 1.57.46 3.03 1.24 4.26L6.7 14.8A5.9 5.9 0 0 1 6 12a6 6 0 0 1 6-6m6.76 1.74L17.3 9.2c.44.84.7 1.8.7 2.8a6 6 0 0 1-6 6v-3l-4 4 4 4v-3a8 8 0 0 0 8-8c0-1.57-.46-3.03-1.24-4.26"/></svg> Auto-upgrade adds it in US Gov Arizona</span>
+        </li><li class="lcx-cov__row lcx-cov__row--manual">
+            <span class="lcx-cov__type">Global Provisioned<small>You migrate</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 0 of 27 regions"><i style="--p:0.0%"></i></span>
+            <span class="lcx-cov__num"><b>0</b>/27</span>
+            <span class="lcx-cov__note lcx-cov__note--manual" title="Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z"/></svg> Not offered yet in Australia East, Brazil South, Canada Central +24 more</span>
+        </li><li class="lcx-cov__row lcx-cov__row--manual">
+            <span class="lcx-cov__type">Data Zone Provisioned<small>You migrate</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 1 of 13 regions"><i style="--p:7.7%"></i></span>
+            <span class="lcx-cov__num"><b>1</b>/13</span>
+            <span class="lcx-cov__note lcx-cov__note--manual" title="East US, East US 2, France Central, Germany West Central, North Central US, Poland Central, South Central US, Spain Central, Sweden Central, West Europe, West US, West US 3"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z"/></svg> Not offered yet in East US, East US 2, France Central +9 more</span>
+        </li><li class="lcx-cov__row lcx-cov__row--manual">
+            <span class="lcx-cov__type">Regional Provisioned<small>You migrate</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 21 of 30 regions"><i style="--p:70.0%"></i></span>
+            <span class="lcx-cov__num"><b>21</b>/30</span>
+            <span class="lcx-cov__note lcx-cov__note--manual" title="Brazil South, Canada Central, Japan East, Korea Central, North Europe, South Africa North, Southeast Asia, Switzerland West, US Gov Arizona"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z"/></svg> Not offered yet in Brazil South, Canada Central, Japan East +6 more</span>
+        </li><li class="lcx-cov__row lcx-cov__row--manual">
+            <span class="lcx-cov__type">Batch<small>You migrate</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 0 of 22 regions"><i style="--p:0.0%"></i></span>
+            <span class="lcx-cov__num"><b>0</b>/22</span>
+            <span class="lcx-cov__note lcx-cov__note--manual" title="Australia East, Brazil South, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Sweden Central, Switzerland North, UK South, West Europe, West US, West US 3"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z"/></svg> Not offered yet in Australia East, Brazil South, Canada East +19 more</span>
+        </li>
+        </ul>
+    </article><article class="lcx-cov lcx-cov--info">
+        <header class="lcx-cov__head">
+            <div class="lcx-cov__pair">
+                <a href="../models/gpt-4o/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><span>gpt-4o</span></a>
+                <svg class="fm-icon lcx-cov__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg>
+                <a href="../models/gpt-5-1/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><span>gpt-5.1</span></a>
+            </div>
+            <span class="lc-badge lc-badge--info">Retires in 6 months</span>
+        </header>
+        <p class="lcx-cov__meta">Apr 14, 2027 · version 2024-08-06, 2024-11-20</p>
+        <ul class="lcx-cov__rows">
+        <li class="lcx-cov__row lcx-cov__row--auto">
+            <span class="lcx-cov__type">Global Standard<small>Upgraded for you</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 25 of 25 regions"><i style="--p:100.0%"></i></span>
+            <span class="lcx-cov__num"><b>25</b>/25</span>
+            <span class="lcx-cov__note lcx-cov__note--ok"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg> Already offered in all 25 regions</span>
+        </li><li class="lcx-cov__row lcx-cov__row--auto">
+            <span class="lcx-cov__type">Data Zone Standard<small>Upgraded for you</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 11 of 16 regions"><i style="--p:68.8%"></i></span>
+            <span class="lcx-cov__num"><b>11</b>/16</span>
+            <span class="lcx-cov__note lcx-cov__note--auto" title="Germany West Central, Italy North, Poland Central, Spain Central, West Europe"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v3l4-4-4-4v3a8 8 0 0 0-8 8c0 1.57.46 3.03 1.24 4.26L6.7 14.8A5.9 5.9 0 0 1 6 12a6 6 0 0 1 6-6m6.76 1.74L17.3 9.2c.44.84.7 1.8.7 2.8a6 6 0 0 1-6 6v-3l-4 4 4 4v-3a8 8 0 0 0 8-8c0-1.57-.46-3.03-1.24-4.26"/></svg> Auto-upgrade adds it in Germany West Central, Italy North, Poland Central +2 more</span>
+        </li><li class="lcx-cov__row lcx-cov__row--auto">
+            <span class="lcx-cov__type">Regional Standard<small>Upgraded for you</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 25 of 26 regions"><i style="--p:96.2%"></i></span>
+            <span class="lcx-cov__num"><b>25</b>/26</span>
+            <span class="lcx-cov__note lcx-cov__note--auto" title="US Gov Arizona"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v3l4-4-4-4v3a8 8 0 0 0-8 8c0 1.57.46 3.03 1.24 4.26L6.7 14.8A5.9 5.9 0 0 1 6 12a6 6 0 0 1 6-6m6.76 1.74L17.3 9.2c.44.84.7 1.8.7 2.8a6 6 0 0 1-6 6v-3l-4 4 4 4v-3a8 8 0 0 0 8-8c0-1.57-.46-3.03-1.24-4.26"/></svg> Auto-upgrade adds it in US Gov Arizona</span>
+        </li><li class="lcx-cov__row lcx-cov__row--manual">
+            <span class="lcx-cov__type">Global Provisioned<small>You migrate</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 27 of 27 regions"><i style="--p:100.0%"></i></span>
+            <span class="lcx-cov__num"><b>27</b>/27</span>
+            <span class="lcx-cov__note lcx-cov__note--ok"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg> Already offered in all 27 regions</span>
+        </li><li class="lcx-cov__row lcx-cov__row--manual">
+            <span class="lcx-cov__type">Data Zone Provisioned<small>You migrate</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 12 of 13 regions"><i style="--p:92.3%"></i></span>
+            <span class="lcx-cov__num"><b>12</b>/13</span>
+            <span class="lcx-cov__note lcx-cov__note--manual" title="US Gov Arizona"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z"/></svg> Not offered yet in US Gov Arizona</span>
+        </li><li class="lcx-cov__row lcx-cov__row--manual">
+            <span class="lcx-cov__type">Regional Provisioned<small>You migrate</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 29 of 30 regions"><i style="--p:96.7%"></i></span>
+            <span class="lcx-cov__num"><b>29</b>/30</span>
+            <span class="lcx-cov__note lcx-cov__note--manual" title="US Gov Arizona"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z"/></svg> Not offered yet in US Gov Arizona</span>
+        </li><li class="lcx-cov__row lcx-cov__row--manual">
+            <span class="lcx-cov__type">Batch<small>You migrate</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 22 of 22 regions"><i style="--p:100.0%"></i></span>
+            <span class="lcx-cov__num"><b>22</b>/22</span>
+            <span class="lcx-cov__note lcx-cov__note--ok"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg> Already offered in all 22 regions</span>
+        </li>
+        </ul>
+    </article><article class="lcx-cov lcx-cov--info">
+        <header class="lcx-cov__head">
+            <div class="lcx-cov__pair">
+                <a href="../models/deepseek-v4-flash/"><span class="pv pv--deepseek pv--sm" aria-hidden="true" title="DeepSeek"></span><span>DeepSeek-V4-Flash</span></a>
+                <svg class="fm-icon lcx-cov__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg>
+                <a href="../models/deepseek-v4-flash-0731/"><span class="pv pv--deepseek pv--sm" aria-hidden="true" title="DeepSeek"></span><span>DeepSeek-V4-Flash-0731</span></a>
+            </div>
+            <span class="lc-badge lc-badge--info">Retires in 16 months</span>
+        </header>
+        <p class="lcx-cov__meta">Feb 20, 2028 · version 2026-04-23</p>
+        <ul class="lcx-cov__rows">
+        <li class="lcx-cov__row lcx-cov__row--auto">
+            <span class="lcx-cov__type">Regional Standard<small>Upgraded for you</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in 31 of 31 regions"><i style="--p:100.0%"></i></span>
+            <span class="lcx-cov__num"><b>31</b>/31</span>
+            <span class="lcx-cov__note lcx-cov__note--ok"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg> Already offered in all 31 regions</span>
+        </li>
+        </ul>
     </article>
 </div>
-<p class="lcx-cov-foot">26 other models retire later without a named replacement yet — Microsoft names one 90–120 days before the date. Track them in the <a href="../retirements/">retirement planner</a>.</p>
+<p class="lcx-cov-foot">83 other models retire later without a named replacement yet — Microsoft names one 90–120 days before the date. Track them in the <a href="../retirements/">retirement planner</a>.</p>
 
 <p class="diagram-note">From the latest availability snapshot. Regions are compared by model name, not by individual version. Gaps in pay-as-you-go rows are filled by the upgrade itself; gaps in provisioned or batch rows mean you can't migrate there yet.</p>
 

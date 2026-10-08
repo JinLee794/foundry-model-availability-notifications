@@ -1,10 +1,24 @@
 # <span class="pv pv--moonshot-ai pv--xl" aria-hidden="true" title="Moonshot AI"></span> Kimi-K2.5
 
+<div class="swap swap--scheduled swap--none" aria-label="Replacement model">
+    <div class="swap__side swap__side--from">
+        <span class="swap__eyebrow">Retirement scheduled</span>
+        <span class="swap__model"><span class="pv pv--moonshot-ai pv--sm" aria-hidden="true" title="Moonshot AI"></span><b>Kimi-K2.5</b></span>
+        <small>Retires Jan 26, 2027 · in 4 months</small>
+    </div>
+    <span class="swap__arrow" aria-hidden="true"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg></span>
+    <div class="swap__side swap__side--to">
+        <span class="swap__eyebrow">Replacement</span>
+        <span class="swap__model"><b>Not named yet</b></span>
+        <small>Microsoft usually names one before retirement. <a href="../../lifecycle/">How retirement works</a></small>
+    </div>
+</div>
+
 <div class="model-profile" aria-label="Model availability profile">
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-broad">Broad</span>
-            <span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span>
+            <span class="lc-badge lc-badge--info" tabindex="0" data-tip-title="Preview" data-tip="Experimental: weights, runtime and API might change and it is not guaranteed to reach GA. When it retires it is force-upgraded or removed with at least 30 days notice. Next retirement: Jan 26, 2027 (version 1). Great for evaluation — avoid for critical production.">Preview</span>
             <span class="model-profile__family"><span class="pv pv--moonshot-ai pv--sm" aria-hidden="true" title="Moonshot AI"></span>Moonshot AI</span>
             <span class="model-profile__coverage-note">25+ regions tracked</span>
         </div>
@@ -29,9 +43,9 @@
         <span>SKU types</span>
         <strong>2</strong>
     </div>
-    <div class="model-metric model-metric--neutral">
+    <div class="model-metric model-metric--info">
         <span>Next retirement</span>
-        <strong>None set</strong>
+        <strong>in 4 months</strong>
     </div>
 </div>
     <div class="model-profile__insight">
@@ -42,7 +56,19 @@
 </div>
 ## :material-clock-alert: Lifecycle
 
-<div class="lc-empty">No deprecation or retirement date has been announced for this model in Microsoft's retirement table. See the <a href="../../lifecycle/">lifecycle guide</a> for how dates are set.</div>
+<div class="lc-versions">
+<div class="lc-version lc-version--info">
+    <div class="lc-version__head">
+        <code>1</code>
+        <span class="lc-badge lc-badge--info" tabindex="0" data-tip-title="Preview" data-tip="Experimental: weights, runtime and API might change and it is not guaranteed to reach GA. When it retires it is force-upgraded or removed with at least 30 days notice. Great for evaluation — avoid for critical production.">Preview</span>
+        <span class="lc-version__countdown lc-version__countdown--info">in 4 months</span>
+    </div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:100.00%"></span><span class="lc-today" style="left:79.93%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Retires</b> Jan 26, 2027</span></div>
+    
+</div>
+</div>
+
 
 
 ## :material-cash-multiple: Pricing
@@ -170,4 +196,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 14:48 UTC_
+_Last updated: 2026-10-08 15:49 UTC_

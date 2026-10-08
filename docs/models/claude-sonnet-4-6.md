@@ -1,10 +1,24 @@
 # <span class="pv pv--anthropic pv--xl" aria-hidden="true" title="Anthropic"></span> claude-sonnet-4-6
 
+<div class="swap swap--scheduled swap--none" aria-label="Replacement model">
+    <div class="swap__side swap__side--from">
+        <span class="swap__eyebrow">Retirement scheduled</span>
+        <span class="swap__model"><span class="pv pv--anthropic pv--sm" aria-hidden="true" title="Anthropic"></span><b>claude-sonnet-4-6</b></span>
+        <small>Retires Feb 10, 2027 · in 4 months</small>
+    </div>
+    <span class="swap__arrow" aria-hidden="true"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg></span>
+    <div class="swap__side swap__side--to">
+        <span class="swap__eyebrow">Replacement</span>
+        <span class="swap__model"><b>Not named yet</b></span>
+        <small>Microsoft usually names one before retirement. <a href="../../lifecycle/">How retirement works</a></small>
+    </div>
+</div>
+
 <div class="model-profile" aria-label="Model availability profile">
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-emerging">Emerging</span>
-            <span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span>
+            <span class="lc-badge lc-badge--success" tabindex="0" data-tip-title="Generally available" data-tip="Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models). Next retirement: Feb 10, 2027 (version 1). Safe to build on — note the retirement date in your roadmap.">GA · until Feb 2027</span>
             <span class="model-profile__family"><span class="pv pv--anthropic pv--sm" aria-hidden="true" title="Anthropic"></span>Anthropic</span>
             <span class="model-profile__coverage-note">Under 15 regions tracked</span>
         </div>
@@ -29,9 +43,9 @@
         <span>SKU types</span>
         <strong>2</strong>
     </div>
-    <div class="model-metric model-metric--neutral">
+    <div class="model-metric model-metric--success">
         <span>Next retirement</span>
-        <strong>None set</strong>
+        <strong>in 4 months</strong>
     </div>
 </div>
     <div class="model-profile__insight">
@@ -42,7 +56,19 @@
 </div>
 ## :material-clock-alert: Lifecycle
 
-<div class="lc-empty">No deprecation or retirement date has been announced for this model in Microsoft's retirement table. See the <a href="../../lifecycle/">lifecycle guide</a> for how dates are set.</div>
+<div class="lc-versions">
+<div class="lc-version lc-version--success">
+    <div class="lc-version__head">
+        <code>1</code>
+        <span class="lc-badge lc-badge--success" tabindex="0" data-tip-title="Generally available" data-tip="Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models). Safe to build on — note the retirement date in your roadmap.">Generally available</span>
+        <span class="lc-version__countdown lc-version__countdown--success">in 4 months</span>
+    </div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:100.00%"></span><span class="lc-today" style="left:77.19%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Retires</b> Feb 10, 2027</span></div>
+    
+</div>
+</div>
+
 
 
 ## :material-cash-multiple: Pricing
@@ -148,4 +174,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 14:48 UTC_
+_Last updated: 2026-10-08 15:49 UTC_

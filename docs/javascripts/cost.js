@@ -4,8 +4,7 @@
 
   var DEPS = { global: 'Global', datazone: 'Data Zone', regional: 'Regional' };
   var POPULAR = ['gpt-5', 'gpt-5-mini', 'gpt-4-1', 'gpt-4-1-mini', 'gpt-4o', 'o4-mini', 'deepseek-v3-2', 'grok-4-1-fast-reasoning', 'mistral-large-3', 'llama-3-3-70b-instruct'];
-  var ALERT = { soon: 1, retiring: 1, deprecated: 1, retired: 1 };
-  var MAX_MODELS = 20;
+  var ALERT = { soon: 1, retiring: 1, pending: 1, deprecated: 1, legacy: 1, retired: 1 };
   var MEDIA_TABS = { image: 1, audio: 1, video: 1, docs: 1 };
   var DEFAULTS = { rpd: 3000, in: 1500, out: 400, cache: 30, batch: 0, dep: 'global', peak: 2 };
 
@@ -80,10 +79,14 @@
       models: [],
       ptuModel: q.get('p') || '',
     };
-    var initial = (q.get('m') || '').split(',').filter(function (s) { return bySlug[s]; });
-    state.models = initial.length ? initial : modelSet('popular');
+    var mParam = q.get('m');
+    var initial = (mParam || '').split(',').filter(function (s) { return bySlug[s]; });
     var stashedModels = null;
+    var chipsOpen = false;
+    var barsOpen = false;
+    var viewMode = null; // null = automatic: side by side for the retiring set, ranked otherwise
     function isEmbed(s) { return !!bySlug[s] && /embed/i.test(bySlug[s].n); }
+    state.models = initial.length ? initial : modelSet(mParam === 'retiring' ? 'retiring' : 'all');
 
     var $ = function (sel) { return root.querySelector(sel); };
     var fields = {};
@@ -131,6 +134,10 @@
 
     function modelSet(name) {
       var deps = state ? state.dep : DEFAULTS.dep;
+      if (name === 'all') {
+        // Every deployable token-priced model. Embeddings have their own workload preset.
+        return data.models.filter(function (m) { return m.lk !== 'retired' && !isEmbed(m.s); }).map(function (m) { return m.s; });
+      }
       if (name === 'popular') {
         var picks = POPULAR.filter(function (s) { return bySlug[s]; });
         return picks.length ? picks : data.models.slice(0, 8).map(function (m) { return m.s; });
@@ -138,10 +145,9 @@
       if (name === 'retiring') {
         var out = [];
         data.models.forEach(function (m) {
-          if (ALERT[m.lk] && m.lk !== 'retired' && m.rs && out.length < MAX_MODELS - 1) {
-            if (out.indexOf(m.s) < 0) out.push(m.s);
-            if (out.indexOf(m.rs) < 0) out.push(m.rs);
-          }
+          if (!ALERT[m.lk] || m.lk === 'retired') return;
+          if (out.indexOf(m.s) < 0) out.push(m.s);
+          if (m.rs && bySlug[m.rs] && out.indexOf(m.rs) < 0) out.push(m.rs);
         });
         return out;
       }
@@ -150,35 +156,26 @@
           .map(function (m) { var t = m.p[deps] || m.p.global || {}; return { s: m.s, b: blended(t), lk: m.lk }; })
           .filter(function (x) { return x.b != null && x.b < 1 && x.lk !== 'retired'; })
           .sort(function (a, b) { return a.b - b.b; })
-          .slice(0, 12).map(function (x) { return x.s; });
+          .map(function (x) { return x.s; });
       }
       if (name === 'partner') {
-        // Round-robin across providers so no single family fills the set; the last name
-        // alphabetically is usually the newest version.
-        var pool = data.models.filter(function (m) {
-          var t = m.p.global || m.p.datazone || m.p.regional || {};
-          return m.f !== 'OpenAI' && m.lk !== 'retired' && !ALERT[m.lk] && t.in != null && t.out != null;
-        });
-        var byFam = {};
-        pool.forEach(function (m) { (byFam[m.f] = byFam[m.f] || []).push(m.s); });
-        var picks2 = [], round = 0, added = true;
-        while (picks2.length < 12 && added) {
-          added = false;
-          Object.keys(byFam).forEach(function (f) {
-            var list = byFam[f];
-            var s = list[list.length - 1 - round];
-            if (s && picks2.length < 12) { picks2.push(s); added = true; }
-          });
-          round++;
-        }
-        return picks2;
+        return data.models.filter(function (m) {
+          return m.f !== 'OpenAI' && m.lk !== 'retired' && !isEmbed(m.s);
+        }).map(function (m) { return m.s; });
       }
       return [];
+    }
+    function sameSet(a, b) {
+      if (a.length !== b.length) return false;
+      var seen = {};
+      a.forEach(function (s) { seen[s] = 1; });
+      return b.every(function (s) { return seen[s]; });
     }
 
     function syncUrl() {
       var p = new URLSearchParams();
-      p.set('m', state.models.join(','));
+      p.set('m', sameSet(state.models, modelSet('all')) ? 'all'
+        : sameSet(state.models, modelSet('retiring')) ? 'retiring' : state.models.join(','));
       p.set('rpd', state.rpd); p.set('in', state.in); p.set('out', state.out);
       p.set('c', state.cache); p.set('b', state.batch); p.set('d', state.dep);
       if (state.peak !== DEFAULTS.peak) p.set('pk', state.peak);
@@ -214,14 +211,25 @@
       return '<span class="lc-badge lc-badge--' + esc(m.lt) + '">' + esc(m.ll) + '</span>';
     }
 
+    var CHIP_PREVIEW = 12;
     function renderSelected() {
-      selectedEl.innerHTML = state.models.map(function (s) {
+      var list = state.models;
+      var shown = chipsOpen || list.length <= CHIP_PREVIEW + 2 ? list : list.slice(0, CHIP_PREVIEW);
+      var more = list.length > shown.length
+        ? '<button type="button" class="cp-pick cp-pick--more" data-cp-action="chips" aria-expanded="false">+' + (list.length - shown.length) + ' more</button>'
+        : (list.length > CHIP_PREVIEW + 2 ? '<button type="button" class="cp-pick cp-pick--more" data-cp-action="chips" aria-expanded="true">Show less</button>' : '');
+      selectedEl.innerHTML = shown.map(function (s) {
         var m = bySlug[s];
         return '<span class="cp-pick">' + providerLogo(m.f) + esc(m.n) +
           '<button type="button" data-remove="' + esc(s) + '" aria-label="Remove ' + esc(m.n) + '">×</button></span>';
-      }).join('') || '<span class="cp-hint">Pick a set above or search to add models.</span>';
-      searchEl.disabled = state.models.length >= MAX_MODELS;
-      searchEl.placeholder = state.models.length >= MAX_MODELS ? 'Up to ' + MAX_MODELS + ' models' : 'Add a model — ' + data.models.length + ' priced';
+      }).join('') + more || '<span class="cp-hint">Pick a set above or search to add models.</span>';
+      searchEl.placeholder = 'Add a model — ' + list.length + ' of ' + data.models.length + ' priced selected';
+      root.querySelectorAll('[data-set]').forEach(function (b) {
+        var name = b.getAttribute('data-set');
+        var on = name !== 'clear' && list.length > 0 && sameSet(list, modelSet(name));
+        b.classList.toggle('is-active', on);
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
     }
 
     function renderKpis(rows) {
@@ -243,7 +251,31 @@
 
     function renderBars(rows) {
       var el = $('[data-cp-bars]');
+      var foot = $('[data-cp-bars-foot]');
       $('[data-cp-basis]').textContent = 'List price · ' + DEPS[state.dep] + ' deployment · ' + data.region + ' · USD per month';
+      var retiring = retiringSelected();
+      var pairs = retiring.length > 0 && (viewMode ? viewMode === 'pairs' : sameSet(state.models, modelSet('retiring')));
+      var views = $('[data-cp-views]');
+      if (views) {
+        views.hidden = !retiring.length;
+        views.querySelectorAll('[data-cp-view]').forEach(function (b) {
+          var on = (b.getAttribute('data-cp-view') === 'pairs') === pairs;
+          b.classList.toggle('is-active', on);
+          b.setAttribute('aria-checked', on ? 'true' : 'false');
+        });
+      }
+      $('[data-cp-chart-title]').textContent = pairs ? 'Retiring models vs their replacements' : 'Projected monthly cost';
+      if (pairs) { renderPairs(el, foot, retiring); return; }
+      el.classList.remove('cp-pairs');
+      var long = rows.length > 12;
+      el.classList.toggle('is-open', barsOpen || !long);
+      if (foot) {
+        foot.hidden = !long;
+        $('[data-cp-bars-count]').textContent = rows.length + ' models · cheapest first';
+        var btn = foot.querySelector('[data-cp-action="expand"]');
+        btn.textContent = barsOpen ? 'Collapse list' : 'Show full list';
+        btn.setAttribute('aria-expanded', barsOpen ? 'true' : 'false');
+      }
       if (!rows.length) { el.innerHTML = '<p class="cp-empty">No models selected.</p>'; return; }
       var max = Math.max.apply(null, rows.map(function (r) { return r.c.total; })) || 1;
       el.innerHTML = rows.map(function (r) {
@@ -267,6 +299,100 @@
           '<div class="cp-bar__value"><strong>' + money(c.total) + '</strong><small>' + perK + '</small></div>' +
           '</div>';
       }).join('');
+    }
+
+    function retiringSelected() {
+      var urgency = function (m) {
+        if (m.rdp) return -1;
+        return m.rdy != null ? m.rdy : 1e6;
+      };
+      return state.models.map(function (s) { return bySlug[s]; })
+        .filter(function (m) { return m && ALERT[m.lk] && m.lk !== 'retired'; })
+        .sort(function (a, b) { return urgency(a) - urgency(b) || a.n.localeCompare(b.n); });
+    }
+
+    function pairTrack(m, c, max) {
+      var w = function (v) { return (v / max * 100).toFixed(2) + '%'; };
+      return '<div class="cp-bar__track"' + tip(m.n + ' · ' + money(c.total) + '/month',
+        'Input ' + money(c.input) + ' · Cached ' + money(c.cached) + ' · Output ' + money(c.output)) + '>' +
+        '<span class="cp-part cp-part--in" style="width:' + w(c.input) + '"></span>' +
+        '<span class="cp-part cp-part--cached" style="width:' + w(c.cached) + '"></span>' +
+        '<span class="cp-part cp-part--out" style="width:' + w(c.output) + '"></span></div>';
+    }
+
+    function pairSide(m, c, max, meta, cls) {
+      var notes = [];
+      if (c.fallback) notes.push('<span class="cp-note"' + tip('Deployment type', 'No ' + DEPS[state.dep] + ' price is published, so this uses the ' + DEPS[c.dep] + ' price.') + '>' + DEPS[c.dep] + ' price</span>');
+      if (m.src === 'mp') notes.push('<span class="cp-note"' + tip('Azure Marketplace', 'Billed through Azure Marketplace.') + '>Marketplace</span>');
+      return '<div class="cp-pair__side ' + cls + '">' +
+        '<div class="cp-pair__name">' + providerLogo(m.f) +
+        '<a href="' + esc(siteRoot + 'models/' + m.s + '/') + '">' + esc(m.n) + '</a>' + badge(m) + notes.join('') + '</div>' +
+        '<div class="cp-pair__meta">' + meta + '</div>' +
+        '<div class="cp-pair__cost">' + pairTrack(m, c, max) + '<strong>' + money(c.total) + '</strong></div></div>';
+    }
+
+    function signedMoney(v) {
+      if (Math.abs(v) < 0.005) return '$0';
+      return (v > 0 ? '+' : '−') + money(Math.abs(v));
+    }
+
+    function renderPairs(el, foot, list) {
+      el.classList.add('cp-pairs');
+      var long = list.length > 6;
+      el.classList.toggle('is-open', barsOpen || !long);
+      var oldSum = 0, newSum = 0, compared = 0;
+      var html = list.map(function (m) {
+        var old = costFor(m, state.rpd);
+        var r = m.rs ? bySlug[m.rs] : null;
+        var nw = r ? costFor(r, state.rpd) : null;
+        var max = Math.max(old.total, nw ? nw.total : 0) || 1;
+        var when = m.rdp ? 'Was due ' + esc(m.rdp) + ' · can be switched off any time'
+          : m.rd ? 'Retires ' + esc(m.rd)
+          : m.lk === 'legacy' ? 'Newer models available · no retirement date yet'
+          : 'No retirement date announced yet';
+        var left = pairSide(m, old, max, when, 'cp-pair__side--old');
+        var mid, right;
+        if (nw) {
+          compared++; oldSum += old.total; newSum += nw.total;
+          var diff = nw.total - old.total;
+          var pct = old.total > 0 ? diff / old.total * 100 : 0;
+          var tone = Math.abs(pct) < 0.5 ? 'same' : diff > 0 ? 'up' : 'down';
+          var pctText = tone === 'same' ? 'Same cost' : (pct > 0 ? '+' : '−') + Math.abs(pct).toFixed(Math.abs(pct) < 10 ? 1 : 0) + '%';
+          mid = '<div class="cp-pair__arrow cp-pair__arrow--' + tone + '" aria-label="Cost change ' + esc(pctText) + '">' +
+            '<span class="cp-pair__chevron" aria-hidden="true"></span>' +
+            '<strong>' + pctText + '</strong>' + (tone === 'same' ? '' : '<small>' + signedMoney(diff) + ' / mo</small>') + '</div>';
+          right = pairSide(r, nw, max, r.lk && ALERT[r.lk] ? 'Replacement · itself on the retirement schedule' : 'Named replacement', 'cp-pair__side--new');
+        } else {
+          mid = '<div class="cp-pair__arrow cp-pair__arrow--none" aria-hidden="true"><span class="cp-pair__chevron"></span></div>';
+          if (m.rep) {
+            var name = m.rpg ? '<a href="' + esc(siteRoot + 'models/' + m.rpg + '/') + '">' + esc(m.rep) + '</a>' : esc(m.rep);
+            right = '<div class="cp-pair__side cp-pair__side--new cp-pair__side--empty">' +
+              '<div class="cp-pair__name">' + name + '</div>' +
+              '<div class="cp-pair__meta">Named replacement · no list price published yet</div></div>';
+          } else {
+            right = '<div class="cp-pair__side cp-pair__side--new cp-pair__side--empty">' +
+              '<div class="cp-pair__name">No replacement named yet</div>' +
+              '<div class="cp-pair__meta">Microsoft usually names one before the retirement date.</div></div>';
+          }
+        }
+        return '<div class="cp-pair">' + left + mid + right + '</div>';
+      }).join('');
+      var total = newSum - oldSum;
+      var totalPct = oldSum > 0 ? total / oldSum * 100 : 0;
+      var summary = '<div class="cp-pairs-sum">' +
+        '<span><strong>' + list.length + '</strong> retiring or deprecated</span>' +
+        '<span><strong>' + compared + '</strong> with a priced replacement</span>' +
+        (compared ? '<span>Switching all ' + compared + ': <strong class="cp-pairs-sum__delta cp-pairs-sum__delta--' + (Math.abs(totalPct) < 0.5 ? 'same' : total > 0 ? 'up' : 'down') + '">' +
+          signedMoney(total) + ' / month (' + (totalPct >= 0 ? '+' : '−') + Math.abs(totalPct).toFixed(0) + '%)</strong></span>' : '') +
+        '</div>';
+      el.innerHTML = summary + html;
+      if (foot) {
+        foot.hidden = !long;
+        $('[data-cp-bars-count]').textContent = list.length + ' retiring models · soonest first';
+        var btn = foot.querySelector('[data-cp-action="expand"]');
+        btn.textContent = barsOpen ? 'Collapse list' : 'Show full list';
+        btn.setAttribute('aria-expanded', barsOpen ? 'true' : 'false');
+      }
     }
 
     function tip(title, body) {
@@ -484,7 +610,7 @@
       suggestEl.hidden = false;
     }
     function add(slug) {
-      if (!bySlug[slug] || state.models.indexOf(slug) >= 0 || state.models.length >= MAX_MODELS) return;
+      if (!bySlug[slug] || state.models.indexOf(slug) >= 0) return;
       state.models.push(slug);
       searchEl.value = '';
       active = -1;
@@ -517,8 +643,15 @@
         e.preventDefault();
         add(t.getAttribute('data-add'));
       } else if (t.hasAttribute('data-set')) {
-        state.models = modelSet(t.getAttribute('data-set')).slice(0, MAX_MODELS);
+        state.models = modelSet(t.getAttribute('data-set'));
+        viewMode = null;
+        barsOpen = false;
         render();
+      } else if (t.hasAttribute('data-cp-view')) {
+        viewMode = t.getAttribute('data-cp-view');
+        barsOpen = false;
+        renderBars(root._rows || []);
+        $('[data-cp-bars]').scrollTop = 0;
       } else if (t.hasAttribute('data-workload')) {
         ['rpd', 'in', 'out', 'cache', 'batch'].forEach(function (k) { state[k] = +t.dataset[k]; });
         // Embedding models only make sense for the Embeddings preset: swap them in and out
@@ -528,12 +661,12 @@
           if (embeds.length) {
             var rest = state.models.filter(function (s) { return !isEmbed(s); });
             if (rest.length) stashedModels = rest;
-            state.models = embeds.slice(0, MAX_MODELS);
+            state.models = embeds;
           }
         } else if (state.models.some(isEmbed) || !state.models.length) {
           var kept = state.models.filter(function (s) { return !isEmbed(s); });
           var restored = (stashedModels || []).concat(kept).filter(function (s, i, a) { return bySlug[s] && a.indexOf(s) === i; });
-          state.models = (restored.length ? restored : modelSet('popular')).slice(0, MAX_MODELS);
+          state.models = restored.length ? restored : modelSet('all');
           stashedModels = null;
         }
         render();
@@ -542,6 +675,13 @@
         render();
       } else if (t.getAttribute('data-cp-action') === 'csv') {
         csv(root._rows || []);
+      } else if (t.getAttribute('data-cp-action') === 'chips') {
+        chipsOpen = !chipsOpen;
+        renderSelected();
+      } else if (t.getAttribute('data-cp-action') === 'expand') {
+        barsOpen = !barsOpen;
+        renderBars(root._rows || []);
+        if (!barsOpen) $('[data-cp-bars]').scrollTop = 0;
       }
     });
     ['rpd', 'in', 'out', 'cache', 'batch'].forEach(function (k) {

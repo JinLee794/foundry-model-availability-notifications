@@ -1,10 +1,24 @@
 # <span class="pv pv--openai pv--xl" aria-hidden="true" title="OpenAI"></span> gpt-chat-latest
 
+<div class="swap swap--warning swap--none" aria-label="Replacement model">
+    <div class="swap__side swap__side--from">
+        <span class="swap__eyebrow">Retiring</span>
+        <span class="swap__model"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><b>gpt-chat-latest</b></span>
+        <small>Retires Dec 2, 2026 · in 54 days</small>
+    </div>
+    <span class="swap__arrow" aria-hidden="true"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg></span>
+    <div class="swap__side swap__side--to">
+        <span class="swap__eyebrow">Replacement</span>
+        <span class="swap__model"><b>Not named yet</b></span>
+        <small>Microsoft usually names one before retirement. <a href="../../lifecycle/">How retirement works</a></small>
+    </div>
+</div>
+
 <div class="model-profile" aria-label="Model availability profile">
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-broad">Broad</span>
-            <span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span>
+            <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Next retirement: Dec 2, 2026 (version 2026-08-06). Test the replacement and plan the cut-over.">Retires in 54 days</span>
             <span class="model-profile__family"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span>OpenAI</span>
             <span class="model-profile__coverage-note">25+ regions tracked</span>
         </div>
@@ -29,9 +43,9 @@
         <span>SKU types</span>
         <strong>2</strong>
     </div>
-    <div class="model-metric model-metric--neutral">
+    <div class="model-metric model-metric--warning">
         <span>Next retirement</span>
-        <strong>None set</strong>
+        <strong>in 54 days</strong>
     </div>
 </div>
     <div class="model-profile__insight">
@@ -42,7 +56,49 @@
 </div>
 ## :material-clock-alert: Lifecycle
 
-<div class="lc-empty">No deprecation or retirement date has been announced for this model in Microsoft's retirement table. See the <a href="../../lifecycle/">lifecycle guide</a> for how dates are set.</div>
+<div class="lc-versions">
+<div class="lc-version lc-version--warning">
+    <div class="lc-version__head">
+        <code>2026-08-06</code>
+        <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Test the replacement and plan the cut-over.">Retiring within 90 days</span>
+        <span class="lc-version__countdown lc-version__countdown--warning">in 54 days</span>
+    </div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:100.00%"></span><span class="lc-today" style="left:53.39%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Released</b> Aug 6, 2026</span><span><b>Retires</b> Dec 2, 2026</span></div>
+    
+</div>
+<div class="lc-version lc-version--muted">
+    <div class="lc-version__head">
+        <code>2026-06-24</code>
+        <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Use the replacement model.">Retired</span>
+        <span class="lc-version__countdown lc-version__countdown--muted">15 days ago</span>
+    </div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:86.79%"></span><span class="lc-seg lc-seg--retired" style="left:86.79%;width:13.21%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Released</b> Jun 24, 2026</span><span><b>Retired</b> Sep 24, 2026</span></div>
+    
+</div>
+<div class="lc-version lc-version--muted">
+    <div class="lc-version__head">
+        <code>2026-05-28</code>
+        <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Use the replacement model.">Retired</span>
+        <span class="lc-version__countdown lc-version__countdown--muted">42 days ago</span>
+    </div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:69.17%"></span><span class="lc-seg lc-seg--retired" style="left:69.17%;width:30.83%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Released</b> May 28, 2026</span><span><b>Retired</b> Aug 28, 2026</span></div>
+    
+</div>
+<div class="lc-version lc-version--muted">
+    <div class="lc-version__head">
+        <code>2026-05-05</code>
+        <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Use the replacement model.">Retired</span>
+        <span class="lc-version__countdown lc-version__countdown--muted">65 days ago</span>
+    </div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:58.97%"></span><span class="lc-seg lc-seg--retired" style="left:58.97%;width:41.03%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Released</b> May 5, 2026</span><span><b>Retired</b> Aug 5, 2026</span></div>
+    
+</div>
+</div>
+
 
 
 ## :material-cash-multiple: Pricing
@@ -168,4 +224,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 14:48 UTC_
+_Last updated: 2026-10-08 15:49 UTC_

@@ -4,7 +4,7 @@
     <div class="swap__side swap__side--from">
         <span class="swap__eyebrow">Retiring</span>
         <span class="swap__model"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><b>gpt-image-1.5</b></span>
-        <small>Retires no earlier than Dec 16, 2026 · in 2 months</small>
+        <small>Retires Dec 16, 2026 · in 2 months</small>
     </div>
     <span class="swap__arrow" aria-hidden="true"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg></span>
     <div class="swap__side swap__side--to">
@@ -18,7 +18,7 @@
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-emerging">Emerging</span>
-            <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Next retirement: No earlier than Dec 16, 2026 (version 2025-12-16). Test the replacement and plan the cut-over.">Retires in 68 days</span>
+            <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Next retirement: Dec 16, 2026 (version 2025-12-16). Test the replacement and plan the cut-over.">Retires in 68 days</span>
             <span class="model-profile__family"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span>OpenAI</span>
             <span class="model-profile__coverage-note">Under 15 regions tracked</span>
         </div>
@@ -61,10 +61,10 @@
     <div class="lc-version__head">
         <code>2025-12-16</code>
         <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Test the replacement and plan the cut-over.">Retiring within 90 days</span>
-        <span class="lc-version__countdown lc-version__countdown--warning">No earlier than in 2 months</span>
+        <span class="lc-version__countdown lc-version__countdown--warning">in 2 months</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:100.00%"></span><span class="lc-today" style="left:81.10%"><em>Today</em></span></div>
-    <div class="lc-version__dates"><span><b>Released</b> Dec 16, 2025</span><span><b>Retires</b> ≥ Dec 16, 2026</span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:100.00%"></span><span class="lc-today" style="left:81.10%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Released</b> Dec 16, 2025</span><span><b>Retires</b> Dec 16, 2026</span></div>
     
 </div>
 </div>
@@ -207,4 +207,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 14:48 UTC_
+_Last updated: 2026-10-08 15:49 UTC_

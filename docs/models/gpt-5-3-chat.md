@@ -1,10 +1,25 @@
 # <span class="pv pv--openai pv--xl" aria-hidden="true" title="OpenAI"></span> gpt-5.3-chat
 
+<div class="swap swap--muted" aria-label="Replacement model">
+    <div class="swap__side swap__side--from">
+        <span class="swap__eyebrow">Retired</span>
+        <span class="swap__model"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><b>gpt-5.3-chat</b></span>
+        <small>Requests now fail with 410 Gone</small>
+    </div>
+    <span class="swap__arrow" aria-hidden="true"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg></span>
+    <div class="swap__side swap__side--to">
+        <span class="swap__eyebrow">Move to</span>
+        <span class="swap__model"><a href="../gpt-chat-latest/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><b>gpt-chat-latest</b></a></span>
+        <span class="swap__pills"><span class="swap__fit swap__fit--success">Available in all 28 regions this model runs in</span><span class="swap__cost swap__cost--up" tabindex="0" data-tip-title="Cost of switching" data-tip="$4.81 → $11.25 per 1M tokens at a 3:1 input:output mix (pay-as-you-go list price)."><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg>+134% list price</span></span>
+    </div>
+    
+</div>
+
 <div class="model-profile" aria-label="Model availability profile">
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-broad">Broad</span>
-            <span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span>
+            <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Replacement: gpt-chat-latest. Use the replacement model.">Retired</span>
             <span class="model-profile__family"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span>OpenAI</span>
             <span class="model-profile__coverage-note">25+ regions tracked</span>
         </div>
@@ -29,7 +44,7 @@
         <span>SKU types</span>
         <strong>3</strong>
     </div>
-    <div class="model-metric model-metric--neutral">
+    <div class="model-metric model-metric--muted">
         <span>Next retirement</span>
         <strong>None set</strong>
     </div>
@@ -42,7 +57,19 @@
 </div>
 ## :material-clock-alert: Lifecycle
 
-<div class="lc-empty">No deprecation or retirement date has been announced for this model in Microsoft's retirement table. See the <a href="../../lifecycle/">lifecycle guide</a> for how dates are set.</div>
+<div class="lc-versions">
+<div class="lc-version lc-version--muted">
+    <div class="lc-version__head">
+        <code>2026-03-03</code>
+        <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Use the replacement model.">Retired</span>
+        <span class="lc-version__countdown lc-version__countdown--muted">102 days ago</span>
+    </div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:53.88%"></span><span class="lc-seg lc-seg--retired" style="left:53.88%;width:46.12%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Released</b> Mar 3, 2026</span><span><b>Retired</b> Jun 29, 2026</span></div>
+    <div class="lc-version__replacement">Replacement <a href="../gpt-chat-latest/">gpt-chat-latest</a> <span>29 regions</span></div>
+</div>
+</div>
+
 
 
 ## :material-cash-multiple: Pricing
@@ -54,13 +81,13 @@
             <strong>$4.81<small> per 1M tokens</small></strong>
             <span class="price-card__note">Blended at 3:1 input:output</span>
         </div>
-        <a class="md-button md-button--primary" href="../../cost/?m=gpt-5-3-chat"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg> Project monthly cost</a>
+        <a class="md-button md-button--primary" href="../../cost/?m=gpt-5-3-chat,gpt-chat-latest"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg> Project monthly cost</a>
     </div>
     <div class="table-responsive"><table class="price-table">
         <thead><tr><th>Per 1M tokens</th><th>Global</th><th>Data Zone</th></tr></thead>
         <tbody><tr><th scope="row">Input</th><td>$1.75</td><td>$1.93</td></tr><tr><th scope="row">Cached input</th><td>$0.175</td><td>$0.1925</td></tr><tr><th scope="row">Output</th><td>$14.00</td><td>$15.40</td></tr></tbody>
     </table></div>
-    
+    <p class="price-card__swap price-card__swap--up"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m21 9-4-4v3h-7v2h7v3M7 11l-4 4 4 4v-3h7v-2H7z"/></svg><span>Replacement <a href="../gpt-chat-latest/">gpt-chat-latest</a> is <b>134% more</b> at list price: $4.81 → $11.25 per 1M blended tokens (Global).</span></p>
     
     <p class="price-card__foot">Pay-as-you-go list price in USD for East US 2 from the <a href="https://learn.microsoft.com/rest/api/cost-management/retail-prices/azure-retail-prices">Azure Retail Prices API</a>, checked daily, last updated 2026-10-08. Excludes tax and negotiated discounts; other regions can differ.</p>
 </div>
@@ -174,4 +201,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 14:48 UTC_
+_Last updated: 2026-10-08 15:49 UTC_

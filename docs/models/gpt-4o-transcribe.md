@@ -1,10 +1,10 @@
 # <span class="pv pv--openai pv--xl" aria-hidden="true" title="OpenAI"></span> gpt-4o-transcribe
 
-<div class="swap swap--warning swap--none" aria-label="Replacement model">
+<div class="swap swap--danger swap--none" aria-label="Replacement model">
     <div class="swap__side swap__side--from">
-        <span class="swap__eyebrow">Retirement imminent</span>
+        <span class="swap__eyebrow">Retiring</span>
         <span class="swap__model"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><b>gpt-4o-transcribe</b></span>
-        <small>Retirement date not announced yet</small>
+        <small>Retires Oct 15, 2026 · in 6 days</small>
     </div>
     <span class="swap__arrow" aria-hidden="true"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg></span>
     <div class="swap__side swap__side--to">
@@ -18,7 +18,7 @@
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-emerging">Emerging</span>
-            <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retirement imminent" data-tip="Microsoft said this version retires no earlier than a date that has now passed, so it can be switched off at any time once notice is given. Treat it as retiring now — migrate.">Retirement imminent</span>
+            <span class="lc-badge lc-badge--danger" tabindex="0" data-tip-title="Retiring within 30 days" data-tip="This version is switched off on its retirement date; after that every request returns 410 Gone. Standard deployments may be auto-upgraded to the replacement — provisioned (PTU) deployments are not. Next retirement: Oct 15, 2026 (version 2025-03-20). Move traffic to the replacement now.">Retires in 6 days</span>
             <span class="model-profile__family"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span>OpenAI</span>
             <span class="model-profile__coverage-note">Under 15 regions tracked</span>
         </div>
@@ -43,9 +43,9 @@
         <span>SKU types</span>
         <strong>4</strong>
     </div>
-    <div class="model-metric model-metric--warning">
+    <div class="model-metric model-metric--danger">
         <span>Next retirement</span>
-        <strong>None set</strong>
+        <strong>in 6 days</strong>
     </div>
 </div>
     <div class="model-profile__insight">
@@ -57,14 +57,14 @@
 ## :material-clock-alert: Lifecycle
 
 <div class="lc-versions">
-<div class="lc-version lc-version--warning">
+<div class="lc-version lc-version--danger">
     <div class="lc-version__head">
         <code>2025-03-20</code>
-        <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retirement imminent" data-tip="Microsoft said this version retires no earlier than a date that has now passed, so it can be switched off at any time once notice is given. Treat it as retiring now — migrate.">Retirement imminent</span>
-        <span class="lc-version__countdown lc-version__countdown--warning">Date passed · may retire any time</span>
+        <span class="lc-badge lc-badge--danger" tabindex="0" data-tip-title="Retiring within 30 days" data-tip="This version is switched off on its retirement date; after that every request returns 410 Gone. Standard deployments may be auto-upgraded to the replacement — provisioned (PTU) deployments are not. Move traffic to the replacement now.">Retiring within 30 days</span>
+        <span class="lc-version__countdown lc-version__countdown--danger">in 6 days</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:60.85%"></span><span class="lc-seg lc-seg--retired" style="left:60.85%;width:39.15%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
-    <div class="lc-version__dates"><span><b>Released</b> Mar 20, 2025</span><span><b>Retires</b> ≥ Feb 28, 2026</span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:100.00%"></span><span class="lc-today lc-today--end" style="left:98.78%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Released</b> Mar 20, 2025</span><span><b>Retires</b> Oct 15, 2026</span></div>
     
 </div>
 </div>
@@ -183,4 +183,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 14:48 UTC_
+_Last updated: 2026-10-08 15:49 UTC_

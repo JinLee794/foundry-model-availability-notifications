@@ -1,10 +1,25 @@
 # <span class="pv pv--deepseek pv--xl" aria-hidden="true" title="DeepSeek"></span> DeepSeek-V4-Flash
 
+<div class="swap swap--scheduled" aria-label="Replacement model">
+    <div class="swap__side swap__side--from">
+        <span class="swap__eyebrow">Retirement scheduled</span>
+        <span class="swap__model"><span class="pv pv--deepseek pv--sm" aria-hidden="true" title="DeepSeek"></span><b>DeepSeek-V4-Flash</b></span>
+        <small>Retires Feb 20, 2028 · in 16 months</small>
+    </div>
+    <span class="swap__arrow" aria-hidden="true"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg></span>
+    <div class="swap__side swap__side--to">
+        <span class="swap__eyebrow">Replacement</span>
+        <span class="swap__model"><a href="../deepseek-v4-flash-0731/"><span class="pv pv--deepseek pv--sm" aria-hidden="true" title="DeepSeek"></span><b>DeepSeek-V4-Flash-0731</b></a></span>
+        <span class="swap__pills"><span class="swap__fit swap__fit--success">Available in all 31 regions this model runs in</span><span class="swap__cost swap__cost--up" tabindex="0" data-tip-title="Cost of switching" data-tip="$0.27 → $0.66 per 1M tokens at a 3:1 input:output mix (pay-as-you-go list price)."><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg>+144% list price</span></span>
+    </div>
+    
+</div>
+
 <div class="model-profile" aria-label="Model availability profile">
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-broad">Broad</span>
-            <span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span>
+            <span class="lc-badge lc-badge--success" tabindex="0" data-tip-title="Generally available" data-tip="Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models). Next retirement: Feb 20, 2028 (version 2026-04-23). Replacement: DeepSeek-V4-Flash-0731. Safe to build on — note the retirement date in your roadmap.">GA · until Feb 2028</span>
             <span class="model-profile__family"><span class="pv pv--deepseek pv--sm" aria-hidden="true" title="DeepSeek"></span>DeepSeek</span>
             <span class="model-profile__coverage-note">25+ regions tracked</span>
         </div>
@@ -29,9 +44,9 @@
         <span>SKU types</span>
         <strong>2</strong>
     </div>
-    <div class="model-metric model-metric--neutral">
+    <div class="model-metric model-metric--success">
         <span>Next retirement</span>
-        <strong>None set</strong>
+        <strong>in 16 months</strong>
     </div>
 </div>
     <div class="model-profile__insight">
@@ -42,7 +57,19 @@
 </div>
 ## :material-clock-alert: Lifecycle
 
-<div class="lc-empty">No deprecation or retirement date has been announced for this model in Microsoft's retirement table. See the <a href="../../lifecycle/">lifecycle guide</a> for how dates are set.</div>
+<div class="lc-versions">
+<div class="lc-version lc-version--success">
+    <div class="lc-version__head">
+        <code>2026-04-23</code>
+        <span class="lc-badge lc-badge--success" tabindex="0" data-tip-title="Generally available" data-tip="Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models). Safe to build on — note the retirement date in your roadmap.">Generally available</span>
+        <span class="lc-version__countdown lc-version__countdown--success">in 16 months</span>
+    </div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:100.00%"></span><span class="lc-today" style="left:25.15%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Released</b> Apr 23, 2026</span><span><b>Retires</b> Feb 20, 2028</span></div>
+    <div class="lc-version__replacement">Replacement <a href="../deepseek-v4-flash-0731/">DeepSeek-V4-Flash-0731</a> <span>31 regions</span></div>
+</div>
+</div>
+
 
 
 ## :material-cash-multiple: Pricing
@@ -54,13 +81,13 @@
             <strong>$0.27<small> per 1M tokens</small></strong>
             <span class="price-card__note">Blended at 3:1 input:output</span>
         </div>
-        <a class="md-button md-button--primary" href="../../cost/?m=deepseek-v4-flash"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg> Project monthly cost</a>
+        <a class="md-button md-button--primary" href="../../cost/?m=deepseek-v4-flash,deepseek-v4-flash-0731"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg> Project monthly cost</a>
     </div>
     <div class="table-responsive"><table class="price-table">
         <thead><tr><th>Per 1M tokens</th><th>Global</th><th>Data Zone</th></tr></thead>
         <tbody><tr><th scope="row">Input</th><td>$0.19</td><td>$0.21</td></tr><tr><th scope="row">Cached input</th><td>$0.028</td><td>$0.031</td></tr><tr><th scope="row">Output</th><td>$0.51</td><td>$0.56</td></tr></tbody>
     </table></div>
-    
+    <p class="price-card__swap price-card__swap--up"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m21 9-4-4v3h-7v2h7v3M7 11l-4 4 4 4v-3h7v-2H7z"/></svg><span>Replacement <a href="../deepseek-v4-flash-0731/">DeepSeek-V4-Flash-0731</a> is <b>144% more</b> at list price: $0.27 → $0.66 per 1M blended tokens (Global).</span></p>
     
     <p class="price-card__foot">Pay-as-you-go list price in USD for East US 2 from the <a href="https://learn.microsoft.com/rest/api/cost-management/retail-prices/azure-retail-prices">Azure Retail Prices API</a>, checked daily, last updated 2026-10-08. Excludes tax and negotiated discounts; other regions can differ.</p>
 </div>
@@ -170,4 +197,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 14:48 UTC_
+_Last updated: 2026-10-08 15:49 UTC_

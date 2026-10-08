@@ -4,7 +4,7 @@
     <div class="swap__side swap__side--from">
         <span class="swap__eyebrow">Retirement scheduled</span>
         <span class="swap__model"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><b>gpt-4o-transcribe-diarize</b></span>
-        <small>Retires Apr 16, 2027 · in 6 months</small>
+        <small>Retires Apr 15, 2027 · in 6 months</small>
     </div>
     <span class="swap__arrow" aria-hidden="true"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg></span>
     <div class="swap__side swap__side--to">
@@ -18,7 +18,7 @@
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-emerging">Emerging</span>
-            <span class="lc-badge lc-badge--success" tabindex="0" data-tip-title="Generally available" data-tip="Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models). Next retirement: Apr 16, 2027 (version 2025-10-15). Safe to build on — note the retirement date in your roadmap.">GA · until Apr 2027</span>
+            <span class="lc-badge lc-badge--success" tabindex="0" data-tip-title="Generally available" data-tip="Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models). Next retirement: Apr 15, 2027 (version 2025-10-15). Safe to build on — note the retirement date in your roadmap.">GA · until Apr 2027</span>
             <span class="model-profile__family"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span>OpenAI</span>
             <span class="model-profile__coverage-note">Under 15 regions tracked</span>
         </div>
@@ -63,8 +63,8 @@
         <span class="lc-badge lc-badge--success" tabindex="0" data-tip-title="Generally available" data-tip="Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models). Safe to build on — note the retirement date in your roadmap.">Generally available</span>
         <span class="lc-version__countdown lc-version__countdown--success">in 6 months</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:66.61%"></span><span class="lc-seg lc-seg--deprecated" style="left:66.61%;width:33.39%"></span><span class="lc-today" style="left:65.33%"><em>Today</em></span></div>
-    <div class="lc-version__dates"><span><b>Released</b> Oct 15, 2025</span><span><b>Deprecates</b> Oct 15, 2026</span><span><b>Retires</b> Apr 16, 2027</span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:66.73%"></span><span class="lc-seg lc-seg--deprecated" style="left:66.73%;width:33.27%"></span><span class="lc-today" style="left:65.45%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Released</b> Oct 15, 2025</span><span><b>Deprecates</b> Oct 15, 2026</span><span><b>Retires</b> Apr 15, 2027</span></div>
     
 </div>
 </div>
@@ -183,4 +183,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 14:48 UTC_
+_Last updated: 2026-10-08 15:49 UTC_

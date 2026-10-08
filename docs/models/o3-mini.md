@@ -1,25 +1,25 @@
 # <span class="pv pv--openai pv--xl" aria-hidden="true" title="OpenAI"></span> o3-mini
 
-<div class="swap swap--muted" aria-label="Replacement model">
+<div class="swap swap--warning" aria-label="Replacement model">
     <div class="swap__side swap__side--from">
-        <span class="swap__eyebrow">Retired</span>
+        <span class="swap__eyebrow">Retiring</span>
         <span class="swap__model"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><b>o3-mini</b></span>
-        <small>Requests now fail with 410 Gone</small>
+        <small>Retires Nov 19, 2026 · in 41 days</small>
     </div>
     <span class="swap__arrow" aria-hidden="true"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg></span>
     <div class="swap__side swap__side--to">
         <span class="swap__eyebrow">Move to</span>
-        <span class="swap__model"><a href="../o4-mini/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><b>o4-mini</b></a></span>
-        <span class="swap__pills"><span class="swap__fit swap__fit--warning">Available in 29 of 31 regions this model runs in</span><span class="swap__cost swap__cost--neutral" tabindex="0" data-tip-title="Cost of switching" data-tip="$1.93 → $1.93 per 1M tokens at a 3:1 input:output mix (pay-as-you-go list price)."><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg>Same list price</span></span>
+        <span class="swap__model"><a href="../gpt-5-6-terra/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><b>gpt-5.6-terra</b></a></span>
+        <span class="swap__pills"><span class="swap__fit swap__fit--warning">Available in 30 of 31 regions this model runs in</span><span class="swap__cost swap__cost--up" tabindex="0" data-tip-title="Cost of switching" data-tip="$1.93 → $4.50 per 1M tokens at a 3:1 input:output mix (pay-as-you-go list price)."><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg>+134% list price</span></span>
     </div>
-    <p class="swap__gap"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5A2.5 2.5 0 0 1 9.5 9 2.5 2.5 0 0 1 12 6.5M12 2a7 7 0 0 1 7 7c0 5.25-7 13-7 13S5 14.25 5 9a7 7 0 0 1 7-7m0 2a5 5 0 0 0-5 5c0 1 0 3 5 9.71C17 12 17 10 17 9a5 5 0 0 0-5-5"/></svg><span><b>Not offered yet in:</b> US Gov Arizona, US Gov Virginia. Deployments there need a different region or an alternative model.</span></p>
+    <p class="swap__gap"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5A2.5 2.5 0 0 1 9.5 9 2.5 2.5 0 0 1 12 6.5M12 2a7 7 0 0 1 7 7c0 5.25-7 13-7 13S5 14.25 5 9a7 7 0 0 1 7-7m0 2a5 5 0 0 0-5 5c0 1 0 3 5 9.71C17 12 17 10 17 9a5 5 0 0 0-5-5"/></svg><span><b>Not offered yet in:</b> North Europe. Deployments there need a different region or an alternative model.</span></p>
 </div>
 
 <div class="model-profile" aria-label="Model availability profile">
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-broad">Broad</span>
-            <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Replacement: o4-mini. Use the replacement model.">Retired</span>
+            <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Next retirement: Nov 19, 2026 (version 2025-01-31). Replacement: gpt-5.6-terra. Test the replacement and plan the cut-over.">Retires in 41 days</span>
             <span class="model-profile__family"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span>OpenAI</span>
             <span class="model-profile__coverage-note">25+ regions tracked</span>
         </div>
@@ -44,9 +44,9 @@
         <span>SKU types</span>
         <strong>14</strong>
     </div>
-    <div class="model-metric model-metric--muted">
+    <div class="model-metric model-metric--warning">
         <span>Next retirement</span>
-        <strong>None set</strong>
+        <strong>in 41 days</strong>
     </div>
 </div>
     <div class="model-profile__insight">
@@ -58,15 +58,15 @@
 ## :material-clock-alert: Lifecycle
 
 <div class="lc-versions">
-<div class="lc-version lc-version--muted">
+<div class="lc-version lc-version--warning">
     <div class="lc-version__head">
         <code>2025-01-31</code>
-        <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Use the replacement model.">Retired</span>
-        <span class="lc-version__countdown lc-version__countdown--muted">68 days ago</span>
+        <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Test the replacement and plan the cut-over.">Retiring within 90 days</span>
+        <span class="lc-version__countdown lc-version__countdown--warning">in 41 days</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:59.35%"></span><span class="lc-seg lc-seg--deprecated" style="left:59.35%;width:29.76%"></span><span class="lc-seg lc-seg--retired" style="left:89.11%;width:10.89%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
-    <div class="lc-version__dates"><span><b>Released</b> Jan 31, 2025</span><span><b>Deprecated</b> Jan 31, 2026</span><span><b>Retired</b> Aug 2, 2026</span></div>
-    <div class="lc-version__replacement">Replacement <a href="../o4-mini/">o4-mini</a> <span>29 regions</span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:55.56%"></span><span class="lc-seg lc-seg--deprecated" style="left:55.56%;width:44.44%"></span><span class="lc-today lc-today--end" style="left:93.61%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Released</b> Jan 31, 2025</span><span><b>Deprecated</b> Jan 31, 2026</span><span><b>Retires</b> Nov 19, 2026</span></div>
+    <div class="lc-version__replacement">Replacement <a href="../gpt-5-6-terra/">gpt-5.6-terra</a> <span>30 regions</span></div>
 </div>
 </div>
 
@@ -81,13 +81,13 @@
             <strong>$1.93<small> per 1M tokens</small></strong>
             <span class="price-card__note">Blended at 3:1 input:output</span>
         </div>
-        <a class="md-button md-button--primary" href="../../cost/?m=o3-mini,o4-mini"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg> Project monthly cost</a>
+        <a class="md-button md-button--primary" href="../../cost/?m=o3-mini,gpt-5-6-terra"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg> Project monthly cost</a>
     </div>
     <div class="table-responsive"><table class="price-table">
         <thead><tr><th>Per 1M tokens</th><th>Global</th><th>Data Zone</th><th>Regional</th></tr></thead>
         <tbody><tr><th scope="row">Input</th><td>$1.10</td><td>$1.21</td><td>$1.21</td></tr><tr><th scope="row">Cached input</th><td>$0.55</td><td>$0.605</td><td>$0.605</td></tr><tr><th scope="row">Output</th><td>$4.40</td><td>$4.84</td><td>$4.84</td></tr><tr><th scope="row">Batch input</th><td>$0.55</td><td>$0.605</td><td>—</td></tr><tr><th scope="row">Batch output</th><td>$2.20</td><td>$2.42</td><td>—</td></tr></tbody>
     </table></div>
-    <p class="price-card__swap price-card__swap--neutral"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m21 9-4-4v3h-7v2h7v3M7 11l-4 4 4 4v-3h7v-2H7z"/></svg><span>Replacement <a href="../o4-mini/">o4-mini</a> costs about the same at list price: $1.93 → $1.93 per 1M blended tokens (Global).</span></p>
+    <p class="price-card__swap price-card__swap--up"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m21 9-4-4v3h-7v2h7v3M7 11l-4 4 4 4v-3h7v-2H7z"/></svg><span>Replacement <a href="../gpt-5-6-terra/">gpt-5.6-terra</a> is <b>134% more</b> at list price: $1.93 → $4.50 per 1M blended tokens (Global).</span></p>
     <p class="price-card__ptu"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4a10 10 0 0 0-8.66 15h17.32A10 10 0 0 0 12 4m0 2a8 8 0 0 1 7.42 11H4.58A8 8 0 0 1 12 6m4.24 2.34-5.66 4.24a1.5 1.5 0 1 0 1.84 1.84z"/></svg><span><b>Provisioned (PTU):</b> Global $1.00 · Data Zone $1.10 · Regional $2.00 per PTU-hour. A 1-year reservation brings it to about $221 per PTU-month.</span></p>
     <p class="price-card__foot">Pay-as-you-go list price in USD for East US 2 from the <a href="https://learn.microsoft.com/rest/api/cost-management/retail-prices/azure-retail-prices">Azure Retail Prices API</a>, checked daily, last updated 2026-10-08. Excludes tax and negotiated discounts; other regions can differ.</p>
 </div>
@@ -317,4 +317,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 14:48 UTC_
+_Last updated: 2026-10-08 15:49 UTC_

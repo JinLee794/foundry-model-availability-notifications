@@ -4,7 +4,7 @@
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-broad">Broad</span>
-            <span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span>
+            <span class="lc-badge lc-badge--success" tabindex="0" data-tip-title="Generally available" data-tip="Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models). Safe to build on — note the retirement date in your roadmap.">Generally available</span>
             <span class="model-profile__family"><span class="pv pv--microsoft pv--sm" aria-hidden="true" title="Microsoft"></span>Microsoft</span>
             <span class="model-profile__coverage-note">25+ regions tracked</span>
         </div>
@@ -29,7 +29,7 @@
         <span>SKU types</span>
         <strong>3</strong>
     </div>
-    <div class="model-metric model-metric--neutral">
+    <div class="model-metric model-metric--success">
         <span>Next retirement</span>
         <strong>None set</strong>
     </div>
@@ -42,7 +42,19 @@
 </div>
 ## :material-clock-alert: Lifecycle
 
-<div class="lc-empty">No deprecation or retirement date has been announced for this model in Microsoft's retirement table. See the <a href="../../lifecycle/">lifecycle guide</a> for how dates are set.</div>
+<div class="lc-versions">
+<div class="lc-version lc-version--success">
+    <div class="lc-version__head">
+        <code>-</code>
+        <span class="lc-badge lc-badge--success" tabindex="0" data-tip-title="Generally available" data-tip="Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models). Safe to build on — note the retirement date in your roadmap.">Generally available</span>
+        
+    </div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:100.00%"></span><span class="lc-seg lc-seg--open" style="left:calc(100% - 2rem);width:2rem"></span><span class="lc-today" style="left:50.00%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Retires</b> not announced</span></div>
+    
+</div>
+</div>
+
 
 
 ## :material-cash-multiple: Pricing
@@ -177,4 +189,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 14:48 UTC_
+_Last updated: 2026-10-08 15:49 UTC_

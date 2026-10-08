@@ -1,10 +1,25 @@
 # <span class="pv pv--cohere pv--xl" aria-hidden="true" title="Cohere"></span> Cohere-command-a-plus-05-2026
 
+<div class="swap swap--danger" aria-label="Replacement model">
+    <div class="swap__side swap__side--from">
+        <span class="swap__eyebrow">Retiring</span>
+        <span class="swap__model"><span class="pv pv--cohere pv--sm" aria-hidden="true" title="Cohere"></span><b>Cohere-command-a-plus-05-2026</b></span>
+        <small>Retires Oct 16, 2026 · in 7 days</small>
+    </div>
+    <span class="swap__arrow" aria-hidden="true"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg></span>
+    <div class="swap__side swap__side--to">
+        <span class="swap__eyebrow">Move to</span>
+        <span class="swap__model"><span class="swap__plain"><span class="pv pv--cohere pv--sm" aria-hidden="true" title="Cohere"></span><b>coherelabs-command-a-plus-05-2026-fp8</b></span></span>
+        <span class="swap__pills"><span class="swap__fit swap__fit--info">Not tracked here yet: check the Foundry catalog</span></span>
+    </div>
+    
+</div>
+
 <div class="model-profile" aria-label="Model availability profile">
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-broad">Broad</span>
-            <span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span>
+            <span class="lc-badge lc-badge--danger" tabindex="0" data-tip-title="Retiring within 30 days" data-tip="This version is switched off on its retirement date; after that every request returns 410 Gone. Standard deployments may be auto-upgraded to the replacement — provisioned (PTU) deployments are not. Next retirement: Oct 16, 2026 (version 1). Replacement: coherelabs-command-a-plus-05-2026-fp8. Move traffic to the replacement now.">Retires in 7 days</span>
             <span class="model-profile__family"><span class="pv pv--cohere pv--sm" aria-hidden="true" title="Cohere"></span>Cohere</span>
             <span class="model-profile__coverage-note">25+ regions tracked</span>
         </div>
@@ -29,9 +44,9 @@
         <span>SKU types</span>
         <strong>2</strong>
     </div>
-    <div class="model-metric model-metric--neutral">
+    <div class="model-metric model-metric--danger">
         <span>Next retirement</span>
-        <strong>None set</strong>
+        <strong>in 7 days</strong>
     </div>
 </div>
     <div class="model-profile__insight">
@@ -42,7 +57,19 @@
 </div>
 ## :material-clock-alert: Lifecycle
 
-<div class="lc-empty">No deprecation or retirement date has been announced for this model in Microsoft's retirement table. See the <a href="../../lifecycle/">lifecycle guide</a> for how dates are set.</div>
+<div class="lc-versions">
+<div class="lc-version lc-version--danger">
+    <div class="lc-version__head">
+        <code>1</code>
+        <span class="lc-badge lc-badge--danger" tabindex="0" data-tip-title="Retiring within 30 days" data-tip="This version is switched off on its retirement date; after that every request returns 410 Gone. Standard deployments may be auto-upgraded to the replacement — provisioned (PTU) deployments are not. Move traffic to the replacement now.">Retiring within 30 days</span>
+        <span class="lc-version__countdown lc-version__countdown--danger">in 7 days</span>
+    </div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:100.00%"></span><span class="lc-today lc-today--end" style="left:98.54%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Retires</b> Oct 16, 2026</span></div>
+    <div class="lc-version__replacement">Replacement <code>coherelabs-command-a-plus-05-2026-fp8</code> <span>not yet tracked</span> <span>or coherelabs-command-a-plus-05-2026-bf16, coherelabs-command-a-plus-05-2026-w4a4</span></div>
+</div>
+</div>
+
 
 
 ## :material-cash-multiple: Pricing
@@ -60,7 +87,7 @@
         <thead><tr><th>Per 1M tokens</th><th>Global</th><th>Data Zone</th></tr></thead>
         <tbody><tr><th scope="row">Input</th><td>$0.80</td><td>$0.88</td></tr><tr><th scope="row">Output</th><td>$3.20</td><td>$3.52</td></tr></tbody>
     </table></div>
-    
+    <p class="price-card__swap"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m21 9-4-4v3h-7v2h7v3M7 11l-4 4 4 4v-3h7v-2H7z"/></svg><span>No list price is published for the replacement coherelabs-command-a-plus-05-2026-fp8 yet.</span></p>
     
     <p class="price-card__foot">Pay-as-you-go list price in USD for East US 2 from the <a href="https://learn.microsoft.com/rest/api/cost-management/retail-prices/azure-retail-prices">Azure Retail Prices API</a>, checked daily, last updated 2026-10-08. Excludes tax and negotiated discounts; other regions can differ.</p>
 </div>
@@ -170,4 +197,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 14:48 UTC_
+_Last updated: 2026-10-08 15:49 UTC_

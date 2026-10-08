@@ -1,10 +1,25 @@
 # <span class="pv pv--partner pv--xl" aria-hidden="true" title="Partner"></span> tsuzumi-7b
 
+<div class="swap swap--warning" aria-label="Replacement model">
+    <div class="swap__side swap__side--from">
+        <span class="swap__eyebrow">Retirement imminent</span>
+        <span class="swap__model"><span class="pv pv--partner pv--sm" aria-hidden="true" title="Partner"></span><b>tsuzumi-7b</b></span>
+        <small>Was due Aug 31, 2026 · can be switched off any time</small>
+    </div>
+    <span class="swap__arrow" aria-hidden="true"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg></span>
+    <div class="swap__side swap__side--to">
+        <span class="swap__eyebrow">Move to</span>
+        <span class="swap__model"><span class="swap__plain"><span class="pv pv--partner pv--sm" aria-hidden="true" title="Partner"></span><b>tsuzumi2</b></span></span>
+        <span class="swap__pills"><span class="swap__fit swap__fit--info">Not tracked here yet: check the Foundry catalog</span></span>
+    </div>
+    
+</div>
+
 <div class="model-profile" aria-label="Model availability profile">
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-emerging">Emerging</span>
-            <span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span>
+            <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retirement imminent" data-tip="Microsoft said this version retires no earlier than a date that has now passed, so it can be switched off at any time once notice is given. Replacement: tsuzumi2. Treat it as retiring now — migrate.">Retirement imminent</span>
             <span class="model-profile__family"><span class="pv pv--partner pv--sm" aria-hidden="true" title="Partner"></span>Partner</span>
             <span class="model-profile__coverage-note">Under 15 regions tracked</span>
         </div>
@@ -29,7 +44,7 @@
         <span>SKU types</span>
         <strong>2</strong>
     </div>
-    <div class="model-metric model-metric--neutral">
+    <div class="model-metric model-metric--warning">
         <span>Next retirement</span>
         <strong>None set</strong>
     </div>
@@ -42,7 +57,19 @@
 </div>
 ## :material-clock-alert: Lifecycle
 
-<div class="lc-empty">No deprecation or retirement date has been announced for this model in Microsoft's retirement table. See the <a href="../../lifecycle/">lifecycle guide</a> for how dates are set.</div>
+<div class="lc-versions">
+<div class="lc-version lc-version--warning">
+    <div class="lc-version__head">
+        <code>2</code>
+        <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retirement imminent" data-tip="Microsoft said this version retires no earlier than a date that has now passed, so it can be switched off at any time once notice is given. Treat it as retiring now — migrate.">Retirement imminent</span>
+        <span class="lc-version__countdown lc-version__countdown--warning">39 days ago</span>
+    </div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:93.52%"></span><span class="lc-seg lc-seg--retired" style="left:93.52%;width:6.48%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Retired</b> Aug 31, 2026</span></div>
+    <div class="lc-version__replacement">Replacement <code>tsuzumi2</code> <span>not yet tracked</span></div>
+</div>
+</div>
+
 
 
 ## :material-cash-multiple: Pricing
@@ -132,4 +159,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 14:48 UTC_
+_Last updated: 2026-10-08 15:49 UTC_

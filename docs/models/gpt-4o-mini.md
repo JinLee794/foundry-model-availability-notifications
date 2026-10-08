@@ -1,25 +1,24 @@
 # <span class="pv pv--openai pv--xl" aria-hidden="true" title="OpenAI"></span> gpt-4o-mini
 
-<div class="swap swap--muted" aria-label="Replacement model">
+<div class="swap swap--caution swap--none" aria-label="Replacement model">
     <div class="swap__side swap__side--from">
-        <span class="swap__eyebrow">Retired</span>
+        <span class="swap__eyebrow">Retiring</span>
         <span class="swap__model"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><b>gpt-4o-mini</b></span>
-        <small>Requests now fail with 410 Gone</small>
+        <small>Retires Apr 14, 2027 · in 6 months</small>
     </div>
     <span class="swap__arrow" aria-hidden="true"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg></span>
     <div class="swap__side swap__side--to">
-        <span class="swap__eyebrow">Move to</span>
-        <span class="swap__model"><a href="../gpt-4-1-mini/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><b>gpt-4.1-mini</b></a></span>
-        <span class="swap__pills"><span class="swap__fit swap__fit--success">Available in all 29 regions this model runs in</span><span class="swap__cost swap__cost--up" tabindex="0" data-tip-title="Cost of switching" data-tip="$0.2625 → $0.70 per 1M tokens at a 3:1 input:output mix (pay-as-you-go list price)."><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg>+167% list price</span></span>
+        <span class="swap__eyebrow">Replacement</span>
+        <span class="swap__model"><b>Not named yet</b></span>
+        <small>Microsoft usually names one before retirement. <a href="../../lifecycle/">How retirement works</a></small>
     </div>
-    
 </div>
 
 <div class="model-profile" aria-label="Model availability profile">
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-broad">Broad</span>
-            <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Replacement: gpt-4.1-mini. Use the replacement model.">Retired</span>
+            <span class="lc-badge lc-badge--caution" tabindex="0" data-tip-title="Deprecated" data-tip="No longer available to new customers. Subscriptions that already deployed this version can keep creating and managing deployments until it retires. Next retirement: Apr 14, 2027 (version 2024-07-18). Don&#x27;t start new work on it; schedule a migration before retirement.">Deprecated</span>
             <span class="model-profile__family"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span>OpenAI</span>
             <span class="model-profile__coverage-note">25+ regions tracked</span>
         </div>
@@ -44,9 +43,9 @@
         <span>SKU types</span>
         <strong>13</strong>
     </div>
-    <div class="model-metric model-metric--muted">
+    <div class="model-metric model-metric--caution">
         <span>Next retirement</span>
-        <strong>None set</strong>
+        <strong>in 6 months</strong>
     </div>
 </div>
     <div class="model-profile__insight">
@@ -58,20 +57,17 @@
 ## :material-clock-alert: Lifecycle
 
 <div class="lc-versions">
-<div class="lc-version lc-version--muted">
+<div class="lc-version lc-version--caution">
     <div class="lc-version__head">
         <code>2024-07-18</code>
-        <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Use the replacement model.">Retired</span>
-        <span class="lc-version__countdown lc-version__countdown--muted">192 days ago</span>
+        <span class="lc-badge lc-badge--caution" tabindex="0" data-tip-title="Deprecated" data-tip="No longer available to new customers. Subscriptions that already deployed this version can keep creating and managing deployments until it retires. Don&#x27;t start new work on it; schedule a migration before retirement.">Deprecated</span>
+        <span class="lc-version__countdown lc-version__countdown--caution">in 6 months</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:44.95%"></span><span class="lc-seg lc-seg--deprecated" style="left:44.95%;width:31.53%"></span><span class="lc-seg lc-seg--retired" style="left:76.48%;width:23.52%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
-    <div class="lc-version__dates"><span><b>Released</b> Jul 18, 2024</span><span><b>Deprecated</b> Jul 18, 2025</span><span><b>Retired</b> Mar 31, 2026</span></div>
-    <div class="lc-version__replacement">Replacement <a href="../gpt-4-1-mini/">gpt-4.1-mini</a> <span>31 regions</span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:36.50%"></span><span class="lc-seg lc-seg--deprecated" style="left:36.50%;width:63.50%"></span><span class="lc-today" style="left:81.20%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Released</b> Jul 18, 2024</span><span><b>Deprecated</b> Jul 18, 2025</span><span><b>Retires</b> Apr 14, 2027</span></div>
+    
 </div>
 </div>
-
-!!! note "Retirement date update"
-    Standard deployment type retires 2026-03-31, with auto-upgrades starting 2026-03-09. For Provisioned, Global Standard, and Data Zone Standard deployment types, the retirement date has been moved to 2026-10-01.
 
 
 
@@ -84,13 +80,13 @@
             <strong>$0.2625<small> per 1M tokens</small></strong>
             <span class="price-card__note">Blended at 3:1 input:output</span>
         </div>
-        <a class="md-button md-button--primary" href="../../cost/?m=gpt-4o-mini,gpt-4-1-mini"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg> Project monthly cost</a>
+        <a class="md-button md-button--primary" href="../../cost/?m=gpt-4o-mini"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg> Project monthly cost</a>
     </div>
     <div class="table-responsive"><table class="price-table">
         <thead><tr><th>Per 1M tokens</th><th>Global</th><th>Data Zone</th><th>Regional</th></tr></thead>
         <tbody><tr><th scope="row">Input</th><td>$0.15</td><td>$0.165</td><td>$0.165</td></tr><tr><th scope="row">Cached input</th><td>$0.075</td><td>$0.083</td><td>$0.083</td></tr><tr><th scope="row">Output</th><td>$0.60</td><td>$0.66</td><td>$0.66</td></tr><tr><th scope="row">Batch input</th><td>$0.075</td><td>$0.083</td><td>—</td></tr><tr><th scope="row">Batch output</th><td>$0.30</td><td>$0.33</td><td>—</td></tr></tbody>
     </table></div>
-    <p class="price-card__swap price-card__swap--up"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m21 9-4-4v3h-7v2h7v3M7 11l-4 4 4 4v-3h7v-2H7z"/></svg><span>Replacement <a href="../gpt-4-1-mini/">gpt-4.1-mini</a> is <b>167% more</b> at list price: $0.2625 → $0.70 per 1M blended tokens (Global).</span></p>
+    
     <p class="price-card__ptu"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4a10 10 0 0 0-8.66 15h17.32A10 10 0 0 0 12 4m0 2a8 8 0 0 1 7.42 11H4.58A8 8 0 0 1 12 6m4.24 2.34-5.66 4.24a1.5 1.5 0 1 0 1.84 1.84z"/></svg><span><b>Provisioned (PTU):</b> Global $1.00 · Data Zone $1.10 · Regional $2.00 per PTU-hour. A 1-year reservation brings it to about $221 per PTU-month.</span></p>
     <p class="price-card__foot">Pay-as-you-go list price in USD for East US 2 from the <a href="https://learn.microsoft.com/rest/api/cost-management/retail-prices/azure-retail-prices">Azure Retail Prices API</a>, checked daily, last updated 2026-10-08. Excludes tax and negotiated discounts; other regions can differ.</p>
 </div>
@@ -329,4 +325,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 14:48 UTC_
+_Last updated: 2026-10-08 15:49 UTC_

@@ -31,6 +31,10 @@ jobs:
       - name: Refresh list prices
         continue-on-error: true
         run: python .region-watch/fetch_prices.py
+
+      - name: Refresh retirement schedule
+        continue-on-error: true
+        run: python .region-watch/fetch_retirements.py
       - name: Detect changes
         id: detect
         run: |
@@ -79,7 +83,7 @@ jobs:
         run: |
           git config user.email "bot@users.noreply.github.com"
           git config user.name "region-bot"
-          git add .region-watch/regions_snapshot.json .region-watch/history .region-watch/pricing.json region_diff.json REGION_AVAILABILITY.md
+          git add .region-watch/regions_snapshot.json .region-watch/history .region-watch/pricing.json .region-watch/retirement_data.json region_diff.json REGION_AVAILABILITY.md
           git diff --cached --quiet || git commit -m "Update region snapshot"
           git push
 

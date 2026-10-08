@@ -1,10 +1,24 @@
 # <span class="pv pv--meta pv--xl" aria-hidden="true" title="Meta"></span> Llama-3.2-11B-Vision-Instruct
 
+<div class="swap swap--muted swap--none" aria-label="Replacement model">
+    <div class="swap__side swap__side--from">
+        <span class="swap__eyebrow">Retired</span>
+        <span class="swap__model"><span class="pv pv--meta pv--sm" aria-hidden="true" title="Meta"></span><b>Llama-3.2-11B-Vision-Instruct</b></span>
+        <small>Requests now fail with 410 Gone</small>
+    </div>
+    <span class="swap__arrow" aria-hidden="true"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg></span>
+    <div class="swap__side swap__side--to">
+        <span class="swap__eyebrow">Replacement</span>
+        <span class="swap__model"><b>Not named yet</b></span>
+        <small>Microsoft usually names one before retirement. <a href="../../lifecycle/">How retirement works</a></small>
+    </div>
+</div>
+
 <div class="model-profile" aria-label="Model availability profile">
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-emerging">Emerging</span>
-            <span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span>
+            <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Use the replacement model.">Retired</span>
             <span class="model-profile__family"><span class="pv pv--meta pv--sm" aria-hidden="true" title="Meta"></span>Meta</span>
             <span class="model-profile__coverage-note">Under 15 regions tracked</span>
         </div>
@@ -29,7 +43,7 @@
         <span>SKU types</span>
         <strong>2</strong>
     </div>
-    <div class="model-metric model-metric--neutral">
+    <div class="model-metric model-metric--muted">
         <span>Next retirement</span>
         <strong>None set</strong>
     </div>
@@ -42,7 +56,19 @@
 </div>
 ## :material-clock-alert: Lifecycle
 
-<div class="lc-empty">No deprecation or retirement date has been announced for this model in Microsoft's retirement table. See the <a href="../../lifecycle/">lifecycle guide</a> for how dates are set.</div>
+<div class="lc-versions">
+<div class="lc-version lc-version--muted">
+    <div class="lc-version__head">
+        <code>-</code>
+        <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Use the replacement model.">Retired</span>
+        <span class="lc-version__countdown lc-version__countdown--muted">118 days ago</span>
+    </div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:82.41%"></span><span class="lc-seg lc-seg--retired" style="left:82.41%;width:17.59%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Retired</b> Jun 13, 2026</span></div>
+    
+</div>
+</div>
+
 
 
 ## :material-cash-multiple: Pricing
@@ -146,4 +172,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 14:48 UTC_
+_Last updated: 2026-10-08 15:49 UTC_

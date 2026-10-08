@@ -1,10 +1,25 @@
 # <span class="pv pv--anthropic pv--xl" aria-hidden="true" title="Anthropic"></span> claude-sonnet-4-5
 
+<div class="swap swap--warning" aria-label="Replacement model">
+    <div class="swap__side swap__side--from">
+        <span class="swap__eyebrow">Retiring</span>
+        <span class="swap__model"><span class="pv pv--anthropic pv--sm" aria-hidden="true" title="Anthropic"></span><b>claude-sonnet-4-5</b></span>
+        <small>Retires Nov 30, 2026 · in 52 days</small>
+    </div>
+    <span class="swap__arrow" aria-hidden="true"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg></span>
+    <div class="swap__side swap__side--to">
+        <span class="swap__eyebrow">Move to</span>
+        <span class="swap__model"><a href="../claude-sonnet-5-5/"><span class="pv pv--anthropic pv--sm" aria-hidden="true" title="Anthropic"></span><b>claude-sonnet-5-5</b></a></span>
+        <span class="swap__pills"><span class="swap__fit swap__fit--success">Available in all 9 regions this model runs in</span><span class="swap__cost swap__cost--down" tabindex="0" data-tip-title="Cost of switching" data-tip="$6.00 → $4.00 per 1M tokens at a 3:1 input:output mix (pay-as-you-go list price)."><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg>-33% list price</span></span>
+    </div>
+    
+</div>
+
 <div class="model-profile" aria-label="Model availability profile">
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-emerging">Emerging</span>
-            <span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span>
+            <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Next retirement: Nov 30, 2026 (version 1). Replacement: claude-sonnet-5-5. Test the replacement and plan the cut-over.">Retires in 52 days</span>
             <span class="model-profile__family"><span class="pv pv--anthropic pv--sm" aria-hidden="true" title="Anthropic"></span>Anthropic</span>
             <span class="model-profile__coverage-note">Under 15 regions tracked</span>
         </div>
@@ -29,9 +44,9 @@
         <span>SKU types</span>
         <strong>2</strong>
     </div>
-    <div class="model-metric model-metric--neutral">
+    <div class="model-metric model-metric--warning">
         <span>Next retirement</span>
-        <strong>None set</strong>
+        <strong>in 52 days</strong>
     </div>
 </div>
     <div class="model-profile__insight">
@@ -42,7 +57,19 @@
 </div>
 ## :material-clock-alert: Lifecycle
 
-<div class="lc-empty">No deprecation or retirement date has been announced for this model in Microsoft's retirement table. See the <a href="../../lifecycle/">lifecycle guide</a> for how dates are set.</div>
+<div class="lc-versions">
+<div class="lc-version lc-version--warning">
+    <div class="lc-version__head">
+        <code>1</code>
+        <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Test the replacement and plan the cut-over.">Retiring within 90 days</span>
+        <span class="lc-version__countdown lc-version__countdown--warning">in 52 days</span>
+    </div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:100.00%"></span><span class="lc-today lc-today--end" style="left:90.33%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Retires</b> Nov 30, 2026</span></div>
+    <div class="lc-version__replacement">Replacement <a href="../claude-sonnet-5-5/">claude-sonnet-5-5</a> <span>9 regions</span></div>
+</div>
+</div>
+
 
 
 ## :material-cash-multiple: Pricing
@@ -54,13 +81,13 @@
             <strong>$6.00<small> per 1M tokens</small></strong>
             <span class="price-card__note">Blended at 3:1 input:output</span>
         </div>
-        <a class="md-button md-button--primary" href="../../cost/?m=claude-sonnet-4-5"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg> Project monthly cost</a>
+        <a class="md-button md-button--primary" href="../../cost/?m=claude-sonnet-4-5,claude-sonnet-5-5"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg> Project monthly cost</a>
     </div>
     <div class="table-responsive"><table class="price-table">
         <thead><tr><th>Per 1M tokens</th><th>Global</th></tr></thead>
         <tbody><tr><th scope="row">Input</th><td>$3.00</td></tr><tr><th scope="row">Cached input</th><td>$0.30</td></tr><tr><th scope="row">Output</th><td>$15.00</td></tr></tbody>
     </table></div>
-    
+    <p class="price-card__swap price-card__swap--down"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m21 9-4-4v3h-7v2h7v3M7 11l-4 4 4 4v-3h7v-2H7z"/></svg><span>Replacement <a href="../claude-sonnet-5-5/">claude-sonnet-5-5</a> is <b>33% less</b> at list price: $6.00 → $4.00 per 1M blended tokens (Global).</span></p>
     
     <p class="price-card__foot">Sold through Azure Marketplace and billed by Anthropic. List price in USD from the <a href="https://azuremarketplace.microsoft.com/">Azure Marketplace catalog</a> for Global deployments, checked daily, last updated 2026-10-08. Excludes tax and negotiated discounts.</p>
 </div>
@@ -148,4 +175,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 14:48 UTC_
+_Last updated: 2026-10-08 15:49 UTC_

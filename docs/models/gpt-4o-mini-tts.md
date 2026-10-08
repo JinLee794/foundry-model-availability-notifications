@@ -1,10 +1,10 @@
 # <span class="pv pv--openai pv--xl" aria-hidden="true" title="OpenAI"></span> gpt-4o-mini-tts
 
-<div class="swap swap--warning swap--none" aria-label="Replacement model">
+<div class="swap swap--danger swap--none" aria-label="Replacement model">
     <div class="swap__side swap__side--from">
         <span class="swap__eyebrow">Retiring</span>
         <span class="swap__model"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><b>gpt-4o-mini-tts</b></span>
-        <small>Retires no earlier than Dec 15, 2026 · in 2 months</small>
+        <small>Retires Oct 15, 2026 · in 6 days</small>
     </div>
     <span class="swap__arrow" aria-hidden="true"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg></span>
     <div class="swap__side swap__side--to">
@@ -18,7 +18,7 @@
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-emerging">Emerging</span>
-            <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Next retirement: No earlier than Dec 15, 2026 (version 2025-12-15). Test the replacement and plan the cut-over.">Retires in 67 days</span>
+            <span class="lc-badge lc-badge--danger" tabindex="0" data-tip-title="Retiring within 30 days" data-tip="This version is switched off on its retirement date; after that every request returns 410 Gone. Standard deployments may be auto-upgraded to the replacement — provisioned (PTU) deployments are not. Next retirement: Oct 15, 2026 (version 2025-03-20). Move traffic to the replacement now.">Retires in 6 days</span>
             <span class="model-profile__family"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span>OpenAI</span>
             <span class="model-profile__coverage-note">Under 15 regions tracked</span>
         </div>
@@ -43,9 +43,9 @@
         <span>SKU types</span>
         <strong>4</strong>
     </div>
-    <div class="model-metric model-metric--warning">
+    <div class="model-metric model-metric--danger">
         <span>Next retirement</span>
-        <strong>in 2 months</strong>
+        <strong>in 6 days</strong>
     </div>
 </div>
     <div class="model-profile__insight">
@@ -57,24 +57,24 @@
 ## :material-clock-alert: Lifecycle
 
 <div class="lc-versions">
-<div class="lc-version lc-version--warning">
+<div class="lc-version lc-version--success">
     <div class="lc-version__head">
         <code>2025-12-15</code>
-        <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Test the replacement and plan the cut-over.">Retiring within 90 days</span>
-        <span class="lc-version__countdown lc-version__countdown--warning">No earlier than in 2 months</span>
+        <span class="lc-badge lc-badge--success" tabindex="0" data-tip-title="Generally available" data-tip="Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models). Safe to build on — note the retirement date in your roadmap.">Generally available</span>
+        <span class="lc-version__countdown lc-version__countdown--success">in 8 months</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:100.00%"></span><span class="lc-today" style="left:81.37%"><em>Today</em></span></div>
-    <div class="lc-version__dates"><span><b>Released</b> Dec 15, 2025</span><span><b>Retires</b> ≥ Dec 15, 2026</span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:100.00%"></span><span class="lc-today" style="left:54.30%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Released</b> Dec 15, 2025</span><span><b>Retires</b> Jun 15, 2027</span></div>
     
 </div>
-<div class="lc-version lc-version--warning">
+<div class="lc-version lc-version--danger">
     <div class="lc-version__head">
         <code>2025-03-20</code>
-        <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retirement imminent" data-tip="Microsoft said this version retires no earlier than a date that has now passed, so it can be switched off at any time once notice is given. Treat it as retiring now — migrate.">Retirement imminent</span>
-        <span class="lc-version__countdown lc-version__countdown--warning">Date passed · may retire any time</span>
+        <span class="lc-badge lc-badge--danger" tabindex="0" data-tip-title="Retiring within 30 days" data-tip="This version is switched off on its retirement date; after that every request returns 410 Gone. Standard deployments may be auto-upgraded to the replacement — provisioned (PTU) deployments are not. Move traffic to the replacement now.">Retiring within 30 days</span>
+        <span class="lc-version__countdown lc-version__countdown--danger">in 6 days</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:60.85%"></span><span class="lc-seg lc-seg--retired" style="left:60.85%;width:39.15%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
-    <div class="lc-version__dates"><span><b>Released</b> Mar 20, 2025</span><span><b>Retires</b> ≥ Feb 28, 2026</span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:100.00%"></span><span class="lc-today lc-today--end" style="left:98.78%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Released</b> Mar 20, 2025</span><span><b>Retires</b> Oct 15, 2026</span></div>
     
 </div>
 </div>
@@ -188,4 +188,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 14:48 UTC_
+_Last updated: 2026-10-08 15:49 UTC_

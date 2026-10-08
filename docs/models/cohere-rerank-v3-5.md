@@ -1,10 +1,25 @@
 # <span class="pv pv--cohere pv--xl" aria-hidden="true" title="Cohere"></span> Cohere Rerank v3.5
 
+<div class="swap swap--muted" aria-label="Replacement model">
+    <div class="swap__side swap__side--from">
+        <span class="swap__eyebrow">Retired</span>
+        <span class="swap__model"><span class="pv pv--cohere pv--sm" aria-hidden="true" title="Cohere"></span><b>Cohere Rerank v3.5</b></span>
+        <small>Requests now fail with 410 Gone</small>
+    </div>
+    <span class="swap__arrow" aria-hidden="true"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg></span>
+    <div class="swap__side swap__side--to">
+        <span class="swap__eyebrow">Move to</span>
+        <span class="swap__model"><a href="../cohere-rerank-v4-0-pro/"><span class="pv pv--cohere pv--sm" aria-hidden="true" title="Cohere"></span><b>Cohere-rerank-v4.0-pro</b></a></span>
+        <span class="swap__pills"><span class="swap__fit swap__fit--success">Available in all 7 regions this model runs in</span></span>
+    </div>
+    
+</div>
+
 <div class="model-profile" aria-label="Model availability profile">
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-emerging">Emerging</span>
-            <span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span>
+            <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Replacement: Cohere-rerank-v4.0-pro. Use the replacement model.">Retired</span>
             <span class="model-profile__family"><span class="pv pv--cohere pv--sm" aria-hidden="true" title="Cohere"></span>Cohere</span>
             <span class="model-profile__coverage-note">Under 15 regions tracked</span>
         </div>
@@ -29,7 +44,7 @@
         <span>SKU types</span>
         <strong>2</strong>
     </div>
-    <div class="model-metric model-metric--neutral">
+    <div class="model-metric model-metric--muted">
         <span>Next retirement</span>
         <strong>None set</strong>
     </div>
@@ -42,7 +57,19 @@
 </div>
 ## :material-clock-alert: Lifecycle
 
-<div class="lc-empty">No deprecation or retirement date has been announced for this model in Microsoft's retirement table. See the <a href="../../lifecycle/">lifecycle guide</a> for how dates are set.</div>
+<div class="lc-versions">
+<div class="lc-version lc-version--muted">
+    <div class="lc-version__head">
+        <code>1</code>
+        <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Use the replacement model.">Retired</span>
+        <span class="lc-version__countdown lc-version__countdown--muted">148 days ago</span>
+    </div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:78.85%"></span><span class="lc-seg lc-seg--retired" style="left:78.85%;width:21.15%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Retired</b> May 14, 2026</span></div>
+    <div class="lc-version__replacement">Replacement <a href="../cohere-rerank-v4-0-pro/">Cohere-rerank-v4.0-pro</a> <span>31 regions</span> <span>or Cohere-rerank-v4.0-fast</span></div>
+</div>
+</div>
+
 
 
 ## :material-cash-multiple: Pricing
@@ -144,4 +171,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 14:48 UTC_
+_Last updated: 2026-10-08 15:49 UTC_

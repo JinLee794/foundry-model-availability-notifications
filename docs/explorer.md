@@ -15,7 +15,7 @@ hide:
             <input type="search" data-ax="q" placeholder="Filter 156 models — e.g. gpt-5, claude, embedding" aria-label="Filter models" autocomplete="off" spellcheck="false">
         </div>
         <label class="ax-select"><span>Provider</span><select data-ax="p"><option value="">All providers</option></select></label>
-        <label class="ax-select"><span>Lifecycle</span><select data-ax="lc"><option value="">Any stage</option><option value="risk">Retiring ≤ 90 days</option><option value="deprecated">Deprecated</option><option value="preview">Preview</option><option value="ga">Generally available</option><option value="untracked">No date published</option><option value="retired">Retired</option></select></label>
+        <label class="ax-select"><span>Lifecycle</span><select data-ax="lc"><option value="">Any stage</option><option value="risk">Retiring ≤ 90 days</option><option value="deprecated">Deprecated or legacy</option><option value="preview">Preview</option><option value="ga">Generally available</option><option value="untracked">No date published</option><option value="retired">Retired</option></select></label>
         <label class="ax-select"><span>Geography</span><select data-ax="g"><option value="">All geographies</option><option value="Americas">Americas</option><option value="Europe">Europe</option><option value="Asia Pacific">Asia Pacific</option><option value="Middle East &amp; Africa">Middle East &amp; Africa</option><option value="US Government">US Government</option></select></label>
         <label class="ax-select"><span>Sort</span><select data-ax="s">
             <option value="name">Name</option>

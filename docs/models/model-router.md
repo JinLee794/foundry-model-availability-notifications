@@ -67,6 +67,26 @@
     <div class="lc-version__dates"><span><b>Released</b> Nov 18, 2025</span><span><b>Deprecates</b> Nov 18, 2026</span><span><b>Retires</b> May 20, 2027</span></div>
     
 </div>
+<div class="lc-version lc-version--muted">
+    <div class="lc-version__head">
+        <code>2025-08-07</code>
+        <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Use the replacement model.">Retired</span>
+        <span class="lc-version__countdown lc-version__countdown--muted">40 days ago</span>
+    </div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:90.87%"></span><span class="lc-seg lc-seg--retired" style="left:90.87%;width:9.13%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Released</b> Aug 7, 2025</span><span><b>Retired</b> Aug 30, 2026</span></div>
+    
+</div>
+<div class="lc-version lc-version--muted">
+    <div class="lc-version__head">
+        <code>2025-05-19</code>
+        <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Use the replacement model.">Retired</span>
+        <span class="lc-version__countdown lc-version__countdown--muted">40 days ago</span>
+    </div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:92.31%"></span><span class="lc-seg lc-seg--retired" style="left:92.31%;width:7.69%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Released</b> May 19, 2025</span><span><b>Retired</b> Aug 30, 2026</span></div>
+    
+</div>
 </div>
 
 
@@ -197,4 +217,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 14:48 UTC_
+_Last updated: 2026-10-08 15:49 UTC_

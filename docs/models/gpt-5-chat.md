@@ -9,8 +9,8 @@
     <span class="swap__arrow" aria-hidden="true"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg></span>
     <div class="swap__side swap__side--to">
         <span class="swap__eyebrow">Move to</span>
-        <span class="swap__model"><a href="../gpt-5-2-chat/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><b>gpt-5.2-chat</b></a></span>
-        <span class="swap__pills"><span class="swap__fit swap__fit--success">Available in all 27 regions this model runs in</span><span class="swap__cost swap__cost--up" tabindex="0" data-tip-title="Cost of switching" data-tip="$3.44 → $4.81 per 1M tokens at a 3:1 input:output mix (pay-as-you-go list price)."><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg>+40% list price</span></span>
+        <span class="swap__model"><a href="../gpt-chat-latest/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><b>gpt-chat-latest</b></a></span>
+        <span class="swap__pills"><span class="swap__fit swap__fit--success">Available in all 27 regions this model runs in</span><span class="swap__cost swap__cost--up" tabindex="0" data-tip-title="Cost of switching" data-tip="$3.44 → $11.25 per 1M tokens at a 3:1 input:output mix (pay-as-you-go list price)."><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg>+227% list price</span></span>
     </div>
     
 </div>
@@ -19,7 +19,7 @@
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-broad">Broad</span>
-            <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Replacement: gpt-5.2-chat. Use the replacement model.">Retired</span>
+            <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Replacement: gpt-chat-latest. Use the replacement model.">Retired</span>
             <span class="model-profile__family"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span>OpenAI</span>
             <span class="model-profile__coverage-note">25+ regions tracked</span>
         </div>
@@ -62,21 +62,21 @@
     <div class="lc-version__head">
         <code>2025-10-03</code>
         <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Use the replacement model.">Retired</span>
-        <span class="lc-version__countdown lc-version__countdown--muted">222 days ago</span>
+        <span class="lc-version__countdown lc-version__countdown--muted">149 days ago</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:40.27%"></span><span class="lc-seg lc-seg--retired" style="left:40.27%;width:59.73%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
-    <div class="lc-version__dates"><span><b>Released</b> Oct 3, 2025</span><span><b>Retired</b> Mar 1, 2026</span></div>
-    <div class="lc-version__replacement">Replacement <a href="../gpt-5-2-chat/">gpt-5.2-chat</a> <span>28 regions</span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:60.00%"></span><span class="lc-seg lc-seg--retired" style="left:60.00%;width:40.00%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Released</b> Oct 3, 2025</span><span><b>Retired</b> May 13, 2026</span></div>
+    <div class="lc-version__replacement">Replacement <a href="../gpt-chat-latest/">gpt-chat-latest</a> <span>29 regions</span></div>
 </div>
 <div class="lc-version lc-version--muted">
     <div class="lc-version__head">
         <code>2025-08-07</code>
         <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Use the replacement model.">Retired</span>
-        <span class="lc-version__countdown lc-version__countdown--muted">222 days ago</span>
+        <span class="lc-version__countdown lc-version__countdown--muted">102 days ago</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:48.24%"></span><span class="lc-seg lc-seg--retired" style="left:48.24%;width:51.76%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
-    <div class="lc-version__dates"><span><b>Released</b> Aug 7, 2025</span><span><b>Retired</b> Mar 1, 2026</span></div>
-    <div class="lc-version__replacement">Replacement <a href="../gpt-5-2-chat/">gpt-5.2-chat</a> <span>28 regions</span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:76.35%"></span><span class="lc-seg lc-seg--retired" style="left:76.35%;width:23.65%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Released</b> Aug 7, 2025</span><span><b>Retired</b> Jun 29, 2026</span></div>
+    <div class="lc-version__replacement">Replacement <a href="../gpt-chat-latest/">gpt-chat-latest</a> <span>29 regions</span></div>
 </div>
 </div>
 
@@ -91,13 +91,13 @@
             <strong>$3.44<small> per 1M tokens</small></strong>
             <span class="price-card__note">Blended at 3:1 input:output</span>
         </div>
-        <a class="md-button md-button--primary" href="../../cost/?m=gpt-5-chat,gpt-5-2-chat"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg> Project monthly cost</a>
+        <a class="md-button md-button--primary" href="../../cost/?m=gpt-5-chat,gpt-chat-latest"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg> Project monthly cost</a>
     </div>
     <div class="table-responsive"><table class="price-table">
         <thead><tr><th>Per 1M tokens</th><th>Global</th></tr></thead>
         <tbody><tr><th scope="row">Input</th><td>$1.25</td></tr><tr><th scope="row">Cached input</th><td>$0.125</td></tr><tr><th scope="row">Output</th><td>$10.00</td></tr></tbody>
     </table></div>
-    <p class="price-card__swap price-card__swap--up"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m21 9-4-4v3h-7v2h7v3M7 11l-4 4 4 4v-3h7v-2H7z"/></svg><span>Replacement <a href="../gpt-5-2-chat/">gpt-5.2-chat</a> is <b>40% more</b> at list price: $3.44 → $4.81 per 1M blended tokens (Global).</span></p>
+    <p class="price-card__swap price-card__swap--up"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m21 9-4-4v3h-7v2h7v3M7 11l-4 4 4 4v-3h7v-2H7z"/></svg><span>Replacement <a href="../gpt-chat-latest/">gpt-chat-latest</a> is <b>227% more</b> at list price: $3.44 → $11.25 per 1M blended tokens (Global).</span></p>
     
     <p class="price-card__foot">Pay-as-you-go list price in USD for East US 2 from the <a href="https://learn.microsoft.com/rest/api/cost-management/retail-prices/azure-retail-prices">Azure Retail Prices API</a>, checked daily, last updated 2026-10-08. Excludes tax and negotiated discounts; other regions can differ.</p>
 </div>
@@ -210,4 +210,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 14:48 UTC_
+_Last updated: 2026-10-08 15:49 UTC_

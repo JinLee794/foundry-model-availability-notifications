@@ -40,8 +40,9 @@ hide:
         <div class="cp-row">
             <span class="cp-label">Compare</span>
             <div class="cp-chips" role="group" aria-label="Model sets">
-                <button type="button" class="cp-chip" data-set="popular">Popular</button>
+                <button type="button" class="cp-chip" data-set="all">All models</button>
                 <button type="button" class="cp-chip" data-set="retiring">Retiring → replacements</button>
+                <button type="button" class="cp-chip" data-set="popular">Popular</button>
                 <button type="button" class="cp-chip" data-set="budget">Under $1 / 1M</button>
                 <button type="button" class="cp-chip" data-set="partner">Partner models</button>
                 <button type="button" class="cp-chip cp-chip--ghost" data-set="clear">Clear</button>
@@ -60,10 +61,20 @@ hide:
 
     <section class="cp-panel cp-chart">
         <header class="cp-head">
-            <div><h2>Projected monthly cost</h2><p data-cp-basis></p></div>
-            <div class="cp-legend"><span class="cp-key cp-key--in">Input</span><span class="cp-key cp-key--cached">Cached input</span><span class="cp-key cp-key--out">Output</span></div>
+            <div><h2 data-cp-chart-title>Projected monthly cost</h2><p data-cp-basis></p></div>
+            <div class="cp-head__aside">
+                <div class="cp-seg cp-view" role="radiogroup" aria-label="Chart view" data-cp-views hidden>
+                    <button type="button" data-cp-view="pairs" role="radio">Side by side</button>
+                    <button type="button" data-cp-view="ranked" role="radio">Ranked</button>
+                </div>
+                <div class="cp-legend"><span class="cp-key cp-key--in">Input</span><span class="cp-key cp-key--cached">Cached input</span><span class="cp-key cp-key--out">Output</span></div>
+            </div>
         </header>
-        <div class="cp-bars" data-cp-bars></div>
+        <div class="cp-bars cp-bars--scroll" data-cp-bars></div>
+        <div class="cp-bars-foot" data-cp-bars-foot hidden>
+            <span data-cp-bars-count></span>
+            <button type="button" class="cp-chip cp-chip--ghost" data-cp-action="expand" aria-expanded="false">Show full list</button>
+        </div>
     </section>
 
     <section class="cp-panel cp-ptu">

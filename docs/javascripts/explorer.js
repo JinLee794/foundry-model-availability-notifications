@@ -4,7 +4,7 @@
 
   const STAGE_GROUPS = {
     risk: ['soon', 'retiring', 'pending'],
-    deprecated: ['deprecated'],
+    deprecated: ['deprecated', 'legacy'],
     preview: ['preview'],
     ga: ['ga'],
     untracked: ['untracked'],

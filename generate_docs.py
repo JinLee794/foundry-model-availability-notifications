@@ -186,9 +186,7 @@ def build_retirement_index(retirement_data: Dict) -> Dict[str, List[Dict]]:
         for entry in entries:
             model_name = entry.get("model", "")
             if model_name:
-                # Normalize model name (e.g., gpt-4o -> gpt-4o)
-                normalized = model_name.lower().replace(".", "-")
-                model_retirement[normalized].append({
+                model_retirement[slugify(model_name)].append({
                     **entry,
                     "category": category
                 })
@@ -523,10 +521,15 @@ def generate_lifecycle_section(
         replacement = entry.get("replacement")
         if replacement:
             replacement_slug = slugify(replacement)
-            if replacement_slug in model_regions_lookup:
-                replacement_html = f'<div class="lc-version__replacement">Replacement <a href="../{replacement_slug}/">{html_escape(replacement)}</a> <span>{len(model_regions_lookup[replacement_slug])} regions</span></div>'
+            shown = html_escape(replacement_label(entry))
+            alts = entry.get("replacement_alts") or []
+            alts_html = f' <span>or {html_escape(", ".join(alts))}</span>' if alts else ""
+            if replacement_slug == slugify(entry.get("model", "")):
+                replacement_html = f'<div class="lc-version__replacement">Replacement <code>{shown}</code> <span>newer version of this model</span></div>'
+            elif replacement_slug in model_regions_lookup:
+                replacement_html = f'<div class="lc-version__replacement">Replacement <a href="../{replacement_slug}/">{shown}</a> <span>{len(model_regions_lookup[replacement_slug])} regions</span>{alts_html}</div>'
             else:
-                replacement_html = f'<div class="lc-version__replacement">Replacement <code>{html_escape(replacement)}</code> <span>not yet tracked</span></div>'
+                replacement_html = f'<div class="lc-version__replacement">Replacement <code>{shown}</code> <span>not yet tracked</span>{alts_html}</div>'
 
         note = entry.get("retirement_note")
         if note and note not in notes:
@@ -610,12 +613,13 @@ def generate_retirements_page(
     def build_table_rows(entries: List[Dict]) -> str:
         rows = []
         # Handle None values in sorting by using empty string as default
-        for entry in sorted(entries, key=lambda x: (x.get("retirement_date") or "", x.get("model") or "")):
+        for entry in sorted(entries, key=lambda x: (x.get("retirement_date") or "9999", x.get("model") or "")):
             model = entry.get("model", "")
-            version = entry.get("version", "-")
+            version = entry.get("version") or "-"
             retirement = entry.get("retirement_date") or "-"
             replacement = entry.get("replacement")
             category = entry.get("category", "").replace("_", " ").title()
+            provider = entry.get("provider") or model_family(model)
             
             model_slug = slugify(model)
             model_link = f"[{model}](models/{model_slug}.md)" if model_slug in model_regions else f"`{model}`"
@@ -623,17 +627,27 @@ def generate_retirements_page(
             replacement_cell = "-"
             if replacement:
                 replacement_slug = slugify(replacement)
-                # Check if replacement model exists in our data
-                if replacement_slug in model_regions:
+                shown = replacement_label(entry)
+                if replacement_slug == model_slug:
+                    replacement_cell = f"`{shown}` (newer version)"
+                elif replacement_slug in model_regions:
                     region_count = len(model_regions[replacement_slug])
-                    replacement_cell = f"[{replacement}](models/{replacement_slug}.md) ({region_count} regions)"
+                    replacement_cell = f"[{shown}](models/{replacement_slug}.md) ({region_count} regions)"
                 else:
-                    replacement_cell = f"`{replacement}` (not yet available)"
+                    replacement_cell = f"`{shown}` (not yet tracked)"
+                alts = entry.get("replacement_alts") or []
+                if alts:
+                    replacement_cell += " · or " + ", ".join(f"`{alt}`" for alt in alts)
             
-            status_text, status_class = get_retirement_status(retirement, today)
-            status_badge = f'<span class="badge {status_class}">{status_text}</span>'
+            stage = entry_stage(entry, today)
+            if stage in ("retired", "deprecated", "legacy", "pending"):
+                label, tone, _ = LIFECYCLE_STAGES[stage]
+                status_badge = f'<span class="lc-badge lc-badge--{tone}">{html_escape(label)}</span>'
+            else:
+                status_text, status_class = get_retirement_status(entry.get("retirement_date") or "", today)
+                status_badge = f'<span class="badge {status_class}">{status_text}</span>'
             
-            rows.append(f"| {model_link} | {version} | {category} | {retirement} | {status_badge} | {replacement_cell} |")
+            rows.append(f"| {model_link} | {version} | {html_escape(provider)} | {category} | {retirement} | {status_badge} | {replacement_cell} |")
         return chr(10).join(rows)
     
     # Build fine-tuned models section
@@ -691,10 +705,10 @@ hide:
 
 ## :material-calendar-clock: All scheduled retirements
 
-Every version in Microsoft's retirement table, with the suggested replacement.
+Every model version in Microsoft's [retirement schedule]({html_escape(retirement_data.get("page") or "https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirement-schedule")}) across Azure OpenAI and partner providers, with the named replacement. Refreshed daily{f" · schedule last updated {html_escape(retirement_data.get('last_updated', ''))}" if retirement_data.get("last_updated") else ""}.
 
-| Model | Version | Category | Retirement Date | Status | Replacement |
-|-------|---------|----------|-----------------|--------|-------------|
+| Model | Version | Provider | Category | Retirement Date | Status | Replacement |
+|-------|---------|----------|----------|-----------------|--------|-------------|
 {build_table_rows(all_entries)}
 {fine_tuned_section}
 
@@ -714,13 +728,13 @@ Every version in Microsoft's retirement table, with the suggested replacement.
 
 ## :material-bookshelf: Resources
 
+- [Model retirement schedule](https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirement-schedule)
 - [Foundry Models Lifecycle & Support Policy](https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirements)
-- [Model Deprecation and Retirement](https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirements)
 - [Migration Best Practices](https://learn.microsoft.com/azure/foundry-classic/openai/how-to/migration)
 
 ---
 
-_Data sourced from [Microsoft Azure AI Documentation](https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/foundry/openai/includes/retirement/models.md)_
+_Data sourced from [Microsoft Azure AI Documentation]({html_escape(retirement_data.get("source") or "https://github.com/MicrosoftDocs/azure-ai-docs")})_
 
 _Last updated: {datetime.utcnow():%Y-%m-%d %H:%M UTC}_
 """
@@ -747,10 +761,11 @@ LIFECYCLE_STAGES: Dict[str, Tuple[str, str, int]] = {
     "retiring": ("Retiring within 90 days", "warning", 1),
     "pending": ("Retirement imminent", "warning", 2),
     "deprecated": ("Deprecated", "caution", 3),
-    "preview": ("Preview", "info", 4),
-    "ga": ("Generally available", "success", 5),
-    "retired": ("Retired", "muted", 6),
-    "untracked": ("No retirement date", "neutral", 7),
+    "legacy": ("Legacy", "caution", 4),
+    "preview": ("Preview", "info", 5),
+    "ga": ("Generally available", "success", 6),
+    "retired": ("Retired", "muted", 7),
+    "untracked": ("No retirement date", "neutral", 8),
 }
 
 
@@ -803,22 +818,45 @@ def format_countdown(days: int) -> str:
 
 
 def entry_stage(entry: Dict, today: datetime) -> str:
-    """Classify a single retirement-data entry into a lifecycle stage key."""
+    """Classify a single retirement-data entry into a lifecycle stage key.
+
+    Date windows win (a firm date inside 90 days is the most useful signal), then Microsoft's
+    published lifecycle column (Retired / Deprecated / Legacy), then remembered deprecation dates.
+    """
+    lifecycle = (entry.get("lifecycle") or "").lower()
+    if lifecycle == "retired":
+        return "retired"
     retire_dt, retire_est = parse_lifecycle_date(entry.get("retirement_date"))
     deprecate_dt, deprecate_est = parse_lifecycle_date(entry.get("deprecation_date"))
     if retire_dt:
         days = (retire_dt - today).days
         if days < 0:
-            return "pending" if retire_est else "retired"
+            # The schedule marks switched-off versions as Retired; a passed date without that
+            # label means a GA/Legacy/Deprecated version still serves traffic but can go at any
+            # time. Previews are force-upgraded or removed on the date, so treat them as retired.
+            if retire_est:
+                return "pending"
+            return "pending" if lifecycle and lifecycle != "preview" else "retired"
         if days <= 30:
             return "soon"
         if days <= 90:
             return "retiring"
+    if lifecycle == "deprecated":
+        return "deprecated"
     if deprecate_dt and not deprecate_est and deprecate_dt <= today:
         return "deprecated"
+    if lifecycle == "legacy":
+        return "legacy"
     if (entry.get("status") or "").lower() == "preview":
         return "preview"
     return "ga"
+
+
+def replacement_label(entry: Dict) -> str:
+    """Display name for an entry's replacement, e.g. 'sora-2 (2025-12-08)' for a version upgrade."""
+    replacement = entry.get("replacement") or ""
+    version = entry.get("replacement_version") or ""
+    return f"{replacement} ({version})" if replacement and version else replacement
 
 
 def summarize_model_lifecycle(entries: List[Dict], today: datetime) -> Dict:
@@ -829,6 +867,16 @@ def summarize_model_lifecycle(entries: List[Dict], today: datetime) -> Dict:
 
     staged = [(entry_stage(entry, today), entry) for entry in entries]
     active = [(stage, entry) for stage, entry in staged if stage != "retired"]
+    upgraded = [entry for stage, entry in staged
+                if stage == "retired" and entry.get("replacement")
+                and slugify(entry["replacement"]) == slugify(entry.get("model", ""))]
+    if not active and upgraded:
+        # Every listed version retired into a newer version of the same model, which the
+        # schedule doesn't date yet: the model itself is still live.
+        label, tone, _ = LIFECYCLE_STAGES["untracked"]
+        return {"key": "untracked", "label": label, "tone": tone,
+                "replacement": upgraded[0]["replacement"],
+                "replacement_version": upgraded[0].get("replacement_version") or ""}
     pool = active or staged
     stage, entry = min(pool, key=lambda item: LIFECYCLE_STAGES[item[0]][2])
     label, tone, _ = LIFECYCLE_STAGES[stage]
@@ -847,11 +895,17 @@ def summarize_model_lifecycle(entries: List[Dict], today: datetime) -> Dict:
             "days": (retire_dt - today).days,
             "estimate": estimate,
             "replacement": item.get("replacement") or "",
+            "replacement_version": item.get("replacement_version") or "",
         })
     else:
-        replacements = [item.get("replacement") for _, item in staged if item.get("replacement")]
-        if replacements:
-            summary["replacement"] = replacements[0]
+        replacing = [item for _, item in staged if item.get("replacement")]
+        if replacing:
+            summary["replacement"] = replacing[0]["replacement"]
+            summary["replacement_version"] = replacing[0].get("replacement_version") or ""
+        if stage == "pending":
+            passed, _ = parse_lifecycle_date(entry.get("retirement_date"))
+            if passed:
+                summary["passed_label"] = format_short_date(passed)
     return summary
 
 
@@ -860,7 +914,7 @@ def lifecycle_badge(summary: Dict) -> str:
     return f'<span class="lc-badge lc-badge--{summary["tone"]}"{tip_attrs(title, body)}>{html_escape(lifecycle_badge_text(summary))}</span>'
 
 
-SWAP_STAGES = {"soon", "retiring", "pending", "deprecated", "retired"}
+SWAP_STAGES = {"soon", "retiring", "pending", "deprecated", "legacy", "retired"}
 
 
 def render_replacement_callout(model: str, regions: Set[str], summary: Dict, model_regions_lookup: Dict[str, Set[str]]) -> str:
@@ -885,6 +939,9 @@ def render_replacement_callout(model: str, regions: Set[str], summary: Dict, mod
     elif retired:
         when = "Requests now fail with 410 Gone"
         eyebrow = "Retired"
+    elif summary.get("passed_label"):
+        when = f'Was due {html_escape(summary["passed_label"])} · can be switched off any time'
+        eyebrow = html_escape(summary.get("label", "Retirement imminent"))
     else:
         when = "Retirement date not announced yet"
         eyebrow = html_escape(summary.get("label", "Deprecated"))
@@ -905,6 +962,19 @@ def render_replacement_callout(model: str, regions: Set[str], summary: Dict, mod
 </div>
 """
     rep_slug = slugify(replacement)
+    rep_version = summary.get("replacement_version") or ""
+    if rep_slug == slugify(model):
+        version_text = f"version {rep_version}" if rep_version else "a newer version"
+        return f"""<div class="swap swap--{tone}" aria-label="Replacement model">
+    {source}
+    <span class="swap__arrow" aria-hidden="true">{icon("arrow")}</span>
+    <div class="swap__side swap__side--to">
+        <span class="swap__eyebrow">{"Replacement" if scheduled else "Move to"}</span>
+        <span class="swap__model">{provider_logo(model_family(model), "sm")}<b>{html_escape(model)}</b> <code>{html_escape(rep_version or "newer")}</code></span>
+        <small>Same model, {html_escape(version_text)}: update the model version on your deployment.</small>
+    </div>
+</div>
+"""
     rep_regions = model_regions_lookup.get(rep_slug)
     rep_logo = provider_logo(model_family(replacement), "sm")
     if rep_regions is not None:
@@ -974,8 +1044,9 @@ def build_model_finder_data(
             record["nd"] = lifecycle["next_label"]
             record["dd"] = lifecycle["days"]
         if lifecycle.get("replacement"):
-            record["rp"] = lifecycle["replacement"]
-            record["rs"] = slugify(lifecycle["replacement"]) if slugify(lifecycle["replacement"]) in MODEL_PAGE_SLUGS else ""
+            rep_slug = slugify(lifecycle["replacement"])
+            record["rp"] = replacement_label(lifecycle)
+            record["rs"] = rep_slug if rep_slug in MODEL_PAGE_SLUGS and rep_slug != slugify(model) else ""
         records.append(record)
     return records
 
@@ -1099,6 +1170,11 @@ LIFECYCLE_EXPLAINERS: Dict[str, Dict[str, str]] = {
         "body": "Microsoft said this version retires no earlier than a date that has now passed, so it can be switched off at any time once notice is given.",
         "action": "Treat it as retiring now — migrate.",
     },
+    "legacy": {
+        "title": "Legacy",
+        "body": "Newer, more capable models exist. This version still works and new deployments are still allowed, but it is on the way out. Legacy is optional: many models skip straight from GA to Deprecated.",
+        "action": "Start evaluating the replacement and plan your migration.",
+    },
     "deprecated": {
         "title": "Deprecated",
         "body": "No longer available to new customers. Subscriptions that already deployed this version can keep creating and managing deployments until it retires.",
@@ -1136,7 +1212,8 @@ def lifecycle_tip_text(summary: Dict) -> Tuple[str, str]:
         version = summary.get("version")
         parts.append(f"Next retirement: {summary['next_label']}" + (f" (version {version})" if version else "") + ".")
     if summary.get("replacement"):
-        parts.append(f"Replacement: {summary['replacement']}.")
+        version = summary.get("replacement_version")
+        parts.append(f"Replacement: {summary['replacement']}" + (f" (version {version})" if version else "") + ".")
     parts.append(info["action"])
     return info["title"], " ".join(parts)
 
@@ -1192,7 +1269,7 @@ def build_explorer_data(
 CHART_STAGE_GROUPS: List[Tuple[str, str, Tuple[str, ...], str]] = [
     # (filter key, label, stage keys, tone)
     ("risk", "Retiring ≤ 90 days", ("soon", "retiring", "pending"), "danger"),
-    ("deprecated", "Deprecated", ("deprecated",), "caution"),
+    ("deprecated", "Deprecated or legacy", ("deprecated", "legacy"), "caution"),
     ("preview", "Preview", ("preview",), "info"),
     ("ga", "Generally available", ("ga",), "success"),
     ("untracked", "No date published", ("untracked",), "neutral"),
@@ -2045,6 +2122,8 @@ def build_cost_data(lifecycles: Dict[str, Dict], model_regions: Dict[str, Set[st
             unpriced.append({"n": model, "s": slugify(model), "f": model_family(model), "why": unpriced_reason(model)})
             continue
         replacement = summary.get("replacement") or ""
+        if slugify(replacement) == slugify(model):
+            replacement = ""  # version upgrade of the same model: nothing to compare against
         common = {
             "n": model,
             "s": slugify(model),
@@ -2054,6 +2133,11 @@ def build_cost_data(lifecycles: Dict[str, Dict], model_regions: Dict[str, Set[st
             "ll": lifecycle_badge_text(summary) if summary else "",
             "lt": summary.get("tone", "neutral"),
             "rep": replacement,
+            # Retirement timing for the side-by-side replacement view.
+            "rd": summary.get("next_label") or "",
+            "rdy": summary.get("days"),
+            "rdp": summary.get("passed_label") or "",
+            "rpg": slugify(replacement) if replacement and slugify(replacement) in MODEL_PAGE_SLUGS else "",
         }
         if not prices:
             media_models.append({**common, "c": media_category(media), "am": audio_mode(media), "p": media,
@@ -2129,8 +2213,9 @@ hide:
         <div class="cp-row">
             <span class="cp-label">Compare</span>
             <div class="cp-chips" role="group" aria-label="Model sets">
-                <button type="button" class="cp-chip" data-set="popular">Popular</button>
+                <button type="button" class="cp-chip" data-set="all">All models</button>
                 <button type="button" class="cp-chip" data-set="retiring">Retiring → replacements</button>
+                <button type="button" class="cp-chip" data-set="popular">Popular</button>
                 <button type="button" class="cp-chip" data-set="budget">Under $1 / 1M</button>
                 <button type="button" class="cp-chip" data-set="partner">Partner models</button>
                 <button type="button" class="cp-chip cp-chip--ghost" data-set="clear">Clear</button>
@@ -2149,10 +2234,20 @@ hide:
 
     <section class="cp-panel cp-chart">
         <header class="cp-head">
-            <div><h2>Projected monthly cost</h2><p data-cp-basis></p></div>
-            <div class="cp-legend"><span class="cp-key cp-key--in">Input</span><span class="cp-key cp-key--cached">Cached input</span><span class="cp-key cp-key--out">Output</span></div>
+            <div><h2 data-cp-chart-title>Projected monthly cost</h2><p data-cp-basis></p></div>
+            <div class="cp-head__aside">
+                <div class="cp-seg cp-view" role="radiogroup" aria-label="Chart view" data-cp-views hidden>
+                    <button type="button" data-cp-view="pairs" role="radio">Side by side</button>
+                    <button type="button" data-cp-view="ranked" role="radio">Ranked</button>
+                </div>
+                <div class="cp-legend"><span class="cp-key cp-key--in">Input</span><span class="cp-key cp-key--cached">Cached input</span><span class="cp-key cp-key--out">Output</span></div>
+            </div>
         </header>
-        <div class="cp-bars" data-cp-bars></div>
+        <div class="cp-bars cp-bars--scroll" data-cp-bars></div>
+        <div class="cp-bars-foot" data-cp-bars-foot hidden>
+            <span data-cp-bars-count></span>
+            <button type="button" class="cp-chip cp-chip--ghost" data-cp-action="expand" aria-expanded="false">Show full list</button>
+        </div>
     </section>
 
     <section class="cp-panel cp-ptu">
@@ -2514,7 +2609,7 @@ def lifecycle_stage_counts(lifecycles: Dict[str, Dict]) -> Dict[str, int]:
         key = summary["key"]
         if key in ("soon", "retiring", "pending", "deprecated"):
             counts["deprecated"] += 1
-        elif key in ("preview", "ga", "retired"):
+        elif key in ("preview", "ga", "legacy", "retired"):
             counts[key] += 1
     return counts
 
@@ -2629,6 +2724,7 @@ PLANNER_CATEGORIES = {
     "audio": "Audio",
     "image_and_video": "Image & video",
     "embedding": "Embedding",
+    "document_and_search": "Document & search",
 }
 
 
@@ -2656,7 +2752,7 @@ def build_planner_data(retirement_data: Dict, available_slugs: Set[str], prefix:
                 "de": int(dep_est),
                 "r": f"{ret:%Y-%m-%d}" if ret else "",
                 "re": int(ret_est),
-                "rp": replacement,
+                "rp": replacement_label(entry),
                 "rh": f"{prefix}{replacement_slug}/" if replacement_slug in available_slugs else "",
                 "h": f"{prefix}{slug}/" if slug in available_slugs else "",
                 "n": entry.get("retirement_note") or "",
@@ -2820,7 +2916,7 @@ def build_replacement_coverage(retirement_data: Dict, availability_bits: Dict[st
                 unnamed.add(model.lower())
                 continue
             old, new = by_lower.get(model.lower()), by_lower.get(replacement.lower())
-            if not old or not new:
+            if not old or not new or old == new:
                 continue
             group = groups.setdefault((old, new), {"old": old, "new": new, "date": retire, "estimate": estimate, "versions": []})
             if retire < group["date"]:
@@ -3131,7 +3227,7 @@ def generate_lifecycle_page(lifecycles: Dict[str, Dict], retirement_data: Dict, 
 
 {render_stage_flow(counts)}
 
-<p class="diagram-note">Counts group tracked models by their most urgent active version; Deprecated also includes versions with a retirement due. Legacy is optional and has no published date, so it isn't counted.</p>
+<p class="diagram-note">Counts group tracked models by their most urgent active version; Deprecated also includes versions with a retirement due. Legacy is optional, so only a few models carry it.</p>
 
 {render_ga_timeline_diagram(zoom=False)}
 
@@ -3224,7 +3320,7 @@ Adapted from Microsoft Learn: [Foundry Models lifecycle and support policy](http
 
 
 # Lifecycle stages worth flagging on a catalog card; GA / no-date models stay quiet.
-CATALOG_FLAG_STAGES = {"soon", "retiring", "pending", "deprecated", "preview", "retired"}
+CATALOG_FLAG_STAGES = {"soon", "retiring", "pending", "deprecated", "legacy", "preview", "retired"}
 DEPLOYMENT_GROUPS: List[Tuple[str, str]] = [
     ("paygo", "Pay-as-you-go"),
     ("ptu", "Provisioned (PTU)"),

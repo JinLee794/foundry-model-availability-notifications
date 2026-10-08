@@ -4,7 +4,7 @@
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-broad">Broad</span>
-            <span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span>
+            <span class="lc-badge lc-badge--info" tabindex="0" data-tip-title="Preview" data-tip="Experimental: weights, runtime and API might change and it is not guaranteed to reach GA. When it retires it is force-upgraded or removed with at least 30 days notice. Great for evaluation — avoid for critical production.">Preview</span>
             <span class="model-profile__family"><span class="pv pv--mistral-ai pv--sm" aria-hidden="true" title="Mistral AI"></span>Mistral AI</span>
             <span class="model-profile__coverage-note">25+ regions tracked</span>
         </div>
@@ -29,7 +29,7 @@
         <span>SKU types</span>
         <strong>2</strong>
     </div>
-    <div class="model-metric model-metric--neutral">
+    <div class="model-metric model-metric--info">
         <span>Next retirement</span>
         <strong>None set</strong>
     </div>
@@ -42,7 +42,19 @@
 </div>
 ## :material-clock-alert: Lifecycle
 
-<div class="lc-empty">No deprecation or retirement date has been announced for this model in Microsoft's retirement table. See the <a href="../../lifecycle/">lifecycle guide</a> for how dates are set.</div>
+<div class="lc-versions">
+<div class="lc-version lc-version--info">
+    <div class="lc-version__head">
+        <code>1</code>
+        <span class="lc-badge lc-badge--info" tabindex="0" data-tip-title="Preview" data-tip="Experimental: weights, runtime and API might change and it is not guaranteed to reach GA. When it retires it is force-upgraded or removed with at least 30 days notice. Great for evaluation — avoid for critical production.">Preview</span>
+        
+    </div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:100.00%"></span><span class="lc-seg lc-seg--open" style="left:calc(100% - 2rem);width:2rem"></span><span class="lc-today" style="left:50.00%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Retires</b> not announced</span></div>
+    
+</div>
+</div>
+
 
 
 ## :material-cash-multiple: Pricing
@@ -170,4 +182,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 14:48 UTC_
+_Last updated: 2026-10-08 15:49 UTC_

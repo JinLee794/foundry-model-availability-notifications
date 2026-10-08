@@ -1,10 +1,24 @@
 # <span class="pv pv--openai pv--xl" aria-hidden="true" title="OpenAI"></span> whisper
 
+<div class="swap swap--warning swap--none" aria-label="Replacement model">
+    <div class="swap__side swap__side--from">
+        <span class="swap__eyebrow">Retiring</span>
+        <span class="swap__model"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><b>whisper</b></span>
+        <small>Retires Dec 15, 2026 · in 2 months</small>
+    </div>
+    <span class="swap__arrow" aria-hidden="true"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg></span>
+    <div class="swap__side swap__side--to">
+        <span class="swap__eyebrow">Replacement</span>
+        <span class="swap__model"><b>Not named yet</b></span>
+        <small>Microsoft usually names one before retirement. <a href="../../lifecycle/">How retirement works</a></small>
+    </div>
+</div>
+
 <div class="model-profile" aria-label="Model availability profile">
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-emerging">Emerging</span>
-            <span class="lc-badge lc-badge--success" tabindex="0" data-tip-title="Generally available" data-tip="Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models). Safe to build on — note the retirement date in your roadmap.">Generally available</span>
+            <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Next retirement: Dec 15, 2026 (version 001). Test the replacement and plan the cut-over.">Retires in 67 days</span>
             <span class="model-profile__family"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span>OpenAI</span>
             <span class="model-profile__coverage-note">Under 15 regions tracked</span>
         </div>
@@ -29,9 +43,9 @@
         <span>SKU types</span>
         <strong>3</strong>
     </div>
-    <div class="model-metric model-metric--success">
+    <div class="model-metric model-metric--warning">
         <span>Next retirement</span>
-        <strong>None set</strong>
+        <strong>in 2 months</strong>
     </div>
 </div>
     <div class="model-profile__insight">
@@ -43,14 +57,14 @@
 ## :material-clock-alert: Lifecycle
 
 <div class="lc-versions">
-<div class="lc-version lc-version--success">
+<div class="lc-version lc-version--warning">
     <div class="lc-version__head">
         <code>001</code>
-        <span class="lc-badge lc-badge--success" tabindex="0" data-tip-title="Generally available" data-tip="Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models). Safe to build on — note the retirement date in your roadmap.">Generally available</span>
-        
+        <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Test the replacement and plan the cut-over.">Retiring within 90 days</span>
+        <span class="lc-version__countdown lc-version__countdown--warning">in 2 months</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:62.18%"></span><span class="lc-seg lc-seg--deprecated lc-seg--estimate" style="left:62.18%;width:30.66%"></span><span class="lc-seg lc-seg--open" style="left:calc(100% - 2rem);width:2rem"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
-    <div class="lc-version__dates"><span><b>Deprecated</b> ≥ Feb 28, 2026</span><span><b>Retires</b> not announced</span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:100.00%"></span><span class="lc-today" style="left:87.59%"><em>Today</em></span></div>
+    <div class="lc-version__dates"><span><b>Retires</b> Dec 15, 2026</span></div>
     
 </div>
 </div>
@@ -182,4 +196,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 14:48 UTC_
+_Last updated: 2026-10-08 15:49 UTC_
