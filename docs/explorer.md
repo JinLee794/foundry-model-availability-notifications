@@ -12,7 +12,7 @@ hide:
     <div class="ax-toolbar">
         <div class="ax-search">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 3a6.5 6.5 0 0 1 5.25 10.33l5.46 5.46-1.42 1.42-5.46-5.46A6.5 6.5 0 1 1 9.5 3m0 2a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9"/></svg>
-            <input type="search" data-ax="q" placeholder="Filter 155 models — e.g. gpt-5, claude, embedding" aria-label="Filter models" autocomplete="off" spellcheck="false">
+            <input type="search" data-ax="q" placeholder="Filter 156 models — e.g. gpt-5, claude, embedding" aria-label="Filter models" autocomplete="off" spellcheck="false">
         </div>
         <label class="ax-select"><span>Provider</span><select data-ax="p"><option value="">All providers</option></select></label>
         <label class="ax-select"><span>Lifecycle</span><select data-ax="lc"><option value="">Any stage</option><option value="risk">Retiring ≤ 90 days</option><option value="deprecated">Deprecated</option><option value="preview">Preview</option><option value="ga">Generally available</option><option value="untracked">No date published</option><option value="retired">Retired</option></select></label>
