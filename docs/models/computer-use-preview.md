@@ -1,11 +1,11 @@
-# computer-use-preview
+# <span class="pv pv--openai pv--xl" aria-hidden="true" title="OpenAI"></span> computer-use-preview
 
 <div class="model-profile" aria-label="Model availability profile">
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-emerging">Emerging</span>
             <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retirement imminent" data-tip="Microsoft said this version retires no earlier than a date that has now passed, so it can be switched off at any time once notice is given. Treat it as retiring now — migrate.">Retirement imminent</span>
-            <span class="model-profile__family">OpenAI</span>
+            <span class="model-profile__family"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span>OpenAI</span>
             <span class="model-profile__coverage-note">Under 15 regions tracked</span>
         </div>
         <p class="model-profile__lead">Available in <strong>3</strong> of <strong>35</strong> tracked regions with <strong>4</strong> deployment SKU types.</p>
@@ -49,7 +49,7 @@
         <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retirement imminent" data-tip="Microsoft said this version retires no earlier than a date that has now passed, so it can be switched off at any time once notice is given. Treat it as retiring now — migrate.">Retirement imminent</span>
         <span class="lc-version__countdown lc-version__countdown--warning">Date passed · may retire any time</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:69.39%"></span><span class="lc-seg lc-seg--retired" style="left:69.39%;width:30.61%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:69.27%"></span><span class="lc-seg lc-seg--retired" style="left:69.27%;width:30.73%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
     <div class="lc-version__dates"><span><b>Released</b> Mar 11, 2025</span><span><b>Retires</b> ≥ Apr 14, 2026</span></div>
     
 </div>
@@ -147,4 +147,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-07 23:10 UTC_
+_Last updated: 2026-10-08 00:35 UTC_

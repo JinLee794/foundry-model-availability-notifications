@@ -762,6 +762,16 @@ def model_family(name: str) -> str:
     return "Partner"
 
 
+def provider_slug(family: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", family.lower()).strip("-")
+
+
+def provider_logo(family: str, size: str = "") -> str:
+    """Provider logo tile; unknown providers fall back to a generic glyph in CSS."""
+    extra = f" pv--{size}" if size else ""
+    return f'<span class="pv pv--{provider_slug(family)}{extra}" aria-hidden="true" title="{html_escape(family)}"></span>'
+
+
 def parse_lifecycle_date(value: str) -> Tuple[datetime, bool]:
     """Parse a lifecycle date. Returns (date or None, is_not_earlier_than)."""
     if not value:
@@ -1366,6 +1376,8 @@ def render_provider_matrix(model_regions: Dict[str, Set[str]], availability_bits
             )
         label = html_escape(name)
         name_html = label if is_total or name == "Other" else f'<a href="{href_prefix}#p={quote(name)}">{label}</a>'
+        if not is_total:
+            name_html = f'<span class="pmx__prov">{provider_logo(name, "sm")}{name_html}</span>'
         return f'<tr class="{"pmx__total" if is_total else ""}"><th scope="row">{name_html}</th><td class="pmx__n">{len(models)}</td>{"".join(cells)}</tr>'
 
     body = row("All models", list(model_regions), True) + "".join(row(name, models) for name, models in rows_data)
@@ -1920,7 +1932,7 @@ def build_changes_panel(history: List[Dict], all_regions: Set[str], known_models
         items.append(f"""<li class="feed-item feed-item--{'added' if added else 'removed'}">
         <span class="feed-item__icon" aria-label="{'Added' if added else 'Removed'}">{'+' if added else '−'}</span>
         <div class="feed-item__body">
-            <div class="feed-item__title">{model_link(group['model'])} {sku_html}</div>
+            <div class="feed-item__title">{provider_logo(model_family(group['model']), "xs")}{model_link(group['model'])} {sku_html}</div>
             <div class="feed-item__meta"><time datetime="{group['timestamp']:%Y-%m-%d}">{group['timestamp']:%b} {group['timestamp'].day}</time> · {scope}</div>
         </div>
     </li>""")
@@ -1972,7 +1984,7 @@ def build_watchlist(retirement_data: Dict, available_slugs: Set[str], today: dat
             replacement_html = f'<span class="watch-item__replacement">→ {target}</span>'
         rows.append(f"""<li class="watch-item watch-item--{tone}">
         <div class="watch-item__main">
-            <div class="watch-item__title">{model_html} <code>{html_escape(str(entry.get('version', '')))}</code></div>
+            <div class="watch-item__title">{provider_logo(model_family(model), "xs")}{model_html} <code>{html_escape(str(entry.get('version', '')))}</code></div>
             <div class="watch-item__meta">{'≥ ' if estimate else ''}{format_short_date(retire_dt)} {replacement_html}</div>
             <div class="watch-item__meter" aria-hidden="true"><span style="width:{progress:.0f}%"></span></div>
         </div>
@@ -2273,7 +2285,7 @@ def generate_model_index_page(
         regions = len(model_regions[model])
         return (
             f'<a class="mcat-card mcat-card--{summary["tone"]}" href="{slugify(model)}/" data-name="{html_escape(model.lower())}">'
-            f'<span class="mcat-card__name">{html_escape(model)}</span>'
+            f'<span class="mcat-card__head">{provider_logo(model_family(model))}<span class="mcat-card__name">{html_escape(model)}</span></span>'
             f'<span class="mcat-card__meta"><span><b>{regions}</b> {"region" if regions == 1 else "regions"}</span>'
             f'<span class="mcat-card__dots">{dots}</span></span>'
             f"{flag}</a>"
@@ -2284,7 +2296,7 @@ def generate_model_index_page(
         models = sorted(by_family[family], key=str.lower)
         sections.append(f"""<section class="mcat-group" id="{anchor(family)}">
     <header class="mcat-group__head">
-        <h2>{html_escape(family)} <span>{pluralize(len(models), "model")}</span></h2>
+        <h2>{provider_logo(family, "lg")}{html_escape(family)} <span>{pluralize(len(models), "model")}</span></h2>
         <a href="../explorer/#p={quote(family)}">Compare availability {icon("arrow")}</a>
     </header>
     <div class="mcat-grid">
@@ -2394,7 +2406,7 @@ def generate_model_detail_page(
         <div class="model-profile__badges">
             <span class="badge {bucket_class}">{bucket_label}</span>
             {lifecycle_badge(lifecycle)}
-            <span class="model-profile__family">{html_escape(model_family(model))}</span>
+            <span class="model-profile__family">{provider_logo(model_family(model), "sm")}{html_escape(model_family(model))}</span>
             <span class="model-profile__coverage-note">{bucket_description} tracked</span>
         </div>
         <p class="model-profile__lead">Available in <strong>{count}</strong> of <strong>{len(all_regions)}</strong> tracked regions with <strong>{len(sku_regions)}</strong> deployment SKU types.</p>
@@ -2495,7 +2507,7 @@ def generate_model_detail_page(
 </table>
 </div>"""
 
-    return f"""# {model}
+    return f"""# {provider_logo(model_family(model), "xl")} {model}
 
 {model_profile}
 {retirement_section}

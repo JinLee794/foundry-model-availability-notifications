@@ -12,6 +12,11 @@
   };
   const GROUP_ORDER = ['paygo', 'ptu', 'batch', 'partner', 'other'];
 
+  function providerLogo(family) {
+    const slug = String(family || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    return '<span class="pv pv--' + slug + '" aria-hidden="true" title="' + String(family || '').replace(/"/g, '&quot;') + '"></span>';
+  }
+
   function esc(value) {
     return String(value == null ? '' : value)
       .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -198,8 +203,9 @@
       rows.forEach(function (m, r) {
         const badge = '<span class="lc-badge lc-badge--' + esc(m.lt) + '" data-tip-title="' + esc(m.ll) +
           '" data-tip="' + esc(m.tip || '') + '">' + esc(m.lb || m.ll) + '</span>';
-        body += '<tr data-row="' + r + '"><th class="ax-sticky ax-model" scope="row"><a href="' +
-          esc(siteRoot + 'models/' + m.s + '/') + '">' + esc(m.n) + '</a><small>' + esc(m.f) + '</small></th>' +
+        body += '<tr data-row="' + r + '"><th class="ax-sticky ax-model" scope="row"><div class="ax-model__id">' +
+          providerLogo(m.f) + '<a href="' + esc(siteRoot + 'models/' + m.s + '/') + '">' + esc(m.n) + '</a><small>' +
+          esc(m.f) + '</small></div></th>' +
           '<td class="ax-lc">' + badge + '</td><td class="ax-n">' + m._hits + '</td>';
         cols.forEach(function (i) { body += cellHtml(m.a[i] & mask, i); });
         body += '</tr>';

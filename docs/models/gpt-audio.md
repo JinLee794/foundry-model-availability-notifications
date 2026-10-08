@@ -1,11 +1,11 @@
-# gpt-audio
+# <span class="pv pv--openai pv--xl" aria-hidden="true" title="OpenAI"></span> gpt-audio
 
 <div class="model-profile" aria-label="Model availability profile">
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-emerging">Emerging</span>
             <span class="lc-badge lc-badge--caution" tabindex="0" data-tip-title="Deprecated" data-tip="No longer available to new customers. Subscriptions that already deployed this version can keep creating and managing deployments until it retires. Next retirement: Feb 28, 2027 (version 2025-08-28). Don&#x27;t start new work on it; schedule a migration before retirement.">Deprecated</span>
-            <span class="model-profile__family">OpenAI</span>
+            <span class="model-profile__family"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span>OpenAI</span>
             <span class="model-profile__coverage-note">Under 15 regions tracked</span>
         </div>
         <p class="model-profile__lead">Available in <strong>3</strong> of <strong>35</strong> tracked regions with <strong>4</strong> deployment SKU types.</p>
@@ -49,7 +49,7 @@
         <span class="lc-badge lc-badge--caution" tabindex="0" data-tip-title="Deprecated" data-tip="No longer available to new customers. Subscriptions that already deployed this version can keep creating and managing deployments until it retires. Don&#x27;t start new work on it; schedule a migration before retirement.">Deprecated</span>
         <span class="lc-version__countdown lc-version__countdown--caution">in 5 months</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:66.48%"></span><span class="lc-seg lc-seg--deprecated" style="left:66.48%;width:33.52%"></span><span class="lc-today" style="left:73.77%"><em>Today</em></span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:66.48%"></span><span class="lc-seg lc-seg--deprecated" style="left:66.48%;width:33.52%"></span><span class="lc-today" style="left:73.95%"><em>Today</em></span></div>
     <div class="lc-version__dates"><span><b>Released</b> Aug 28, 2025</span><span><b>Deprecated</b> Aug 28, 2026</span><span><b>Retires</b> Feb 28, 2027</span></div>
     
 </div>
@@ -147,4 +147,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-07 23:10 UTC_
+_Last updated: 2026-10-08 00:35 UTC_

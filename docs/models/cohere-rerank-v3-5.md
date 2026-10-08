@@ -1,11 +1,11 @@
-# Cohere Rerank v3.5
+# <span class="pv pv--cohere pv--xl" aria-hidden="true" title="Cohere"></span> Cohere Rerank v3.5
 
 <div class="model-profile" aria-label="Model availability profile">
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-emerging">Emerging</span>
             <span class="lc-badge lc-badge--neutral" tabindex="0" data-tip-title="No retirement date published" data-tip="Microsoft&#x27;s retirement tables don&#x27;t list a date for this model yet (common for new and partner models). Check the model card in Foundry before committing long-term.">No retirement date</span>
-            <span class="model-profile__family">Cohere</span>
+            <span class="model-profile__family"><span class="pv pv--cohere pv--sm" aria-hidden="true" title="Cohere"></span>Cohere</span>
             <span class="model-profile__coverage-note">Under 15 regions tracked</span>
         </div>
         <p class="model-profile__lead">Available in <strong>7</strong> of <strong>35</strong> tracked regions with <strong>2</strong> deployment SKU types.</p>
@@ -125,4 +125,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-07 23:10 UTC_
+_Last updated: 2026-10-08 00:35 UTC_

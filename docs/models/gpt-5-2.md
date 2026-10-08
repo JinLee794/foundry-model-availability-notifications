@@ -1,11 +1,11 @@
-# gpt-5.2
+# <span class="pv pv--openai pv--xl" aria-hidden="true" title="OpenAI"></span> gpt-5.2
 
 <div class="model-profile" aria-label="Model availability profile">
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-broad">Broad</span>
             <span class="lc-badge lc-badge--success" tabindex="0" data-tip-title="Generally available" data-tip="Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models). Next retirement: No earlier than May 12, 2027 (version 2025-12-11). Safe to build on — note the retirement date in your roadmap.">GA · until ≥ May 2027</span>
-            <span class="model-profile__family">OpenAI</span>
+            <span class="model-profile__family"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span>OpenAI</span>
             <span class="model-profile__coverage-note">25+ regions tracked</span>
         </div>
         <p class="model-profile__lead">Available in <strong>29</strong> of <strong>35</strong> tracked regions with <strong>11</strong> deployment SKU types.</p>
@@ -49,7 +49,7 @@
         <span class="lc-badge lc-badge--success" tabindex="0" data-tip-title="Generally available" data-tip="Production-ready: weights and APIs are fixed and new deployments are allowed. Most GA models get about 18 months before retirement (12 for some partner models). Safe to build on — note the retirement date in your roadmap.">Generally available</span>
         <span class="lc-version__countdown lc-version__countdown--success">No earlier than in 7 months</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:70.79%"></span><span class="lc-seg lc-seg--deprecated lc-seg--estimate" style="left:70.79%;width:29.21%"></span><span class="lc-today" style="left:58.03%"><em>Today</em></span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:70.79%"></span><span class="lc-seg lc-seg--deprecated lc-seg--estimate" style="left:70.79%;width:29.21%"></span><span class="lc-today" style="left:58.22%"><em>Today</em></span></div>
     <div class="lc-version__dates"><span><b>Released</b> Dec 11, 2025</span><span><b>Deprecates</b> ≥ Dec 12, 2026</span><span><b>Retires</b> ≥ May 12, 2027</span></div>
     
 </div>
@@ -258,4 +258,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-07 23:10 UTC_
+_Last updated: 2026-10-08 00:35 UTC_

@@ -1,11 +1,11 @@
-# gpt-5-chat
+# <span class="pv pv--openai pv--xl" aria-hidden="true" title="OpenAI"></span> gpt-5-chat
 
 <div class="model-profile" aria-label="Model availability profile">
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-broad">Broad</span>
             <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Replacement: gpt-5.2-chat. Use the replacement model.">Retired</span>
-            <span class="model-profile__family">OpenAI</span>
+            <span class="model-profile__family"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span>OpenAI</span>
             <span class="model-profile__coverage-note">25+ regions tracked</span>
         </div>
         <p class="model-profile__lead">Available in <strong>27</strong> of <strong>35</strong> tracked regions with <strong>3</strong> deployment SKU types.</p>
@@ -47,9 +47,9 @@
     <div class="lc-version__head">
         <code>2025-10-03</code>
         <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Use the replacement model.">Retired</span>
-        <span class="lc-version__countdown lc-version__countdown--muted">221 days ago</span>
+        <span class="lc-version__countdown lc-version__countdown--muted">222 days ago</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:40.38%"></span><span class="lc-seg lc-seg--retired" style="left:40.38%;width:59.62%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:40.27%"></span><span class="lc-seg lc-seg--retired" style="left:40.27%;width:59.73%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
     <div class="lc-version__dates"><span><b>Released</b> Oct 3, 2025</span><span><b>Retired</b> Mar 1, 2026</span></div>
     <div class="lc-version__replacement">Replacement <a href="../gpt-5-2-chat/">gpt-5.2-chat</a> <span>28 regions</span></div>
 </div>
@@ -57,9 +57,9 @@
     <div class="lc-version__head">
         <code>2025-08-07</code>
         <span class="lc-badge lc-badge--muted" tabindex="0" data-tip-title="Retired" data-tip="Removed from service. All inference requests return 410 Gone. Use the replacement model.">Retired</span>
-        <span class="lc-version__countdown lc-version__countdown--muted">221 days ago</span>
+        <span class="lc-version__countdown lc-version__countdown--muted">222 days ago</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:48.36%"></span><span class="lc-seg lc-seg--retired" style="left:48.36%;width:51.64%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:48.24%"></span><span class="lc-seg lc-seg--retired" style="left:48.24%;width:51.76%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
     <div class="lc-version__dates"><span><b>Released</b> Aug 7, 2025</span><span><b>Retired</b> Mar 1, 2026</span></div>
     <div class="lc-version__replacement">Replacement <a href="../gpt-5-2-chat/">gpt-5.2-chat</a> <span>28 regions</span></div>
 </div>
@@ -174,4 +174,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-07 23:10 UTC_
+_Last updated: 2026-10-08 00:35 UTC_

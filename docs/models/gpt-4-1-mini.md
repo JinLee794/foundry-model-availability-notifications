@@ -1,11 +1,11 @@
-# gpt-4.1-mini
+# <span class="pv pv--openai pv--xl" aria-hidden="true" title="OpenAI"></span> gpt-4.1-mini
 
 <div class="model-profile" aria-label="Model availability profile">
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-broad">Broad</span>
-            <span class="lc-badge lc-badge--danger" tabindex="0" data-tip-title="Retiring within 30 days" data-tip="This version is switched off on its retirement date; after that every request returns 410 Gone. Standard deployments may be auto-upgraded to the replacement — provisioned (PTU) deployments are not. Next retirement: Oct 14, 2026 (version 2025-04-14). Replacement: gpt-5-mini. Move traffic to the replacement now.">Retires in 6 days</span>
-            <span class="model-profile__family">OpenAI</span>
+            <span class="lc-badge lc-badge--danger" tabindex="0" data-tip-title="Retiring within 30 days" data-tip="This version is switched off on its retirement date; after that every request returns 410 Gone. Standard deployments may be auto-upgraded to the replacement — provisioned (PTU) deployments are not. Next retirement: Oct 14, 2026 (version 2025-04-14). Replacement: gpt-5-mini. Move traffic to the replacement now.">Retires in 5 days</span>
+            <span class="model-profile__family"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span>OpenAI</span>
             <span class="model-profile__coverage-note">25+ regions tracked</span>
         </div>
         <p class="model-profile__lead">Available in <strong>31</strong> of <strong>35</strong> tracked regions with <strong>16</strong> deployment SKU types.</p>
@@ -31,7 +31,7 @@
     </div>
     <div class="model-metric model-metric--danger">
         <span>Next retirement</span>
-        <strong>in 6 days</strong>
+        <strong>in 5 days</strong>
     </div>
 </div>
     <div class="model-profile__insight">
@@ -47,9 +47,9 @@
     <div class="lc-version__head">
         <code>2025-04-14</code>
         <span class="lc-badge lc-badge--danger" tabindex="0" data-tip-title="Retiring within 30 days" data-tip="This version is switched off on its retirement date; after that every request returns 410 Gone. Standard deployments may be auto-upgraded to the replacement — provisioned (PTU) deployments are not. Move traffic to the replacement now.">Retiring within 30 days</span>
-        <span class="lc-version__countdown lc-version__countdown--danger">in 6 days</span>
+        <span class="lc-version__countdown lc-version__countdown--danger">in 5 days</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:66.61%"></span><span class="lc-seg lc-seg--deprecated" style="left:66.61%;width:33.39%"></span><span class="lc-today lc-today--end" style="left:98.72%"><em>Today</em></span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:66.61%"></span><span class="lc-seg lc-seg--deprecated" style="left:66.61%;width:33.39%"></span><span class="lc-today lc-today--end" style="left:98.91%"><em>Today</em></span></div>
     <div class="lc-version__dates"><span><b>Released</b> Apr 14, 2025</span><span><b>Deprecated</b> Apr 14, 2026</span><span><b>Retires</b> Oct 14, 2026</span></div>
     <div class="lc-version__replacement">Replacement <a href="../gpt-5-mini/">gpt-5-mini</a> <span>29 regions</span></div>
 </div>
@@ -313,4 +313,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-07 23:10 UTC_
+_Last updated: 2026-10-08 00:35 UTC_

@@ -1,11 +1,11 @@
-# codex-mini
+# <span class="pv pv--openai pv--xl" aria-hidden="true" title="OpenAI"></span> codex-mini
 
 <div class="model-profile" aria-label="Model availability profile">
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-emerging">Emerging</span>
-            <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Next retirement: Nov 15, 2026 (version 2025-05-16). Test the replacement and plan the cut-over.">Retires in 38 days</span>
-            <span class="model-profile__family">OpenAI</span>
+            <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Next retirement: Nov 15, 2026 (version 2025-05-16). Test the replacement and plan the cut-over.">Retires in 37 days</span>
+            <span class="model-profile__family"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span>OpenAI</span>
             <span class="model-profile__coverage-note">Under 15 regions tracked</span>
         </div>
         <p class="model-profile__lead">Available in <strong>3</strong> of <strong>35</strong> tracked regions with <strong>4</strong> deployment SKU types.</p>
@@ -31,7 +31,7 @@
     </div>
     <div class="model-metric model-metric--warning">
         <span>Next retirement</span>
-        <strong>in 38 days</strong>
+        <strong>in 37 days</strong>
     </div>
 </div>
     <div class="model-profile__insight">
@@ -47,9 +47,9 @@
     <div class="lc-version__head">
         <code>2025-05-16</code>
         <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Test the replacement and plan the cut-over.">Retiring within 90 days</span>
-        <span class="lc-version__countdown lc-version__countdown--warning">in 38 days</span>
+        <span class="lc-version__countdown lc-version__countdown--warning">in 37 days</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:66.61%"></span><span class="lc-seg lc-seg--deprecated" style="left:66.61%;width:33.39%"></span><span class="lc-today lc-today--end" style="left:92.88%"><em>Today</em></span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:66.61%"></span><span class="lc-seg lc-seg--deprecated" style="left:66.61%;width:33.39%"></span><span class="lc-today lc-today--end" style="left:93.07%"><em>Today</em></span></div>
     <div class="lc-version__dates"><span><b>Released</b> May 16, 2025</span><span><b>Deprecated</b> May 16, 2026</span><span><b>Retires</b> Nov 15, 2026</span></div>
     
 </div>
@@ -147,4 +147,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-07 23:10 UTC_
+_Last updated: 2026-10-08 00:35 UTC_

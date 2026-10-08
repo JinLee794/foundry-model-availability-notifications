@@ -120,6 +120,7 @@ Region and deployment-type links across the site open the Explorer pre-filtered.
 
 The finder and explorer are backed by `docs/assets/model-index.json`, which `generate_docs.py` writes on every run. Lifecycle badges show a plain-language explanation on hover or focus.
 
+Model names across the site carry a provider logo (catalog, Explorer, finder, dashboard and model pages). The logos live in `docs/assets/providers/<family-slug>.svg`, adapted from [LobeHub Icons](https://github.com/lobehub/lobe-icons) (MIT); see `docs/assets/providers/NOTICE.txt`. Providers without a logo fall back to `partner.svg`. To add one, drop in an SVG named after the family slug and add a matching `.pv--<slug>` rule in `docs/stylesheets/custom.css`.
 ### Notifications
 
 When changes are detected, a GitHub issue is automatically created with:

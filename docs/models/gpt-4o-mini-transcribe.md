@@ -1,11 +1,11 @@
-# gpt-4o-mini-transcribe
+# <span class="pv pv--openai pv--xl" aria-hidden="true" title="OpenAI"></span> gpt-4o-mini-transcribe
 
 <div class="model-profile" aria-label="Model availability profile">
     <div class="model-profile__main">
         <div class="model-profile__badges">
             <span class="badge badge-emerging">Emerging</span>
-            <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Next retirement: No earlier than Dec 15, 2026 (version 2025-12-15). Test the replacement and plan the cut-over.">Retires in 68 days</span>
-            <span class="model-profile__family">OpenAI</span>
+            <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Next retirement: No earlier than Dec 15, 2026 (version 2025-12-15). Test the replacement and plan the cut-over.">Retires in 67 days</span>
+            <span class="model-profile__family"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span>OpenAI</span>
             <span class="model-profile__coverage-note">Under 15 regions tracked</span>
         </div>
         <p class="model-profile__lead">Available in <strong>6</strong> of <strong>35</strong> tracked regions with <strong>4</strong> deployment SKU types.</p>
@@ -49,7 +49,7 @@
         <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retiring within 90 days" data-tip="A firm retirement date is less than three months away. Existing deployments keep working until then. PTU deployments must be migrated by hand. Test the replacement and plan the cut-over.">Retiring within 90 days</span>
         <span class="lc-version__countdown lc-version__countdown--warning">No earlier than in 2 months</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:100.00%"></span><span class="lc-today" style="left:81.10%"><em>Today</em></span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--ga" style="left:0;width:100.00%"></span><span class="lc-today" style="left:81.37%"><em>Today</em></span></div>
     <div class="lc-version__dates"><span><b>Released</b> Dec 15, 2025</span><span><b>Retires</b> ≥ Dec 15, 2026</span></div>
     
 </div>
@@ -59,7 +59,7 @@
         <span class="lc-badge lc-badge--warning" tabindex="0" data-tip-title="Retirement imminent" data-tip="Microsoft said this version retires no earlier than a date that has now passed, so it can be switched off at any time once notice is given. Treat it as retiring now — migrate.">Retirement imminent</span>
         <span class="lc-version__countdown lc-version__countdown--warning">Date passed · may retire any time</span>
     </div>
-    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:60.95%"></span><span class="lc-seg lc-seg--retired" style="left:60.95%;width:39.05%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
+    <div class="lc-bar" aria-hidden="true"><span class="lc-seg lc-seg--preview" style="left:0;width:60.85%"></span><span class="lc-seg lc-seg--retired" style="left:60.85%;width:39.15%"></span><span class="lc-today lc-today--end" style="left:100.00%"><em>Today</em></span></div>
     <div class="lc-version__dates"><span><b>Released</b> Mar 20, 2025</span><span><b>Retires</b> ≥ Feb 28, 2026</span></div>
     
 </div>
@@ -160,4 +160,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-07 23:10 UTC_
+_Last updated: 2026-10-08 00:35 UTC_

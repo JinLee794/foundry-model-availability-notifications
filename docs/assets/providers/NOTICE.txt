@@ -1,0 +1,4 @@
+Provider logos (except partner.svg) come from @lobehub/icons-static-svg (MIT License,
+https://github.com/lobehub/lobe-icons). partner.svg is Material Design Icons "cube-outline"
+(Apache License 2.0, https://pictogrammers.com). All logos and trademarks belong to their
+respective owners and are used only to identify each model's provider.

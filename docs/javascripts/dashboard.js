@@ -80,12 +80,17 @@
     return (
       '<a class="finder-result' + (active ? ' is-active' : '') + '" role="option" href="' +
       escapeHtml(root + 'models/' + record.s + '/') + '">' +
-      '<span class="finder-result__main"><strong>' + escapeHtml(record.n) + '</strong>' +
+      '<span class="finder-result__main">' + providerLogo(record.f) + '<strong>' + escapeHtml(record.n) + '</strong>' +
       '<small>' + escapeHtml(record.f) + '</small></span>' +
       '<span class="finder-result__meta">' + meta + '</span>' +
       '<span class="finder-result__tags">' + badge + categories + '</span>' +
       '</a>'
     );
+  }
+
+  function providerLogo(family, size) {
+    const slug = String(family || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    return '<span class="pv pv--' + slug + (size ? ' pv--' + size : '') + '" aria-hidden="true" title="' + String(family || '').replace(/"/g, '&quot;') + '"></span>';
   }
 
   function mountFinder(el) {
@@ -186,7 +191,7 @@
             .slice(0, 8)
             .map(function (family) {
               return '<button type="button" class="finder-chip finder-chip--family" data-filter="family:' +
-                escapeHtml(family) + '">' + escapeHtml(family) + ' <span>' + families[family] + '</span></button>';
+                escapeHtml(family) + '">' + providerLogo(family, 'xs') + escapeHtml(family) + ' <span>' + families[family] + '</span></button>';
             })
             .join('');
         }
