@@ -6,6 +6,7 @@
   var POPULAR = ['gpt-5', 'gpt-5-mini', 'gpt-4-1', 'gpt-4-1-mini', 'gpt-4o', 'o4-mini', 'deepseek-v3-2', 'grok-4-1-fast-reasoning', 'mistral-large-3', 'llama-3-3-70b-instruct'];
   var ALERT = { soon: 1, retiring: 1, deprecated: 1, retired: 1 };
   var MAX_MODELS = 20;
+  var MEDIA_TABS = { image: 1, audio: 1, video: 1, docs: 1 };
   var DEFAULTS = { rpd: 3000, in: 1500, out: 400, cache: 30, batch: 0, dep: 'global', peak: 2 };
 
   function esc(value) {
@@ -81,6 +82,8 @@
     };
     var initial = (q.get('m') || '').split(',').filter(function (s) { return bySlug[s]; });
     state.models = initial.length ? initial : modelSet('popular');
+    var stashedModels = null;
+    function isEmbed(s) { return !!bySlug[s] && /embed/i.test(bySlug[s].n); }
 
     var $ = function (sel) { return root.querySelector(sel); };
     var fields = {};
@@ -150,8 +153,25 @@
           .slice(0, 12).map(function (x) { return x.s; });
       }
       if (name === 'partner') {
-        return data.models.filter(function (m) { return m.f !== 'OpenAI' && m.lk !== 'retired' && blended(m.p.global || m.p.datazone || m.p.regional || {}) != null && (m.p.global || m.p.datazone || m.p.regional).out != null; })
-          .slice(0, 12).map(function (m) { return m.s; });
+        // Round-robin across providers so no single family fills the set; the last name
+        // alphabetically is usually the newest version.
+        var pool = data.models.filter(function (m) {
+          var t = m.p.global || m.p.datazone || m.p.regional || {};
+          return m.f !== 'OpenAI' && m.lk !== 'retired' && !ALERT[m.lk] && t.in != null && t.out != null;
+        });
+        var byFam = {};
+        pool.forEach(function (m) { (byFam[m.f] = byFam[m.f] || []).push(m.s); });
+        var picks2 = [], round = 0, added = true;
+        while (picks2.length < 12 && added) {
+          added = false;
+          Object.keys(byFam).forEach(function (f) {
+            var list = byFam[f];
+            var s = list[list.length - 1 - round];
+            if (s && picks2.length < 12) { picks2.push(s); added = true; }
+          });
+          round++;
+        }
+        return picks2;
       }
       return [];
     }
@@ -163,7 +183,11 @@
       p.set('c', state.cache); p.set('b', state.batch); p.set('d', state.dep);
       if (state.peak !== DEFAULTS.peak) p.set('pk', state.peak);
       if (state.ptuModel) p.set('p', state.ptuModel);
-      try { window.history.replaceState(window.history.state, '', window.location.pathname + '?' + p.toString()); } catch (e) { /* file:// */ }
+      if (media && media.touched) {
+        p.set('media', media.tab);
+        if (media.hl) p.set('hl', media.hl);
+      }
+      try { window.history.replaceState(window.history.state, '', window.location.pathname + '?' + p.toString() + window.location.hash); } catch (e) { /* file:// */ }
     }
 
     function syncInputs() {
@@ -229,6 +253,7 @@
         if (c.fallback) notes.push('<span class="cp-note"' + tip('Deployment type', 'No ' + DEPS[state.dep] + ' price is published, so this uses the ' + DEPS[c.dep] + ' price.') + '>' + DEPS[c.dep] + ' price</span>');
         if (c.noOut) notes.push('<span class="cp-note"' + tip('Input only', 'This model has no output-token price (e.g. embeddings), so output tokens are free.') + '>input only</span>');
         if (c.noBatch) notes.push('<span class="cp-note"' + tip('No batch price', 'No Global Batch price is published, so batch traffic uses the standard price.') + '>no batch rate</span>');
+        if (m.src === 'mp') notes.push('<span class="cp-note"' + tip('Azure Marketplace', 'Billed through Azure Marketplace. The price comes from the Marketplace catalog; deployment types are not priced separately.') + '>Marketplace</span>');
         var rep = m.rs && ALERT[m.lk] ? '<a class="cp-rep" href="#" data-add="' + esc(m.rs) + '"' + tip('Replacement', 'Add ' + m.rep + ' to compare the cost of switching.') + '>→ ' + esc(m.rep) + '</a>' : '';
         var perK = state.rpd > 0 ? money(c.total / (state.rpd * hours / 24) * 1000) + ' per 1K requests' : '';
         var segTip = 'Input ' + money(c.input) + ' · Cached ' + money(c.cached) + ' · Output ' + money(c.output);
@@ -496,9 +521,20 @@
         render();
       } else if (t.hasAttribute('data-workload')) {
         ['rpd', 'in', 'out', 'cache', 'batch'].forEach(function (k) { state[k] = +t.dataset[k]; });
+        // Embedding models only make sense for the Embeddings preset: swap them in and out
+        // so they don't linger in chat/agent comparisons.
         if (t.dataset.workload === 'embed') {
-          var embeds = data.models.filter(function (m) { return /embed/i.test(m.n); }).map(function (m) { return m.s; });
-          if (embeds.length) state.models = embeds;
+          var embeds = data.models.filter(function (m) { return isEmbed(m.s) && m.lk !== 'retired'; }).map(function (m) { return m.s; });
+          if (embeds.length) {
+            var rest = state.models.filter(function (s) { return !isEmbed(s); });
+            if (rest.length) stashedModels = rest;
+            state.models = embeds.slice(0, MAX_MODELS);
+          }
+        } else if (state.models.some(isEmbed) || !state.models.length) {
+          var kept = state.models.filter(function (s) { return !isEmbed(s); });
+          var restored = (stashedModels || []).concat(kept).filter(function (s, i, a) { return bySlug[s] && a.indexOf(s) === i; });
+          state.models = (restored.length ? restored : modelSet('popular')).slice(0, MAX_MODELS);
+          stashedModels = null;
         }
         render();
       } else if (t.hasAttribute('data-dep')) {
@@ -519,6 +555,200 @@
     });
     fields.peak.addEventListener('change', function () { state.peak = num(fields.peak.value, 2) || 2; render(); });
     ptuSelect.addEventListener('change', function () { state.ptuModel = ptuSelect.value; renderPtu(); syncUrl(); });
+
+    // ----- media & audio estimator -----
+    var mediaEl = $('[data-cpm]');
+    var media = mediaEl ? initMedia() : null;
+
+    function initMedia() {
+      var defaults = data.media_defaults || {};
+      var tabParam = q.get('media');
+      var tab = MEDIA_TABS[tabParam] ? tabParam : (tabParam === 'search' ? 'docs' : 'image');
+      var st = {
+        tab: tab,
+        hl: q.get('hl') || '',
+        touched: !!MEDIA_TABS[tabParam] || tabParam === 'search',
+        quality: 'medium',
+        mode: 'transcribe',
+        vol: { image: 10000, audio: 10000, video: 600, docs: 10000, search: 100000 },
+        a: JSON.parse(JSON.stringify(defaults)),
+      };
+      var hlModel = (data.media || []).filter(function (m) { return m.s === st.hl; })[0];
+      if (hlModel && hlModel.c === 'audio') st.mode = hlModel.am;
+      return st;
+    }
+
+    function mediaTab(m) { return m.c === 'search' ? 'docs' : m.c; }
+
+    function mediaUnit(m) {
+      var p = m.p, a = media.a;
+      if (m.c === 'video') return { cost: p.per_second, unit: 'per second', vol: 'video' };
+      if (m.c === 'docs') return { cost: p.per_page, unit: 'per page', vol: 'docs' };
+      if (m.c === 'search') return { cost: p.per_query, unit: 'per query', vol: 'search' };
+      if (m.c === 'image') {
+        if (p.per_image != null) return { cost: p.per_image, unit: 'per image', vol: 'image' };
+        if (p.per_megapixel != null) {
+          var mp = a.megapixels;
+          var cost = p.per_megapixel_first != null ? p.per_megapixel_first + p.per_megapixel * Math.max(mp - 1, 0) : p.per_megapixel * mp;
+          return { cost: cost, unit: 'per image', vol: 'image', est: 'megapixel' };
+        }
+        var tokens = (a.image_tokens || {})[media.quality] || 0;
+        return { cost: (p.image_out || 0) * tokens / 1e6 + (p.text_in || 0) * a.prompt_tokens / 1e6, unit: 'per image', vol: 'image', est: 'token' };
+      }
+      if (p.per_hour != null) return { cost: p.per_hour / 60, unit: 'per minute', vol: 'audio' };
+      if (p.per_1m_chars != null) return { cost: p.per_1m_chars * a.speech_chars_pm / 1e6, unit: 'per minute', vol: 'audio', est: 'chars' };
+      if (media.mode === 'transcribe') {
+        return { cost: (p.audio_in || 0) * a.transcribe_audio_tpm / 1e6 + (p.text_out || 0) * a.transcript_tpm / 1e6, unit: 'per minute', vol: 'audio', est: 'token' };
+      }
+      if (media.mode === 'speech') {
+        return { cost: (p.audio_out || 0) * a.speech_audio_tpm / 1e6 + (p.text_in || 0) * a.transcript_tpm / 1e6, unit: 'per minute', vol: 'audio', est: 'token' };
+      }
+      return { cost: 0.5 * (p.audio_in || 0) * a.voice_in_tpm / 1e6 + 0.5 * (p.audio_out || 0) * a.voice_out_tpm / 1e6, unit: 'per minute', vol: 'audio', est: 'token' };
+    }
+
+    function mediaModels() {
+      return (data.media || []).filter(function (m) {
+        if (mediaTab(m) !== media.tab) return false;
+        if (media.tab === 'audio') return m.am === media.mode || (media.mode === 'voice' && m.am === 'voice');
+        return true;
+      });
+    }
+
+    function mediaControls() {
+      var v = media.vol;
+      var field = function (key, label, step) {
+        return '<label class="cp-field"><span>' + label + '</span><input type="number" min="0" step="' + step + '" data-cpm-vol="' + key + '" value="' + v[key] + '" inputmode="numeric"></label>';
+      };
+      var seg = function (attr, current, opts) {
+        return '<div class="cp-seg" role="radiogroup">' + opts.map(function (o) {
+          var on = o[0] === current;
+          return '<button type="button" role="radio" ' + attr + '="' + o[0] + '" aria-checked="' + on + '" class="' + (on ? 'is-active' : '') + '">' + o[1] + '</button>';
+        }).join('') + '</div>';
+      };
+      if (media.tab === 'image') {
+        return field('image', 'Images per month', 1000) +
+          '<div class="cp-field"><span>Quality (token-billed models)</span>' + seg('data-cpm-quality', media.quality, [['low', 'Low'], ['medium', 'Medium'], ['high', 'High']]) + '</div>';
+      }
+      if (media.tab === 'audio') {
+        var counts = { transcribe: 0, speech: 0, voice: 0 };
+        (data.media || []).forEach(function (m) { if (m.c === 'audio') counts[m.am] = (counts[m.am] || 0) + 1; });
+        return '<div class="cp-field"><span>What the model does</span>' + seg('data-cpm-mode', media.mode, [
+          ['transcribe', 'Speech → text <small>' + counts.transcribe + '</small>'],
+          ['speech', 'Text → speech <small>' + counts.speech + '</small>'],
+          ['voice', 'Voice chat <small>' + counts.voice + '</small>']]) + '</div>' +
+          field('audio', media.mode === 'transcribe' ? 'Audio minutes per month' : media.mode === 'speech' ? 'Minutes of speech per month' : 'Conversation minutes per month', 500);
+      }
+      if (media.tab === 'video') return field('video', 'Seconds of video per month', 60);
+      return field('docs', 'Document pages per month', 1000) + field('search', 'Search queries per month', 10000);
+    }
+
+    var ASSUME = {
+      image: [
+        ['image_tokens.low', 'Output tokens per image — low quality'],
+        ['image_tokens.medium', 'Output tokens per image — medium quality'],
+        ['image_tokens.high', 'Output tokens per image — high quality'],
+        ['prompt_tokens', 'Prompt tokens per image'],
+        ['megapixels', 'Megapixels per image (megapixel-billed models)'],
+      ],
+      audio: {
+        transcribe: [['transcribe_audio_tpm', 'Audio tokens per minute of input'], ['transcript_tpm', 'Transcript text tokens per minute']],
+        speech: [['speech_audio_tpm', 'Audio tokens per minute of speech'], ['transcript_tpm', 'Input text tokens per minute'], ['speech_chars_pm', 'Characters per minute (character-billed models)']],
+        voice: [['voice_in_tpm', 'Audio tokens per minute while the user talks'], ['voice_out_tpm', 'Audio tokens per minute while the model talks']],
+      },
+    };
+    function getA(path) { return path.split('.').reduce(function (o, k) { return o ? o[k] : undefined; }, media.a); }
+    function setA(path, value) {
+      var keys = path.split('.'), o = media.a;
+      for (var i = 0; i < keys.length - 1; i++) o = o[keys[i]];
+      o[keys[keys.length - 1]] = value;
+    }
+
+    function renderMediaAssumptions() {
+      var list = media.tab === 'image' ? ASSUME.image : media.tab === 'audio' ? ASSUME.audio[media.mode] : null;
+      var box = mediaEl.querySelector('[data-cpm-assume]');
+      if (!list) {
+        box.innerHTML = '<p class="cp-fine">These models are billed directly per ' + (media.tab === 'video' ? 'second of video' : 'page or query') + ', so the estimate needs no conversion.</p>';
+        return;
+      }
+      box.innerHTML = '<p class="cp-fine">Token-billed models are converted to a per-' + (media.tab === 'image' ? 'image' : 'minute') +
+        ' cost with these figures. They are typical values, not guarantees — change them to match your content.' +
+        (media.tab === 'audio' && media.mode === 'voice' ? ' Each side is assumed to talk half the time; re-sent conversation context is not included.' : '') + '</p>' +
+        '<div class="cp-fields cpm-assume__fields">' + list.map(function (it) {
+          return '<label class="cp-field"><span>' + it[1] + '</span><input type="number" min="0" step="any" data-cpm-a="' + it[0] + '" value="' + getA(it[0]) + '"></label>';
+        }).join('') + '</div><button type="button" class="ax-btn" data-cpm-reset>Reset to defaults</button>';
+    }
+
+    function renderMedia(rebuildControls) {
+      if (!media) return;
+      mediaEl.querySelectorAll('[data-cpm-tab]').forEach(function (b) {
+        var on = b.getAttribute('data-cpm-tab') === media.tab;
+        b.classList.toggle('is-active', on);
+        b.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+      if (rebuildControls) {
+        mediaEl.querySelector('[data-cpm-controls]').innerHTML = mediaControls();
+        renderMediaAssumptions();
+      }
+      var rows = mediaModels().map(function (m) {
+        var u = mediaUnit(m);
+        return { m: m, u: u, total: (u.cost || 0) * (media.vol[u.vol] || 0) };
+      }).sort(function (a, b) { return a.total - b.total; });
+      var el = mediaEl.querySelector('[data-cpm-bars]');
+      if (!rows.length) { el.innerHTML = '<p class="cp-empty">No priced models in this group.</p>'; return; }
+      var max = Math.max.apply(null, rows.map(function (r) { return r.total; })) || 1;
+      var EST = {
+        token: 'Converted from per-token prices using the assumptions below.',
+        megapixel: 'Billed per megapixel; uses the image size in the assumptions below.',
+        chars: 'Billed per character; uses the characters-per-minute assumption below.',
+      };
+      el.innerHTML = rows.map(function (r) {
+        var m = r.m;
+        var notes = [];
+        if (r.u.est) notes.push('<span class="cp-note"' + tip('Estimate', EST[r.u.est]) + '>estimate</span>');
+        if (m.src === 'mp') notes.push('<span class="cp-note"' + tip('Azure Marketplace', 'Billed through Azure Marketplace. The price comes from the Marketplace catalog.') + '>Marketplace</span>');
+        var rep = m.rs && ALERT[m.lk] ? '<span class="cp-rep">→ ' + esc(m.rep) + '</span>' : '';
+        return '<div class="cp-bar' + (m.s === media.hl ? ' is-hl' : '') + '" data-cpm-row="' + esc(m.s) + '">' +
+          '<div class="cp-bar__label">' + providerLogo(m.f) +
+          '<a href="' + esc(siteRoot + 'models/' + m.s + '/') + '">' + esc(m.n) + '</a>' + badge(m) + rep + notes.join('') + '</div>' +
+          '<div class="cp-bar__track"' + tip(m.n + ' · ' + money(r.total) + '/month', unitPrice(r.u.cost) + ' ' + r.u.unit) + '>' +
+          '<span class="cp-part cp-part--media" style="width:' + (r.total / max * 100).toFixed(2) + '%"></span></div>' +
+          '<div class="cp-bar__value"><strong>' + money(r.total) + '</strong><small>' + unitPrice(r.u.cost) + ' ' + r.u.unit + '</small></div>' +
+          '</div>';
+      }).join('');
+    }
+
+    if (media) {
+      mediaEl.querySelectorAll('[data-cpm-count]').forEach(function (s) {
+        var k = s.getAttribute('data-cpm-count');
+        s.textContent = (data.media || []).filter(function (m) { return mediaTab(m) === k; }).length;
+      });
+      mediaEl.addEventListener('click', function (e) {
+        var b = e.target.closest('button');
+        if (!b || !mediaEl.contains(b)) return;
+        if (b.hasAttribute('data-cpm-tab')) { media.tab = b.getAttribute('data-cpm-tab'); media.hl = ''; }
+        else if (b.hasAttribute('data-cpm-quality')) media.quality = b.getAttribute('data-cpm-quality');
+        else if (b.hasAttribute('data-cpm-mode')) { media.mode = b.getAttribute('data-cpm-mode'); media.hl = ''; }
+        else if (b.hasAttribute('data-cpm-reset')) media.a = JSON.parse(JSON.stringify(data.media_defaults || {}));
+        else return;
+        media.touched = true;
+        renderMedia(true);
+        syncUrl();
+      });
+      mediaEl.addEventListener('input', function (e) {
+        var t = e.target;
+        var v = num(t.value, null);
+        if (v == null) return;
+        if (t.hasAttribute('data-cpm-vol')) media.vol[t.getAttribute('data-cpm-vol')] = v;
+        else if (t.hasAttribute('data-cpm-a')) setA(t.getAttribute('data-cpm-a'), v);
+        else return;
+        renderMedia(false);
+      });
+      renderMedia(true);
+      if (media.hl && media.touched) {
+        var row = mediaEl.querySelector('[data-cpm-row="' + media.hl + '"]');
+        setTimeout(function () { (row || mediaEl).scrollIntoView({ block: 'center' }); }, 50);
+      }
+    }
 
     renderUnpriced();
     render();

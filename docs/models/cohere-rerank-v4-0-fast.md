@@ -47,9 +47,20 @@
 
 ## :material-cash-multiple: Pricing
 
-<div class="price-card price-card--empty">
-    <p><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg><span>No pay-as-you-go meter is published for this model in the Azure price list yet.</span></p>
-    <p class="price-card__foot">See <a href="https://azure.microsoft.com/pricing/details/ai-foundry-models/">Foundry Models pricing</a> for current rates.</p>
+<div class="price-card">
+    <div class="price-card__head">
+        <div class="price-card__hero">
+            <span class="price-card__eyebrow">Pay-as-you-go · Global</span>
+            <strong>$0.002<small> per search query</small></strong>
+            <span class="price-card__note">Search model · see the estimator for the assumptions behind this figure</span>
+        </div>
+        <a class="md-button md-button--primary" href="../../cost/?media=docs&hl=cohere-rerank-v4-0-fast#media"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg> Estimate monthly cost</a>
+    </div>
+    <div class="table-responsive"><table class="price-table">
+        <thead><tr><th>Meter</th><th>List price</th><th>Unit</th></tr></thead>
+        <tbody><tr><th scope="row">Search query</th><td>$0.002</td><td class="price-table__unit">per query</td></tr></tbody>
+    </table></div>
+    <p class="price-card__foot">Pay-as-you-go list price in USD for East US 2 from the <a href="https://learn.microsoft.com/rest/api/cost-management/retail-prices/azure-retail-prices">Azure Retail Prices API</a>, checked daily, last updated 2026-10-08. Excludes tax and negotiated discounts; other regions can differ.</p>
 </div>
 
 
@@ -157,4 +168,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 14:01 UTC_
+_Last updated: 2026-10-08 14:41 UTC_

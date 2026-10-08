@@ -1,6 +1,7 @@
 {
-  "fetched_at": "2026-10-08T13:55:35Z",
+  "fetched_at": "2026-10-08T14:35:50Z",
   "source": "https://prices.azure.com/api/retail/prices",
+  "marketplace_source": "https://catalogapi.azure.com/offers",
   "region": "eastus2",
   "currency": "USD",
   "unit": "per 1M tokens",
@@ -17,6 +18,28 @@
       "datazone": {
         "out": 0.99,
         "in": 0.33
+      }
+    },
+    "Cohere Command R 08-2024": {
+      "global": {
+        "in": 0.15,
+        "out": 0.6
+      }
+    },
+    "Cohere Command R+ 08-2024": {
+      "global": {
+        "in": 2.5,
+        "out": 10.0
+      }
+    },
+    "Cohere Embed v3 - English": {
+      "global": {
+        "in": 0.1
+      }
+    },
+    "Cohere Embed v3 - Multilingual": {
+      "global": {
+        "in": 0.1
       }
     },
     "Cohere-command-a-plus-05-2026": {
@@ -149,6 +172,18 @@
         "in": 0.95
       }
     },
+    "Llama 3.1 405B Instruct": {
+      "global": {
+        "in": 5.33,
+        "out": 16.0
+      }
+    },
+    "Llama 3.1 8B Instruct": {
+      "global": {
+        "in": 0.3,
+        "out": 0.61
+      }
+    },
     "Llama 3.3 70B Instruct": {
       "global": {
         "out": 0.71,
@@ -161,6 +196,18 @@
       "datazone": {
         "in": 0.781,
         "out": 0.781
+      }
+    },
+    "Llama-3.2-11B-Vision-Instruct": {
+      "global": {
+        "in": 0.37,
+        "out": 0.37
+      }
+    },
+    "Llama-3.2-90B-Vision-Instruct": {
+      "global": {
+        "in": 2.04,
+        "out": 2.04
       }
     },
     "Llama-3.3-70B-Instruct": {
@@ -189,6 +236,12 @@
       "global": {
         "in": 0.25,
         "out": 1.0
+      }
+    },
+    "Llama-4-Scout-17B-16E-Instruct": {
+      "global": {
+        "in": 0.2,
+        "out": 0.78
       }
     },
     "MAI-DS-R1": {
@@ -250,6 +303,103 @@
       "global": {
         "out": 0.5,
         "in": 0.125
+      }
+    },
+    "TimeGEN-1": {
+      "global": {
+        "out": 0.99,
+        "in": 0.46
+      }
+    },
+    "claude-fable-5": {
+      "global": {
+        "cached": 1.0,
+        "out": 50.0,
+        "in": 10.0
+      }
+    },
+    "claude-fable-5-1": {
+      "global": {
+        "cached": 0.25,
+        "in": 10.0,
+        "out": 50.0
+      }
+    },
+    "claude-haiku-4-5": {
+      "global": {
+        "out": 5.0,
+        "in": 1.0,
+        "cached": 0.1
+      }
+    },
+    "claude-opus-4-5": {
+      "global": {
+        "out": 25.0,
+        "cached": 0.5,
+        "in": 5.0
+      }
+    },
+    "claude-opus-4-6": {
+      "global": {
+        "cached": 0.5,
+        "out": 25.0,
+        "in": 5.0
+      }
+    },
+    "claude-opus-4-7": {
+      "global": {
+        "out": 25.0,
+        "in": 5.0,
+        "cached": 0.5
+      }
+    },
+    "claude-opus-4-8": {
+      "global": {
+        "in": 5.0,
+        "out": 25.0,
+        "cached": 0.5
+      }
+    },
+    "claude-opus-5": {
+      "global": {
+        "cached": 0.5,
+        "in": 5.0,
+        "out": 25.0
+      }
+    },
+    "claude-opus-5-5": {
+      "global": {
+        "out": 20.0,
+        "cached": 0.2,
+        "in": 4.0
+      }
+    },
+    "claude-sonnet-4-5": {
+      "global": {
+        "in": 3.0,
+        "cached": 0.3,
+        "out": 15.0
+      }
+    },
+    "claude-sonnet-4-6": {
+      "global": {
+        "cached": 0.3,
+        "in": 3.0,
+        "out": 15.0
+      }
+    },
+    "claude-sonnet-5": {
+      "global": {
+        "cached": 0.2,
+        "out": 10.0,
+        "in": 2.0
+      }
+    },
+    "claude-sonnet-5-5": {
+      "global": {
+        "in": 2.0,
+        "cached": 0.2,
+        "out": 10.0
       }
     },
     "codex-mini": {
@@ -980,6 +1130,248 @@
         "in": 0.11
       }
     }
+  },
+  "media": {
+    "Cohere Rerank v3.5": {
+      "per_query": 0.002
+    },
+    "Cohere-rerank-v4.0-fast": {
+      "per_query": 0.002
+    },
+    "Cohere-rerank-v4.0-pro": {
+      "per_query": 0.0025
+    },
+    "FLUX-1.1-pro": {
+      "per_image": 0.04
+    },
+    "FLUX.1-Kontext-pro": {
+      "per_image": 0.04
+    },
+    "FLUX.2-flex": {
+      "per_megapixel": 0.05
+    },
+    "FLUX.2-pro": {
+      "per_megapixel_first": 0.03,
+      "per_megapixel": 0.015
+    },
+    "MAI-Image-2.5": {
+      "text_in": 5.0,
+      "image_in": 8.0,
+      "image_out": 47.0
+    },
+    "MAI-Image-2.5-Flash": {
+      "text_in": 1.75,
+      "image_in": 1.75,
+      "image_out": 19.5
+    },
+    "MAI-Image-2.5-Pro": {
+      "text_in": 5.0,
+      "image_in": 8.0,
+      "image_out": 106.0
+    },
+    "MAI-Image-2.6": {
+      "text_in": 5.0,
+      "image_in": 8.0,
+      "image_out": 38.0
+    },
+    "MAI-Image-2.6-Flash": {
+      "text_in": 1.75,
+      "image_in": 2.5,
+      "image_out": 19.0
+    },
+    "Stable Diffusion 3.5 Large": {
+      "per_image": 0.08
+    },
+    "Stable Image Core": {
+      "per_image": 0.04
+    },
+    "Stable Image Ultra": {
+      "per_image": 0.14
+    },
+    "gpt-4o-mini-transcribe": {
+      "audio_in": 3.0,
+      "text_in": 1.25,
+      "text_out": 5.0
+    },
+    "gpt-4o-mini-tts": {
+      "text_in": 0.6,
+      "audio_out": 12.0
+    },
+    "gpt-4o-transcribe": {
+      "audio_in": 6.0,
+      "text_in": 2.5,
+      "text_out": 10.0
+    },
+    "gpt-4o-transcribe-diarize": {
+      "audio_in": 6.0,
+      "text_in": 2.5,
+      "text_out": 10.0
+    },
+    "gpt-audio": {
+      "audio_in": 40.0,
+      "audio_out": 80.0,
+      "text_in": 2.5,
+      "text_out": 10.0
+    },
+    "gpt-audio-1.5": {
+      "audio_in": 32.0,
+      "audio_out": 64.0,
+      "text_in": 2.5,
+      "text_out": 10.0
+    },
+    "gpt-audio-mini": {
+      "audio_in": 10.0,
+      "audio_out": 20.0,
+      "text_in": 0.6,
+      "text_out": 2.4
+    },
+    "gpt-image-1": {
+      "text_in": 5.0,
+      "image_in": 10.0,
+      "cached_text": 1.25,
+      "cached_image": 2.5,
+      "image_out": 40.0
+    },
+    "gpt-image-1-mini": {
+      "text_in": 2.0,
+      "image_in": 2.5,
+      "cached_text": 0.2,
+      "cached_image": 0.25,
+      "image_out": 8.0
+    },
+    "gpt-image-1.5": {
+      "text_in": 5.0,
+      "image_in": 8.0,
+      "cached_text": 1.25,
+      "cached_image": 2.0,
+      "image_out": 32.0,
+      "text_out": 10.0
+    },
+    "gpt-image-2": {
+      "text_in": 5.0,
+      "image_in": 8.0,
+      "cached_text": 1.25,
+      "cached_image": 2.0,
+      "image_out": 30.0
+    },
+    "gpt-image-2.5-flare": {
+      "text_in": 5.0,
+      "image_in": 8.0,
+      "cached_text": 1.25,
+      "cached_image": 2.0,
+      "image_out": 30.0
+    },
+    "gpt-image-2.5-sunburst": {
+      "text_in": 5.0,
+      "image_in": 8.0,
+      "cached_text": 1.25,
+      "cached_image": 2.0,
+      "image_out": 30.0
+    },
+    "gpt-realtime": {
+      "audio_in": 32.0,
+      "audio_out": 64.0,
+      "cached_audio": 0.4,
+      "text_in": 4.0,
+      "text_out": 16.0,
+      "cached_text": 0.4,
+      "image_in": 5.0
+    },
+    "gpt-realtime-1.5": {
+      "audio_in": 32.0,
+      "audio_out": 64.0,
+      "cached_audio": 0.4,
+      "text_in": 4.0,
+      "text_out": 16.0,
+      "cached_text": 0.4,
+      "image_in": 5.0
+    },
+    "gpt-realtime-2": {
+      "audio_in": 32.0,
+      "audio_out": 64.0,
+      "cached_audio": 0.4,
+      "text_in": 4.0,
+      "text_out": 24.0,
+      "cached_text": 0.4,
+      "image_in": 5.0
+    },
+    "gpt-realtime-2.1": {
+      "audio_in": 32.0,
+      "audio_out": 64.0,
+      "cached_audio": 0.4,
+      "text_in": 4.0,
+      "text_out": 24.0,
+      "cached_text": 0.4,
+      "image_in": 5.0
+    },
+    "gpt-realtime-2.1-mini": {
+      "audio_in": 10.0,
+      "audio_out": 20.0,
+      "cached_audio": 0.3,
+      "text_in": 0.6,
+      "text_out": 2.4,
+      "cached_text": 0.06,
+      "image_in": 0.8
+    },
+    "gpt-realtime-mini": {
+      "audio_in": 10.0,
+      "audio_out": 20.0,
+      "cached_audio": 0.3,
+      "text_in": 0.6,
+      "text_out": 2.4,
+      "cached_text": 0.06,
+      "image_in": 0.8
+    },
+    "gpt-realtime-translate": {
+      "per_hour": 2.04
+    },
+    "gpt-realtime-whisper": {
+      "per_hour": 1.02
+    },
+    "mistral-document-ai-2505": {
+      "per_page": 0.003
+    },
+    "sora-2": {
+      "per_second": 0.1
+    },
+    "tts": {
+      "per_1m_chars": 15.0
+    },
+    "tts-hd": {
+      "per_1m_chars": 30.0
+    },
+    "whisper": {
+      "per_hour": 0.36
+    }
+  },
+  "sources": {
+    "Cohere Command R 08-2024": "marketplace",
+    "Cohere Command R+ 08-2024": "marketplace",
+    "Cohere Embed v3 - English": "marketplace",
+    "Cohere Embed v3 - Multilingual": "marketplace",
+    "Cohere Rerank v3.5": "marketplace",
+    "Llama 3.1 405B Instruct": "marketplace",
+    "Llama 3.1 8B Instruct": "marketplace",
+    "Llama-3.2-11B-Vision-Instruct": "marketplace",
+    "Llama-3.2-90B-Vision-Instruct": "marketplace",
+    "Llama-4-Scout-17B-16E-Instruct": "marketplace",
+    "Stable Diffusion 3.5 Large": "marketplace",
+    "Stable Image Core": "marketplace",
+    "Stable Image Ultra": "marketplace",
+    "TimeGEN-1": "marketplace",
+    "claude-fable-5": "marketplace",
+    "claude-fable-5-1": "marketplace",
+    "claude-haiku-4-5": "marketplace",
+    "claude-opus-4-5": "marketplace",
+    "claude-opus-4-6": "marketplace",
+    "claude-opus-4-7": "marketplace",
+    "claude-opus-4-8": "marketplace",
+    "claude-opus-5": "marketplace",
+    "claude-opus-5-5": "marketplace",
+    "claude-sonnet-4-5": "marketplace",
+    "claude-sonnet-4-6": "marketplace",
+    "claude-sonnet-5": "marketplace",
+    "claude-sonnet-5-5": "marketplace"
   },
   "ptu": {
     "hourly": {

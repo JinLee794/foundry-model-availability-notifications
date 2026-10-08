@@ -64,8 +64,8 @@ The website and notifications are just different ways to view this same data.
 │   ├── regions_snapshot.json  # Current model availability (source of truth)
 │   ├── history/               # Historical changes
 │   ├── diff_regions.py        # Detects changes
-│   ├── fetch_prices.py        # Pulls list prices (Azure Retail Prices API)
-│   ├── pricing.json           # Token and PTU list prices (East US 2)
+│   ├── fetch_prices.py        # Pulls list prices (Azure Retail Prices + Marketplace catalog APIs)
+│   ├── pricing.json           # Token, media and PTU list prices (East US 2)
 │   └── render_markdown.py     # Creates summary table
 │
 ├── docs/                      # Generated website content
@@ -113,7 +113,7 @@ cat region_diff.json
 - **Explorer** - Single-pane grid of every model × region × deployment type with live filters, required-region selection, shareable URLs, CSV export and an "Expand table" full-window view (Esc to exit)
 - **Models** - Model catalog: instant search plus provider-grouped cards showing region count, deployment options and lifecycle flags (retiring models also show their replacement), with a "Compare availability" link into the Explorer per provider. Each model page opens with a "Retiring → Move to" banner naming the replacement and the regions where it is not yet offered (also shown for GA models that already have a retirement date scheduled)
 - **Deployment & PTU** - Deployment-type matrix (where inference runs × how you pay, plus Batch and Partner) linking each type into the Explorer, followed by a plain-language provisioned throughput guide based on Microsoft Learn, with a quick PTU estimator and links to the Foundry capacity calculator
-- **Cost planner** - Describe a workload (requests/day, input/output tokens, cache and batch share, deployment type) or pick a preset, then compare projected monthly pay-as-you-go cost across up to 20 models in a stacked bar chart (input / cached / output). A PTU panel plots pay-as-you-go against hourly and 1-year reserved PTU as volume grows and calls out the break-even point. Model sets include popular, retiring → replacement, under $1 per 1M and partner models; state lives in the URL and the price sheet exports to CSV
+- **Cost planner** - Describe a workload (requests/day, input/output tokens, cache and batch share, deployment type) or pick a preset, then compare projected monthly pay-as-you-go cost across up to 20 models in a stacked bar chart (input / cached / output). A PTU panel plots pay-as-you-go against hourly and 1-year reserved PTU as volume grows and calls out the break-even point. Model sets include popular, retiring → replacement, under $1 per 1M and partner models; state lives in the URL and the price sheet exports to CSV. A Media & audio estimator compares image, speech, video, document and search models by monthly volume (images, minutes, seconds, pages, queries); per-image and per-minute figures for token-billed models use editable assumptions
 - **Lifecycle** - A plain-language retirement explainer. It covers:
   - The five stages and the GA timeline.
   - A before/after view of what happens to a deployment on retirement day, for pay-as-you-go, PTU, Batch, preview and fine-tuned deployments.
@@ -126,7 +126,11 @@ cat region_diff.json
 
 Region and deployment-type links across the site open the Explorer pre-filtered. The former By Region and By SKU Type pages are now redirect stubs, so old links (e.g. `by-region/?region=East%20US`) land on the matching Explorer view.
 
-Prices come from the public [Azure Retail Prices API](https://learn.microsoft.com/rest/api/cost-management/retail-prices/azure-retail-prices) (no auth). `python .region-watch/fetch_prices.py` writes `.region-watch/pricing.json` with USD list prices per 1M tokens for East US 2, by deployment type, plus PTU hourly and reservation prices. The daily Region watch workflow runs it and only commits when a price changes. Claude (billed through Azure Marketplace), image/audio models and the model router have no per-token meter, and the site says why. Prices exclude tax and negotiated discounts.
+Prices come from two public, unauthenticated sources. `python .region-watch/fetch_prices.py` writes `.region-watch/pricing.json`:
+- The [Azure Retail Prices API](https://learn.microsoft.com/rest/api/cost-management/retail-prices/azure-retail-prices) gives USD list prices per 1M tokens for East US 2, by deployment type, plus PTU hourly and reservation prices. It also gives media meters (per image, megapixel, second of video, audio hour, 1M characters, page or query) from a curated meter table. Classic TTS and Whisper aren't sold in East US 2, so they fall back to North Central US.
+- The Azure Marketplace catalog API (`catalogapi.azure.com`) gives prices for partner models billed through Marketplace (Anthropic, Cohere, Meta, Stability AI, Nixtla). Retail prices take precedence. If the Marketplace call fails, the previous Marketplace prices are kept.
+
+The daily Region watch workflow runs the fetcher and only commits when a price changes. Models with no published pay-as-you-go price, such as the model router or partner models with no Marketplace offer, are listed on the Cost planner with the reason. Prices exclude tax and negotiated discounts.
 
 The finder and explorer are backed by `docs/assets/model-index.json`, which `generate_docs.py` writes on every run, and the Cost planner by `docs/assets/pricing.json`. Lifecycle badges show a plain-language explanation on hover or focus.
 

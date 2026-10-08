@@ -4325,12 +4325,30 @@ html.ax-lock .fullscreen-toggle { display: none; }
 .md-typeset .cp-unpriced__list a { display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.15rem 0.5rem 0.15rem 0.3rem; border-radius: 999px; border: 1px solid var(--fm-border); font-size: 0.62rem; color: var(--md-typeset-color); text-decoration: none; }
 .md-typeset .cp-unpriced__list a:hover { border-color: var(--fm-primary); }
 .md-typeset .cp-unpriced__list .pv { --pv-size: 0.85rem; }
+.md-typeset .price-table td.price-table__unit { color: var(--fm-text-muted); font-size: 0.62rem; white-space: nowrap; }
+.md-typeset .cp-media { --cp-media: var(--fm-g-batch); scroll-margin-top: 4.5rem; }
+.md-typeset .cpm-tabs { display: flex; flex-wrap: wrap; gap: 0.25rem; padding: 0.2rem; border-radius: 0.7rem; background: var(--fm-surface-soft); border: 1px solid var(--fm-border); width: fit-content; max-width: 100%; }
+.md-typeset .cpm-tabs button { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.38rem 0.8rem; border: 0; border-radius: 0.5rem; background: transparent; color: var(--fm-text-muted); font: inherit; font-size: 0.68rem; font-weight: 650; cursor: pointer; }
+.md-typeset .cpm-tabs button:hover { color: var(--md-typeset-color); }
+.md-typeset .cpm-tabs button.is-active { background: var(--fm-surface-raised); color: var(--md-typeset-color); box-shadow: var(--fm-shadow-sm); }
+.md-typeset .cpm-tabs small, .md-typeset .cp-media .cp-seg small { font-size: 0.56rem; font-weight: 700; padding: 0 0.35rem; border-radius: 999px; background: color-mix(in srgb, var(--fm-text-muted) 14%, transparent); }
+.md-typeset .cp-media .cp-seg button.is-active small { background: color-mix(in srgb, #fff 25%, transparent); }
+.md-typeset .cpm-controls { margin: 0.85rem 0 0.9rem; grid-template-columns: repeat(auto-fit, minmax(12rem, max-content)); align-items: end; }
+.md-typeset .cp-media .cp-bar { grid-template-columns: minmax(10rem, 17rem) minmax(0, 1fr) 9.5rem; border-radius: 0.45rem; }
+.md-typeset .cp-media .cp-bar.is-hl { background: color-mix(in srgb, var(--fm-primary) 9%, transparent); box-shadow: inset 3px 0 0 var(--fm-primary); }
+.md-typeset .cp-part--media { background: var(--cp-media); border-radius: 0 0.35rem 0.35rem 0; }
+.md-typeset .cp-media .cp-bar__value small { text-align: right; }
+.md-typeset .cpm-assume { margin-top: 0.8rem; padding-top: 0.6rem; border-top: 1px solid var(--fm-border); }
+.md-typeset .cpm-assume summary { font-size: 0.68rem; font-weight: 650; cursor: pointer; }
+.md-typeset .cpm-assume__fields { grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); margin-bottom: 0.7rem; }
 @media (max-width: 60em) {
   .md-typeset .cp-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .md-typeset .cp-ptu-body { grid-template-columns: 1fr; }
 }
 @media (max-width: 40em) {
-  .md-typeset .cp-bar { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "label value" "track track"; row-gap: 0.3rem; }
+  .md-typeset .cp-bar, .md-typeset .cp-media .cp-bar { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "label value" "track track"; row-gap: 0.3rem; }
+  .md-typeset .cpm-controls { grid-template-columns: minmax(0, 1fr); }
+  .md-typeset .cp-media .cp-seg { display: flex; flex-wrap: wrap; }
   .md-typeset .cp-bar__label { grid-area: label; }
   .md-typeset .cp-bar__track { grid-area: track; }
   .md-typeset .cp-bar__value { grid-area: value; }

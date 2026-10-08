@@ -73,9 +73,20 @@
 
 ## :material-cash-multiple: Pricing
 
-<div class="price-card price-card--empty">
-    <p><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg><span>Priced per image, second, or audio minute rather than per token. See the Foundry pricing page.</span></p>
-    <p class="price-card__foot">See <a href="https://azure.microsoft.com/pricing/details/ai-foundry-models/">Foundry Models pricing</a> for current rates.</p>
+<div class="price-card">
+    <div class="price-card__head">
+        <div class="price-card__hero">
+            <span class="price-card__eyebrow">Pay-as-you-go · Global · estimate</span>
+            <strong>$0.015<small> per conversation minute</small></strong>
+            <span class="price-card__note">Audio model · see the estimator for the assumptions behind this figure</span>
+        </div>
+        <a class="md-button md-button--primary" href="../../cost/?media=audio&hl=gpt-audio-mini#media"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg> Estimate monthly cost</a>
+    </div>
+    <div class="table-responsive"><table class="price-table">
+        <thead><tr><th>Meter</th><th>List price</th><th>Unit</th></tr></thead>
+        <tbody><tr><th scope="row">Text input</th><td>$0.60</td><td class="price-table__unit">per 1M tokens</td></tr><tr><th scope="row">Text output</th><td>$2.40</td><td class="price-table__unit">per 1M tokens</td></tr><tr><th scope="row">Audio input</th><td>$10.00</td><td class="price-table__unit">per 1M tokens</td></tr><tr><th scope="row">Audio output</th><td>$20.00</td><td class="price-table__unit">per 1M tokens</td></tr></tbody>
+    </table></div>
+    <p class="price-card__foot">Pay-as-you-go list price in USD for East US 2 from the <a href="https://learn.microsoft.com/rest/api/cost-management/retail-prices/azure-retail-prices">Azure Retail Prices API</a>, checked daily, last updated 2026-10-08. Excludes tax and negotiated discounts; other regions can differ.</p>
 </div>
 
 
@@ -169,4 +180,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 14:01 UTC_
+_Last updated: 2026-10-08 14:41 UTC_

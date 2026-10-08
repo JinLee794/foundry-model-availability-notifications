@@ -1680,6 +1680,8 @@ PTU_SIZING: List[Tuple[str, int, int, int, int, int, int]] = [
 
 PRICING: Dict = {}
 PRICE_BY_SLUG: Dict[str, Dict] = {}
+MEDIA_BY_SLUG: Dict[str, Dict[str, float]] = {}
+SOURCE_BY_SLUG: Dict[str, str] = {}
 PRICE_DEPLOYMENTS = [("global", "Global"), ("datazone", "Data Zone"), ("regional", "Regional")]
 PRICE_KINDS = [
     ("in", "Input"),
@@ -1688,6 +1690,40 @@ PRICE_KINDS = [
     ("batch_in", "Batch input"),
     ("batch_out", "Batch output"),
 ]
+# Non-text price kinds: (key, label, unit). Token kinds are per 1M tokens.
+MEDIA_KINDS = [
+    ("text_in", "Text input", "per 1M tokens"),
+    ("cached_text", "Cached text input", "per 1M tokens"),
+    ("text_out", "Text output", "per 1M tokens"),
+    ("audio_in", "Audio input", "per 1M tokens"),
+    ("cached_audio", "Cached audio input", "per 1M tokens"),
+    ("audio_out", "Audio output", "per 1M tokens"),
+    ("image_in", "Image input", "per 1M tokens"),
+    ("cached_image", "Cached image input", "per 1M tokens"),
+    ("image_out", "Image output", "per 1M tokens"),
+    ("per_image", "Image", "per image"),
+    ("per_megapixel_first", "First megapixel", "per image"),
+    ("per_megapixel", "Megapixel", "per megapixel"),
+    ("per_second", "Video", "per second"),
+    ("per_hour", "Audio", "per hour"),
+    ("per_1m_chars", "Characters", "per 1M characters"),
+    ("per_page", "Page", "per page"),
+    ("per_query", "Search query", "per query"),
+]
+# Editable defaults for the media estimator; mirrored in cost.js. Token counts per
+# image follow OpenAI's published gpt-image figures for a 1024x1024 image; audio
+# tokens per minute follow OpenAI's published per-minute estimates.
+MEDIA_DEFAULTS = {
+    "image_tokens": {"low": 272, "medium": 1056, "high": 4160},
+    "prompt_tokens": 100,
+    "megapixels": 1.05,
+    "transcribe_audio_tpm": 1000,
+    "transcript_tpm": 200,
+    "speech_audio_tpm": 1250,
+    "speech_chars_pm": 900,
+    "voice_in_tpm": 600,
+    "voice_out_tpm": 1200,
+}
 HOURS_PER_MONTH = 730
 PTU_SIZING_BY_MODEL = {row[0]: row[1:] for row in PTU_SIZING}
 
@@ -1706,10 +1742,79 @@ def set_pricing(data: Dict) -> None:
     PRICING.update(data)
     PRICE_BY_SLUG.clear()
     PRICE_BY_SLUG.update({slugify(name): prices for name, prices in data.get("models", {}).items()})
+    MEDIA_BY_SLUG.clear()
+    MEDIA_BY_SLUG.update({slugify(name): prices for name, prices in data.get("media", {}).items()})
+    SOURCE_BY_SLUG.clear()
+    SOURCE_BY_SLUG.update({slugify(name): src for name, src in data.get("sources", {}).items()})
 
 
 def model_prices(model: str) -> Dict[str, Dict[str, float]]:
     return PRICE_BY_SLUG.get(slugify(model), {})
+
+
+def model_media_prices(model: str) -> Dict[str, float]:
+    return MEDIA_BY_SLUG.get(slugify(model), {})
+
+
+def model_price_source(model: str) -> str:
+    return SOURCE_BY_SLUG.get(slugify(model), "retail")
+
+
+def media_category(prices: Dict[str, float]) -> str:
+    if "per_second" in prices:
+        return "video"
+    if "per_page" in prices:
+        return "docs"
+    if "per_query" in prices:
+        return "search"
+    if any(k in prices for k in ("image_out", "per_image", "per_megapixel")):
+        return "image"
+    return "audio"
+
+
+def audio_mode(prices: Dict[str, float]) -> str:
+    """transcribe (speech in), speech (speech out) or voice (both ways)."""
+    has_in = "audio_in" in prices or "per_hour" in prices
+    has_out = "audio_out" in prices or "per_1m_chars" in prices
+    if has_in and has_out:
+        return "voice"
+    return "speech" if has_out else "transcribe"
+
+
+def media_unit_cost(prices: Dict[str, float], quality: str = "medium") -> Tuple[Optional[float], str]:
+    """Headline cost of one unit (image, minute, second, page, query) at default assumptions."""
+    d = MEDIA_DEFAULTS
+    cat = media_category(prices)
+    if cat == "video":
+        return prices["per_second"], "per second of video"
+    if cat == "docs":
+        return prices["per_page"], "per page"
+    if cat == "search":
+        return prices["per_query"], "per search query"
+    if cat == "image":
+        if "per_image" in prices:
+            return prices["per_image"], "per image"
+        if "per_megapixel" in prices:
+            mp = d["megapixels"]
+            first = prices.get("per_megapixel_first")
+            cost = first + prices["per_megapixel"] * max(mp - 1, 0) if first is not None else prices["per_megapixel"] * mp
+            return cost, "per 1024×1024 image"
+        cost = prices.get("image_out", 0) * d["image_tokens"][quality] / 1e6 + prices.get("text_in", 0) * d["prompt_tokens"] / 1e6
+        return cost, f"per 1024×1024 image ({quality} quality)"
+    mode = audio_mode(prices)
+    if "per_hour" in prices:
+        return prices["per_hour"] / 60, "per audio minute"
+    if "per_1m_chars" in prices:
+        return prices["per_1m_chars"] * d["speech_chars_pm"] / 1e6, "per minute of speech"
+    if mode == "transcribe":
+        cost = prices.get("audio_in", 0) * d["transcribe_audio_tpm"] / 1e6 + prices.get("text_out", 0) * d["transcript_tpm"] / 1e6
+        return cost, "per audio minute"
+    if mode == "speech":
+        cost = prices.get("audio_out", 0) * d["speech_audio_tpm"] / 1e6 + prices.get("text_in", 0) * d["transcript_tpm"] / 1e6
+        return cost, "per minute of speech"
+    # Voice: assume each side talks half of the conversation.
+    cost = 0.5 * prices.get("audio_in", 0) * d["voice_in_tpm"] / 1e6 + 0.5 * prices.get("audio_out", 0) * d["voice_out_tpm"] / 1e6
+    return cost, "per conversation minute"
 
 
 def price_region_label() -> str:
@@ -1751,12 +1856,26 @@ def format_price(value: Optional[float]) -> str:
 def unpriced_reason(model: str) -> str:
     lowered = model.lower()
     if model_family(model) == "Anthropic":
-        return "Claude models are sold through Azure Marketplace, so they're billed by Anthropic and aren't in the Azure price list."
+        return "Claude models are sold through Azure Marketplace and billed by Anthropic; their Marketplace price couldn't be read on the last check."
     if lowered == "model-router":
         return "The router bills at the price of whichever model it picks for each request."
-    if any(word in lowered for word in ("image", "flux", "stable", "sora", "tts", "whisper", "audio", "realtime", "transcribe", "dall")):
-        return "Priced per image, second, or audio minute rather than per token. See the Foundry pricing page."
-    return "No pay-as-you-go meter is published for this model in the Azure price list yet."
+    return "Neither the Azure price list nor the Azure Marketplace catalog publishes a pay-as-you-go price for this model yet."
+
+
+def price_source_note(model: str) -> str:
+    fetched = (PRICING.get("fetched_at") or "")[:10]
+    if model_price_source(model) == "marketplace":
+        publisher = model_family(model)
+        return (
+            f'Sold through Azure Marketplace and billed by {html_escape(publisher)}. List price in USD from the '
+            f'<a href="https://azuremarketplace.microsoft.com/">Azure Marketplace catalog</a> for Global deployments, '
+            f'checked daily, last updated {html_escape(fetched)}. Excludes tax and negotiated discounts.'
+        )
+    return (
+        f'Pay-as-you-go list price in USD for {html_escape(price_region_label())} from the '
+        f'<a href="https://learn.microsoft.com/rest/api/cost-management/retail-prices/azure-retail-prices">Azure Retail Prices API</a>, '
+        f'checked daily, last updated {html_escape(fetched)}. Excludes tax and negotiated discounts; other regions can differ.'
+    )
 
 
 def price_change(model: str, replacement: str) -> Optional[Tuple[str, float, float]]:
@@ -1791,12 +1910,46 @@ def cost_planner_href(prefix: str, *models: str) -> str:
     return f"{prefix}cost/" + (f"?m={slugs}" if slugs else "")
 
 
+def render_media_pricing_section(model: str, prices: Dict[str, float]) -> str:
+    cost, unit = media_unit_cost(prices)
+    cat = media_category(prices)
+    rows = "".join(
+        f'<tr><th scope="row">{label}</th><td>{format_price(prices[key])}</td><td class="price-table__unit">{unit_label}</td></tr>'
+        for key, label, unit_label in MEDIA_KINDS if key in prices
+    )
+    token_based = any(k.endswith(("_in", "_out")) or k.startswith("cached_") for k in prices)
+    estimate = " · estimate" if token_based or "per_megapixel" in prices or "per_1m_chars" in prices else ""
+    labels = {"image": "Images", "audio": "Audio", "video": "Video", "docs": "Documents", "search": "Search"}
+    tab = "docs" if cat == "search" else cat
+    planner = f"../../cost/?media={tab}&hl={slugify(model)}#media"
+    return f"""## :material-cash-multiple: Pricing
+
+<div class="price-card">
+    <div class="price-card__head">
+        <div class="price-card__hero">
+            <span class="price-card__eyebrow">Pay-as-you-go · Global{estimate}</span>
+            <strong>{format_price(cost)}<small> {html_escape(unit)}</small></strong>
+            <span class="price-card__note">{labels.get(cat, "Media")} model · see the estimator for the assumptions behind this figure</span>
+        </div>
+        <a class="md-button md-button--primary" href="{planner}">{icon("cash")} Estimate monthly cost</a>
+    </div>
+    <div class="table-responsive"><table class="price-table">
+        <thead><tr><th>Meter</th><th>List price</th><th>Unit</th></tr></thead>
+        <tbody>{rows}</tbody>
+    </table></div>
+    <p class="price-card__foot">{price_source_note(model)}</p>
+</div>
+"""
+
+
 def render_pricing_section(model: str, lifecycle: Dict, has_provisioned: bool) -> str:
     if not PRICING:
         return ""
     prices = model_prices(model)
-    fetched = (PRICING.get("fetched_at") or "")[:10]
-    foot = f'<p class="price-card__foot">Pay-as-you-go list price in USD for {html_escape(price_region_label())} from the <a href="https://learn.microsoft.com/rest/api/cost-management/retail-prices/azure-retail-prices">Azure Retail Prices API</a>, checked daily, last updated {html_escape(fetched)}. Excludes tax and negotiated discounts; other regions can differ.</p>'
+    media = model_media_prices(model)
+    if not prices and media:
+        return render_media_pricing_section(model, media)
+    foot = f'<p class="price-card__foot">{price_source_note(model)}</p>'
     if not prices:
         return f"""## :material-cash-multiple: Pricing
 
@@ -1878,6 +2031,7 @@ WORKLOAD_PRESETS = [
 
 def build_cost_data(lifecycles: Dict[str, Dict], model_regions: Dict[str, Set[str]]) -> Dict:
     models = []
+    media_models = []
     unpriced = []
     seen: Set[str] = set()
     for model in sorted(model_regions, key=str.lower):
@@ -1885,20 +2039,29 @@ def build_cost_data(lifecycles: Dict[str, Dict], model_regions: Dict[str, Set[st
             continue
         seen.add(slugify(model))
         prices = model_prices(model)
+        media = model_media_prices(model)
         summary = lifecycles.get(model, {})
-        if not prices:
+        if not prices and not media:
             unpriced.append({"n": model, "s": slugify(model), "f": model_family(model), "why": unpriced_reason(model)})
             continue
         replacement = summary.get("replacement") or ""
-        models.append({
+        common = {
             "n": model,
             "s": slugify(model),
             "f": model_family(model),
-            "p": prices,
+            "src": "mp" if model_price_source(model) == "marketplace" else "",
             "lk": summary.get("key", ""),
             "ll": lifecycle_badge_text(summary) if summary else "",
             "lt": summary.get("tone", "neutral"),
             "rep": replacement,
+        }
+        if not prices:
+            media_models.append({**common, "c": media_category(media), "am": audio_mode(media), "p": media,
+                                 "rs": slugify(replacement) if replacement and model_media_prices(replacement) else ""})
+            continue
+        models.append({
+            **common,
+            "p": prices,
             "rs": slugify(replacement) if replacement and model_prices(replacement) else "",
             "ptu": list(PTU_SIZING_BY_MODEL[model]) if model in PTU_SIZING_BY_MODEL else None,
         })
@@ -1908,12 +2071,20 @@ def build_cost_data(lifecycles: Dict[str, Dict], model_regions: Dict[str, Set[st
         "ptu": PRICING.get("ptu", {}),
         "hours": HOURS_PER_MONTH,
         "models": models,
+        "media": media_models,
+        "media_defaults": MEDIA_DEFAULTS,
         "unpriced": unpriced,
     }
 
 
-def generate_cost_page(model_count: int) -> str:
-    priced = len(PRICING.get("models", {}))
+def generate_cost_page(model_count: int, cost_data: Dict) -> str:
+    token_priced = len(cost_data["models"])
+    media_priced = len(cost_data["media"])
+    priced = token_priced + media_priced
+    marketplace = sum(1 for m in cost_data["models"] + cost_data["media"] if m["src"] == "mp")
+    fallback = PRICING.get("media_fallback_region") or "northcentralus"
+    names = {name.replace(" ", "").lower(): name for name in REGION_COORDS}
+    fallback = names.get(fallback, fallback)
     fetched = (PRICING.get("fetched_at") or "")[:10]
     region = price_region_label()
     presets = "\n".join(
@@ -2004,13 +2175,31 @@ hide:
         <div class="table-responsive"><table class="cp-table" data-cp-table></table></div>
     </section>
 
+    <section class="cp-panel cp-media" id="media" data-cpm aria-label="Media and audio estimator">
+        <header class="cp-head">
+            <div><h2>Media &amp; audio estimator</h2><p>Image, speech, video, document and search models are billed per image, minute, second, page or query rather than per chat request. Pick a group and enter your monthly volume.</p></div>
+        </header>
+        <div class="cpm-tabs" role="tablist" aria-label="Media type">
+            <button type="button" role="tab" data-cpm-tab="image">Images <small data-cpm-count="image"></small></button>
+            <button type="button" role="tab" data-cpm-tab="audio">Audio &amp; speech <small data-cpm-count="audio"></small></button>
+            <button type="button" role="tab" data-cpm-tab="video">Video <small data-cpm-count="video"></small></button>
+            <button type="button" role="tab" data-cpm-tab="docs">Documents &amp; search <small data-cpm-count="docs"></small></button>
+        </div>
+        <div class="cp-fields cpm-controls" data-cpm-controls></div>
+        <div class="cp-bars" data-cpm-bars aria-live="polite"></div>
+        <details class="cpm-assume">
+            <summary>Assumptions</summary>
+            <div data-cpm-assume></div>
+        </details>
+    </section>
+
     <details class="cp-unpriced">
         <summary>Why some models aren't here</summary>
         <div data-cp-unpriced></div>
     </details>
 </div>
 
-<p class="dash-footnote">{priced} of {model_count} tracked models have pay-as-you-go token prices. List prices are in USD for {html_escape(region)} from the <a href="https://learn.microsoft.com/rest/api/cost-management/retail-prices/azure-retail-prices">Azure Retail Prices API</a> (checked daily, last updated {html_escape(fetched)}). They exclude tax, negotiated discounts and fine-tuning or hosting fees. A month is {HOURS_PER_MONTH} hours. PTU sizing uses Microsoft's published tokens-per-minute figures and is an estimate: confirm it with the <a href="{PTU_SOURCES['calculator']}">Foundry capacity calculator</a> before you buy.</p>
+<p class="dash-footnote">{priced} of {model_count} tracked models have pay-as-you-go prices ({token_priced} per token, {media_priced} per image, minute, second, page or query). List prices are in USD from the <a href="https://learn.microsoft.com/rest/api/cost-management/retail-prices/azure-retail-prices">Azure Retail Prices API</a> for {html_escape(region)} ({html_escape(fallback)} for classic speech and Whisper, which {html_escape(region)} does not sell), and from the public <a href="https://azuremarketplace.microsoft.com/">Azure Marketplace</a> catalog for {marketplace} partner models billed through Marketplace. Prices are checked daily, last updated {html_escape(fetched)}. They exclude tax, negotiated discounts and fine-tuning or hosting fees. A month is {HOURS_PER_MONTH} hours. Per-image and per-minute figures for token-billed media models are estimates based on the editable assumptions. PTU sizing uses Microsoft's published tokens-per-minute figures and is an estimate: confirm it with the <a href="{PTU_SOURCES['calculator']}">Foundry capacity calculator</a> before you buy.</p>
 
 <noscript>The cost planner needs JavaScript. Each <a href="../models/">model page</a> lists its prices.</noscript>
 """
@@ -3526,13 +3715,14 @@ def main():
     lifecycles = build_model_lifecycles(model_regions, retirement_index, today)
     availability_bits = build_availability_bits(data)
     set_pricing(load_pricing(PRICING_PATH))
+    cost_data = build_cost_data(lifecycles, model_regions)
 
     # Generate main pages
     pages = {
         "index.md": generate_index_page(model_regions, model_sku_regions, all_labels, all_regions, retirement_data, history, lifecycles, availability_bits),
         "explorer.md": generate_explorer_page(all_regions, len(model_regions)),
         "ptu.md": generate_ptu_page(availability_bits),
-        "cost.md": generate_cost_page(len(model_regions)),
+        "cost.md": generate_cost_page(len(model_regions), cost_data),
         "lifecycle.md": generate_lifecycle_page(lifecycles, retirement_data, availability_bits, today),
         "models/index.md": generate_model_index_page(model_regions, availability_bits, lifecycles),
         "by-region.md": generate_legacy_redirect_page("By Region", "region", "rg"),
@@ -3561,7 +3751,7 @@ def main():
 
     pricing_asset = assets_dir / "pricing.json"
     pricing_asset.write_text(
-        json.dumps(build_cost_data(lifecycles, model_regions), separators=(",", ":"), ensure_ascii=False),
+        json.dumps(cost_data, separators=(",", ":"), ensure_ascii=False),
         encoding="utf-8",
     )
     print(f"Generated: {pricing_asset}")

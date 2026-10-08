@@ -47,9 +47,22 @@
 
 ## :material-cash-multiple: Pricing
 
-<div class="price-card price-card--empty">
-    <p><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg><span>No pay-as-you-go meter is published for this model in the Azure price list yet.</span></p>
-    <p class="price-card__foot">See <a href="https://azure.microsoft.com/pricing/details/ai-foundry-models/">Foundry Models pricing</a> for current rates.</p>
+<div class="price-card">
+    <div class="price-card__head">
+        <div class="price-card__hero">
+            <span class="price-card__eyebrow">Pay-as-you-go · Global</span>
+            <strong>$0.10<small> per 1M tokens</small></strong>
+            <span class="price-card__note">Blended at input only</span>
+        </div>
+        <a class="md-button md-button--primary" href="../../cost/?m=cohere-embed-v3---english"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg> Project monthly cost</a>
+    </div>
+    <div class="table-responsive"><table class="price-table">
+        <thead><tr><th>Per 1M tokens</th><th>Global</th></tr></thead>
+        <tbody><tr><th scope="row">Input</th><td>$0.10</td></tr></tbody>
+    </table></div>
+    
+    
+    <p class="price-card__foot">Sold through Azure Marketplace and billed by Cohere. List price in USD from the <a href="https://azuremarketplace.microsoft.com/">Azure Marketplace catalog</a> for Global deployments, checked daily, last updated 2026-10-08. Excludes tax and negotiated discounts.</p>
 </div>
 
 
@@ -133,4 +146,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 14:01 UTC_
+_Last updated: 2026-10-08 14:41 UTC_

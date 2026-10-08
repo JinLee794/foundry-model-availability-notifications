@@ -50,7 +50,7 @@ hide:
         <div class="cp-picker">
             <div class="cp-selected" data-cp-selected></div>
             <div class="cp-search">
-                <input type="search" data-cp-search placeholder="Add a model — 75 priced" aria-label="Add a model" autocomplete="off" spellcheck="false">
+                <input type="search" data-cp-search placeholder="Add a model — 138 priced" aria-label="Add a model" autocomplete="off" spellcheck="false">
                 <ul class="cp-suggest" data-cp-suggest role="listbox" hidden></ul>
             </div>
         </div>
@@ -86,12 +86,30 @@ hide:
         <div class="table-responsive"><table class="cp-table" data-cp-table></table></div>
     </section>
 
+    <section class="cp-panel cp-media" id="media" data-cpm aria-label="Media and audio estimator">
+        <header class="cp-head">
+            <div><h2>Media &amp; audio estimator</h2><p>Image, speech, video, document and search models are billed per image, minute, second, page or query rather than per chat request. Pick a group and enter your monthly volume.</p></div>
+        </header>
+        <div class="cpm-tabs" role="tablist" aria-label="Media type">
+            <button type="button" role="tab" data-cpm-tab="image">Images <small data-cpm-count="image"></small></button>
+            <button type="button" role="tab" data-cpm-tab="audio">Audio &amp; speech <small data-cpm-count="audio"></small></button>
+            <button type="button" role="tab" data-cpm-tab="video">Video <small data-cpm-count="video"></small></button>
+            <button type="button" role="tab" data-cpm-tab="docs">Documents &amp; search <small data-cpm-count="docs"></small></button>
+        </div>
+        <div class="cp-fields cpm-controls" data-cpm-controls></div>
+        <div class="cp-bars" data-cpm-bars aria-live="polite"></div>
+        <details class="cpm-assume">
+            <summary>Assumptions</summary>
+            <div data-cpm-assume></div>
+        </details>
+    </section>
+
     <details class="cp-unpriced">
         <summary>Why some models aren't here</summary>
         <div data-cp-unpriced></div>
     </details>
 </div>
 
-<p class="dash-footnote">75 of 155 tracked models have pay-as-you-go token prices. List prices are in USD for East US 2 from the <a href="https://learn.microsoft.com/rest/api/cost-management/retail-prices/azure-retail-prices">Azure Retail Prices API</a> (checked daily, last updated 2026-10-08). They exclude tax, negotiated discounts and fine-tuning or hosting fees. A month is 730 hours. PTU sizing uses Microsoft's published tokens-per-minute figures and is an estimate: confirm it with the <a href="https://ai.azure.com/nextgen/goto/build/models/ptu-calculator">Foundry capacity calculator</a> before you buy.</p>
+<p class="dash-footnote">138 of 155 tracked models have pay-as-you-go prices (97 per token, 41 per image, minute, second, page or query). List prices are in USD from the <a href="https://learn.microsoft.com/rest/api/cost-management/retail-prices/azure-retail-prices">Azure Retail Prices API</a> for East US 2 (North Central US for classic speech and Whisper, which East US 2 does not sell), and from the public <a href="https://azuremarketplace.microsoft.com/">Azure Marketplace</a> catalog for 27 partner models billed through Marketplace. Prices are checked daily, last updated 2026-10-08. They exclude tax, negotiated discounts and fine-tuning or hosting fees. A month is 730 hours. Per-image and per-minute figures for token-billed media models are estimates based on the editable assumptions. PTU sizing uses Microsoft's published tokens-per-minute figures and is an estimate: confirm it with the <a href="https://ai.azure.com/nextgen/goto/build/models/ptu-calculator">Foundry capacity calculator</a> before you buy.</p>
 
 <noscript>The cost planner needs JavaScript. Each <a href="../models/">model page</a> lists its prices.</noscript>
