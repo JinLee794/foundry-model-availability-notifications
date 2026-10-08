@@ -4,7 +4,7 @@
     <div class="swap__side swap__side--from">
         <span class="swap__eyebrow">Retiring</span>
         <span class="swap__model"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><b>text-embedding-ada-002</b></span>
-        <small>Retires No earlier than Oct 30, 2026 · in 21 days</small>
+        <small>Retires no earlier than Oct 30, 2026 · in 21 days</small>
     </div>
     <span class="swap__arrow" aria-hidden="true"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg></span>
     <div class="swap__side swap__side--to">
@@ -254,4 +254,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 02:04 UTC_
+_Last updated: 2026-10-08 13:29 UTC_

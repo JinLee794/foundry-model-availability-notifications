@@ -4148,6 +4148,8 @@ html.ax-lock .fullscreen-toggle { display: none; }
 .md-typeset .swap--warning { --tone: var(--fm-warning); }
 .md-typeset .swap--caution { --tone: #ca8a04; }
 .md-typeset .swap--muted { --tone: #64748b; }
+.md-typeset .swap--scheduled { --tone: var(--fm-info); }
+.md-typeset .swap--scheduled .swap__side--from b { text-decoration: none; }
 .md-typeset .swap--none { background: linear-gradient(100deg, color-mix(in srgb, var(--tone) 10%, var(--fm-surface)) 0%, var(--fm-surface) 70%); }
 .md-typeset .swap__side { display: flex; flex-direction: column; gap: 0.2rem; min-width: 0; }
 .md-typeset .swap__side--to { align-items: flex-start; }

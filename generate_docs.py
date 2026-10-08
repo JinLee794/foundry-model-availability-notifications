@@ -863,15 +863,24 @@ SWAP_STAGES = {"soon", "retiring", "pending", "deprecated", "retired"}
 
 
 def render_replacement_callout(model: str, regions: Set[str], summary: Dict, model_regions_lookup: Dict[str, Set[str]]) -> str:
-    """Top-of-page 'retiring → move to' banner for model pages."""
-    if summary.get("key") not in SWAP_STAGES:
+    """Top-of-page 'retiring → move to' banner for model pages.
+
+    Shown for deprecated/retiring/retired models and for any model (including GA)
+    that already has a retirement date scheduled.
+    """
+    scheduled = summary.get("key") not in SWAP_STAGES and bool(summary.get("next_label"))
+    if summary.get("key") not in SWAP_STAGES and not scheduled:
         return ""
     replacement = summary.get("replacement") or ""
-    tone = summary.get("tone", "warning")
+    tone = "scheduled" if scheduled else summary.get("tone", "warning")
     retired = summary["key"] == "retired"
     if summary.get("next_label"):
-        when = f'{"Retires" if not retired else "Retired"} {html_escape(summary["next_label"])} · {html_escape(format_countdown(summary["days"]))}'
-        eyebrow = "Retired" if retired else "Retiring"
+        date_text = summary["next_label"]
+        if summary.get("estimate"):
+            date_text = date_text[0].lower() + date_text[1:]
+        prefix = "Retired" if retired else "Retires"
+        when = f'{prefix} {html_escape(date_text)} · {html_escape(format_countdown(summary["days"]))}'
+        eyebrow = "Retired" if retired else ("Retirement scheduled" if scheduled else "Retiring")
     elif retired:
         when = "Requests now fail with 410 Gone"
         eyebrow = "Retired"
@@ -924,7 +933,7 @@ def render_replacement_callout(model: str, regions: Set[str], summary: Dict, mod
     {source}
     <span class="swap__arrow" aria-hidden="true">{icon("arrow")}</span>
     <div class="swap__side swap__side--to">
-        <span class="swap__eyebrow">Move to</span>
+        <span class="swap__eyebrow">{"Replacement" if scheduled else "Move to"}</span>
         <span class="swap__model">{rep_name}</span>
         {fit_html}
     </div>
