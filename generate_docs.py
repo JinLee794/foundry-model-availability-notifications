@@ -1452,9 +1452,10 @@ def render_provider_matrix(model_regions: Dict[str, Set[str]], availability_bits
             share = count / len(models) if models else 0
             hash_parts = [f"t={item['k']}"] + ([] if is_total or name == "Other" else [f"p={quote(name)}"])
             tip_body = f"{count} of {len(models)} {name if not is_total else ''} models ({share * 100:.0f}%) can deploy as {item['label']} in at least one region."
+            tip_title = f"{name} · {item['short']}"
             cells.append(
                 f'<td class="pmx__cell pmx__cell--{item["group"]}" style="--s:{share:.2f}">'
-                + (f'<a href="{href_prefix}#{"&".join(hash_parts)}"{tip_attrs(f"{name} · {item["short"]}", " ".join(tip_body.split()))}>{count}</a>' if count else '<span class="pmx__zero">·</span>')
+                + (f'<a href="{href_prefix}#{"&".join(hash_parts)}"{tip_attrs(tip_title, " ".join(tip_body.split()))}>{count}</a>' if count else '<span class="pmx__zero">·</span>')
                 + "</td>"
             )
         label = html_escape(name)
