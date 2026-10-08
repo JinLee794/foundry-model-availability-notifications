@@ -4,15 +4,15 @@ Recent changes to AI Foundry model regional availability.
 
 <div class="stats-grid">
   <div class="stat-card">
-    <div class="stat-value">72</div>
+    <div class="stat-value">73</div>
     <div class="stat-label">Change Events</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value" style="color: #22c55e;">2528</div>
+    <div class="stat-value" style="color: #22c55e;">2348</div>
     <div class="stat-label">Additions</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value" style="color: #ef4444;">1482</div>
+    <div class="stat-value" style="color: #ef4444;">1455</div>
     <div class="stat-label">Removals</div>
   </div>
 </div>
@@ -28,6 +28,7 @@ Filter and search through all recent availability changes.
     <label for="history-date-filter">Date</label>
     <select id="history-date-filter" onchange="filterHistoryTable()">
       <option value="">All Dates</option>
+      <option value="2026-10-07">2026-10-07</option>
       <option value="2026-10-01">2026-10-01</option>
       <option value="2026-09-30">2026-09-30</option>
       <option value="2026-09-29">2026-09-29</option>
@@ -47,7 +48,6 @@ Filter and search through all recent availability changes.
       <option value="2026-07-22">2026-07-22</option>
       <option value="2026-07-16">2026-07-16</option>
       <option value="2026-07-10">2026-07-10</option>
-      <option value="2026-07-09">2026-07-09</option>
     </select>
   </div>
   <div class="filter-group">
@@ -64,24 +64,15 @@ Filter and search through all recent availability changes.
       <option value="">All Models</option>
       <option value="Claude Fable">Claude Fable</option>
       <option value="Claude Haiku 4.5">Claude Haiku 4.5</option>
-      <option value="Claude Haiku 4.5 (preview)">Claude Haiku 4.5 (preview)</option>
       <option value="Claude Mythos 5&lt;sup&gt;1&lt;">Claude Mythos 5&lt;sup&gt;1&lt;</option>
       <option value="Claude Mythos Preview&lt;sup&gt;1&lt;">Claude Mythos Preview&lt;sup&gt;1&lt;</option>
-      <option value="Claude Mythos Preview&lt;sup&gt;2&lt;">Claude Mythos Preview&lt;sup&gt;2&lt;</option>
       <option value="Claude Opus 4.1">Claude Opus 4.1</option>
-      <option value="Claude Opus 4.1 (preview)">Claude Opus 4.1 (preview)</option>
       <option value="Claude Opus 4.5">Claude Opus 4.5</option>
-      <option value="Claude Opus 4.5 (preview)">Claude Opus 4.5 (preview)</option>
       <option value="Claude Opus 4.6">Claude Opus 4.6</option>
-      <option value="Claude Opus 4.6 (preview)">Claude Opus 4.6 (preview)</option>
       <option value="Claude Opus 4.7">Claude Opus 4.7</option>
-      <option value="Claude Opus 4.7 (preview)">Claude Opus 4.7 (preview)</option>
       <option value="Claude Opus 4.8">Claude Opus 4.8</option>
-      <option value="Claude Opus 4.8 (preview)">Claude Opus 4.8 (preview)</option>
       <option value="Claude Sonnet 4.5">Claude Sonnet 4.5</option>
-      <option value="Claude Sonnet 4.5 (preview)">Claude Sonnet 4.5 (preview)</option>
       <option value="Claude Sonnet 4.6">Claude Sonnet 4.6</option>
-      <option value="Claude Sonnet 4.6 (preview)">Claude Sonnet 4.6 (preview)</option>
       <option value="Claude Sonnet 5">Claude Sonnet 5</option>
       <option value="Codestral-2501">Codestral-2501</option>
       <option value="Cohere-command-a-plus-05-2026">Cohere-command-a-plus-05-2026</option>
@@ -173,8 +164,6 @@ Filter and search through all recent availability changes.
       <option value="gpt-chat-latest">gpt-chat-latest</option>
       <option value="gpt-image-2.5-flare">gpt-image-2.5-flare</option>
       <option value="gpt-image-2.5-sunburst">gpt-image-2.5-sunburst</option>
-      <option value="gpt-realtime-2.1">gpt-realtime-2.1</option>
-      <option value="gpt-realtime-2.1-mini">gpt-realtime-2.1-mini</option>
       <option value="grok-3">grok-3</option>
       <option value="grok-3-mini">grok-3-mini</option>
       <option value="grok-4-1-fast-non-reasoning">grok-4-1-fast-non-reasoning</option>
@@ -185,6 +174,7 @@ Filter and search through all recent availability changes.
       <option value="grok-4-fast-reasoning">grok-4-fast-reasoning</option>
       <option value="grok-4.3">grok-4.3</option>
       <option value="grok-4.6">grok-4.6</option>
+      <option value="grok-4.7">grok-4.7</option>
       <option value="mistral-document-ai-2505">mistral-document-ai-2505</option>
       <option value="mistral-document-ai-2512">mistral-document-ai-2512</option>
       <option value="mistral-medium-2505">mistral-medium-2505</option>
@@ -197,7 +187,6 @@ Filter and search through all recent availability changes.
       <option value="o4-mini">o4-mini</option>
       <option value="text-embedding-3-large">text-embedding-3-large</option>
       <option value="text-embedding-3-small">text-embedding-3-small</option>
-      <option value="text-embedding-ada-002">text-embedding-ada-002</option>
     </select>
   </div>
   <div class="filter-group">
@@ -254,8 +243,6 @@ Filter and search through all recent availability changes.
       <option value="Deployments Standard">Deployments Standard</option>
       <option value="Global Provisioned Managed">Global Provisioned Managed</option>
       <option value="Global Standard">Global Standard</option>
-      <option value="Global batch">Global batch</option>
-      <option value="Global batch datazone">Global batch datazone</option>
       <option value="Marketplace Deployments Standard">Marketplace Deployments Standard</option>
       <option value="Region Availability Maas">Region Availability Maas</option>
       <option value="Standard Global By Capability">Standard Global By Capability</option>
@@ -280,6 +267,223 @@ Filter and search through all recent availability changes.
     </tr>
   </thead>
   <tbody>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=Australia%20East">Australia East</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=Brazil%20South">Brazil South</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=Canada%20Central">Canada Central</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=Canada%20East">Canada East</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=Central%20US">Central US</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=East%20US">East US</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=France%20Central">France Central</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=Germany%20West%20Central">Germany West Central</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=Italy%20North">Italy North</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=Japan%20East">Japan East</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=Japan%20West">Japan West</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=Korea%20Central">Korea Central</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=North%20Central%20US">North Central US</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=Norway%20East">Norway East</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=Poland%20Central">Poland Central</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=South%20Africa%20North">South Africa North</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=South%20Central%20US">South Central US</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=South%20India">South India</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=Spain%20Central">Spain Central</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=Switzerland%20North">Switzerland North</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=Switzerland%20West">Switzerland West</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=UAE%20North">UAE North</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=UK%20South">UK South</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=UK%20West">UK West</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=West%20Central%20US">West Central US</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=West%20Europe">West Europe</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=West%20US">West US</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=West%20US%202">West US 2</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
+    <tr>
+            <td data-order="20261007141541">2026-10-07</td>
+            <td><span class="badge-added">Added</span></td>
+            <td><a href="../models/grok-4-7/">grok-4.7</a></td>
+            <td><a class="region-badge" href="../explorer/#rg=West%20US%203">West US 3</a></td>
+            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
+    </tr>
     <tr>
             <td data-order="20261001141616">2026-10-01</td>
             <td><span class="badge-added">Added</span></td>
@@ -26684,1676 +26888,10 @@ Filter and search through all recent availability changes.
             <td><a class="region-badge" href="../explorer/#rg=West%20US%203">West US 3</a></td>
             <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
     </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Haiku 4.5 (preview)</td>
-            <td>(entire model)</td>
-            <td>-</td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Haiku 4.5 (preview)</td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Haiku 4.5 (preview)</td>
-            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Mythos Preview&lt;sup&gt;2&lt;</td>
-            <td>(entire model)</td>
-            <td>-</td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Mythos Preview&lt;sup&gt;2&lt;</td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Mythos Preview&lt;sup&gt;2&lt;</td>
-            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Opus 4.1 (preview)</td>
-            <td>(entire model)</td>
-            <td>-</td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Opus 4.1 (preview)</td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Opus 4.1 (preview)</td>
-            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Opus 4.5 (preview)</td>
-            <td>(entire model)</td>
-            <td>-</td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Opus 4.5 (preview)</td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Opus 4.5 (preview)</td>
-            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Opus 4.6 (preview)</td>
-            <td>(entire model)</td>
-            <td>-</td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Opus 4.6 (preview)</td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Opus 4.6 (preview)</td>
-            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Opus 4.7 (preview)</td>
-            <td>(entire model)</td>
-            <td>-</td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Opus 4.7 (preview)</td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Opus 4.7 (preview)</td>
-            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Opus 4.8 (preview)</td>
-            <td>(entire model)</td>
-            <td>-</td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Opus 4.8 (preview)</td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Opus 4.8 (preview)</td>
-            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Sonnet 4.5 (preview)</td>
-            <td>(entire model)</td>
-            <td>-</td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Sonnet 4.5 (preview)</td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Sonnet 4.5 (preview)</td>
-            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Sonnet 4.6 (preview)</td>
-            <td>(entire model)</td>
-            <td>-</td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Sonnet 4.6 (preview)</td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-removed">Removed</span></td>
-            <td>Claude Sonnet 4.6 (preview)</td>
-            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td>Claude Fable</td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td>Claude Fable</td>
-            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/claude-haiku-4-5/">Claude Haiku 4.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/claude-haiku-4-5/">Claude Haiku 4.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td>Claude Mythos 5&lt;sup&gt;1&lt;</td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td>Claude Mythos 5&lt;sup&gt;1&lt;</td>
-            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td>Claude Mythos Preview&lt;sup&gt;1&lt;</td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td>Claude Mythos Preview&lt;sup&gt;1&lt;</td>
-            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td>Claude Opus 4.1</td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td>Claude Opus 4.1</td>
-            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/claude-opus-4-5/">Claude Opus 4.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/claude-opus-4-5/">Claude Opus 4.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/claude-opus-4-6/">Claude Opus 4.6</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/claude-opus-4-6/">Claude Opus 4.6</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/claude-opus-4-7/">Claude Opus 4.7</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/claude-opus-4-7/">Claude Opus 4.7</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/claude-opus-4-8/">Claude Opus 4.8</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/claude-opus-4-8/">Claude Opus 4.8</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/claude-sonnet-4-5/">Claude Sonnet 4.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/claude-sonnet-4-5/">Claude Sonnet 4.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/claude-sonnet-4-6/">Claude Sonnet 4.6</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/claude-sonnet-4-6/">Claude Sonnet 4.6</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/claude-sonnet-5/">Claude Sonnet 5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/claude-sonnet-5/">Claude Sonnet 5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=mp">Region Availability Maas</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-4-1/">gpt-4.1</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=usgovvirginia">usgovvirginia</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone Standard Gov</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-4-1-mini/">gpt-4.1-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=usgovvirginia">usgovvirginia</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone Standard Gov</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-4o/">gpt-4o</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=usgovvirginia">usgovvirginia</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone Standard Gov</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-1/">gpt-5.1</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=usgovvirginia">usgovvirginia</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone Standard Gov</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Australia%20East">Australia East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Japan%20East">Japan East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Korea%20Central">Korea Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=South%20India">South India</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-2/">gpt-5.2</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Southeast%20Asia">Southeast Asia</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Australia%20East">Australia East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Japan%20East">Japan East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Korea%20Central">Korea Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=South%20India">South India</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-3-codex/">gpt-5.3-codex</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Southeast%20Asia">Southeast Asia</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Australia%20East">Australia East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Japan%20East">Japan East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Korea%20Central">Korea Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Norway%20East">Norway East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=South%20India">South India</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Southeast%20Asia">Southeast Asia</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Switzerland%20North">Switzerland North</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Australia%20East">Australia East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Brazil%20South">Brazil South</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Canada%20East">Canada East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Central%20US">Central US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US">East US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=France%20Central">France Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Germany%20West%20Central">Germany West Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Japan%20East">Japan East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Korea%20Central">Korea Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=North%20Central%20US">North Central US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Norway%20East">Norway East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Poland%20Central">Poland Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=South%20Africa%20North">South Africa North</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=South%20Central%20US">South Central US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=South%20India">South India</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Switzerland%20North">Switzerland North</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=UK%20South">UK South</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=West%20Europe">West Europe</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=West%20US">West US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=West%20US%203">West US 3</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Central%20US">Central US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch datazone</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US">East US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch datazone</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch datazone</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=North%20Central%20US">North Central US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch datazone</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=South%20Central%20US">South Central US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch datazone</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=West%20US">West US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch datazone</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4/">gpt-5.4</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=West%20US%203">West US 3</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch datazone</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Australia%20East">Australia East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Japan%20East">Japan East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Korea%20Central">Korea Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=South%20India">South India</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Southeast%20Asia">Southeast Asia</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Japan%20East">Japan East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rp">Deployments Provisioned</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=South%20India">South India</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rp">Deployments Provisioned</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Southeast%20Asia">Southeast Asia</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rp">Deployments Provisioned</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Australia%20East">Australia East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Brazil%20South">Brazil South</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Canada%20East">Canada East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Central%20US">Central US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US">East US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=France%20Central">France Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Germany%20West%20Central">Germany West Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Japan%20East">Japan East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Korea%20Central">Korea Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=North%20Central%20US">North Central US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Norway%20East">Norway East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Poland%20Central">Poland Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=South%20Africa%20North">South Africa North</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=South%20Central%20US">South Central US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=South%20India">South India</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Switzerland%20North">Switzerland North</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=UK%20South">UK South</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=West%20Europe">West Europe</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=West%20US">West US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=West%20US%203">West US 3</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Central%20US">Central US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch datazone</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US">East US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch datazone</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch datazone</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=North%20Central%20US">North Central US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch datazone</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=South%20Central%20US">South Central US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch datazone</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=West%20US">West US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch datazone</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-4-mini/">gpt-5.4-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=West%20US%203">West US 3</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=bt">Global batch datazone</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Australia%20East">Australia East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Central%20US">Central US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US">East US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=France%20Central">France Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Germany%20West%20Central">Germany West Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Italy%20North">Italy North</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Japan%20East">Japan East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Korea%20Central">Korea Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=North%20Central%20US">North Central US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Norway%20East">Norway East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=South%20India">South India</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Southeast%20Asia">Southeast Asia</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Spain%20Central">Spain Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Switzerland%20North">Switzerland North</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=West%20Europe">West Europe</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=West%20US">West US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=West%20US%203">West US 3</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Australia%20East">Australia East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Brazil%20South">Brazil South</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Canada%20Central">Canada Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Canada%20East">Canada East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Japan%20East">Japan East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Korea%20Central">Korea Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=South%20Africa%20North">South Africa North</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=South%20India">South India</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Southeast%20Asia">Southeast Asia</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Switzerland%20West">Switzerland West</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=UAE%20North">UAE North</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=UK%20South">UK South</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Australia%20East">Australia East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=gs">Standard Global By Capability</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Brazil%20South">Brazil South</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=gs">Standard Global By Capability</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Canada%20Central">Canada Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=gs">Standard Global By Capability</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Canada%20East">Canada East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=gs">Standard Global By Capability</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Central%20US">Central US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=gs">Standard Global By Capability</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US">East US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=gs">Standard Global By Capability</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=France%20Central">France Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=gs">Standard Global By Capability</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Germany%20West%20Central">Germany West Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=gs">Standard Global By Capability</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Italy%20North">Italy North</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=gs">Standard Global By Capability</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Japan%20East">Japan East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=gs">Standard Global By Capability</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Korea%20Central">Korea Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=gs">Standard Global By Capability</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=North%20Central%20US">North Central US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=gs">Standard Global By Capability</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Norway%20East">Norway East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=gs">Standard Global By Capability</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=South%20Africa%20North">South Africa North</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=gs">Standard Global By Capability</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=South%20India">South India</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=gs">Standard Global By Capability</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Southeast%20Asia">Southeast Asia</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=gs">Standard Global By Capability</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Spain%20Central">Spain Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=gs">Standard Global By Capability</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Switzerland%20North">Switzerland North</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=gs">Standard Global By Capability</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Switzerland%20West">Switzerland West</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=gs">Standard Global By Capability</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=UAE%20North">UAE North</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=gs">Standard Global By Capability</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=UK%20South">UK South</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=gs">Standard Global By Capability</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=West%20Europe">West Europe</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=gs">Standard Global By Capability</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=West%20US">West US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=gs">Standard Global By Capability</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-5-5/">gpt-5.5</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=West%20US%203">West US 3</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=gs">Standard Global By Capability</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Australia%20East">Australia East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Brazil%20South">Brazil South</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Canada%20Central">Canada Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Canada%20East">Canada East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Central%20US">Central US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US">East US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=France%20Central">France Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Germany%20West%20Central">Germany West Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Italy%20North">Italy North</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Japan%20East">Japan East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Korea%20Central">Korea Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=North%20Central%20US">North Central US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Norway%20East">Norway East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=South%20Africa%20North">South Africa North</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=South%20India">South India</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Southeast%20Asia">Southeast Asia</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Spain%20Central">Spain Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Switzerland%20North">Switzerland North</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Switzerland%20West">Switzerland West</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=UAE%20North">UAE North</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=UK%20South">UK South</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=West%20Europe">West Europe</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-chat-latest/">gpt-chat-latest</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=West%20US">West US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-realtime-2-1/">gpt-realtime-2.1</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Canada%20Central">Canada Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-realtime-2-1/">gpt-realtime-2.1</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Central%20US">Central US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-realtime-2-1/">gpt-realtime-2.1</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-realtime-2-1/">gpt-realtime-2.1</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=France%20Central">France Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-realtime-2-1/">gpt-realtime-2.1</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=South%20India">South India</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-realtime-2-1/">gpt-realtime-2.1</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-realtime-2-1-mini/">gpt-realtime-2.1-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Canada%20Central">Canada Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-realtime-2-1-mini/">gpt-realtime-2.1-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Central%20US">Central US</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-realtime-2-1-mini/">gpt-realtime-2.1-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=East%20US%202">East US 2</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-realtime-2-1-mini/">gpt-realtime-2.1-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=France%20Central">France Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-realtime-2-1-mini/">gpt-realtime-2.1-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=South%20India">South India</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/gpt-realtime-2-1-mini/">gpt-realtime-2.1-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Sweden%20Central">Sweden Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/model-router/">model-router</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=West%20US%203">West US 3</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/model-router/">model-router</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Australia%20East">Australia East</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/model-router/">model-router</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=South%20India">South India</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/model-router/">model-router</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=West%20US%203">West US 3</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/o3-mini/">o3-mini</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=usgovvirginia">usgovvirginia</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone Standard Gov</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=usgovarizona">usgovarizona</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone Standard Gov</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/text-embedding-3-large/">text-embedding-3-large</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=usgovvirginia">usgovvirginia</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone Standard Gov</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=usgovarizona">usgovarizona</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone Standard Gov</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/text-embedding-3-small/">text-embedding-3-small</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=usgovvirginia">usgovvirginia</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=dz">Datazone Standard Gov</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Canada%20Central">Canada Central</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Southeast%20Asia">Southeast Asia</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
-    <tr>
-            <td data-order="20260709103026">2026-07-09</td>
-            <td><span class="badge-added">Added</span></td>
-            <td><a href="../models/text-embedding-ada-002/">text-embedding-ada-002</a></td>
-            <td><a class="region-badge" href="../explorer/#rg=Switzerland%20West">Switzerland West</a></td>
-            <td><a class="change-link-pill change-link-pill--sku" href="../explorer/#t=rs">Deployments Standard</a></td>
-    </tr>
   </tbody>
 </table>
 </div>
 
 ---
 
-_Last updated: 2026-10-07 23:10 UTC_
+_Last updated: 2026-10-08 14:01 UTC_

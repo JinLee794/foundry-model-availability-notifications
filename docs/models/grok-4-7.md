@@ -1,4 +1,4 @@
-# <span class="pv pv--xai pv--xl" aria-hidden="true" title="xAI"></span> grok-4-1-fast-reasoning
+# <span class="pv pv--xai pv--xl" aria-hidden="true" title="xAI"></span> grok-4.7
 
 <div class="model-profile" aria-label="Model availability profile">
     <div class="model-profile__main">
@@ -47,22 +47,9 @@
 
 ## :material-cash-multiple: Pricing
 
-<div class="price-card">
-    <div class="price-card__head">
-        <div class="price-card__hero">
-            <span class="price-card__eyebrow">Pay-as-you-go · Global</span>
-            <strong>$0.275<small> per 1M tokens</small></strong>
-            <span class="price-card__note">Blended at 3:1 input:output</span>
-        </div>
-        <a class="md-button md-button--primary" href="../../cost/?m=grok-4-1-fast-reasoning"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg> Project monthly cost</a>
-    </div>
-    <div class="table-responsive"><table class="price-table">
-        <thead><tr><th>Per 1M tokens</th><th>Global</th><th>Data Zone</th></tr></thead>
-        <tbody><tr><th scope="row">Input</th><td>$0.20</td><td>$0.22</td></tr><tr><th scope="row">Output</th><td>$0.50</td><td>$0.55</td></tr></tbody>
-    </table></div>
-    
-    
-    <p class="price-card__foot">Pay-as-you-go list price in USD for East US 2 from the <a href="https://learn.microsoft.com/rest/api/cost-management/retail-prices/azure-retail-prices">Azure Retail Prices API</a>, checked daily, last updated 2026-10-08. Excludes tax and negotiated discounts; other regions can differ.</p>
+<div class="price-card price-card--empty">
+    <p><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg><span>No pay-as-you-go meter is published for this model in the Azure price list yet.</span></p>
+    <p class="price-card__foot">See <a href="https://azure.microsoft.com/pricing/details/ai-foundry-models/">Foundry Models pricing</a> for current rates.</p>
 </div>
 
 

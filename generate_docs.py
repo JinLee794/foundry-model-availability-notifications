@@ -9,13 +9,14 @@ from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 from html import escape as html_escape
 from pathlib import Path
-from typing import Dict, List, Set, Tuple
+from typing import Dict, List, Optional, Set, Tuple
 from urllib.parse import quote
 
 HERE = Path(__file__).resolve().parent
 REGION_WATCH_DIR = HERE / ".region-watch"
 SNAPSHOT_PATH = REGION_WATCH_DIR / "regions_snapshot.json"
 RETIREMENT_PATH = REGION_WATCH_DIR / "retirement_data.json"
+PRICING_PATH = REGION_WATCH_DIR / "pricing.json"
 HISTORY_DIR = REGION_WATCH_DIR / "history"
 DOCS_DIR = HERE / "docs"
 
@@ -935,7 +936,7 @@ def render_replacement_callout(model: str, regions: Set[str], summary: Dict, mod
     <div class="swap__side swap__side--to">
         <span class="swap__eyebrow">{"Replacement" if scheduled else "Move to"}</span>
         <span class="swap__model">{rep_name}</span>
-        {fit_html}
+        <span class="swap__pills">{fit_html}{price_delta_pill(model, replacement)}</span>
     </div>
     {gap}
 </div>
@@ -1529,6 +1530,7 @@ ICONS = {
     "flask": "M5 19a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1c0-.21-.07-.41-.18-.57L13 8.35V4h-2v4.35L5.18 18.43c-.11.16-.18.36-.18.57m1 3a3 3 0 0 1-3-3c0-.6.18-1.16.5-1.63L9 7.81V6a1 1 0 0 1-1-1V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1v1.81l5.5 9.56c.32.47.5 1.03.5 1.63a3 3 0 0 1-3 3zm7-6 1.34-1.34L16.27 18H7.73l2.66-4.61zm-.5-4a.5.5 0 0 1 .5.5.5.5 0 0 1-.5.5.5.5 0 0 1-.5-.5.5.5 0 0 1 .5-.5",
     "swap": "m21 9-4-4v3h-7v2h7v3M7 11l-4 4 4 4v-3h7v-2H7z",
     "shield": "M21 11c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5l9-4 9 4zm-9 10c3.75-1 7-5.46 7-9.78V6.3l-7-3.12L5 6.3v4.92C5 15.54 8.25 20 12 21M11 7h2v6h-2zm0 8h2v2h-2z",
+    "cash": "M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z",
 }
 
 
@@ -1674,6 +1676,346 @@ PTU_SIZING: List[Tuple[str, int, int, int, int, int, int]] = [
 ]
 
 
+# ----------------------------- Pricing -----------------------------------
+
+PRICING: Dict = {}
+PRICE_BY_SLUG: Dict[str, Dict] = {}
+PRICE_DEPLOYMENTS = [("global", "Global"), ("datazone", "Data Zone"), ("regional", "Regional")]
+PRICE_KINDS = [
+    ("in", "Input"),
+    ("cached", "Cached input"),
+    ("out", "Output"),
+    ("batch_in", "Batch input"),
+    ("batch_out", "Batch output"),
+]
+HOURS_PER_MONTH = 730
+PTU_SIZING_BY_MODEL = {row[0]: row[1:] for row in PTU_SIZING}
+
+
+def load_pricing(path: Path) -> Dict:
+    """Pricing is optional: a missing or unreadable file just hides price UI."""
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    return data if isinstance(data.get("models"), dict) else {}
+
+
+def set_pricing(data: Dict) -> None:
+    PRICING.clear()
+    PRICING.update(data)
+    PRICE_BY_SLUG.clear()
+    PRICE_BY_SLUG.update({slugify(name): prices for name, prices in data.get("models", {}).items()})
+
+
+def model_prices(model: str) -> Dict[str, Dict[str, float]]:
+    return PRICE_BY_SLUG.get(slugify(model), {})
+
+
+def price_region_label() -> str:
+    arm = PRICING.get("region", "eastus2")
+    names = {name.replace(" ", "").lower(): name for name in REGION_COORDS}
+    return names.get(arm, arm)
+
+
+def reference_tier(prices: Dict[str, Dict[str, float]], prefer: str = "global") -> Tuple[str, Dict[str, float]]:
+    order = [prefer] + [key for key, _ in PRICE_DEPLOYMENTS if key != prefer]
+    for key in order:
+        if prices.get(key, {}).get("in") is not None:
+            return key, prices[key]
+    return "", {}
+
+
+def blended_price(tier: Dict[str, float]) -> Optional[float]:
+    """Price per 1M tokens at a 3:1 input:output mix (output-free for embeddings)."""
+    if tier.get("in") is None:
+        return None
+    if tier.get("out") is None:
+        return tier["in"]
+    return (3 * tier["in"] + tier["out"]) / 4
+
+
+def format_price(value: Optional[float]) -> str:
+    if value is None:
+        return "—"
+    if value >= 100:
+        return f"${value:,.0f}"
+    if value >= 1:
+        return f"${value:,.2f}"
+    text = f"{value:.4f}".rstrip("0")
+    if len(text.split(".")[1]) < 2:
+        text = f"{value:.2f}"
+    return f"${text}"
+
+
+def unpriced_reason(model: str) -> str:
+    lowered = model.lower()
+    if model_family(model) == "Anthropic":
+        return "Claude models are sold through Azure Marketplace, so they're billed by Anthropic and aren't in the Azure price list."
+    if lowered == "model-router":
+        return "The router bills at the price of whichever model it picks for each request."
+    if any(word in lowered for word in ("image", "flux", "stable", "sora", "tts", "whisper", "audio", "realtime", "transcribe", "dall")):
+        return "Priced per image, second, or audio minute rather than per token. See the Foundry pricing page."
+    return "No pay-as-you-go meter is published for this model in the Azure price list yet."
+
+
+def price_change(model: str, replacement: str) -> Optional[Tuple[str, float, float]]:
+    """Compare blended prices on the same deployment type: (deployment, old, new)."""
+    old, new = model_prices(model), model_prices(replacement)
+    if not old or not new:
+        return None
+    deployment, old_tier = reference_tier(old)
+    new_tier = new.get(deployment) if new.get(deployment, {}).get("in") is not None else reference_tier(new, deployment)[1]
+    old_blend, new_blend = blended_price(old_tier), blended_price(new_tier)
+    if not old_blend or new_blend is None:
+        return None
+    return deployment, old_blend, new_blend
+
+
+def price_delta_pill(model: str, replacement: str) -> str:
+    change = price_change(model, replacement)
+    if not change:
+        return ""
+    _, old, new = change
+    pct = (new - old) / old * 100
+    if abs(pct) < 1:
+        text, tone = "Same list price", "neutral"
+    else:
+        text, tone = (f"{pct:+.0f}% list price", "up" if pct > 0 else "down")
+    tip = f"{format_price(old)} → {format_price(new)} per 1M tokens at a 3:1 input:output mix (pay-as-you-go list price)."
+    return f'<span class="swap__cost swap__cost--{tone}"{tip_attrs("Cost of switching", tip)}>{icon("cash")}{html_escape(text)}</span>'
+
+
+def cost_planner_href(prefix: str, *models: str) -> str:
+    slugs = ",".join(dict.fromkeys(slugify(m) for m in models if m and model_prices(m)))
+    return f"{prefix}cost/" + (f"?m={slugs}" if slugs else "")
+
+
+def render_pricing_section(model: str, lifecycle: Dict, has_provisioned: bool) -> str:
+    if not PRICING:
+        return ""
+    prices = model_prices(model)
+    fetched = (PRICING.get("fetched_at") or "")[:10]
+    foot = f'<p class="price-card__foot">Pay-as-you-go list price in USD for {html_escape(price_region_label())} from the <a href="https://learn.microsoft.com/rest/api/cost-management/retail-prices/azure-retail-prices">Azure Retail Prices API</a>, checked daily, last updated {html_escape(fetched)}. Excludes tax and negotiated discounts; other regions can differ.</p>'
+    if not prices:
+        return f"""## :material-cash-multiple: Pricing
+
+<div class="price-card price-card--empty">
+    <p>{icon("cash")}<span>{html_escape(unpriced_reason(model))}</span></p>
+    <p class="price-card__foot">See <a href="https://azure.microsoft.com/pricing/details/ai-foundry-models/">Foundry Models pricing</a> for current rates.</p>
+</div>
+"""
+    deployments = [(key, label) for key, label in PRICE_DEPLOYMENTS if prices.get(key)]
+    kinds = [(key, label) for key, label in PRICE_KINDS if any(prices[d].get(key) is not None for d, _ in deployments)]
+    head = "".join(f"<th>{label}</th>" for _, label in deployments)
+    rows = "".join(
+        f"<tr><th scope=\"row\">{label}</th>" + "".join(f"<td>{format_price(prices[d].get(key))}</td>" for d, _ in deployments) + "</tr>"
+        for key, label in kinds
+    )
+    ref_key, ref_tier = reference_tier(prices)
+    blend = blended_price(ref_tier)
+    ref_label = dict(PRICE_DEPLOYMENTS).get(ref_key, "")
+    blend_note = "input only" if ref_tier.get("out") is None else "3:1 input:output"
+
+    ptu_html = ""
+    hourly = PRICING.get("ptu", {}).get("hourly", {})
+    yearly = PRICING.get("ptu", {}).get("reservation", {}).get("year", {})
+    if has_provisioned and hourly:
+        parts = " · ".join(
+            f"{label} {format_price(hourly[key])}" for key, label in PRICE_DEPLOYMENTS if key in hourly
+        )
+        reserved = min(yearly.values()) / 12 if yearly else None
+        reserved_text = f" A 1-year reservation brings it to about {format_price(reserved)} per PTU-month." if reserved else ""
+        sizing = PTU_SIZING_BY_MODEL.get(model)
+        sizing_text = f" Minimum {sizing[0]} PTUs (Global / Data Zone), about {sizing[4]:,} input tokens per minute each." if sizing else ""
+        ptu_html = f'<p class="price-card__ptu">{icon("gauge")}<span><b>Provisioned (PTU):</b> {parts} per PTU-hour.{reserved_text}{sizing_text}</span></p>'
+
+    swap_html = ""
+    replacement = lifecycle.get("replacement") if lifecycle else ""
+    change = price_change(model, replacement) if replacement else None
+    if change:
+        deployment, old, new = change
+        pct = (new - old) / old * 100
+        tone = "neutral" if abs(pct) < 1 else ("up" if pct > 0 else "down")
+        verb = "costs about the same" if tone == "neutral" else f"is <b>{abs(pct):.0f}% {'more' if pct > 0 else 'less'}</b>"
+        rep_slug = slugify(replacement)
+        rep_link = f'<a href="../{rep_slug}/">{html_escape(replacement)}</a>' if rep_slug in MODEL_PAGE_SLUGS else html_escape(replacement)
+        swap_html = f'<p class="price-card__swap price-card__swap--{tone}">{icon("swap")}<span>Replacement {rep_link} {verb} at list price: {format_price(old)} → {format_price(new)} per 1M blended tokens ({dict(PRICE_DEPLOYMENTS).get(deployment, deployment)}).</span></p>'
+    elif replacement:
+        swap_html = f'<p class="price-card__swap">{icon("swap")}<span>No list price is published for the replacement {html_escape(replacement)} yet.</span></p>'
+
+    planner = cost_planner_href("../../", model, replacement or "")
+    return f"""## :material-cash-multiple: Pricing
+
+<div class="price-card">
+    <div class="price-card__head">
+        <div class="price-card__hero">
+            <span class="price-card__eyebrow">Pay-as-you-go · {html_escape(ref_label)}</span>
+            <strong>{format_price(blend)}<small> per 1M tokens</small></strong>
+            <span class="price-card__note">Blended at {blend_note}</span>
+        </div>
+        <a class="md-button md-button--primary" href="{planner}">{icon("cash")} Project monthly cost</a>
+    </div>
+    <div class="table-responsive"><table class="price-table">
+        <thead><tr><th>Per 1M tokens</th>{head}</tr></thead>
+        <tbody>{rows}</tbody>
+    </table></div>
+    {swap_html}
+    {ptu_html}
+    {foot}
+</div>
+"""
+
+
+WORKLOAD_PRESETS = [
+    ("chat", "Chat assistant", 3000, 1500, 400, 30, 0),
+    ("rag", "RAG Q&A", 3000, 6000, 500, 50, 0),
+    ("agent", "Coding agent", 1000, 20000, 1500, 70, 0),
+    ("batch", "Batch summaries", 20000, 3000, 300, 0, 100),
+    ("embed", "Embeddings", 50000, 500, 0, 0, 0),
+]
+
+
+def build_cost_data(lifecycles: Dict[str, Dict], model_regions: Dict[str, Set[str]]) -> Dict:
+    models = []
+    unpriced = []
+    seen: Set[str] = set()
+    for model in sorted(model_regions, key=str.lower):
+        if slugify(model) in seen:
+            continue
+        seen.add(slugify(model))
+        prices = model_prices(model)
+        summary = lifecycles.get(model, {})
+        if not prices:
+            unpriced.append({"n": model, "s": slugify(model), "f": model_family(model), "why": unpriced_reason(model)})
+            continue
+        replacement = summary.get("replacement") or ""
+        models.append({
+            "n": model,
+            "s": slugify(model),
+            "f": model_family(model),
+            "p": prices,
+            "lk": summary.get("key", ""),
+            "ll": lifecycle_badge_text(summary) if summary else "",
+            "lt": summary.get("tone", "neutral"),
+            "rep": replacement,
+            "rs": slugify(replacement) if replacement and model_prices(replacement) else "",
+            "ptu": list(PTU_SIZING_BY_MODEL[model]) if model in PTU_SIZING_BY_MODEL else None,
+        })
+    return {
+        "fetched": PRICING.get("fetched_at", ""),
+        "region": price_region_label(),
+        "ptu": PRICING.get("ptu", {}),
+        "hours": HOURS_PER_MONTH,
+        "models": models,
+        "unpriced": unpriced,
+    }
+
+
+def generate_cost_page(model_count: int) -> str:
+    priced = len(PRICING.get("models", {}))
+    fetched = (PRICING.get("fetched_at") or "")[:10]
+    region = price_region_label()
+    presets = "\n".join(
+        f'<button type="button" class="cp-chip" data-workload="{key}" data-rpd="{rpd}" data-in="{tin}" data-out="{tout}" data-cache="{cache}" data-batch="{batch}">{html_escape(label)}</button>'
+        for key, label, rpd, tin, tout, cache, batch in WORKLOAD_PRESETS
+    )
+    return f"""---
+hide:
+  - navigation
+  - toc
+---
+
+# Cost planner
+
+<p class="page-lede">Describe your traffic once and compare the projected monthly bill across models, side by side. Then see at what volume a provisioned (PTU) reservation becomes cheaper than pay-as-you-go.</p>
+
+<div class="cp" data-cost-planner data-src="../assets/pricing.json" data-root="../">
+    <section class="cp-panel cp-inputs" aria-label="Workload">
+        <div class="cp-row">
+            <span class="cp-label">Workload</span>
+            <div class="cp-chips" role="group" aria-label="Workload presets">
+{presets}
+            </div>
+        </div>
+        <div class="cp-fields">
+            <label class="cp-field"><span>Requests per day</span><input type="number" min="0" step="100" data-cp="rpd" inputmode="numeric"></label>
+            <label class="cp-field"><span>Input tokens / request</span><input type="number" min="0" step="100" data-cp="in" inputmode="numeric"></label>
+            <label class="cp-field"><span>Output tokens / request</span><input type="number" min="0" step="50" data-cp="out" inputmode="numeric"></label>
+            <label class="cp-field cp-field--range"><span>Cached input <output data-cp-out="cache"></output></span><input type="range" min="0" max="90" step="5" data-cp="cache"></label>
+            <label class="cp-field cp-field--range"><span>Sent as batch <output data-cp-out="batch"></output></span><input type="range" min="0" max="100" step="5" data-cp="batch"></label>
+            <div class="cp-field"><span>Deployment type</span>
+                <div class="cp-seg" role="radiogroup" aria-label="Deployment type">
+                    <button type="button" data-dep="global" role="radio">Global</button>
+                    <button type="button" data-dep="datazone" role="radio">Data Zone</button>
+                    <button type="button" data-dep="regional" role="radio">Regional</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cp-panel cp-models" aria-label="Models to compare">
+        <div class="cp-row">
+            <span class="cp-label">Compare</span>
+            <div class="cp-chips" role="group" aria-label="Model sets">
+                <button type="button" class="cp-chip" data-set="popular">Popular</button>
+                <button type="button" class="cp-chip" data-set="retiring">Retiring → replacements</button>
+                <button type="button" class="cp-chip" data-set="budget">Under $1 / 1M</button>
+                <button type="button" class="cp-chip" data-set="partner">Partner models</button>
+                <button type="button" class="cp-chip cp-chip--ghost" data-set="clear">Clear</button>
+            </div>
+        </div>
+        <div class="cp-picker">
+            <div class="cp-selected" data-cp-selected></div>
+            <div class="cp-search">
+                <input type="search" data-cp-search placeholder="Add a model — {priced} priced" aria-label="Add a model" autocomplete="off" spellcheck="false">
+                <ul class="cp-suggest" data-cp-suggest role="listbox" hidden></ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="cp-kpis" data-cp-kpis aria-live="polite"></div>
+
+    <section class="cp-panel cp-chart">
+        <header class="cp-head">
+            <div><h2>Projected monthly cost</h2><p data-cp-basis></p></div>
+            <div class="cp-legend"><span class="cp-key cp-key--in">Input</span><span class="cp-key cp-key--cached">Cached input</span><span class="cp-key cp-key--out">Output</span></div>
+        </header>
+        <div class="cp-bars" data-cp-bars></div>
+    </section>
+
+    <section class="cp-panel cp-ptu">
+        <header class="cp-head">
+            <div><h2>Pay-as-you-go vs PTU</h2><p>Monthly cost as daily volume grows, for the same prompt shape.</p></div>
+            <div class="cp-ptu-controls">
+                <label class="cp-select"><span>Model</span><select data-cp-ptu-model></select></label>
+                <label class="cp-select"><span>Peak ÷ average</span><select data-cp="peak"><option value="1">1× (flat)</option><option value="2">2×</option><option value="3">3×</option><option value="5">5×</option></select></label>
+            </div>
+        </header>
+        <div class="cp-ptu-body">
+            <div class="cp-ptu-chart" data-cp-ptu-chart></div>
+            <div class="cp-ptu-verdict" data-cp-ptu-verdict></div>
+        </div>
+    </section>
+
+    <section class="cp-panel cp-table-wrap">
+        <header class="cp-head"><div><h2>Price sheet</h2><p>List price per 1M tokens for the selected deployment type.</p></div>
+            <button type="button" class="ax-btn" data-cp-action="csv">Download CSV</button></header>
+        <div class="table-responsive"><table class="cp-table" data-cp-table></table></div>
+    </section>
+
+    <details class="cp-unpriced">
+        <summary>Why some models aren't here</summary>
+        <div data-cp-unpriced></div>
+    </details>
+</div>
+
+<p class="dash-footnote">{priced} of {model_count} tracked models have pay-as-you-go token prices. List prices are in USD for {html_escape(region)} from the <a href="https://learn.microsoft.com/rest/api/cost-management/retail-prices/azure-retail-prices">Azure Retail Prices API</a> (checked daily, last updated {html_escape(fetched)}). They exclude tax, negotiated discounts and fine-tuning or hosting fees. A month is {HOURS_PER_MONTH} hours. PTU sizing uses Microsoft's published tokens-per-minute figures and is an estimate: confirm it with the <a href="{PTU_SOURCES['calculator']}">Foundry capacity calculator</a> before you buy.</p>
+
+<noscript>The cost planner needs JavaScript. Each <a href="../models/">model page</a> lists its prices.</noscript>
+"""
+
+
 def generate_ptu_page(availability_bits: Dict[str, Dict[str, int]]) -> str:
     """Plain-language, step-by-step guide to provisioned throughput."""
 
@@ -1814,6 +2156,8 @@ hide:
     <li><strong>Benchmark it.</strong> Deploy the estimate and replay your traffic shape for 10+ minutes with the <a href="{PTU_SOURCES['benchmark']}">Azure OpenAI benchmark tool</a>, then with your real client.</li>
     <li><strong>Adjust.</strong> Watch utilization and 429 rates in Azure Monitor and resize.</li>
 </ol>
+
+<p class="ptu-cost-link">{icon("cash")}<span><b>Is it cheaper?</b> The <a href="../cost/">cost planner</a> compares pay-as-you-go with hourly and reserved PTU at your volume and shows the break-even point.</span></p>
 
 <div class="ptu-calc" data-ptu-calc data-models="{calc_data}">
     <div class="ptu-calc__head">
@@ -2971,6 +3315,8 @@ def generate_model_detail_page(
 {swap_callout}{model_profile}
 {retirement_section}
 
+{render_pricing_section(model, lifecycle or {}, any("provisioned" in sku.lower() for sku in sku_regions))}
+
 ## :material-target: Deployment Options
 
 <div class="deployment-lanes">
@@ -3179,12 +3525,14 @@ def main():
     today = datetime.utcnow()
     lifecycles = build_model_lifecycles(model_regions, retirement_index, today)
     availability_bits = build_availability_bits(data)
+    set_pricing(load_pricing(PRICING_PATH))
 
     # Generate main pages
     pages = {
         "index.md": generate_index_page(model_regions, model_sku_regions, all_labels, all_regions, retirement_data, history, lifecycles, availability_bits),
         "explorer.md": generate_explorer_page(all_regions, len(model_regions)),
         "ptu.md": generate_ptu_page(availability_bits),
+        "cost.md": generate_cost_page(len(model_regions)),
         "lifecycle.md": generate_lifecycle_page(lifecycles, retirement_data, availability_bits, today),
         "models/index.md": generate_model_index_page(model_regions, availability_bits, lifecycles),
         "by-region.md": generate_legacy_redirect_page("By Region", "region", "rg"),
@@ -3210,6 +3558,13 @@ def main():
         encoding="utf-8",
     )
     print(f"Generated: {finder_path}")
+
+    pricing_asset = assets_dir / "pricing.json"
+    pricing_asset.write_text(
+        json.dumps(build_cost_data(lifecycles, model_regions), separators=(",", ":"), ensure_ascii=False),
+        encoding="utf-8",
+    )
+    print(f"Generated: {pricing_asset}")
     
     # Generate individual model pages
     for model in model_regions.keys():

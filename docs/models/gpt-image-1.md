@@ -10,7 +10,7 @@
     <div class="swap__side swap__side--to">
         <span class="swap__eyebrow">Move to</span>
         <span class="swap__model"><a href="../gpt-image-1-mini/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><b>gpt-image-1-mini</b></a></span>
-        <span class="swap__fit swap__fit--success">Available in all 5 regions this model runs in</span>
+        <span class="swap__pills"><span class="swap__fit swap__fit--success">Available in all 5 regions this model runs in</span></span>
     </div>
     
 </div>
@@ -70,6 +70,14 @@
 </div>
 </div>
 
+
+
+## :material-cash-multiple: Pricing
+
+<div class="price-card price-card--empty">
+    <p><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg><span>Priced per image, second, or audio minute rather than per token. See the Foundry pricing page.</span></p>
+    <p class="price-card__foot">See <a href="https://azure.microsoft.com/pricing/details/ai-foundry-models/">Foundry Models pricing</a> for current rates.</p>
+</div>
 
 
 ## :material-target: Deployment Options
@@ -164,4 +172,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 02:04 UTC_
+_Last updated: 2026-10-08 14:01 UTC_

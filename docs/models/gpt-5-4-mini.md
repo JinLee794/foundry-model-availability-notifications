@@ -45,6 +45,27 @@
 <div class="lc-empty">No deprecation or retirement date has been announced for this model in Microsoft's retirement table. See the <a href="../../lifecycle/">lifecycle guide</a> for how dates are set.</div>
 
 
+## :material-cash-multiple: Pricing
+
+<div class="price-card">
+    <div class="price-card__head">
+        <div class="price-card__hero">
+            <span class="price-card__eyebrow">Pay-as-you-go · Global</span>
+            <strong>$1.69<small> per 1M tokens</small></strong>
+            <span class="price-card__note">Blended at 3:1 input:output</span>
+        </div>
+        <a class="md-button md-button--primary" href="../../cost/?m=gpt-5-4-mini"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg> Project monthly cost</a>
+    </div>
+    <div class="table-responsive"><table class="price-table">
+        <thead><tr><th>Per 1M tokens</th><th>Global</th><th>Data Zone</th></tr></thead>
+        <tbody><tr><th scope="row">Input</th><td>$0.75</td><td>$0.825</td></tr><tr><th scope="row">Cached input</th><td>$0.075</td><td>$0.0825</td></tr><tr><th scope="row">Output</th><td>$4.50</td><td>$4.95</td></tr><tr><th scope="row">Batch input</th><td>$0.375</td><td>$0.4125</td></tr><tr><th scope="row">Batch output</th><td>$2.25</td><td>$2.48</td></tr></tbody>
+    </table></div>
+    
+    <p class="price-card__ptu"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4a10 10 0 0 0-8.66 15h17.32A10 10 0 0 0 12 4m0 2a8 8 0 0 1 7.42 11H4.58A8 8 0 0 1 12 6m4.24 2.34-5.66 4.24a1.5 1.5 0 1 0 1.84 1.84z"/></svg><span><b>Provisioned (PTU):</b> Global $1.00 · Data Zone $1.10 · Regional $2.00 per PTU-hour. A 1-year reservation brings it to about $221 per PTU-month. Minimum 15 PTUs (Global / Data Zone), about 7,900 input tokens per minute each.</span></p>
+    <p class="price-card__foot">Pay-as-you-go list price in USD for East US 2 from the <a href="https://learn.microsoft.com/rest/api/cost-management/retail-prices/azure-retail-prices">Azure Retail Prices API</a>, checked daily, last updated 2026-10-08. Excludes tax and negotiated discounts; other regions can differ.</p>
+</div>
+
+
 ## :material-target: Deployment Options
 
 <div class="deployment-lanes">
@@ -228,4 +249,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 00:35 UTC_
+_Last updated: 2026-10-08 14:01 UTC_

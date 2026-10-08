@@ -28,6 +28,9 @@ jobs:
           python .region-watch/diff_regions.py > region_diff.json
           cat region_diff.json
 
+      - name: Refresh list prices
+        continue-on-error: true
+        run: python .region-watch/fetch_prices.py
       - name: Detect changes
         id: detect
         run: |
@@ -76,7 +79,7 @@ jobs:
         run: |
           git config user.email "bot@users.noreply.github.com"
           git config user.name "region-bot"
-          git add .region-watch/regions_snapshot.json .region-watch/history region_diff.json REGION_AVAILABILITY.md
+          git add .region-watch/regions_snapshot.json .region-watch/history .region-watch/pricing.json region_diff.json REGION_AVAILABILITY.md
           git diff --cached --quiet || git commit -m "Update region snapshot"
           git push
 

@@ -71,6 +71,27 @@
 
 
 
+## :material-cash-multiple: Pricing
+
+<div class="price-card">
+    <div class="price-card__head">
+        <div class="price-card__hero">
+            <span class="price-card__eyebrow">Pay-as-you-go · Global</span>
+            <strong>$35.00<small> per 1M tokens</small></strong>
+            <span class="price-card__note">Blended at 3:1 input:output</span>
+        </div>
+        <a class="md-button md-button--primary" href="../../cost/?m=o3-pro"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg> Project monthly cost</a>
+    </div>
+    <div class="table-responsive"><table class="price-table">
+        <thead><tr><th>Per 1M tokens</th><th>Global</th></tr></thead>
+        <tbody><tr><th scope="row">Input</th><td>$20.00</td></tr><tr><th scope="row">Output</th><td>$80.00</td></tr><tr><th scope="row">Batch input</th><td>$10.00</td></tr><tr><th scope="row">Batch output</th><td>$40.00</td></tr></tbody>
+    </table></div>
+    
+    
+    <p class="price-card__foot">Pay-as-you-go list price in USD for East US 2 from the <a href="https://learn.microsoft.com/rest/api/cost-management/retail-prices/azure-retail-prices">Azure Retail Prices API</a>, checked daily, last updated 2026-10-08. Excludes tax and negotiated discounts; other regions can differ.</p>
+</div>
+
+
 ## :material-target: Deployment Options
 
 <div class="deployment-lanes">
@@ -161,4 +182,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 02:04 UTC_
+_Last updated: 2026-10-08 14:01 UTC_

@@ -1,0 +1,1043 @@
+{
+  "fetched_at": "2026-10-08T13:55:35Z",
+  "source": "https://prices.azure.com/api/retail/prices",
+  "region": "eastus2",
+  "currency": "USD",
+  "unit": "per 1M tokens",
+  "models": {
+    "Codestral-2501": {
+      "regional": {
+        "out": 0.99,
+        "in": 0.33
+      },
+      "global": {
+        "out": 0.9,
+        "in": 0.3
+      },
+      "datazone": {
+        "out": 0.99,
+        "in": 0.33
+      }
+    },
+    "Cohere-command-a-plus-05-2026": {
+      "datazone": {
+        "out": 3.52,
+        "in": 0.88
+      },
+      "global": {
+        "in": 0.8,
+        "out": 3.2
+      }
+    },
+    "DeepSeek-R1": {
+      "regional": {
+        "out": 5.94,
+        "in": 1.485
+      },
+      "global": {
+        "in": 1.35,
+        "out": 5.4
+      },
+      "datazone": {
+        "out": 5.94,
+        "in": 1.485
+      }
+    },
+    "DeepSeek-V3-0324": {
+      "global": {
+        "out": 4.56,
+        "in": 1.14
+      },
+      "datazone": {
+        "out": 5.0,
+        "in": 1.25
+      },
+      "regional": {
+        "in": 1.25,
+        "out": 5.0
+      }
+    },
+    "DeepSeek-V3.2": {
+      "datazone": {
+        "in": 0.64,
+        "out": 1.85
+      },
+      "global": {
+        "out": 1.68,
+        "in": 0.58
+      }
+    },
+    "DeepSeek-V3.2-Speciale": {
+      "datazone": {
+        "in": 0.64,
+        "out": 1.85
+      },
+      "global": {
+        "out": 1.68,
+        "in": 0.58
+      }
+    },
+    "DeepSeek-V4-Flash": {
+      "datazone": {
+        "cached": 0.031,
+        "out": 0.56,
+        "in": 0.21
+      },
+      "global": {
+        "cached": 0.028,
+        "out": 0.51,
+        "in": 0.19
+      }
+    },
+    "DeepSeek-V4-Flash-0731": {
+      "datazone": {
+        "cached": 0.015,
+        "in": 0.484,
+        "out": 1.452
+      },
+      "global": {
+        "in": 0.44,
+        "out": 1.32,
+        "cached": 0.014
+      }
+    },
+    "DeepSeek-V4-Pro": {
+      "datazone": {
+        "out": 3.83,
+        "cached": 0.16,
+        "in": 1.91
+      },
+      "global": {
+        "cached": 0.145,
+        "out": 3.48,
+        "in": 1.74
+      }
+    },
+    "Kimi-K2.5": {
+      "datazone": {
+        "cached": 0.11,
+        "out": 3.3,
+        "in": 0.66
+      },
+      "global": {
+        "in": 0.6,
+        "out": 3.0,
+        "cached": 0.1
+      }
+    },
+    "Kimi-K2.6": {
+      "global": {
+        "cached": 0.16,
+        "in": 0.95,
+        "out": 4.0
+      },
+      "datazone": {
+        "out": 5.0,
+        "in": 1.045,
+        "cached": 0.176
+      }
+    },
+    "Kimi-K2.7-Code": {
+      "datazone": {
+        "out": 5.0,
+        "in": 1.045,
+        "cached": 0.209
+      },
+      "global": {
+        "out": 4.0,
+        "cached": 0.19,
+        "in": 0.95
+      }
+    },
+    "Llama 3.3 70B Instruct": {
+      "global": {
+        "out": 0.71,
+        "in": 0.71
+      },
+      "regional": {
+        "out": 0.781,
+        "in": 0.781
+      },
+      "datazone": {
+        "in": 0.781,
+        "out": 0.781
+      }
+    },
+    "Llama-3.3-70B-Instruct": {
+      "global": {
+        "out": 0.71,
+        "in": 0.71
+      },
+      "regional": {
+        "out": 0.781,
+        "in": 0.781
+      },
+      "datazone": {
+        "in": 0.781,
+        "out": 0.781
+      }
+    },
+    "Llama-4-Maverick-17B-128E-Instruct-FP8": {
+      "regional": {
+        "out": 1.1,
+        "in": 0.275
+      },
+      "datazone": {
+        "in": 0.275,
+        "out": 1.1
+      },
+      "global": {
+        "in": 0.25,
+        "out": 1.0
+      }
+    },
+    "MAI-DS-R1": {
+      "datazone": {
+        "in": 1.485,
+        "out": 5.94
+      },
+      "regional": {
+        "in": 1.485,
+        "out": 5.94
+      },
+      "global": {
+        "out": 5.4,
+        "in": 1.35
+      }
+    },
+    "MAI-Thinking-1": {
+      "global": {
+        "cached": 0.2,
+        "out": 8.0,
+        "in": 2.0
+      }
+    },
+    "Mistral-Large-3": {
+      "datazone": {
+        "out": 1.65,
+        "in": 0.55
+      },
+      "global": {
+        "in": 0.5,
+        "out": 1.5
+      }
+    },
+    "Phi-4": {
+      "global": {
+        "out": 0.5,
+        "in": 0.125
+      }
+    },
+    "Phi-4-mini-instruct": {
+      "global": {
+        "in": 0.075,
+        "out": 0.3
+      }
+    },
+    "Phi-4-mini-reasoning": {
+      "global": {
+        "in": 0.075,
+        "out": 0.3
+      }
+    },
+    "Phi-4-multimodal-instruct": {
+      "global": {
+        "in": 0.08,
+        "out": 0.32
+      }
+    },
+    "Phi-4-reasoning": {
+      "global": {
+        "out": 0.5,
+        "in": 0.125
+      }
+    },
+    "codex-mini": {
+      "datazone": {
+        "cached": 0.413,
+        "in": 1.65,
+        "out": 6.6
+      },
+      "regional": {
+        "out": 6.6,
+        "cached": 0.413,
+        "in": 1.65
+      },
+      "global": {
+        "cached": 0.375,
+        "in": 1.5,
+        "out": 6.0
+      }
+    },
+    "cohere-command-a": {
+      "global": {
+        "out": 10.0,
+        "in": 2.5
+      },
+      "datazone": {
+        "out": 11.0,
+        "in": 2.75
+      }
+    },
+    "computer-use-preview": {
+      "datazone": {
+        "out": 13.2,
+        "in": 3.3
+      },
+      "global": {
+        "in": 3.0,
+        "out": 12.0
+      },
+      "regional": {
+        "in": 3.3,
+        "out": 13.2
+      }
+    },
+    "gpt-4.1": {
+      "global": {
+        "batch_out": 4.0,
+        "cached": 0.5,
+        "in": 2.0,
+        "batch_in": 1.0,
+        "out": 8.0
+      },
+      "datazone": {
+        "batch_in": 1.1,
+        "batch_out": 4.4,
+        "in": 2.2,
+        "cached": 0.55,
+        "out": 8.8
+      },
+      "regional": {
+        "out": 8.8,
+        "cached": 0.55,
+        "in": 2.2
+      }
+    },
+    "gpt-4.1-mini": {
+      "regional": {
+        "out": 1.76,
+        "in": 0.44,
+        "cached": 0.11
+      },
+      "datazone": {
+        "batch_in": 0.22,
+        "in": 0.44,
+        "cached": 0.11,
+        "batch_out": 0.88,
+        "out": 1.76
+      },
+      "global": {
+        "batch_out": 0.8,
+        "in": 0.4,
+        "batch_in": 0.2,
+        "out": 1.6,
+        "cached": 0.1
+      }
+    },
+    "gpt-4.1-nano": {
+      "datazone": {
+        "batch_out": 0.22,
+        "in": 0.11,
+        "out": 0.44,
+        "cached": 0.028,
+        "batch_in": 0.055
+      },
+      "global": {
+        "batch_in": 0.05,
+        "in": 0.1,
+        "batch_out": 0.2,
+        "out": 0.4,
+        "cached": 0.025
+      },
+      "regional": {
+        "out": 0.44,
+        "cached": 0.028,
+        "in": 0.11
+      }
+    },
+    "gpt-4o": {
+      "global": {
+        "batch_in": 1.25,
+        "out": 10.0,
+        "batch_out": 5.0,
+        "in": 2.5,
+        "cached": 1.25
+      },
+      "datazone": {
+        "batch_in": 1.375,
+        "in": 2.75,
+        "batch_out": 5.5,
+        "cached": 1.375,
+        "out": 11.0
+      },
+      "regional": {
+        "cached": 1.375,
+        "in": 2.75,
+        "out": 11.0
+      }
+    },
+    "gpt-4o-mini": {
+      "datazone": {
+        "batch_out": 0.33,
+        "cached": 0.083,
+        "out": 0.66,
+        "batch_in": 0.083,
+        "in": 0.165
+      },
+      "regional": {
+        "cached": 0.083,
+        "out": 0.66,
+        "in": 0.165
+      },
+      "global": {
+        "out": 0.6,
+        "batch_in": 0.075,
+        "batch_out": 0.3,
+        "in": 0.15,
+        "cached": 0.075
+      }
+    },
+    "gpt-5": {
+      "global": {
+        "in": 1.25,
+        "cached": 0.125,
+        "batch_in": 0.625,
+        "out": 10.0,
+        "batch_out": 5.0
+      },
+      "datazone": {
+        "in": 1.375,
+        "out": 11.0,
+        "batch_out": 5.5,
+        "cached": 0.1375,
+        "batch_in": 0.6875
+      }
+    },
+    "gpt-5-chat": {
+      "global": {
+        "cached": 0.125,
+        "out": 10.0,
+        "in": 1.25
+      }
+    },
+    "gpt-5-codex": {
+      "datazone": {
+        "in": 1.375,
+        "out": 11.0,
+        "cached": 0.138
+      },
+      "global": {
+        "cached": 0.125,
+        "in": 1.25,
+        "out": 10.0
+      }
+    },
+    "gpt-5-mini": {
+      "datazone": {
+        "batch_in": 0.1375,
+        "cached": 0.0275,
+        "in": 0.275,
+        "batch_out": 1.1,
+        "out": 2.2
+      },
+      "global": {
+        "batch_in": 0.125,
+        "out": 2.0,
+        "in": 0.25,
+        "cached": 0.025,
+        "batch_out": 1.0
+      }
+    },
+    "gpt-5-nano": {
+      "datazone": {
+        "batch_in": 0.0275,
+        "cached": 0.0055,
+        "batch_out": 0.22,
+        "out": 0.44,
+        "in": 0.055
+      },
+      "global": {
+        "batch_in": 0.025,
+        "cached": 0.005,
+        "batch_out": 0.2,
+        "in": 0.05,
+        "out": 0.4
+      }
+    },
+    "gpt-5-pro": {
+      "global": {
+        "out": 120.0,
+        "batch_out": 60.0,
+        "batch_in": 7.5,
+        "in": 15.0
+      },
+      "datazone": {
+        "batch_in": 8.25,
+        "in": 16.5,
+        "batch_out": 66.0,
+        "out": 132.0
+      }
+    },
+    "gpt-5.1": {
+      "datazone": {
+        "batch_out": 5.5,
+        "out": 11.0,
+        "in": 1.375,
+        "batch_in": 0.6875,
+        "cached": 0.1375
+      },
+      "global": {
+        "cached": 0.125,
+        "out": 10.0,
+        "batch_out": 5.0,
+        "batch_in": 0.625,
+        "in": 1.25
+      }
+    },
+    "gpt-5.1-chat": {
+      "global": {
+        "out": 10.0,
+        "in": 1.25,
+        "cached": 0.125
+      },
+      "datazone": {
+        "in": 1.375,
+        "out": 11.0,
+        "cached": 0.1375
+      }
+    },
+    "gpt-5.1-codex": {
+      "datazone": {
+        "out": 11.0,
+        "cached": 0.1375,
+        "in": 1.375
+      },
+      "global": {
+        "cached": 0.125,
+        "out": 10.0,
+        "in": 1.25
+      }
+    },
+    "gpt-5.1-codex-max": {
+      "global": {
+        "cached": 0.125,
+        "out": 10.0,
+        "in": 1.25
+      },
+      "datazone": {
+        "out": 11.0,
+        "cached": 0.1375,
+        "in": 1.375
+      }
+    },
+    "gpt-5.1-codex-mini": {
+      "global": {
+        "out": 2.0,
+        "in": 0.25,
+        "cached": 0.025
+      },
+      "datazone": {
+        "in": 0.275,
+        "cached": 0.0275,
+        "out": 2.2
+      }
+    },
+    "gpt-5.2": {
+      "global": {
+        "batch_in": 0.875,
+        "in": 1.75,
+        "out": 14.0,
+        "cached": 0.175,
+        "batch_out": 7.0
+      },
+      "datazone": {
+        "batch_out": 7.7,
+        "out": 15.4,
+        "in": 1.925,
+        "cached": 0.1925,
+        "batch_in": 0.9625
+      }
+    },
+    "gpt-5.2-chat": {
+      "datazone": {
+        "cached": 0.1925,
+        "out": 15.4,
+        "in": 1.925
+      },
+      "global": {
+        "cached": 0.175,
+        "in": 1.75,
+        "out": 14.0
+      }
+    },
+    "gpt-5.2-codex": {
+      "datazone": {
+        "out": 15.4,
+        "in": 1.925,
+        "cached": 0.1925
+      },
+      "global": {
+        "cached": 0.175,
+        "in": 1.75,
+        "out": 14.0
+      }
+    },
+    "gpt-5.3-chat": {
+      "datazone": {
+        "in": 1.925,
+        "cached": 0.1925,
+        "out": 15.4
+      },
+      "global": {
+        "in": 1.75,
+        "cached": 0.175,
+        "out": 14.0
+      }
+    },
+    "gpt-5.3-codex": {
+      "datazone": {
+        "in": 1.925,
+        "out": 15.4,
+        "cached": 0.1925
+      },
+      "global": {
+        "cached": 0.175,
+        "out": 14.0,
+        "in": 1.75
+      }
+    },
+    "gpt-5.4": {
+      "datazone": {
+        "out": 16.5,
+        "batch_out": 8.25,
+        "cached": 0.275,
+        "batch_in": 1.375,
+        "in": 2.75
+      },
+      "global": {
+        "out": 15.0,
+        "in": 2.5,
+        "batch_out": 7.5,
+        "batch_in": 1.25,
+        "cached": 0.25
+      }
+    },
+    "gpt-5.4-mini": {
+      "datazone": {
+        "cached": 0.0825,
+        "batch_out": 2.475,
+        "out": 4.95,
+        "batch_in": 0.4125,
+        "in": 0.825
+      },
+      "global": {
+        "out": 4.5,
+        "cached": 0.075,
+        "batch_in": 0.375,
+        "batch_out": 2.25,
+        "in": 0.75
+      }
+    },
+    "gpt-5.4-nano": {
+      "global": {
+        "batch_in": 0.1,
+        "out": 1.25,
+        "in": 0.2,
+        "cached": 0.02,
+        "batch_out": 0.625
+      },
+      "datazone": {
+        "batch_out": 0.6875,
+        "in": 0.22,
+        "out": 1.375,
+        "cached": 0.022,
+        "batch_in": 0.11
+      }
+    },
+    "gpt-5.4-pro": {
+      "datazone": {
+        "batch_in": 16.5,
+        "out": 198.0,
+        "in": 33.0,
+        "batch_out": 99.0
+      },
+      "global": {
+        "batch_out": 90.0,
+        "batch_in": 15.0,
+        "in": 30.0,
+        "out": 180.0
+      }
+    },
+    "gpt-5.5": {
+      "global": {
+        "in": 5.0,
+        "out": 30.0,
+        "batch_out": 15.0,
+        "cached": 0.5,
+        "batch_in": 2.5
+      },
+      "datazone": {
+        "in": 5.5,
+        "batch_out": 16.5,
+        "out": 33.0,
+        "batch_in": 2.75,
+        "cached": 0.55
+      }
+    },
+    "gpt-5.6-luna": {
+      "datazone": {
+        "in": 0.22,
+        "cached": 0.022,
+        "out": 1.32
+      },
+      "global": {
+        "out": 1.2,
+        "in": 0.2,
+        "cached": 0.02
+      }
+    },
+    "gpt-5.6-sol": {
+      "datazone": {
+        "in": 4.4,
+        "out": 22.0,
+        "cached": 0.44
+      },
+      "global": {
+        "out": 20.0,
+        "cached": 0.4,
+        "in": 4.0
+      }
+    },
+    "gpt-5.6-terra": {
+      "datazone": {
+        "in": 2.2,
+        "cached": 0.22,
+        "out": 13.2
+      },
+      "global": {
+        "in": 2.0,
+        "out": 12.0,
+        "cached": 0.2
+      }
+    },
+    "gpt-6-astra": {
+      "datazone": {
+        "cached": 1.1,
+        "out": 55.0,
+        "in": 11.0
+      },
+      "global": {
+        "in": 10.0,
+        "out": 50.0,
+        "cached": 1.0
+      }
+    },
+    "gpt-6-luna": {
+      "global": {
+        "out": 0.5,
+        "in": 0.1,
+        "cached": 0.01
+      },
+      "datazone": {
+        "out": 0.55,
+        "cached": 0.011,
+        "in": 0.11
+      }
+    },
+    "gpt-6-sol": {
+      "global": {
+        "out": 10.0,
+        "in": 2.0,
+        "cached": 0.2
+      },
+      "datazone": {
+        "cached": 0.22,
+        "in": 2.2,
+        "out": 11.0
+      }
+    },
+    "gpt-chat-latest": {
+      "global": {
+        "cached": 0.5,
+        "in": 5.0,
+        "out": 30.0
+      },
+      "datazone": {
+        "out": 33.0,
+        "cached": 0.55,
+        "in": 5.5
+      }
+    },
+    "grok-4-1-fast-non-reasoning": {
+      "global": {
+        "in": 0.2,
+        "out": 0.5
+      },
+      "datazone": {
+        "out": 0.55,
+        "in": 0.22
+      }
+    },
+    "grok-4-1-fast-reasoning": {
+      "global": {
+        "in": 0.2,
+        "out": 0.5
+      },
+      "datazone": {
+        "out": 0.55,
+        "in": 0.22
+      }
+    },
+    "grok-4-20-non-reasoning": {
+      "global": {
+        "in": 1.25,
+        "out": 2.5
+      },
+      "datazone": {
+        "out": 2.75,
+        "in": 1.375
+      }
+    },
+    "grok-4-20-reasoning": {
+      "global": {
+        "in": 1.25,
+        "out": 2.5
+      },
+      "datazone": {
+        "out": 2.75,
+        "in": 1.375
+      }
+    },
+    "grok-4.3": {
+      "global": {
+        "cached": 0.2,
+        "in": 1.25,
+        "out": 2.5
+      },
+      "datazone": {
+        "cached": 0.22,
+        "in": 1.375,
+        "out": 2.75
+      }
+    },
+    "grok-4.6": {
+      "datazone": {
+        "cached": 0.55,
+        "in": 2.2,
+        "out": 6.6
+      },
+      "global": {
+        "cached": 0.5,
+        "in": 2.0,
+        "out": 6.0
+      }
+    },
+    "mistral-medium-3-5": {
+      "datazone": {
+        "in": 1.65,
+        "out": 8.25
+      },
+      "global": {
+        "in": 1.5,
+        "out": 7.5
+      }
+    },
+    "o1": {
+      "regional": {
+        "cached": 8.25,
+        "out": 66.0,
+        "in": 16.5
+      },
+      "datazone": {
+        "batch_in": 8.25,
+        "in": 16.5,
+        "out": 66.0,
+        "batch_out": 33.0,
+        "cached": 8.25
+      },
+      "global": {
+        "batch_in": 7.5,
+        "batch_out": 30.0,
+        "in": 15.0,
+        "cached": 7.5,
+        "out": 60.0
+      }
+    },
+    "o3": {
+      "global": {
+        "batch_in": 1.0,
+        "in": 2.0,
+        "out": 8.0,
+        "batch_out": 4.0,
+        "cached": 0.5
+      },
+      "datazone": {
+        "batch_out": 4.4,
+        "batch_in": 1.1,
+        "in": 2.2,
+        "out": 8.8,
+        "cached": 0.55
+      },
+      "regional": {
+        "cached": 0.55,
+        "in": 2.2,
+        "out": 8.8
+      }
+    },
+    "o3-deep-research": {
+      "datazone": {
+        "cached": 2.75,
+        "in": 11.0,
+        "out": 44.0
+      },
+      "global": {
+        "out": 40.0,
+        "in": 10.0,
+        "cached": 2.5
+      }
+    },
+    "o3-mini": {
+      "regional": {
+        "cached": 0.605,
+        "in": 1.21,
+        "out": 4.84
+      },
+      "datazone": {
+        "batch_in": 0.605,
+        "cached": 0.605,
+        "out": 4.84,
+        "in": 1.21,
+        "batch_out": 2.42
+      },
+      "global": {
+        "out": 4.4,
+        "batch_out": 2.2,
+        "in": 1.1,
+        "batch_in": 0.55,
+        "cached": 0.55
+      }
+    },
+    "o3-pro": {
+      "global": {
+        "batch_in": 10.0,
+        "out": 80.0,
+        "in": 20.0,
+        "batch_out": 40.0
+      }
+    },
+    "o4-mini": {
+      "global": {
+        "out": 4.4,
+        "in": 1.1,
+        "batch_out": 2.2,
+        "batch_in": 0.55,
+        "cached": 0.275
+      },
+      "datazone": {
+        "batch_out": 2.42,
+        "batch_in": 0.605,
+        "out": 4.84,
+        "in": 1.21,
+        "cached": 0.303
+      },
+      "regional": {
+        "in": 1.21,
+        "cached": 0.303,
+        "out": 4.84
+      }
+    },
+    "text-embedding-3-large": {
+      "regional": {
+        "in": 0.143
+      },
+      "datazone": {
+        "in": 0.143
+      },
+      "global": {
+        "in": 0.13
+      }
+    },
+    "text-embedding-3-small": {
+      "global": {
+        "in": 0.02
+      },
+      "datazone": {
+        "in": 0.022
+      },
+      "regional": {
+        "in": 0.022
+      }
+    },
+    "text-embedding-ada-002": {
+      "global": {
+        "in": 0.1
+      },
+      "datazone": {
+        "in": 0.11
+      },
+      "regional": {
+        "in": 0.11
+      }
+    }
+  },
+  "ptu": {
+    "hourly": {
+      "global": 1.0,
+      "regional": 2.0,
+      "datazone": 1.1
+    },
+    "reservation": {
+      "month": {
+        "global": 260.0,
+        "datazone": 286.0,
+        "regional": 286.0
+      },
+      "year": {
+        "global": 2652.0,
+        "datazone": 2916.0,
+        "regional": 2916.0
+      }
+    }
+  },
+  "unmatched_meters": [
+    "Azure Deepseek Models: deepseek V3",
+    "Azure Deepseek Models: deepseek V3.1",
+    "Azure Grok Models: Grok 3",
+    "Azure Grok Models: Grok 3 Mini",
+    "Azure Grok Models: Grok 4",
+    "Azure Grok Models: Grok4 Fast",
+    "Azure Grok Models: grok Code Fast 1",
+    "Azure Kimi: kimi K2 Thinking",
+    "Azure Kimi: kimi Model 6",
+    "Azure Kimi: kimi Model 7",
+    "Azure OpenAI GPT5: GPT 5.2 pro",
+    "Azure OpenAI OSS Models: gpt oss 120B",
+    "Azure OpenAI: Az GPT4 Turbo 128K",
+    "Azure OpenAI: gpt 35 trb16K 125",
+    "Azure OpenAI: gpt 35 turbo 16K",
+    "Azure OpenAI: gpt 35 turbo 16k",
+    "Azure OpenAI: gpt 35 turbo 4k",
+    "Azure OpenAI: gpt 4 32K",
+    "Azure OpenAI: gpt 4 8K",
+    "Azure OpenAI: gpt 4 Turbo 128K",
+    "Azure OpenAI: gpt 4 turbo 128K",
+    "Azure OpenAI: gpt 4 turbo128K",
+    "Azure OpenAI: gpt 4.5",
+    "Azure OpenAI: o1 mini",
+    "Azure OpenAI: o1 preview",
+    "Azure OpenAI: o1 pro",
+    "Azure Phi Models: Phi 3 Medium 128K Instruct",
+    "Azure Phi Models: Phi 3 Medium 4K Instruct",
+    "Azure Phi Models: Phi 3 Mini 128K Instruct",
+    "Azure Phi Models: Phi 3 Mini 4K Instruct",
+    "Azure Phi Models: Phi 3 Small 128K Instruct",
+    "Azure Phi Models: Phi 3 Small 8K Instruct",
+    "Azure Phi Models: Phi 3.5 Mini 128K Instruct",
+    "Azure Phi Models: Phi 3.5 MoE Instruct",
+    "Azure Phi Models: Phi 3.5 V 128K Instruct",
+    "Azure Phi Models: Phi 4 reasoning plus",
+    "MAI Models: MAI Cyber 1 Flash",
+    "MAI Models: mai Code 1.1 Flash"
+  ]
+}

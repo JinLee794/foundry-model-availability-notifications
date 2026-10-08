@@ -71,6 +71,14 @@
 
 
 
+## :material-cash-multiple: Pricing
+
+<div class="price-card price-card--empty">
+    <p><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zm9 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6M7 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2z"/></svg><span>The router bills at the price of whichever model it picks for each request.</span></p>
+    <p class="price-card__foot">See <a href="https://azure.microsoft.com/pricing/details/ai-foundry-models/">Foundry Models pricing</a> for current rates.</p>
+</div>
+
+
 ## :material-target: Deployment Options
 
 <div class="deployment-lanes">
@@ -189,4 +197,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 13:29 UTC_
+_Last updated: 2026-10-08 14:01 UTC_
