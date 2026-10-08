@@ -2875,6 +2875,7 @@ hide:
 </div>
 
 <div class="bento">
+    {cards['map']}
     {cards['runway']}
     {cards['lifecycle']}
     <section class="bento__card bento--6" aria-labelledby="watchlist-title">
@@ -2885,9 +2886,8 @@ hide:
         <header class="bento__head"><div><h3 id="changes-title">Latest availability changes</h3><p>Regional SKU additions and removals</p></div><a class="bento__link" href="history/">History {icon("arrow")}</a></header>
         {changes_html}
     </section>
-    {cards['map']}
-    {cards['matrix']}
     {cards['momentum']}
+    {cards['matrix']}
     <nav class="bento__card bento--12 bento-links bento-links--row" aria-label="Guides">
         <a href="explorer/">{icon("grid", "fm-icon bento-links__icon")}<span><strong>Availability explorer</strong><small>Every model × region in one grid</small></span></a>
         <a href="ptu/">{icon("gauge", "fm-icon bento-links__icon")}<span><strong>PTU guide</strong><small>Size and buy provisioned throughput</small></span></a>
