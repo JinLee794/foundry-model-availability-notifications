@@ -111,7 +111,12 @@ cat region_diff.json
 - **Explorer** - Single-pane grid of every model × region × deployment type with live filters, required-region selection, shareable URLs, CSV export and an "Expand table" full-window view (Esc to exit)
 - **Models** - Model catalog: instant search plus provider-grouped cards showing region count, deployment options and lifecycle flags, with a "Compare availability" link into the Explorer per provider
 - **Deployment & PTU** - Deployment-type matrix (where inference runs × how you pay, plus Batch and Partner) linking each type into the Explorer, followed by a plain-language provisioned throughput guide based on Microsoft Learn, with a quick PTU estimator and links to the Foundry capacity calculator
-- **Lifecycle** - Diagrams of the GA and preview model lifecycle, what each badge means, and where every tracked version sits today
+- **Lifecycle** - A plain-language retirement explainer. It covers:
+  - The five stages and the GA timeline.
+  - A before/after view of what happens to a deployment on retirement day, for pay-as-you-go, PTU, Batch, preview and fine-tuned deployments.
+  - How each upgrade setting behaves.
+  - Whether the replacement stays in your region or data zone, with live region coverage for each named replacement.
+  - A countdown to retirement, an FAQ, and badge and API reference.
 - **Retirements** - Interactive retirement planner: horizon tabs (this month, next month, 3/6/12 months), a calendar with retirement chips and deprecated-window spans (or a mini-month overview for longer horizons), a Gantt-style timeline view, search and category filters, and a plain-language agenda with replacements; followed by the full schedule table
 - **Change History** - Timeline of all availability changes
 - **Individual Model Pages** - Per-version lifecycle tracks, next retirement, and a filterable region × SKU matrix

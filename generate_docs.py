@@ -1436,6 +1436,15 @@ ICONS = {
     "calendar": "M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2zM5 22h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2M19 8v12H5V8z",
     "search": "M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5",
     "arrow": "M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z",
+    "renew": "M12 6v3l4-4-4-4v3a8 8 0 0 0-8 8c0 1.57.46 3.03 1.24 4.26L6.7 14.8A5.9 5.9 0 0 1 6 12a6 6 0 0 1 6-6m6.76 1.74L17.3 9.2c.44.84.7 1.8.7 2.8a6 6 0 0 1-6 6v-3l-4 4 4 4v-3a8 8 0 0 0 8-8c0-1.57-.46-3.03-1.24-4.26",
+    "hand": "M21 7a2.5 2.5 0 0 0-2.5-2.5c-.17 0-.34 0-.5.05V4a2.5 2.5 0 0 0-3.17-2.41A2.51 2.51 0 0 0 12.5 0c-1.23 0-2.25.89-2.46 2.06C9.87 2 9.69 2 9.5 2A2.5 2.5 0 0 0 7 4.5v5.89c-.34-.31-.76-.54-1.22-.66L5 9.5c-.82-.21-1.69.11-2.18.85-.38.57-.4 1.31-.15 1.95l2.56 6.43A8.36 8.36 0 0 0 13 24c4.42 0 8-3.58 8-8zm-2 9c0 3.31-2.69 6-6 6a6.36 6.36 0 0 1-5.91-4L4.5 11.45l.5.14c.5.12.85.46 1 .91L7 15h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V12h2V4c0-.28.22-.5.5-.5s.5.22.5.5v8h2V7c0-.28.22-.5.5-.5s.5.22.5.5z",
+    "bell": "M10 21h4a2 2 0 0 1-2 2 2 2 0 0 1-2-2m11-2v1H3v-1l2-2v-6c0-3.1 2.03-5.83 5-6.71V4a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.29c2.97.88 5 3.61 5 6.71v6zm-4-8a5 5 0 0 0-5-5 5 5 0 0 0-5 5v7h10zm2.75-7.81-1.42 1.42A8.98 8.98 0 0 1 21 11h2c0-2.93-1.16-5.75-3.25-7.81M1 11h2c0-2.4.96-4.7 2.67-6.39L4.25 3.19A10.96 10.96 0 0 0 1 11",
+    "check": "M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z",
+    "cross": "M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2m2.59 6L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41z",
+    "pin": "M12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5A2.5 2.5 0 0 1 9.5 9 2.5 2.5 0 0 1 12 6.5M12 2a7 7 0 0 1 7 7c0 5.25-7 13-7 13S5 14.25 5 9a7 7 0 0 1 7-7m0 2a5 5 0 0 0-5 5c0 1 0 3 5 9.71C17 12 17 10 17 9a5 5 0 0 0-5-5",
+    "flask": "M5 19a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1c0-.21-.07-.41-.18-.57L13 8.35V4h-2v4.35L5.18 18.43c-.11.16-.18.36-.18.57m1 3a3 3 0 0 1-3-3c0-.6.18-1.16.5-1.63L9 7.81V6a1 1 0 0 1-1-1V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1v1.81l5.5 9.56c.32.47.5 1.03.5 1.63a3 3 0 0 1-3 3zm7-6 1.34-1.34L16.27 18H7.73l2.66-4.61zm-.5-4a.5.5 0 0 1 .5.5.5.5 0 0 1-.5.5.5.5 0 0 1-.5-.5.5.5 0 0 1 .5-.5",
+    "swap": "m21 9-4-4v3h-7v2h7v3M7 11l-4 4 4 4v-3h7v-2H7z",
+    "shield": "M21 11c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5l9-4 9 4zm-9 10c3.75-1 7-5.46 7-9.78V6.3l-7-3.12L5 6.3v4.92C5 15.54 8.25 20 12 21M11 7h2v6h-2zm0 8h2v2h-2z",
 }
 
 
@@ -1809,7 +1818,7 @@ def model_finder_widget(data_src: str, root: str, placeholder: str = "Search mod
 </div>"""
 
 
-def render_ga_timeline_diagram(compact: bool = False) -> str:
+def render_ga_timeline_diagram(compact: bool = False, zoom: bool = True) -> str:
     """Proportional diagram of the GA model lifecycle with a zoom on the final 90 days."""
     ticks = "".join(f'<span style="--x:{month / 18 * 100:.2f}%">{month}</span>' for month in range(0, 19, 3))
     zoom = f"""
@@ -1826,19 +1835,19 @@ def render_ga_timeline_diagram(compact: bool = False) -> str:
             <li class="lc-mark" style="--x:66.67%"><b>−30 d</b><span>PTU migration window</span></li>
             <li class="lc-mark lc-mark--end lc-mark--danger" style="--x:100%"><b>Retire</b><span>Requests fail</span></li>
         </ol>
-    </div>"""
+    </div>""" if zoom else ""
     return f"""<figure class="lc-diagram{' lc-diagram--compact' if compact else ''}">
-    <figcaption><strong>GA model</strong> · about 18 months from launch to retirement</figcaption>
+    <figcaption><strong>A GA model's life</strong> · about 18 months from launch to switch-off</figcaption>
     <div class="lc-track">
-        <div class="lc-phase lc-phase--ga" style="--w:66.67%"><span>Generally available · all customers</span></div>
-        <div class="lc-phase lc-phase--deprecated" style="--w:33.33%"><span>Deprecated · existing customers</span></div>
-        <div class="lc-zoom-bracket" style="--x:83.33%; --w:16.67%"></div>
+        <div class="lc-phase lc-phase--ga" style="--w:66.67%"><span>Generally available · anyone can deploy</span></div>
+        <div class="lc-phase lc-phase--deprecated" style="--w:33.33%"><span>Deprecated · existing users only</span></div>
+        {'<div class="lc-zoom-bracket" style="--x:83.33%; --w:16.67%"></div>' if zoom else ""}
     </div>
     <div class="lc-scale" aria-hidden="true">{ticks}<em>months</em></div>
     <ol class="lc-marks">
-        <li class="lc-mark lc-mark--start" style="--x:0%"><b>Launch</b><span>Retirement date published</span></li>
-        <li class="lc-mark" style="--x:66.67%"><b>12 mo · Deprecated</b><span>New customers blocked</span></li>
-        <li class="lc-mark lc-mark--end lc-mark--danger" style="--x:100%"><b>18 mo · Retired</b><span>410 / errors</span></li>
+        <li class="lc-mark lc-mark--start" style="--x:0%"><b>Launch</b><span>End date published on day one</span></li>
+        <li class="lc-mark" style="--x:66.67%"><b>12 mo · Deprecated</b><span>Closed to new users</span></li>
+        <li class="lc-mark lc-mark--end lc-mark--danger" style="--x:100%"><b>18 mo · Retired</b><span>Switched off · 410 Gone</span></li>
     </ol>{zoom}
 </figure>"""
 
@@ -1861,11 +1870,11 @@ def render_preview_timeline_diagram() -> str:
 def render_stage_flow(stage_counts: Dict[str, int] = None) -> str:
     stage_counts = stage_counts or {}
     stages = [
-        ("preview", "Preview", "Evaluation only", "No SLA · can change or be force-upgraded"),
-        ("ga", "Generally available", "All customers", "Production-ready · retirement date set at launch"),
-        ("legacy", "Legacy", "All customers", "Newer model exists · start evaluating"),
-        ("deprecated", "Deprecated", "Existing customers", "No new customers · migrate now"),
-        ("retired", "Retired", "Nobody", "Removed · inference returns errors"),
+        ("preview", "Preview", "Try it out", "May change or disappear · not for production"),
+        ("ga", "Generally available", "Build on it", "Stable · end date known from day one"),
+        ("legacy", "Legacy", "Something better exists", "Still works · start looking at newer models"),
+        ("deprecated", "Deprecated", "Existing users only", "Nobody new can start · plan your move"),
+        ("retired", "Retired", "Switched off", "Every request fails with 410 Gone"),
     ]
     nodes = []
     for key, title, access, detail in stages:
@@ -2162,82 +2171,438 @@ hide:
 """
 
 
-def generate_lifecycle_page(lifecycles: Dict[str, Dict]) -> str:
-    """Standalone guide explaining how Foundry model lifecycles work."""
+LCX_DEPLOYMENT_ROWS: List[Tuple[str, str, bool]] = [
+    ("gs", "Global Standard", True),
+    ("dz", "Data Zone Standard", True),
+    ("rs", "Regional Standard", True),
+    ("gp", "Global Provisioned", False),
+    ("dp", "Data Zone Provisioned", False),
+    ("rp", "Regional Provisioned", False),
+    ("bt", "Batch", False),
+]
+
+
+def build_replacement_coverage(retirement_data: Dict, availability_bits: Dict[str, Dict[str, int]], today: datetime) -> Tuple[List[Dict], int]:
+    """Upcoming retirements that name a replacement, with per-deployment-type region overlap.
+
+    Returns the groups plus the number of models retiring later without a named replacement yet.
+    """
+    by_lower = {name.lower(): name for name in availability_bits}
+    groups: Dict[Tuple[str, str], Dict] = {}
+    unnamed: Set[str] = set()
+    for category, entries in retirement_data.get("models", {}).items():
+        if category == "fine_tuned":
+            continue
+        for entry in entries:
+            retire, estimate = parse_lifecycle_date(entry.get("retirement_date"))
+            if not retire or retire.date() < today.date():
+                continue
+            model = entry.get("model", "")
+            replacement = (entry.get("replacement") or "").strip()
+            if not replacement:
+                unnamed.add(model.lower())
+                continue
+            old, new = by_lower.get(model.lower()), by_lower.get(replacement.lower())
+            if not old or not new:
+                continue
+            group = groups.setdefault((old, new), {"old": old, "new": new, "date": retire, "estimate": estimate, "versions": []})
+            if retire < group["date"]:
+                group["date"], group["estimate"] = retire, estimate
+            version = str(entry.get("version") or "")
+            if version and version not in group["versions"]:
+                group["versions"].append(version)
+
+    results = []
+    for group in sorted(groups.values(), key=lambda g: (g["date"], g["old"])):
+        rows = []
+        for key, label, auto in LCX_DEPLOYMENT_ROWS:
+            bit = DEPLOYMENT_TYPE_BY_KEY[key]["bit"]
+            old_regions = {region for region, mask in availability_bits[group["old"]].items() if mask & bit}
+            if not old_regions:
+                continue
+            new_regions = {region for region, mask in availability_bits[group["new"]].items() if mask & bit}
+            rows.append({
+                "label": label,
+                "auto": auto,
+                "total": len(old_regions),
+                "covered": len(old_regions & new_regions),
+                "gaps": sorted(old_regions - new_regions),
+            })
+        group["rows"] = rows
+        results.append(group)
+    named = {g["old"].lower() for g in results}
+    return results, len(unnamed - named)
+
+
+def lcx_region_label(region: str) -> str:
+    if region.islower() and region.startswith("usgov"):
+        return "US Gov " + region[5:].title()
+    return region
+
+
+def render_replacement_coverage(groups: List[Dict], unnamed: int, today: datetime) -> str:
+    later = (
+        f'<p class="lcx-cov-foot">{pluralize(unnamed, "other model")} {"retires" if unnamed == 1 else "retire"} later without a named replacement yet — '
+        'Microsoft names one 90–120 days before the date. Track them in the <a href="../retirements/">retirement planner</a>.</p>'
+        if unnamed else ""
+    )
+    if not groups:
+        return f'<p class="lcx-empty">No upcoming retirement names a replacement yet.</p>{later}'
+
+    cards = []
+    for group in groups:
+        days = (group["date"].date() - today.date()).days
+        tone = "danger" if days <= 30 else "warning" if days <= 90 else "info"
+        when = ("No earlier than " if group["estimate"] else "") + format_short_date(group["date"])
+        versions = ", ".join(group["versions"])
+        rows = []
+        for row in group["rows"]:
+            pct = row["covered"] / row["total"] * 100
+            mode = "auto" if row["auto"] else "manual"
+            if not row["gaps"]:
+                note = f'<span class="lcx-cov__note lcx-cov__note--ok">{icon("check")} Already offered in all {pluralize(row["total"], "region")}</span>'
+            else:
+                gaps = [lcx_region_label(r) for r in row["gaps"]]
+                shown = ", ".join(gaps[:3])
+                more = f" +{len(gaps) - 3} more" if len(gaps) > 3 else ""
+                lead = "Auto-upgrade adds it in" if row["auto"] else "Not offered yet in"
+                note = (
+                    f'<span class="lcx-cov__note lcx-cov__note--{mode}" title="{html_escape(", ".join(gaps))}">'
+                    f'{icon("renew" if row["auto"] else "hand")} {lead} {html_escape(shown)}{more}</span>'
+                )
+            rows.append(f"""<li class="lcx-cov__row lcx-cov__row--{mode}">
+            <span class="lcx-cov__type">{row["label"]}<small>{"Upgraded for you" if row["auto"] else "You migrate"}</small></span>
+            <span class="lcx-cov__bar" role="img" aria-label="Replacement offered in {row["covered"]} of {row["total"]} regions"><i style="--p:{pct:.1f}%"></i></span>
+            <span class="lcx-cov__num"><b>{row["covered"]}</b>/{row["total"]}</span>
+            {note}
+        </li>""")
+        old, new = group["old"], group["new"]
+        cards.append(f"""<article class="lcx-cov lcx-cov--{tone}">
+        <header class="lcx-cov__head">
+            <div class="lcx-cov__pair">
+                <a href="../models/{slugify(old)}/">{provider_logo(model_family(old), "sm")}<span>{html_escape(old)}</span></a>
+                {icon("arrow", "fm-icon lcx-cov__arrow")}
+                <a href="../models/{slugify(new)}/">{provider_logo(model_family(new), "sm")}<span>{html_escape(new)}</span></a>
+            </div>
+            <span class="lc-badge lc-badge--{tone}">Retires {format_countdown(days)}</span>
+        </header>
+        <p class="lcx-cov__meta">{when}{f" · version {html_escape(versions)}" if versions else ""}</p>
+        <ul class="lcx-cov__rows">
+        {"".join(rows)}
+        </ul>
+    </article>""")
+    return f"""<div class="lcx-cov-grid">
+    {"".join(cards)}
+</div>
+{later}"""
+
+
+def lcx_deployment_card(name: str, model: str, version: str, dtype: str, location: str, state: str = "ok",
+                        state_label: str = "Running", extra: str = "", changed: Tuple[str, ...] = ()) -> str:
+    """A mock Foundry deployment tile used in the retirement-day storyboards."""
+    def field(key: str, label: str, value: str) -> str:
+        cls = " is-changed" if key in changed else (" is-same" if changed else "")
+        return f'<div class="lcx-dep__field{cls}"><dt>{label}</dt><dd>{value}</dd></div>'
+    model_html = f'{provider_logo(model_family(model), "xs")}<span>{html_escape(model)}</span>'
+    if version:
+        model_html += f' <small>{html_escape(version)}</small>'
+    fields = [
+        field("model", "Model", model_html),
+        field("type", "Type", dtype),
+        field("location", "Location", location),
+    ]
+    if extra:
+        fields.append(field("extra", extra.split(":", 1)[0], extra.split(":", 1)[1].strip()))
+    fields.append(field("endpoint", "Endpoint", f'<code>/deployments/{name}</code>'))
+    return f"""<div class="lcx-dep lcx-dep--{state}">
+        <div class="lcx-dep__top"><strong>{name}</strong><span class="lcx-dep__state">{state_label}</span></div>
+        <dl>{"".join(fields)}</dl>
+    </div>"""
+
+
+def render_upgrade_policy_diagram(old: str, new: str) -> str:
+    """Three lanes showing when each versionUpgradeOption switches the model."""
+    lanes = [
+        ("OnceNewDefaultVersionAvailable", "Early", "Switches within two weeks of a new default version.",
+         [("old", 0, 38, old), ("new", 38, 100, new)]),
+        ("OnceCurrentVersionExpired", "On the date", "Keeps the old model until retirement day, then switches.",
+         [("old", 0, 76, old), ("new", 76, 100, new)]),
+        ("NoAutoUpgrade", "Never", "Keeps the old model — and stops working on retirement day.",
+         [("old", 0, 76, old), ("fail", 76, 100, "410 Gone")]),
+    ]
+    rows = []
+    for code, short, desc, segments in lanes:
+        segs = "".join(
+            f'<i class="lcx-seg lcx-seg--{kind}" style="left:{a}%;width:{b - a}%"><span>{html_escape(text)}</span></i>'
+            for kind, a, b, text in segments
+        )
+        rows.append(f"""<div class="lcx-policy__row">
+        <div class="lcx-policy__label"><strong>{short}</strong><code>{code}</code><small>{desc}</small></div>
+        <div class="lcx-policy__track">{segs}</div>
+    </div>""")
+    return f"""<figure class="lcx-policy" aria-label="How each upgrade setting behaves">
+    <div class="lcx-policy__axis"><span style="--x:30%">New default version set</span><span style="--x:76%">Retirement date</span></div>
+    {"".join(rows)}
+</figure>"""
+
+
+def render_retirement_day_tabs(old: str, new: str, version: str) -> str:
+    """CSS-only tabs: what happens to each kind of deployment when its model retires."""
+    paygo = f"""<div class="lcx-story">
+        <div class="lcx-frame"><span class="lcx-frame__when">Before</span>
+            {lcx_deployment_card("chat-prod", old, version, "Data Zone Standard", "East US 2")}
+        </div>
+        <div class="lcx-event lcx-event--auto">{icon("renew")}<strong>Retirement day</strong><span>Microsoft swaps the model behind your deployment, region by region</span></div>
+        <div class="lcx-frame"><span class="lcx-frame__when">After</span>
+            {lcx_deployment_card("chat-prod", new, "", "Data Zone Standard", "East US 2", "ok", "Running · upgraded", changed=("model",))}
+        </div>
+    </div>
+    <div class="lcx-diff">
+        <div class="lcx-diff__col lcx-diff__col--same">
+            <h4>{icon("check")} Stays the same</h4>
+            <ul>
+                <li><b>Deployment name and endpoint</b> — your app calls the same URL</li>
+                <li><b>Region or data zone</b> — requests are processed where they were before</li>
+                <li><b>Deployment type and quota</b> — your tokens-per-minute limit carries over</li>
+            </ul>
+        </div>
+        <div class="lcx-diff__col lcx-diff__col--change">
+            <h4>{icon("flask")} Can change — test first</h4>
+            <ul>
+                <li><b>The answers</b> — it's a different model, so prompts can behave differently</li>
+                <li><b>Price</b> — tokens are billed at the new model's rate</li>
+                <li><b>API features</b> — check that the parameters and tools you use are supported</li>
+                <li><b>Speed and token usage</b> per request</li>
+            </ul>
+        </div>
+    </div>
+    <h4 class="lcx-subhead">Your deployment's upgrade setting decides when the swap happens</h4>
+    {render_upgrade_policy_diagram(old, new)}
+    <p class="lcx-note">Find the setting under the deployment's details in the Foundry portal, or read <code>versionUpgradeOption</code> from the REST API, PowerShell or <code>az cognitiveservices account deployment show</code>. You can change it with REST, PowerShell or the portal — not with the Azure CLI. Priority Processing deployments follow the same rules.</p>"""
+
+    ptu = f"""<div class="lcx-story">
+        <div class="lcx-frame"><span class="lcx-frame__when">Before</span>
+            {lcx_deployment_card("ptu-prod", old, version, "Data Zone Provisioned", "Sweden Central", extra="Capacity: 100 PTU")}
+        </div>
+        <div class="lcx-event lcx-event--manual">{icon("hand")}<strong>Retirement day</strong><span>Nothing is upgraded for you — provisioned deployments are never auto-upgraded</span></div>
+        <div class="lcx-frame lcx-frame--split"><span class="lcx-frame__when">After</span>
+            <div class="lcx-outcome lcx-outcome--fail"><span>{icon("cross")} If you didn't migrate</span>
+                {lcx_deployment_card("ptu-prod", old, version, "Data Zone Provisioned", "Sweden Central", "fail", "410 Gone")}
+            </div>
+            <div class="lcx-outcome lcx-outcome--ok"><span>{icon("check")} If you migrated</span>
+                {lcx_deployment_card("ptu-prod", new, "", "Data Zone Provisioned", "Sweden Central", "ok", "Running", changed=("model",))}
+            </div>
+        </div>
+    </div>
+    <div class="lcx-ways">
+        <div class="lcx-way"><h4>{icon("renew")} In place</h4><p>Change the model version on the existing deployment. Azure moves traffic over a <b>20–30 minute</b> window with no downtime.</p></div>
+        <div class="lcx-way"><h4>{icon("swap")} Side by side</h4><p>Create a new deployment on the replacement, test it, shift traffic, then delete the old one. Safest when you want a rollback path.</p></div>
+    </div>
+    <ul class="lcx-points">
+        <li>{icon("calendar")} The replacement becomes available in the provisioned regions where the old model is retiring about <b>30 days</b> before retirement.</li>
+        <li>{icon("gauge")} PTU quota isn't tied to one model, but each model delivers different throughput per PTU — re-size with the <a href="../ptu/">PTU guide</a> and make sure you have quota for the target model.</li>
+    </ul>"""
+
+    batch = f"""<div class="lcx-story">
+        <div class="lcx-frame"><span class="lcx-frame__when">Before</span>
+            {lcx_deployment_card("batch-nightly", old, version, "Global Batch", "East US")}
+        </div>
+        <div class="lcx-event lcx-event--manual">{icon("hand")}<strong>Retirement day</strong><span>Batch deployments aren't upgraded — new jobs on the old model fail</span></div>
+        <div class="lcx-frame"><span class="lcx-frame__when">What you do</span>
+            <ol class="lcx-steps">
+                <li><b>Deploy</b> the replacement as a new batch deployment</li>
+                <li><b>Resubmit</b> your jobs against the new deployment</li>
+                <li><b>Delete</b> the old deployment once jobs succeed</li>
+            </ol>
+        </div>
+    </div>"""
+
+    preview = f"""{render_preview_timeline_diagram()}
+    <div class="lcx-ways lcx-ways--3">
+        <div class="lcx-way"><h4>{icon("renew")} Upgraded to a newer preview</h4><p>Your deployment is moved to the next preview version. This can repeat until a GA version exists.</p></div>
+        <div class="lcx-way"><h4>{icon("check")} Upgraded to GA</h4><p>When the GA model launches, preview deployments are moved to it and follow the GA lifecycle from then on.</p></div>
+        <div class="lcx-way lcx-way--fail"><h4>{icon("cross")} Removed (rare)</h4><p>If there's no replacement, the model is switched off and requests return <code>410 Gone</code>.</p></div>
+    </div>
+    <p class="lcx-note">Every outcome comes with at least <b>30 days</b> notice. There's no option to stay on a retiring preview model, so keep previews out of critical production.</p>"""
+
+    tuned = f"""<ol class="lcx-phases">
+        <li class="lcx-phase"><span class="lcx-phase__n">1</span><div><strong>Training retires</strong><p>You can no longer start new fine-tuning jobs on the base model. Models you already trained can still be deployed. This happens no earlier than the base model's retirement.</p></div></li>
+        <li class="lcx-phase lcx-phase--end"><span class="lcx-phase__n">2</span><div><strong>Deployment retires</strong><p>Inference and new deployments of the fine-tuned model return errors. Re-train on a newer base model before this date.</p></div></li>
+    </ol>
+    <p class="lcx-note">Fine-tuned models have their own dates — see the fine-tuned section of the <a href="../retirements/">retirement schedule</a>.</p>"""
+
+    tabs = [
+        ("paygo", "Pay-as-you-go", "Global · Data Zone · Standard", paygo),
+        ("ptu", "Provisioned (PTU)", "Global · Data Zone · Regional", ptu),
+        ("batch", "Batch", "Global · Data Zone", batch),
+        ("preview", "Preview models", "Any deployment type", preview),
+        ("tuned", "Fine-tuned", "Custom models", tuned),
+    ]
+    inputs = "".join(
+        f'<input type="radio" name="lcx-tab" id="lcx-tab-{key}" class="lcx-tabs__input"{" checked" if i == 0 else ""}>'
+        f'<label for="lcx-tab-{key}" class="lcx-tabs__tab lcx-tabs__tab--{key}"><strong>{title}</strong><small>{sub}</small></label>'
+        for i, (key, title, sub, _) in enumerate(tabs)
+    )
+    panels = "".join(f'<section class="lcx-panel lcx-panel--{key}">{body}</section>' for key, _, _, body in tabs)
+    return f"""<div class="lcx-tabs">
+    {inputs}
+    <div class="lcx-panels">{panels}</div>
+</div>"""
+
+
+def render_lifecycle_countdown() -> str:
+    steps = [
+        ("−120 to −90 days", "Replacement named", "Microsoft picks the recommended replacement and lists it in the retirement schedule.",
+         "Start testing newer models — you don't have to wait for this.", "info"),
+        ("≈ −90 days", "Testable in Global Standard", "The replacement can be deployed in Global Standard.",
+         "Run your own prompts and evaluations against it.", "info"),
+        ("≥ −60 days", "You get told", "Email to subscription owners and an Azure Service Health advisory.",
+         "Set a Service Health alert so the right people see it.", "warning"),
+        ("≈ −30 days", "PTU window opens", "The replacement appears in the provisioned regions where the old model retires.",
+         "Migrate provisioned deployments in place or side by side.", "warning"),
+        ("Day 0", "Retirement", "Pay-as-you-go deployments are upgraded region by region. Anything not moved returns 410 Gone.",
+         "Dates can't be extended.", "danger"),
+    ]
+    items = "".join(
+        f"""<li class="lcx-count__step lcx-count__step--{tone}">
+        <span class="lcx-count__when">{when}</span>
+        <strong>{title}</strong>
+        <p>{what}</p>
+        <p class="lcx-count__you"><b>You:</b> {you}</p>
+    </li>"""
+        for when, title, what, you, tone in steps
+    )
+    return f'<ol class="lcx-count" aria-label="Countdown to a GA model retirement">{items}</ol>'
+
+
+def generate_lifecycle_page(lifecycles: Dict[str, Dict], retirement_data: Dict, availability_bits: Dict[str, Dict[str, int]], today: datetime) -> str:
+    """Plain-language guide to how Foundry model lifecycles and retirements work."""
     counts = lifecycle_stage_counts(lifecycles)
+    coverage, unnamed = build_replacement_coverage(retirement_data, availability_bits, today)
+    example = next((g for g in coverage if any(r["auto"] for r in g["rows"])), None)
+    old, new = (example["old"], example["new"]) if example else ("gpt-4.1", "gpt-5")
+    version = example["versions"][0] if example and example["versions"] else ""
+
+    tldr = [
+        ("calendar", "Every model has an end date",
+         "GA models get about <b>18 months</b> — 12 for Anthropic, DeepSeek, Fireworks and Mistral AI. The date is published on day one and can't be extended."),
+        ("renew", "Pay-as-you-go upgrades itself",
+         "Global, Data Zone and regional Standard deployments are switched to the replacement <b>in place</b>: same name, endpoint, location and quota."),
+        ("hand", "PTU and Batch don't",
+         "Provisioned and Batch deployments must be moved by you. If they aren't, every request fails with <code>410 Gone</code>."),
+    ]
+    tldr_html = "".join(
+        f'<div class="lcx-tldr__card lcx-tldr__card--{i}">{icon(ic)}<div><strong>{title}</strong><p>{body}</p></div></div>'
+        for i, (ic, title, body) in enumerate(tldr, 1)
+    )
+    where = [
+        ("globe", "Global Standard", "Stays global — requests can be processed in any Azure region, before and after the upgrade."),
+        ("shield", "Data Zone Standard", "Stays in your data zone (for example the EU or the US). Same deployment type, so the same boundary applies."),
+        ("pin", "Regional Standard", "Stays in the same region. If the replacement isn't offered there yet, the upgrade adds it."),
+    ]
+    where_html = "".join(
+        f'<div class="lcx-where__card">{icon(ic)}<strong>{title}</strong><p>{body}</p></div>' for ic, title, body in where
+    )
+
     return f"""# Model Lifecycle
 
-<p class="page-lede">Every Foundry model version moves through the same stages. Knowing where a model sits tells you whether to build on it, plan a migration, or move now.</p>
+<p class="page-lede">Every model in Foundry eventually retires. This page explains, in plain terms, what that means for your deployments — what happens on the day, what stays the same, and what you need to do.</p>
 
-## Stages
+<div class="lcx-tldr">{tldr_html}</div>
+
+## The five stages
 
 {render_stage_flow(counts)}
 
-<p class="diagram-note">Counts group tracked models by their most urgent active version; Deprecated also includes versions with a retirement due. Legacy has no published date, so it is not counted.</p>
+<p class="diagram-note">Counts group tracked models by their most urgent active version; Deprecated also includes versions with a retirement due. Legacy is optional and has no published date, so it isn't counted.</p>
 
-## Retirement timelines
+{render_ga_timeline_diagram(zoom=False)}
 
-{render_ga_timeline_diagram()}
+## What happens on retirement day
 
-{render_preview_timeline_diagram()}
+<p class="lcx-intro">It depends on <b>how you deployed</b> the model. Pick your deployment type:</p>
 
-## When to act
+{render_retirement_day_tabs(old, new, version)}
 
-<div class="act-grid">
-    <div class="act-card act-card--watch"><span>1</span><strong>Start watching</strong><p>The model shows as Deprecated, Legacy, or has a scheduled retirement on its model page.</p></div>
-    <div class="act-card act-card--test"><span>2</span><strong>Start testing</strong><p>A replacement is named — usually 90–120 days before retirement. Evaluate it in Global Standard.</p></div>
-    <div class="act-card act-card--notify"><span>3</span><strong>Expect notices</strong><p>GA retirements get at least 60 days active notice; preview models at least 30 days.</p></div>
-    <div class="act-card act-card--manual"><span>4</span><strong>Migrate PTU yourself</strong><p>Provisioned deployments never auto-upgrade. Plan capacity in the replacement before the 30-day window.</p></div>
+## Will the replacement run in my region?
+
+<p class="lcx-intro"><b>For pay-as-you-go deployments, yes.</b> Upgrades keep the same deployment type in the same place — and if the replacement isn't offered there yet, Microsoft adds it as part of the upgrade.</p>
+
+<div class="lcx-where">{where_html}</div>
+
+<div class="lcx-callout">{icon("flask")}<p><b>Where location matters is testing early.</b> New models arrive in Global Standard first, then Global Provisioned, then Data Zone, and regional deployments last. If your data must stay in a region or data zone, test with non-sensitive data in Global Standard — or wait until the replacement is offered where you run. <b>Provisioned</b> customers need the replacement to be offered in their region before they can migrate.</p></div>
+
+### Is the replacement already where the old model runs?
+
+<p class="lcx-intro">For each upcoming retirement with a named replacement: of the regions where the retiring model runs today, how many already offer the replacement with the <b>same deployment type</b>.</p>
+
+{render_replacement_coverage(coverage, unnamed, today)}
+
+<p class="diagram-note">From the latest availability snapshot. Regions are compared by model name, not by individual version. Gaps in pay-as-you-go rows are filled by the upgrade itself; gaps in provisioned or batch rows mean you can't migrate there yet.</p>
+
+## Countdown to a retirement
+
+{render_lifecycle_countdown()}
+
+<div class="lcx-notify">
+    <div>{icon("bell")}<strong>Email</strong><p>Sent automatically to subscription owners with active deployments.</p></div>
+    <div>{icon("pulse")}<strong>Azure Service Health</strong><p>Health advisories under <em>Azure OpenAI Service</em> — create an alert rule for email, SMS or a webhook.</p></div>
+    <div>{icon("table")}<strong>Models API</strong><p>Check <code>lifecycleStatus</code> and <code>deprecation</code> dates for any model, any time.</p></div>
 </div>
 
-## Upgrade behavior by deployment type
+## Common questions
 
-| Deployment type | At retirement | What you should do |
-|---|---|---|
-| <span class="sku-badge sku-global">Global</span> Global Standard / Batch | Auto-upgraded to the replacement when an upgrade policy allows it | Pin a version and test the replacement before the date |
-| <span class="sku-badge sku-datazone">Datazone</span> Data Zone Standard | Auto-upgraded within the data zone | Confirm the replacement is available in your data zone |
-| <span class="sku-badge sku-standard">Standard</span> Regional Standard | Auto-upgraded when available in the region | Check regional availability of the replacement |
-| <span class="sku-badge sku-provisioned">Provisioned</span> Provisioned (PTU) | **Not upgraded** — requests fail after retirement | Create a new PTU deployment on the replacement and move traffic |
+??? question "Can I get more time before a model retires?"
+    No. Retirement dates can't be extended. In rare cases a model with a security or compliance problem can be retired early with shorter notice.
 
-## What each stage lets you do
+??? question "Do I have to use the replacement Microsoft names?"
+    No. It's Microsoft's recommendation and the model used for automatic upgrades, but you can migrate to any model that suits you. Compare quality, speed and cost on your own prompts rather than public benchmarks.
 
-| Stage | Meaning | New deployments | Existing deployments |
-|---|---|---|---|
-| <span class="lc-badge lc-badge--info">Preview</span> | Experimental — weights, runtime and API might change; not guaranteed to reach GA | Yes | Yes |
-| <span class="lc-badge lc-badge--success">Generally available</span> | Production-ready — weights and APIs are fixed | Yes | Yes |
-| Legacy | Newer, more capable models exist (optional stage) | Yes, until deprecated | Yes |
-| <span class="lc-badge lc-badge--caution">Deprecated</span> | No longer available to new customers | Only subscriptions that already used this version | Yes |
-| <span class="lc-badge lc-badge--muted">Retired</span> | Removed from service — every request returns `410 Gone` | No | No |
+??? question "Will my code need to change?"
+    Usually not to keep calling the deployment — the name and endpoint stay the same. But check that the API parameters, tools and output format you rely on still behave the same with the new model.
 
-!!! info "Key timings"
-    - GA models get **about 18 months** from launch to retirement and become Deprecated at **12 months**. GA models from Anthropic, DeepSeek, Fireworks and Mistral AI follow a **12-month** lifecycle.
-    - A replacement is named **90–120 days** before retirement — in Global Standard about 90 days out, and in provisioned regions about 30 days out.
-    - Preview models launch with a *not-sooner-than* date (typically ~90 days) and are force-upgraded or removed with **at least 30 days** notice.
-    - Standard deployment types can be auto-upgraded. **Provisioned (PTU) deployments are never auto-upgraded** — you must migrate them yourself.
+??? question "What does 'existing customer' mean for deprecated models?"
+    It's decided per **Azure subscription**: a subscription that has ever deployed that exact model version can keep creating deployments until retirement. A new subscription in the same tenant doesn't inherit that access.
 
-## How this site labels models
+??? question "Is Azure Government different?"
+    Yes. Global Standard isn't available, not every model is offered, and usually only one version of a model is available at a time, with a **30-day overlap** when a new version arrives.
 
-Hover or tap any lifecycle badge on this site for a plain-language explanation of what it means for you.
+## Reference
 
-| Badge | What it means | What to do |
-|---|---|---|
-| <span class="lc-badge lc-badge--danger">Retires in 12 days</span> | Firm retirement date within 30 days | Move traffic to the replacement now |
-| <span class="lc-badge lc-badge--warning">Retires in 60 days</span> | Firm retirement date within 90 days | Test the replacement and plan the cut-over |
-| <span class="lc-badge lc-badge--warning">Retirement imminent</span> | A *no-earlier-than* date has passed — it can retire any time after notice | Treat as retiring now |
-| <span class="lc-badge lc-badge--caution">Deprecated</span> | Closed to new customers | Don't start new work on it |
-| <span class="lc-badge lc-badge--success">GA · until Jun 2027</span> | Generally available, with its next retirement month | Safe to build on |
-| <span class="lc-badge lc-badge--neutral">No retirement date</span> | Not in Microsoft's retirement tables yet (common for new and partner models) | Check the model card in Foundry |
+??? info "What each badge on this site means"
+    Hover or tap any lifecycle badge on the site for this explanation in place.
 
-## Reading the Models API
+    | Badge | What it means | What to do |
+    |---|---|---|
+    | <span class="lc-badge lc-badge--danger">Retires in 12 days</span> | Firm retirement date within 30 days | Move traffic to the replacement now |
+    | <span class="lc-badge lc-badge--warning">Retires in 60 days</span> | Firm retirement date within 90 days | Test the replacement and plan the cut-over |
+    | <span class="lc-badge lc-badge--warning">Retirement imminent</span> | A *no-earlier-than* date has passed — it can retire any time after notice | Treat as retiring now |
+    | <span class="lc-badge lc-badge--caution">Deprecated</span> | Closed to new customers | Don't start new work on it |
+    | <span class="lc-badge lc-badge--success">GA · until Jun 2027</span> | Generally available, with its next retirement month | Safe to build on |
+    | <span class="lc-badge lc-badge--neutral">No retirement date</span> | Not in Microsoft's retirement tables yet (common for new and partner models) | Check the model card in Foundry |
 
-| API `lifecycleStatus` | Means | Badge on this site |
-|---|---|---|
-| `Preview` | Preview, not for production | <span class="lc-badge lc-badge--info">Preview</span> |
-| `GenerallyAvailable` | GA and open to new customers | <span class="lc-badge lc-badge--success">Generally available</span> |
-| `Deprecating` | Deprecated — existing customers only | <span class="lc-badge lc-badge--caution">Deprecated</span> |
-| `Deprecated` | Retired — no longer served | <span class="lc-badge lc-badge--muted">Retired</span> |
+??? info "Who can deploy at each stage"
+    | Stage | Meaning | New deployments | Existing deployments |
+    |---|---|---|---|
+    | <span class="lc-badge lc-badge--info">Preview</span> | Experimental — weights, runtime and API might change; not guaranteed to reach GA | Yes | Yes |
+    | <span class="lc-badge lc-badge--success">Generally available</span> | Production-ready — weights and APIs are fixed | Yes | Yes |
+    | Legacy | Newer, more capable models exist (optional stage) | Yes, until deprecated | Yes |
+    | <span class="lc-badge lc-badge--caution">Deprecated</span> | No longer available to new customers | Only subscriptions that already used this version | Yes |
+    | <span class="lc-badge lc-badge--muted">Retired</span> | Removed from service — every request returns `410 Gone` | No | No |
 
-Adapted from [Foundry Models lifecycle and support policy](https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirements). See [Retirements](../retirements/) for every model-specific date.
+??? info "Reading the Models API (the names don't match the portal)"
+    The API's `Deprecated` means **retired**, not deprecated — watch out for this when scripting checks.
+
+    | API `lifecycleStatus` | Means | Badge on this site |
+    |---|---|---|
+    | `Preview` | Preview, not for production | <span class="lc-badge lc-badge--info">Preview</span> |
+    | `GenerallyAvailable` | GA and open to new customers | <span class="lc-badge lc-badge--success">Generally available</span> |
+    | `Deprecating` | Deprecated — existing customers only | <span class="lc-badge lc-badge--caution">Deprecated</span> |
+    | `Deprecated` | Retired — no longer served | <span class="lc-badge lc-badge--muted">Retired</span> |
+
+    If `deprecation.inference` is in the past, treat the model as retired even if `lifecycleStatus` hasn't caught up yet.
+
+Adapted from Microsoft Learn: [Foundry Models lifecycle and support policy](https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirements), [Working with models](https://learn.microsoft.com/azure/foundry/openai/how-to/working-with-models#model-deployment-upgrade-configuration) and [Model migration process](https://learn.microsoft.com/azure/foundry/foundry-models/concepts/model-migration). See [Retirements](../retirements/) for every model-specific date.
 """
 
 
@@ -2726,7 +3091,7 @@ def main():
         "index.md": generate_index_page(model_regions, model_sku_regions, all_labels, all_regions, retirement_data, history, lifecycles, availability_bits),
         "explorer.md": generate_explorer_page(all_regions, len(model_regions)),
         "ptu.md": generate_ptu_page(availability_bits),
-        "lifecycle.md": generate_lifecycle_page(lifecycles),
+        "lifecycle.md": generate_lifecycle_page(lifecycles, retirement_data, availability_bits, today),
         "models/index.md": generate_model_index_page(model_regions, availability_bits, lifecycles),
         "by-region.md": generate_legacy_redirect_page("By Region", "region", "rg"),
         "by-sku.md": generate_legacy_redirect_page(
