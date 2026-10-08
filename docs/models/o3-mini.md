@@ -1,5 +1,20 @@
 # <span class="pv pv--openai pv--xl" aria-hidden="true" title="OpenAI"></span> o3-mini
 
+<div class="swap swap--muted" aria-label="Replacement model">
+    <div class="swap__side swap__side--from">
+        <span class="swap__eyebrow">Retired</span>
+        <span class="swap__model"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><b>o3-mini</b></span>
+        <small>Requests now fail with 410 Gone</small>
+    </div>
+    <span class="swap__arrow" aria-hidden="true"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg></span>
+    <div class="swap__side swap__side--to">
+        <span class="swap__eyebrow">Move to</span>
+        <span class="swap__model"><a href="../o4-mini/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><b>o4-mini</b></a></span>
+        <span class="swap__fit swap__fit--warning">Available in 29 of 31 regions this model runs in</span>
+    </div>
+    <p class="swap__gap"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5A2.5 2.5 0 0 1 9.5 9 2.5 2.5 0 0 1 12 6.5M12 2a7 7 0 0 1 7 7c0 5.25-7 13-7 13S5 14.25 5 9a7 7 0 0 1 7-7m0 2a5 5 0 0 0-5 5c0 1 0 3 5 9.71C17 12 17 10 17 9a5 5 0 0 0-5-5"/></svg><span><b>Not offered yet in:</b> US Gov Arizona, US Gov Virginia. Deployments there need a different region or an alternative model.</span></p>
+</div>
+
 <div class="model-profile" aria-label="Model availability profile">
     <div class="model-profile__main">
         <div class="model-profile__badges">
@@ -281,4 +296,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 00:35 UTC_
+_Last updated: 2026-10-08 02:04 UTC_

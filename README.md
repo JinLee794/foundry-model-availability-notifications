@@ -109,7 +109,7 @@ cat region_diff.json
 
 - **Dashboard** - Instant model finder (press `Ctrl+K` / `Cmd+K`), KPI cards, interactive visuals (retirement runway timeline, lifecycle waffle, world availability map with top regions, provider × deployment-type matrix, monthly availability momentum), retirement watchlist, and latest availability changes
 - **Explorer** - Single-pane grid of every model × region × deployment type with live filters, required-region selection, shareable URLs, CSV export and an "Expand table" full-window view (Esc to exit)
-- **Models** - Model catalog: instant search plus provider-grouped cards showing region count, deployment options and lifecycle flags, with a "Compare availability" link into the Explorer per provider
+- **Models** - Model catalog: instant search plus provider-grouped cards showing region count, deployment options and lifecycle flags (retiring models also show their replacement), with a "Compare availability" link into the Explorer per provider. Each model page opens with a "Retiring → Move to" banner naming the replacement and the regions where it is not yet offered
 - **Deployment & PTU** - Deployment-type matrix (where inference runs × how you pay, plus Batch and Partner) linking each type into the Explorer, followed by a plain-language provisioned throughput guide based on Microsoft Learn, with a quick PTU estimator and links to the Foundry capacity calculator
 - **Lifecycle** - A plain-language retirement explainer. It covers:
   - The five stages and the GA timeline.

@@ -1,5 +1,20 @@
 # <span class="pv pv--openai pv--xl" aria-hidden="true" title="OpenAI"></span> gpt-image-1
 
+<div class="swap swap--warning" aria-label="Replacement model">
+    <div class="swap__side swap__side--from">
+        <span class="swap__eyebrow">Retirement imminent</span>
+        <span class="swap__model"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><b>gpt-image-1</b></span>
+        <small>Retirement date not announced yet</small>
+    </div>
+    <span class="swap__arrow" aria-hidden="true"><svg class="fm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h11.17l-4.88-4.88L12.7 4.7 20 12l-7.3 7.3-1.41-1.42L16.17 13H5z"/></svg></span>
+    <div class="swap__side swap__side--to">
+        <span class="swap__eyebrow">Move to</span>
+        <span class="swap__model"><a href="../gpt-image-1-mini/"><span class="pv pv--openai pv--sm" aria-hidden="true" title="OpenAI"></span><b>gpt-image-1-mini</b></a></span>
+        <span class="swap__fit swap__fit--success">Available in all 5 regions this model runs in</span>
+    </div>
+    
+</div>
+
 <div class="model-profile" aria-label="Model availability profile">
     <div class="model-profile__main">
         <div class="model-profile__badges">
@@ -149,4 +164,4 @@
 
 [← Back to All Models](index.md)
 
-_Last updated: 2026-10-08 00:35 UTC_
+_Last updated: 2026-10-08 02:04 UTC_

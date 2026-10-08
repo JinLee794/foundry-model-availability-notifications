@@ -859,6 +859,80 @@ def lifecycle_badge(summary: Dict) -> str:
     return f'<span class="lc-badge lc-badge--{summary["tone"]}"{tip_attrs(title, body)}>{html_escape(lifecycle_badge_text(summary))}</span>'
 
 
+SWAP_STAGES = {"soon", "retiring", "pending", "deprecated", "retired"}
+
+
+def render_replacement_callout(model: str, regions: Set[str], summary: Dict, model_regions_lookup: Dict[str, Set[str]]) -> str:
+    """Top-of-page 'retiring → move to' banner for model pages."""
+    if summary.get("key") not in SWAP_STAGES:
+        return ""
+    replacement = summary.get("replacement") or ""
+    tone = summary.get("tone", "warning")
+    retired = summary["key"] == "retired"
+    if summary.get("next_label"):
+        when = f'{"Retires" if not retired else "Retired"} {html_escape(summary["next_label"])} · {html_escape(format_countdown(summary["days"]))}'
+        eyebrow = "Retired" if retired else "Retiring"
+    elif retired:
+        when = "Requests now fail with 410 Gone"
+        eyebrow = "Retired"
+    else:
+        when = "Retirement date not announced yet"
+        eyebrow = html_escape(summary.get("label", "Deprecated"))
+    source = f"""<div class="swap__side swap__side--from">
+        <span class="swap__eyebrow">{eyebrow}</span>
+        <span class="swap__model">{provider_logo(model_family(model), "sm")}<b>{html_escape(model)}</b></span>
+        <small>{when}</small>
+    </div>"""
+    if not replacement:
+        return f"""<div class="swap swap--{tone} swap--none" aria-label="Replacement model">
+    {source}
+    <span class="swap__arrow" aria-hidden="true">{icon("arrow")}</span>
+    <div class="swap__side swap__side--to">
+        <span class="swap__eyebrow">Replacement</span>
+        <span class="swap__model"><b>Not named yet</b></span>
+        <small>Microsoft usually names one before retirement. <a href="../../lifecycle/">How retirement works</a></small>
+    </div>
+</div>
+"""
+    rep_slug = slugify(replacement)
+    rep_regions = model_regions_lookup.get(rep_slug)
+    rep_logo = provider_logo(model_family(replacement), "sm")
+    if rep_regions is not None:
+        rep_name = f'<a href="../{rep_slug}/">{rep_logo}<b>{html_escape(replacement)}</b></a>'
+        shared = regions & rep_regions
+        missing = sorted(regions - rep_regions)
+        if not regions:
+            fit = f"{pluralize(len(rep_regions), 'region')} available"
+            fit_tone = "info"
+        elif not missing:
+            fit = f"Available in all {pluralize(len(regions), 'region')} this model runs in"
+            fit_tone = "success"
+        else:
+            fit = f"Available in {len(shared)} of {pluralize(len(regions), 'region')} this model runs in"
+            fit_tone = "warning" if shared else "danger"
+        gap = ""
+        if missing:
+            shown = ", ".join(lcx_region_label(region) for region in missing[:6])
+            more = f" +{len(missing) - 6} more" if len(missing) > 6 else ""
+            gap = f'<p class="swap__gap">{icon("pin")}<span><b>Not offered yet in:</b> {html_escape(shown)}{more}. Deployments there need a different region or an alternative model.</span></p>'
+        fit_html = f'<span class="swap__fit swap__fit--{fit_tone}">{html_escape(fit)}</span>'
+    else:
+        rep_name = f'<span class="swap__plain">{rep_logo}<b>{html_escape(replacement)}</b></span>'
+        fit_html = '<span class="swap__fit swap__fit--info">Not tracked here yet: check the Foundry catalog</span>'
+        gap = ""
+    return f"""<div class="swap swap--{tone}" aria-label="Replacement model">
+    {source}
+    <span class="swap__arrow" aria-hidden="true">{icon("arrow")}</span>
+    <div class="swap__side swap__side--to">
+        <span class="swap__eyebrow">Move to</span>
+        <span class="swap__model">{rep_name}</span>
+        {fit_html}
+    </div>
+    {gap}
+</div>
+"""
+
+
 def build_model_lifecycles(model_regions: Dict[str, Set[str]], retirement_index: Dict[str, List[Dict]], today: datetime) -> Dict[str, Dict]:
     return {
         model: summarize_model_lifecycle(retirement_index.get(slugify(model), []), today)
@@ -2647,6 +2721,13 @@ def generate_model_index_page(
         flag = ""
         if summary["key"] in CATALOG_FLAG_STAGES:
             flag = f'<span class="lc-badge lc-badge--{summary["tone"]}">{html_escape(lifecycle_badge_text(summary))}</span>'
+        if summary["key"] in SWAP_STAGES and summary.get("replacement"):
+            replacement = summary["replacement"]
+            flag = (
+                f'<span class="mcat-card__flags">{flag}'
+                f'<span class="mcat-card__next" title="Replacement: {html_escape(replacement)}">{icon("arrow")}'
+                f'{provider_logo(model_family(replacement), "xs")}{html_escape(replacement)}</span></span>'
+            )
         regions = len(model_regions[model])
         return (
             f'<a class="mcat-card mcat-card--{summary["tone"]}" href="{slugify(model)}/" data-name="{html_escape(model.lower())}">'
@@ -2716,6 +2797,9 @@ def generate_model_detail_page(
         sku_by_category[cat].append((sku, sku_regs))
 
     retirement_section = generate_lifecycle_section(retirement_info or [], model_regions_lookup or {}, today)
+    swap_callout = render_replacement_callout(model, set(regions), lifecycle, model_regions_lookup or {})
+    if swap_callout:
+        swap_callout += "\n"
 
     categories = sorted(sku_by_category.keys())
     category_summary = ", ".join(categories) if categories else "No SKU categories"
@@ -2874,7 +2958,7 @@ def generate_model_detail_page(
 
     return f"""# {provider_logo(model_family(model), "xl")} {model}
 
-{model_profile}
+{swap_callout}{model_profile}
 {retirement_section}
 
 ## :material-target: Deployment Options
