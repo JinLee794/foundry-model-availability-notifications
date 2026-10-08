@@ -3004,6 +3004,35 @@
       }
     }
   },
+  "claude-haiku-5-5": {
+    "all": [
+      "Central US",
+      "East US",
+      "East US 2",
+      "North Central US",
+      "South Central US",
+      "Sweden Central",
+      "West Central US",
+      "West US",
+      "West US 3"
+    ],
+    "skus": {
+      "marketplace-deployments-standard": {
+        "label": "Marketplace Deployments Standard",
+        "regions": [
+          "Central US",
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "Sweden Central",
+          "West Central US",
+          "West US",
+          "West US 3"
+        ]
+      }
+    }
+  },
   "claude-opus-4-5": {
     "all": [
       "Central US",
