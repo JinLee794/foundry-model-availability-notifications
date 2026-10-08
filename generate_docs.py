@@ -1383,9 +1383,11 @@ def render_retirement_runway(retirement_data: Dict, today: datetime, available_s
         bins[item[0] // 7].append(item)
 
     dots = []
+    max_stack = 8
     for week, members in bins.items():
         x = (week * 7 + 3.5) / days * 100
-        for stack, (offset, retire_dt, estimate, entry) in enumerate(members):
+        shown = members if len(members) <= max_stack else members[: max_stack - 1]
+        for stack, (offset, retire_dt, estimate, entry) in enumerate(shown):
             model = entry.get("model", "")
             version = entry.get("version", "")
             tone = "danger" if offset <= 30 else "warning" if offset <= 90 else "info"
@@ -1398,7 +1400,19 @@ def render_retirement_runway(retirement_data: Dict, today: datetime, available_s
                 f'<a class="rw-dot rw-dot--{tone}{" rw-dot--est" if estimate else ""}" href="{href}" '
                 f'style="--x:{x:.2f}%;--y:{stack}"{tip_attrs(f"{model} {version}".strip(), body)}></a>'
             )
-    rows = max((len(members) for members in bins.values()), default=1)
+        hidden = members[len(shown):]
+        if hidden:
+            # Busy weeks collapse into a "+N" pill so one week can't tower over the chart.
+            first_dt = hidden[0][1]
+            tone = "danger" if hidden[0][0] <= 30 else "warning" if hidden[0][0] <= 90 else "info"
+            names = sorted({entry.get("model", "") for *_, entry in hidden})
+            body = ", ".join(names[:8]) + (f" and {len(names) - 8} more" if len(names) > 8 else "")
+            dots.append(
+                f'<a class="rw-dot rw-dot--{tone} rw-more" href="retirements/" '
+                f'style="--x:{x:.2f}%;--y:{len(shown)}"'
+                f'{tip_attrs(f"{len(hidden)} more retiring the week of {format_short_date(first_dt)}", body)}>+{len(hidden)}</a>'
+            )
+    rows = max((min(len(members), max_stack) for members in bins.values()), default=1)
 
     ticks = []
     cursor = datetime(today.year, today.month, 1)
@@ -1408,7 +1422,9 @@ def render_retirement_runway(retirement_data: Dict, today: datetime, available_s
         offset = (cursor - today).days
         if offset > days:
             break
-        label = f"{cursor:%b}" + (f" ’{cursor:%y}" if cursor.month == 1 else "")
+        if later and offset / days > 0.9:
+            break  # leave room for the "+N later" label
+        label =  f"{cursor:%b}" + (f" ’{cursor:%y}" if cursor.month == 1 else "")
         ticks.append(f'<span class="rw-tick" style="--x:{offset / days * 100:.2f}%">{label}</span>')
 
     band30, band90 = 30 / days * 100, 90 / days * 100

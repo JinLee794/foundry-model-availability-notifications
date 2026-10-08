@@ -135,4 +135,4 @@ hide:
     </div>
 </section>
 
-<p class="dash-footnote">Not sure which deployment type you need? See <a href="../ptu/">Deployment types &amp; PTU</a>. Last updated 2026-10-08 15:49 UTC.</p>
+<p class="dash-footnote">Not sure which deployment type you need? See <a href="../ptu/">Deployment types &amp; PTU</a>. Last updated 2026-10-08 15:52 UTC.</p>
