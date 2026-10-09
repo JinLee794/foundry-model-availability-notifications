@@ -1,8 +1,9 @@
 {
-  "fetched_at": "2026-10-08T14:35:50Z",
+  "fetched_at": "2026-10-09T14:10:56Z",
   "source": "https://prices.azure.com/api/retail/prices",
   "marketplace_source": "https://catalogapi.azure.com/offers",
   "region": "eastus2",
+  "media_fallback_region": "northcentralus",
   "currency": "USD",
   "unit": "per 1M tokens",
   "models": {
@@ -307,15 +308,15 @@
     },
     "TimeGEN-1": {
       "global": {
-        "out": 0.99,
-        "in": 0.46
+        "in": 0.46,
+        "out": 0.99
       }
     },
     "claude-fable-5": {
       "global": {
         "cached": 1.0,
-        "out": 50.0,
-        "in": 10.0
+        "in": 10.0,
+        "out": 50.0
       }
     },
     "claude-fable-5-1": {
@@ -327,37 +328,44 @@
     },
     "claude-haiku-4-5": {
       "global": {
-        "out": 5.0,
+        "cached": 0.1,
         "in": 1.0,
-        "cached": 0.1
+        "out": 5.0
+      }
+    },
+    "claude-haiku-5-5": {
+      "global": {
+        "cached": 0.01,
+        "in": 0.1,
+        "out": 0.5
       }
     },
     "claude-opus-4-5": {
       "global": {
-        "out": 25.0,
         "cached": 0.5,
-        "in": 5.0
+        "in": 5.0,
+        "out": 25.0
       }
     },
     "claude-opus-4-6": {
       "global": {
         "cached": 0.5,
-        "out": 25.0,
-        "in": 5.0
+        "in": 5.0,
+        "out": 25.0
       }
     },
     "claude-opus-4-7": {
       "global": {
-        "out": 25.0,
+        "cached": 0.5,
         "in": 5.0,
-        "cached": 0.5
+        "out": 25.0
       }
     },
     "claude-opus-4-8": {
       "global": {
+        "cached": 0.5,
         "in": 5.0,
-        "out": 25.0,
-        "cached": 0.5
+        "out": 25.0
       }
     },
     "claude-opus-5": {
@@ -369,15 +377,15 @@
     },
     "claude-opus-5-5": {
       "global": {
-        "out": 20.0,
         "cached": 0.2,
-        "in": 4.0
+        "in": 4.0,
+        "out": 20.0
       }
     },
     "claude-sonnet-4-5": {
       "global": {
-        "in": 3.0,
         "cached": 0.3,
+        "in": 3.0,
         "out": 15.0
       }
     },
@@ -391,14 +399,14 @@
     "claude-sonnet-5": {
       "global": {
         "cached": 0.2,
-        "out": 10.0,
-        "in": 2.0
+        "in": 2.0,
+        "out": 10.0
       }
     },
     "claude-sonnet-5-5": {
       "global": {
-        "in": 2.0,
         "cached": 0.2,
+        "in": 2.0,
         "out": 10.0
       }
     },
@@ -907,6 +915,18 @@
         "out": 11.0
       }
     },
+    "gpt-6.1-sol": {
+      "datazone": {
+        "cached": 0.11,
+        "out": 11.0,
+        "in": 2.2
+      },
+      "global": {
+        "in": 2.0,
+        "cached": 0.1,
+        "out": 10.0
+      }
+    },
     "gpt-chat-latest": {
       "global": {
         "cached": 0.5,
@@ -1349,19 +1369,16 @@
     "Cohere Command R+ 08-2024": "marketplace",
     "Cohere Embed v3 - English": "marketplace",
     "Cohere Embed v3 - Multilingual": "marketplace",
-    "Cohere Rerank v3.5": "marketplace",
     "Llama 3.1 405B Instruct": "marketplace",
     "Llama 3.1 8B Instruct": "marketplace",
     "Llama-3.2-11B-Vision-Instruct": "marketplace",
     "Llama-3.2-90B-Vision-Instruct": "marketplace",
     "Llama-4-Scout-17B-16E-Instruct": "marketplace",
-    "Stable Diffusion 3.5 Large": "marketplace",
-    "Stable Image Core": "marketplace",
-    "Stable Image Ultra": "marketplace",
     "TimeGEN-1": "marketplace",
     "claude-fable-5": "marketplace",
     "claude-fable-5-1": "marketplace",
     "claude-haiku-4-5": "marketplace",
+    "claude-haiku-5-5": "marketplace",
     "claude-opus-4-5": "marketplace",
     "claude-opus-4-6": "marketplace",
     "claude-opus-4-7": "marketplace",
@@ -1395,6 +1412,7 @@
   "unmatched_meters": [
     "Azure Deepseek Models: deepseek V3",
     "Azure Deepseek Models: deepseek V3.1",
+    "Azure Deepseek Models: deepseek V4.1 Flash",
     "Azure Grok Models: Grok 3",
     "Azure Grok Models: Grok 3 Mini",
     "Azure Grok Models: Grok 4",

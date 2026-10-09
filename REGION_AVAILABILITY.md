@@ -1,6 +1,6 @@
 # AI Foundry Model Availability by Region
 
-_Last updated: 2026-10-08 14:24 UTC_
+_Last updated: 2026-10-09 14:10 UTC_
 
 - Models tracked: **156**
 - Regions in snapshot: **35**
@@ -117,7 +117,7 @@ SKU labels observed:
 | gpt-6-luna | 🟢 Broad | 28 | 2 (Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-6-sol | 🟢 Broad | 28 | 5 (Datazone Standard Priority Processing, Deployments Provisioned, Deployments Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-6.1-sol | 🟢 Broad | 28 | 3 (Deployments Provisioned, Deployments Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-image-2.5-flare | 🟢 Broad | 28 | 2 (Global coverage, Standard Global By Capability) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-image-2.5-flare | 🟢 Broad | 28 | 4 (Deployments Provisioned, Deployments Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-image-2.5-sunburst | 🟢 Broad | 28 | 2 (Global coverage, Standard Global By Capability) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5-chat | 🟢 Broad | 27 | 3 (Global Standard, Global coverage, Standard Global By Capability) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5-nano | 🟢 Broad | 26 | 5 (Datazone standard, Deployments Standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada East`, `Central US`, `East US`, `East US 2` |
@@ -167,6 +167,7 @@ SKU labels observed:
 | gpt-4o-mini-transcribe | 🔴 Emerging | 6 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
 | gpt-4o-transcribe | 🔴 Emerging | 6 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
 | gpt-4o-transcribe-diarize | 🔴 Emerging | 6 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
+| gpt-image-2 | 🔴 Emerging | 6 | 5 (Deployments Provisioned, Deployments Standard, Global Standard +) | `Australia East`, `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
 | gpt-realtime | 🔴 Emerging | 6 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
 | gpt-realtime-1.5 | 🔴 Emerging | 6 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
 | gpt-realtime-2 | 🔴 Emerging | 6 | 2 (Deployments Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
@@ -180,7 +181,6 @@ SKU labels observed:
 | gpt-image-1 | 🔴 Emerging | 5 | 4 (Deployments Standard, Global Standard, Global coverage +) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
 | gpt-image-1-mini | 🔴 Emerging | 5 | 4 (Deployments Standard, Global Standard, Global coverage +) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
 | gpt-image-1.5 | 🔴 Emerging | 5 | 5 (Datazone standard, Deployments Standard, Global Standard +) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
-| gpt-image-2 | 🔴 Emerging | 5 | 4 (Deployments Standard, Global Standard, Global coverage +) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
 | gpt-audio-1.5 | 🔴 Emerging | 4 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Central US`, `East US 2`, `North Europe`, `Sweden Central` |
 | codex-mini | 🔴 Emerging | 3 | 4 (Deployments Standard, Global Standard, Global coverage +) | `Central US`, `East US 2`, `Sweden Central` |
 | computer-use-preview | 🔴 Emerging | 3 | 4 (Deployments Standard, Global Standard, Global coverage +) | `East US 2`, `South India`, `Sweden Central` |
@@ -2935,7 +2935,7 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>gpt-image-2.5-flare — 28 regions across 2 SKU labels</summary>
+<summary>gpt-image-2.5-flare — 28 regions across 4 SKU labels</summary>
 
 - `Australia East` — Global coverage, Standard Global By Capability
 - `Brazil South` — Global coverage, Standard Global By Capability
@@ -2943,7 +2943,7 @@ SKU labels observed:
 - `Canada East` — Global coverage, Standard Global By Capability
 - `Central US` — Global coverage, Standard Global By Capability
 - `East US` — Global coverage, Standard Global By Capability
-- `East US 2` — Global coverage, Standard Global By Capability
+- `East US 2` — Deployments Standard, Global coverage, Standard Global By Capability
 - `France Central` — Global coverage, Standard Global By Capability
 - `Germany West Central` — Global coverage, Standard Global By Capability
 - `Italy North` — Global coverage, Standard Global By Capability
@@ -2951,20 +2951,20 @@ SKU labels observed:
 - `Korea Central` — Global coverage, Standard Global By Capability
 - `North Central US` — Global coverage, Standard Global By Capability
 - `Norway East` — Global coverage, Standard Global By Capability
-- `Poland Central` — Global coverage, Standard Global By Capability
+- `Poland Central` — Deployments Standard, Global coverage, Standard Global By Capability
 - `South Africa North` — Global coverage, Standard Global By Capability
 - `South Central US` — Global coverage, Standard Global By Capability
 - `South India` — Global coverage, Standard Global By Capability
 - `Southeast Asia` — Global coverage, Standard Global By Capability
-- `Spain Central` — Global coverage, Standard Global By Capability
-- `Sweden Central` — Global coverage, Standard Global By Capability
+- `Spain Central` — Deployments Provisioned, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global coverage, Standard Global By Capability
 - `Switzerland North` — Global coverage, Standard Global By Capability
 - `Switzerland West` — Global coverage, Standard Global By Capability
-- `UAE North` — Global coverage, Standard Global By Capability
+- `UAE North` — Deployments Standard, Global coverage, Standard Global By Capability
 - `UK South` — Global coverage, Standard Global By Capability
 - `West Europe` — Global coverage, Standard Global By Capability
 - `West US` — Global coverage, Standard Global By Capability
-- `West US 3` — Global coverage, Standard Global By Capability
+- `West US 3` — Deployments Standard, Global coverage, Standard Global By Capability
 
 </details>
 <details>
@@ -3631,6 +3631,17 @@ SKU labels observed:
 
 </details>
 <details>
+<summary>gpt-image-2 — 6 regions across 5 SKU labels</summary>
+
+- `Australia East` — Deployments Provisioned, Global coverage
+- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Poland Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `UAE North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+- `West US 3` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
+
+</details>
+<details>
 <summary>gpt-realtime — 6 regions across 4 SKU labels</summary>
 
 - `Canada Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
@@ -3771,16 +3782,6 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>gpt-image-2 — 5 regions across 4 SKU labels</summary>
-
-- `East US 2` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Poland Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `Sweden Central` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `UAE North` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-- `West US 3` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
-
-</details>
-<details>
 <summary>gpt-audio-1.5 — 4 regions across 4 SKU labels</summary>
 
 - `Central US` — Deployments Standard, Global Standard, Global coverage, Standard Global By Capability
@@ -3889,6 +3890,7 @@ SKU labels observed:
 
 ## Recent changes
 
+- **2026-10-09 14:10 UTC** — gpt-image-2: Global coverage added Australia East; Deployments Provisioned added Australia East | gpt-image-2.5-flare: Deployments Provisioned added Spain Central; Deployments Standard added East US 2, Poland Central, Sweden Central, UAE North, and West US 3
 - **2026-10-08 14:24 UTC** — claude-haiku-5-5: Global coverage added Central US, East US, East US 2, North Central US, South Central US, Sweden Central, West Central US, West US, and West US 3; Marketplace Deployments Standard added Central US, East US, East US 2, North Central US, South Central US, Sweden Central, West Central US, West US, and West US 3
 - **2026-10-07 14:15 UTC** — grok-4.7: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3
 - **2026-10-01 14:16 UTC** — gpt-6.1-sol: Deployments Provisioned added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3

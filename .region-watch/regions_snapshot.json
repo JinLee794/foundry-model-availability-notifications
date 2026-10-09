@@ -10544,6 +10544,7 @@
   },
   "gpt-image-2": {
     "all": [
+      "Australia East",
       "East US 2",
       "Poland Central",
       "Sweden Central",
@@ -10551,6 +10552,12 @@
       "West US 3"
     ],
     "skus": {
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "Australia East"
+        ]
+      },
       "deployments-standard": {
         "label": "Deployments Standard",
         "regions": [
@@ -10615,6 +10622,22 @@
       "West US 3"
     ],
     "skus": {
+      "deployments-provisioned": {
+        "label": "Deployments Provisioned",
+        "regions": [
+          "Spain Central"
+        ]
+      },
+      "deployments-standard": {
+        "label": "Deployments Standard",
+        "regions": [
+          "East US 2",
+          "Poland Central",
+          "Sweden Central",
+          "UAE North",
+          "West US 3"
+        ]
+      },
       "standard-global-by-capability": {
         "label": "Standard Global By Capability",
         "regions": [

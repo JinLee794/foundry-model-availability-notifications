@@ -2,7 +2,7 @@
   "source": "https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/foundry/openai/includes/concepts-model-retirement-schedule-content.md",
   "page": "https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirement-schedule",
   "last_updated": "2026-10-05",
-  "fetched_at": "2026-10-08T15:06:12Z",
+  "fetched_at": "2026-10-09T14:10:56Z",
   "models": {
     "text_generation": [
       {
@@ -46,7 +46,7 @@
         "status": "Generally Available",
         "lifecycle": "Deprecated",
         "deprecation_date": "2026-04-14",
-        "retirement_date": "2026-10-14",
+        "retirement_date": "2027-04-14",
         "replacement": null
       },
       {

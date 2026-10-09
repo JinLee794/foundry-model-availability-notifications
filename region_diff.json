@@ -1,33 +1,43 @@
 {
-  "timestamp": "2026-10-08T14:24:40.127220+00:00",
+  "timestamp": "2026-10-09T14:10:43.476181+00:00",
   "changes": {
-    "claude-haiku-5-5": {
+    "gpt-image-2": {
       "all": {
         "added": [
-          "Central US",
-          "East US",
-          "East US 2",
-          "North Central US",
-          "South Central US",
-          "Sweden Central",
-          "West Central US",
-          "West US",
-          "West US 3"
+          "Australia East"
         ],
         "removed": []
       },
       "skus": {
-        "marketplace-deployments-standard": {
-          "label": "Marketplace Deployments Standard",
+        "deployments-provisioned": {
+          "label": "Deployments Provisioned",
           "added": [
-            "Central US",
-            "East US",
+            "Australia East"
+          ],
+          "removed": []
+        }
+      }
+    },
+    "gpt-image-2.5-flare": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "deployments-provisioned": {
+          "label": "Deployments Provisioned",
+          "added": [
+            "Spain Central"
+          ],
+          "removed": []
+        },
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "added": [
             "East US 2",
-            "North Central US",
-            "South Central US",
+            "Poland Central",
             "Sweden Central",
-            "West Central US",
-            "West US",
+            "UAE North",
             "West US 3"
           ],
           "removed": []
@@ -8803,6 +8813,7 @@
     },
     "gpt-image-2": {
       "all": [
+        "Australia East",
         "East US 2",
         "Poland Central",
         "Sweden Central",
@@ -8810,6 +8821,12 @@
         "West US 3"
       ],
       "skus": {
+        "deployments-provisioned": {
+          "label": "Deployments Provisioned",
+          "regions": [
+            "Australia East"
+          ]
+        },
         "deployments-standard": {
           "label": "Deployments Standard",
           "regions": [
@@ -8874,6 +8891,22 @@
         "West US 3"
       ],
       "skus": {
+        "deployments-provisioned": {
+          "label": "Deployments Provisioned",
+          "regions": [
+            "Spain Central"
+          ]
+        },
+        "deployments-standard": {
+          "label": "Deployments Standard",
+          "regions": [
+            "East US 2",
+            "Poland Central",
+            "Sweden Central",
+            "UAE North",
+            "West US 3"
+          ]
+        },
         "standard-global-by-capability": {
           "label": "Standard Global By Capability",
           "regions": [
