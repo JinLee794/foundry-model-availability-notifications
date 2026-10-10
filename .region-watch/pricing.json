@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-09T14:10:56Z",
+  "fetched_at": "2026-10-10T13:19:47Z",
   "source": "https://prices.azure.com/api/retail/prices",
   "marketplace_source": "https://catalogapi.azure.com/offers",
   "region": "eastus2",
@@ -1001,6 +1001,18 @@
         "cached": 0.5,
         "in": 2.0,
         "out": 6.0
+      }
+    },
+    "grok-4.7": {
+      "global": {
+        "cached": 0.5,
+        "in": 2.0,
+        "out": 6.0
+      },
+      "datazone": {
+        "out": 6.6,
+        "in": 2.2,
+        "cached": 0.55
       }
     },
     "mistral-medium-3-5": {

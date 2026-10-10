@@ -1,50 +1,6 @@
 {
-  "timestamp": "2026-10-09T14:10:43.476181+00:00",
-  "changes": {
-    "gpt-image-2": {
-      "all": {
-        "added": [
-          "Australia East"
-        ],
-        "removed": []
-      },
-      "skus": {
-        "deployments-provisioned": {
-          "label": "Deployments Provisioned",
-          "added": [
-            "Australia East"
-          ],
-          "removed": []
-        }
-      }
-    },
-    "gpt-image-2.5-flare": {
-      "all": {
-        "added": [],
-        "removed": []
-      },
-      "skus": {
-        "deployments-provisioned": {
-          "label": "Deployments Provisioned",
-          "added": [
-            "Spain Central"
-          ],
-          "removed": []
-        },
-        "deployments-standard": {
-          "label": "Deployments Standard",
-          "added": [
-            "East US 2",
-            "Poland Central",
-            "Sweden Central",
-            "UAE North",
-            "West US 3"
-          ],
-          "removed": []
-        }
-      }
-    }
-  },
+  "timestamp": "2026-10-10T13:19:36.583198+00:00",
+  "changes": {},
   "current": {
     "claude-fable-5": {
       "all": [
