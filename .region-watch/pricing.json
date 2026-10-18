@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-14T12:41:02Z",
+  "fetched_at": "2026-10-18T11:57:26Z",
   "source": "https://prices.azure.com/api/retail/prices",
   "marketplace_source": "https://catalogapi.azure.com/offers",
   "region": "eastus2",
@@ -345,6 +345,7 @@
     "Azure Phi Models: Phi 4 reasoning plus",
     "MAI Models: MAI Cyber 1 Flash",
     "MAI Models: MAI Thinking 1",
-    "MAI Models: mai Code 1.1 Flash"
+    "MAI Models: mai Code 1.1 Flash",
+    "MAI Models: mai Cyber 1.1"
   ]
 }
