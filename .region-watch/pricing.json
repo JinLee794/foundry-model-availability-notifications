@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-18T11:57:26Z",
+  "fetched_at": "2026-10-22T12:48:42Z",
   "source": "https://prices.azure.com/api/retail/prices",
   "marketplace_source": "https://catalogapi.azure.com/offers",
   "region": "eastus2",
@@ -301,6 +301,7 @@
     "Azure OpenAI GPT6: gpt 6 luna",
     "Azure OpenAI GPT6: gpt 6 sol",
     "Azure OpenAI GPT6: gpt 6.1 sol",
+    "Azure OpenAI GPT6: gpt chat latest",
     "Azure OpenAI OSS Models: gpt oss 120B",
     "Azure OpenAI Reasoning: codex mini",
     "Azure OpenAI Reasoning: o3 deep research",
