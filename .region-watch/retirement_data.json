@@ -1,8 +1,8 @@
 {
-  "source": "https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/foundry/openai/includes/concepts-model-retirement-schedule-content.md",
+  "source": "https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirement-schedule",
   "page": "https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirement-schedule",
-  "last_updated": "2026-10-05",
-  "fetched_at": "2026-10-09T14:10:56Z",
+  "last_updated": "2026-09-21",
+  "fetched_at": "2026-10-23T15:31:12Z",
   "models": {
     "text_generation": [
       {
@@ -387,7 +387,7 @@
         "status": "Preview",
         "lifecycle": "Preview",
         "deprecation_date": null,
-        "retirement_date": "2026-08-05",
+        "retirement_date": "2026-11-17",
         "replacement": null
       },
       {
@@ -398,7 +398,7 @@
         "status": "Preview",
         "lifecycle": "Preview",
         "deprecation_date": null,
-        "retirement_date": "2026-08-28",
+        "retirement_date": "2026-12-08",
         "replacement": null
       },
       {
@@ -409,7 +409,7 @@
         "status": "Preview",
         "lifecycle": "Preview",
         "deprecation_date": null,
-        "retirement_date": "2026-09-24",
+        "retirement_date": "2026-11-17",
         "replacement": null
       },
       {
@@ -420,7 +420,18 @@
         "status": "Preview",
         "lifecycle": "Preview",
         "deprecation_date": null,
-        "retirement_date": "2026-12-02",
+        "retirement_date": "2027-01-12",
+        "replacement": null
+      },
+      {
+        "model": "gpt-chat-latest",
+        "version": "2026-10-07",
+        "provider": "Azure OpenAI",
+        "sold_by": "azure",
+        "status": "Preview",
+        "lifecycle": "Preview",
+        "deprecation_date": null,
+        "retirement_date": "2027-05-18",
         "replacement": null
       },
       {
@@ -508,8 +519,12 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
-        "replacement": null
+        "retirement_date": "2027-02-15",
+        "replacement": "coherelabs-command-a-plus-05-2026-fp8",
+        "replacement_alts": [
+          "coherelabs-command-a-plus-05-2026-bf16",
+          "coherelabs-command-a-plus-05-2026-w4a4"
+        ]
       },
       {
         "model": "Cohere-command-a-plus-05-2026",
@@ -578,8 +593,8 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
-        "replacement": null
+        "retirement_date": "2027-11-01",
+        "replacement": "DeepSeek-V4.1-Flash"
       },
       {
         "model": "DeepSeek-V3.2-Speciale",
@@ -589,8 +604,8 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
-        "replacement": null
+        "retirement_date": "2027-11-01",
+        "replacement": "DeepSeek-V4-Pro"
       },
       {
         "model": "DeepSeek-V4-Flash",
@@ -721,7 +736,7 @@
         "status": "Preview",
         "lifecycle": "Preview",
         "deprecation_date": null,
-        "retirement_date": "2026-10-03",
+        "retirement_date": "2027-04-16",
         "replacement": null
       },
       {
@@ -732,7 +747,7 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
+        "retirement_date": "2027-09-15",
         "replacement": null
       },
       {
@@ -776,7 +791,7 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
+        "retirement_date": "2027-05-19",
         "replacement": null
       },
       {
@@ -787,7 +802,7 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
+        "retirement_date": "2027-05-19",
         "replacement": null
       },
       {
@@ -888,6 +903,17 @@
         "deprecation_date": null,
         "retirement_date": "2026-11-30",
         "replacement": "claude-sonnet-5-5"
+      },
+      {
+        "model": "claude-opus-5-5-fast",
+        "version": "2",
+        "provider": "Anthropic",
+        "sold_by": "partner",
+        "status": "Generally Available",
+        "lifecycle": "GA",
+        "deprecation_date": null,
+        "retirement_date": "2027-01-15",
+        "replacement": null
       },
       {
         "model": "claude-opus-5",
@@ -1067,149 +1093,6 @@
         "replacement": null
       },
       {
-        "model": "FW-DeepSeek-V3.1",
-        "version": "1",
-        "provider": "Fireworks",
-        "sold_by": "partner",
-        "status": "Generally Available",
-        "lifecycle": "GA",
-        "deprecation_date": null,
-        "retirement_date": "2027-07-01",
-        "replacement": null
-      },
-      {
-        "model": "FW-DeepSeek-V3.2",
-        "version": "1",
-        "provider": "Fireworks",
-        "sold_by": "partner",
-        "status": "Generally Available",
-        "lifecycle": "GA",
-        "deprecation_date": null,
-        "retirement_date": "2027-07-01",
-        "replacement": null
-      },
-      {
-        "model": "FW-GLM-4.7",
-        "version": "1",
-        "provider": "Fireworks",
-        "sold_by": "partner",
-        "status": "Generally Available",
-        "lifecycle": "GA",
-        "deprecation_date": null,
-        "retirement_date": "2027-07-01",
-        "replacement": null
-      },
-      {
-        "model": "FW-GLM-5",
-        "version": "1",
-        "provider": "Fireworks",
-        "sold_by": "partner",
-        "status": "Generally Available",
-        "lifecycle": "GA",
-        "deprecation_date": null,
-        "retirement_date": "2027-07-01",
-        "replacement": null
-      },
-      {
-        "model": "FW-GLM-5.1",
-        "version": "1",
-        "provider": "Fireworks",
-        "sold_by": "partner",
-        "status": "Generally Available",
-        "lifecycle": "GA",
-        "deprecation_date": null,
-        "retirement_date": "2027-07-01",
-        "replacement": null
-      },
-      {
-        "model": "FW-GPT-OSS-120B",
-        "version": "1",
-        "provider": "Fireworks",
-        "sold_by": "partner",
-        "status": "Generally Available",
-        "lifecycle": "GA",
-        "deprecation_date": null,
-        "retirement_date": "2027-07-01",
-        "replacement": null
-      },
-      {
-        "model": "FW-Kimi-K2-Instruct-0905",
-        "version": "1",
-        "provider": "Fireworks",
-        "sold_by": "partner",
-        "status": "Generally Available",
-        "lifecycle": "GA",
-        "deprecation_date": null,
-        "retirement_date": "2027-07-01",
-        "replacement": null
-      },
-      {
-        "model": "FW-Kimi-K2-Thinking",
-        "version": "1",
-        "provider": "Fireworks",
-        "sold_by": "partner",
-        "status": "Generally Available",
-        "lifecycle": "GA",
-        "deprecation_date": null,
-        "retirement_date": "2027-07-01",
-        "replacement": null
-      },
-      {
-        "model": "FW-Kimi-K2.5",
-        "version": "1",
-        "provider": "Fireworks",
-        "sold_by": "partner",
-        "status": "Generally Available",
-        "lifecycle": "GA",
-        "deprecation_date": null,
-        "retirement_date": "2027-07-01",
-        "replacement": null
-      },
-      {
-        "model": "FW-MiniMax-M2.5",
-        "version": "1",
-        "provider": "Fireworks",
-        "sold_by": "partner",
-        "status": "Generally Available",
-        "lifecycle": "GA",
-        "deprecation_date": null,
-        "retirement_date": "2027-07-01",
-        "replacement": null
-      },
-      {
-        "model": "FW-Qwen3-14B",
-        "version": "1",
-        "provider": "Fireworks",
-        "sold_by": "partner",
-        "status": "Generally Available",
-        "lifecycle": "GA",
-        "deprecation_date": null,
-        "retirement_date": "2027-07-01",
-        "replacement": null
-      },
-      {
-        "model": "FW-Qwen3.5-122B-A10B",
-        "version": "1",
-        "provider": "Fireworks",
-        "sold_by": "partner",
-        "status": "Generally Available",
-        "lifecycle": "GA",
-        "deprecation_date": null,
-        "retirement_date": "2027-07-01",
-        "replacement": null
-      },
-      {
-        "model": "FW-Qwen3.5-397B-A17B",
-        "version": "1",
-        "provider": "Fireworks",
-        "sold_by": "partner",
-        "status": "Generally Available",
-        "lifecycle": "GA",
-        "deprecation_date": null,
-        "retirement_date": "2027-07-01",
-        "replacement": null
-      },
-      {
         "model": "Llama-3.2-11B-Vision-Instruct",
         "version": "",
         "provider": "Meta",
@@ -1229,6 +1112,28 @@
         "lifecycle": "Retired",
         "deprecation_date": null,
         "retirement_date": "2026-06-13",
+        "replacement": null
+      },
+      {
+        "model": "Llama-3.3-70B-Instruct",
+        "version": "",
+        "provider": "Meta",
+        "sold_by": "partner",
+        "status": "Generally Available",
+        "lifecycle": "GA",
+        "deprecation_date": null,
+        "retirement_date": "2027-01-31",
+        "replacement": null
+      },
+      {
+        "model": "Llama-4-Maverick-17B-128E-Instruct-FP8",
+        "version": "",
+        "provider": "Meta",
+        "sold_by": "partner",
+        "status": "Generally Available",
+        "lifecycle": "GA",
+        "deprecation_date": null,
+        "retirement_date": "2026-11-19",
         "replacement": null
       },
       {
@@ -1283,8 +1188,8 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
-        "replacement": null
+        "retirement_date": "2027-01-17",
+        "replacement": "microsoft--phi-4 (Foundry Managed Compute)"
       },
       {
         "model": "Phi-4-mini-instruct",
@@ -1294,8 +1199,8 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
-        "replacement": null
+        "retirement_date": "2027-01-17",
+        "replacement": "microsoft--phi-4 (Foundry Managed Compute)"
       },
       {
         "model": "Phi-4-mini-reasoning",
@@ -1305,8 +1210,8 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
-        "replacement": null
+        "retirement_date": "2027-01-17",
+        "replacement": "microsoft--phi-4 (Foundry Managed Compute)"
       },
       {
         "model": "Phi-4-multimodal-instruct",
@@ -1316,8 +1221,8 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
-        "replacement": null
+        "retirement_date": "2027-01-17",
+        "replacement": "microsoft--phi-4 (Foundry Managed Compute)"
       },
       {
         "model": "Phi-4-reasoning",
@@ -1327,8 +1232,8 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
-        "replacement": null
+        "retirement_date": "2027-01-17",
+        "replacement": "microsoft--phi-4 (Foundry Managed Compute)"
       },
       {
         "model": "Codestral-2501",
@@ -1349,19 +1254,8 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
-        "replacement": null
-      },
-      {
-        "model": "Mistral-large",
-        "version": "1",
-        "provider": "Mistral AI",
-        "sold_by": "partner",
-        "status": "Generally Available",
-        "lifecycle": "GA",
-        "deprecation_date": null,
-        "retirement_date": null,
-        "replacement": null
+        "retirement_date": "2026-12-09",
+        "replacement": "ministral-ministral-4b-instruct"
       },
       {
         "model": "mistral-medium-2505",
@@ -1371,8 +1265,8 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
-        "replacement": null
+        "retirement_date": "2026-12-09",
+        "replacement": "mistral-medium-3-5"
       },
       {
         "model": "mistral-small-2503",
@@ -1380,10 +1274,10 @@
         "provider": "Mistral AI",
         "sold_by": "partner",
         "status": "Generally Available",
-        "lifecycle": "GA",
+        "lifecycle": "Deprecated",
         "deprecation_date": null,
-        "retirement_date": null,
-        "replacement": null
+        "retirement_date": "2027-02-15",
+        "replacement": "mistralai-mistral-small-4-119b-2603"
       },
       {
         "model": "TimeGEN-1",
@@ -1474,7 +1368,7 @@
         "sold_by": "azure",
         "status": "Generally Available",
         "lifecycle": "GA",
-        "deprecation_date": "2026-10-15",
+        "deprecation_date": null,
         "retirement_date": "2027-04-15",
         "replacement": null
       },
@@ -1942,8 +1836,11 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
-        "replacement": null
+        "retirement_date": "2027-06-01",
+        "replacement": "Coher-embed-v5-fast",
+        "replacement_alts": [
+          "Cohere-embed-v5-pro"
+        ]
       },
       {
         "model": "Cohere-embed-v3-english",
@@ -1953,8 +1850,11 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
-        "replacement": null
+        "retirement_date": "2027-02-15",
+        "replacement": "Cohere-embed-v5-fast",
+        "replacement_alts": [
+          "Cohere-embed-v5-pro"
+        ]
       },
       {
         "model": "Cohere-embed-v3-multilingual",
@@ -1964,8 +1864,11 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
-        "replacement": null
+        "retirement_date": "2027-02-15",
+        "replacement": "Cohere-embed-v5-fast",
+        "replacement_alts": [
+          "Cohere-embed-v5-pro"
+        ]
       }
     ],
     "fine_tuned": [
@@ -2032,8 +1935,8 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
-        "replacement": null
+        "retirement_date": "2027-09-13",
+        "replacement": "Cohere-rerank-v5-fast"
       },
       {
         "model": "Cohere-rerank-v4.0-pro",
@@ -2043,8 +1946,8 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
-        "replacement": null
+        "retirement_date": "2027-09-13",
+        "replacement": "Cohere-rerank-v5-pro"
       },
       {
         "model": "mistral-document-ai-2505",
