@@ -741,13 +741,14 @@ _Last updated: {datetime.utcnow():%Y-%m-%d %H:%M UTC}_
 
 
 MODEL_FAMILY_RULES: List[Tuple[Tuple[str, ...], str]] = [
+    (("fw-",), "Fireworks"),
     (("claude",), "Anthropic"),
     (("cohere", "embed-v"), "Cohere"),
     (("deepseek",), "DeepSeek"),
     (("flux",), "Black Forest Labs"),
     (("grok",), "xAI"),
     (("llama",), "Meta"),
-    (("phi-", "mai-"), "Microsoft"),
+    (("phi-", "mai-", "microsoft-"), "Microsoft"),
     (("mistral", "ministral", "codestral"), "Mistral AI"),
     (("stable",), "Stability AI"),
     (("kimi",), "Moonshot AI"),

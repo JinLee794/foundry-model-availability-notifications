@@ -14,6 +14,8 @@ that previously backed these pages is no longer public.)
 | [Foundry Models from partners and community](https://learn.microsoft.com/azure/foundry/foundry-models/concepts/models-from-partners) | Partner Global Standard and Data Zone Standard |
 | [Priority processing](https://learn.microsoft.com/azure/foundry/openai/concepts/priority-processing) | Global Standard and Data Zone Standard priority processing |
 | [Foundry Models sold by Azure in Azure Government](https://learn.microsoft.com/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure-gov) | Azure Government Data Zone, Standard and Provisioned |
+| [Model router](https://learn.microsoft.com/azure/foundry/openai/concepts/model-router) | `model-router` Global and Data Zone Standard |
+| [Fireworks model catalog](https://learn.microsoft.com/azure/foundry/how-to/fireworks/fireworks-model-catalog) | `FW-*` models: Global/Data Zone Standard and Provisioned. Global types use every region where Foundry offers Global Standard; Data Zone types use the US regions listed on the page |
 
 ## How the System Works
 
@@ -31,6 +33,13 @@ yields no availability tables, or the scrape loses more than half of the models 
 Tables under headings that aren't in a source's `sections` table are skipped with a warning on stderr,
 which is the signal that Microsoft added a new deployment type.
 
+## Coverage
+
+`python .region-watch/coverage.py` compares the snapshot with the live (non-retired) models in the
+retirement schedule and lists those without region data. A few models are only listed in capability
+tables, with no published region table, so 100% isn't expected. The daily workflow writes this report to
+the job summary. Pull request builds fail if coverage drops below 85%.
+
 ## Adding a New Source or Deployment Type
 
 Edit `LEARN_SOURCES` in `.region-watch/diff_regions.py`:
@@ -46,6 +55,10 @@ Edit `LEARN_SOURCES` in `.region-watch/diff_regions.py`:
     },
 },
 ```
+
+For pages whose table columns are deployment types (rows are regions or models), use
+`"kind": "type_columns"` with a `columns` map instead of `heading`/`sections`. See the `model-router`
+and Fireworks entries.
 
 Reuse an existing SKU key where the deployment type matches, so labels and explorer filters keep
 working. For a new key, add a label to `SKU_LABEL_OVERRIDES` in `diff_regions.py` if needed, and map it to

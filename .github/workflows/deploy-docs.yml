@@ -23,6 +23,15 @@ on:
       - 'generate_docs.py'
       - '.region-watch/**'
 
+  # Build (but don't deploy) pull requests so a broken site is caught before merge
+  pull_request:
+    paths:
+      - 'docs/**'
+      - 'mkdocs.yml'
+      - 'generate_docs.py'
+      - '.region-watch/**'
+      - '.github/workflows/deploy-docs.yml'
+
 permissions:
   contents: read
   pages: write
@@ -30,7 +39,7 @@ permissions:
 
 # Allow only one concurrent deployment
 concurrency:
-  group: "pages"
+  group: ${{ github.event_name == 'pull_request' && format('pages-pr-{0}', github.ref) || 'pages' }}
   cancel-in-progress: false
 
 jobs:
@@ -53,6 +62,9 @@ jobs:
       - name: Generate docs from snapshot
         run: python generate_docs.py
 
+      - name: Check model coverage
+        run: python .region-watch/coverage.py ${{ github.event_name == 'pull_request' && '--min-coverage 0.85' || '' }}
+
       - name: Build MkDocs site
         run: mkdocs build --strict
 
@@ -60,14 +72,17 @@ jobs:
         run: touch ./site/.nojekyll
 
       - name: Setup Pages
+        if: ${{ github.event_name != 'pull_request' }}
         uses: actions/configure-pages@v4
 
       - name: Upload artifact
+        if: ${{ github.event_name != 'pull_request' }}
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./site
 
   deploy:
+    if: ${{ github.event_name != 'pull_request' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

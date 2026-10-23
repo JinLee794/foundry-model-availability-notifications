@@ -1,8 +1,8 @@
 # AI Foundry Model Availability by Region
 
-_Last updated: 2026-10-23 15:32 UTC_
+_Last updated: 2026-10-23 15:55 UTC_
 
-- Models tracked: **129**
+- Models tracked: **170**
 - Regions in snapshot: **35**
 - Distinct SKU labels: **17**
 
@@ -35,6 +35,47 @@ SKU labels observed:
 
 | Model | Coverage | Regions | SKU labels | Regions (sample) |
 | --- | --- | --- | --- | --- |
+| FW-DeepSeek-V3.1 | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-DeepSeek-V3.2 | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-DeepSeek-V4-Flash | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-DeepSeek-V4-Pro | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-DeepSeek-V4.1-Flash | 🟢 Broad | 33 | 4 (Datazone standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-GLM-4.7 | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-GLM-5 | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-GLM-5.1 | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-GLM-5.2 | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-GLM-5.3 | 🟢 Broad | 33 | 5 (Datazone provisioned managed, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-GLM-5.3-Flash | 🟢 Broad | 33 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-GPT-OSS-120B | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-GPT-OSS-20B | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-Gemma-4-26B-A4B-IT | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-Gemma-4-31B-IT | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-Inkling | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-Kimi-K2-Instruct-0905 | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-Kimi-K2-Thinking | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-Kimi-K2.5 | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-Kimi-K2.6 | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-Kimi-K2.7-Code | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-Kimi-K3 | 🟢 Broad | 33 | 4 (Datazone standard, Global Standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-Llama-v3.1-8B-Instruct | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-MiniMax-M3 | 🟢 Broad | 33 | 4 (Datazone provisioned managed, Datazone standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-Ministral-3-3B-Instruct-2512 | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-Muse-Glimmer-30B | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-Nemotron-3-Super-120B-A12B-BF16 | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-Nemotron-3-Ultra-NVFP4 | 🟢 Broad | 33 | 4 (Datazone provisioned managed, Datazone standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-Nemotron-Lightning-3.5-30B-A3B | 🟢 Broad | 33 | 4 (Datazone provisioned managed, Datazone standard, Global coverage +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-PaddleOCR-VL-1.6 | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-Qwen3-32B | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-Qwen3.5-122B-A10B | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-Qwen3.5-27B | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-Qwen3.5-35B-A3B | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-Qwen3.5-397B-A17B | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-Qwen3.5-4B | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-Qwen3.5-9B | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-Qwen3.6-27B | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-Qwen3.6-35B-A3B | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| FW-Qwen3.8-27B | 🟢 Broad | 33 | 3 (Datazone provisioned managed, Global coverage, Provisioned global) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| model-router | 🟢 Broad | 32 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | Codestral-2501 | 🟢 Broad | 31 | 2 (Global coverage, Marketplace Deployments Standard) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | Cohere-command-a-plus-05-2026 | 🟢 Broad | 31 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | Cohere-rerank-v4.0-fast | 🟢 Broad | 31 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
@@ -126,6 +167,7 @@ SKU labels observed:
 | claude-sonnet-5 | 🔴 Emerging | 9 | 3 (Global coverage, Marketplace Deployments Datazone Standard, Marketplace Deployments Standard) | `Central US`, `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central` |
 | claude-sonnet-5-5 | 🔴 Emerging | 9 | 3 (Global coverage, Marketplace Deployments Datazone Standard, Marketplace Deployments Standard) | `Central US`, `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central` |
 | whisper | 🔴 Emerging | 8 | 2 (Global coverage, Standard) | `East US 2`, `North Central US`, `Norway East`, `South India`, `Sweden Central`, `Switzerland North` |
+| FW-GLM-5.2-Fast | 🔴 Emerging | 7 | 2 (Datazone standard, Global coverage) | `Central US`, `East US`, `East US 2`, `North Central US`, `South Central US`, `West US` |
 | MAI-Image-2.5 | 🔴 Emerging | 7 | 2 (Global Standard, Global coverage) | `East US`, `South India`, `Sweden Central`, `UAE North`, `West Central US`, `West Europe` |
 | MAI-Image-2.5-Flash | 🔴 Emerging | 7 | 2 (Global Standard, Global coverage) | `East US`, `South India`, `Sweden Central`, `UAE North`, `West Central US`, `West Europe` |
 | MAI-Image-2.5-Pro | 🔴 Emerging | 7 | 2 (Global Standard, Global coverage) | `East US`, `South India`, `Sweden Central`, `UAE North`, `West Central US`, `West Europe` |
@@ -146,7 +188,6 @@ SKU labels observed:
 | gpt-transcribe | 🔴 Emerging | 7 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
 | gpt-image-2 | 🔴 Emerging | 6 | 3 (Global Standard, Global coverage, Provisioned global) | `Australia East`, `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
 | gpt-image-2.5-flare | 🔴 Emerging | 6 | 3 (Global Standard, Global coverage, Provisioned global) | `East US 2`, `Poland Central`, `Spain Central`, `Sweden Central`, `UAE North`, `West US 3` |
-| model-router | 🔴 Emerging | 6 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `East US 2`, `North Europe`, `South India`, `Sweden Central`, `West US 3` |
 | gpt-image-1 | 🔴 Emerging | 5 | 2 (Global Standard, Global coverage) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
 | gpt-image-1-mini | 🔴 Emerging | 5 | 2 (Global Standard, Global coverage) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
 | gpt-image-1.5 | 🔴 Emerging | 5 | 3 (Datazone standard, Global Standard, Global coverage) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
@@ -167,6 +208,1563 @@ SKU labels observed:
 
 ## Regional rosters by model
 
+<details>
+<summary>FW-DeepSeek-V3.1 — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-DeepSeek-V3.2 — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-DeepSeek-V4-Flash — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-DeepSeek-V4-Pro — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-DeepSeek-V4.1-Flash — 33 regions across 4 SKU labels</summary>
+
+- `Australia East` — Global Standard, Global coverage, Provisioned global
+- `Brazil South` — Global Standard, Global coverage, Provisioned global
+- `Canada Central` — Global Standard, Global coverage, Provisioned global
+- `Canada East` — Global Standard, Global coverage, Provisioned global
+- `Central US` — Datazone standard, Global Standard, Global coverage, Provisioned global
+- `East US` — Datazone standard, Global Standard, Global coverage, Provisioned global
+- `East US 2` — Datazone standard, Global Standard, Global coverage, Provisioned global
+- `France Central` — Global Standard, Global coverage, Provisioned global
+- `Germany West Central` — Global Standard, Global coverage, Provisioned global
+- `Italy North` — Global Standard, Global coverage, Provisioned global
+- `Japan East` — Global Standard, Global coverage, Provisioned global
+- `Japan West` — Global Standard, Global coverage, Provisioned global
+- `Korea Central` — Global Standard, Global coverage, Provisioned global
+- `North Central US` — Datazone standard, Global Standard, Global coverage, Provisioned global
+- `North Europe` — Global Standard, Global coverage, Provisioned global
+- `Norway East` — Global Standard, Global coverage, Provisioned global
+- `Poland Central` — Global Standard, Global coverage, Provisioned global
+- `South Africa North` — Global Standard, Global coverage, Provisioned global
+- `South Central US` — Datazone standard, Global Standard, Global coverage, Provisioned global
+- `South India` — Global Standard, Global coverage, Provisioned global
+- `Southeast Asia` — Global Standard, Global coverage, Provisioned global
+- `Spain Central` — Global Standard, Global coverage, Provisioned global
+- `Sweden Central` — Global Standard, Global coverage, Provisioned global
+- `Switzerland North` — Global Standard, Global coverage, Provisioned global
+- `Switzerland West` — Global Standard, Global coverage, Provisioned global
+- `UAE North` — Global Standard, Global coverage, Provisioned global
+- `UK South` — Global Standard, Global coverage, Provisioned global
+- `UK West` — Global Standard, Global coverage, Provisioned global
+- `West Central US` — Global Standard, Global coverage, Provisioned global
+- `West Europe` — Global Standard, Global coverage, Provisioned global
+- `West US` — Datazone standard, Global Standard, Global coverage, Provisioned global
+- `West US 2` — Global Standard, Global coverage, Provisioned global
+- `West US 3` — Datazone standard, Global Standard, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-GLM-4.7 — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-GLM-5 — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-GLM-5.1 — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-GLM-5.2 — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-GLM-5.3 — 33 regions across 5 SKU labels</summary>
+
+- `Australia East` — Global Standard, Global coverage, Provisioned global
+- `Brazil South` — Global Standard, Global coverage, Provisioned global
+- `Canada Central` — Global Standard, Global coverage, Provisioned global
+- `Canada East` — Global Standard, Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
+- `France Central` — Global Standard, Global coverage, Provisioned global
+- `Germany West Central` — Global Standard, Global coverage, Provisioned global
+- `Italy North` — Global Standard, Global coverage, Provisioned global
+- `Japan East` — Global Standard, Global coverage, Provisioned global
+- `Japan West` — Global Standard, Global coverage, Provisioned global
+- `Korea Central` — Global Standard, Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
+- `North Europe` — Global Standard, Global coverage, Provisioned global
+- `Norway East` — Global Standard, Global coverage, Provisioned global
+- `Poland Central` — Global Standard, Global coverage, Provisioned global
+- `South Africa North` — Global Standard, Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
+- `South India` — Global Standard, Global coverage, Provisioned global
+- `Southeast Asia` — Global Standard, Global coverage, Provisioned global
+- `Spain Central` — Global Standard, Global coverage, Provisioned global
+- `Sweden Central` — Global Standard, Global coverage, Provisioned global
+- `Switzerland North` — Global Standard, Global coverage, Provisioned global
+- `Switzerland West` — Global Standard, Global coverage, Provisioned global
+- `UAE North` — Global Standard, Global coverage, Provisioned global
+- `UK South` — Global Standard, Global coverage, Provisioned global
+- `UK West` — Global Standard, Global coverage, Provisioned global
+- `West Central US` — Global Standard, Global coverage, Provisioned global
+- `West Europe` — Global Standard, Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
+- `West US 2` — Global Standard, Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-GLM-5.3-Flash — 33 regions across 2 SKU labels</summary>
+
+- `Australia East` — Global Standard, Global coverage
+- `Brazil South` — Global Standard, Global coverage
+- `Canada Central` — Global Standard, Global coverage
+- `Canada East` — Global Standard, Global coverage
+- `Central US` — Global Standard, Global coverage
+- `East US` — Global Standard, Global coverage
+- `East US 2` — Global Standard, Global coverage
+- `France Central` — Global Standard, Global coverage
+- `Germany West Central` — Global Standard, Global coverage
+- `Italy North` — Global Standard, Global coverage
+- `Japan East` — Global Standard, Global coverage
+- `Japan West` — Global Standard, Global coverage
+- `Korea Central` — Global Standard, Global coverage
+- `North Central US` — Global Standard, Global coverage
+- `North Europe` — Global Standard, Global coverage
+- `Norway East` — Global Standard, Global coverage
+- `Poland Central` — Global Standard, Global coverage
+- `South Africa North` — Global Standard, Global coverage
+- `South Central US` — Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage
+- `Southeast Asia` — Global Standard, Global coverage
+- `Spain Central` — Global Standard, Global coverage
+- `Sweden Central` — Global Standard, Global coverage
+- `Switzerland North` — Global Standard, Global coverage
+- `Switzerland West` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `UK South` — Global Standard, Global coverage
+- `UK West` — Global Standard, Global coverage
+- `West Central US` — Global Standard, Global coverage
+- `West Europe` — Global Standard, Global coverage
+- `West US` — Global Standard, Global coverage
+- `West US 2` — Global Standard, Global coverage
+- `West US 3` — Global Standard, Global coverage
+
+</details>
+<details>
+<summary>FW-GPT-OSS-120B — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-GPT-OSS-20B — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-Gemma-4-26B-A4B-IT — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-Gemma-4-31B-IT — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-Inkling — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-Kimi-K2-Instruct-0905 — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-Kimi-K2-Thinking — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-Kimi-K2.5 — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-Kimi-K2.6 — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-Kimi-K2.7-Code — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-Kimi-K3 — 33 regions across 4 SKU labels</summary>
+
+- `Australia East` — Global Standard, Global coverage, Provisioned global
+- `Brazil South` — Global Standard, Global coverage, Provisioned global
+- `Canada Central` — Global Standard, Global coverage, Provisioned global
+- `Canada East` — Global Standard, Global coverage, Provisioned global
+- `Central US` — Datazone standard, Global Standard, Global coverage, Provisioned global
+- `East US` — Datazone standard, Global Standard, Global coverage, Provisioned global
+- `East US 2` — Datazone standard, Global Standard, Global coverage, Provisioned global
+- `France Central` — Global Standard, Global coverage, Provisioned global
+- `Germany West Central` — Global Standard, Global coverage, Provisioned global
+- `Italy North` — Global Standard, Global coverage, Provisioned global
+- `Japan East` — Global Standard, Global coverage, Provisioned global
+- `Japan West` — Global Standard, Global coverage, Provisioned global
+- `Korea Central` — Global Standard, Global coverage, Provisioned global
+- `North Central US` — Datazone standard, Global Standard, Global coverage, Provisioned global
+- `North Europe` — Global Standard, Global coverage, Provisioned global
+- `Norway East` — Global Standard, Global coverage, Provisioned global
+- `Poland Central` — Global Standard, Global coverage, Provisioned global
+- `South Africa North` — Global Standard, Global coverage, Provisioned global
+- `South Central US` — Datazone standard, Global Standard, Global coverage, Provisioned global
+- `South India` — Global Standard, Global coverage, Provisioned global
+- `Southeast Asia` — Global Standard, Global coverage, Provisioned global
+- `Spain Central` — Global Standard, Global coverage, Provisioned global
+- `Sweden Central` — Global Standard, Global coverage, Provisioned global
+- `Switzerland North` — Global Standard, Global coverage, Provisioned global
+- `Switzerland West` — Global Standard, Global coverage, Provisioned global
+- `UAE North` — Global Standard, Global coverage, Provisioned global
+- `UK South` — Global Standard, Global coverage, Provisioned global
+- `UK West` — Global Standard, Global coverage, Provisioned global
+- `West Central US` — Global Standard, Global coverage, Provisioned global
+- `West Europe` — Global Standard, Global coverage, Provisioned global
+- `West US` — Datazone standard, Global Standard, Global coverage, Provisioned global
+- `West US 2` — Global Standard, Global coverage, Provisioned global
+- `West US 3` — Datazone standard, Global Standard, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-Llama-v3.1-8B-Instruct — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-MiniMax-M3 — 33 regions across 4 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-Ministral-3-3B-Instruct-2512 — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-Muse-Glimmer-30B — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-Nemotron-3-Super-120B-A12B-BF16 — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-Nemotron-3-Ultra-NVFP4 — 33 regions across 4 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-Nemotron-Lightning-3.5-30B-A3B — 33 regions across 4 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Datazone standard, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-PaddleOCR-VL-1.6 — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-Qwen3-32B — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-Qwen3.5-122B-A10B — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-Qwen3.5-27B — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-Qwen3.5-35B-A3B — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-Qwen3.5-397B-A17B — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-Qwen3.5-4B — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-Qwen3.5-9B — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-Qwen3.6-27B — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-Qwen3.6-35B-A3B — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>FW-Qwen3.8-27B — 33 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global coverage, Provisioned global
+- `Brazil South` — Global coverage, Provisioned global
+- `Canada Central` — Global coverage, Provisioned global
+- `Canada East` — Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Global coverage, Provisioned global
+- `France Central` — Global coverage, Provisioned global
+- `Germany West Central` — Global coverage, Provisioned global
+- `Italy North` — Global coverage, Provisioned global
+- `Japan East` — Global coverage, Provisioned global
+- `Japan West` — Global coverage, Provisioned global
+- `Korea Central` — Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `North Europe` — Global coverage, Provisioned global
+- `Norway East` — Global coverage, Provisioned global
+- `Poland Central` — Global coverage, Provisioned global
+- `South Africa North` — Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `South India` — Global coverage, Provisioned global
+- `Southeast Asia` — Global coverage, Provisioned global
+- `Spain Central` — Global coverage, Provisioned global
+- `Sweden Central` — Global coverage, Provisioned global
+- `Switzerland North` — Global coverage, Provisioned global
+- `Switzerland West` — Global coverage, Provisioned global
+- `UAE North` — Global coverage, Provisioned global
+- `UK South` — Global coverage, Provisioned global
+- `UK West` — Global coverage, Provisioned global
+- `West Central US` — Global coverage, Provisioned global
+- `West Europe` — Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Global coverage, Provisioned global
+- `West US 2` — Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Global coverage, Provisioned global
+
+</details>
+<details>
+<summary>model-router — 32 regions across 3 SKU labels</summary>
+
+- `Australia East` — Datazone standard, Global Standard, Global coverage
+- `Brazil South` — Global Standard, Global coverage
+- `Canada Central` — Global Standard, Global coverage
+- `Canada East` — Global Standard, Global coverage
+- `Central US` — Datazone standard, Global Standard, Global coverage
+- `East US` — Datazone standard, Global Standard, Global coverage
+- `East US 2` — Datazone standard, Global Standard, Global coverage
+- `France Central` — Datazone standard, Global Standard, Global coverage
+- `Germany West Central` — Datazone standard, Global Standard, Global coverage
+- `Italy North` — Datazone standard, Global Standard, Global coverage
+- `Japan East` — Datazone standard, Global Standard, Global coverage
+- `Japan West` — Datazone standard, Global Standard, Global coverage
+- `Korea Central` — Datazone standard, Global Standard, Global coverage
+- `North Central US` — Datazone standard, Global Standard, Global coverage
+- `North Europe` — Datazone standard, Global Standard, Global coverage
+- `Norway East` — Datazone standard, Global Standard, Global coverage
+- `Poland Central` — Datazone standard, Global Standard, Global coverage
+- `South Africa North` — Global Standard, Global coverage
+- `South Central US` — Datazone standard, Global Standard, Global coverage
+- `South India` — Datazone standard, Global Standard, Global coverage
+- `Southeast Asia` — Datazone standard, Global Standard, Global coverage
+- `Spain Central` — Datazone standard, Global Standard, Global coverage
+- `Sweden Central` — Datazone standard, Global Standard, Global coverage
+- `Switzerland North` — Datazone standard, Global Standard, Global coverage
+- `Switzerland West` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `UK South` — Global Standard, Global coverage
+- `UK West` — Global Standard, Global coverage
+- `West Central US` — Global Standard, Global coverage
+- `West Europe` — Datazone standard, Global Standard, Global coverage
+- `West US` — Datazone standard, Global Standard, Global coverage
+- `West US 3` — Datazone standard, Global Standard, Global coverage
+
+</details>
 <details>
 <summary>Codestral-2501 — 31 regions across 2 SKU labels</summary>
 
@@ -3060,6 +4658,18 @@ SKU labels observed:
 
 </details>
 <details>
+<summary>FW-GLM-5.2-Fast — 7 regions across 2 SKU labels</summary>
+
+- `Central US` — Datazone standard, Global coverage
+- `East US` — Datazone standard, Global coverage
+- `East US 2` — Datazone standard, Global coverage
+- `North Central US` — Datazone standard, Global coverage
+- `South Central US` — Datazone standard, Global coverage
+- `West US` — Datazone standard, Global coverage
+- `West US 3` — Datazone standard, Global coverage
+
+</details>
+<details>
 <summary>MAI-Image-2.5 — 7 regions across 2 SKU labels</summary>
 
 - `East US` — Global Standard, Global coverage
@@ -3295,17 +4905,6 @@ SKU labels observed:
 - `Sweden Central` — Global Standard, Global coverage
 - `UAE North` — Global Standard, Global coverage
 - `West US 3` — Global Standard, Global coverage
-
-</details>
-<details>
-<summary>model-router — 6 regions across 3 SKU labels</summary>
-
-- `Australia East` — Datazone standard, Global Standard, Global coverage
-- `East US 2` — Datazone standard, Global Standard, Global coverage
-- `North Europe` — Datazone standard, Global Standard, Global coverage
-- `South India` — Datazone standard, Global Standard, Global coverage
-- `Sweden Central` — Datazone standard, Global Standard, Global coverage
-- `West US 3` — Datazone standard, Global Standard, Global coverage
 
 </details>
 <details>

@@ -58,6 +58,33 @@ LEARN_SOURCES = [
             "provisioned managed": "provisioned-models-gov",
         },
     },
+    # The pages below list deployment types as table columns instead of regions.
+    {
+        "name": "model-router",
+        "url": LEARN_BASE + "openai/concepts/model-router",
+        "kind": "type_columns",
+        "within_h2": "supported regions",
+        "model": "model-router",
+        "columns": {
+            "global standard": "standard-global",
+            "data zone standard": "datazone-standard",
+        },
+    },
+    {
+        # Fireworks states regions in prose: global types run in every global Azure region (we use
+        # the regions Foundry offers Global Standard in) and data zone types in the US regions
+        # bulleted under "Region availability".
+        "name": "fireworks-model-catalog",
+        "url": LEARN_BASE + "how-to/fireworks/fireworks-model-catalog",
+        "kind": "type_columns",
+        "datazone_regions_h2": "region availability",
+        "columns": {
+            "global standard": "standard-global",
+            "data zone standard": "datazone-standard",
+            "global provisioned": "provisioned-global",
+            "data zone provisioned": "datazone-provisioned-managed",
+        },
+    },
 ]
 
 # Refuse to overwrite the snapshot when the fresh scrape lost more than this share of models,
@@ -86,7 +113,11 @@ REGION_MAP = {
     "australiacentral": "Australia Central", "australiacentral2": "Australia Central 2",
     "indiacentral": "India Central", "indiasouth": "India South", "westindia": "West India",
     "centralindia": "Central India", "southindia": "South India",
-    "jioindiawest": "Jio India West", "jioindiacentral": "Jio India Central"
+    "jioindiawest": "Jio India West", "jioindiacentral": "Jio India Central",
+    "mexicocentral": "Mexico Central", "chilecentral": "Chile Central", "israelcentral": "Israel Central",
+    "newzealandnorth": "New Zealand North", "indonesiacentral": "Indonesia Central",
+    "malaysiawest": "Malaysia West", "taiwannorth": "Taiwan North", "austriaeast": "Austria East",
+    "belgiumcentral": "Belgium Central", "denmarkeast": "Denmark East",
 }
 
 def normalize_model_name(name: str) -> str:
@@ -161,8 +192,17 @@ def split_cells(row: str, allow_no_leading_pipe: bool = False) -> list:
         row = "|" + row
     return [c.strip() for c in row.strip().strip("|").split("|")]
 
+def plain_cell(cell: str) -> str:
+    """Strip Learn Markdown decoration: footnotes (^1^, <sup>), links, code ticks and emphasis."""
+    cell = html.unescape(cell)
+    cell = re.sub(r"<sup>.*?</sup>", "", cell)
+    cell = re.sub(r"\^[^^\s|]+\^", "", cell)
+    cell = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", cell)
+    cell = re.sub(r"<br\s*/?>", "<br>", cell)
+    return re.sub(r"[ \t]+", " ", cell.replace("*", "").replace("`", "")).strip()
+
 def parse_model_names(cell: str) -> list:
-    cell = re.sub(r"\*\*|\*", "", cell).strip()
+    cell = plain_cell(cell)
     if not cell:
         return []
     models = []
@@ -310,18 +350,104 @@ def extract_source_models(markdown: str, source: dict) -> dict:
     return result
 
 
+def section_region_codes(markdown: str, h2: str) -> set:
+    """Regions written as `code` in the prose of one h2 section."""
+    regions = set()
+    current = None
+    for line in markdown.splitlines():
+        heading = re.match(r"^##\s+(.+?)\s*$", line)
+        if heading:
+            current = _clean_heading(heading.group(1))
+            continue
+        if current == h2:
+            for code in re.findall(r"`([a-z0-9]+)`", line):
+                if normalize_region_key(code) in REGION_LOOKUP:
+                    regions.add(REGION_LOOKUP[normalize_region_key(code)])
+    return regions
+
+
+def parse_type_columns_table(table: str, source: dict, scope_regions) -> dict:
+    """Parse a table whose columns are deployment types. Rows are either regions (for a single
+    model named by the source) or models (whose regions come from scope_regions(sku))."""
+    rows = [line for line in table.strip().splitlines() if line.strip()]
+    result = defaultdict(lambda: defaultdict(set))
+    if len(rows) < 3:
+        return result
+    header = [plain_cell(cell).lower() for cell in split_cells(rows[0])]
+    col_sku = {idx: source["columns"][name] for idx, name in enumerate(header) if name in source["columns"]}
+    if not col_sku:
+        return result
+    if header[0] == "region":
+        model = source["model"]
+        for row in rows[2:]:
+            cells = split_cells(row)
+            region = format_region_name(plain_cell(cells[0])) if cells else None
+            if not region:
+                continue
+            for idx, sku in col_sku.items():
+                if idx < len(cells) and is_available_cell(cells[idx]):
+                    result[sku][model].add(region)
+        return result
+    name_col = next((idx for idx, name in enumerate(header) if name in ("model name", "model")), None)
+    if name_col is None:
+        return result
+    for row in rows[2:]:
+        cells = split_cells(row)
+        if len(cells) <= name_col:
+            continue
+        for model in parse_model_names(cells[name_col]):
+            for idx, sku in col_sku.items():
+                if idx < len(cells) and is_available_cell(cells[idx]):
+                    result[sku][model].update(scope_regions(sku))
+    return result
+
+
+def extract_type_columns_models(markdown: str, source: dict, global_regions: set) -> dict:
+    datazone_regions = set()
+    if source.get("datazone_regions_h2"):
+        datazone_regions = section_region_codes(markdown, source["datazone_regions_h2"])
+        if not datazone_regions:
+            raise RuntimeError(f"No data zone regions found in {source['url']}")
+
+    def scope_regions(sku: str) -> set:
+        return datazone_regions if "datazone" in sku else global_regions
+
+    result = defaultdict(lambda: defaultdict(set))
+    for headings, table in iter_tables(markdown):
+        if source.get("within_h2") and headings.get("h2") != source["within_h2"]:
+            continue
+        for sku, models in parse_type_columns_table(table, source, scope_regions).items():
+            for model, regions in models.items():
+                result[sku][model].update(regions)
+    return result
+
+
 def build_current_snapshot(sources: list) -> dict:
     """Scrape every source. Raises if a page can't be fetched or yields no models, so a
     partial scrape is never mistaken for models disappearing."""
     combined = defaultdict(lambda: defaultdict(set))
-    for source in sources:
-        markdown = fetch_markdown(source["url"])
-        by_sku = extract_source_models(markdown, source)
+
+    def merge(source: dict, by_sku: dict) -> None:
         if not any(by_sku.values()):
             raise RuntimeError(f"No model availability tables parsed from {source['url']}")
         for sku, models in by_sku.items():
             for model, regions in models.items():
                 combined[model][sku].update(regions)
+
+    # Region-matrix pages first: they define the Global Standard footprint used by type_columns pages.
+    for source in sources:
+        if source.get("kind", "matrix") == "matrix":
+            merge(source, extract_source_models(fetch_markdown(source["url"]), source))
+    global_regions = {
+        region
+        for skus in combined.values()
+        for region in skus.get("standard-global", ())
+        if region in REGION_LOOKUP.values()
+    }
+    for source in sources:
+        if source.get("kind") == "type_columns":
+            markdown = fetch_markdown(source["url"])
+            merge(source, extract_type_columns_models(markdown, source, global_regions))
 
     result = {}
     for model in sorted(combined.keys(), key=str.lower):
