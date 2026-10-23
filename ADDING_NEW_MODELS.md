@@ -1,162 +1,86 @@
 # Adding Support for Additional Model Families
 
-This document explains how to add support for additional model families to the model availability tracking system.
+This document explains how the model availability tracker finds its data and how to add new sources.
 
-## Current Status
+## Data Sources
 
-The system currently monitors models from the Azure AI documentation repository from the following directories:
-```
-articles/foundry/openai/includes/model-matrix/          # OpenAI models (enabled)
-articles/foundry/foundry-models/includes/model-matrix/  # Foundry models (enabled)
-```
+Availability is scraped from public Microsoft Learn pages. Learn returns a page's Markdown when it is
+requested with an `Accept: text/markdown` header. (The `MicrosoftDocs/azure-ai-docs` GitHub repository
+that previously backed these pages is no longer public.)
 
-These models are documented in markdown tables with regional availability information.
-
-## Model Families Currently Tracked
-
-- **OpenAI models**: GPT-4, GPT-4o, GPT-3.5 Turbo, o1, o3, o4 series, DALL-E 3, Whisper, TTS, text embeddings
-- **Foundry models**: Phi, Mistral, Qwen, gpt-oss, and other models documented in the foundry-models directory
-
-## Default Behavior
-
-**All models are included by default** - no filtering is applied unless explicitly configured via environment variables.
+| Learn page | Deployment types tracked |
+|------------|--------------------------|
+| [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure-region-availability) | Global, Data Zone and Regional Standard; Global, Data Zone and Regional Provisioned; Global and Data Zone Batch |
+| [Foundry Models from partners and community](https://learn.microsoft.com/azure/foundry/foundry-models/concepts/models-from-partners) | Partner Global Standard and Data Zone Standard |
+| [Priority processing](https://learn.microsoft.com/azure/foundry/openai/concepts/priority-processing) | Global Standard and Data Zone Standard priority processing |
+| [Foundry Models sold by Azure in Azure Government](https://learn.microsoft.com/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure-gov) | Azure Government Data Zone, Standard and Provisioned |
+| [Model router](https://learn.microsoft.com/azure/foundry/openai/concepts/model-router) | `model-router` Global and Data Zone Standard |
+| [Fireworks model catalog](https://learn.microsoft.com/azure/foundry/how-to/fireworks/fireworks-model-catalog) | `FW-*` models: Global/Data Zone Standard and Provisioned. Global types use every region where Foundry offers Global Standard; Data Zone types use the US regions listed on the page |
 
 ## How the System Works
 
-The monitoring system:
-1. Fetches markdown files from configured directories in the Azure AI docs GitHub repository
-2. Parses tables in these markdown files to extract:
-   - Model names (from table column headers)
-   - Azure regions (from table rows)
-   - Availability status (✅ checkmarks in table cells)
-3. Stores the availability data in JSON format
-4. Detects changes and creates notifications
+`.region-watch/diff_regions.py`:
+1. Fetches each page in `LEARN_SOURCES` as Markdown
+2. Tracks the heading that names the deployment type for each table (an `##`/`###` heading or a tab)
+   and maps it to a snapshot SKU key through the source's `sections` table
+3. Parses the tables (either models × region codes or regions × models) for ✅ cells
+4. Compares the result with `.region-watch/regions_snapshot.json`, records changes and writes the new snapshot
 
-## Adding New Model Sources
+The script exits with an error and leaves the snapshot untouched if a page can't be fetched, a page
+yields no availability tables, or the scrape loses more than half of the models in the snapshot. Set
+`ALLOW_SNAPSHOT_SHRINK=1` to accept a large drop that is expected.
 
-### Option 1: Via Code (Permanent)
+Tables under headings that aren't in a source's `sections` table are skipped with a warning on stderr,
+which is the signal that Microsoft added a new deployment type.
 
-Edit `.region-watch/diff_regions.py`:
+## Coverage
+
+`python .region-watch/coverage.py` compares the snapshot with the live (non-retired) models in the
+retirement schedule and lists those without region data. A few models are only listed in capability
+tables, with no published region table, so 100% isn't expected. The daily workflow writes this report to
+the job summary. Pull request builds fail if coverage drops below 85%.
+
+## Adding a New Source or Deployment Type
+
+Edit `LEARN_SOURCES` in `.region-watch/diff_regions.py`:
 
 ```python
-MODEL_MATRIX_DIRS = [
-    "articles/foundry/openai/includes/model-matrix",
-    "articles/foundry/foundry-models/includes/model-matrix",
-    "articles/foundry/models/includes/model-matrix",  # Add more directories as needed
-]
+{
+    "name": "my-new-page",
+    "url": LEARN_BASE + "path/to/learn-page",
+    "heading": "h2",                  # "h2", "h3" or "tab": where the deployment type is named
+    "within_h2": "optional h2 text",  # only read tables under this h2 (lowercase)
+    "sections": {
+        "global standard": "standard-global",  # lowercase heading text -> SKU key
+    },
+},
 ```
 
-### Option 2: Via Environment Variable (Temporary/Testing)
+For pages whose table columns are deployment types (rows are regions or models), use
+`"kind": "type_columns"` with a `columns` map instead of `heading`/`sections`. See the `model-router`
+and Fireworks entries.
 
-Set the `MODEL_MATRIX_EXTRA_DIRS` environment variable:
-
-```bash
-# Single directory
-export MODEL_MATRIX_EXTRA_DIRS="articles/foundry/foundry-models/includes/model-matrix"
-
-# Multiple directories (comma-separated)
-export MODEL_MATRIX_EXTRA_DIRS="articles/foundry/foundry-models/includes/model-matrix,articles/foundry/models/includes/model-matrix"
-```
-
-Or in GitHub Actions workflow (`.github/workflows/region-watch.yml`):
-
-```yaml
-- name: Run diff
-  env:
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    MODEL_MATRIX_EXTRA_DIRS: "articles/foundry/models/includes/model-matrix"  # For additional directories
-  run: |
-    python .region-watch/diff_regions.py > region_diff.json
-```
+Reuse an existing SKU key where the deployment type matches, so labels and explorer filters keep
+working. For a new key, add a label to `SKU_LABEL_OVERRIDES` in `diff_regions.py` if needed, and map it to
+an explorer deployment type in `SKU_KEY_TO_TYPE` in `generate_docs.py`.
 
 ## Filtering Models (Optional)
 
-By default, **all models from all configured directories are included**. This ensures the mkdocs pages show complete information.
-
-To filter models, set environment variables:
+All models are included by default. To filter, set environment variables:
 
 ```bash
-# Include only specific models
 export MODEL_MATRIX_INCLUDE_MODELS="gpt-4,gpt-4o,phi-3"
-
-# Exclude specific models
 export MODEL_MATRIX_EXCLUDE_MODELS="deprecated-model,test-model"
 ```
 
-Note: Filtering is opt-in. If neither variable is set, all models are included.
-
-## Verifying Azure Documentation
-
-Before adding a new directory, verify it exists and contains the expected format:
-
-1. Visit the Azure AI docs repository:
-   ```
-   https://github.com/MicrosoftDocs/azure-ai-docs
-   ```
-
-2. Navigate to potential directories:
-   ```
-   articles/foundry/openai/includes/model-matrix/         # Enabled
-   articles/foundry/foundry-models/includes/model-matrix/ # Enabled
-   articles/foundry/models/includes/model-matrix/         # Available for addition
-   articles/machine-learning/includes/model-matrix/
-   ```
-
-3. Look for markdown files (`.md`) containing tables with:
-   - Model names in column headers
-   - Region names in row headers
-   - ✅ checkmarks indicating availability
-
-## System Status
-
-✅ **OpenAI models** - Fully tracked and monitored  
-✅ **Foundry models** - Enabled and ready to track (phi, mistral, qwen, gpt-oss, etc.)  
-⚠️ **Note**: The foundry-models directory may or may not exist in the Azure docs yet. The system will gracefully handle missing directories.
-
-## Monitoring for Updates
-
-To check if Azure adds new directories:
-
-1. Watch the Azure AI docs repository:
-   ```
-   https://github.com/MicrosoftDocs/azure-ai-docs
-   ```
-
-2. Search for "Phi", "Mistral", "Qwen", or "gpt-oss" with "regional" or "availability"
-
-3. Check commit history in these directories:
-   ```
-   articles/foundry/foundry-models/
-   articles/foundry/models/
-   ```
-
 ## Testing Your Changes
 
-After adding a new directory:
-
 ```bash
-# Run the diff script
 python .region-watch/diff_regions.py > test_output.json
 
-# Check if new models are discovered
-cat test_output.json | jq '.current | keys'
-
-# Look for your model families (phi, mistral, qwen, gpt-oss)
-cat test_output.json | jq '.current | keys | map(select(test("phi|mistral|qwen|gpt-oss"; "i")))'
-
-# Verify no filtering is applied by default (all models included)
-cat test_output.json | jq '.current | length'
+# Model count and names
+jq '.current | length' test_output.json
+jq '.current | keys' test_output.json
 ```
 
-## Questions or Issues?
-
-If you discover new model-matrix directories or alternative data sources, please:
-1. Update `MODEL_MATRIX_DIRS` in `.region-watch/diff_regions.py`
-2. Test the changes
-3. Update this documentation
-4. Submit a pull request
-
----
-
-**Last Updated**: January 2026  
-**Status**: Monitoring OpenAI and Foundry models. All models included by default for comprehensive mkdocs pages.
+Note that running the script updates `.region-watch/regions_snapshot.json`.

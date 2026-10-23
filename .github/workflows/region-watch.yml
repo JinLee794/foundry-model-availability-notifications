@@ -25,7 +25,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # boosts rate limits
         run: |
-          python .region-watch/diff_regions.py > region_diff.json
+          python .region-watch/diff_regions.py > region_diff.tmp
+          mv region_diff.tmp region_diff.json
           cat region_diff.json
 
       - name: Refresh list prices
@@ -35,6 +36,9 @@ jobs:
       - name: Refresh retirement schedule
         continue-on-error: true
         run: python .region-watch/fetch_retirements.py
+      - name: Report model coverage
+        run: python .region-watch/coverage.py
+
       - name: Detect changes
         id: detect
         run: |

@@ -734,20 +734,21 @@ Every model version in Microsoft's [retirement schedule]({html_escape(retirement
 
 ---
 
-_Data sourced from [Microsoft Azure AI Documentation]({html_escape(retirement_data.get("source") or "https://github.com/MicrosoftDocs/azure-ai-docs")})_
+_Data sourced from [Microsoft Azure AI Documentation]({html_escape(retirement_data.get("source") or "https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirement-schedule")})_
 
 _Last updated: {datetime.utcnow():%Y-%m-%d %H:%M UTC}_
 """
 
 
 MODEL_FAMILY_RULES: List[Tuple[Tuple[str, ...], str]] = [
+    (("fw-",), "Fireworks"),
     (("claude",), "Anthropic"),
     (("cohere", "embed-v"), "Cohere"),
     (("deepseek",), "DeepSeek"),
     (("flux",), "Black Forest Labs"),
     (("grok",), "xAI"),
     (("llama",), "Meta"),
-    (("phi-", "mai-"), "Microsoft"),
+    (("phi-", "mai-", "microsoft-"), "Microsoft"),
     (("mistral", "ministral", "codestral"), "Mistral AI"),
     (("stable",), "Stability AI"),
     (("kimi",), "Moonshot AI"),
@@ -1098,6 +1099,7 @@ SKU_KEY_TO_TYPE: Dict[str, str] = {
     "global-batch-datazone": "bt",
     "deployments-batch": "bt",
     "marketplace-deployments-standard": "mp",
+    "marketplace-deployments-datazone-standard": "mp",
     "region-availability-maas": "mp",
 }
 

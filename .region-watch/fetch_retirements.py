@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Refresh .region-watch/retirement_data.json from Microsoft's Foundry model retirement schedule.
 
-The schedule is a Markdown include in MicrosoftDocs/azure-ai-docs with one table per provider
+The schedule is read as Markdown from the Learn page, with one table per provider
 (Model | Version | Lifecycle | Retirement date | Replacement) plus a fine-tuned table. The upstream
 table has no deprecation dates, so dates and notes we already hold are carried forward when the
 same model version is still listed with the same retirement date.
@@ -19,10 +19,10 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
-SOURCE_PATH = "articles/foundry/openai/includes/concepts-model-retirement-schedule-content.md"
-RAW_URL = f"https://raw.githubusercontent.com/MicrosoftDocs/azure-ai-docs/main/{SOURCE_PATH}"
-SOURCE_URL = f"https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/{SOURCE_PATH}"
 PAGE_URL = "https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirement-schedule"
+# Learn serves the page as Markdown on request; the azure-ai-docs GitHub repo is no longer public.
+MARKDOWN_URL = "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirement-schedule"
+SOURCE_URL = PAGE_URL
 OUTPUT = Path(__file__).resolve().parent / "retirement_data.json"
 MIN_ENTRIES = 40
 
@@ -39,19 +39,22 @@ CATEGORY_RULES: List[Tuple[str, str]] = [
 
 
 def fetch(url: str) -> str:
-    req = urllib.request.Request(url, headers={"User-Agent": "foundry-model-availability-notifications"})
+    req = urllib.request.Request(
+        url, headers={"User-Agent": "foundry-model-availability-notifications", "Accept": "text/markdown"}
+    )
     with urllib.request.urlopen(req, timeout=60) as resp:
         return resp.read().decode("utf-8")
 
 
 def clean(cell: str) -> str:
     cell = re.sub(r"<sup>.*?</sup>", "", cell)
+    cell = re.sub(r"\^[^^\s|]+\^", "", cell)
     cell = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", cell)
     return re.sub(r"\s+", " ", cell.replace("**", "").replace("`", "")).strip()
 
 
 def has_footnote(cell: str) -> bool:
-    return "<sup>" in cell
+    return "<sup>" in cell or bool(re.search(r"\^[^^\s|]+\^", cell))
 
 
 def blank(value: str) -> bool:
@@ -132,9 +135,12 @@ def parse(markdown: str) -> Tuple[Dict[str, List[Dict]], str]:
     models: Dict[str, List[Dict]] = {}
     updated = ""
     date_match = re.search(r"^ms\.date:\s*(\d{1,2})/(\d{1,2})/(\d{4})", markdown, re.M)
+    iso_match = re.search(r"^ms\.date:\s*(\d{4}-\d{2}-\d{2})", markdown, re.M)
     if date_match:
         month, day, year = date_match.groups()
         updated = f"{year}-{int(month):02d}-{int(day):02d}"
+    elif iso_match:
+        updated = iso_match.group(1)
 
     for headings, header, rows in iter_tables(markdown):
         col = {name: idx for idx, name in enumerate(header)}
@@ -225,7 +231,7 @@ def carry_forward(models: Dict[str, List[Dict]], previous: Dict) -> None:
 
 def main() -> int:
     try:
-        markdown = fetch(RAW_URL)
+        markdown = fetch(MARKDOWN_URL)
     except Exception as exc:  # network or HTTP error: keep the existing file
         print(f"Could not fetch retirement schedule: {exc}", file=sys.stderr)
         return 0

@@ -3901,6 +3901,7 @@ html.ax-lock .fullscreen-toggle { display: none; }
 [data-md-color-scheme="slate"] .md-typeset .pv { background: color-mix(in srgb, var(--fm-surface) 88%, white); box-shadow: none; }
 .md-typeset .pv--partner, .md-typeset .pv--other { color: var(--fm-text-muted); }
 .md-typeset .pv--anthropic { color: #d97757; }
+.md-typeset .pv--fireworks { color: #6720ff; }
 .md-typeset .pv--openai::before { -webkit-mask-image: url("../assets/providers/openai.svg"); mask-image: url("../assets/providers/openai.svg"); }
 .md-typeset .pv--anthropic::before { -webkit-mask-image: url("../assets/providers/anthropic.svg"); mask-image: url("../assets/providers/anthropic.svg"); }
 .md-typeset .pv--xai::before { -webkit-mask-image: url("../assets/providers/xai.svg"); mask-image: url("../assets/providers/xai.svg"); }

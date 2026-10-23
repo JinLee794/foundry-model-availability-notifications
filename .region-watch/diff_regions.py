@@ -1,50 +1,95 @@
 #!/usr/bin/env python3
-import json, os, re, sys, requests
+import html, json, os, re, sys, requests
 from collections import defaultdict
 from datetime import datetime, timezone
 from typing import Optional
 
-# Model matrix directories to check for availability data
-MODEL_MATRIX_DIRS = [
-    "articles/foundry/openai/includes/model-matrix",  # OpenAI models (gpt, dall-e, whisper, etc.)
-    "articles/foundry/foundry-models/includes/model-matrix",  # Foundry models (deepseek, llama, grok, etc.)
+# Region availability is read from the public Microsoft Learn pages, which serve Markdown when
+# requested with "Accept: text/markdown". The MicrosoftDocs/azure-ai-docs GitHub repo that used to
+# back these pages is no longer public.
+LEARN_BASE = "https://learn.microsoft.com/en-us/azure/foundry/"
+
+# Each source names the heading that carries the deployment type for its tables ("h2", "h3" or
+# "tab"), and maps that heading's text to a snapshot SKU key. Tables under unmapped headings are
+# ignored. Keys match the historical model-matrix file names so labels and docs stay stable.
+LEARN_SOURCES = [
+    {
+        "name": "models-sold-directly-by-azure-region-availability",
+        "url": LEARN_BASE + "foundry-models/concepts/models-sold-directly-by-azure-region-availability",
+        "heading": "h2",
+        "sections": {
+            "global standard": "standard-global",
+            "data zone standard": "datazone-standard",
+            "standard/regional": "standard-models",
+            "global provisioned managed": "provisioned-global",
+            "data zone provisioned managed": "datazone-provisioned-managed",
+            "regional provisioned managed": "provisioned-models",
+            "global batch": "global-batch",
+            "data zone batch": "global-batch-datazone",
+        },
+    },
+    {
+        "name": "models-from-partners",
+        "url": LEARN_BASE + "foundry-models/concepts/models-from-partners",
+        "heading": "h3",
+        "within_h2": "region availability by deployment type",
+        "sections": {
+            "global standard": "marketplace-deployments-standard",
+            "data zone standard": "marketplace-deployments-datazone-standard",
+        },
+    },
+    {
+        "name": "priority-processing",
+        "url": LEARN_BASE + "openai/concepts/priority-processing",
+        "heading": "tab",
+        "sections": {
+            "global standard": "standard-global-priority-processing",
+            "data zone standard": "datazone-standard-priority-processing",
+        },
+    },
+    {
+        "name": "models-sold-directly-by-azure-gov",
+        "url": LEARN_BASE + "foundry-models/concepts/models-sold-directly-by-azure-gov",
+        "heading": "tab",
+        "sections": {
+            "data zone standard": "datazone-standard-gov",
+            "data zone provisioned managed": "datazone-provisioned-managed-gov",
+            "standard": "standard-models-gov",
+            "provisioned managed": "provisioned-models-gov",
+        },
+    },
+    # The pages below list deployment types as table columns instead of regions.
+    {
+        "name": "model-router",
+        "url": LEARN_BASE + "openai/concepts/model-router",
+        "kind": "type_columns",
+        "within_h2": "supported regions",
+        "model": "model-router",
+        "columns": {
+            "global standard": "standard-global",
+            "data zone standard": "datazone-standard",
+        },
+    },
+    {
+        # Fireworks states regions in prose: global types run in every global Azure region (we use
+        # the regions Foundry offers Global Standard in) and data zone types in the US regions
+        # bulleted under "Region availability".
+        "name": "fireworks-model-catalog",
+        "url": LEARN_BASE + "how-to/fireworks/fireworks-model-catalog",
+        "kind": "type_columns",
+        "datazone_regions_h2": "region availability",
+        "columns": {
+            "global standard": "standard-global",
+            "data zone standard": "datazone-standard",
+            "global provisioned": "provisioned-global",
+            "data zone provisioned": "datazone-provisioned-managed",
+        },
+    },
 ]
 
-# Serverless/MaaS (Models-as-a-Service) files with transposed table format
-# These files have models in rows and regions in text columns
-MAAS_FILES = [
-    "articles/foundry-classic/includes/region-availability-maas.md",  # Serverless API models (Anthropic, Cohere, Phi, Mistral, etc.)
-]
-
-def get_model_matrix_directories() -> list[str]:
-    """Get list of model matrix directories to check, including any from environment."""
-    dirs = list(MODEL_MATRIX_DIRS)
-    # Allow adding additional directories via environment variable
-    extra_dirs = os.getenv("MODEL_MATRIX_EXTRA_DIRS", "")
-    if extra_dirs:
-        for directory in extra_dirs.split(","):
-            directory = directory.strip()
-            if directory and directory not in dirs:
-                dirs.append(directory)
-    return dirs
-
-def get_model_matrix_api_url(directory: str) -> str:
-    """Generate GitHub API URL for a model matrix directory.
-    
-    Args:
-        directory: Relative path within azure-ai-docs repository
-        
-    Returns:
-        Full GitHub API URL for the directory contents
-        
-    Note:
-        Directory is expected to be a relative path like 'articles/foundry/...'
-        and should not contain path traversal sequences.
-    """
-    # Basic validation to prevent path traversal
-    if ".." in directory or directory.startswith("/"):
-        raise ValueError(f"Invalid directory path: {directory}")
-    return f"https://api.github.com/repos/MicrosoftDocs/azure-ai-docs/contents/{directory}?ref=main"
+# Refuse to overwrite the snapshot when the fresh scrape lost more than this share of models,
+# unless ALLOW_SNAPSHOT_SHRINK=1. Guards against a docs restructure silently wiping the data.
+MAX_MODEL_LOSS_RATIO = 0.5
 
 # Azure region codes -> display names
 REGION_MAP = {
@@ -68,7 +113,11 @@ REGION_MAP = {
     "australiacentral": "Australia Central", "australiacentral2": "Australia Central 2",
     "indiacentral": "India Central", "indiasouth": "India South", "westindia": "West India",
     "centralindia": "Central India", "southindia": "South India",
-    "jioindiawest": "Jio India West", "jioindiacentral": "Jio India Central"
+    "jioindiawest": "Jio India West", "jioindiacentral": "Jio India Central",
+    "mexicocentral": "Mexico Central", "chilecentral": "Chile Central", "israelcentral": "Israel Central",
+    "newzealandnorth": "New Zealand North", "indonesiacentral": "Indonesia Central",
+    "malaysiawest": "Malaysia West", "taiwannorth": "Taiwan North", "austriaeast": "Austria East",
+    "belgiumcentral": "Belgium Central", "denmarkeast": "Denmark East",
 }
 
 def normalize_model_name(name: str) -> str:
@@ -96,14 +145,8 @@ SKU_LABEL_OVERRIDES = {
     "global-batch": "Global batch",
     "global-batch-datazone": "Global batch datazone",
     "quota": "Quota",
+    "marketplace-deployments-datazone-standard": "Marketplace Deployments Datazone Standard",
 }
-
-def github_headers(accept: str) -> dict:
-    headers = {"Accept": accept}
-    token = os.getenv("GITHUB_TOKEN")
-    if token:
-        headers["Authorization"] = f"Bearer {token}"
-    return headers
 
 def parse_env_list(name: str, normalizer=None) -> set:
     raw = os.getenv(name, "")
@@ -117,69 +160,21 @@ def parse_env_list(name: str, normalizer=None) -> set:
         items.add(token)
     return items
 
-def sku_slug(filename: str) -> str:
-    return os.path.splitext(filename)[0].lower()
-
 def sku_label(slug: str) -> str:
     if slug in SKU_LABEL_OVERRIDES:
         return SKU_LABEL_OVERRIDES[slug]
     words = re.split(r"[-_]+", slug)
     return " ".join(word.capitalize() for word in words if word)
 
-def list_markdown_files() -> list:
-    """List markdown files from all configured model matrix directories."""
-    include_files = parse_env_list("MODEL_MATRIX_INCLUDE_FILES", lambda v: v.lower())
-    exclude_files = parse_env_list("MODEL_MATRIX_EXCLUDE_FILES", lambda v: v.lower())
-    
-    all_files = []
-    for directory in get_model_matrix_directories():
-        try:
-            api_url = get_model_matrix_api_url(directory)
-            listing = requests.get(api_url, headers=github_headers("application/vnd.github+json"), timeout=30)
-            listing.raise_for_status()
-            
-            for item in listing.json():
-                if item.get("type") != "file":
-                    continue
-                name = item.get("name", "")
-                if not name.endswith(".md"):
-                    continue
-                lowered = name.lower()
-                if include_files and lowered not in include_files:
-                    continue
-                if lowered in exclude_files:
-                    continue
-                slug = sku_slug(name)
-                all_files.append({
-                    "name": name,
-                    "slug": slug,
-                    "label": sku_label(slug),
-                    "url": item.get("download_url"),
-                    "source_dir": directory,
-                })
-        except requests.exceptions.HTTPError as e:
-            # If a directory doesn't exist or is inaccessible, log and continue
-            status_code = e.response.status_code if e.response else "unknown"
-            if status_code == 404:
-                print(f"Warning: Directory not found: {directory}", file=sys.stderr)
-            elif status_code == 403:
-                print(f"Warning: Access forbidden to directory {directory} (check GitHub token permissions)", file=sys.stderr)
-            else:
-                print(f"Warning: Could not access directory {directory} (HTTP {status_code}): {e}", file=sys.stderr)
-            continue
-        except ValueError as e:
-            # Invalid directory path
-            print(f"Warning: Invalid directory path {directory}: {e}", file=sys.stderr)
-            continue
-        except Exception as e:
-            print(f"Warning: Error processing directory {directory}: {e}", file=sys.stderr)
-            continue
-    
-    return all_files
-
 def fetch_markdown(url: str) -> str:
-    resp = requests.get(url, headers=github_headers("application/vnd.github.v3.raw"), timeout=30)
+    resp = requests.get(
+        url,
+        headers={"Accept": "text/markdown", "User-Agent": "foundry-model-availability-notifications"},
+        timeout=60,
+    )
     resp.raise_for_status()
+    if "markdown" not in resp.headers.get("Content-Type", "").lower():
+        raise ValueError(f"expected Markdown from {url}, got {resp.headers.get('Content-Type')!r}")
     return resp.text
 
 def split_cells(row: str, allow_no_leading_pipe: bool = False) -> list:
@@ -197,8 +192,17 @@ def split_cells(row: str, allow_no_leading_pipe: bool = False) -> list:
         row = "|" + row
     return [c.strip() for c in row.strip().strip("|").split("|")]
 
+def plain_cell(cell: str) -> str:
+    """Strip Learn Markdown decoration: footnotes (^1^, <sup>), links, code ticks and emphasis."""
+    cell = html.unescape(cell)
+    cell = re.sub(r"<sup>.*?</sup>", "", cell)
+    cell = re.sub(r"\^[^^\s|]+\^", "", cell)
+    cell = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", cell)
+    cell = re.sub(r"<br\s*/?>", "<br>", cell)
+    return re.sub(r"[ \t]+", " ", cell.replace("*", "").replace("`", "")).strip()
+
 def parse_model_names(cell: str) -> list:
-    cell = re.sub(r"\*\*|\*", "", cell).strip()
+    cell = plain_cell(cell)
     if not cell:
         return []
     models = []
@@ -234,86 +238,6 @@ def format_region_name(cell: str) -> Optional[str]:
     return REGION_LOOKUP.get(key, cell)
 
 
-def parse_regions_from_text(text: str) -> list[str]:
-    """Parse region names from a text cell that may contain multiple regions separated by <br>."""
-    if not text or text.lower() in {"not available", "not applicable", "n/a", "-"}:
-        return []
-    
-    regions = []
-    # Split by <br>, newlines, and other common separators
-    for segment in re.split(r"<br\s*/?>|\n", text):
-        segment = segment.strip()
-        if not segment or segment.lower() in {"not available", "not applicable", "n/a", "-"}:
-            continue
-        # Skip links like [Microsoft Managed Countries/Regions](...) - these are not actual regions
-        if segment.startswith("[") or "/partner-center/" in segment:
-            continue
-        region = format_region_name(segment)
-        if region and region not in regions:
-            regions.append(region)
-    return regions
-
-
-def parse_maas_table(table: str) -> dict:
-    """Parse a MaaS-style table where models are in rows and regions are listed as text in columns.
-    
-    Expected format:
-    | Model | Offer Availability Region | Hub/Project Region for Deployment | Hub/Project Region for Fine tuning |
-    |-------|---------------------------|-----------------------------------|-----------------------------------|
-    | ModelName | ... | East US <br> West US | ... |
-    
-    Note: Some MaaS tables have data rows that don't start with '|'.
-    """
-    rows = [line for line in table.strip().splitlines() if line.strip()]
-    if len(rows) < 3:
-        return {}
-    
-    header_cells = split_cells(rows[0])
-    if not header_cells:
-        return {}
-    
-    # Find the column index for deployment regions (usually "Hub/Project Region for Deployment")
-    deployment_col = -1
-    finetuning_col = -1
-    for idx, cell in enumerate(header_cells):
-        cell_lower = cell.lower()
-        if "deployment" in cell_lower and "region" in cell_lower:
-            deployment_col = idx
-        elif "fine" in cell_lower and "tuning" in cell_lower and "region" in cell_lower:
-            finetuning_col = idx
-    
-    # If we can't find deployment column, this isn't a MaaS table
-    if deployment_col < 0:
-        return {}
-    
-    model_regions = defaultdict(set)
-    
-    for row in rows[2:]:  # skip header and separator row
-        # Use allow_no_leading_pipe=True for MaaS tables
-        cells = split_cells(row, allow_no_leading_pipe=True)
-        if not cells or len(cells) <= deployment_col:
-            continue
-        
-        # First cell contains model name(s)
-        models = parse_model_names(cells[0])
-        if not models:
-            continue
-        
-        # Get regions from deployment column
-        deployment_regions = parse_regions_from_text(cells[deployment_col])
-        
-        # Optionally get fine-tuning regions if available
-        finetuning_regions = []
-        if finetuning_col >= 0 and len(cells) > finetuning_col:
-            finetuning_regions = parse_regions_from_text(cells[finetuning_col])
-        
-        # Combine all regions
-        all_regions = set(deployment_regions) | set(finetuning_regions)
-        
-        for model in models:
-            model_regions[model].update(all_regions)
-    
-    return model_regions
 
 def parse_table(table: str) -> dict:
     rows = [line for line in table.strip().splitlines() if line.strip()]
@@ -361,77 +285,169 @@ def parse_table(table: str) -> dict:
 
     return model_regions
 
-def extract_models_from_markdown(markdown: str) -> dict:
-    combined = defaultdict(set)
-    for table in re.findall(r"(?:^\|.*\n)+", markdown, re.MULTILINE):
-        data = parse_table(table)
-        for model, regions in data.items():
-            combined[model].update(regions)
-    return combined
+def _clean_heading(text: str) -> str:
+    text = html.unescape(text)
+    text = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", text)
+    return " ".join(text.replace("*", "").split()).lower()
 
 
-def extract_models_from_maas_markdown(markdown: str) -> dict:
-    """Extract models from MaaS-style markdown with transposed tables.
-    
-    MaaS tables may have data rows that don't start with '|', so we use
-    a more flexible regex pattern.
+def iter_tables(markdown: str):
+    """Yield (headings, table_text) for each pipe table, with the active h2/h3/h4 and tab headings.
+
+    Learn Markdown renders tab groups as "# [Title](#tab/id)" lines that end at a "---" rule.
     """
-    combined = defaultdict(set)
-    # Match tables: header line starting with |, separator line, then data lines
-    # Data lines may or may not start with |
-    table_pattern = r"(\|[^\n]+\|\s*\n\|[-|\s]+\|\s*\n(?:[^\n]*\|\s*\n)*)"
-    for table in re.findall(table_pattern, markdown, re.MULTILINE):
-        data = parse_maas_table(table)
-        for model, regions in data.items():
-            combined[model].update(regions)
-    return combined
+    headings: dict = {}
+    table: list = []
 
+    def flush():
+        if table:
+            yield dict(headings), "\n".join(table) + "\n"
+            table.clear()
 
-def get_maas_file_url(file_path: str) -> str:
-    """Generate raw GitHub URL for a MaaS file."""
-    return f"https://raw.githubusercontent.com/MicrosoftDocs/azure-ai-docs/main/{file_path}"
-
-
-def fetch_maas_files() -> list[dict]:
-    """Fetch and return info about MaaS files for processing."""
-    files = []
-    for file_path in MAAS_FILES:
-        name = os.path.basename(file_path)
-        slug = sku_slug(name)
-        files.append({
-            "name": name,
-            "slug": slug,
-            "label": sku_label(slug),
-            "url": get_maas_file_url(file_path),
-            "source_file": file_path,
-            "is_maas": True,
-        })
-    return files
-
-
-def build_current_snapshot(files: list) -> dict:
-    combined = defaultdict(lambda: defaultdict(set))
-    
-    # Process regular model matrix files
-    for entry in files:
-        if not entry.get("url"):
+    for line in markdown.splitlines():
+        if line.startswith("|"):
+            table.append(line)
             continue
-        markdown = fetch_markdown(entry["url"])
-        data = extract_models_from_markdown(markdown)
-        sku = entry.get("slug")
+        yield from flush()
+        tab = re.match(r"^#\s+\[(.+?)\]\(#tab/[^)]*\)\s*$", line)
+        if tab:
+            headings["tab"] = _clean_heading(tab.group(1))
+            continue
+        heading = re.match(r"^(#{2,4})\s+(.+?)\s*#*\s*$", line)
+        if heading:
+            level = len(heading.group(1))
+            headings[f"h{level}"] = _clean_heading(heading.group(2))
+            for deeper in range(level + 1, 5):
+                headings.pop(f"h{deeper}", None)
+            if level == 2:
+                headings.pop("tab", None)
+            continue
+        if line.strip() == "---":
+            headings.pop("tab", None)
+    yield from flush()
+
+
+def extract_source_models(markdown: str, source: dict) -> dict:
+    """Return {sku_key: {model: set(regions)}} for one Learn page."""
+    result = defaultdict(lambda: defaultdict(set))
+    unmapped = set()
+    for headings, table in iter_tables(markdown):
+        if source.get("within_h2") and headings.get("h2") != source["within_h2"]:
+            continue
+        section = headings.get(source["heading"])
+        if not section:
+            continue
+        sku = source["sections"].get(section)
+        data = parse_table(table)
+        if not sku:
+            if data:
+                unmapped.add(section)
+            continue
         for model, regions in data.items():
-            combined[model][sku].update(regions)
-    
-    # Process MaaS files (transposed table format)
-    for entry in fetch_maas_files():
-        try:
-            markdown = fetch_markdown(entry["url"])
-            data = extract_models_from_maas_markdown(markdown)
-            sku = entry.get("slug")
-            for model, regions in data.items():
+            result[sku][model].update(regions)
+    for section in sorted(unmapped):
+        print(f"Warning: {source['name']}: ignoring unmapped section {section!r}", file=sys.stderr)
+    return result
+
+
+def section_region_codes(markdown: str, h2: str) -> set:
+    """Regions written as `code` in the prose of one h2 section."""
+    regions = set()
+    current = None
+    for line in markdown.splitlines():
+        heading = re.match(r"^##\s+(.+?)\s*$", line)
+        if heading:
+            current = _clean_heading(heading.group(1))
+            continue
+        if current == h2:
+            for code in re.findall(r"`([a-z0-9]+)`", line):
+                if normalize_region_key(code) in REGION_LOOKUP:
+                    regions.add(REGION_LOOKUP[normalize_region_key(code)])
+    return regions
+
+
+def parse_type_columns_table(table: str, source: dict, scope_regions) -> dict:
+    """Parse a table whose columns are deployment types. Rows are either regions (for a single
+    model named by the source) or models (whose regions come from scope_regions(sku))."""
+    rows = [line for line in table.strip().splitlines() if line.strip()]
+    result = defaultdict(lambda: defaultdict(set))
+    if len(rows) < 3:
+        return result
+    header = [plain_cell(cell).lower() for cell in split_cells(rows[0])]
+    col_sku = {idx: source["columns"][name] for idx, name in enumerate(header) if name in source["columns"]}
+    if not col_sku:
+        return result
+    if header[0] == "region":
+        model = source["model"]
+        for row in rows[2:]:
+            cells = split_cells(row)
+            region = format_region_name(plain_cell(cells[0])) if cells else None
+            if not region:
+                continue
+            for idx, sku in col_sku.items():
+                if idx < len(cells) and is_available_cell(cells[idx]):
+                    result[sku][model].add(region)
+        return result
+    name_col = next((idx for idx, name in enumerate(header) if name in ("model name", "model")), None)
+    if name_col is None:
+        return result
+    for row in rows[2:]:
+        cells = split_cells(row)
+        if len(cells) <= name_col:
+            continue
+        for model in parse_model_names(cells[name_col]):
+            for idx, sku in col_sku.items():
+                if idx < len(cells) and is_available_cell(cells[idx]):
+                    result[sku][model].update(scope_regions(sku))
+    return result
+
+
+def extract_type_columns_models(markdown: str, source: dict, global_regions: set) -> dict:
+    datazone_regions = set()
+    if source.get("datazone_regions_h2"):
+        datazone_regions = section_region_codes(markdown, source["datazone_regions_h2"])
+        if not datazone_regions:
+            raise RuntimeError(f"No data zone regions found in {source['url']}")
+
+    def scope_regions(sku: str) -> set:
+        return datazone_regions if "datazone" in sku else global_regions
+
+    result = defaultdict(lambda: defaultdict(set))
+    for headings, table in iter_tables(markdown):
+        if source.get("within_h2") and headings.get("h2") != source["within_h2"]:
+            continue
+        for sku, models in parse_type_columns_table(table, source, scope_regions).items():
+            for model, regions in models.items():
+                result[sku][model].update(regions)
+    return result
+
+
+def build_current_snapshot(sources: list) -> dict:
+    """Scrape every source. Raises if a page can't be fetched or yields no models, so a
+    partial scrape is never mistaken for models disappearing."""
+    combined = defaultdict(lambda: defaultdict(set))
+
+    def merge(source: dict, by_sku: dict) -> None:
+        if not any(by_sku.values()):
+            raise RuntimeError(f"No model availability tables parsed from {source['url']}")
+        for sku, models in by_sku.items():
+            for model, regions in models.items():
                 combined[model][sku].update(regions)
-        except Exception as e:
-            print(f"Warning: Error processing MaaS file {entry.get('name', 'unknown')}: {e}", file=sys.stderr)
+
+    # Region-matrix pages first: they define the Global Standard footprint used by type_columns pages.
+    for source in sources:
+        if source.get("kind", "matrix") == "matrix":
+            merge(source, extract_source_models(fetch_markdown(source["url"]), source))
+    global_regions = {
+        region
+        for skus in combined.values()
+        for region in skus.get("standard-global", ())
+        if region in REGION_LOOKUP.values()
+    }
+    for source in sources:
+        if source.get("kind") == "type_columns":
+            markdown = fetch_markdown(source["url"])
+            merge(source, extract_type_columns_models(markdown, source, global_regions))
 
     result = {}
     for model in sorted(combined.keys(), key=str.lower):
@@ -440,11 +456,15 @@ def build_current_snapshot(files: list) -> dict:
         formatted_skus = {}
         for sku_key in sorted(sku_map.keys()):
             regions = sorted(sku_map[sku_key])
+            if not regions:
+                continue
             all_regions.update(regions)
             formatted_skus[sku_key] = {
                 "label": sku_label(sku_key),
                 "regions": regions,
             }
+        if not formatted_skus:
+            continue
         result[model] = {
             "all": sorted(all_regions),
             "skus": formatted_skus,
@@ -576,10 +596,28 @@ def diff(old: dict, new: dict) -> dict:
     return changes
 
 def main() -> int:
-    files = list_markdown_files()
-    current = filter_models(build_current_snapshot(files))
+    try:
+        current = filter_models(build_current_snapshot(LEARN_SOURCES))
+    except Exception as exc:
+        print(f"Error: could not build region snapshot: {exc}", file=sys.stderr)
+        return 1
     snap_path = ".region-watch/regions_snapshot.json"
     baseline = load_snapshot(snap_path)
+
+    if not current:
+        print("Error: scrape returned no models; leaving snapshot unchanged.", file=sys.stderr)
+        return 1
+    if (
+        baseline
+        and len(current) < len(baseline) * (1 - MAX_MODEL_LOSS_RATIO)
+        and os.getenv("ALLOW_SNAPSHOT_SHRINK") != "1"
+    ):
+        print(
+            f"Error: scrape found {len(current)} models vs {len(baseline)} in the snapshot; "
+            "refusing to overwrite. Set ALLOW_SNAPSHOT_SHRINK=1 if this is expected.",
+            file=sys.stderr,
+        )
+        return 1
 
     if not baseline:
         baseline = current
@@ -587,7 +625,7 @@ def main() -> int:
     changes = diff(baseline, current)
     now = datetime.now(timezone.utc)
     timestamp_iso = now.isoformat()
-    file_names = [entry["name"] for entry in files]
+    file_names = [source["name"] for source in LEARN_SOURCES]
     output = {
         "timestamp": timestamp_iso,
         "changes": changes,
