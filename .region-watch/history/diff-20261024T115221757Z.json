@@ -1,0 +1,34 @@
+{
+  "changes": {
+    "gpt-live-1": {
+      "all": {
+        "added": [
+          "Canada Central",
+          "Central US",
+          "East US 2",
+          "France Central",
+          "South India",
+          "Sweden Central",
+          "UAE North"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "added": [
+            "Canada Central",
+            "Central US",
+            "East US 2",
+            "France Central",
+            "South India",
+            "Sweden Central",
+            "UAE North"
+          ],
+          "label": "Standard global deployments",
+          "removed": []
+        }
+      }
+    }
+  },
+  "timestamp": "2026-10-24T11:52:21.757293+00:00"
+}

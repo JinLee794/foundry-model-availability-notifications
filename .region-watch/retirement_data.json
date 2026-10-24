@@ -2,7 +2,7 @@
   "source": "https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirement-schedule",
   "page": "https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirement-schedule",
   "last_updated": "2026-09-21",
-  "fetched_at": "2026-10-23T15:31:12Z",
+  "fetched_at": "2026-10-24T11:52:26Z",
   "models": {
     "text_generation": [
       {
@@ -648,7 +648,7 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
+        "retirement_date": "2027-01-31",
         "replacement": null
       },
       {
@@ -659,7 +659,7 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
+        "retirement_date": "2026-11-19",
         "replacement": null
       },
       {
@@ -780,7 +780,7 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
+        "retirement_date": "2027-01-31",
         "replacement": null
       },
       {
@@ -857,7 +857,7 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
+        "retirement_date": "2027-01-31",
         "replacement": null
       },
       {
@@ -1144,7 +1144,7 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
+        "retirement_date": "2027-01-31",
         "replacement": null
       },
       {
@@ -1243,7 +1243,7 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
+        "retirement_date": "2027-02-15",
         "replacement": null
       },
       {
@@ -1446,7 +1446,7 @@
         "status": "Preview",
         "lifecycle": "Preview",
         "deprecation_date": null,
-        "retirement_date": null,
+        "retirement_date": "2027-01-20",
         "replacement": "gpt-realtime-2.1"
       },
       {
@@ -1658,7 +1658,7 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
+        "retirement_date": "2027-01-05",
         "replacement": null
       },
       {
@@ -1669,7 +1669,7 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
+        "retirement_date": "2027-01-05",
         "replacement": null
       },
       {
@@ -1680,7 +1680,7 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
+        "retirement_date": "2027-01-20",
         "replacement": null
       },
       {
@@ -1691,7 +1691,7 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
+        "retirement_date": "2027-01-20",
         "replacement": null
       },
       {

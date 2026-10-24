@@ -11861,6 +11861,31 @@
       }
     }
   },
+  "gpt-live-1": {
+    "all": [
+      "Canada Central",
+      "Central US",
+      "East US 2",
+      "France Central",
+      "South India",
+      "Sweden Central",
+      "UAE North"
+    ],
+    "skus": {
+      "standard-global": {
+        "label": "Standard global deployments",
+        "regions": [
+          "Canada Central",
+          "Central US",
+          "East US 2",
+          "France Central",
+          "South India",
+          "Sweden Central",
+          "UAE North"
+        ]
+      }
+    }
+  },
   "gpt-live-transcribe": {
     "all": [
       "Canada Central",

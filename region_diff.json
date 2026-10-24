@@ -1,6 +1,36 @@
 {
-  "timestamp": "2026-10-23T16:05:28.857627+00:00",
-  "changes": {},
+  "timestamp": "2026-10-24T11:52:21.757293+00:00",
+  "changes": {
+    "gpt-live-1": {
+      "all": {
+        "added": [
+          "Canada Central",
+          "Central US",
+          "East US 2",
+          "France Central",
+          "South India",
+          "Sweden Central",
+          "UAE North"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "added": [
+            "Canada Central",
+            "Central US",
+            "East US 2",
+            "France Central",
+            "South India",
+            "Sweden Central",
+            "UAE North"
+          ],
+          "removed": []
+        }
+      }
+    }
+  },
   "current": {
     "claude-fable-5": {
       "all": [
@@ -10489,6 +10519,31 @@
             "Sweden Central",
             "UAE North",
             "West US 3"
+          ]
+        }
+      }
+    },
+    "gpt-live-1": {
+      "all": [
+        "Canada Central",
+        "Central US",
+        "East US 2",
+        "France Central",
+        "South India",
+        "Sweden Central",
+        "UAE North"
+      ],
+      "skus": {
+        "standard-global": {
+          "label": "Standard global deployments",
+          "regions": [
+            "Canada Central",
+            "Central US",
+            "East US 2",
+            "France Central",
+            "South India",
+            "Sweden Central",
+            "UAE North"
           ]
         }
       }

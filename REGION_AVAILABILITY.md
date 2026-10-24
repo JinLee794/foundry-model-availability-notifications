@@ -1,8 +1,8 @@
 # AI Foundry Model Availability by Region
 
-_Last updated: 2026-10-23 15:55 UTC_
+_Last updated: 2026-10-24 11:52 UTC_
 
-- Models tracked: **170**
+- Models tracked: **171**
 - Regions in snapshot: **35**
 - Distinct SKU labels: **17**
 
@@ -176,6 +176,7 @@ SKU labels observed:
 | gpt-4o-mini-transcribe | 🔴 Emerging | 7 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
 | gpt-4o-transcribe | 🔴 Emerging | 7 | 3 (Datazone standard, Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
 | gpt-4o-transcribe-diarize | 🔴 Emerging | 7 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
+| gpt-live-1 | 🔴 Emerging | 7 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
 | gpt-live-transcribe | 🔴 Emerging | 7 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
 | gpt-realtime | 🔴 Emerging | 7 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
 | gpt-realtime-1.5 | 🔴 Emerging | 7 | 3 (Datazone standard, Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
@@ -4766,6 +4767,18 @@ SKU labels observed:
 
 </details>
 <details>
+<summary>gpt-live-1 — 7 regions across 2 SKU labels</summary>
+
+- `Canada Central` — Global Standard, Global coverage
+- `Central US` — Global Standard, Global coverage
+- `East US 2` — Global Standard, Global coverage
+- `France Central` — Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage
+- `Sweden Central` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+
+</details>
+<details>
 <summary>gpt-live-transcribe — 7 regions across 2 SKU labels</summary>
 
 - `Canada Central` — Global Standard, Global coverage
@@ -5049,6 +5062,7 @@ SKU labels observed:
 
 ## Recent changes
 
+- **2026-10-24 11:52 UTC** — gpt-live-1: Global coverage added Canada Central, Central US, East US 2, France Central, South India, Sweden Central, and UAE North; Standard global deployments added Canada Central, Central US, East US 2, France Central, South India, Sweden Central, and UAE North
 - **2026-10-09 14:10 UTC** — gpt-image-2: Global coverage added Australia East; Deployments Provisioned added Australia East | gpt-image-2.5-flare: Deployments Provisioned added Spain Central; Deployments Standard added East US 2, Poland Central, Sweden Central, UAE North, and West US 3
 - **2026-10-08 14:24 UTC** — claude-haiku-5-5: Global coverage added Central US, East US, East US 2, North Central US, South Central US, Sweden Central, West Central US, West US, and West US 3; Marketplace Deployments Standard added Central US, East US, East US 2, North Central US, South Central US, Sweden Central, West Central US, West US, and West US 3
 - **2026-10-07 14:15 UTC** — grok-4.7: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Deployments Standard added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3
