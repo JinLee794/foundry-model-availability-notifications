@@ -1,36 +1,6 @@
 {
-  "timestamp": "2026-10-24T11:52:21.757293+00:00",
-  "changes": {
-    "gpt-live-1": {
-      "all": {
-        "added": [
-          "Canada Central",
-          "Central US",
-          "East US 2",
-          "France Central",
-          "South India",
-          "Sweden Central",
-          "UAE North"
-        ],
-        "removed": []
-      },
-      "skus": {
-        "standard-global": {
-          "label": "Standard global deployments",
-          "added": [
-            "Canada Central",
-            "Central US",
-            "East US 2",
-            "France Central",
-            "South India",
-            "Sweden Central",
-            "UAE North"
-          ],
-          "removed": []
-        }
-      }
-    }
-  },
+  "timestamp": "2026-10-25T12:22:33.599099+00:00",
+  "changes": {},
   "current": {
     "claude-fable-5": {
       "all": [
