@@ -2,7 +2,7 @@
   "source": "https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirement-schedule",
   "page": "https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirement-schedule",
   "last_updated": "2026-09-21",
-  "fetched_at": "2026-10-24T11:52:26Z",
+  "fetched_at": "2026-10-26T13:57:32Z",
   "models": {
     "text_generation": [
       {
@@ -1055,7 +1055,7 @@
         "status": "Preview",
         "lifecycle": "Preview",
         "deprecation_date": null,
-        "retirement_date": null,
+        "retirement_date": "2027-09-01",
         "replacement": null
       },
       {
