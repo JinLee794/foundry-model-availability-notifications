@@ -1,8 +1,8 @@
 # AI Foundry Model Availability by Region
 
-_Last updated: 2026-10-24 11:52 UTC_
+_Last updated: 2026-10-27 13:00 UTC_
 
-- Models tracked: **171**
+- Models tracked: **172**
 - Regions in snapshot: **35**
 - Distinct SKU labels: **17**
 
@@ -151,6 +151,7 @@ SKU labels observed:
 | gpt-6-luna | 🟢 Broad | 28 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-6-sol | 🟢 Broad | 28 | 8 (Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-6.1-sol | 🟢 Broad | 28 | 5 (Datazone provisioned managed, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-6.1-terra | 🟢 Broad | 27 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5-nano | 🟢 Broad | 26 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada East`, `Central US`, `East US`, `East US 2` |
 | Microsoft-Decision-1 | 🟡 Strong | 22 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Central US`, `East US`, `East US 2`, `France Central`, `Germany West Central` |
 | claude-haiku-4-5 | 🔴 Emerging | 9 | 2 (Global coverage, Marketplace Deployments Standard) | `Central US`, `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central` |
@@ -4406,6 +4407,38 @@ SKU labels observed:
 
 </details>
 <details>
+<summary>gpt-6.1-terra — 27 regions across 3 SKU labels</summary>
+
+- `Australia East` — Datazone standard, Global Standard, Global coverage
+- `Brazil South` — Global Standard, Global coverage
+- `Canada Central` — Global Standard, Global coverage
+- `Canada East` — Global Standard, Global coverage
+- `Central US` — Datazone standard, Global Standard, Global coverage
+- `East US` — Datazone standard, Global Standard, Global coverage
+- `France Central` — Datazone standard, Global Standard, Global coverage
+- `Germany West Central` — Datazone standard, Global Standard, Global coverage
+- `Italy North` — Datazone standard, Global Standard, Global coverage
+- `Japan East` — Datazone standard, Global Standard, Global coverage
+- `Korea Central` — Datazone standard, Global Standard, Global coverage
+- `North Central US` — Datazone standard, Global Standard, Global coverage
+- `Norway East` — Datazone standard, Global Standard, Global coverage
+- `Poland Central` — Datazone standard, Global Standard, Global coverage
+- `South Africa North` — Global Standard, Global coverage
+- `South Central US` — Datazone standard, Global Standard, Global coverage
+- `South India` — Datazone standard, Global Standard, Global coverage
+- `Southeast Asia` — Datazone standard, Global Standard, Global coverage
+- `Spain Central` — Datazone standard, Global Standard, Global coverage
+- `Sweden Central` — Datazone standard, Global Standard, Global coverage
+- `Switzerland North` — Datazone standard, Global Standard, Global coverage
+- `Switzerland West` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `UK South` — Global Standard, Global coverage
+- `West Europe` — Datazone standard, Global Standard, Global coverage
+- `West US` — Datazone standard, Global Standard, Global coverage
+- `West US 3` — Datazone standard, Global Standard, Global coverage
+
+</details>
+<details>
 <summary>gpt-5-nano — 26 regions across 3 SKU labels</summary>
 
 - `Australia East` — Global Standard, Global coverage
@@ -5062,6 +5095,7 @@ SKU labels observed:
 
 ## Recent changes
 
+- **2026-10-27 13:00 UTC** — gpt-6.1-terra: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Datazone standard added Australia East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, West Europe, West US, and West US 3; Standard global deployments added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3
 - **2026-10-24 11:52 UTC** — gpt-live-1: Global coverage added Canada Central, Central US, East US 2, France Central, South India, Sweden Central, and UAE North; Standard global deployments added Canada Central, Central US, East US 2, France Central, South India, Sweden Central, and UAE North
 - **2026-10-09 14:10 UTC** — gpt-image-2: Global coverage added Australia East; Deployments Provisioned added Australia East | gpt-image-2.5-flare: Deployments Provisioned added Spain Central; Deployments Standard added East US 2, Poland Central, Sweden Central, UAE North, and West US 3
 - **2026-10-08 14:24 UTC** — claude-haiku-5-5: Global coverage added Central US, East US, East US 2, North Central US, South Central US, Sweden Central, West Central US, West US, and West US 3; Marketplace Deployments Standard added Central US, East US, East US 2, North Central US, South Central US, Sweden Central, West Central US, West US, and West US 3
