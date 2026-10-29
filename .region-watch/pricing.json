@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-23T15:53:09Z",
+  "fetched_at": "2026-10-29T13:57:59Z",
   "source": "https://prices.azure.com/api/retail/prices",
   "marketplace_source": "https://catalogapi.azure.com/offers",
   "region": "eastus2",
@@ -1293,6 +1293,7 @@
     "Azure OpenAI GPT5: GPT 5.2 pro",
     "Azure OpenAI GPT5: gpt 5.2 chat",
     "Azure OpenAI GPT5: gpt 5.3 chat",
+    "Azure OpenAI GPT6: gpt 61 terra",
     "Azure OpenAI OSS Models: gpt oss 120B",
     "Azure OpenAI: Az GPT4 Turbo 128K",
     "Azure OpenAI: gpt 35 trb16K 125",
