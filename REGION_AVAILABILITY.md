@@ -1,6 +1,6 @@
 # AI Foundry Model Availability by Region
 
-_Last updated: 2026-10-27 13:00 UTC_
+_Last updated: 2026-10-31 13:23 UTC_
 
 - Models tracked: **172**
 - Regions in snapshot: **35**
@@ -148,7 +148,7 @@ SKU labels observed:
 | gpt-5-pro | 🟢 Broad | 28 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5.1-codex-max | 🟢 Broad | 28 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5.1-codex-mini | 🟢 Broad | 28 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-6-luna | 🟢 Broad | 28 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-6-luna | 🟢 Broad | 28 | 5 (Datazone provisioned managed, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-6-sol | 🟢 Broad | 28 | 8 (Datazone Standard Priority Processing, Datazone provisioned managed, Datazone standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-6.1-sol | 🟢 Broad | 28 | 5 (Datazone provisioned managed, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-6.1-terra | 🟢 Broad | 27 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
@@ -167,6 +167,20 @@ SKU labels observed:
 | claude-sonnet-4-6 | 🔴 Emerging | 9 | 2 (Global coverage, Marketplace Deployments Standard) | `Central US`, `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central` |
 | claude-sonnet-5 | 🔴 Emerging | 9 | 3 (Global coverage, Marketplace Deployments Datazone Standard, Marketplace Deployments Standard) | `Central US`, `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central` |
 | claude-sonnet-5-5 | 🔴 Emerging | 9 | 3 (Global coverage, Marketplace Deployments Datazone Standard, Marketplace Deployments Standard) | `Central US`, `East US`, `East US 2`, `North Central US`, `South Central US`, `Sweden Central` |
+| gpt-4o-mini-transcribe | 🔴 Emerging | 8 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
+| gpt-4o-transcribe | 🔴 Emerging | 8 | 3 (Datazone standard, Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
+| gpt-4o-transcribe-diarize | 🔴 Emerging | 8 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
+| gpt-live-1 | 🔴 Emerging | 8 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
+| gpt-live-transcribe | 🔴 Emerging | 8 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
+| gpt-realtime | 🔴 Emerging | 8 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
+| gpt-realtime-1.5 | 🔴 Emerging | 8 | 3 (Datazone standard, Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
+| gpt-realtime-2 | 🔴 Emerging | 8 | 3 (Datazone standard, Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
+| gpt-realtime-2.1 | 🔴 Emerging | 8 | 3 (Datazone standard, Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
+| gpt-realtime-2.1-mini | 🔴 Emerging | 8 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
+| gpt-realtime-mini | 🔴 Emerging | 8 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
+| gpt-realtime-translate | 🔴 Emerging | 8 | 3 (Datazone standard, Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
+| gpt-realtime-whisper | 🔴 Emerging | 8 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
+| gpt-transcribe | 🔴 Emerging | 8 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
 | whisper | 🔴 Emerging | 8 | 2 (Global coverage, Standard) | `East US 2`, `North Central US`, `Norway East`, `South India`, `Sweden Central`, `Switzerland North` |
 | FW-GLM-5.2-Fast | 🔴 Emerging | 7 | 2 (Datazone standard, Global coverage) | `Central US`, `East US`, `East US 2`, `North Central US`, `South Central US`, `West US` |
 | MAI-Image-2.5 | 🔴 Emerging | 7 | 2 (Global Standard, Global coverage) | `East US`, `South India`, `Sweden Central`, `UAE North`, `West Central US`, `West Europe` |
@@ -174,20 +188,6 @@ SKU labels observed:
 | MAI-Image-2.5-Pro | 🔴 Emerging | 7 | 2 (Global Standard, Global coverage) | `East US`, `South India`, `Sweden Central`, `UAE North`, `West Central US`, `West Europe` |
 | MAI-Image-2.6 | 🔴 Emerging | 7 | 2 (Global Standard, Global coverage) | `East US`, `South India`, `Sweden Central`, `UAE North`, `West Central US`, `West Europe` |
 | MAI-Image-2.6-Flash | 🔴 Emerging | 7 | 2 (Global Standard, Global coverage) | `East US`, `South India`, `Sweden Central`, `UAE North`, `West Central US`, `West Europe` |
-| gpt-4o-mini-transcribe | 🔴 Emerging | 7 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
-| gpt-4o-transcribe | 🔴 Emerging | 7 | 3 (Datazone standard, Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
-| gpt-4o-transcribe-diarize | 🔴 Emerging | 7 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
-| gpt-live-1 | 🔴 Emerging | 7 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
-| gpt-live-transcribe | 🔴 Emerging | 7 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
-| gpt-realtime | 🔴 Emerging | 7 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
-| gpt-realtime-1.5 | 🔴 Emerging | 7 | 3 (Datazone standard, Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
-| gpt-realtime-2 | 🔴 Emerging | 7 | 3 (Datazone standard, Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
-| gpt-realtime-2.1 | 🔴 Emerging | 7 | 3 (Datazone standard, Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
-| gpt-realtime-2.1-mini | 🔴 Emerging | 7 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
-| gpt-realtime-mini | 🔴 Emerging | 7 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
-| gpt-realtime-translate | 🔴 Emerging | 7 | 3 (Datazone standard, Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
-| gpt-realtime-whisper | 🔴 Emerging | 7 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
-| gpt-transcribe | 🔴 Emerging | 7 | 2 (Global Standard, Global coverage) | `Canada Central`, `Central US`, `East US 2`, `France Central`, `South India`, `Sweden Central` |
 | gpt-image-2 | 🔴 Emerging | 6 | 3 (Global Standard, Global coverage, Provisioned global) | `Australia East`, `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
 | gpt-image-2.5-flare | 🔴 Emerging | 6 | 3 (Global Standard, Global coverage, Provisioned global) | `East US 2`, `Poland Central`, `Spain Central`, `Sweden Central`, `UAE North`, `West US 3` |
 | gpt-image-1 | 🔴 Emerging | 5 | 2 (Global Standard, Global coverage) | `East US 2`, `Poland Central`, `Sweden Central`, `UAE North`, `West US 3` |
@@ -4308,36 +4308,36 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>gpt-6-luna — 28 regions across 3 SKU labels</summary>
+<summary>gpt-6-luna — 28 regions across 5 SKU labels</summary>
 
-- `Australia East` — Global Standard, Global coverage
-- `Brazil South` — Global Standard, Global coverage
-- `Canada Central` — Global Standard, Global coverage
-- `Canada East` — Global Standard, Global coverage
-- `Central US` — Datazone standard, Global Standard, Global coverage
-- `East US` — Datazone standard, Global Standard, Global coverage
-- `East US 2` — Datazone standard, Global Standard, Global coverage
-- `France Central` — Datazone standard, Global Standard, Global coverage
-- `Germany West Central` — Datazone standard, Global Standard, Global coverage
-- `Italy North` — Datazone standard, Global Standard, Global coverage
-- `Japan East` — Global Standard, Global coverage
-- `Korea Central` — Global Standard, Global coverage
-- `North Central US` — Datazone standard, Global Standard, Global coverage
-- `Norway East` — Datazone standard, Global Standard, Global coverage
-- `Poland Central` — Datazone standard, Global Standard, Global coverage
-- `South Africa North` — Global Standard, Global coverage
-- `South Central US` — Datazone standard, Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Southeast Asia` — Global Standard, Global coverage
-- `Spain Central` — Datazone standard, Global Standard, Global coverage
-- `Sweden Central` — Datazone standard, Global Standard, Global coverage
-- `Switzerland North` — Datazone standard, Global Standard, Global coverage
-- `Switzerland West` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-- `UK South` — Global Standard, Global coverage
-- `West Europe` — Datazone standard, Global Standard, Global coverage
-- `West US` — Datazone standard, Global Standard, Global coverage
-- `West US 3` — Datazone standard, Global Standard, Global coverage
+- `Australia East` — Global Standard, Global coverage, Provisioned global
+- `Brazil South` — Global Standard, Global coverage, Provisioned global
+- `Canada Central` — Global Standard, Global coverage, Provisioned global
+- `Canada East` — Global Standard, Global coverage, Provisioned global
+- `Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
+- `East US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
+- `East US 2` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
+- `France Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
+- `Germany West Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
+- `Italy North` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
+- `Japan East` — Global Standard, Global coverage, Provisioned global
+- `Korea Central` — Global Standard, Global coverage, Provisioned global
+- `North Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
+- `Norway East` — Datazone standard, Global Standard, Global coverage, Provisioned global
+- `Poland Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
+- `South Africa North` — Global Standard, Global coverage, Provisioned global
+- `South Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
+- `South India` — Global Standard, Global coverage, Provisioned global
+- `Southeast Asia` — Global Standard, Global coverage, Provisioned global
+- `Spain Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
+- `Sweden Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
+- `Switzerland North` — Datazone standard, Global Standard, Global coverage, Provisioned global
+- `Switzerland West` — Global Standard, Global coverage, Provisioned global
+- `UAE North` — Global Standard, Global coverage, Provisioned global
+- `UK South` — Global Standard, Global coverage, Provisioned global
+- `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
+- `West US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
+- `West US 3` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
 
 </details>
 <details>
@@ -4383,25 +4383,25 @@ SKU labels observed:
 - `Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
 - `East US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
 - `East US 2` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
-- `France Central` — Datazone standard, Global Standard, Global coverage, Provisioned global
-- `Germany West Central` — Datazone standard, Global Standard, Global coverage, Provisioned global
-- `Italy North` — Datazone standard, Global Standard, Global coverage, Provisioned global
+- `France Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
+- `Germany West Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
+- `Italy North` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
 - `Japan East` — Datazone standard, Global Standard, Global coverage, Provisioned global
 - `Korea Central` — Datazone standard, Global Standard, Global coverage, Provisioned global
 - `North Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
 - `Norway East` — Datazone standard, Global Standard, Global coverage, Provisioned global
-- `Poland Central` — Datazone standard, Global Standard, Global coverage, Provisioned global
+- `Poland Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
 - `South Africa North` — Global Standard, Global coverage, Provisioned global
 - `South Central US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
 - `South India` — Datazone standard, Global Standard, Global coverage, Provisioned global
 - `Southeast Asia` — Datazone standard, Global Standard, Global coverage, Provisioned global
-- `Spain Central` — Datazone standard, Global Standard, Global coverage, Provisioned global
-- `Sweden Central` — Datazone standard, Global Standard, Global coverage, Provisioned global
+- `Spain Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
+- `Sweden Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
 - `Switzerland North` — Datazone standard, Global Standard, Global coverage, Provisioned global
 - `Switzerland West` — Global Standard, Global coverage, Provisioned global
 - `UAE North` — Global Standard, Global coverage, Provisioned global
 - `UK South` — Global Standard, Global coverage, Provisioned global
-- `West Europe` — Datazone standard, Global Standard, Global coverage, Provisioned global
+- `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
 - `West US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
 - `West US 3` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global
 
@@ -4679,6 +4679,188 @@ SKU labels observed:
 
 </details>
 <details>
+<summary>gpt-4o-mini-transcribe — 8 regions across 2 SKU labels</summary>
+
+- `Canada Central` — Global Standard, Global coverage
+- `Central US` — Global Standard, Global coverage
+- `East US 2` — Global Standard, Global coverage
+- `France Central` — Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage
+- `Sweden Central` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `West US 3` — Global Standard, Global coverage
+
+</details>
+<details>
+<summary>gpt-4o-transcribe — 8 regions across 3 SKU labels</summary>
+
+- `Canada Central` — Global Standard, Global coverage
+- `Central US` — Datazone standard, Global Standard, Global coverage
+- `East US 2` — Datazone standard, Global Standard, Global coverage
+- `France Central` — Datazone standard, Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage
+- `Sweden Central` — Datazone standard, Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `West US 3` — Global Standard, Global coverage
+
+</details>
+<details>
+<summary>gpt-4o-transcribe-diarize — 8 regions across 2 SKU labels</summary>
+
+- `Canada Central` — Global Standard, Global coverage
+- `Central US` — Global Standard, Global coverage
+- `East US 2` — Global Standard, Global coverage
+- `France Central` — Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage
+- `Sweden Central` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `West US 3` — Global Standard, Global coverage
+
+</details>
+<details>
+<summary>gpt-live-1 — 8 regions across 2 SKU labels</summary>
+
+- `Canada Central` — Global Standard, Global coverage
+- `Central US` — Global Standard, Global coverage
+- `East US 2` — Global Standard, Global coverage
+- `France Central` — Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage
+- `Sweden Central` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `West US 3` — Global Standard, Global coverage
+
+</details>
+<details>
+<summary>gpt-live-transcribe — 8 regions across 2 SKU labels</summary>
+
+- `Canada Central` — Global Standard, Global coverage
+- `Central US` — Global Standard, Global coverage
+- `East US 2` — Global Standard, Global coverage
+- `France Central` — Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage
+- `Sweden Central` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `West US 3` — Global Standard, Global coverage
+
+</details>
+<details>
+<summary>gpt-realtime — 8 regions across 2 SKU labels</summary>
+
+- `Canada Central` — Global Standard, Global coverage
+- `Central US` — Global Standard, Global coverage
+- `East US 2` — Global Standard, Global coverage
+- `France Central` — Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage
+- `Sweden Central` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `West US 3` — Global Standard, Global coverage
+
+</details>
+<details>
+<summary>gpt-realtime-1.5 — 8 regions across 3 SKU labels</summary>
+
+- `Canada Central` — Global Standard, Global coverage
+- `Central US` — Datazone standard, Global Standard, Global coverage
+- `East US 2` — Datazone standard, Global Standard, Global coverage
+- `France Central` — Datazone standard, Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage
+- `Sweden Central` — Datazone standard, Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `West US 3` — Global Standard, Global coverage
+
+</details>
+<details>
+<summary>gpt-realtime-2 — 8 regions across 3 SKU labels</summary>
+
+- `Canada Central` — Global Standard, Global coverage
+- `Central US` — Datazone standard, Global Standard, Global coverage
+- `East US 2` — Datazone standard, Global Standard, Global coverage
+- `France Central` — Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage
+- `Sweden Central` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `West US 3` — Global Standard, Global coverage
+
+</details>
+<details>
+<summary>gpt-realtime-2.1 — 8 regions across 3 SKU labels</summary>
+
+- `Canada Central` — Global Standard, Global coverage
+- `Central US` — Datazone standard, Global Standard, Global coverage
+- `East US 2` — Datazone standard, Global Standard, Global coverage
+- `France Central` — Datazone standard, Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage
+- `Sweden Central` — Datazone standard, Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `West US 3` — Global Standard, Global coverage
+
+</details>
+<details>
+<summary>gpt-realtime-2.1-mini — 8 regions across 2 SKU labels</summary>
+
+- `Canada Central` — Global Standard, Global coverage
+- `Central US` — Global Standard, Global coverage
+- `East US 2` — Global Standard, Global coverage
+- `France Central` — Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage
+- `Sweden Central` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `West US 3` — Global Standard, Global coverage
+
+</details>
+<details>
+<summary>gpt-realtime-mini — 8 regions across 2 SKU labels</summary>
+
+- `Canada Central` — Global Standard, Global coverage
+- `Central US` — Global Standard, Global coverage
+- `East US 2` — Global Standard, Global coverage
+- `France Central` — Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage
+- `Sweden Central` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `West US 3` — Global Standard, Global coverage
+
+</details>
+<details>
+<summary>gpt-realtime-translate — 8 regions across 3 SKU labels</summary>
+
+- `Canada Central` — Global Standard, Global coverage
+- `Central US` — Datazone standard, Global Standard, Global coverage
+- `East US 2` — Datazone standard, Global Standard, Global coverage
+- `France Central` — Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage
+- `Sweden Central` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `West US 3` — Datazone standard, Global Standard, Global coverage
+
+</details>
+<details>
+<summary>gpt-realtime-whisper — 8 regions across 2 SKU labels</summary>
+
+- `Canada Central` — Global Standard, Global coverage
+- `Central US` — Global Standard, Global coverage
+- `East US 2` — Global Standard, Global coverage
+- `France Central` — Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage
+- `Sweden Central` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `West US 3` — Global Standard, Global coverage
+
+</details>
+<details>
+<summary>gpt-transcribe — 8 regions across 2 SKU labels</summary>
+
+- `Canada Central` — Global Standard, Global coverage
+- `Central US` — Global Standard, Global coverage
+- `East US 2` — Global Standard, Global coverage
+- `France Central` — Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage
+- `Sweden Central` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `West US 3` — Global Standard, Global coverage
+
+</details>
+<details>
 <summary>whisper — 8 regions across 2 SKU labels</summary>
 
 - `East US 2` — Global coverage, Standard
@@ -4761,174 +4943,6 @@ SKU labels observed:
 - `West Central US` — Global Standard, Global coverage
 - `West Europe` — Global Standard, Global coverage
 - `West US` — Global Standard, Global coverage
-
-</details>
-<details>
-<summary>gpt-4o-mini-transcribe — 7 regions across 2 SKU labels</summary>
-
-- `Canada Central` — Global Standard, Global coverage
-- `Central US` — Global Standard, Global coverage
-- `East US 2` — Global Standard, Global coverage
-- `France Central` — Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Sweden Central` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-
-</details>
-<details>
-<summary>gpt-4o-transcribe — 7 regions across 3 SKU labels</summary>
-
-- `Canada Central` — Global Standard, Global coverage
-- `Central US` — Datazone standard, Global Standard, Global coverage
-- `East US 2` — Datazone standard, Global Standard, Global coverage
-- `France Central` — Datazone standard, Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Sweden Central` — Datazone standard, Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-
-</details>
-<details>
-<summary>gpt-4o-transcribe-diarize — 7 regions across 2 SKU labels</summary>
-
-- `Canada Central` — Global Standard, Global coverage
-- `Central US` — Global Standard, Global coverage
-- `East US 2` — Global Standard, Global coverage
-- `France Central` — Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Sweden Central` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-
-</details>
-<details>
-<summary>gpt-live-1 — 7 regions across 2 SKU labels</summary>
-
-- `Canada Central` — Global Standard, Global coverage
-- `Central US` — Global Standard, Global coverage
-- `East US 2` — Global Standard, Global coverage
-- `France Central` — Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Sweden Central` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-
-</details>
-<details>
-<summary>gpt-live-transcribe — 7 regions across 2 SKU labels</summary>
-
-- `Canada Central` — Global Standard, Global coverage
-- `Central US` — Global Standard, Global coverage
-- `East US 2` — Global Standard, Global coverage
-- `France Central` — Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Sweden Central` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-
-</details>
-<details>
-<summary>gpt-realtime — 7 regions across 2 SKU labels</summary>
-
-- `Canada Central` — Global Standard, Global coverage
-- `Central US` — Global Standard, Global coverage
-- `East US 2` — Global Standard, Global coverage
-- `France Central` — Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Sweden Central` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-
-</details>
-<details>
-<summary>gpt-realtime-1.5 — 7 regions across 3 SKU labels</summary>
-
-- `Canada Central` — Global Standard, Global coverage
-- `Central US` — Datazone standard, Global Standard, Global coverage
-- `East US 2` — Datazone standard, Global Standard, Global coverage
-- `France Central` — Datazone standard, Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Sweden Central` — Datazone standard, Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-
-</details>
-<details>
-<summary>gpt-realtime-2 — 7 regions across 3 SKU labels</summary>
-
-- `Canada Central` — Global Standard, Global coverage
-- `Central US` — Datazone standard, Global Standard, Global coverage
-- `East US 2` — Datazone standard, Global Standard, Global coverage
-- `France Central` — Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Sweden Central` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-
-</details>
-<details>
-<summary>gpt-realtime-2.1 — 7 regions across 3 SKU labels</summary>
-
-- `Canada Central` — Global Standard, Global coverage
-- `Central US` — Datazone standard, Global Standard, Global coverage
-- `East US 2` — Datazone standard, Global Standard, Global coverage
-- `France Central` — Datazone standard, Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Sweden Central` — Datazone standard, Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-
-</details>
-<details>
-<summary>gpt-realtime-2.1-mini — 7 regions across 2 SKU labels</summary>
-
-- `Canada Central` — Global Standard, Global coverage
-- `Central US` — Global Standard, Global coverage
-- `East US 2` — Global Standard, Global coverage
-- `France Central` — Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Sweden Central` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-
-</details>
-<details>
-<summary>gpt-realtime-mini — 7 regions across 2 SKU labels</summary>
-
-- `Canada Central` — Global Standard, Global coverage
-- `Central US` — Global Standard, Global coverage
-- `East US 2` — Global Standard, Global coverage
-- `France Central` — Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Sweden Central` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-
-</details>
-<details>
-<summary>gpt-realtime-translate — 7 regions across 3 SKU labels</summary>
-
-- `Canada Central` — Global Standard, Global coverage
-- `Central US` — Datazone standard, Global Standard, Global coverage
-- `East US 2` — Datazone standard, Global Standard, Global coverage
-- `France Central` — Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Sweden Central` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-
-</details>
-<details>
-<summary>gpt-realtime-whisper — 7 regions across 2 SKU labels</summary>
-
-- `Canada Central` — Global Standard, Global coverage
-- `Central US` — Global Standard, Global coverage
-- `East US 2` — Global Standard, Global coverage
-- `France Central` — Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Sweden Central` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
-
-</details>
-<details>
-<summary>gpt-transcribe — 7 regions across 2 SKU labels</summary>
-
-- `Canada Central` — Global Standard, Global coverage
-- `Central US` — Global Standard, Global coverage
-- `East US 2` — Global Standard, Global coverage
-- `France Central` — Global Standard, Global coverage
-- `South India` — Global Standard, Global coverage
-- `Sweden Central` — Global Standard, Global coverage
-- `UAE North` — Global Standard, Global coverage
 
 </details>
 <details>
@@ -5095,6 +5109,7 @@ SKU labels observed:
 
 ## Recent changes
 
+- **2026-10-31 13:23 UTC** — gpt-4o-mini-transcribe: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-4o-transcribe: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-4o-transcribe-diarize: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-6-luna: Datazone provisioned managed added Central US, East US, East US 2, France Central, Germany West Central, Italy North, North Central US, Poland Central, South Central US, Spain Central, Sweden Central, West Europe, West US, and West US 3; Provisioned global added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-6.1-sol: Datazone provisioned managed added France Central, Germany West Central, Italy North, Poland Central, Spain Central, Sweden Central, and West Europe | gpt-live-1: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-live-transcribe: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-realtime: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-realtime-1.5: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-realtime-2: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-realtime-2.1: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-realtime-2.1-mini: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-realtime-mini: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-realtime-translate: Global coverage added West US 3; Datazone standard added West US 3; Standard global deployments added West US 3 | gpt-realtime-whisper: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-transcribe: Global coverage added West US 3; Standard global deployments added West US 3
 - **2026-10-27 13:00 UTC** — gpt-6.1-terra: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Datazone standard added Australia East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, West Europe, West US, and West US 3; Standard global deployments added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3
 - **2026-10-24 11:52 UTC** — gpt-live-1: Global coverage added Canada Central, Central US, East US 2, France Central, South India, Sweden Central, and UAE North; Standard global deployments added Canada Central, Central US, East US 2, France Central, South India, Sweden Central, and UAE North
 - **2026-10-09 14:10 UTC** — gpt-image-2: Global coverage added Australia East; Deployments Provisioned added Australia East | gpt-image-2.5-flare: Deployments Provisioned added Spain Central; Deployments Standard added East US 2, Poland Central, Sweden Central, UAE North, and West US 3

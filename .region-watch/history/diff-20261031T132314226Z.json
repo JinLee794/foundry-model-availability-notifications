@@ -1,0 +1,333 @@
+{
+  "changes": {
+    "gpt-4o-mini-transcribe": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Standard global deployments",
+          "removed": []
+        }
+      }
+    },
+    "gpt-4o-transcribe": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Standard global deployments",
+          "removed": []
+        }
+      }
+    },
+    "gpt-4o-transcribe-diarize": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Standard global deployments",
+          "removed": []
+        }
+      }
+    },
+    "gpt-6-luna": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "North Central US",
+            "Poland Central",
+            "South Central US",
+            "Spain Central",
+            "Sweden Central",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Datazone provisioned managed",
+          "removed": []
+        },
+        "provisioned-global": {
+          "added": [
+            "Australia East",
+            "Brazil South",
+            "Canada Central",
+            "Canada East",
+            "Central US",
+            "East US",
+            "East US 2",
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Japan East",
+            "Korea Central",
+            "North Central US",
+            "Norway East",
+            "Poland Central",
+            "South Africa North",
+            "South Central US",
+            "South India",
+            "Southeast Asia",
+            "Spain Central",
+            "Sweden Central",
+            "Switzerland North",
+            "Switzerland West",
+            "UAE North",
+            "UK South",
+            "West Europe",
+            "West US",
+            "West US 3"
+          ],
+          "label": "Provisioned global",
+          "removed": []
+        }
+      }
+    },
+    "gpt-6.1-sol": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-provisioned-managed": {
+          "added": [
+            "France Central",
+            "Germany West Central",
+            "Italy North",
+            "Poland Central",
+            "Spain Central",
+            "Sweden Central",
+            "West Europe"
+          ],
+          "label": "Datazone provisioned managed",
+          "removed": []
+        }
+      }
+    },
+    "gpt-live-1": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Standard global deployments",
+          "removed": []
+        }
+      }
+    },
+    "gpt-live-transcribe": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Standard global deployments",
+          "removed": []
+        }
+      }
+    },
+    "gpt-realtime": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Standard global deployments",
+          "removed": []
+        }
+      }
+    },
+    "gpt-realtime-1.5": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Standard global deployments",
+          "removed": []
+        }
+      }
+    },
+    "gpt-realtime-2": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Standard global deployments",
+          "removed": []
+        }
+      }
+    },
+    "gpt-realtime-2.1": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Standard global deployments",
+          "removed": []
+        }
+      }
+    },
+    "gpt-realtime-2.1-mini": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Standard global deployments",
+          "removed": []
+        }
+      }
+    },
+    "gpt-realtime-mini": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Standard global deployments",
+          "removed": []
+        }
+      }
+    },
+    "gpt-realtime-translate": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Datazone standard",
+          "removed": []
+        },
+        "standard-global": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Standard global deployments",
+          "removed": []
+        }
+      }
+    },
+    "gpt-realtime-whisper": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Standard global deployments",
+          "removed": []
+        }
+      }
+    },
+    "gpt-transcribe": {
+      "all": {
+        "added": [
+          "West US 3"
+        ],
+        "removed": []
+      },
+      "skus": {
+        "standard-global": {
+          "added": [
+            "West US 3"
+          ],
+          "label": "Standard global deployments",
+          "removed": []
+        }
+      }
+    }
+  },
+  "timestamp": "2026-10-31T13:23:14.226068+00:00"
+}

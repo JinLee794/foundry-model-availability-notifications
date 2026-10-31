@@ -2,7 +2,7 @@
   "source": "https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirement-schedule",
   "page": "https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirement-schedule",
   "last_updated": "2026-09-21",
-  "fetched_at": "2026-10-26T13:57:32Z",
+  "fetched_at": "2026-10-31T13:23:24Z",
   "models": {
     "text_generation": [
       {
@@ -57,8 +57,9 @@
         "status": "Generally Available",
         "lifecycle": "Deprecated",
         "deprecation_date": "2025-05-13",
-        "retirement_date": "2026-12-09",
-        "replacement": "gpt-5.6-sol"
+        "retirement_date": "2027-01-14",
+        "replacement": "gpt-5.1",
+        "replacement_version": "2025-11-13"
       },
       {
         "model": "gpt-4o",
@@ -145,7 +146,7 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": "2027-02-09",
+        "retirement_date": "2027-07-13",
         "replacement": null
       },
       {
@@ -178,7 +179,7 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": "2026-11-13",
-        "retirement_date": "2027-05-15",
+        "retirement_date": "2027-07-13",
         "replacement": null
       },
       {
