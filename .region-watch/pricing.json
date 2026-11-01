@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-29T13:57:59Z",
+  "fetched_at": "2026-11-01T14:05:07Z",
   "source": "https://prices.azure.com/api/retail/prices",
   "marketplace_source": "https://catalogapi.azure.com/offers",
   "region": "eastus2",
@@ -325,7 +325,7 @@
     },
     "claude-sonnet-5-5": {
       "global": {
-        "cached": 0.2,
+        "cached": 0.1,
         "in": 2.0,
         "out": 10.0
       }

@@ -14405,6 +14405,13 @@
           "West US 3"
         ]
       },
+      "datazone-standard-gov": {
+        "label": "Datazone Standard Gov",
+        "regions": [
+          "usgovarizona",
+          "usgovvirginia"
+        ]
+      },
       "standard-global": {
         "label": "Standard global deployments",
         "regions": [

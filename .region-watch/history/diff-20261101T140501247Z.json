@@ -1,0 +1,21 @@
+{
+  "changes": {
+    "text-embedding-ada-002": {
+      "all": {
+        "added": [],
+        "removed": []
+      },
+      "skus": {
+        "datazone-standard-gov": {
+          "added": [
+            "usgovarizona",
+            "usgovvirginia"
+          ],
+          "label": "Datazone Standard Gov",
+          "removed": []
+        }
+      }
+    }
+  },
+  "timestamp": "2026-11-01T14:05:01.247551+00:00"
+}
