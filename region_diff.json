@@ -1,23 +1,6 @@
 {
-  "timestamp": "2026-11-01T14:05:01.247551+00:00",
-  "changes": {
-    "text-embedding-ada-002": {
-      "all": {
-        "added": [],
-        "removed": []
-      },
-      "skus": {
-        "datazone-standard-gov": {
-          "label": "Datazone Standard Gov",
-          "added": [
-            "usgovarizona",
-            "usgovvirginia"
-          ],
-          "removed": []
-        }
-      }
-    }
-  },
+  "timestamp": "2026-11-02T16:51:52.069446+00:00",
+  "changes": {},
   "current": {
     "claude-fable-5": {
       "all": [
