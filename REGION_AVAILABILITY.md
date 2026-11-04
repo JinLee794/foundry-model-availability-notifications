@@ -1,6 +1,6 @@
 # AI Foundry Model Availability by Region
 
-_Last updated: 2026-11-01 14:05 UTC_
+_Last updated: 2026-11-04 15:10 UTC_
 
 - Models tracked: **172**
 - Regions in snapshot: **35**
@@ -123,7 +123,7 @@ SKU labels observed:
 | text-embedding-3-large | 🟢 Broad | 31 | 6 (Datazone Standard Gov, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | text-embedding-3-small | 🟢 Broad | 31 | 6 (Datazone Standard Gov, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5.6-luna | 🟢 Broad | 30 | 8 (Datazone Provisioned Managed Gov, Datazone Standard Gov, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
-| gpt-5.6-sol | 🟢 Broad | 30 | 9 (Datazone Provisioned Managed Gov, Datazone Standard Gov, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| gpt-5.6-sol | 🟢 Broad | 30 | 10 (Datazone Provisioned Managed Gov, Datazone Standard Gov, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-5.6-terra | 🟢 Broad | 30 | 9 (Datazone Provisioned Managed Gov, Datazone Standard Gov, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | text-embedding-ada-002 | 🟢 Broad | 30 | 6 (Datazone Standard Gov, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | gpt-4.1-nano | 🟢 Broad | 29 | 8 (Datazone provisioned managed, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
@@ -3459,9 +3459,9 @@ SKU labels observed:
 
 </details>
 <details>
-<summary>gpt-5.6-sol — 30 regions across 9 SKU labels</summary>
+<summary>gpt-5.6-sol — 30 regions across 10 SKU labels</summary>
 
-- `Australia East` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global Priority Processing
+- `Australia East` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard, Standard Global Priority Processing
 - `Brazil South` — Global Standard, Global coverage, Standard Global Priority Processing
 - `Canada Central` — Global Standard, Global coverage, Standard Global Priority Processing
 - `Canada East` — Global Standard, Global coverage, Provisioned global, Standard Global Priority Processing
@@ -3484,7 +3484,7 @@ SKU labels observed:
 - `Sweden Central` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global Priority Processing
 - `Switzerland North` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global Priority Processing
 - `Switzerland West` — Global Standard, Global coverage, Standard Global Priority Processing
-- `UAE North` — Global Standard, Global coverage, Provisioned global, Standard Global Priority Processing
+- `UAE North` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global Priority Processing
 - `UK South` — Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global Priority Processing
 - `West Europe` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned global, Standard Global Priority Processing
 - `West US` — Datazone provisioned managed, Datazone standard, Global Standard, Global coverage, Provisioned (PTU managed), Provisioned global, Standard Global Priority Processing
@@ -5109,6 +5109,7 @@ SKU labels observed:
 
 ## Recent changes
 
+- **2026-11-04 15:10 UTC** — gpt-5.6-sol: Provisioned (PTU managed) added UAE North; Standard (all) added Australia East
 - **2026-11-01 14:05 UTC** — text-embedding-ada-002: Datazone Standard Gov added usgovarizona and usgovvirginia
 - **2026-10-31 13:23 UTC** — gpt-4o-mini-transcribe: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-4o-transcribe: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-4o-transcribe-diarize: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-6-luna: Datazone provisioned managed added Central US, East US, East US 2, France Central, Germany West Central, Italy North, North Central US, Poland Central, South Central US, Spain Central, Sweden Central, West Europe, West US, and West US 3; Provisioned global added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3 | gpt-6.1-sol: Datazone provisioned managed added France Central, Germany West Central, Italy North, Poland Central, Spain Central, Sweden Central, and West Europe | gpt-live-1: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-live-transcribe: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-realtime: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-realtime-1.5: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-realtime-2: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-realtime-2.1: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-realtime-2.1-mini: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-realtime-mini: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-realtime-translate: Global coverage added West US 3; Datazone standard added West US 3; Standard global deployments added West US 3 | gpt-realtime-whisper: Global coverage added West US 3; Standard global deployments added West US 3 | gpt-transcribe: Global coverage added West US 3; Standard global deployments added West US 3
 - **2026-10-27 13:00 UTC** — gpt-6.1-terra: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3; Datazone standard added Australia East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, West Europe, West US, and West US 3; Standard global deployments added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, France Central, Germany West Central, Italy North, Japan East, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, West Europe, West US, and West US 3

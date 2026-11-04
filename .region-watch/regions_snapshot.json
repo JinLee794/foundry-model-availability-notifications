@@ -10765,6 +10765,7 @@
         "label": "Provisioned (PTU managed)",
         "regions": [
           "Australia East",
+          "UAE North",
           "UK South",
           "West US"
         ]
@@ -10833,6 +10834,12 @@
           "West Europe",
           "West US",
           "West US 3"
+        ]
+      },
+      "standard-models": {
+        "label": "Standard (all)",
+        "regions": [
+          "Australia East"
         ]
       }
     }
