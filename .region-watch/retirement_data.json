@@ -2,7 +2,7 @@
   "source": "https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirement-schedule",
   "page": "https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirement-schedule",
   "last_updated": "2026-09-21",
-  "fetched_at": "2026-10-31T13:23:24Z",
+  "fetched_at": "2026-11-06T14:49:12Z",
   "models": {
     "text_generation": [
       {
@@ -1972,7 +1972,7 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": null,
+        "retirement_date": "2027-02-15",
         "replacement": "mistral-ocr-4-0"
       },
       {
