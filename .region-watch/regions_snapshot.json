@@ -1607,6 +1607,83 @@
       }
     }
   },
+  "FW-DeepSeek-V4.1-Flash-1017": {
+    "all": [
+      "Australia East",
+      "Brazil South",
+      "Canada Central",
+      "Canada East",
+      "Central US",
+      "East US",
+      "East US 2",
+      "France Central",
+      "Germany West Central",
+      "Italy North",
+      "Japan East",
+      "Japan West",
+      "Korea Central",
+      "North Central US",
+      "North Europe",
+      "Norway East",
+      "Poland Central",
+      "South Africa North",
+      "South Central US",
+      "South India",
+      "Southeast Asia",
+      "Spain Central",
+      "Sweden Central",
+      "Switzerland North",
+      "Switzerland West",
+      "UAE North",
+      "UK South",
+      "UK West",
+      "West Central US",
+      "West Europe",
+      "West US",
+      "West US 2",
+      "West US 3"
+    ],
+    "skus": {
+      "standard-global": {
+        "label": "Standard global deployments",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada Central",
+          "Canada East",
+          "Central US",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Japan West",
+          "Korea Central",
+          "North Central US",
+          "North Europe",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Southeast Asia",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "UK West",
+          "West Central US",
+          "West Europe",
+          "West US",
+          "West US 2",
+          "West US 3"
+        ]
+      }
+    }
+  },
   "FW-GLM-4.7": {
     "all": [
       "Australia East",
@@ -1963,31 +2040,6 @@
       }
     }
   },
-  "FW-GLM-5.2-Fast": {
-    "all": [
-      "Central US",
-      "East US",
-      "East US 2",
-      "North Central US",
-      "South Central US",
-      "West US",
-      "West US 3"
-    ],
-    "skus": {
-      "datazone-standard": {
-        "label": "Datazone standard",
-        "regions": [
-          "Central US",
-          "East US",
-          "East US 2",
-          "North Central US",
-          "South Central US",
-          "West US",
-          "West US 3"
-        ]
-      }
-    }
-  },
   "FW-GLM-5.3": {
     "all": [
       "Australia East",
@@ -2164,6 +2216,44 @@
       "West US 3"
     ],
     "skus": {
+      "provisioned-global": {
+        "label": "Provisioned global",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada Central",
+          "Canada East",
+          "Central US",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Japan West",
+          "Korea Central",
+          "North Central US",
+          "North Europe",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Southeast Asia",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "UK West",
+          "West Central US",
+          "West Europe",
+          "West US",
+          "West US 2",
+          "West US 3"
+        ]
+      },
       "standard-global": {
         "label": "Standard global deployments",
         "regions": [
@@ -3221,6 +3311,133 @@
       }
     }
   },
+  "FW-Kimi-K3.1-Pro": {
+    "all": [
+      "Australia East",
+      "Brazil South",
+      "Canada Central",
+      "Canada East",
+      "Central US",
+      "East US",
+      "East US 2",
+      "France Central",
+      "Germany West Central",
+      "Italy North",
+      "Japan East",
+      "Japan West",
+      "Korea Central",
+      "North Central US",
+      "North Europe",
+      "Norway East",
+      "Poland Central",
+      "South Africa North",
+      "South Central US",
+      "South India",
+      "Southeast Asia",
+      "Spain Central",
+      "Sweden Central",
+      "Switzerland North",
+      "Switzerland West",
+      "UAE North",
+      "UK South",
+      "UK West",
+      "West Central US",
+      "West Europe",
+      "West US",
+      "West US 2",
+      "West US 3"
+    ],
+    "skus": {
+      "datazone-provisioned-managed": {
+        "label": "Datazone provisioned managed",
+        "regions": [
+          "Central US",
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ]
+      },
+      "provisioned-global": {
+        "label": "Provisioned global",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada Central",
+          "Canada East",
+          "Central US",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Japan West",
+          "Korea Central",
+          "North Central US",
+          "North Europe",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Southeast Asia",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "UK West",
+          "West Central US",
+          "West Europe",
+          "West US",
+          "West US 2",
+          "West US 3"
+        ]
+      },
+      "standard-global": {
+        "label": "Standard global deployments",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada Central",
+          "Canada East",
+          "Central US",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Japan West",
+          "Korea Central",
+          "North Central US",
+          "North Europe",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Southeast Asia",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "UK West",
+          "West Central US",
+          "West Europe",
+          "West US",
+          "West US 2",
+          "West US 3"
+        ]
+      }
+    }
+  },
   "FW-Llama-v3.1-8B-Instruct": {
     "all": [
       "Australia East",
@@ -3501,6 +3718,184 @@
     }
   },
   "FW-Muse-Glimmer-30B": {
+    "all": [
+      "Australia East",
+      "Brazil South",
+      "Canada Central",
+      "Canada East",
+      "Central US",
+      "East US",
+      "East US 2",
+      "France Central",
+      "Germany West Central",
+      "Italy North",
+      "Japan East",
+      "Japan West",
+      "Korea Central",
+      "North Central US",
+      "North Europe",
+      "Norway East",
+      "Poland Central",
+      "South Africa North",
+      "South Central US",
+      "South India",
+      "Southeast Asia",
+      "Spain Central",
+      "Sweden Central",
+      "Switzerland North",
+      "Switzerland West",
+      "UAE North",
+      "UK South",
+      "UK West",
+      "West Central US",
+      "West Europe",
+      "West US",
+      "West US 2",
+      "West US 3"
+    ],
+    "skus": {
+      "datazone-provisioned-managed": {
+        "label": "Datazone provisioned managed",
+        "regions": [
+          "Central US",
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ]
+      },
+      "provisioned-global": {
+        "label": "Provisioned global",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada Central",
+          "Canada East",
+          "Central US",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Japan West",
+          "Korea Central",
+          "North Central US",
+          "North Europe",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Southeast Asia",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "UK West",
+          "West Central US",
+          "West Europe",
+          "West US",
+          "West US 2",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "FW-NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16": {
+    "all": [
+      "Australia East",
+      "Brazil South",
+      "Canada Central",
+      "Canada East",
+      "Central US",
+      "East US",
+      "East US 2",
+      "France Central",
+      "Germany West Central",
+      "Italy North",
+      "Japan East",
+      "Japan West",
+      "Korea Central",
+      "North Central US",
+      "North Europe",
+      "Norway East",
+      "Poland Central",
+      "South Africa North",
+      "South Central US",
+      "South India",
+      "Southeast Asia",
+      "Spain Central",
+      "Sweden Central",
+      "Switzerland North",
+      "Switzerland West",
+      "UAE North",
+      "UK South",
+      "UK West",
+      "West Central US",
+      "West Europe",
+      "West US",
+      "West US 2",
+      "West US 3"
+    ],
+    "skus": {
+      "datazone-provisioned-managed": {
+        "label": "Datazone provisioned managed",
+        "regions": [
+          "Central US",
+          "East US",
+          "East US 2",
+          "North Central US",
+          "South Central US",
+          "West US",
+          "West US 3"
+        ]
+      },
+      "provisioned-global": {
+        "label": "Provisioned global",
+        "regions": [
+          "Australia East",
+          "Brazil South",
+          "Canada Central",
+          "Canada East",
+          "Central US",
+          "East US",
+          "East US 2",
+          "France Central",
+          "Germany West Central",
+          "Italy North",
+          "Japan East",
+          "Japan West",
+          "Korea Central",
+          "North Central US",
+          "North Europe",
+          "Norway East",
+          "Poland Central",
+          "South Africa North",
+          "South Central US",
+          "South India",
+          "Southeast Asia",
+          "Spain Central",
+          "Sweden Central",
+          "Switzerland North",
+          "Switzerland West",
+          "UAE North",
+          "UK South",
+          "UK West",
+          "West Central US",
+          "West Europe",
+          "West US",
+          "West US 2",
+          "West US 3"
+        ]
+      }
+    }
+  },
+  "FW-NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4": {
     "all": [
       "Australia East",
       "Brazil South",
@@ -6246,6 +6641,36 @@
     }
   },
   "claude-fable-5-1": {
+    "all": [
+      "East US 2",
+      "Sweden Central"
+    ],
+    "skus": {
+      "marketplace-deployments-standard": {
+        "label": "Marketplace Deployments Standard",
+        "regions": [
+          "East US 2",
+          "Sweden Central"
+        ]
+      }
+    }
+  },
+  "claude-fable-5-2": {
+    "all": [
+      "East US 2",
+      "Sweden Central"
+    ],
+    "skus": {
+      "marketplace-deployments-standard": {
+        "label": "Marketplace Deployments Standard",
+        "regions": [
+          "East US 2",
+          "Sweden Central"
+        ]
+      }
+    }
+  },
+  "claude-fable-5-2-fast": {
     "all": [
       "East US 2",
       "Sweden Central"
