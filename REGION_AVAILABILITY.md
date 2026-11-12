@@ -1,8 +1,8 @@
 # AI Foundry Model Availability by Region
 
-_Last updated: 2026-11-10 15:26 UTC_
+_Last updated: 2026-11-12 15:48 UTC_
 
-- Models tracked: **177**
+- Models tracked: **179**
 - Regions in snapshot: **35**
 - Distinct SKU labels: **17**
 
@@ -120,8 +120,10 @@ SKU labels observed:
 | grok-4.3 | 🟢 Broad | 31 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | grok-4.6 | 🟢 Broad | 31 | 2 (Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | grok-4.7 | 🟢 Broad | 31 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| mistral-large-4-latest | 🟢 Broad | 31 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | mistral-medium-2505 | 🟢 Broad | 31 | 2 (Global coverage, Marketplace Deployments Standard) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | mistral-medium-3-5 | 🟢 Broad | 31 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
+| mistral-ocr-4-0 | 🟢 Broad | 31 | 3 (Datazone standard, Global Standard, Global coverage) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | mistral-small-2503 | 🟢 Broad | 31 | 2 (Global coverage, Marketplace Deployments Standard) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | o3-mini | 🟢 Broad | 31 | 10 (Datazone Provisioned Managed Gov, Datazone Standard Gov, Datazone provisioned managed +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
 | text-embedding-3-large | 🟢 Broad | 31 | 6 (Datazone Standard Gov, Datazone standard, Global Standard +) | `Australia East`, `Brazil South`, `Canada Central`, `Canada East`, `Central US`, `East US` |
@@ -3365,6 +3367,42 @@ SKU labels observed:
 
 </details>
 <details>
+<summary>mistral-large-4-latest — 31 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global Standard, Global coverage
+- `Brazil South` — Global Standard, Global coverage
+- `Canada Central` — Global Standard, Global coverage
+- `Canada East` — Global Standard, Global coverage
+- `Central US` — Datazone standard, Global Standard, Global coverage
+- `East US` — Datazone standard, Global Standard, Global coverage
+- `East US 2` — Datazone standard, Global Standard, Global coverage
+- `France Central` — Datazone standard, Global Standard, Global coverage
+- `Germany West Central` — Datazone standard, Global Standard, Global coverage
+- `Italy North` — Datazone standard, Global Standard, Global coverage
+- `Japan East` — Global Standard, Global coverage
+- `Japan West` — Global Standard, Global coverage
+- `Korea Central` — Global Standard, Global coverage
+- `North Central US` — Datazone standard, Global Standard, Global coverage
+- `Norway East` — Global Standard, Global coverage
+- `Poland Central` — Datazone standard, Global Standard, Global coverage
+- `South Africa North` — Global Standard, Global coverage
+- `South Central US` — Datazone standard, Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage
+- `Spain Central` — Datazone standard, Global Standard, Global coverage
+- `Sweden Central` — Datazone standard, Global Standard, Global coverage
+- `Switzerland North` — Global Standard, Global coverage
+- `Switzerland West` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `UK South` — Global Standard, Global coverage
+- `UK West` — Global Standard, Global coverage
+- `West Central US` — Datazone standard, Global Standard, Global coverage
+- `West Europe` — Datazone standard, Global Standard, Global coverage
+- `West US` — Datazone standard, Global Standard, Global coverage
+- `West US 2` — Datazone standard, Global Standard, Global coverage
+- `West US 3` — Datazone standard, Global Standard, Global coverage
+
+</details>
+<details>
 <summary>mistral-medium-2505 — 31 regions across 2 SKU labels</summary>
 
 - `Australia East` — Global coverage, Marketplace Deployments Standard
@@ -3402,6 +3440,42 @@ SKU labels observed:
 </details>
 <details>
 <summary>mistral-medium-3-5 — 31 regions across 3 SKU labels</summary>
+
+- `Australia East` — Global Standard, Global coverage
+- `Brazil South` — Global Standard, Global coverage
+- `Canada Central` — Global Standard, Global coverage
+- `Canada East` — Global Standard, Global coverage
+- `Central US` — Datazone standard, Global Standard, Global coverage
+- `East US` — Datazone standard, Global Standard, Global coverage
+- `East US 2` — Datazone standard, Global Standard, Global coverage
+- `France Central` — Datazone standard, Global Standard, Global coverage
+- `Germany West Central` — Datazone standard, Global Standard, Global coverage
+- `Italy North` — Datazone standard, Global Standard, Global coverage
+- `Japan East` — Global Standard, Global coverage
+- `Japan West` — Global Standard, Global coverage
+- `Korea Central` — Global Standard, Global coverage
+- `North Central US` — Datazone standard, Global Standard, Global coverage
+- `Norway East` — Global Standard, Global coverage
+- `Poland Central` — Datazone standard, Global Standard, Global coverage
+- `South Africa North` — Global Standard, Global coverage
+- `South Central US` — Datazone standard, Global Standard, Global coverage
+- `South India` — Global Standard, Global coverage
+- `Spain Central` — Datazone standard, Global Standard, Global coverage
+- `Sweden Central` — Datazone standard, Global Standard, Global coverage
+- `Switzerland North` — Global Standard, Global coverage
+- `Switzerland West` — Global Standard, Global coverage
+- `UAE North` — Global Standard, Global coverage
+- `UK South` — Global Standard, Global coverage
+- `UK West` — Global Standard, Global coverage
+- `West Central US` — Datazone standard, Global Standard, Global coverage
+- `West Europe` — Datazone standard, Global Standard, Global coverage
+- `West US` — Datazone standard, Global Standard, Global coverage
+- `West US 2` — Datazone standard, Global Standard, Global coverage
+- `West US 3` — Datazone standard, Global Standard, Global coverage
+
+</details>
+<details>
+<summary>mistral-ocr-4-0 — 31 regions across 3 SKU labels</summary>
 
 - `Australia East` — Global Standard, Global coverage
 - `Brazil South` — Global Standard, Global coverage
@@ -5268,6 +5342,7 @@ SKU labels observed:
 
 ## Recent changes
 
+- **2026-11-12 15:48 UTC** — mistral-large-4-latest: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Datazone standard added Central US, East US, East US 2, France Central, Germany West Central, Italy North, North Central US, Poland Central, South Central US, Spain Central, Sweden Central, West Central US, West Europe, West US, West US 2, and West US 3; Standard global deployments added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | mistral-ocr-4-0: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Datazone standard added Central US, East US, East US 2, France Central, Germany West Central, Italy North, North Central US, Poland Central, South Central US, Spain Central, Sweden Central, West Central US, West Europe, West US, West US 2, and West US 3; Standard global deployments added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, Norway East, Poland Central, South Africa North, South Central US, South India, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3
 - **2026-11-10 15:26 UTC** — FW-DeepSeek-V4.1-Flash-1017: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, North Europe, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Standard global deployments added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, North Europe, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | FW-GLM-5.2-Fast: Global coverage removed Central US, East US, East US 2, North Central US, South Central US, West US, and West US 3; Datazone standard removed Central US, East US, East US 2, North Central US, South Central US, West US, and West US 3 | FW-GLM-5.3-Flash: Provisioned global added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, North Europe, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | FW-Kimi-K3.1-Pro: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, North Europe, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Datazone provisioned managed added Central US, East US, East US 2, North Central US, South Central US, West US, and West US 3; Provisioned global added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, North Europe, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Standard global deployments added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, North Europe, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | FW-NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, North Europe, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Datazone provisioned managed added Central US, East US, East US 2, North Central US, South Central US, West US, and West US 3; Provisioned global added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, North Europe, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | FW-NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4: Global coverage added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, North Europe, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3; Datazone provisioned managed added Central US, East US, East US 2, North Central US, South Central US, West US, and West US 3; Provisioned global added Australia East, Brazil South, Canada Central, Canada East, Central US, East US, East US 2, France Central, Germany West Central, Italy North, Japan East, Japan West, Korea Central, North Central US, North Europe, Norway East, Poland Central, South Africa North, South Central US, South India, Southeast Asia, Spain Central, Sweden Central, Switzerland North, Switzerland West, UAE North, UK South, UK West, West Central US, West Europe, West US, West US 2, and West US 3 | claude-fable-5-2: Global coverage added East US 2 and Sweden Central; Marketplace Deployments Standard added East US 2 and Sweden Central | claude-fable-5-2-fast: Global coverage added East US 2 and Sweden Central; Marketplace Deployments Standard added East US 2 and Sweden Central
 - **2026-11-04 15:10 UTC** — gpt-5.6-sol: Provisioned (PTU managed) added UAE North; Standard (all) added Australia East
 - **2026-11-01 14:05 UTC** — text-embedding-ada-002: Datazone Standard Gov added usgovarizona and usgovvirginia

@@ -2,7 +2,7 @@
   "source": "https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirement-schedule",
   "page": "https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirement-schedule",
   "last_updated": "2026-09-21",
-  "fetched_at": "2026-11-10T15:26:37Z",
+  "fetched_at": "2026-11-12T15:48:55Z",
   "models": {
     "text_generation": [
       {
@@ -698,6 +698,17 @@
       },
       {
         "model": "Mistral-Large-3",
+        "version": "1",
+        "provider": "Mistral AI",
+        "sold_by": "azure",
+        "status": "Preview",
+        "lifecycle": "Preview",
+        "deprecation_date": null,
+        "retirement_date": null,
+        "replacement": null
+      },
+      {
+        "model": "mistral-large-4-latest",
         "version": "1",
         "provider": "Mistral AI",
         "sold_by": "azure",
