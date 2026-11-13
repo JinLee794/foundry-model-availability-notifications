@@ -2,7 +2,7 @@
   "source": "https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirement-schedule",
   "page": "https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirement-schedule",
   "last_updated": "2026-09-21",
-  "fetched_at": "2026-11-12T15:48:55Z",
+  "fetched_at": "2026-11-13T15:09:06Z",
   "models": {
     "text_generation": [
       {
@@ -178,7 +178,7 @@
         "sold_by": "azure",
         "status": "Generally Available",
         "lifecycle": "GA",
-        "deprecation_date": "2026-11-13",
+        "deprecation_date": null,
         "retirement_date": "2027-07-13",
         "replacement": null
       },
@@ -200,7 +200,7 @@
         "sold_by": "azure",
         "status": "Generally Available",
         "lifecycle": "GA",
-        "deprecation_date": "2026-11-13",
+        "deprecation_date": null,
         "retirement_date": "2027-05-15",
         "replacement": null
       },
@@ -222,7 +222,7 @@
         "sold_by": "azure",
         "status": "Generally Available",
         "lifecycle": "GA",
-        "deprecation_date": "2026-11-13",
+        "deprecation_date": null,
         "retirement_date": "2027-05-15",
         "replacement": null
       },
