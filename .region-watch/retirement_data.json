@@ -2,7 +2,7 @@
   "source": "https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirement-schedule",
   "page": "https://learn.microsoft.com/azure/foundry/openai/concepts/model-retirement-schedule",
   "last_updated": "2026-09-21",
-  "fetched_at": "2026-11-13T15:09:06Z",
+  "fetched_at": "2026-11-14T13:58:05Z",
   "models": {
     "text_generation": [
       {
@@ -1012,8 +1012,8 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": "2026-11-24",
-        "replacement": null
+        "retirement_date": "2027-02-22",
+        "replacement": "claude-opus-5-5"
       },
       {
         "model": "claude-opus-4-1",
@@ -1034,8 +1034,8 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": "2026-11-15",
-        "replacement": null
+        "retirement_date": "2027-02-22",
+        "replacement": "claude-haiku-5-5"
       },
       {
         "model": "claude-haiku-4-5",
@@ -1045,8 +1045,8 @@
         "status": "Generally Available",
         "lifecycle": "GA",
         "deprecation_date": null,
-        "retirement_date": "2026-11-15",
-        "replacement": null
+        "retirement_date": "2027-02-22",
+        "replacement": "claude-haiku-5-5"
       },
       {
         "model": "claude-fable-5-1",
@@ -1267,7 +1267,7 @@
         "lifecycle": "GA",
         "deprecation_date": null,
         "retirement_date": "2027-02-15",
-        "replacement": null
+        "replacement": "mistral-large-4-latest"
       },
       {
         "model": "Ministral-3B",
