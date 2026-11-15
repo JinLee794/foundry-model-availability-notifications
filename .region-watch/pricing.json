@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-01T14:05:07Z",
+  "fetched_at": "2026-11-15T14:33:00Z",
   "source": "https://prices.azure.com/api/retail/prices",
   "marketplace_source": "https://catalogapi.azure.com/offers",
   "region": "eastus2",
@@ -1284,6 +1284,8 @@
     "Azure Grok Models: Grok 4",
     "Azure Grok Models: Grok4 Fast",
     "Azure Grok Models: grok Code Fast 1",
+    "Azure Kimi: Kimi 3.1",
+    "Azure Kimi: Kimi 3.1 Pro",
     "Azure Kimi: kimi K2 Thinking",
     "Azure Kimi: kimi Model 6",
     "Azure Kimi: kimi Model 7",
